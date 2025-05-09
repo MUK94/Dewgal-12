@@ -1,0 +1,78 @@
+Return-Path: <penloun@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id oFibNKIV9mMUPiwA3R2AvA
+	(envelope-from <penloun@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 22 Feb 2023 14:16:18 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4PMGrL5H98z34SDn2
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="alotv4OG"
+X-N0C-MailScanner-eFa-Watermark: 1677676566.89954@X/mJll6OTK7vG6R0YyfmWg
+X-N0C-MailScanner-eFa-From: penloun@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: DBE28401AEEF.AD5A4
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-vs1-f52.google.com ([209.85.217.52] [209.85.217.52])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id DBE28401AEEF
+	for <contact@fiidewgal.com>; Wed, 22 Feb 2023 14:15:33 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com DBE28401AEEF
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com DBE28401AEEF
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=alotv4OG
+Received: by mail-vs1-f52.google.com with SMTP id d7so3026157vsj.2
+        for <contact@fiidewgal.com>; Wed, 22 Feb 2023 05:15:33 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112; t=1677071732;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=bjYg0t+LmeTUngcf9hUCg4uVxhOF18QDlAs/wrvrdv8=;
+        b=alotv4OGJ7xb8fnm1mN9GIjnHz2T4Px6AH7OMdPovLFKLJv+wNVz2kDx2Etdk4i6Li
+         edzwRF5kcJUw2/mTdntWGgesmE12BgZ20bR37/oPLSu02C4x5mnZ2+prI6Bw5L+uQ+Mm
+         DlQi4HLG7jNt2wGOwDR2PBmYq7vaEcaBhx5p9nxxyGURyE2BXoNqZfs+//dTDbeQ5g+i
+         DL+wyn5gzIJNCa+s7+flXs5VMPC1EBVqFyvIPBoLtEsFhedHp/qcFDDmXGp0pAPVfuVn
+         ZDJ7IyxC3npJINQvjHEu+4olYIlIxKSACIqxXdUbfojPfwCku5q0tmEaVV+bdpETdWmy
+         +hiw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112; t=1677071732;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=bjYg0t+LmeTUngcf9hUCg4uVxhOF18QDlAs/wrvrdv8=;
+        b=mx4ETQB3aUOb7lz+Q/td7Py5z7U8P0ccLJau5deQKwbBwX5SfgVA7LoWWDFGmBuMn3
+         MQgH6qnKN8R9CgtlYOWECq4H5Ey4fPDunH7jJm4xJl3VpU2HA+OO96BAcgNVhJrTv0hU
+         DgKu+OHAJsxTDZRjqkJbj1C5hR9Eu4s5Ntm1IpqnMW/khivJ8GWr/Fo+JpOBhGyh8cl0
+         qzFotcdDPYVwiUVbQspNlwXGQXqK5C+76bKD7W+iX+WWHNsn9tXYYLff5fbbJABOvMyj
+         leD4hqco0mS2t433B3odx1JtWqmbYJjTRaHjQ6BRD9PFctsoBV+uokGrg11f4cvrPrTr
+         8R/w==
+X-Gm-Message-State: AO0yUKXSBvDCslGIpS57D8TJZaAcXsBr2DCz6qbk6IGiOzTNDFqdcV8X
+	xqMV+0JO67RkjjN/JK6dM2vKQD6OCM5ZjwKMESiNBzbH
+X-Google-Smtp-Source: AK7set9NIjy3ts+q4EonRXnHCl3cBc/Ra1NCBhFFXgfjpHGf2OSLX+Qto7XxGvWC+xNBQS4WlAT2m0CaHWRdY3Y4Kkw=
+X-Received: by 2002:a05:6102:9ca:b0:3e9:6d7f:6f37 with SMTP id
+ g10-20020a05610209ca00b003e96d7f6f37mr1556436vsi.3.1677071732379; Wed, 22 Feb
+ 2023 05:15:32 -0800 (PST)
+MIME-Version: 1.0
+From: Diallo Penloun <penloun@gmail.com>
+Date: Wed, 22 Feb 2023 13:15:18 +0000
+Message-ID: <CAOEu5xkfOpSLJPZQ8SnJGtrNQZ61H=UUyzyq6mUhuwUadjPDDQ@mail.gmail.com>
+Subject: 
+To: =?UTF-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>
+Content-Type: multipart/alternative; boundary="000000000000df14ef05f549b079"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000df14ef05f549b079
+Content-Type: text/plain; charset="UTF-8"
+
+Salut comment allez vous
+
+--000000000000df14ef05f549b079
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Salut comment allez vous=C2=A0</div>
+
+--000000000000df14ef05f549b079--

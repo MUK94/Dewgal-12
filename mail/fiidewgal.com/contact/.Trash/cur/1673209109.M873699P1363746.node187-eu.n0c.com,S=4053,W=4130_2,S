@@ -1,0 +1,77 @@
+Return-Path: <abdoussalamdiallo380@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id Glv9MxUlu2MizxQA3R2AvA
+	(envelope-from <abdoussalamdiallo380@gmail.com>)
+	for <contact@fiidewgal.com>; Sun, 08 Jan 2023 21:18:29 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NqpLF44jhz34SDmk
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="D7qd/fZn"
+X-N0C-MailScanner-eFa-Watermark: 1673813907.19368@aihpbN9libzxQ73JzFD77A
+X-N0C-MailScanner-eFa-From: abdoussalamdiallo380@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 05FB54008344.AE166
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-vs1-f43.google.com ([209.85.217.43] [209.85.217.43])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 05FB54008344
+	for <contact@fiidewgal.com>; Sun,  8 Jan 2023 21:17:54 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 05FB54008344
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 05FB54008344
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=D7qd/fZn
+Received: by mail-vs1-f43.google.com with SMTP id i188so6632176vsi.8
+        for <contact@fiidewgal.com>; Sun, 08 Jan 2023 12:17:53 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=pw31lReP1SicH8rPH1FO9N974DnX7zk/Mm7+ietdM3Q=;
+        b=D7qd/fZn8nvXJ+6Kv4PpxSPKqEx9qmkB5gmqN9QHHZCYOlFlWKMUbeQ49JkiCPGzG8
+         KAGXtwzHARa9UounsbGQLlwZ0UrUgkDTnKrhNz200UfIG/E/hVnc0ntEQNE8WBb7Ek45
+         aYieZZTbD24fyfltEaS0dvFlE/lpdp0zRl9uwJLpdU6/20KyVbUGIOgbh0JycwrrOoNn
+         UzxkCyQv5VBRkBi2S8fWkbEIo0B5MlSTELzyzNPsodSUnIJWwUVvi4hVEE4AYYfFrUjO
+         GoPf9R5Mk7Ui2/S/AiVuEcC+A+NKpvlMsHkyRjs4H6Dh28pTx0RVfyIpHuz/aAFg5M7Y
+         bWAQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=pw31lReP1SicH8rPH1FO9N974DnX7zk/Mm7+ietdM3Q=;
+        b=ab80sjJRKc5n1izAca3h6Oefmd/zv2WlvawzbHCWIOg+KQJ82ddkhRxS8oJTnszEVb
+         5O1m63SfLB0Ws25MaxN5fY2OjgdJ8K3Xmow852vyPmdoozAmIJR5iVdvDPCf7aC2TEpo
+         s02IHk465cq8gjZAdo79vAl57Tazp3IMwXHNG0cg3T/LZfTaj9AZ/5XHJ63TBaJD+I+U
+         C7jzakBTR9dqz3bCsynutrvl2kIWY9Q6iXFbt0c5GSk+KF3iqAlYxfeWTO/1fSAhM+qg
+         YWc2WFeaVOtvy3lwX7E1+/mMKGxLGDaaUpfb7QIv4D/RGWRykeBh8S6HkHXIXrZHb7kk
+         KxBA==
+X-Gm-Message-State: AFqh2krLmkyIB4xBDeXsy5riIVWl3HlzO7ebphex592Q5pqA2xizKEFR
+	ci3sb/LaVTXGR3jW4sQi3zxApC+51VvRAsEJi5Rc4+Wp
+X-Google-Smtp-Source: AMrXdXuJAFzlDchSSP5Wl8B1QPcGFLCFJ50xnT3azAcpDwqFm767y+cH2I8MftH/llCHnMubb3f/iKBhvwnU1zMsNRk=
+X-Received: by 2002:a67:f50f:0:b0:3ce:e81e:a78d with SMTP id
+ u15-20020a67f50f000000b003cee81ea78dmr2059638vsn.48.1673209072529; Sun, 08
+ Jan 2023 12:17:52 -0800 (PST)
+MIME-Version: 1.0
+From: Diallo Abdoussalam <abdoussalamdiallo380@gmail.com>
+Date: Sun, 8 Jan 2023 20:17:40 +0000
+Message-ID: <CAJwAApev4yrXWzqAe8ZbP_cRoGgy5nRB=YiD9GdvcaPPzyZB-Q@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000006736f605f1c658b0"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000006736f605f1c658b0
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+--0000000000006736f605f1c658b0
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"></div>
+
+--0000000000006736f605f1c658b0--

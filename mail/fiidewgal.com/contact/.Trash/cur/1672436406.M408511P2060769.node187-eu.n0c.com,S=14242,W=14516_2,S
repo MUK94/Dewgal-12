@@ -1,0 +1,274 @@
+Return-Path: <thierydiamila@yahoo.fr>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id kORAGLZar2PhcR8A3R2AvA
+	(envelope-from <thierydiamila@yahoo.fr>)
+	for <contact@fiidewgal.com>; Fri, 30 Dec 2022 22:40:06 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NkJZZ2849znqZg
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=yahoo.fr header.i=@yahoo.fr header.b="LIUUS2bI"
+X-N0C-MailScanner-eFa-Watermark: 1673041196.66916@wV+OWe7yfyzHLn9rTtLsRQ
+X-N0C-MailScanner-eFa-From: thierydiamila@yahoo.fr
+X-N0C-MailScanner-eFa-SpamScore: ss
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 7265240664D5.A5ED2
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from sonic310-11.consmr.mail.ir2.yahoo.com ([77.238.177.32] [77.238.177.32])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 7265240664D5
+	for <contact@fiidewgal.com>; Fri, 30 Dec 2022 22:39:55 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 7265240664D5
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=reject dis=none) header.from=yahoo.fr
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=yahoo.fr
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 7265240664D5
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=yahoo.fr header.i=@yahoo.fr header.a=rsa-sha256 header.s=s2048 header.b=LIUUS2bI
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.fr; s=s2048; t=1672436393; bh=t9Vy9MCpxk+wQ/2PYZLczaLskTCz1TR6DVRdxO1YFlU=; h=Date:From:To:In-Reply-To:References:Subject:From:Subject:Reply-To; b=LIUUS2bI26JNv52JbKCXLyRkA/2uJNks0eyGckdv2Tstyq+b/8JfI+0xdu4ufQiwJwtf/+XexNmANByqpIBwTYOShRUSx7Xggc/UH+IMF4xNwMi7IaTWFtXtGx0yB7EekKZZLQnJU8bIMOOrdpDZ3OhUw0SQ4LNVdoi9O7GKpbwICHxyx/8YX0DLgrVfZurpu8OIVU20yB6jp6i1I+BTOmhO+42GEXlJDCuMwNvTPU9H44bN/JwNZGgiovTnNYjyFvlZUlCTLi/7zIDTnZ9w9Cln4YzfWQQF16eRmXIjlcZWv3lhxxQAbvegqMMGug1AVW0lCZuRZXP7p7o4iRTeDQ==
+X-SONIC-DKIM-SIGN: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1672436393; bh=wj8QousnSSUJMB575T2Hltto9rnwZpacBB2WQJKNwrJ=; h=X-Sonic-MF:Date:From:To:Subject:From:Subject; b=Zp8AAjuuRYE6K2ntIDvgoPv6Zwv3g3aV/rmhF8b2FHkBACqC2gBQ8sSKmd8ptRGYIaPmmYesGSfNLDTM4bKKmnYXhnlJVg5HmeuSGe7Qfp/mdwCSF45Wm83OgH2qzWnewGvCLA0zGht4L51LclVnJ4wnd08FHGLt12ODpbbiDiSZNnIFlmo6zMxb25nMXjQGY2KyUgaI1fKDHgxXd6CjEC/G7i6SaeQEVujqH/qLXHBUfE8Z9anOOeuIG9TlWcj1OZgdr11RN7uFI9gjoKltbWxjns1aHclLiHW81rYk1/3rUrMzc9IC+An8jX/VLTA/4DU2Bvn5f9QmlQSlPkLgMA==
+X-YMail-OSG: LflTgZ0VM1k6yTqBvdAnqbP9X71KITDz81WpBB.OGQAL0EWzVDdg.O5dkC4tzgv
+ weUIVxDwcCXE.hd3LDSBhrbYlEsqgiclss2hsRZiCUGOetCkXRSThFc6GZ4T64X9N3V927ihz9cd
+ Tcckv.WzPbsZlV9GSGXsx8BDhi8m_c0T1OSUhqN4ESY1Bfl9oWR2MJZlntXcjWYrdwa2Q.tgIDOp
+ hagnhE55tlQjNYeB8axvUDHQX2cwXuwNZ1atmlB9q3pg0_3HQg8yp.9vV23kymN5F0TH6sm4A80e
+ 8W8I.TfPVpecRa3CfyuoyV2EGX4pc0qkF0ko3u2C4Mt24RYiLX_Vh68VDZATnciAyvfi72rayo_i
+ 8EoL9wfffil2Lp.QhNUDj0OS9bv2LxLpilEa2rV2ThoEZopq22WTO.1P29LWYkqc1RARonOlDjVD
+ 6VFOlYfXxrHvznjb7iBE3TAFW3s1qYU1TmRRoHD51VFigwOPI92z2M04Wu.fVGkwwZEfz3Eit9O2
+ IierT2eiHLdGB0jtTo0qWGnnm.eqi.iA3pgXwMPo23QpKoNnI1mLbTsSin8egkBUeucQdF0GBoWI
+ .zv_gBs7Fmlsobd_W6Abg7kuMq7UYNi9CPNybiqAWSdwH_ParIDT8L6UE3TBlW52uhE8HjGfB4m8
+ i.ofkfo36aLe.FYSY.BdoKcV4mfpDtu9zlCotV8r159D1FX5dBPu4XGUEKZFhSArpBHaifDz2uI6
+ 8jWIUJXyLiIoU7uO4jcGl622PGoc7bjML0zVBC_BxRTfzNG5RMf6hScEf2Xp4YPmI540Wj4lK7Vi
+ _egonGOlOuh1vD5NNPSIrDpREKe0Fpa5J.TGRxA4S75ZSzv1IVzRrbQEfqmhGmrchI2acNup.szW
+ P2mDcKIe6q6vxsYviW3SIfIXwY.a5g0TO_xGaHFfug69qaIuL1AJCj38d4q6.VtSFA5wbgwS4zJw
+ iZS2.jpUSkB83mrDylr8fKVNDGeZrRZx75.dJm5idAhmcyaC5aDGn5_uP12tiyoytouAV9WrQy5o
+ umsQWyHu0vmZjTz7gd1LNMTplG3EVBSwFoRioVr.46ytFuAhTdZHf9NkrYqdYvqtagJEY389ZzAv
+ KuqmuDiK.fIUuF3sKPaNjsBOGL5lMZOHfrRCD8nnk9LEUfA0mxylZjOo3McayS2MrN8EnJ49qbAO
+ lOWzA6cYu8ROcjrYWQq4zTUk5QouY_T_CDT2j3Xtq81Jqjxgj6hple.zNRzAEGDOj4R0qqUUn4Nj
+ tPPlbwfJVqsGNm8gmYWCeExUt6GIiQv6WAhkRV1KFDcISwhi0qXBGcYxhY5VJkXPfxKbhr4h43RW
+ MWjhNHfP9k21i2owGV3yCViLo6cLqOaiUWTPr6y6Y5COqO.z3iw89Dn.NrOrqJgSNyp_dvlXpIDw
+ CW06YmJkizodDoapFlp1HR9RXy2uQaPNS7PGddK2TLmZ3DRR_MKIRpm0WWfjb2XWDMLnDMz8RskS
+ wFXUHSWOMdvFPYOPjO_As0vU.G5WNQ_BdReGa8iUelg8GOURR_uwbZVLKTMb80w_mP4.1IypkysC
+ HNT2RrwSQRMIiWtYkmOjbil7STvjpng8xvBwKLRSPKU2TZ8ONsPnNVqwJaadm.V8l46y2Jlu0n6F
+ XpCHm5RUKj79Pjw1nFH6l38BqFXOqhuAxiFkLyYn2LkGKTrvT1U64VXpJJq5QtQ8EKdVnEbc82y5
+ kSMIguQ_MyQr4KKLRWObMnDOxhCzgvwuueTNW9ZJQ7tT90dK6MMp5TFQND9oZ535AQ0WFoLWza01
+ 8U9qgApnc7rwroRzHSFMq0ClrrJ2u1xfhU7c4X.PfWKFtIC45iVKgFR.5s7bHvtMAk0aCR5JyInb
+ xWkf2kvDRSdtE5hZfCaWGPlssc0PCBG1u8S_B6ltC7g3h6ZfsrCH4RPI4zigAx1CJxAISLYJT_JE
+ 4IgI3Cj6rBe3jb_vUtP6H6eECkAg7C2It8W8lCxeY.uYcVVNXHgHDcoPey7yAGjFx9zVayL3OicE
+ 59isefzP4Wba.HT_re7HtHO7TL3WdlXkXGLA.h8esRzR.uTwzTpOrmuxXZQa6D7JUm0HgeTEL7gW
+ oMpEgOEHdlhnk1GDJsBFflPX2wIP.egke15TKGijBplqZjYGMGundEmYPp07PSfmW12w4o_BILkF
+ Yq0nQDaXvX7wOONMvx1xAWHbFTrubTYCB.Ec_VoKmsRFtYEgMaGlo5EhvZnKFjLtR47SHqFL_O2z
+ P79xRtykBcsDNdkfH
+X-Sonic-MF: <thierydiamila@yahoo.fr>
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic310.consmr.mail.ir2.yahoo.com with HTTP; Fri, 30 Dec 2022 21:39:53 +0000
+Date: Fri, 30 Dec 2022 21:39:49 +0000 (UTC)
+From: Thiery Diamila <thierydiamila@yahoo.fr>
+To: =?UTF-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>
+Message-ID: <1908378419.8599228.1672436389852@mail.yahoo.com>
+In-Reply-To: <bb2abbcb0ee6a8a948797345985a1f89@fiidewgal.com>
+References: <bb2abbcb0ee6a8a948797345985a1f89@fiidewgal.com>
+Subject: =?UTF-8?Q?Re=C2=A0:_Email_Verification_-_Fii_Dewgal?=
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_8599227_146890271.1672436389850"
+X-Mailer: WebService/1.1.20982 YahooMailIosMobile
+X-N0C-Node-IP: 185.221.182.45
+
+------=_Part_8599227_146890271.1672436389850
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Salut=C2=A0
+
+
+Envoy=C3=A9 depuis Yahoo=C2=A0Mail pour iPhone
+
+
+Le vendredi, d=C3=A9cembre 30, 2022, 10:28 PM, Ne r=C3=A9pondez pas <contac=
+t@fiidewgal.com> a =C3=A9crit=C2=A0:
+
+
+| =20
+| =20
+| =20
+| =20
+| =20
+|  |
+
+  |  | =20
+| Fii Dewgal |
+
+  |
+
+=20
+| =C2=A0 |
+
+  |
+
+=20
+| =20
+| v=C3=A9rification de l'E-mail |
+| Please click the button below to verify your email address.  |
+|  Click Here  |
+
+  |
+
+  |
+|   |
+
+  |
+
+  |
+
+
+
+
+
+------=_Part_8599227_146890271.1672436389850
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microso=
+ft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office"><head><!--[=
+if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>=
+96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]--></head><bo=
+dy>
+Salut&nbsp;<br><br><br><a href=3D"https://overview.mail.yahoo.com/?.src=3Di=
+OS" target=3D"_blank" rel=3D"noreferrer noopener">Envoy=C3=A9 depuis Yahoo&=
+nbsp;Mail pour iPhone</a><br><br><p class=3D"yahoo-quoted-begin" style=3D"f=
+ont-size: 15px; color: #715FFA; padding-top: 15px; margin-top: 0">Le vendre=
+di, d=C3=A9cembre 30, 2022, 10:28 PM, Ne r=C3=A9pondez pas &lt;contact@fiid=
+ewgal.com&gt; a =C3=A9crit&nbsp;:</p><blockquote class=3D"iosymail"><div id=
+=3D"yiv3749678642"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0" bgcolor=3D"#e8ebef">
+=09<tbody><tr>
+=09=09<td align=3D"center" valign=3D"top" style=3D"padding:50px 10px;" clas=
+s=3D"yiv3749678642container">
+=09=09=09
+=09=09=09<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0">
+=09=09=09=09<tbody><tr>
+=09=09=09=09=09<td align=3D"center">
+=09=09=09=09=09=09<table width=3D"650" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" class=3D"yiv3749678642mobile-shell">
+=09=09=09=09=09=09=09<tbody><tr>
+=09=09=09=09=09=09=09=09<td bgcolor=3D"#ffffff" style=3D"width:650px;min-wi=
+dth:650px;font-size:0pt;line-height:0pt;padding:0;margin:0;font-weight:norm=
+al;" class=3D"yiv3749678642td">
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09<table width=3D"100%" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff">
+=09=09=09=09=09=09=09=09=09=09<tbody><tr>
+=09=09=09=09=09=09=09=09=09=09=09<td style=3D"padding:40px 30px 0px 30px;" =
+class=3D"yiv3749678642p30-15-0">
+=09=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody><tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<th style=3D"font-size:0pt;line-h=
+eight:0pt;padding:0;margin:0;font-weight:normal;" class=3D"yiv3749678642col=
+umn">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody><tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size:0=
+pt;line-height:0pt;text-align:left;" class=3D"yiv3749678642img yiv374967864=
+2m-center"><img src=3D"https://fiidewgal.com/public/uploads/all/3ePHoiM5cMG=
+mckWJJkq03HVSXUcK8mKuITM5NqBG.png" width=3D"191" height=3D"24" border=3D"0"=
+ alt=3D""></td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</th>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<th width=3D"1" style=3D"font-siz=
+e:0pt;line-height:0pt;padding:0;margin:0;font-weight:normal;" class=3D"yiv3=
+749678642column-empty"></th>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<th width=3D"120" style=3D"font-s=
+ize:0pt;line-height:0pt;padding:0;margin:0;font-weight:normal;" class=3D"yi=
+v3749678642column">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody><tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"color:#0000=
+00;font-family:'Fira Mono', Arial, sans-serif;font-size:12px;line-height:16=
+px;text-align:right;" class=3D"yiv3749678642text-header yiv3749678642right"=
+><a href=3D"https://fiidewgal.com" style=3D"color:#000001;text-decoration:n=
+one;" class=3D"yiv3749678642link" target=3D"_blank" rel=3D"noreferrer noope=
+ner"><span style=3D"color:#000001;text-decoration:none;" class=3D"yiv374967=
+8642link">Fii Dewgal</span></a></td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</th>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody><tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"padding-top:40px;bor=
+der-bottom:4px solid #000000;font-size:0pt;line-height:0pt;" class=3D"yiv37=
+49678642separator">&nbsp;</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09
+
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09<table width=3D"100%" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff">
+=09=09=09=09=09=09=09=09=09=09<tbody><tr>
+=09=09=09=09=09=09=09=09=09=09=09<td style=3D"padding:70px 30px 70px 30px;"=
+ class=3D"yiv3749678642p30-15">
+=09=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody><tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"color:#000000;font-f=
+amily:'Ubuntu', Arial, sans-serif;font-size:50px;line-height:60px;text-alig=
+n:center;padding-bottom:10px;" class=3D"yiv3749678642h2 yiv3749678642center=
+ yiv3749678642pb10">v=C3=A9rification de l'E-mail</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"font-family:'Ubuntu'=
+, Arial, sans-serif;font-size:20px;line-height:26px;text-align:center;color=
+:#2e57ae;padding-bottom:30px;" class=3D"yiv3749678642h5 yiv3749678642center=
+ yiv3749678642blue yiv3749678642pb30">Please click the button below to veri=
+fy your email address. </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+                                                                           =
+                                 <tr>
+                                                            <td style=3D"fo=
+nt-family:'Ubuntu', Arial, sans-serif;font-size:20px;line-height:26px;text-=
+align:center;color:#2e57ae;padding-bottom:30px;" class=3D"yiv3749678642h5 y=
+iv3749678642center yiv3749678642blue yiv3749678642pb30">
+                                                                <a href=3D"=
+https://fiidewgal.com/verification-confirmation/eyJpdiI6IlBXakNmRlF2MG5DNDB=
+uME9Jem1yWmc9PSIsInZhbHVlIjoiUllYYWtsQTFObGJIdkp0N2tBOXBJZz09IiwibWFjIjoiNj=
+Q5YzYxZTQ4MWU2MjhmMDRhZjA0ZmFjOWVmMmJiM2RmMmQ3ZDE5YzcwYmEyYzUwZDE2MmEyOTA2O=
+DU3MmRmNiIsInRhZyI6IiJ9" style=3D"background:#007bff;color:#fff;" target=3D=
+"_blank" rel=3D"noreferrer noopener">Click Here</a>
+                                                            </td>
+                                                        </tr>
+                                                    =09=09=09=09=09=09=09=
+=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09<td style=3D"padding-top:30px;color:#1f2125;font-fa=
+mily:'Fira Mono', Arial, sans-serif;font-size:12px;line-height:22px;text-al=
+ign:center;" class=3D"yiv3749678642text-footer">
+=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09</tbody></table>
+=09=09=09
+=09=09</td>
+=09</tr>
+</tbody></table>
+</div><blockquote></blockquote></blockquote>
+</body></html>
+------=_Part_8599227_146890271.1672436389850--

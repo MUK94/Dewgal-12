@@ -1,0 +1,77 @@
+Return-Path: <mamadiankambayabah@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id GH8yNuS+62NvYj0A3R2AvA
+	(envelope-from <mamadiankambayabah@gmail.com>)
+	for <contact@fiidewgal.com>; Tue, 14 Feb 2023 18:03:32 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4PGSGD5c27z34SDn0
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="cMj9bqe1"
+X-N0C-MailScanner-eFa-Watermark: 1676998872.92974@YbIixGSuvO0weMdM7pjrjg
+X-N0C-MailScanner-eFa-From: mamadiankambayabah@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 82087401AEEF.A5039
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-vs1-f43.google.com ([209.85.217.43] [209.85.217.43])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 82087401AEEF
+	for <contact@fiidewgal.com>; Tue, 14 Feb 2023 18:00:31 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 82087401AEEF
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 82087401AEEF
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=cMj9bqe1
+Received: by mail-vs1-f43.google.com with SMTP id g9so428935vst.10
+        for <contact@fiidewgal.com>; Tue, 14 Feb 2023 09:00:31 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=rVYroDr111YvNPxxBm/6dxywRP2DBO/uj03AdlXzGuE=;
+        b=cMj9bqe15lVu3Uwon+dBSIJsZZ/Avtgnukik8VxzzLYKaHIXUKF1Wz3WKmjdwuMJ7p
+         DNXw9VPtHw67O2nhyAEk26V5RloAfLhjY8EdL6iouQ6Ib5kYibjX3XI63sjbQAALztMM
+         OgazU+uRUqNExf10yPmQYeAc7ANR1tNmMOtQswkDw5ApgQ3LmZL6V71D1mFDXmRhg3M+
+         hKRrea0vpQeUGNZBUWBjKGJ34KfM/02Ze1qi6cmB4R0AtedREn/w3+JZ9YR4zU6A5tcn
+         KPFYEqurzrNDCab54lLHjUqD+lMcgSo5xyK6kGZ1GJHGHn3jT28AXYtZBzKMRihURJJ4
+         XHJg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=rVYroDr111YvNPxxBm/6dxywRP2DBO/uj03AdlXzGuE=;
+        b=xhqTud3wyNozIE/XHUDVVZv8XQiR4QZuxAx1vRzSC0m0khTA4F03X7zBZjYyYw1Ouc
+         1Sue/se7lU0MYZ7Y9alZpzdaU0JxRAS/yqdmn3XQWNxmf8aEXZgGBQyY+F1Ri3p/lb1d
+         B1P5lBEESy5Xyok99Wpf8OWgWawbFfzUJb9wM+yhNhrhz863jPbXNC9qPkrMhyor3Ip9
+         9eHJQ9N8DwtpeRyw3pcGTKcYriCJs7SpFTEV0k3UwcS1Bw6lU3fTGccvHbm7QrT4Ojrv
+         CyoGpytREgPleEQcfzlem41RpbVlVVg5kbquZC9Rkp0GYEV9qbQsLVJfTNFZGRJPRSPI
+         /2oQ==
+X-Gm-Message-State: AO0yUKVm9AjuaogRil11dDRTFb8pc1fGRMxudL4baxTkR6Oj/6308bTO
+	6N/CmJ2l5sqg+01SdcURXBRkrwAeeMtBBf+9heelcPPn
+X-Google-Smtp-Source: AK7set/mxw0M/Sveye9Xtpc7DxYzMYbe+DcbjOSdXD6honYwOJINon5INEFm0sNL2JQijotXZYkTFzrFOMgtfNwPBCE=
+X-Received: by 2002:a05:6102:33c1:b0:3f1:b35:72d2 with SMTP id
+ w1-20020a05610233c100b003f10b3572d2mr594848vsh.73.1676394030072; Tue, 14 Feb
+ 2023 09:00:30 -0800 (PST)
+MIME-Version: 1.0
+From: Mamadian kambaya Bah <mamadiankambayabah@gmail.com>
+Date: Tue, 14 Feb 2023 17:00:15 +0000
+Message-ID: <CA+mgLWsYw7vfPSc9yX2m__OvtGF=J=EGcVB5KB1TWv=u8S7vEQ@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000aa8b3b05f4abe604"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000aa8b3b05f4abe604
+Content-Type: text/plain; charset="UTF-8"
+
+Fiidewgal
+
+--000000000000aa8b3b05f4abe604
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto">Fiidewgal</div>
+
+--000000000000aa8b3b05f4abe604--

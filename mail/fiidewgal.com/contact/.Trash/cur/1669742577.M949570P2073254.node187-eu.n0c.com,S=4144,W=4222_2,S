@@ -1,0 +1,78 @@
+Return-Path: <fatoumata6244@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id xdOEOPE/hmOmoh8A3R2AvA
+	(envelope-from <fatoumata6244@gmail.com>)
+	for <contact@fiidewgal.com>; Tue, 29 Nov 2022 18:22:57 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NM8L84SSvz34SDnG
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="oE51SkAD"
+X-N0C-MailScanner-eFa-Watermark: 1670347371.07336@6PC6a2osjbSeYQ6vFCSlcQ
+X-N0C-MailScanner-eFa-From: fatoumata6244@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 32F4A4062935.A006A
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-oo1-f44.google.com ([209.85.161.44] [209.85.161.44])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 32F4A4062935
+	for <contact@fiidewgal.com>; Tue, 29 Nov 2022 18:22:19 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 32F4A4062935
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 32F4A4062935
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=oE51SkAD
+Received: by mail-oo1-f44.google.com with SMTP id e11-20020a4ab14b000000b0049be568062bso2238165ooo.4
+        for <contact@fiidewgal.com>; Tue, 29 Nov 2022 09:22:19 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=hDRn17Wks9oK4msP6bP3zH3L0I+wtlwySo519DtW4Ms=;
+        b=oE51SkAD+QRA7Z03LDdtCEQBKf8LdYrToFABerfq2Qrq72I4TtVFIQo+N5ncasa57D
+         K1rrkXqFJ8UIoWBczihD2eSQqB1pl9HllqzCsVR8dgRVVa7FAMBnUM2cOiKbbcGSMDNj
+         +BxTxK5wFtfC1hteL/f/Wx/eZZd7pV9rlpxXytV7s91uYBMkl7iyAFK8pJOkYwvBlBIi
+         YIkkyGpqxpy3VUCCeDm+3jL+G+8QybAqRXvp/OConZ7aJe7KF78TvVaXOFQq/wm0mhpY
+         Dh2+/iXlUYg9tD+YbVbl3pKXckdNzy/klfw5MhH6Xg7Ji+81XPfv5H3yI2LGcFa4/une
+         VTRg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=hDRn17Wks9oK4msP6bP3zH3L0I+wtlwySo519DtW4Ms=;
+        b=ulG34+Vhu6YC1QIREr7oTsZ7/hMJvx7kG3r1nIKtSGD9Xy7Gwv7zXFgVl9+0ZYLQD8
+         EI17jwCmGc2Kxf0ZdPE0jOJJtvt3jLfeRKFMz+cA1LwxvisLrCMTlv0jSMsWEKumobHC
+         uubWn7ViCtFG6uvTF53ZAVPo1PCq3fYEQPCZ0ieQZ4Izuc2udgPF4ca4Tr79jdpRssYX
+         huUtgO7oDQyBObFq9C6P2Uf/NUmA2+Q0I9YH2tDfyfwJNhbBZPdUuu0s1z6gohVNzGYj
+         7OATgbeJSeKWxMjrb3FcGIfMCywCjIGfiMaohWOzqH4moXPH9v7ajDWsKfTX9VL0mZNw
+         6ibA==
+X-Gm-Message-State: ANoB5pnshj7YjR94AdcCdoD7zzZiVaareNOOgt31IvRrdVxFsBxutG2X
+	ALDdM/XH6oUC8FQPL8IkmfBHD1cVmwWPZxD+enZPlLDq
+X-Google-Smtp-Source: AA0mqf70dd0Q0p+ShFp7iA6w4maXCYAO/jQuFLPCPox1CLJKfSw59AhWwpoDn8XjgRd8FGgd5B2o7hbHwx7ZmrbOp4g=
+X-Received: by 2002:a4a:d02a:0:b0:4a0:4353:68ec with SMTP id
+ w10-20020a4ad02a000000b004a0435368ecmr7404682oor.71.1669742537396; Tue, 29
+ Nov 2022 09:22:17 -0800 (PST)
+MIME-Version: 1.0
+From: Fatoumata Sow <fatoumata6244@gmail.com>
+Date: Tue, 29 Nov 2022 17:22:03 +0000
+Message-ID: <CAC424uUQEwkEyzC8MntpSku3e3wPVP8=o=aQ=e1djy439NRusQ@mail.gmail.com>
+Subject: Fiidewgal
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000ced56105ee9f3aee"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000ced56105ee9f3aee
+Content-Type: text/plain; charset="UTF-8"
+
+Fatoumata Korka
+
+--000000000000ced56105ee9f3aee
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Fatoumata Korka=C2=A0</div>
+
+--000000000000ced56105ee9f3aee--

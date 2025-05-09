@@ -1,0 +1,80 @@
+Return-Path: <amadououmardiallo830@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id oiA/JpGNtWMkpR0A3R2AvA
+	(envelope-from <amadououmardiallo830@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 04 Jan 2023 15:30:41 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NnBpm71gJz1wKT
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="jD0ktfMT"
+X-N0C-MailScanner-eFa-Watermark: 1673447438.42504@cGmH8rtdjNX5wCpGZ70oPg
+X-N0C-MailScanner-eFa-From: amadououmardiallo830@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 48E84401AEF6.AD0B3
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-yb1-f169.google.com ([209.85.219.169] [209.85.219.169])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 48E84401AEF6
+	for <contact@fiidewgal.com>; Wed,  4 Jan 2023 15:30:06 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 48E84401AEF6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 48E84401AEF6
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=jD0ktfMT
+Received: by mail-yb1-f169.google.com with SMTP id v126so36708890ybv.2
+        for <contact@fiidewgal.com>; Wed, 04 Jan 2023 06:30:06 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=eiNA8/TMq29fduZ2TqFtDDTD3+AX8biRmWr4kBCp83o=;
+        b=jD0ktfMTg4Blsy66vGs9PSQXKubjOlU77nsk7iXNmUgA8T5lLn1PktdyCAtqEGQTs/
+         tedxR70u6maCnO40hl3K8SzXZTCprePJwny2Shl8R0krvNelsGx1ZZWPADTrZVKlyJLl
+         7Ijy+rK2GSl2xI3a8dkGtiaU6XHAUE3xKUjgEnGuDqkK4/esjl+7UhpD+1EBFmqFGNFr
+         FHUla/eg+H0CXmYGzZ94PSYGrhwXYKVl2aob21HY27TxjTgMmaja2p3ZrSGlRIuZe/o+
+         KeUxgO6nj+Qrkh9Qjgw54EqFUUMAe6f3nhjWtXWH1cALFfQUO9ypv/EBZV6lgF43zCkP
+         rbDw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=eiNA8/TMq29fduZ2TqFtDDTD3+AX8biRmWr4kBCp83o=;
+        b=WhQ6ty84aoCQ9iFiv+zpY5cx7fVnaCvmJbBWovO9oZX/kEweXBgCe8q9CjVirTurnG
+         ErYKhmir62gXJADgs7nQhFz1aIvz+Gt59nBoULCBiyC5jkx2ikoh0LElypAhuwnpT3kn
+         K0HmkLbjtq7AAdMqq3jRx2xCs1CkU8J6koLuUdBiQo/0+D+FqV2+Mo92fZIJc9A313sC
+         H0q1sE53VZLYJGzW+v1q4nPdJqmQRhcMeEF63Nmsc6AnVGTs7AB2YclHfY766+G7Un+w
+         fKTCCmBIg70jQfUodNJnq4WqYEcFdMs0PwpvC4Yie7V4qkLzZT9HJ0ODDoa0DfL+bi4q
+         S93Q==
+X-Gm-Message-State: AFqh2krOW/n8iRANQUxzMmWSXwT3dd/aRpaGxdecwGFLdLd5c0WfQBjF
+	Zz46saA4Fh/kwdghvbi7oDprvLf8UuamPR0A18eMZ28/
+X-Google-Smtp-Source: AMrXdXuhb12LWb6wICA3VCnxLP/t0b4iH0EBJA4zRU4vyCI75SIIm9n7KKygzb8QtKCw/IR1LJppZTlj0TlllOvSduo=
+X-Received: by 2002:a25:aa0d:0:b0:76d:bea0:8a05 with SMTP id
+ s13-20020a25aa0d000000b0076dbea08a05mr4070960ybi.153.1672842604697; Wed, 04
+ Jan 2023 06:30:04 -0800 (PST)
+MIME-Version: 1.0
+From: Amadou Oumar Diallo <amadououmardiallo830@gmail.com>
+Date: Wed, 4 Jan 2023 14:29:52 +0000
+Message-ID: <CADa5S80Eqrxj+d=JQuS7Otaqehsk-d4foEH6MybZ6oj=BmQeLA@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000037dda505f17105e4"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000037dda505f17105e4
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Je suis int=C3=A9ress=C3=A9 voici mon num=C3=A9ro WhatsApp 00221775945022
+
+--00000000000037dda505f17105e4
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Je suis int=C3=A9ress=C3=A9 voici mon num=C3=A9ro WhatsAp=
+p 00221775945022<div dir=3D"auto"><br></div></div>
+
+--00000000000037dda505f17105e4--

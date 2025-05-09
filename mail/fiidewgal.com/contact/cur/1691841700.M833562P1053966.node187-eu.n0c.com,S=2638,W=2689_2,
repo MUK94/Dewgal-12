@@ -1,0 +1,51 @@
+Return-Path: <contact@fiidewgal.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id JMGcMaR012QOFRAA3R2AvA
+	(envelope-from <contact@fiidewgal.com>)
+	for <contact@fiidewgal.com>; Sat, 12 Aug 2023 14:01:40 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4RNK5H72dxz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="ov9mQWPU"
+X-N0C-MailScanner-eFa-Watermark: 1692446444.38508@lM07TZpQu30IMYY62kFC6Q
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa-SpamScore: ss
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 876744012B06.A8226
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from [127.0.0.1] ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 876744012B06
+	for <contact@fiidewgal.com>; Sat, 12 Aug 2023 14:00:40 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 876744012B06
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 876744012B06
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1691841640;
+	bh=wG+RLiXsKGjfHz88weynaVhI+Ij8TP7hJp38VkXrK7k=;
+	h=From:To:Subject:Date:From;
+	b=ov9mQWPUZrRwDB7OTBbq1SUirJVsOfdeW3VZJib/J4Le18+/0FG+VgMbFf8TI4MwZ
+	 J6j4deWHFsl1eDjMGRfQw5I3UOK60WkrdrbR8n0IJ3hlU8OcqfoF9h84qc20lOBGSD
+	 nVWzqvQ6u//xuF0xasK70mZ632LylhOJzPhZjvc8=
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: contact@fiidewgal.com
+Subject: Reproach
+Message-ID: <e4d46d6f39a271b3315d8db73c70ab18@fiidewgal.com>
+MIME-Version: 1.0
+Date: Sat, 12 Aug 2023 14:00:40 +0200
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<a href=3D24avant.ru>=D0=A0=D0=88=D0=A1=D0=83=D0=A1=E2=80=9A=D0=A0=C2=B0=
+=D0=A0=D0=85=D0=A0=D1=95=D0=A0=D0=86=D0=A0=D1=94=D0=A0=C2=B0 =D0=A0=D1=
+=95=D0=A1=E2=80=9A=D0=A0=D1=95=D0=A0=D1=97=D0=A0=C2=BB=D0=A0=C2=B5=D0=A0=
+=D0=85=D0=A0=D1=91=D0=A1=D0=8F</a>=20
+<a href=3Dhttps://24avant.ru>https://24avant.ru</a>=20
+<a href=3Dhttps://google.ch/url?q=3Dhttp://24avant.ru/>http://google.sm/url=
+?q=3Dhttp://24avant.ru/</a>
+

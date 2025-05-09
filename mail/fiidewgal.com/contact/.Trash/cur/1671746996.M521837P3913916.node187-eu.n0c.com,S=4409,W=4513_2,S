@@ -1,0 +1,104 @@
+Return-Path: <>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 4VMGH7TVpGO8uDsA3R2AvA
+	(envelope-from <>)
+	for <contact@fiidewgal.com>; Thu, 22 Dec 2022 23:09:56 +0100
+Received: by node187-eu.n0c.com (Postfix)
+	id 7978E401AEF7; Thu, 22 Dec 2022 17:09:56 -0500 (EST)
+Date: Thu, 22 Dec 2022 17:09:56 -0500 (EST)
+From: MAILER-DAEMON@node187-eu.n0c.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: contact@fiidewgal.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="EAC3B401AEEF.1671746996/node187-eu.n0c.com"
+Message-Id: <20221222220956.7978E401AEF7@node187-eu.n0c.com>
+
+This is a MIME-encapsulated message.
+
+--EAC3B401AEEF.1671746996/node187-eu.n0c.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host node187-eu.n0c.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<sowousman@yahoo.fr>: host mx-eu.mail.am0.yahoodns.net[188.125.72.73] said: 554
+    30 Sorry, your message to sowousman@yahoo.fr cannot be delivered. This
+    mailbox is disabled (554.30). (in reply to end of DATA command)
+
+--EAC3B401AEEF.1671746996/node187-eu.n0c.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; node187-eu.n0c.com
+X-Postfix-Queue-ID: EAC3B401AEEF
+X-Postfix-Sender: rfc822; contact@fiidewgal.com
+Arrival-Date: Thu, 22 Dec 2022 17:09:55 -0500 (EST)
+
+Final-Recipient: rfc822; sowousman@yahoo.fr
+Original-Recipient: rfc822;sowousman@yahoo.fr
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; mx-eu.mail.am0.yahoodns.net
+Diagnostic-Code: smtp; 554 30 Sorry, your message to sowousman@yahoo.fr cannot
+    be delivered. This mailbox is disabled (554.30).
+
+--EAC3B401AEEF.1671746996/node187-eu.n0c.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <contact@fiidewgal.com>
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NdPcg68Qkz34SDnG
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="fsN6aK1k"
+X-N0C-MailScanner-eFa-Watermark: 1672351793.20702@oejZPte5eFiYW5Fl7YVYZQ
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 6DF77401AEEF.A9E70
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 6DF77401AEEF
+	for <sowousman@yahoo.fr>; Thu, 22 Dec 2022 23:09:52 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 6DF77401AEEF
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 6DF77401AEEF
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1671746992;
+	bh=2gdO3G/gx1Bf7EICAThl0C7v03Y029ZVVy+fbGO8IV4=;
+	h=Date:Subject:From:To:From;
+	b=fsN6aK1k4Xk0bFOhVEoh9picYl60XCVi6b1h7vjmZm9RC+i/X+0yExCZM2SfyJScz
+	 Oz/jTvfwULZXcuGhmxvgUuZWsZ0iSf1mhDknSN20w8564SkxXdevgb53ruFhNYl0vP
+	 wnHFCmkyxUUX2mMZtOuKvzt3HvXrGQvKAA67jpSI=
+Message-ID: <78fa1bf9f537fc3fa7ab75e3bbdbb701@fiidewgal.com>
+Date: Thu, 22 Dec 2022 23:09:52 +0100
+Subject: =?utf-8?Q?R=C3=A9initialisation?= du mot de passe
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: sowousman@yahoo.fr
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<p>Bonjour&nbsp;Ousman Sow,</p><p>Votre code de v=C3=A9rification pour la r=
+=C3=A9initialisation du mot de passe est : [[code]]<br></p><p><br></p><p>Me=
+rci !<br></p><p>Ne r=C3=A9pondez pas</p>
+
+
+--EAC3B401AEEF.1671746996/node187-eu.n0c.com--

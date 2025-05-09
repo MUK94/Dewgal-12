@@ -1,0 +1,104 @@
+Return-Path: <>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id ncJFBYabo2P8WjAA3R2AvA
+	(envelope-from <>)
+	for <contact@fiidewgal.com>; Thu, 22 Dec 2022 00:49:26 +0100
+Received: by node187-eu.n0c.com (Postfix)
+	id 0E05E401AEF7; Wed, 21 Dec 2022 18:49:26 -0500 (EST)
+Date: Wed, 21 Dec 2022 18:49:26 -0500 (EST)
+From: MAILER-DAEMON@node187-eu.n0c.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: contact@fiidewgal.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="AC341401A44B.1671666566/node187-eu.n0c.com"
+Message-Id: <20221221234926.0E05E401AEF7@node187-eu.n0c.com>
+
+This is a MIME-encapsulated message.
+
+--AC341401A44B.1671666566/node187-eu.n0c.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host node187-eu.n0c.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<sow@yahoo.com>: host mta5.am0.yahoodns.net[67.195.204.79] said: 554 30 Sorry,
+    your message to sow@yahoo.com cannot be delivered. This mailbox is disabled
+    (554.30). (in reply to end of DATA command)
+
+--AC341401A44B.1671666566/node187-eu.n0c.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; node187-eu.n0c.com
+X-Postfix-Queue-ID: AC341401A44B
+X-Postfix-Sender: rfc822; contact@fiidewgal.com
+Arrival-Date: Wed, 21 Dec 2022 18:49:24 -0500 (EST)
+
+Final-Recipient: rfc822; sow@yahoo.com
+Original-Recipient: rfc822;sow@yahoo.com
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; mta5.am0.yahoodns.net
+Diagnostic-Code: smtp; 554 30 Sorry, your message to sow@yahoo.com cannot be
+    delivered. This mailbox is disabled (554.30).
+
+--AC341401A44B.1671666566/node187-eu.n0c.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <contact@fiidewgal.com>
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Ncqsw1dpcz34SDnG
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="1jlbLic/"
+X-N0C-MailScanner-eFa-Watermark: 1672271364.12757@ArkL6mjzYSb2sTlZZStZXw
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 24A7D401AEF7.A8A90
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 24A7D401AEF7
+	for <sow@yahoo.com>; Thu, 22 Dec 2022 00:49:23 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 24A7D401AEF7
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 24A7D401AEF7
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1671666563;
+	bh=2gdO3G/gx1Bf7EICAThl0C7v03Y029ZVVy+fbGO8IV4=;
+	h=Date:Subject:From:To:From;
+	b=1jlbLic/DPv+quPOsc+3K2/eXQGS4M8SYDb1YuFGkpOL5UbRp5tCSLJuJoF88DPXP
+	 jHrAS8gc0UFZiRmngb/J0R3FHRvRLt53Tjw63pSNuVi1Ld2+xLsQcHBPFEKvLMh8Ht
+	 1az9B6fU2cGNW8m3BcxAgPPGMvNXrljr+YI36fmU=
+Message-ID: <7f68ccd953c06a6cff5cd32abaee19d8@fiidewgal.com>
+Date: Thu, 22 Dec 2022 00:49:22 +0100
+Subject: =?utf-8?Q?R=C3=A9initialisation?= du mot de passe
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: sow@yahoo.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<p>Bonjour&nbsp;Ousman Sow,</p><p>Votre code de v=C3=A9rification pour la r=
+=C3=A9initialisation du mot de passe est : [[code]]<br></p><p><br></p><p>Me=
+rci !<br></p><p>Ne r=C3=A9pondez pas</p>
+
+
+--AC341401A44B.1671666566/node187-eu.n0c.com--

@@ -1,0 +1,81 @@
+Return-Path: <barrybintaousmane@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id o4UdKF8XO2SS6zsA3R2AvA
+	(envelope-from <barrybintaousmane@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 15 Apr 2023 23:30:07 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4PzRL46VBFz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="FV+h8ffI"
+X-N0C-MailScanner-eFa-Watermark: 1682199003.1321@aCHJsqq9Ce6CVj9AxPJ5Zg
+X-N0C-MailScanner-eFa-From: barrybintaousmane@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: s
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 1CB8E4063271.AFAA7
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-yb1-f181.google.com ([209.85.219.181] [209.85.219.181])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 1CB8E4063271
+	for <contact@fiidewgal.com>; Sat, 15 Apr 2023 23:29:31 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 1CB8E4063271
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 1CB8E4063271
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=FV+h8ffI
+Received: by mail-yb1-f181.google.com with SMTP id c7so7517301ybn.3
+        for <contact@fiidewgal.com>; Sat, 15 Apr 2023 14:29:30 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1681594169; x=1684186169;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=xYMFiFeZSj8DXF9jtCPEoddWwGrApJfz84doUZZG9IM=;
+        b=FV+h8ffInTYUJvlMKHQkrMscivvbgBAHw31rJBe66y1yqsrZnU+pbv685MWkZgkZTF
+         iT1rnjIj29Kk7LaopI5NReZkTAMLJjrhZGFb6PnzmERE/6A4mYF611SZoaphdhB7RHjN
+         tXkFSs9syi08jw7I8HoK/Ih51nKSqME4H/NtygR9euh4HYGOv+0NscYVMp2NoootkW1x
+         VLp+9jOrFnzQxSAjckvZaC5GSO1T8gR9GfEEiosX8J1jNwoNUmue5yvqE9Q0TCacT77S
+         /ZyLcNDx8hqyWlvN3gkgdbDKv1cVYMpZ8rNlMsu07rCjd2qQ5MOluXkP6xlrpH+AFiuz
+         VTyw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1681594169; x=1684186169;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=xYMFiFeZSj8DXF9jtCPEoddWwGrApJfz84doUZZG9IM=;
+        b=BpddxJ5wKp4NBBcRf4cktlQ1GetsU2E1MQFxWgi32O5+eMbggwFXHqGaUTWYI5S7u9
+         LBLhvCihbUv6Gw67Et4sQzHXc8GVbgCkYuo/XXED1xVYr1bqx53DdSUP20QF949DVzP4
+         h1t0t8XjoLHb/No6v8hTwaIxyi33oieNJrJ/fPnot6oJmbbW+5b31eazo7fUB+OmAa/u
+         5qQWP6G1QK0i0dzKrs/oNOpkuCXsef7nNjRZ99DtK4WZ0q3nWXPK11NhHT08O9zeXGfN
+         9n5LIgiqMY/iJQaNJkOHgbaxJjt0pltGZFaVZUVLuqoMswgtpbAMED7eSs/inzKal/xt
+         pJDQ==
+X-Gm-Message-State: AAQBX9dXkEdSTb7FosUPVF4Fsd2EgeM44vvf7YeQvKDx+3I9llqt0XY0
+	vyhw2ec5p8ubINJYCNlku8zzmvQALQ8jKD5aNxIC65EV
+X-Google-Smtp-Source: AKy350Y9tbQOh3H8BRamqrremVWQMaKQS8Mtsx5Qto42IPSQyumw7j9aHlJNrbWbm+I68cFCPSyhaajjcVCgKcQcxRw=
+X-Received: by 2002:a25:308a:0:b0:b8e:e0db:5b9d with SMTP id
+ w132-20020a25308a000000b00b8ee0db5b9dmr5262579ybw.12.1681594168590; Sat, 15
+ Apr 2023 14:29:28 -0700 (PDT)
+MIME-Version: 1.0
+From: Barry Binta Ousmane <barrybintaousmane@gmail.com>
+Date: Sat, 15 Apr 2023 21:29:17 +0000
+Message-ID: <CANCge4wwd7TmLNfsQ0oNJi9=4dHAr5wc6zMmUDNjU8rzzX8vuA@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000013438d05f966a718"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000013438d05f966a718
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Je suis a la recherche d'une future =C3=A9pouse
+
+--00000000000013438d05f966a718
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Je suis a la recherche d&#39;une future =C3=A9pouse=C2=A0=
+</div>
+
+--00000000000013438d05f966a718--

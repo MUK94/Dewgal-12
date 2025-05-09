@@ -1,0 +1,77 @@
+Return-Path: <hamzabalde213@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 3NjNKPebumNk1Q8A3R2AvA
+	(envelope-from <hamzabalde213@gmail.com>)
+	for <contact@fiidewgal.com>; Sun, 08 Jan 2023 11:33:27 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NqYMC0gfpz34SDmk
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="ZhVcEkLC"
+X-N0C-MailScanner-eFa-Watermark: 1673778801.87755@0tXc8wbnqMrVazzKWsjYjg
+X-N0C-MailScanner-eFa-From: hamzabalde213@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 666E84020D58.A13D8
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ej1-f49.google.com ([209.85.218.49] [209.85.218.49])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 666E84020D58
+	for <contact@fiidewgal.com>; Sun,  8 Jan 2023 11:32:48 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 666E84020D58
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 666E84020D58
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=ZhVcEkLC
+Received: by mail-ej1-f49.google.com with SMTP id ud5so13358697ejc.4
+        for <contact@fiidewgal.com>; Sun, 08 Jan 2023 02:32:48 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=Vc273CSGYMyRAPxPXpA+cL+wfRIJpTvQlDoKmTXnFqE=;
+        b=ZhVcEkLCPV9etfFboWiA0eyvnJO2h+a5zYuKda9gu8w3uZXVI92vRzTIOFrwAPXds2
+         Ob14Z3tGiofGBoFwMZb3QfGQRIOsNzJXVGRkCDg8NZExWxDdeVeOzqzBLrPWjqk8eH/V
+         nsRSoCmnT+HAGxcUk6Jr1AQq3xiBEHL2vOw3w3VpvWFWoPOsCxNHB2odbSbkNKkJ3q/O
+         SjyfvKqtr70pbeDHffvKJokckH+IBY1cTK436/96UnswVyWGwC0GwioNWmfncdm2ItI5
+         pw28gnuwK9phX295DbDvGQ8BdTZKqrYrlrICNEdqp/j9F7ipfKDmNaxEGz4XRvftbswp
+         SubA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=Vc273CSGYMyRAPxPXpA+cL+wfRIJpTvQlDoKmTXnFqE=;
+        b=0+QOHTg6KhiqaV6kmTLidHDXIs1GXUFItaQMVlz3NazXNsofvnHXY/kilVxyzPKKRn
+         aoTF/j/NSG+fsIxrS05D5cshnBTjiLgMtUaPTLTWT0E4JHZ3DxF4OlG0ABo7aML4Es0L
+         98eS3WPRpeHhh9ZdPMuctb+7IiM7/88ETEIGWQwJCHat5pclbJdO6SXPH7/lwN+SPMcx
+         lG7FyxzNEwi0T96wL6XN2gy0oCW2ppjYqAyYcq5TD6TO1xa3lYi4U+Btl/h2FIjWY4Fm
+         dhOVbHhQDnmOavHABd0xpNPr066FGVU+HQPqx7LBXJkDulzzVt5SsVZa3zCxerKmaAcs
+         VJ3A==
+X-Gm-Message-State: AFqh2kqg7UHYsqIf29hfJQlpgFK+AfEOF5kWqhq+jChD5trRhNlpJVcr
+	WFprTkwT7eNjxVDp4zdD14LK+4nrC5dtyI6tcScn4Qsj
+X-Google-Smtp-Source: AMrXdXvo2KcXcAH+v97RdN7IRZ+MHeUM7gWOiJ+3chZO7poAMlP2RaqFW/6Sj+xdyNnYQHjU1R5/YdxnPpXtRNxt+xw=
+X-Received: by 2002:a17:906:f8ca:b0:7ad:95d2:9df2 with SMTP id
+ lh10-20020a170906f8ca00b007ad95d29df2mr5970786ejb.607.1673173967583; Sun, 08
+ Jan 2023 02:32:47 -0800 (PST)
+MIME-Version: 1.0
+From: Hamza Balde <hamzabalde213@gmail.com>
+Date: Sun, 8 Jan 2023 10:32:28 +0000
+Message-ID: <CAPWO28jJ+hLozT3Q2B0COUzqbDqTC_EqXRF8NaHm77rbVdn4UA@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000fc3d3b05f1be2b31"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000fc3d3b05f1be2b31
+Content-Type: text/plain; charset="UTF-8"
+
+Bonjour tu vas bien ?
+
+--000000000000fc3d3b05f1be2b31
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto">Bonjour tu vas bien ?</div>
+
+--000000000000fc3d3b05f1be2b31--

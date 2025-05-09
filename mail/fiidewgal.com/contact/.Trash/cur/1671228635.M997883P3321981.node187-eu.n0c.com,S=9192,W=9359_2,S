@@ -1,0 +1,167 @@
+Return-Path: <>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id pWxlO9vsnGN9sDIA3R2AvA
+	(envelope-from <>)
+	for <contact@fiidewgal.com>; Fri, 16 Dec 2022 23:10:35 +0100
+Received: by node187-eu.n0c.com (Postfix)
+	id ECA20401AEF6; Fri, 16 Dec 2022 17:10:35 -0500 (EST)
+Date: Fri, 16 Dec 2022 17:10:35 -0500 (EST)
+From: MAILER-DAEMON@node187-eu.n0c.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: contact@fiidewgal.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="A26664003223.1671228635/node187-eu.n0c.com"
+Message-Id: <20221216221035.ECA20401AEF6@node187-eu.n0c.com>
+
+This is a MIME-encapsulated message.
+
+--A26664003223.1671228635/node187-eu.n0c.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host node187-eu.n0c.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<idrissa662456@gmail.com>: host alt1.gmail-smtp-in.l.google.com[142.250.153.26]
+    said: 452-4.2.2 The email account that you tried to reach is over quota.
+    Please direct 452-4.2.2 the recipient to 452 4.2.2
+    https://support.google.com/mail/?p=OverQuotaTemp
+    b15-20020a056402350f00b0046a0fe69325si3845762edd.265 - gsmtp (in reply to
+    RCPT TO command)
+
+--A26664003223.1671228635/node187-eu.n0c.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; node187-eu.n0c.com
+X-Postfix-Queue-ID: A26664003223
+X-Postfix-Sender: rfc822; contact@fiidewgal.com
+Arrival-Date: Sun, 11 Dec 2022 16:56:24 -0500 (EST)
+
+Final-Recipient: rfc822; idrissa662456@gmail.com
+Original-Recipient: rfc822;idrissa662456@gmail.com
+Action: failed
+Status: 4.2.2
+Remote-MTA: dns; alt1.gmail-smtp-in.l.google.com
+Diagnostic-Code: smtp; 452-4.2.2 The email account that you tried to reach is
+    over quota. Please direct 452-4.2.2 the recipient to 452 4.2.2
+    https://support.google.com/mail/?p=OverQuotaTemp
+    b15-20020a056402350f00b0046a0fe69325si3845762edd.265 - gsmtp
+
+--A26664003223.1671228635/node187-eu.n0c.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <contact@fiidewgal.com>
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NVdr841bVz34SDnK
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="hznC1tM6"
+X-N0C-MailScanner-eFa-Watermark: 1671400584.36551@wlpU53hmkvO/EpYCJQJHqw
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 7BAA5401AEEF.A6A7C
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 7BAA5401AEEF
+	for <idrissa662456@gmail.com>; Sun, 11 Dec 2022 22:56:21 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 7BAA5401AEEF
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 7BAA5401AEEF
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1670795781;
+	bh=pPGrzI7CQmnB4uuvVou6xLzwGXUVzMzBLwL343uhTOs=;
+	h=Date:Subject:From:To:From;
+	b=hznC1tM6qi6C4Oouo69jkIz3wncKxERws1hu9+rYlr3RT3Y8lWlIL+Isxim9y/yx4
+	 hHaKzheOQHFSiqHtVSNjeH/Gh2yR1WVGg5zOqEvWvkf5H3U7kbPX1i7puv1vjwSQD7
+	 l9FGGVLg36yicCquTW801bs9ZouvbHvd3avDX4dA=
+Message-ID: <ae7fd6827f2c98a16c87e3b59161b86c@fiidewgal.com>
+Date: Sun, 11 Dec 2022 22:56:21 +0100
+Subject: Informations et Rappel
+From: contact@fiidewgal.com
+To: idrissa662456@gmail.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<p class=3D"p1" style=3D"margin-right: 0px; margin-bottom: 0px; margin-left=
+: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-=
+stretch: normal; line-height: normal; font-family: &quot;Helvetica Neue&quo=
+t;;">Salam Aleykoum ,</p><p class=3D"p1" style=3D"margin-right: 0px; margin=
+-bottom: 0px; margin-left: 0px; font-variant-numeric: normal; font-variant-=
+east-asian: normal; font-stretch: normal; line-height: normal; font-family:=
+ &quot;Helvetica Neue&quot;;">Nous sommes tr=C3=A8s heureux de vous avoir p=
+armi nos</p><p class=3D"p1" style=3D"margin-right: 0px; margin-bottom: 0px;=
+ margin-left: 0px; font-variant-numeric: normal; font-variant-east-asian: n=
+ormal; font-stretch: normal; line-height: normal; font-family: &quot;Helvet=
+ica Neue&quot;;">membres dans la plateforme et nous souhaitons que<span cla=
+ss=3D"Apple-converted-space">&nbsp;</span></p><p class=3D"p1" style=3D"marg=
+in-right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-numeric: =
+normal; font-variant-east-asian: normal; font-stretch: normal; line-height:=
+ normal; font-family: &quot;Helvetica Neue&quot;;">Vous y rester.C=E2=80=
+=99est pourquoi nous vous prions de<span class=3D"Apple-converted-space">&n=
+bsp;</span></p><p class=3D"p1" style=3D"margin-right: 0px; margin-bottom: 0=
+px; margin-left: 0px; font-variant-numeric: normal; font-variant-east-asian=
+: normal; font-stretch: normal; line-height: normal; font-family: &quot;Hel=
+vetica Neue&quot;;">mettre =C3=A0 jour votre profil en mettant correctement=
+<span class=3D"Apple-converted-space">&nbsp;</span></p><p class=3D"p1" styl=
+e=3D"margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-=
+numeric: normal; font-variant-east-asian: normal; font-stretch: normal; lin=
+e-height: normal; font-family: &quot;Helvetica Neue&quot;;">Votre date de n=
+aissance , votre =C3=A9tat civil , votre photo</p><p class=3D"p1" style=3D"=
+margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-numer=
+ic: normal; font-variant-east-asian: normal; font-stretch: normal; line-hei=
+ght: normal; font-family: &quot;Helvetica Neue&quot;;">et votre numero de t=
+elephone avec l'indicatif</p><p class=3D"p1" style=3D"margin-right: 0px; ma=
+rgin-bottom: 0px; margin-left: 0px; font-variant-numeric: normal; font-vari=
+ant-east-asian: normal; font-stretch: normal; line-height: normal; font-fam=
+ily: &quot;Helvetica Neue&quot;;">Si cela est compliqu=C3=A9 pour vous fait=
+es nous parvenir<span class=3D"Apple-converted-space">&nbsp;</span></p><p c=
+lass=3D"p1" style=3D"margin-right: 0px; margin-bottom: 0px; margin-left: 0p=
+x; font-variant-numeric: normal; font-variant-east-asian: normal; font-stre=
+tch: normal; line-height: normal; font-family: &quot;Helvetica Neue&quot;;"=
+>votre num=C3=A9ro de membre qui est sur votre profil public</p><p class=3D=
+"p1" style=3D"margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font=
+-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: no=
+rmal; line-height: normal; font-family: &quot;Helvetica Neue&quot;;">avec v=
+os informations cit=C3=A9es ci dessus .</p><p class=3D"p1" style=3D"margin-=
+right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-numeric: nor=
+mal; font-variant-east-asian: normal; font-stretch: normal; line-height: no=
+rmal; font-family: &quot;Helvetica Neue&quot;;">Vous pouvez =C3=A9galement =
+nous faire parvenir votre numero </p><p class=3D"p1" style=3D"margin-right:=
+ 0px; margin-bottom: 0px; margin-left: 0px; font-variant-numeric: normal; f=
+ont-variant-east-asian: normal; font-stretch: normal; line-height: normal; =
+font-family: &quot;Helvetica Neue&quot;;">de membre avec<span class=3D"Appl=
+e-converted-space">&nbsp;</span>votre photo et num=C3=A9ro de telephone sur=
+</p><p class=3D"p1" style=3D"margin-right: 0px; margin-bottom: 0px; margin-=
+left: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; f=
+ont-stretch: normal; line-height: normal; font-family: &quot;Helvetica Neue=
+&quot;;"> notre WhatsApp ; juste scanner le QR Code ci-dessous.</p><p class=
+=3D"p1" style=3D"margin-right: 0px; margin-bottom: 0px; margin-left: 0px; f=
+ont-variant-numeric: normal; font-variant-east-asian: normal; font-stretch:=
+ normal; line-height: normal; font-family: &quot;Helvetica Neue&quot;;">Mer=
+ci pour votre comprehension!</p><p class=3D"p1" style=3D"margin-right: 0px;=
+ margin-bottom: 0px; margin-left: 0px; font-variant-numeric: normal; font-v=
+ariant-east-asian: normal; font-stretch: normal; line-height: normal;"><fon=
+t face=3D"Helvetica Neue">https://www.facebook.com/messenger_media/?attachm=
+ent_id=3D681462546690285&amp;message_id=3Dmid.%24cAAAAByb93tmLEoHGhGE4Tx4Sc=
+JMo&amp;thread_id=3D100005079398330</font><br></p>
+
+--A26664003223.1671228635/node187-eu.n0c.com--

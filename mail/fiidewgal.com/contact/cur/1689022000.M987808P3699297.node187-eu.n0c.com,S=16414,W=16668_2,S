@@ -1,0 +1,254 @@
+Return-Path: <bounces+1363651-eb9d-contact=fiidewgal.com@smtpgw.twilio.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id G+/JOjBurGRhcjgA3R2AvA
+	(envelope-from <bounces+1363651-eb9d-contact=fiidewgal.com@smtpgw.twilio.com>)
+	for <contact@fiidewgal.com>; Mon, 10 Jul 2023 22:46:40 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4R0GJH5syPz34SDmm
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=twilio.com header.i=@twilio.com header.b="I0NA4nPl"
+X-N0C-MailScanner-eFa-Watermark: 1689626795.00844@iS4EAgoXBPdls+qzFV3L8Q
+X-N0C-MailScanner-eFa-From: bounces+1363651-eb9d-contact=fiidewgal.com@smtpgw.twilio.com
+X-N0C-MailScanner-eFa-SpamScore: s
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: BED7C40046AD.A54D1
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from o8.smtpgw.twilio.com ([167.89.35.33] [167.89.35.33])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id BED7C40046AD
+	for <contact@fiidewgal.com>; Mon, 10 Jul 2023 22:46:33 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com BED7C40046AD
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=reject dis=none) header.from=twilio.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=smtpgw.twilio.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com BED7C40046AD
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=twilio.com header.i=@twilio.com header.a=rsa-sha256 header.s=s1 header.b=I0NA4nPl
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=twilio.com;
+	h=content-type:from:mime-version:subject:to:cc:content-type:from:
+	subject:to;
+	s=s1; bh=Tvtc9nZXSAaTb0TuRjt+IZ6x4ShRf7DW/myYK/Rv9v4=;
+	b=I0NA4nPly5ZgnH9ENluK+rJLQFPpIXxQwkQE6aGlNo1hPJUjR7rCXYr5KCqEPiEvyW3p
+	qpTH6KVU3bN7NkJVLi9e1RMHAGD9HcVQQBI85X0elVpG6AtilR+dqhEHxZsYM82ivY3wXs
+	WvLdnjnf3/JZfFDaff1U9LWzEWTSJXNMm5Z3UTaGUZWaTepNwkORvn+QZbP4Xo1Sw/T+OG
+	hQPEwA++KxE/Vx8pF563qERy/G48ujt7A2sgqcIkzIKravY2kVK8RYYZ04CyqMgrMWZ7zo
+	imspIISVEBz1IJFC6LMVFqF8cVmrc1Lw9XQmd/428BqU7OQM+iMiLmzaUo8D+/kQ==
+Received: by filterdrecv-5ffc5df45c-2llcx with SMTP id filterdrecv-5ffc5df45c-2llcx-1-64AC6E26-63
+        2023-07-10 20:46:30.655055416 +0000 UTC m=+5260217.867591071
+Received: from MTM2MzY1MQ (unknown)
+	by geopod-ismtpd-36 (SG) with HTTP
+	id 9BnYAQGUS1KdgHpnKZRvJg
+	Mon, 10 Jul 2023 20:46:30.600 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=5c9466354e4e24a331c6b833c4e13e9a56ab5ed6488f14b174b57edf13b0
+Date: Mon, 10 Jul 2023 20:46:30 +0000 (UTC)
+From: Twilio <no-reply@twilio.com>
+Mime-Version: 1.0
+Message-ID: <9BnYAQGUS1KdgHpnKZRvJg@geopod-ismtpd-36>
+Subject: Verify your email
+X-SG-EID: 
+ =?us-ascii?Q?rEnrq37n6BZzufiFBK7kEncMTvFTDogRL3qBipOxI8smEyHPPmXmZsfBL6akgg?=
+ =?us-ascii?Q?PnLuf+5TzLoSclqiIsv24MEu70MBThgK3=2FIp3mk?=
+ =?us-ascii?Q?tCaVwaR4q1uCOJV4t1Lm=2FsPcJGCyXUcTXV8JqGx?=
+ =?us-ascii?Q?c6JUlgk+OlQcMzzJyS4dJL780zcGOowRxNgpTJ7?=
+ =?us-ascii?Q?iDeQ5REHw+VxpbKr+1X7d6NbApT+6MCG=2FA1mHHW?=
+ =?us-ascii?Q?YKp9AZBGsdFKyp=2F8JXXzB=2Flno3kgcyvVSUcKzG?=
+X-SG-ID: 
+ =?us-ascii?Q?N2C25iY2uzGMFz6rgvQsb8raWjw0ZPf1VmjsCkspi=2FKHgAsE=2FCUk5eZaRe5Ltr?=
+ =?us-ascii?Q?cbGx+bk8Bpd+pJG8d98+OkvJGKQYuvAB6iyuvuR?=
+ =?us-ascii?Q?tLQAdSIYnzvdJOMdYzD8l6lED9DIzrYExoJVVJ2?=
+ =?us-ascii?Q?xzt62VScxHq0z8LcWmU=2F4Z9gJzB1=2F+Qa=2FfMe9um?=
+ =?us-ascii?Q?KA5swmUHv12Z=2F?=
+To: Contact@fiidewgal.com
+X-Entity-ID: D7mMIPVAoJjNKtPMuV4s9w==
+X-N0C-Node-IP: 185.221.182.45
+
+--5c9466354e4e24a331c6b833c4e13e9a56ab5ed6488f14b174b57edf13b0
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=us-ascii
+Mime-Version: 1.0
+
+Hi ABDOUL Diallo,
+
+To activate your Twilio Account, please verify your email address.
+Your account will not be created until your email address is confirmed.
+
+Verify Your Email
+( https://links.twiliocdn.com/ls/click?upn=3D3kZIcBV84MSbPEonqfrF6dGb3PJ6jb=
+ldw7J3yS57HqemXns2WYta3RoHKq8W8aC71QngXAGCjGH-2FgoX3JlSj95GK-2FCaohLxwoFySb=
+-2B6NtBia1VovYSxH-2FsOJw8IZSC0eE52hRu0xXbrVKA-2FhGMp17hJu6DAv8xrwg182adprlR=
+gs31syX6N0oCX4aVp3glahEyPG-2Fcc5tGJXpZcIgqKU6GNUtT6xzwfjRMfyeD0-2FT-2BO3Kw3=
+w0-2F4xvSL-2FfKFB-2BSzsZUofqQBOd6UUxlSDAHHNsw-3D-3DhNAL_LRmZwZTIHdvEbXw2vhg=
+kxkl-2FJtBSxyK0rKKCwe5gPGYXWZV-2Faw-2F6QvKJhvMpW3FY-2Fq-2BMtxkuC1qihq0nmrFV=
+neBGPgD08Uh6L8XpfuBEK-2F-2Fjga1RJmkHBFAxf93awu398hgMir7hmrOLnTL49cijSEdhMqH=
+cEGO-2FTWwW-2FgCUpBnqIyGiqQBJGIUMv4GOWJxoNyL8Nf-2F6z3oLJIqnPYb6hGUW6kzbQacG=
+uUtU6hnVgIdocWHWmmEDk1G2cpK9an3nQzVVW60KngEq9LdFwXy-2FRKapikGO3YuLplzIlks28=
+odOFkH8bVSRQauZe33aqV2YBRq-2BPIzvwFC6G17NpeopBWxd27CU9xcGyLJwiXOk1dk-3D )
+
+Or, copy and paste the following URL into your browser:
+https://links.twiliocdn.com/ls/click?upn=3D3kZIcBV84MSbPEonqfrF6dGb3PJ6jbld=
+w7J3yS57HqemXns2WYta3RoHKq8W8aC71QngXAGCjGH-2FgoX3JlSj96-2B3Qez-2BArqRLpnUm=
+EMNJ86xMN63mJeZ31rHz32KEoTCiu9HnrWFPjBA6HxqGRnAZn-2BQK6Wic82ZL5E3kVyhpl2r23=
+2P71DFA63EXHTnVfHs3yOSpKQDhy6JHBK6pybJH-2BY6uiuMHdSx4oSva1T9ogD-2BSHZnFz1wo=
+EB-2ByDRmIdWFzNlSOE5yqdV7-2FM8bjyL59YXIvHH1WlEX1DqXmaV3yj0-3D6TsM_LRmZwZTIH=
+dvEbXw2vhgkxkl-2FJtBSxyK0rKKCwe5gPGYXWZV-2Faw-2F6QvKJhvMpW3FY-2Fq-2BMtxkuC1=
+qihq0nmrFVneBGPgD08Uh6L8XpfuBEK-2F-2Fjga1RJmkHBFAxf93awu398hgMir7hmrOLnTL49=
+cijSEdhMqHcEGO-2FTWwW-2FgCUpBnqIyGiqQBJGIUMv4GOWJxoNyL8Nf-2F6z3oLJIqnPYb6hM=
+5DgUyly752NbLZiZy5iySDS0MXapJVmezxvynojIdK7QeIwexRZWoYIp9Vb00w7EOf8la89gXZz=
+NWPnd6nHSKOPpyKSEtWOTurjfZKnlopINO7GCDlNuXFAJ0CLGl2fb516GbsWB6CdFOkTb5fjxg-=
+3D
+
+This system email was sent to ABDOUL Diallo (Contact@fiidewgal.com) regardi=
+ng your Twilio Account
+
+US499d1333569fb7f51db50471782d646e by
+
+Twilio, Inc., 375 Beale Street, Suite 300, San Francisco, CA 94105
+--5c9466354e4e24a331c6b833c4e13e9a56ab5ed6488f14b174b57edf13b0
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=us-ascii
+Mime-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" style=3D"-ms-overflow-style: s=
+crollbar; -ms-text-size-adjust: 100%; -webkit-tap-highlight-color: transpar=
+ent; -webkit-text-size-adjust: 100%; border: 0; box-sizing: border-box; fon=
+t: inherit; font-size: 100%; margin: 0; padding: 0; touch-action: manipulat=
+ion; vertical-align: baseline;">
+<head style=3D"box-sizing: inherit;">
+	<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8" s=
+tyle=3D"box-sizing: inherit;">
+	<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1=
+.0" style=3D"box-sizing: inherit;">
+</head>
+<body style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; =
+border: 0; box-sizing: inherit; font: inherit; font-family: sans-serif; fon=
+t-size: 100%; line-height: 1; margin: 0; padding: 0; text-align: left; vert=
+ical-align: baseline; width: 100% !important;">
+=09
+	<table style=3D"background-color: #eaeaea; background-image: url(https://w=
+ww.twilio.com/resources/images/email/background.jpg); border: 0; border-col=
+lapse: collapse; border-spacing: 0; box-sizing: inherit; font: inherit; fon=
+t-family: Whitney-SSm-A,Whitney-SSm-B,Whitney,Helvetica Neue, Helvetica, Ar=
+ial, sans-serif; font-size: 100%; font-weight: 300; line-height: 100%; marg=
+in: 0; padding: 0; text-align: center; vertical-align: baseline; width: 100=
+%;"><tbody style=3D"border: 0; box-sizing: inherit; font: inherit; font-siz=
+e: 100%; margin: 0; padding: 0; vertical-align: baseline;"><tr style=3D"bor=
+der: 0; box-sizing: inherit; font: inherit; font-size: 100%; margin: 0; pad=
+ding: 0; vertical-align: baseline;"><td style=3D"border: 0; box-sizing: inh=
+erit; font: inherit; font-size: 100%; height: 20px; margin: 0; padding: 0; =
+vertical-align: middle;"></td></tr><tr style=3D"border: 0; box-sizing: inhe=
+rit; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align:=
+ baseline;"><td style=3D"border: 0; box-sizing: inherit; font: inherit; fon=
+t-size: 100%; margin: 0; padding: 0; vertical-align: top;"><table style=3D"=
+background-color: #fff; border: 0; border-collapse: collapse; border-color:=
+ #ddd; border-spacing: 0; border-style: solid; border-width: 1px; box-sizin=
+g: inherit; font: inherit; font-size: 100%; margin: 0 auto; max-width: 680p=
+x; padding: 0; text-align: center; vertical-align: baseline; width: 100%;">=
+<tbody style=3D"border: 0; box-sizing: inherit; font: inherit; font-size: 1=
+00%; margin: 0; padding: 0; vertical-align: baseline;"><tr style=3D"border:=
+ 0; box-sizing: inherit; font: inherit; font-size: 100%; margin: 0; padding=
+: 0; vertical-align: baseline;"><td style=3D"border: 0; border-bottom-color=
+: #ddd; border-bottom-style: solid; border-bottom-width: 1px; box-sizing: i=
+nherit; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-ali=
+gn: middle;" align=3D"left"><div style=3D"border: 0; box-sizing: inherit; f=
+ont: inherit; font-size: 100%; margin: 20px; padding: 0; vertical-align: ba=
+seline;"><img width=3D"119" height=3D"35" style=3D"-ms-interpolation-mode: =
+bicubic; border: 0; border-style: none; box-sizing: inherit; font: inherit;=
+ font-size: 100%; margin: 0; outline: none; padding: 0; text-decoration: no=
+ne; vertical-align: baseline;" src=3D"https://www.twilio.com/resources/imag=
+es/email/twilio-logo-alt.jpg" alt=3D"Twilio"></div></td></tr><tr style=3D"b=
+order: 0; box-sizing: inherit; font: inherit; font-size: 100%; margin: 0; p=
+adding: 0; vertical-align: baseline;"><td style=3D"border: 0; box-sizing: i=
+nherit; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-ali=
+gn: middle;"><table style=3D"border: 0; border-collapse: collapse; border-s=
+pacing: 0; box-sizing: inherit; display: inline-block; font: inherit; font-=
+size: 100%; margin: 0; padding: 10px 20px; text-align: center; vertical-ali=
+gn: baseline; width: unset;"><tbody style=3D"border: 0; box-sizing: inherit=
+; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: ba=
+seline;"><tr style=3D"border: 0; box-sizing: inherit; font: inherit; font-s=
+ize: 100%; margin: 0; padding: 0; vertical-align: baseline;"><td style=3D"b=
+order: 0; box-sizing: inherit; font: inherit; font-size: 100%; margin: 0; p=
+adding: 0; vertical-align: middle;"><table style=3D"border: 0; border-colla=
+pse: collapse; border-spacing: 0; box-sizing: inherit; font: inherit; font-=
+size: 100%; margin: 0; max-width: 558px; padding: 0; text-align: center; ve=
+rtical-align: baseline; width: 100%;"><tbody style=3D"border: 0; box-sizing=
+: inherit; font: inherit; font-size: 100%; margin: 0; padding: 0; vertical-=
+align: baseline;"><tr style=3D"border: 0; box-sizing: inherit; font: inheri=
+t; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;"><td s=
+tyle=3D"border: 0; box-sizing: inherit; font: inherit; font-size: 100%; hei=
+ght: 50px; margin: 0; padding: 0; vertical-align: middle;" align=3D"left"><=
+p style=3D"border: 0; box-sizing: inherit; color: rgb(34, 34, 34); font: in=
+herit; font-size: 14px; font-weight: 300; line-height: 20px; margin: 0; pad=
+ding: 0; vertical-align: baseline;">Hi ABDOUL Diallo,</p></td></tr><tr styl=
+e=3D"border: 0; box-sizing: inherit; font: inherit; font-size: 100%; margin=
+: 0; padding: 0; vertical-align: baseline;"><td style=3D"border: 0; box-siz=
+ing: inherit; font: inherit; font-size: 100%; height: 50px; margin: 0; padd=
+ing: 0; vertical-align: middle;" align=3D"left"><p style=3D"border: 0; box-=
+sizing: inherit; color: rgb(34, 34, 34); font: inherit; font-size: 14px; fo=
+nt-weight: 300; line-height: 20px; margin: 0; padding: 0; vertical-align: b=
+aseline;">To activate your Twilio Account, please verify your email address=
+.<br style=3D"box-sizing: inherit;">Your account will not be created until =
+your email address is confirmed.</p></td></tr><tr style=3D"border: 0; box-s=
+izing: inherit; font: inherit; font-size: 100%; margin: 0; padding: 0; vert=
+ical-align: baseline;"><td style=3D"border: 0; box-sizing: inherit; font: i=
+nherit; font-size: 100%; height: 100px; margin: 0; padding: 0; vertical-ali=
+gn: middle;" align=3D"center"><a clicktracking=3D"off" href=3D"https://www.=
+twilio.com/console/activate?x-target-region=3Dus1&key=3D0%3At4hqoIJkakDjFW8=
+xrMiyIwT7eyWSriCbIuejBMBMukLQpVg9PBu29J5nkjt3p8NvcfgkO4fCLqgvfTWr8ZR8iQxqo7=
+odenaUoP9Sxg1ey8Cm7sVCdMICWsIkEF5ne7yg" style=3D"-webkit-text-decoration-sk=
+ip: objects; background-color: transparent; border: 0; box-sizing: inherit;=
+ font: inherit; font-size: 100%; margin: 0; padding: 0; text-decoration: no=
+ne; vertical-align: baseline;"><div style=3D"background-color: #ff0000; bor=
+der: 0; border-color: #ff0000; border-radius: 5px; box-sizing: inherit; col=
+or: white; display: inline-block; font: inherit; font-size: 0.875rem; font-=
+weight: 500; height: 40px; line-height: 40px; margin: 0; min-width: 150px; =
+padding: 0; vertical-align: baseline;">Verify Your Email</div></a></td></tr=
+><tr style=3D"border: 0; box-sizing: inherit; font: inherit; font-size: 100=
+%; margin: 0; padding: 0; vertical-align: baseline;"><td style=3D"border: 0=
+; box-sizing: inherit; font: inherit; font-size: 100%; height: 50px; margin=
+: 0; padding: 0; vertical-align: middle;" align=3D"left"><p style=3D"border=
+: 0; box-sizing: inherit; color: rgb(34, 34, 34); font: inherit; font-size:=
+ 14px; font-weight: 300; line-height: 20px; margin: 0; padding: 0; vertical=
+-align: baseline;">Or, copy and paste the following URL into your browser:<=
+br style=3D"box-sizing: inherit;">https://www.twilio.com/console/activate?x=
+-target-region=3Dus1&amp;key=3D0%3At4hqoIJkakDjFW8xrMiyIwT7eyWSriCbIuejBMBM=
+ukLQpVg9PBu29J5nkjt3p8NvcfgkO4fCLqgvfTWr8ZR8iQxqo7odenaUoP9Sxg1ey8Cm7sVCdMI=
+CWsIkEF5ne7yg</p></td></tr></tbody></table></td></tr></tbody></table></td><=
+/tr></tbody></table><table style=3D"border: 0; border-collapse: collapse; b=
+order-spacing: 0; box-sizing: inherit; display: inline-block; font: inherit=
+; font-size: 100%; margin: 0; margin-bottom: 20px; margin-top: 15px; paddin=
+g: 0; text-align: center; vertical-align: baseline; width: unset;"><tbody s=
+tyle=3D"border: 0; box-sizing: inherit; font: inherit; font-size: 100%; mar=
+gin: 0; padding: 0; vertical-align: baseline;"><tr style=3D"border: 0; box-=
+sizing: inherit; font: inherit; font-size: 100%; margin: 0; padding: 0; ver=
+tical-align: baseline;"><td style=3D"border: 0; box-sizing: inherit; font: =
+inherit; font-size: 100%; margin: 0; padding: 0; vertical-align: middle;"><=
+p style=3D"border: 0; box-sizing: inherit; color: #555; font: inherit; font=
+-size: 12px; font-weight: normal; margin: 0; padding: 0; padding-bottom: 3p=
+x; vertical-align: baseline;">This system email was sent to ABDOUL Diallo (=
+Contact@fiidewgal.com) regarding your Twilio Account</p><p style=3D"border:=
+ 0; box-sizing: inherit; color: #555; font: inherit; font-size: 12px; font-=
+weight: normal; margin: 0; padding: 0; padding-bottom: 3px; vertical-align:=
+ baseline;"><span style=3D"border: 0; box-sizing: inherit; color: #555; fon=
+t: inherit; font-size: 12px; font-weight: bold; margin: 0; padding: 0; vert=
+ical-align: baseline;">US499d1333569fb7f51db50471782d646e</span> by</p><p s=
+tyle=3D"border: 0; box-sizing: inherit; color: #555; font: inherit; font-si=
+ze: 12px; font-weight: normal; margin: 0; padding: 0; vertical-align: basel=
+ine;">Twilio, Inc., 375 Beale Street, Suite 300, San Francisco, CA 94105</p=
+></td></tr></tbody></table></td></tr></tbody></table>
+<img src=3D"https://links.twiliocdn.com/wf/open?upn=3DhfIqhjxrH5PXl2rHT1sLD=
+SbkHm5DfGEeuy5gByu56juecQn6KzyB9fEV4RdUicfuS2-2F2pSxUacn9WFI5SUacxzgSiFsqKN=
+IT-2F0L4bbt3vUA5RuWEGrXtpcq2ZYsPU-2F9EE3HVWfIMSSKlvvDsJrWjXqKW8erXnSSgp9fZW=
+SQeREt0tWWrVP89ZGQYR-2FjMyTzWWzbKBAZKMqcLCyLEgZd7Ck66094N3JzuxsijLI8H8gZ0vd=
+SjmKpvrPG2REnCOU4xCy6OTGSJO5TYIWGzD-2B3-2BAmlvT8MMug3oO0Qf7IIXXbQDjArYOERHo=
+H27trNstjOn1ftmul-2FboC1sv0h2xELxMtuaJiFKvBgHYDIXjMipObw-3D" alt=3D"" width=
+=3D"1" height=3D"1" border=3D"0" style=3D"height:1px !important;width:1px !=
+important;border-width:0 !important;margin-top:0 !important;margin-bottom:0=
+ !important;margin-right:0 !important;margin-left:0 !important;padding-top:=
+0 !important;padding-bottom:0 !important;padding-right:0 !important;padding=
+-left:0 !important;"/></body>
+</html>
+--5c9466354e4e24a331c6b833c4e13e9a56ab5ed6488f14b174b57edf13b0--

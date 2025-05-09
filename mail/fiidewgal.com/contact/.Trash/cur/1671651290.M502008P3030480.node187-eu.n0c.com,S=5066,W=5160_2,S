@@ -1,0 +1,94 @@
+Return-Path: <syannick744@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id gMDdHdpfo2PQPS4A3R2AvA
+	(envelope-from <syannick744@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 21 Dec 2022 20:34:50 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NckDB2fS1z34SDnG
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="ZITsZFZ1"
+X-N0C-MailScanner-eFa-Watermark: 1672256082.44882@yu35lQGANV64nNaybec6mA
+X-N0C-MailScanner-eFa-From: syannick744@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 8A167401AEF7.AB90A
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-yb1-f196.google.com ([209.85.219.196] [209.85.219.196])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 8A167401AEF7
+	for <contact@fiidewgal.com>; Wed, 21 Dec 2022 20:34:09 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 8A167401AEF7
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 8A167401AEF7
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=ZITsZFZ1
+Received: by mail-yb1-f196.google.com with SMTP id e141so17675580ybh.3
+        for <contact@fiidewgal.com>; Wed, 21 Dec 2022 11:34:09 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=AWJPYZvSemDHjftg5dtg9sHHt/MgHU8OHYN5EJcJz0E=;
+        b=ZITsZFZ12OISEzR4UMZxLGYx1wvTZeS7GFbrA6MR6Plun0JmGigocCfm+YYbvm70+M
+         7aB8SHXHcmioVOc/erfx3jLaYHCImxvh8U5ubwtk5O0DKDRkw7EIIOghQCSMHspg2x8Z
+         3w5eIw46GHAXK8xw0NMf9V4/TeQtW/hIVGqtaT1zjvyxV8dsYgwvjcKPVu68eWOaR8cx
+         bFtI2YVcZqorby8853GFMUMM2WgzcxLVx36TPyEX4udJRauEpKyMYMV8+Hy9WwJrbU+X
+         XikUUylzxOg4K5SEcHAeHJHht4jlAkhRuU3QDsa4F3FZ0SeM6i/kfYU87ag4muwWspHN
+         QAqQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=AWJPYZvSemDHjftg5dtg9sHHt/MgHU8OHYN5EJcJz0E=;
+        b=MATJmDSDqqWY+3jsXo+rHQ5atQBR7+yrbdt6ijbtAFVgyLh6+aeytVfsD65yaDfSko
+         uWEbjgNmgwOi+8yCumgNa8uMopnpqtTf1dHSc0G4EY+WseYwtIvtMN9TIO2muPdjJFmK
+         8p99D6V3BzA2/PgIWF6aNvxhD7xvhoPaGxA9GCkOWv/n+yCjaeHpAVbLOY/vG+WzHiTg
+         DFiu37fbAJ7PkBXex23c40HT5FKS1GEXQUSARP19jEC/0SwQh94Sfvu/YZfj8y5zFsJp
+         Mdkakm7i/sX2vSd4TPf6tIiamgOyWjvYCOV2aeXSLK2nnpQ0x1tForHeVS3ni9KFpJiU
+         AgwQ==
+X-Gm-Message-State: AFqh2kqcieuYewUQ/E1YJzM8gAHbtGGBDooFwyqoXhb4e8bcslShLqUb
+	VyYQT7O00iHhG5WLK8OvJOiIWo/3Oe7DqU3CTZShdnCj
+X-Google-Smtp-Source: AMrXdXs5RreNLvnFGJkdRUsEpULD0jpKlPb2ZljDGX23RmMI9KUVphR5z+M6Bjsuo3FjZBwAHFxES2pVhX7/2u77cIQ=
+X-Received: by 2002:a5b:308:0:b0:6f4:f9a3:c831 with SMTP id
+ j8-20020a5b0308000000b006f4f9a3c831mr317704ybp.557.1671651248120; Wed, 21 Dec
+ 2022 11:34:08 -0800 (PST)
+MIME-Version: 1.0
+From: =?UTF-8?B?WcOkbm7Dr2NrIFPDtncgZMOvbmfDvGkgY8OvdHk=?= <syannick744@gmail.com>
+Date: Wed, 21 Dec 2022 20:33:57 +0100
+Message-ID: <CAB+6SQ1w2d0EP6A+vBBK9CqREGpK8Q_oCUnq=K6Pe2iMVMj2tQ@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000d527e705f05ba224"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000d527e705f05ba224
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Je m'appelle yaya Sow qui vient de dinguiraye je suis actuellement en
+Alg=C3=A9rie je suis musulman.  mais je ne pas d'argent. je suis un ma=C3=
+=A7on. Je
+suis c=C3=A9libataire. Je ne pas d'enfant nu femme. je ne pas mari=C3=A9 d'=
+abord.
+mais je suis int=C3=A9ress=C3=A9 maintenant pour me marier si c'est possibl=
+e. Je veux
+une femme musulman qui pratique aussi qui m'aime =C3=A0 la mani=C3=A8re que=
+ je suis,
+je 24 ans en c'est moment
+
+--000000000000d527e705f05ba224
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Je m&#39;appelle yaya Sow qui vient de dinguiraye je suis=
+ actuellement en Alg=C3=A9rie je suis musulman.=C2=A0 mais je ne pas d&#39;=
+argent. je suis un ma=C3=A7on. Je suis c=C3=A9libataire. Je ne pas d&#39;en=
+fant nu femme. je ne pas mari=C3=A9 d&#39;abord. mais je suis int=C3=A9ress=
+=C3=A9 maintenant pour me marier si c&#39;est possible. Je veux une femme m=
+usulman qui pratique aussi qui m&#39;aime =C3=A0 la mani=C3=A8re que je sui=
+s, je 24 ans en c&#39;est moment=C2=A0</div>
+
+--000000000000d527e705f05ba224--

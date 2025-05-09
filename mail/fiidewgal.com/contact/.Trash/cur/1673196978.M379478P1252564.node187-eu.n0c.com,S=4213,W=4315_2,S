@@ -1,0 +1,102 @@
+Return-Path: <>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id +cmEFrL1umPUHBMA3R2AvA
+	(envelope-from <>)
+	for <contact@fiidewgal.com>; Sun, 08 Jan 2023 17:56:18 +0100
+Received: by node187-eu.n0c.com (Postfix)
+	id 576F04002DAC; Sun,  8 Jan 2023 11:56:18 -0500 (EST)
+Date: Sun,  8 Jan 2023 11:56:18 -0500 (EST)
+From: MAILER-DAEMON@node187-eu.n0c.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: contact@fiidewgal.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="44D294003234.1673196978/node187-eu.n0c.com"
+Message-Id: <20230108165618.576F04002DAC@node187-eu.n0c.com>
+
+This is a MIME-encapsulated message.
+
+--44D294003234.1673196978/node187-eu.n0c.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host node187-eu.n0c.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<abubakarbari73@gmail.co>: connect to gmail.co[74.125.140.17]:25: Connection
+    timed out
+
+--44D294003234.1673196978/node187-eu.n0c.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; node187-eu.n0c.com
+X-Postfix-Queue-ID: 44D294003234
+X-Postfix-Sender: rfc822; contact@fiidewgal.com
+Arrival-Date: Tue,  3 Jan 2023 11:38:56 -0500 (EST)
+
+Final-Recipient: rfc822; abubakarbari73@gmail.co
+Original-Recipient: rfc822;abubakarbari73@gmail.co
+Action: failed
+Status: 4.4.1
+Diagnostic-Code: X-Postfix; connect to gmail.co[74.125.140.17]:25: Connection
+    timed out
+
+--44D294003234.1673196978/node187-eu.n0c.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <contact@fiidewgal.com>
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NmdjD1Gglz3F9b
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="MvmlDmxl"
+X-N0C-MailScanner-eFa-Watermark: 1673368733.84075@ipJYbrJUc8TkJngFtNQiYQ
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: ECEE64003234.A12CB
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id ECEE64003234
+	for <abubakarbari73@gmail.co>; Tue,  3 Jan 2023 17:38:53 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com ECEE64003234
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com ECEE64003234
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1672763933;
+	bh=n+BSjfo+2NDOJbefANj1Tqzxdn4V7c5sbYkVGJGgWrk=;
+	h=Date:Subject:From:To:From;
+	b=MvmlDmxlUF+ZyNELuEXULTQ0k7KqJbQZZRuEkno90Wyf47DbvxjMZBZu+WX+8J3a/
+	 O+2SEEZlB06faU8wlfVkKWShgEHr2Cf0rFnJBubUnaBt3g6Ov7q26h9x6NHB7qNQdE
+	 Due0W/8tx87iZeJ5soaWjbM2X5mGftE/Djzn6Hsk=
+Message-ID: <c9981909f86cd9827e3e5f5c982573bc@fiidewgal.com>
+Date: Tue, 03 Jan 2023 17:38:52 +0100
+Subject: =?utf-8?Q?R=C3=A9initialisation?= du mot de passe
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: abubakarbari73@gmail.co
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<p>Bonjour&nbsp;Abubacar bari,</p><p>Votre code de v=C3=A9rification pour l=
+a r=C3=A9initialisation du mot de passe est : [[code]]<br></p><p><br></p><p=
+>Merci !<br></p><p>Ne r=C3=A9pondez pas</p>
+
+
+--44D294003234.1673196978/node187-eu.n0c.com--

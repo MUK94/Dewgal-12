@@ -1,0 +1,79 @@
+Return-Path: <dialloousmane696@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id EDslHISKOWRVJCkA3R2AvA
+	(envelope-from <dialloousmane696@gmail.com>)
+	for <contact@fiidewgal.com>; Fri, 14 Apr 2023 19:16:52 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4PyjmN2DBDz34SDmh
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="q2CRG3OX"
+X-N0C-MailScanner-eFa-Watermark: 1682097393.5782@ilGB6h1ixUVcl4tPctETqg
+X-N0C-MailScanner-eFa-From: dialloousmane696@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: s
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 7A5FA4063278.AAD3F
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ej1-f48.google.com ([209.85.218.48] [209.85.218.48])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 7A5FA4063278
+	for <contact@fiidewgal.com>; Fri, 14 Apr 2023 19:16:00 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 7A5FA4063278
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 7A5FA4063278
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=q2CRG3OX
+Received: by mail-ej1-f48.google.com with SMTP id dx24so3310974ejb.11
+        for <contact@fiidewgal.com>; Fri, 14 Apr 2023 10:15:59 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1681492558; x=1684084558;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=LbWAypxaXMAcLPLHTUONteJ0+DruG7V5AObQ1hcAQxY=;
+        b=q2CRG3OX+WJXnlmRUo1Uo1O9gDTlFEnyYLTroDBkn00MPxxhMaREnnG1frISp3ZKm9
+         l1v4ffMpK0sWGMEL8RKgm2CaICHWyMjXf5vOa5DOjVGMkl9+fRH6TmvuM8qWhBC6x+UG
+         YAAKk62OEQPfnCZapKgu2nfobvdmVJV+N8O/QAbFkbc1peGrYyxZ5l0IFeUXqyrIk20v
+         IISBv4PvxIv/grV+FCBs6QJqiDX35Mc9LLpuc/vbOo2ugawLgYgHl3ntoncenWP1A5vk
+         mLp482rszZZabT2JjJR1Qanwny1yUCkhyaPnnOYY9ON6UAdH+qOmvBxsZq+ehG2nmo2H
+         nnxA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1681492558; x=1684084558;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=LbWAypxaXMAcLPLHTUONteJ0+DruG7V5AObQ1hcAQxY=;
+        b=MVZonKCDz2XZiut+Pq/l/PNZ0UVTJnq2cGkP7FLmicDwcqZSa1ilmxUQefqtTm4AFf
+         ehPk80Mqbrm8m7QYMjMeq4za5sWdtPhXbfpRJ/o5gfXkoDv9ZeW7UnXJ7uKY/Ag/pYgh
+         quJ6Vo+Dm48a317zf9yZSZU1gkQ8LBdi1JkgDdg2NwOrzpEwFor1/qq6ouGe6mnmcfuK
+         4Q18lRcFZLJJojpEGYfTWp/8QygL2uG5CTbstK/DbFwY2czi1QeS2/NncLWVb0sRHI7H
+         LB11Q6gGPgw4o08mmc7uQf6FSGBT65y3J7gavOV/IzTJrrOQzJAgNzIm1kmDUdY8jwnz
+         fwXw==
+X-Gm-Message-State: AAQBX9ezFDC6colDILKxKMZP3+Yct7WhzfX4rYZKgBW4KlbozmMIrdNt
+	BaHIGngptSlF213JZpVt9R62wnya99lRRqbkx7+8XFTJ
+X-Google-Smtp-Source: AKy350YlW02Tw02fqyQhXhPWv6f7NN4nY0Qjk++b/bCxXDm09LaAktmvf8bzzm95IDyLA+wU5dLC/hB/MCVfm4dJ70o=
+X-Received: by 2002:a17:906:d41:b0:931:8502:ad02 with SMTP id
+ r1-20020a1709060d4100b009318502ad02mr3584010ejh.13.1681492558519; Fri, 14 Apr
+ 2023 10:15:58 -0700 (PDT)
+MIME-Version: 1.0
+From: Diallo Ousmane <dialloousmane696@gmail.com>
+Date: Fri, 14 Apr 2023 19:15:48 +0200
+Message-ID: <CAA2JC=PigavYOnpFhQHyJwUJ6rYut4V9JY=_qT79kTUGwQK1OQ@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000a4becf05f94efe64"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000a4becf05f94efe64
+Content-Type: text/plain; charset="UTF-8"
+
+Asalamouh alekoum
+
+--000000000000a4becf05f94efe64
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Asalamouh alekoum=C2=A0</div>
+
+--000000000000a4becf05f94efe64--

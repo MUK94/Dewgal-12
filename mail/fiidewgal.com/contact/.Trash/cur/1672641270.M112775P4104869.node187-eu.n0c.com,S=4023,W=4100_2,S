@@ -1,0 +1,77 @@
+Return-Path: <jbrahima0@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id ut+jBvZ6smOloj4A3R2AvA
+	(envelope-from <jbrahima0@gmail.com>)
+	for <contact@fiidewgal.com>; Mon, 02 Jan 2023 07:34:30 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NlmLF4YSQz5PNYs
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="HzSN17bk"
+X-N0C-MailScanner-eFa-Watermark: 1673246064.88531@kqJ2454DEhwJLaF0EvfzIg
+X-N0C-MailScanner-eFa-From: jbrahima0@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 38F05400837A.A70D8
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-lf1-f47.google.com ([209.85.167.47] [209.85.167.47])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 38F05400837A
+	for <contact@fiidewgal.com>; Mon,  2 Jan 2023 07:33:53 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 38F05400837A
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 38F05400837A
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=HzSN17bk
+Received: by mail-lf1-f47.google.com with SMTP id 1so40388156lfz.4
+        for <contact@fiidewgal.com>; Sun, 01 Jan 2023 22:33:53 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=g0UHIrNS7vRieUCgVd9xOGDra5SDmIUpgoiySsCGWuU=;
+        b=HzSN17bkSP8bx2uzu9TXTHavPNb/8dyCFx5X1TKKwU9JmQdzdJklsiD+g440PAQMbk
+         JWUJfQoLYAWFT0D2B43Av+7ctbscllt2pIN2meNuhzFomFKVg9a8ZTZEecK3GtkRNBNG
+         HLV3pVgHZeZ1QNa+7KVnp66p4UH2zGlYVnzMYsWGeSL6Jv3UWxj8PaODxGmfnhBKKpAk
+         6wCe8dnd69ZGJwIFc1GFSLaSPC1ubd+dq9U8g+BV7Y+hwuyd3cbbw9mOGSi7lT34t/D4
+         nyouTvWXimdyosBmd3Uf+zJLbIp7IHqnvqAWE5sCS8sAy4PZ0b1nhibRp6Z3CH0sE43Z
+         SAmQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=g0UHIrNS7vRieUCgVd9xOGDra5SDmIUpgoiySsCGWuU=;
+        b=uwNtdH5Bn1MzO2dHnpPo3WP++OEgqzJwoywhMgNRJ8zbJzqLsorj6HKMIVs/wgozyY
+         hOEDQ871jrcNuG0pxzY27I8wKrB+rRUTi53qjYQR6d6KHVHlQWRV8kSq0eu9w3lUOGDU
+         tntG6A+Hn5I4KLuGrXNnhcugdRE2DzM3+yH4G7H9Jwhrx3hNZuDT5zgo0QwrEuVOwf//
+         9MvhjnD3A0xTzljKNIQao6XNn8n865bwSVvyGgGtFWbKSCuuhwzvPovGUlrnuuT+//YT
+         qM5Vq2uX4PxSpM0PVYf36BebZbxDIz4qZXsWEf8J7ovVNdHj/R1oJl86I/MJNs5pdOS0
+         UamQ==
+X-Gm-Message-State: AFqh2ko2K5D1ku9JQaupEKzcHNPT8XquNVRssUJ+wde2/2Zt0Z2PxRW7
+	1AwnBwxD+lW/3Ms3jKy5tEc6jNpx9dzSYti1JPDXmTet
+X-Google-Smtp-Source: AMrXdXv1Aks07SVhYHoNL/uyGLjAqqx62Fu91F4L404m7P1FKfBwSGspwqwOsWdVHzKIE15NkaVCvS4uCScIbvhG4lo=
+X-Received: by 2002:ac2:4885:0:b0:4b3:cc01:102b with SMTP id
+ x5-20020ac24885000000b004b3cc01102bmr2817178lfc.133.1672641232031; Sun, 01
+ Jan 2023 22:33:52 -0800 (PST)
+MIME-Version: 1.0
+From: Ibrahima Bah <jbrahima0@gmail.com>
+Date: Sat, 31 Dec 2022 01:33:02 +0100
+Message-ID: <CAPP8SEZELPyRxqU5jybR-1M4bPsn6EWZFFSQg4pR4+eZ2XSshQ@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000078d21905f142221b"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000078d21905f142221b
+Content-Type: text/plain; charset="UTF-8"
+
+Bonjour ici
+
+--00000000000078d21905f142221b
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto">Bonjour ici</div>
+
+--00000000000078d21905f142221b--

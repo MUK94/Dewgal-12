@@ -1,0 +1,135 @@
+Return-Path: <diallohalifax99@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id DJLXBRxufWIPeCUA3R2AvA
+	(envelope-from <diallohalifax99@gmail.com>)
+	for <contact@fiidewgal.com>; Thu, 12 May 2022 22:29:16 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Kzjzt5bLyz34SHGx
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="oLJqEQjJ"
+X-N0C-MailScanner-eFa-Watermark: 1652992152.09551@I8jlTF/UoDnl8yTQZiy52w
+X-N0C-MailScanner-eFa-From: diallohalifax99@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 486E74062939.A5770
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-qt1-f171.google.com ([209.85.160.171] [209.85.160.171])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 486E74062939
+	for <contact@fiidewgal.com>; Thu, 12 May 2022 22:28:38 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 486E74062939
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 486E74062939
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="oLJqEQjJ"
+Received: by mail-qt1-f171.google.com with SMTP id h3so5401451qtn.4
+        for <contact@fiidewgal.com>; Thu, 12 May 2022 13:28:38 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=auCuq/p/mienj5Gp5VW1EeZqdZe/pS/GX50eE7W2dEk=;
+        b=oLJqEQjJ21SPuhEzpkopfkXHGSkWq/X6GA+0lH50A7sPDlFTCX6nMyYdb27zDtdqM0
+         bAqihGNyMZckUz2ZKQDctMjE3EUepqWjgkw63DV/atzyNGpfgjnNuVkEC4O0Hsb7dDTr
+         qCtcSkHCD/1uNQjXQSyxYWgmhIgk3MjGX6KE4HJ6+YL5K5slsReunvEAfjxmOPwIOr5W
+         l0zZBwNbz56rHeEC0TiFpID1raQhSuI+HHKUQsSnpQvGkQ1Wesv07TcRK9ACBkBPIpH8
+         Xy229XWK6erhChP06UUgvMDISE5rfoFkX0fO2p0VN0PLZMStUi0MDfAnPrU3AJCdpaf/
+         ucQw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=auCuq/p/mienj5Gp5VW1EeZqdZe/pS/GX50eE7W2dEk=;
+        b=2vDLoOslWCYCzQS6VkS7Qd59Xv9+UWQgcolzosz4k/59dqnRoDwGYcGu/JhJ6wCK9i
+         FQzMj8qzILgl5XGtV5U5Zh7pmVEUsPSbdM7uY+nQecwPWZajATCkNOU5tmpZu8AWlM+R
+         KxQmpFCxmwkKAUFwBSSI/xKKWT8Pq6NXxqN58hpKgkCtyzShIqsyqCA/0VmxUBxhJucO
+         9rwds22bgcw3BCKsVZPInFfqKb9lGnn0bOcryPOKFOe3mlQWevto6O7chvI2E5McdmJB
+         0ZXiGdWGdbgepZPNswWXhjx+Ckb+zsfXHn7by0WrV8cwj1/R1+S7q8w4f8JPwg0l3P6N
+         kdWw==
+X-Gm-Message-State: AOAM530R+uBSVY7Ba/fFEGC5/ezvW2HMzqUKh1dGLmXitNfNqX5zN5gR
+	awyJw9EPfeVmKNatZC2MZfuoTAXFbnI33mZSKq7uASWX
+X-Google-Smtp-Source: ABdhPJxtoVqZh0hdyZAtLWCN4l6E/cl0ET6DUXsvIRhSBhe6O2hhnQB/U1zsMnRcLVg6a1O+9T+Erdao45ivZ/LOIZ4=
+X-Received: by 2002:a05:622a:1214:b0:2f3:c1a4:231c with SMTP id
+ y20-20020a05622a121400b002f3c1a4231cmr1665802qtx.72.1652387316649; Thu, 12
+ May 2022 13:28:36 -0700 (PDT)
+MIME-Version: 1.0
+References: <05eedbf6abcf82b43d6f92fffbc56b4f@www.fiidewgal.com>
+In-Reply-To: <05eedbf6abcf82b43d6f92fffbc56b4f@www.fiidewgal.com>
+From: Mamadou Diallo <diallohalifax99@gmail.com>
+Date: Thu, 12 May 2022 21:28:25 +0100
+Message-ID: <CAGBP=b_LqQgMbkNgqfgGnf8FPaHhEPH22Fx2KY3HZbGbXDNj+A@mail.gmail.com>
+Subject: Re: Informations
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000000a52e105ded6672b"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000000a52e105ded6672b
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+I don't remember the website please can you send me the link?
+
+On Thu, 12 May 2022, 01:40 , <contact@fiidewgal.com> wrote:
+
+> Salamaleykoum ,
+>
+> Nous sommes tr=C3=A8s heureux de vous accueillir sur la plateforme .
+>
+> Pour multiplier votre chance d=E2=80=99avoir des int=C3=A9r=C3=AAts expri=
+m=C3=A9s
+>
+> =C3=80 votre =C3=A9gard , veillez mettre au moins deux photos de vous.
+>
+> La vie priv=C3=A9e , la discr=C3=A9tion de tout un chacun est respect=C3=
+=A9e ,
+>
+> Il est interdit de donner une fausse identit=C3=A9 sur la plateforme.
+>
+> Merci pour votre compr=C3=A9hension!
+>
+> L=E2=80=99equipe Fii Dewgal!
+>
+
+--0000000000000a52e105ded6672b
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">I don&#39;t remember the website please can you send me=
+=C2=A0the link?</div><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=
+=3D"gmail_attr">On Thu, 12 May 2022, 01:40 , &lt;<a href=3D"mailto:contact@=
+fiidewgal.com">contact@fiidewgal.com</a>&gt; wrote:<br></div><blockquote cl=
+ass=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;p=
+adding-left:1ex"><p style=3D"margin-right:0px;margin-bottom:0px;margin-left=
+:0px;font-variant-numeric:normal;font-variant-east-asian:normal;font-stretc=
+h:normal;line-height:normal;font-family:&quot;Helvetica Neue&quot;">Salamal=
+eykoum ,</p><p style=3D"margin-right:0px;margin-bottom:0px;margin-left:0px;=
+font-variant-numeric:normal;font-variant-east-asian:normal;font-stretch:nor=
+mal;line-height:normal;font-family:&quot;Helvetica Neue&quot;">Nous sommes =
+tr=C3=A8s heureux de vous accueillir sur la plateforme .</p><p style=3D"mar=
+gin-right:0px;margin-bottom:0px;margin-left:0px;font-variant-numeric:normal=
+;font-variant-east-asian:normal;font-stretch:normal;line-height:normal;font=
+-family:&quot;Helvetica Neue&quot;">Pour multiplier votre chance d=E2=80=99=
+avoir des int=C3=A9r=C3=AAts exprim=C3=A9s<span>=C2=A0</span></p><p style=
+=3D"margin-right:0px;margin-bottom:0px;margin-left:0px;font-variant-numeric=
+:normal;font-variant-east-asian:normal;font-stretch:normal;line-height:norm=
+al;font-family:&quot;Helvetica Neue&quot;">=C3=80 votre =C3=A9gard , veille=
+z mettre au moins deux photos de vous.</p><p style=3D"margin-right:0px;marg=
+in-bottom:0px;margin-left:0px;font-variant-numeric:normal;font-variant-east=
+-asian:normal;font-stretch:normal;line-height:normal;font-family:&quot;Helv=
+etica Neue&quot;">La vie priv=C3=A9e , la discr=C3=A9tion de tout un chacun=
+ est respect=C3=A9e , </p><p style=3D"margin-right:0px;margin-bottom:0px;ma=
+rgin-left:0px;font-variant-numeric:normal;font-variant-east-asian:normal;fo=
+nt-stretch:normal;line-height:normal;font-family:&quot;Helvetica Neue&quot;=
+">Il est interdit de donner une fausse identit=C3=A9 sur la plateforme.</p>=
+<p style=3D"margin-right:0px;margin-bottom:0px;margin-left:0px;font-variant=
+-numeric:normal;font-variant-east-asian:normal;font-stretch:normal;line-hei=
+ght:normal;font-family:&quot;Helvetica Neue&quot;">Merci pour votre compr=
+=C3=A9hension!</p><p style=3D"margin-right:0px;margin-bottom:0px;margin-lef=
+t:0px;font-variant-numeric:normal;font-variant-east-asian:normal;font-stret=
+ch:normal;line-height:normal;font-family:&quot;Helvetica Neue&quot;">L=E2=
+=80=99equipe Fii Dewgal!</p>
+</blockquote></div>
+
+--0000000000000a52e105ded6672b--

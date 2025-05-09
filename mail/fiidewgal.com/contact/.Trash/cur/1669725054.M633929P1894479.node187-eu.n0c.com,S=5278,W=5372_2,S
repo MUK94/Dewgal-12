@@ -1,0 +1,94 @@
+Return-Path: <saifoulayehansagherediallo1991@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id AtC3JX77hWNP6BwA3R2AvA
+	(envelope-from <saifoulayehansagherediallo1991@gmail.com>)
+	for <contact@fiidewgal.com>; Tue, 29 Nov 2022 13:30:54 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NM1s94swcz34SDnG
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="XOiJBPaa"
+X-N0C-MailScanner-eFa-Watermark: 1670329850.71667@SACfH9s08RxZqDJWz0aE+Q
+X-N0C-MailScanner-eFa-From: saifoulayehansagherediallo1991@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 8A77A40546F3.A979F
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-wr1-f54.google.com ([209.85.221.54] [209.85.221.54])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 8A77A40546F3
+	for <contact@fiidewgal.com>; Tue, 29 Nov 2022 13:30:18 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 8A77A40546F3
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 8A77A40546F3
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=XOiJBPaa
+Received: by mail-wr1-f54.google.com with SMTP id d1so21840941wrs.12
+        for <contact@fiidewgal.com>; Tue, 29 Nov 2022 04:30:18 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:to:from:importance:subject:date:savedfromemail
+         :message-id:from:to:cc:subject:date:message-id:reply-to;
+        bh=RlJXzPCY1IxR6f+h/3P/z9kOU8qPcPybNfx1JwQb0HQ=;
+        b=XOiJBPaa4ANWexLZdar4oO4BafbvK2r8olfBVLkpB6Q0CuZP45WT5IPzsUVyZfOxuF
+         FgbOHNF8SGCUaafBb4hG04sMA/d2OnALOuhWIaN+OQAocHzid/1Fir59KWViIXnM/OOw
+         6NHABHcaYVm2E+Dmsa+IQWy/X9xme+BrKD5pCmCseq6Pl9ieCfRXLbsgItG0Dah8+Hnx
+         9bGqcltj8dbddvoytQbZNP7mJwZ+IXddrij1pu1J/puj445VHFTP9D0vNaGwrxoVXCeN
+         Ahfzul3xnnzWNaR6XDmUmmb2r7t1X8oXjNpJCADYG+VKOycWZ4PKMY0xvzSuz+uX+5cH
+         WNtg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=mime-version:to:from:importance:subject:date:savedfromemail
+         :message-id:x-gm-message-state:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=RlJXzPCY1IxR6f+h/3P/z9kOU8qPcPybNfx1JwQb0HQ=;
+        b=xb2CjhGXPOGjSW5Gk1FaxDFjpxElh190dRrXjhNGoPpJdk4F3mLnQ3qb7T72w82XcH
+         XR3eEAWAyzYs3zXJrdGwFmqG3PfNd4D3Z3kxQ/XI0HF7YYH8DUpQXlGQD1Tn+PHbB4jd
+         CjTO7armFhCgzLSHVxZt0Z1hmmkhTHavMgXTAbdAoLpCNscDfGDiLAQ+7kwoeYrOkPOa
+         u3nziAVIODG2z2VEQH9aUS7pVvMvqaRhdftHfim9bCabrgbD7L0SXePygXXyema6Ne5g
+         +carOui7VrWm2pRcTyYC2PUQudEqRU7Z9x4MwGTVOlEh1kgHQCdq+v5JDj6OU+6r3ou5
+         kO7g==
+X-Gm-Message-State: ANoB5pmipGU9rNibjY1Q/jZ0xyVX5sQgo4Mm0RgcsDfQaTWOZ4y/ERUt
+	El9K9+aRMUGELjQHppzm0rSPitNlcME=
+X-Google-Smtp-Source: AA0mqf5iUkznKON+cydciHNLkBnSeJu7iUhC8TTxpAHJXWDCTo1LlAGP1AGfOMbAZ2JHzG4YyRYjsg==
+X-Received: by 2002:a5d:440b:0:b0:241:f901:a7e3 with SMTP id z11-20020a5d440b000000b00241f901a7e3mr17502666wrq.511.1669725017827;
+        Tue, 29 Nov 2022 04:30:17 -0800 (PST)
+Received: from [192.168.88.21] ([197.231.206.12])
+        by smtp.gmail.com with ESMTPSA id az35-20020a05600c602300b003cfd0bd8c0asm2021022wmb.30.2022.11.29.04.30.15
+        for <contact@fiidewgal.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Tue, 29 Nov 2022 04:30:17 -0800 (PST)
+Message-ID: <6385fb59.050a0220.35132.4c96@mx.google.com>
+SavedFromEmail: saifoulayehansagherediallo1991@gmail.com
+Date: Tue, 29 Nov 2022 12:30:36 +0000
+Subject: =?ISO-8859-1?Q?Bonjour_=E0_vous_comment_allez_vous_c'est_moi_sai?=
+ =?ISO-8859-1?Q?foulaye_voil=E0_mon_num=E9ro_Whasap_00221_77_214_09_05?=
+Importance: normal
+From: saifoulayehansagherediallo1991
+ <saifoulayehansagherediallo1991@gmail.com>
+To: "contact@fiidewgal com" <contact@fiidewgal.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="--_com.samsung.android.email_2720931833467300"
+X-N0C-Node-IP: 185.221.182.45
+
+----_com.samsung.android.email_2720931833467300
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: base64
+
+RW52b3nDqSBkZXB1aXMgbW9uIGFwcGFyZWlsIEdhbGF4eQ==
+
+----_com.samsung.android.email_2720931833467300
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: base64
+
+PGh0bWw+PGhlYWQ+PG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0
+L2h0bWw7IGNoYXJzZXQ9VVRGLTgiPjwvaGVhZD48Ym9keSBkaXI9ImF1dG8iPjxkaXY+PGJyPjwv
+ZGl2PjxkaXY+PGJyPjwvZGl2PjxkaXY+PGJyPjwvZGl2PjxkaXY+PGJyPjwvZGl2PjxkaXYgaWQ9
+ImNvbXBvc2VyX3NpZ25hdHVyZSI+PGRpdiBzdHlsZT0iZm9udC1zaXplOjEycHg7Y29sb3I6IzU3
+NTc1NyIgZGlyPSJhdXRvIj5FbnZvecOpIGRlcHVpcyBtb24gYXBwYXJlaWwgR2FsYXh5PC9kaXY+
+PC9kaXY+PGRpdj48YnI+PC9kaXY+PC9ib2R5PjwvaHRtbD4=
+
+----_com.samsung.android.email_2720931833467300--
+

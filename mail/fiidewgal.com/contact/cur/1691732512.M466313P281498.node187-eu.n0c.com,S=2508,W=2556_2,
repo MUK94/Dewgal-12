@@ -1,0 +1,48 @@
+Return-Path: <contact@fiidewgal.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id Dv24GyDK1WSaSwQA3R2AvA
+	(envelope-from <contact@fiidewgal.com>)
+	for <contact@fiidewgal.com>; Fri, 11 Aug 2023 07:41:52 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4RMXjX2S6dz34SDmr
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="gBUEHIZG"
+X-N0C-MailScanner-eFa-Watermark: 1692337172.36125@+j/75PzmtsKATkxuAOif2Q
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: E80484012B06.A8226
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from [127.0.0.1] ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id E80484012B06
+	for <contact@fiidewgal.com>; Fri, 11 Aug 2023 07:39:21 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com E80484012B06
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com E80484012B06
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1691732360;
+	bh=SQf7s1UGNFGBJdR0Ef6T/TdwXgplayLYomjzniR2de8=;
+	h=From:To:Subject:Date:From;
+	b=gBUEHIZGeKGWMF66oFwQn3L1s7wRbbU9sLhOdroLwdNaBBsh/A1cOjXDqpwsmqd70
+	 vQaDWHX3h03vN3eHCpH3RdhBaWIO+8aYQK+ra16G2MPa7BDonBDpDjY/XyeIlevVoL
+	 o6elbiNuGQDVO5TuQ5JhtHCoc/JZ9ZQ81Nl1wCHM=
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: contact@fiidewgal.com
+Subject: Inscription des membres
+Message-ID: <0687e6e9685bc5c4e40666c33b9ebf76@fiidewgal.com>
+MIME-Version: 1.0
+Date: Fri, 11 Aug 2023 07:39:20 +0200
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<p>F=C3=A9licitations !<br></p><p>Vous avez un nouveau membre enregistr=
+=C3=A9 dans votre syst=C3=A8me.</p><p>Nom du membre : OswaldolonEB Oswaldol=
+onEB</p><p>L'e-mail est : pochta@webmani.top</p><p>Profil de membre : https=
+://fiidewgal.com/admin/members/3211</p><p>Merci,</p><p>Ne r=C3=A9pondez pas=
+</p>
+

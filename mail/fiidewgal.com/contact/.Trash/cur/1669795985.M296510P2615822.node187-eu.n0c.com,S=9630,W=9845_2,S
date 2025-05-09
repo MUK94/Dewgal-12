@@ -1,0 +1,215 @@
+Return-Path: <sramatoulaye953@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id ANaaEZEQh2MO6icA3R2AvA
+	(envelope-from <sramatoulaye953@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 30 Nov 2022 09:13:05 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NMX5F1HSYz34SDnL
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="ie++twpu"
+X-N0C-MailScanner-eFa-Watermark: 1670400634.60004@ZNyyrIUL51syEi4WqXdEtA
+X-N0C-MailScanner-eFa-From: sramatoulaye953@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 154AC4016FD1.A58E2
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-pl1-f182.google.com ([209.85.214.182] [209.85.214.182])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 154AC4016FD1
+	for <contact@fiidewgal.com>; Wed, 30 Nov 2022 09:08:17 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 154AC4016FD1
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 154AC4016FD1
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=ie++twpu
+Received: by mail-pl1-f182.google.com with SMTP id g10so15904630plo.11
+        for <contact@fiidewgal.com>; Wed, 30 Nov 2022 00:08:16 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=+e+6RRdWJ/nijvUew+Owx9ZXefsaAm8ekFomKFbVZ4E=;
+        b=ie++twpuo6sUYZunHDmLFKh/h1+1FRHWtZK58zz3opTECcNW1a56vPgGHbK4PnQNKe
+         DydXEKUVVvRzFtHBEYFGeZxdFmiSv36OH52sZnRveaYi7cV81b1EKwRGMlR5NSw0pHb2
+         uc2jD6pCh6QYJpcJQZUoGOh97hLW0bjFB5LFtPcqRrgQRLNgUQk83rwg4E6xrTSu8669
+         0BGfrvFLb+cOhPW7+5XCTr5yiyiARkliC89On0+hUqWAk7Swx5I2VUaV/Wi6Z1DPK4FC
+         KQssUA8CDqZp8xA2yslbU66fEo9UWatMuPwtMFADjy0tDUqLag1gD/ygysG9MGtBxgMw
+         6tQA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=+e+6RRdWJ/nijvUew+Owx9ZXefsaAm8ekFomKFbVZ4E=;
+        b=yWoNTgZoWh+H1phYbFzGai9yo0EXUt52IuKBMBuv0PBkw8AQZ75eN3v6X2j+alo3FO
+         XIHd8Kbqp++NVDCnwaZNLZ0/Ig4MVzWq5oZktBB7y6OjmgbTww7vQ53eCWHPTheynuBc
+         c/yzEf8cNZNdOLnnSnDMFn1jHPuicWH4m5+7rIZpi0xrF/po8aLKn7w9bVV+BGoKO4K6
+         DbyvOgcabL7nVr8BwEsSA+GBc/gCdc/UQPtqpLlUNA+37Q7D3a6BbVdYnVk4PnEha35N
+         qUnF2Q3bLQcsaXLGl2ujXO9tte2hOiwcqj10iTRRMyIj394qLhpHlvBTPbbGjLaqIO5W
+         I1OA==
+X-Gm-Message-State: ANoB5pk3By+tMDJRoS4pWQ++F6cG08GyHAl1uzrDDZRs2Fq4cqnQnzz6
+	fqefwICkylr+mnN+UdWMlOR+sH4kPZHCluLjogJnruxT
+X-Google-Smtp-Source: AA0mqf5Yn042lI+G5Ne/EWHr3al3Ea8XrZVFLlXqONm2rabRB6wiBQjKa35ONnmcq9YQC4rozmijZPouE4MxlFYkYu0=
+X-Received: by 2002:a17:903:3011:b0:189:ac81:54d3 with SMTP id
+ o17-20020a170903301100b00189ac8154d3mr472561pla.130.1669795695293; Wed, 30
+ Nov 2022 00:08:15 -0800 (PST)
+MIME-Version: 1.0
+References: <4425d2fb87409fe310c32807166709b9@fiidewgal.com>
+ <CAFvgpOhdKpGjp=o_9DPVP27ejZA11705ETOyDrCAXD3m0dXc1w@mail.gmail.com> <4cde2a0dc131f7042b0d43ba63b4ffd3@fiidewgal.com>
+In-Reply-To: <4cde2a0dc131f7042b0d43ba63b4ffd3@fiidewgal.com>
+From: Ramatoulaye Sow <sramatoulaye953@gmail.com>
+Date: Wed, 30 Nov 2022 08:08:02 +0000
+Message-ID: <CAFvgpOj=HPW1ebX6KkLrYS2kDKjGaUXTYivxwr00EREPs2NzNw@mail.gmail.com>
+Subject: Re: Rappel
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000043f8d105eeab9b87"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000043f8d105eeab9b87
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Merci =C3=A0 vous =C3=A9galement.
+
+
+Le lun. 28 nov. 2022 =C3=A0 21:37, <contact@fiidewgal.com> a =C3=A9crit :
+
+> Le 2022-11-27 06:17, Ramatoulaye Sow a =C3=A9crit :
+> > Wa alaikum salam
+> > J'ai bien re=C3=A7u votre message et je suis pr=C3=AAte =C3=A0 respecte=
+r vos
+> > conditions.
+> > Je vie en Guin=C3=A9e Conakry et je suis c=C3=A9libataire.
+> >
+> > Le dim. 27 nov. 2022 =C3=A0 04:15, <contact@fiidewgal.com> a =C3=A9crit=
+ :
+> >
+> >> Salam Aleykoum , bienvenue sur la plateforme Fii Dewgal , alors si
+> >> vous =C3=AAtes ici c=E2=80=99est pour une bonne raison , trouver votre
+> >>
+> >> futur =C3=A9poux ou =C3=A9pouse que Dieu vous en facilite.Il faut savo=
+ir que
+> >> Le mariage est tr=C3=A8s important il compl=C3=A8te notre Din , la val=
+eur
+> >>
+> >> d=E2=80=99un musulman c=E2=80=99est dans le mariage c=E2=80=99est un a=
+cte
+> >> d=E2=80=99adoration et il faut savoir qu=E2=80=99en islam on ne peut s=
+e
+> >> conna=C3=AEtre r=C3=A9ellement
+> >>
+> >> qu=E2=80=99apr=C3=A8s et dans le mariage et si chacun connaissait les
+> >> bienfaits de rapprocher deux personnes qui souhaitent se marier dans
+> >>
+> >>
+> >> le halal personne n'aimerait voir un c=C3=A9libataire. Donc nous vous
+> >> invitons de rester poli , courtois , respecter les conditions
+> >> g=C3=A9n=C3=A9rales
+> >>
+> >> d=E2=80=99utilisation, pour vous en rappeler il est interdit d=E2=80=
+=99=C3=A9changer
+> >> des mots cru ,des injures, des moqueries, d=E2=80=99=C3=A9changer des =
+num=C3=A9ros
+> >>
+> >>
+> >> de t=C3=A9l=C3=A9phone , d=E2=80=99adresse e-email , de r=C3=A9seaux s=
+ociaux comme(
+> >> Facebook, Instagram, tik tok ,Twitter, Snapchat etc... ) dans
+> >>
+> >> l=E2=80=99objectif de discuter en dehors de la plateforme =C3=A0 d=C3=
+=A9faut de
+> >> cela si vous ne respecter pas ces r=C3=A8gles, votre profil sera
+> >> supprim=C3=A9
+> >>
+> >> sans avertissement. Nous vous souhaitons bonne chance dans votre
+> >> recherche et nous sommes l=C3=A0 pour vous accompagn=C3=A9.
+> >>
+> >> Je vous remercie pour votre compr=C3=A9hension.
+> >>
+> >> L'Equipe Fii Dewgal.
+> Merci pour votre comprehension .
+> On fait le necessaire pour faire connaitre le site pour avoir plus
+> d'inscrits
+> pour augmenter les chances de rencontrer les gens.
+>
+
+--00000000000043f8d105eeab9b87
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Merci =C3=A0 vous =C3=A9galement.<div dir=3D"auto"><br></=
+div></div><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_at=
+tr">Le lun. 28 nov. 2022 =C3=A0 21:37,  &lt;<a href=3D"mailto:contact@fiide=
+wgal.com">contact@fiidewgal.com</a>&gt; a =C3=A9crit=C2=A0:<br></div><block=
+quote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc=
+ solid;padding-left:1ex">Le 2022-11-27 06:17, Ramatoulaye Sow a =C3=A9crit=
+=C2=A0:<br>
+&gt; Wa alaikum salam<br>
+&gt; J&#39;ai bien re=C3=A7u votre message et je suis pr=C3=AAte =C3=A0 res=
+pecter vos<br>
+&gt; conditions.<br>
+&gt; Je vie en Guin=C3=A9e Conakry et je suis c=C3=A9libataire.<br>
+&gt; <br>
+&gt; Le dim. 27 nov. 2022 =C3=A0 04:15, &lt;<a href=3D"mailto:contact@fiide=
+wgal.com" target=3D"_blank" rel=3D"noreferrer">contact@fiidewgal.com</a>&gt=
+; a =C3=A9crit :<br>
+&gt; <br>
+&gt;&gt; Salam Aleykoum , bienvenue sur la plateforme Fii Dewgal , alors si=
+<br>
+&gt;&gt; vous =C3=AAtes ici c=E2=80=99est pour une bonne raison , trouver v=
+otre<br>
+&gt;&gt; <br>
+&gt;&gt; futur =C3=A9poux ou =C3=A9pouse que Dieu vous en facilite.Il faut =
+savoir que<br>
+&gt;&gt; Le mariage est tr=C3=A8s important il compl=C3=A8te notre Din , la=
+ valeur<br>
+&gt;&gt; <br>
+&gt;&gt; d=E2=80=99un musulman c=E2=80=99est dans le mariage c=E2=80=99est =
+un acte<br>
+&gt;&gt; d=E2=80=99adoration et il faut savoir qu=E2=80=99en islam on ne pe=
+ut se<br>
+&gt;&gt; conna=C3=AEtre r=C3=A9ellement<br>
+&gt;&gt; <br>
+&gt;&gt; qu=E2=80=99apr=C3=A8s et dans le mariage et si chacun connaissait =
+les<br>
+&gt;&gt; bienfaits de rapprocher deux personnes qui souhaitent se marier da=
+ns<br>
+&gt;&gt; <br>
+&gt;&gt; <br>
+&gt;&gt; le halal personne n&#39;aimerait voir un c=C3=A9libataire. Donc no=
+us vous<br>
+&gt;&gt; invitons de rester poli , courtois , respecter les conditions<br>
+&gt;&gt; g=C3=A9n=C3=A9rales<br>
+&gt;&gt; <br>
+&gt;&gt; d=E2=80=99utilisation, pour vous en rappeler il est interdit d=E2=
+=80=99=C3=A9changer<br>
+&gt;&gt; des mots cru ,des injures, des moqueries, d=E2=80=99=C3=A9changer =
+des num=C3=A9ros<br>
+&gt;&gt; <br>
+&gt;&gt; <br>
+&gt;&gt; de t=C3=A9l=C3=A9phone , d=E2=80=99adresse e-email , de r=C3=A9sea=
+ux sociaux comme(<br>
+&gt;&gt; Facebook, Instagram, tik tok ,Twitter, Snapchat etc... ) dans<br>
+&gt;&gt; <br>
+&gt;&gt; l=E2=80=99objectif de discuter en dehors de la plateforme =C3=A0 d=
+=C3=A9faut de<br>
+&gt;&gt; cela si vous ne respecter pas ces r=C3=A8gles, votre profil sera<b=
+r>
+&gt;&gt; supprim=C3=A9<br>
+&gt;&gt; <br>
+&gt;&gt; sans avertissement. Nous vous souhaitons bonne chance dans votre<b=
+r>
+&gt;&gt; recherche et nous sommes l=C3=A0 pour vous accompagn=C3=A9.<br>
+&gt;&gt; <br>
+&gt;&gt; Je vous remercie pour votre compr=C3=A9hension.<br>
+&gt;&gt; <br>
+&gt;&gt; L&#39;Equipe Fii Dewgal.<br>
+Merci pour votre comprehension .<br>
+On fait le necessaire pour faire connaitre le site pour avoir plus <br>
+d&#39;inscrits<br>
+pour augmenter les chances de rencontrer les gens.<br>
+</blockquote></div>
+
+--00000000000043f8d105eeab9b87--

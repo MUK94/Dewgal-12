@@ -1,0 +1,101 @@
+Return-Path: <guinee2240@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 8qWUHUs53GMYhSAA3R2AvA
+	(envelope-from <guinee2240@gmail.com>)
+	for <contact@fiidewgal.com>; Thu, 02 Feb 2023 23:29:31 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4P7D3t5Zn2z34SDmh
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="JUP4zQcn"
+X-N0C-MailScanner-eFa-Watermark: 1675981767.35813@2KB6P2+NIS4bmjMj1UNFbw
+X-N0C-MailScanner-eFa-From: guinee2240@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 5C2FE401B23D.A5E8F
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-yw1-f171.google.com ([209.85.128.171] [209.85.128.171])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 5C2FE401B23D
+	for <contact@fiidewgal.com>; Thu,  2 Feb 2023 23:28:53 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 5C2FE401B23D
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 5C2FE401B23D
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=JUP4zQcn
+Received: by mail-yw1-f171.google.com with SMTP id 00721157ae682-523e3a0300eso23744347b3.4
+        for <contact@fiidewgal.com>; Thu, 02 Feb 2023 14:28:53 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=QqwN7buBWctp0Q5rCV9fuOlkcnt75JoNd4EBLimml+w=;
+        b=JUP4zQcntgKGV5gELsUGCT/2AezPYBo6kLbi/QEOHeh+yshHw9MYV8FTRNsLB9J1fK
+         CKgaaN4CTaAroNmEhoA7VxLKLCZ5VpnPuZjsLpWjMjHUWZOxypT5mbI8ds9rOvZOzd/W
+         pre3K4DTeUXEvMji3DPJkccvG1rvnYyPygv5CGtMpJ2UYe/bfQiVpHROlyYakAYQ2OW7
+         X9353i51XTAMMcMpghu6oheYXT0Qqy5ceQkIeo0elAki8uqgh+IsWW9OzviaNWZcguPR
+         nnNF++P0G362fm5ypDG1ZbPkC2NUEGqTsImfnQECWIvpibtQ1ajWh8V42LaBhiADxPC8
+         Uuzw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=QqwN7buBWctp0Q5rCV9fuOlkcnt75JoNd4EBLimml+w=;
+        b=1JR9RpOwaemHWV0baI/ZeRh4QzWn3Ab13R3K4yoY4aFNCh1Eby6fwX0YNwCepU2nUi
+         XIyraOot5K3lkKOH83p01nnxmk3urBRXq11/+xD713h4dLaG/wBPEIGcwWkqDOyMzAFt
+         nLCKKEuCW/NIwzJHXP1JMVJEMQ8Be9jc+airPdApSG2h9M7imTeiUxvJkOncxF/q1p0R
+         GDhJZBydGBIeHRToTm7RsiZ6ctoRBaOdE6Ig5TidwX4Ua70d0xT+c3e8HBymWCGNa3iX
+         UKNR/hF9fTQnKgMwnzAgkE4MXntSbzeI+hJAiPk4OgM4zjK+FH3Mvm28/6BbNvvQGMUI
+         4szw==
+X-Gm-Message-State: AO0yUKXeEwLc2nmQ1+6h+eBu8gmQk/FmpYcXfm2IIjVNHIPaoN+h85bN
+	JaZl/x9YM3Rqbyiuqq+YYNiXAda6cKjOqf2zEL12vMJy
+X-Google-Smtp-Source: AK7set/PZvlEI69avv1zuRu77UngjH/77VO5SQ0gMLQwGR9Ff2fT+qyh7uymI34eFoJdpJ27qrARmwxMaDu/Hz/72S8=
+X-Received: by 2002:a05:690c:f85:b0:4ff:e9c9:73ed with SMTP id
+ df5-20020a05690c0f8500b004ffe9c973edmr883333ywb.478.1675376931643; Thu, 02
+ Feb 2023 14:28:51 -0800 (PST)
+MIME-Version: 1.0
+References: <e9fd8c955c4b11a9dd2c5ec9209ec362@fiidewgal.com>
+In-Reply-To: <e9fd8c955c4b11a9dd2c5ec9209ec362@fiidewgal.com>
+From: =?UTF-8?Q?Guin=C3=A9e_224?= <guinee2240@gmail.com>
+Date: Thu, 2 Feb 2023 23:28:40 +0100
+Message-ID: <CADjyDLpnpYL5tHhL5cWPBUzDY1tFq8P7H+FtEno_ws5f+qS7RA@mail.gmail.com>
+Subject: Re: Rappel avant la suppression de votre compte.
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000e026e005f3bf1611"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000e026e005f3bf1611
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+J'ai pas besoin du coup supprime mon compte, j'ai essay=C3=A9 de le faire m=
+oi
+m=C3=AAme j'ai pas pu.
+
+Le mer. 1 f=C3=A9vr. 2023, 23:02, <contact@fiidewgal.com> a =C3=A9crit :
+
+> Salam Aleykoum ,
+> Veillez ajouter votre photo ou m'envoyer votre photo sur whatsApp
+> au 001 646 752 91 15 .A defaut votre compte sera supprim=C3=A9.
+> Merci !
+>
+
+--000000000000e026e005f3bf1611
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">J&#39;ai pas besoin du coup supprime mon compte, j&#39;ai=
+ essay=C3=A9 de le faire moi m=C3=AAme j&#39;ai pas pu.</div><br><div class=
+=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr">Le mer. 1 f=C3=A9vr.=
+ 2023, 23:02,  &lt;<a href=3D"mailto:contact@fiidewgal.com">contact@fiidewg=
+al.com</a>&gt; a =C3=A9crit=C2=A0:<br></div><blockquote class=3D"gmail_quot=
+e" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">=
+Salam Aleykoum ,<br>
+Veillez ajouter votre photo ou m&#39;envoyer votre photo sur whatsApp<br>
+au 001 646 752 91 15 .A defaut votre compte sera supprim=C3=A9.<br>
+Merci !<br>
+</blockquote></div>
+
+--000000000000e026e005f3bf1611--

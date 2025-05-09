@@ -1,0 +1,81 @@
+Return-Path: <dambysaliou90@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id ZvZwMfRf3GNZBiIA3R2AvA
+	(envelope-from <dambysaliou90@gmail.com>)
+	for <contact@fiidewgal.com>; Fri, 03 Feb 2023 02:14:28 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4P7HkD2dqsz34SDmh
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="ftN1ZVSu"
+X-N0C-MailScanner-eFa-Watermark: 1675991658.47166@rgp3E9RdWphk5kxKuDW3jg
+X-N0C-MailScanner-eFa-From: dambysaliou90@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 92682401B23D.A46F9
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-oi1-f177.google.com ([209.85.167.177] [209.85.167.177])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 92682401B23D
+	for <contact@fiidewgal.com>; Fri,  3 Feb 2023 02:13:46 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 92682401B23D
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 92682401B23D
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=ftN1ZVSu
+Received: by mail-oi1-f177.google.com with SMTP id p185so2999440oif.2
+        for <contact@fiidewgal.com>; Thu, 02 Feb 2023 17:13:46 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=bs2gagH8K0FwNYtHfhjYHGPEK9tO/v4YlXgj679N0XA=;
+        b=ftN1ZVSuBFItJZY1uuf8iTsIV+2Rdz5R4WOiZQ1sM79iiKfe8zOXU562UQcQssXjE3
+         TIb4b9wp7aIx636Rp2hNkRR+CtqqQyBpm2Jy/J6koNY9R9SgWPfwpb6VJ3VYnxXG0pAi
+         ncSalFXXEO4UFHnzHNtTH2/kkWDiJCTYWvdYfinF1wIan09THnRWtdfTfqGnTiYmej4A
+         cCYNtbRx3joz/khnQ8SE7J22CEhgp2E+VG3iuCxroHeJw0m3CHtewPXF11RXlZEW20T1
+         t7beqs9b8BYEAAoEzGKjJUWgpSRuAKj5RiFL7LVOG9jUFVuee4QbuwfaUcA1OUIB0VmN
+         jS+Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=bs2gagH8K0FwNYtHfhjYHGPEK9tO/v4YlXgj679N0XA=;
+        b=qWiU8jS6W1gv8mwpLbkxSPjbbwg/6aAxGlU5SJr6srLqGAScs/b2jwRhI9+QdXFXLk
+         1UfPOO9b0ZkeviwVwYNu54Ccrs7LEEUVRIb4Tb3+iOecvzI7qIPRyRq+qleQcX8izdir
+         nAypK0GaqKNSwqX6SNpNZilQn/RJIxHLTkqpJmzW4wYp+JN0W0D8Zc+JNEGVQl1ME3fM
+         OgDyJKZ/RwWTwCni4d3e0gvs28odMmQRRWfL81FLOnn0tgOT6JPHDS1LTVtjz71ZjZEx
+         A19oAHWXo+M0G7YTkN5TAedhF01/ZXeVQIWqF9Dfoiz21kwqVYAWtV/qe7CoweOsudny
+         Jlmg==
+X-Gm-Message-State: AO0yUKU36shP/5yUz7wsbWY0s52yQLGvrKJUG87cgScUEaXdK5TMlXGV
+	jBg6jtXmN+eNbWnMzsMu0E0EQWreb7fBt4EBW6POtYur
+X-Google-Smtp-Source: AK7set8jlkfbdeYlQJiDSZxDvQhcRriKAviRY+AgfvAvXHAeuyp6M7HkQQyMr9qt25KW2p7JlG+TsLq3n1ITCb22Ggw=
+X-Received: by 2002:a54:401a:0:b0:36c:72a6:70d9 with SMTP id
+ x26-20020a54401a000000b0036c72a670d9mr302749oie.27.1675386824892; Thu, 02 Feb
+ 2023 17:13:44 -0800 (PST)
+MIME-Version: 1.0
+From: Mamadou Saliou Balde <dambysaliou90@gmail.com>
+Date: Fri, 3 Feb 2023 02:13:33 +0100
+Message-ID: <CAKv=YD=dhLa-fH1HSLko_8h81b4YamLJvcfeNn5EZDRCrHNMHA@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000008f24c005f3c164cd"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000008f24c005f3c164cd
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+Qm9uc29pciwgSidhcnJpdmUgcGFzIGEgdm91cyBlbnZveWVyIG1lcyBpbmZvcm1hdGlvbnMg8J+k
+lPCfmJTwn5iU8J+YlPCfmJQNCg0KLg0K
+--0000000000008f24c005f3c164cd
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Bonsoir, J&#39;arrive pas a vous envoyer mes informations=
+ =F0=9F=A4=94=F0=9F=98=94=F0=9F=98=94=F0=9F=98=94=F0=9F=98=94<br><br><div d=
+ata-smartmail=3D"gmail_signature">.</div></div>
+
+--0000000000008f24c005f3c164cd--

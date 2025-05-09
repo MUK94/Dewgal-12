@@ -1,0 +1,73 @@
+Return-Path: <amadoubitaou@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id mFgpIrYz2mOpBQwA3R2AvA
+	(envelope-from <amadoubitaou@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 01 Feb 2023 10:41:10 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4P6H3p37TPz34SDmh
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="AkpK9ci5"
+X-N0C-MailScanner-eFa-Watermark: 1675849230.69816@ZewJdFKlW2G1Mj1w2dEW6A
+X-N0C-MailScanner-eFa-From: amadoubitaou@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: E4AE1401AEF6.A540B
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-oi1-f180.google.com ([209.85.167.180] [209.85.167.180])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id E4AE1401AEF6
+	for <contact@fiidewgal.com>; Wed,  1 Feb 2023 10:39:58 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com E4AE1401AEF6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com E4AE1401AEF6
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=AkpK9ci5
+Received: by mail-oi1-f180.google.com with SMTP id bj22so6131078oib.11
+        for <contact@fiidewgal.com>; Wed, 01 Feb 2023 01:39:57 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=auto-submitted:precedence:content-disposition
+         :content-transfer-encoding:mime-version:subject:message-id:date:from
+         :to:from:to:cc:subject:date:message-id:reply-to;
+        bh=Zb56laOltolSxu59bXQpJw6LJPYyZWuivxYYhdzb9rM=;
+        b=AkpK9ci5ssJSDDqsNS1+VSB/udppOmEYdNPhWa7+vr/6MG/axHQYsJA9CT2EqdMe+J
+         5/FMMJ0zP2HKf2W4MJJNylCBr5xQNQja2JNyxIae+3THPIx6oPAccBgvoxRpeNJ1iu4v
+         C36NffmqyiJaa6KWg+fH9cm2T8IcEX9MgleOoHLKHEi5PdE1VLxDi6mkuMzmapJzmR1V
+         0TFXVM7ijh06ohMB54Cwe93+1laBBBTDayUwA7o+hqhEmC3OC4cUYLXnWGG74X8SsF2O
+         pf3NbuP6BuapKsXR3CPBotBoQsDWk5tz2Oga4p223YJy+12FiCrwPYFofkcShIwOONjP
+         vnKA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=auto-submitted:precedence:content-disposition
+         :content-transfer-encoding:mime-version:subject:message-id:date:from
+         :to:x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=Zb56laOltolSxu59bXQpJw6LJPYyZWuivxYYhdzb9rM=;
+        b=bRS5CVfpPExIXP/O0bvsTbSmyyTeuAinaMoqU6WlsTsPhJiXXun+A0LDPuq0311uis
+         UtSJD7brjA5cUUkRc6F9BTZpW/H30gIo5q1lymSQ415TY7TO5GMPlClCEsBOzyI3LAR7
+         0a+sjFtTpRjeflrqbUA4WwiCWUo8WKx7d7BqA8J922+1Q8lQwBzYa423jFUc2Wp8yj/0
+         ucvEqE7IrhK3vl7pvWWcXfksIZ1P3UJvmpF5vaPLvtwP5qZTNh1AGdaWMg8WZ/tPHzZq
+         dqihKerJ4KBSJL3vAg93TEipBoVCjbIU5TafCg4/hrujdmvYGPHukdXO6rwgQAKedwwm
+         eBcw==
+X-Gm-Message-State: AO0yUKUJokUqBssfQD6SHcYeFFsQUYiGTl0DDz1vgeoiO3c84+GKmLHn
+	CeAaHlSPWB+rYUjDOxrg9TeAsSL5kbLXKSz0NuzvjLe15HfxwQZjhSJT+ybSaw==
+X-Google-Smtp-Source: AK7set8nyIrdwb7fZhQuZ+/RrIt3wtAjGZt7FcezwUnAtX8ccwxhoawDxa351PJHmwlyWGNYFCH87KpDWZjzggb+bksFZAPtPnnkPOgJXoQf
+X-Received: by 2002:a05:6808:303:b0:378:27b9:fe4b with SMTP id i3-20020a056808030300b0037827b9fe4bmr101653oie.163.1675244396417;
+        Wed, 01 Feb 2023 01:39:56 -0800 (PST)
+To: contact@fiidewgal.com
+From: "Diallo Amadoubitaou" <amadoubitaou@gmail.com>
+Date: Wed, 1 Feb 2023 01:39:56 -0800
+Message-ID: <CAK026ir4EisWWF4FC9hWrB8HWFEqKWUZbesr3bPbWx3_p+snKw@mail.gmail.com>
+Subject: Amadoubitaou Re: Rappel avant la suppression de votre compte.
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+Precedence: bulk
+X-Autoreply: yes
+Auto-Submitted: auto-replied
+X-N0C-Node-IP: 185.221.182.45
+
+B

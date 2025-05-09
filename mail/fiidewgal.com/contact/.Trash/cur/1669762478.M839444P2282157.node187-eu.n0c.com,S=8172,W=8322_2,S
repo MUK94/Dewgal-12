@@ -1,0 +1,150 @@
+Return-Path: <diarrysow868@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id bajwMa6NhmOt0iIA3R2AvA
+	(envelope-from <diarrysow868@gmail.com>)
+	for <contact@fiidewgal.com>; Tue, 29 Nov 2022 23:54:38 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NMHht3j3hz34SDnJ
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="NntiSWEf"
+X-N0C-MailScanner-eFa-Watermark: 1670367270.67794@3yTuPvnssCKu1uGkOh5O4A
+X-N0C-MailScanner-eFa-From: diarrysow868@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: DEEB04002B8A.A552F
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ej1-f43.google.com ([209.85.218.43] [209.85.218.43])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id DEEB04002B8A
+	for <contact@fiidewgal.com>; Tue, 29 Nov 2022 23:53:58 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com DEEB04002B8A
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com DEEB04002B8A
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=NntiSWEf
+Received: by mail-ej1-f43.google.com with SMTP id gu23so19115388ejb.10
+        for <contact@fiidewgal.com>; Tue, 29 Nov 2022 14:53:57 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=TlAFXFSjIMD+OG7+3Snd8mzBNHBuvsrBTaLbhoB0Ssw=;
+        b=NntiSWEf9PmUBreb5/6s6h5x6TIOavL5w+hHutVgywZ5Yii6YOQtqjjCezizxbM/os
+         lA0asbBTaM0JfU8Hd7I5Dvb64HfYO/PTTqyij8dxQx1VuJZd1z5Kx+tOaefydSM/3qI2
+         QSSbW+zB63910z0TtkdmUXHtE9t82OGfzUjT3J52iKECkg7WiqgEEjJCak3N2/SCHm4g
+         Xb5bbDU6vK/ta2tZQu317syy49tjcGjQTBbO75cqjOC0QuDIbNNTSAJnTzSne7FdK9Ak
+         24/k0PkHmXV68jWkvee/6reO896JNkIHOGxkwM3GScyQo/wIPfnn8rmb/HV3CfYn1JO+
+         v9Cw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=TlAFXFSjIMD+OG7+3Snd8mzBNHBuvsrBTaLbhoB0Ssw=;
+        b=jJbmtldtU9N3pErdYpZ3Gtv8AlRDyifM7hVzWswvkVB1ZINODDRTGaOoK72Y7RH3PH
+         llWAFYt4pqTB6jYV6J9ex/sCAvQiOVjiYqx57RzI9RMTcnvWW14KbrqV7XnXzLB7dAEV
+         oUEHV6Ec0mcPszM0/xMmQDNYHGIGpcMa2LLPBSoX8H58GcVtw6TIe+y1mwEwQ3UvGMuq
+         rvqagdnCof/ODJN9pST/vqmSXsqY7Y6d0M470Aetw1ItXzDqCWlprQ3yF7bysNCSgHVQ
+         Br2Jt7cRP4G7jaIVMGvzcFU0/iXaLJM9mG/AHnttEizoG8bS6S43racGF13NXF0pyHx3
+         s7Fg==
+X-Gm-Message-State: ANoB5pn1Yc7G538jy4MoSiBGG7iNTdVtbwDNLHs9Vx1HVhXYtOKdRtdF
+	a5sFFcd17OYRO202lFWwmw6xDdKK0LgPeZzOGSzYmhw=
+X-Google-Smtp-Source: AA0mqf7hqC8GG24vntfVycB6RD9Jvur2ZTmOF/EIKDGM62mYTaCzNmroPcH+86PSMT4scYxnU08dzdY9tHvJLXIjOeU=
+X-Received: by 2002:a17:907:a505:b0:7bb:129e:8a4c with SMTP id
+ vr5-20020a170907a50500b007bb129e8a4cmr15796932ejc.300.1669762436832; Tue, 29
+ Nov 2022 14:53:56 -0800 (PST)
+MIME-Version: 1.0
+References: <0b8daade80825fec78e77f06903d6ce6@fiidewgal.com>
+In-Reply-To: <0b8daade80825fec78e77f06903d6ce6@fiidewgal.com>
+From: Diarry Sow <diarrysow868@gmail.com>
+Date: Tue, 29 Nov 2022 23:53:45 +0100
+Message-ID: <CAJNZCtASmS=uBm8FVzCT36J2me9ZRmuuWCM77C=GfZG5=qv=vQ@mail.gmail.com>
+Subject: Re: Informations
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000e823d505eea3dcdd"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000e823d505eea3dcdd
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bonsoir 33758088536
+
+Le mar. 29 nov. 2022 =C3=A0 23:42, <contact@fiidewgal.com> a =C3=A9crit :
+
+> SALAM ALEYKOUM ,
+>
+> BIENVENUE SUR LA PLATEFORME Fii DEWGAL ,
+>
+> POUR DISCUTER SUR LA PLATEFORME IL FAUT ENVOYER UNE DEMANDE D'INTERET
+>
+> QUI CORRESPOND A' UNE DEMANDE DE RENDEZ-VOUS , SI LA REPONSE EST FAVORABL=
+E
+>
+> LE CHAT SE DEBLOQUE.COMME IL Y'A UNE DIFFERENCE D'HEURE ENTRE LES PAYS
+> L'HEURE
+>
+> DE REFERENCE EST L'HEURE DE PARIS POUR PRENDRE UN RENDEZ-VOUS MEME SI VOU=
+S
+>
+> ETES DANS LE MEME PAYS AUTRE QUE LA FRANCE.
+>
+> POUR PLUS D=E2=80=99INFORMATION LA VIDEO CI-DESSOUS VOUS EXPLIQUE EN DETA=
+IL.
+>
+> https://www.youtube.com/watch?v=3DZBrmweGHV88
+>
+> MERCI POUR VOTRE COMPREHENSION!
+>
+
+--000000000000e823d505eea3dcdd
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Bonsoir 33758088536</div><br><div class=3D"gmail_quote"><=
+div dir=3D"ltr" class=3D"gmail_attr">Le mar. 29 nov. 2022 =C3=A0 23:42,  &l=
+t;<a href=3D"mailto:contact@fiidewgal.com">contact@fiidewgal.com</a>&gt; a =
+=C3=A9crit=C2=A0:<br></div><blockquote class=3D"gmail_quote" style=3D"margi=
+n:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><p style=3D"margi=
+n-right:0px;margin-bottom:0px;margin-left:0px;font-variant-numeric:normal;f=
+ont-variant-east-asian:normal;font-stretch:normal;line-height:normal;font-f=
+amily:&quot;Helvetica Neue&quot;">SALAM ALEYKOUM ,<span>=C2=A0</span></p><p=
+ style=3D"margin-right:0px;margin-bottom:0px;margin-left:0px;font-variant-n=
+umeric:normal;font-variant-east-asian:normal;font-stretch:normal;line-heigh=
+t:normal;font-family:&quot;Helvetica Neue&quot;">BIENVENUE SUR LA PLATEFORM=
+E Fii DEWGAL ,</p><p style=3D"margin-right:0px;margin-bottom:0px;margin-lef=
+t:0px;font-variant-numeric:normal;font-variant-east-asian:normal;font-stret=
+ch:normal;line-height:normal;font-family:&quot;Helvetica Neue&quot;">POUR D=
+ISCUTER SUR LA PLATEFORME IL FAUT ENVOYER UNE DEMANDE D&#39;INTERET</p><p s=
+tyle=3D"margin-right:0px;margin-bottom:0px;margin-left:0px;font-variant-num=
+eric:normal;font-variant-east-asian:normal;font-stretch:normal;line-height:=
+normal;font-family:&quot;Helvetica Neue&quot;"> QUI CORRESPOND A&#39; UNE D=
+EMANDE DE RENDEZ-VOUS , SI LA REPONSE EST FAVORABLE </p><p style=3D"margin-=
+right:0px;margin-bottom:0px;margin-left:0px;font-variant-numeric:normal;fon=
+t-variant-east-asian:normal;font-stretch:normal;line-height:normal;font-fam=
+ily:&quot;Helvetica Neue&quot;">LE CHAT SE DEBLOQUE.COMME IL Y&#39;A UNE DI=
+FFERENCE D&#39;HEURE ENTRE LES PAYS L&#39;HEURE</p><p style=3D"margin-right=
+:0px;margin-bottom:0px;margin-left:0px;font-variant-numeric:normal;font-var=
+iant-east-asian:normal;font-stretch:normal;line-height:normal;font-family:&=
+quot;Helvetica Neue&quot;"> DE REFERENCE EST L&#39;HEURE DE PARIS POUR PREN=
+DRE UN RENDEZ-VOUS MEME SI VOUS </p><p style=3D"margin-right:0px;margin-bot=
+tom:0px;margin-left:0px;font-variant-numeric:normal;font-variant-east-asian=
+:normal;font-stretch:normal;line-height:normal;font-family:&quot;Helvetica =
+Neue&quot;">ETES DANS LE MEME PAYS AUTRE QUE LA FRANCE.</p><p style=3D"marg=
+in-right:0px;margin-bottom:0px;margin-left:0px;font-variant-numeric:normal;=
+font-variant-east-asian:normal;font-stretch:normal;line-height:normal;font-=
+family:&quot;Helvetica Neue&quot;">POUR PLUS D=E2=80=99INFORMATION LA VIDEO=
+ CI-DESSOUS VOUS EXPLIQUE EN DETAIL.</p><p style=3D"margin-right:0px;margin=
+-bottom:0px;margin-left:0px;font-variant-numeric:normal;font-variant-east-a=
+sian:normal;font-stretch:normal;line-height:normal;font-family:&quot;Helvet=
+ica Neue&quot;"><a href=3D"https://www.youtube.com/watch?v=3DZBrmweGHV88" t=
+arget=3D"_blank" rel=3D"noreferrer">https://www.youtube.com/watch?v=3DZBrmw=
+eGHV88</a></p><p style=3D"margin-right:0px;margin-bottom:0px;margin-left:0p=
+x;font-variant-numeric:normal;font-variant-east-asian:normal;font-stretch:n=
+ormal;line-height:normal;font-family:&quot;Helvetica Neue&quot;">MERCI POUR=
+ VOTRE COMPREHENSION!</p>
+</blockquote></div>
+
+--000000000000e823d505eea3dcdd--

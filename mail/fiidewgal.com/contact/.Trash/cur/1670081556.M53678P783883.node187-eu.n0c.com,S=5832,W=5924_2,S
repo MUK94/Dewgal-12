@@ -1,0 +1,92 @@
+Return-Path: <diallocherifthierno779@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 50UdAxRsi2ML9gsA3R2AvA
+	(envelope-from <diallocherifthierno779@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 03 Dec 2022 16:32:36 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NPYhz6Jn5z34nwbd
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="qv1EzUIu"
+X-N0C-MailScanner-eFa-Watermark: 1670686353.23373@lMuVHSJjDTEmtsDK56rLZw
+X-N0C-MailScanner-eFa-From: diallocherifthierno779@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 9BD5D401AEF3.A37B2
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-wm1-f43.google.com ([209.85.128.43] [209.85.128.43])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 9BD5D401AEF3
+	for <contact@fiidewgal.com>; Sat,  3 Dec 2022 16:31:59 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 9BD5D401AEF3
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 9BD5D401AEF3
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=qv1EzUIu
+Received: by mail-wm1-f43.google.com with SMTP id v124-20020a1cac82000000b003cf7a4ea2caso8610817wme.5
+        for <contact@fiidewgal.com>; Sat, 03 Dec 2022 07:31:59 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=content-transfer-encoding:mime-version:to:from:references
+         :message-id:subject:date:from:to:cc:subject:date:message-id:reply-to;
+        bh=CoyYPT0LX0pRoOhYrXz7+dTlU/TX3iqiWtz+gomw1SU=;
+        b=qv1EzUIuvg9O+rNsoPnsAo9nG+ugzSwfnLAoZOrA8ih2vkQpGfpKAzE3SJjoC7SjaH
+         uq+fdua1PYWWYjtzLMNXtEMrSZAHtWDU+sogVdH4ktJCUCErV0lVz7v7A/ldo91Hzn6u
+         xbxWDfCleYwhtavFSjnVn/oJSctyLrw69DRplEV+HO1LFDY5elGMX8ydAQV7S25LuoBA
+         sS5gkTTYF8QrAu18gQGgubF4m2LBcRvyyHPkX91Hn7MtuKdFz53gn8VHGp8Q2empmuk8
+         VQiZMST/A8JERtxlWcQM1U6opHdeZXnPY8feVGioKEd/ITBknLAiIkrLkAE+DNEtoLLK
+         4i7w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=content-transfer-encoding:mime-version:to:from:references
+         :message-id:subject:date:x-gm-message-state:from:to:cc:subject:date
+         :message-id:reply-to;
+        bh=CoyYPT0LX0pRoOhYrXz7+dTlU/TX3iqiWtz+gomw1SU=;
+        b=qc1kqZuqid4A+NO+7dEjFKK/aNDEB2CMZIi5h0hcacew3w8O2mrziWE259zGDWoAYl
+         XcHvTvvtJhmu3Ed6TMf4OvDVBJRGFIIVUM5ODPxvWEP47i8jIQRlcIECupJ2CT/WCymy
+         AigLxz3dVR8ozPzCPvxo33VFt19zOqKWnpQF4Igr1ANOiwirLbirEgpsqPgah+YTB8z/
+         a7yZU4rL4vObdNN1+Kg+xBfQZVhP0WjLiqgJVaRmC5flRlFOypd8xAEdUz+Elp6TO5VO
+         9BwNgPUqZL7q7Eqi3VfbeHBI4M05DIyc2OJTYHEJKIElFgAJfEq0BbnIP7qKEKvEgSeM
+         AsWg==
+X-Gm-Message-State: ANoB5plI13H2HJGPEBp/jgecSYB40+8Lh/6dcFauINn6cOn+LpyH1e6+
+	WC49cP5I2baLpGsKLQUR2ar7ZIk6Yk8=
+X-Google-Smtp-Source: AA0mqf7QEeHlWkhf482ZiY3r7CtkY/vv5JH0WgvNsOnvKr/rEFMgmyb3u6z21k+GKpzwJCFsaYjzUQ==
+X-Received: by 2002:a05:600c:a10:b0:3cf:75f4:794a with SMTP id z16-20020a05600c0a1000b003cf75f4794amr58411908wmp.16.1670081518890;
+        Sat, 03 Dec 2022 07:31:58 -0800 (PST)
+Received: from [10.230.208.211] ([197.149.243.252])
+        by smtp.gmail.com with ESMTPSA id s17-20020a5d5111000000b0022584c82c80sm9837222wrt.19.2022.12.03.07.31.57
+        for <contact@fiidewgal.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 03 Dec 2022 07:31:58 -0800 (PST)
+Date: Sat, 03 Dec 2022 15:31:55 +0000
+Subject: =?ISO-8859-1?Q?Re=A0:_Succ=E8s_de_l'achat_du_forfait?=
+X-Priority: 3
+Message-ID: <yw35mgp4jdphwmjf7k-tpgbbv-6uf3fies7rv1-ct2occw03yh7-l24lry-wgbf21rgndqb-jrpet2-gkdhcw-p1s4hjcoxexw-9zxzkt-a15ehjrcg3ejfzvuog-mh046x-f19y4f-stfvsrxek8lwsqhbhp.1670081515935@email.android.com>
+References: <82ea21703c6850dbc22675ae81b163ea@fiidewgal.com>
+From: Diallo Thierno cherif <diallocherifthierno779@gmail.com>
+To: =?ISO-8859-1?Q?Ne_r=E9pondez_pas?= <contact@fiidewgal.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: base64
+X-N0C-Node-IP: 185.221.182.45
+
+PGRpdiBkaXI9ImF1dG8iPk1lcmNpIGJlYXVjb3VwJm5ic3A7PGJyPjxicj5FbnZvecOpIGRlcHVp
+cyBtb24gdMOpbMOpcGhvbmUgSHVhd2VpPC9kaXY+PGRpdiBzdHlsZT0ibGluZS1oZWlnaHQ6MS41
+Ij48YnI+PGJyPi0tLS0tLS0tIE1lc3NhZ2Ugb3JpZ2luYWwgLS0tLS0tLS08YnI+RGXCoDogTmUg
+csOpcG9uZGV6IHBhcyAmbHQ7Y29udGFjdEBmaWlkZXdnYWwuY29tJmd0Ozxicj5EYXRlwqA6IHNh
+bS4gMyBkw6ljLiAyMDIyIMOgIDE1OjI0PGJyPsOAwqA6IERpYWxsb2NoZXJpZnRoaWVybm83NzlA
+Z21haWwuY29tPGJyPk9iamV0wqA6IFN1Y2PDqHMgZGUgbCdhY2hhdCBkdSBmb3JmYWl0PGJyPjxi
+bG9ja3F1b3RlPjxwPkJvbmpvdXIgVGhpZXJubyBTaGFyaWYgRGlhbGxvLDwvcD48cD5NZXJjaSBk
+JiMzOTthdm9pciBhY2hldMOpIGRlcyBmb3JmYWl0cyBwcmVtaXVtIHN1ciBub3RyZSBzaXRlwqBG
+aWkgRGV3Z2FsLjwvcD48cD5Wb3RyZSB0eXBlIGRlIGNvbXB0ZSBlc3QgOiBQcmVtaW51bTwvcD48
+cD5MZSBjb2RlIGRlIHBhaWVtZW50IGVzdCA6IDIyMTIwMy0xNjI0NDU8L3A+PHA+TGUgZm9yZmFp
+dCBhY2hldMOpIGVzdCA6IExhbmNlbWVudCBPZmZpY2llbDwvcD48cD5MZSBtb250YW50IGVzdCBk
+ZSA6wqA8c3BhbiBzdHlsZT0iY29sb3I6cmdiKCA3NyAsIDgxICwgODYgKTtmb250LWZhbWlseTom
+IzM5O2FyaWFsJiMzOTsgLCBzYW5zLXNlcmlmO2ZvbnQtc2l6ZToxNHB4Ij7igqzCoDwvc3Bhbj4w
+LjAwPC9wPjxwPlZldWlsbGV6IGNvbnRhY3RlciBsJiMzOTvDqXF1aXBlIGFkbWluaXN0cmF0aXZl
+IHNpIHZvdXMgYXZleiBkJiMzOTthdXRyZXMgcXVlc3Rpb25zLiBOb3VzIHZvdXMgc291aGFpdG9u
+cyBib25uZSBjaGFuY2UuPC9wPjxwPk1lcmNpLDwvcD48cD5OZSByw6lwb25kZXogcGFzPC9wPg0K
+DQo8L2Jsb2NrcXVvdGU+PC9kaXY+
+

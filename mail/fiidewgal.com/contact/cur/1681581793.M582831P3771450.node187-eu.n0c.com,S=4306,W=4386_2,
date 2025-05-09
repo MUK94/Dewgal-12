@@ -1,0 +1,80 @@
+Return-Path: <baht00302@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 9tqnIuHmOmQ6jDkA3R2AvA
+	(envelope-from <baht00302@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 15 Apr 2023 20:03:13 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4PzLlM2NHpz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="eG6DmHcj"
+X-N0C-MailScanner-eFa-Watermark: 1682186589.74343@BP2RpPp/AcnNbdgzsjlJvw
+X-N0C-MailScanner-eFa-From: baht00302@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: s
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 37117406355D.A8EFA
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ot1-f46.google.com ([209.85.210.46] [209.85.210.46])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 37117406355D
+	for <contact@fiidewgal.com>; Sat, 15 Apr 2023 20:02:38 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 37117406355D
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 37117406355D
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=eG6DmHcj
+Received: by mail-ot1-f46.google.com with SMTP id v15-20020a9d7d0f000000b006a43af689b6so3489124otn.0
+        for <contact@fiidewgal.com>; Sat, 15 Apr 2023 11:02:38 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1681581756; x=1684173756;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=SUEP0Ro4EaEoGt9drkBbicVQ68H7DkGzLuLHVX7wWdM=;
+        b=eG6DmHcjkwlxGv1sgfrpdHHvL750xG1HadvAk3mXz5xJYcmsbnzMwQ7Nygw4ZZa8UX
+         r/RexKABy6SS8R4vLC/rmAr+CE5rXPBJ5I3PwHad0UjjKtFr68aKFVVFhFk2cHlnBQ2m
+         Ub7+NZfThO10Gnq/DDKYneuoetSd/geqx1wkuzlLhXzjLbmVFGwBeWwwNFKJi+biQV0t
+         bUdTAbAe+uHw13tfSkzIm+aOTAfmv+Ee8H+MfvRYIfSCFt6T7mebMeVdFpzBqcGD45VI
+         kDcds2GFM1H3exWyqIt5LZ6Wbw8sdwqlG1KIPJSLdui8tcrMlgZrNysNJx+WxXbnKP2M
+         DLgw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1681581756; x=1684173756;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=SUEP0Ro4EaEoGt9drkBbicVQ68H7DkGzLuLHVX7wWdM=;
+        b=NQ9m7CAItW+WIXl4K5qDucr3gRg4fKdoV60lrsUtQM4ZvLOTadKf/bIKpbV8CnOvgm
+         iw9VxUgzVNDTVSy/NxtpWLkSiQs8DvP5aJ0rEPUixudO5Ok5+jxk7EVjQe4WRjMWT99P
+         XFXqfulkbTMDbhQU/xzjYpxmit1+I0AoY5HcV3tVKAL7B2hJDJYdOnHRPY2mq5s1p9qp
+         LP+c8RuOz64Uq3mJCZFHLwfzmt1E4XgT8VX2141YFOpHfGXl8m9oYYbH687slN/QTDwR
+         IwVY2Jb2N4hvwvC8kUT0xUQA2tzyVn19bdtdm39RZwAgj7Nu7RQc2R64Y+mp18rzBeMA
+         RIJA==
+X-Gm-Message-State: AAQBX9d31zmqFUxMTRU8lXRVtQc4ebvrwaGbn2jkOaqyHRtDPjLgzqzt
+	StnTABDf+wBi/eM4rsZlpQFoS2QA4qDslh3CuHrnhlTv
+X-Google-Smtp-Source: AKy350Z6H90MeVnkE6ftQfcvNvKtLHrjI6xZ//m7wSCH5jnMHYcHLH7NoL90sMiGeAZcEbZR8jfdTvznBi14tTrMfTw=
+X-Received: by 2002:a05:6830:1c1:b0:6a1:342f:7ba4 with SMTP id
+ r1-20020a05683001c100b006a1342f7ba4mr2614202ota.0.1681581756605; Sat, 15 Apr
+ 2023 11:02:36 -0700 (PDT)
+MIME-Version: 1.0
+From: Thierno Bah <baht00302@gmail.com>
+Date: Sat, 15 Apr 2023 19:02:26 +0100
+Message-ID: <CACsO5pAafv=NMep+2fuBp0KjJZwJ0YfscPfsz43_S_=P9ZfT_g@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000437ca105f963c34f"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000437ca105f963c34f
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Salam ma famille =F0=9F=91=AA
+
+--000000000000437ca105f963c34f
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Salam ma famille =F0=9F=91=AA=C2=A0</div>
+
+--000000000000437ca105f963c34f--

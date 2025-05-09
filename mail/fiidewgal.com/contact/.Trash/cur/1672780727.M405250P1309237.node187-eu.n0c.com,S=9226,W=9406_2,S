@@ -1,0 +1,180 @@
+Return-Path: <assiatou226@outlook.fr>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id CFAXGLebtGM1+hMA3R2AvA
+	(envelope-from <assiatou226@outlook.fr>)
+	for <contact@fiidewgal.com>; Tue, 03 Jan 2023 22:18:47 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Nmlw7278cz3F9l
+X-N0C-MailScanner-eFa-Watermark: 1673385525.00556@gZ/aonvYj0HxxvX1tBImlQ
+X-N0C-MailScanner-eFa-From: assiatou226@outlook.fr
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 41922401AEF6.A5DE0
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from EUR05-AM6-obe.outbound.protection.outlook.com ([40.92.91.62] [40.92.91.62])
+	(using TLSv1.2 with cipher ECDHE-ECDSA-AES256-GCM-SHA384 (256/256 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 41922401AEF6
+	for <contact@fiidewgal.com>; Tue,  3 Jan 2023 22:18:42 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 41922401AEF6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=outlook.fr
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=outlook.fr
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 41922401AEF6
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=FU3y7HdQsrirZeDRH1n7nm3Kg35FY4ne/gCNWHd1mK20PmoZ4eEBFyqioccdlVaufjgZCKzUvn+ZQW04Y9H++gh6bpfRs8XScBE1DGdFbnpexxbK7NcXAQrUAx/BMDbIYnKhau/XLE/+7K3XUIdVCZlmtjbS7h+d+u216LVt9QmlI5ULY9BX2RbvpwpHVU101a2h+f7ASuARuzlmc3ALKWgKj3vS6OZlYTeFUyF36l7rwoHkfA+lEl1s+p6GCX2RLsdsuyTXN8guVJ9WQbOIbvOKwVmV3lCFQrhAH3euFYRbMlBnDwjvRLFGjNxpXiQF0JG+URKjoxaYMV+IaNJSqg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=zzBEwsDHZqwGVcMtB4PAZ+q3tK5OwbRl1vTliOyeeyA=;
+ b=BN3TBuMbHJhc/7NUfpj0ZBuan9IxvoUFUV/QU7pkBMyZaxhrRS2CGmQoUAsUNs14qO0OJKubVEISBbHXQgjSRBBUJWF9iOdaQFQ76IUxYJcFSFk9apApvCWxurvHu14BvOQ25Yc2AI1sdANudFasXZDhZe7yBbViu1rammMEh+Bxw2X1SGLeEmJWDrQs2dcyo6CBfIN0/w0VIRknlIWZN+7Z33rsJLxmI10wQx7ME6x8prwgURua7Nsz0Wx4iunDAOcBbdfTos1ldMejTTm7UEyv0jWfummbmH0/SFejQM2odxO2KFBVMFdCmpvT7iGw7w8jJ2f+CTrPcsynNsb5ug==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+Received: from AS8P195MB1775.EURP195.PROD.OUTLOOK.COM (2603:10a6:20b:529::14)
+ by AS1P195MB1520.EURP195.PROD.OUTLOOK.COM (2603:10a6:20b:48f::18) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5944.19; Tue, 3 Jan
+ 2023 21:18:41 +0000
+Received: from AS8P195MB1775.EURP195.PROD.OUTLOOK.COM
+ ([fe80::6575:8b92:a846:dd66]) by AS8P195MB1775.EURP195.PROD.OUTLOOK.COM
+ ([fe80::6575:8b92:a846:dd66%6]) with mapi id 15.20.5944.019; Tue, 3 Jan 2023
+ 21:18:40 +0000
+From: assiatou barry <assiatou226@outlook.fr>
+To: =?iso-8859-1?Q?Ne_r=E9pondez_pas?= <contact@fiidewgal.com>
+Subject: =?iso-8859-1?Q?RE:_Vous_avez_une_nouvelle_demande_d'int=E9r=EAt?=
+Thread-Topic: =?iso-8859-1?Q?Vous_avez_une_nouvelle_demande_d'int=E9r=EAt?=
+Thread-Index: AQHZH3baRz8TISB0JUWak7c5Z/hRAa6NMvkR
+Date: Tue, 3 Jan 2023 21:18:40 +0000
+Message-ID: 
+ <AS8P195MB1775013C1DA7A3807B9CE91198F49@AS8P195MB1775.EURP195.PROD.OUTLOOK.COM>
+References: <a9e5eb6d6e664c29d0ee1d4b0716e419@fiidewgal.com>
+In-Reply-To: <a9e5eb6d6e664c29d0ee1d4b0716e419@fiidewgal.com>
+Accept-Language: fr-FR, en-US
+Content-Language: fr-FR
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-ms-exchange-messagesentrepresentingtype: 1
+x-tmn: [J867atmuSPROTHjyK/Zqfub+s5990dpm]
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: AS8P195MB1775:EE_|AS1P195MB1520:EE_
+x-ms-office365-filtering-correlation-id: 5acdd8f6-43f8-496f-54a1-08daedd0164f
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info: 
+ X3TwSRnJesyVTefGDkOhLVRnaLzLtpniNHKToIEwVssCDr9xfg5pMWzCSgciAY3i13VteHRZkpVNdo3uT/ckkgFxy0FpnLDb9v7ttJJrccwc1wL+70galuQ+O2roaj/WenqGLAfOCcScVQOxDsAJ5g32pJ0/WT90j9cM608Fary9p6tnhdaIwn3bprUelQFt8P99mccT6FAlKEQwhTzlRsNG27Pyg86ufcbRHWivuK4CqFfYJ0CHJoqXwSmVpzmfgTS3B6GyTtaZJ47lPNLqeEkHeGt0AaeW5MhhZxg5zbGFqAos4g1AHTD3NG5GG0NNp/+8Z/5jr8e/cNFbdAovF/OGfotgsqmbLU3XA28rMB7ofSSLkenxz0TPC8ojniwzP7qiddUbcLFNgZAyt9saI0Ksgl3MJYhVdwzDRO7YSvB324m1OrJ4mIba+zTpER1cyMsne9r2xAtNLEg37OWooNS51jzAe4DUWj0C0pNm8mUILnmzx+YyO956K3ahEUUhwD+Vee/3Ohi0lRskHf/nUuo9rPiPUQFa9GpK3arXDa8A8KaSd+5W1WNi/gwNVZkjPkp/P7t67RU2lcZyhwXNy+4sGKbjLrp/MuD7/NRT7eWXbYIBLev4k1T81YVaDLF9H4ezUjKFbz8IHRNq8bAwJg==
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0: 
+ =?iso-8859-1?Q?mme/43TFgg8VahV9INF33No10ELhpUCElNg3ZsDKZjjssZigePo94pXe9Z?=
+ =?iso-8859-1?Q?V2JR08o5Ev40q7OKNA9QLEfhP9010OQK+WclAt8HO743g77AdlzoNJJhuF?=
+ =?iso-8859-1?Q?cmsRe6zZKwH9KjHTOozzjoJ9ZVjN5G7KxtnuMwtarzM8vCEkJ8VKAFyZR3?=
+ =?iso-8859-1?Q?R1pAAimuhipI1oM95clR7/zF8zZcvkGfOasFTDYOSGQ26jLZRWJPnIgaZx?=
+ =?iso-8859-1?Q?1nMvtJ8+2ZMH572984c4R91H37QzlpFMWC9tWOeOV99HxA5Z+LiyaTJ8vB?=
+ =?iso-8859-1?Q?aCvDTT7eZQxmU9ruvpM/vEfv+95D+UE8Q9UUZMaMEua1BFG/02ITkhhn+R?=
+ =?iso-8859-1?Q?3v4tpkqbYJgOTJ8tjSq7kDzqVsn4RUpCmIond4j1DSgJo4FOQzSn189pOY?=
+ =?iso-8859-1?Q?OLmbnQ5BqQ2tlaocaUapdUbSXtQH9fNaCtAMgS7csUdbhabS4aQfP9nxJe?=
+ =?iso-8859-1?Q?xvgW0nh8uFloReFAQTZ0v4sAD9IWjQFuQ4T0oDnjDLKogrZp5d9vNoGYSj?=
+ =?iso-8859-1?Q?ViPrbixgyuHL6UQKRshnPqy3cRKEgzeYZwupW5GW1A6ihv96QC6P3+FEcT?=
+ =?iso-8859-1?Q?7KWNyHuGLf5DAPLpllQghskfjkoKBwvVwO7p6s1muDiogxE1oFiBbGyoHV?=
+ =?iso-8859-1?Q?+ni9DruzSvu876ZmXrI84I25gtnuvbFEtOe6WFCHfETHe6cFj6rT0Ddja/?=
+ =?iso-8859-1?Q?RNg5E48ms5dirxE6ESeUFPLKAanC3aqSISOUr7Q/PYNH2nTVlmTlixx6G4?=
+ =?iso-8859-1?Q?YYIr69TOlmbGUSeLt7++0Ug59PlKGGl+zarlcWQXT+JkZMBN4CJogLSwIS?=
+ =?iso-8859-1?Q?Kwg07jCTr6Xf0FqE6Cnzpg2xTXscP5aDh3Yb8bmS7X+phDfiq8PN9J30VQ?=
+ =?iso-8859-1?Q?dqawsSzD0LdVssbsX2GC6G+VQ63MBKyM6bBIRxWVvwjJUbRBrC8etGyHCg?=
+ =?iso-8859-1?Q?HP+l85XEW/7CKmpvW5pAx4uaNcy4uOjm8gQ110tM5aunZlSirzMR1ndgym?=
+ =?iso-8859-1?Q?Wq7+6zspbKXFUNfkOIXPJEuiPX2OveazOpmW6Dgxu+fVcUGI0RjRLalENM?=
+ =?iso-8859-1?Q?Q5YIpySzK4dgO8RYxGyiUvJI1prLou04BaJ1tEhldQ0BNSe3aSJAVYUznG?=
+ =?iso-8859-1?Q?TN8+S7DRfquu5OSc3hTTwWAhEcnbvVCCzGJ6KxqgPgUJGVKaLXtG6w0UVx?=
+ =?iso-8859-1?Q?FgcrBEEsH/VfTP1rFYbGs43UM5vNnjf+w/lW0uHdN6TNGweY0/Rx+XLdR8?=
+ =?iso-8859-1?Q?PNsrfB4CDN3TtFiW3whKneZ6Ph9ngAwtvxJrcsTGT19Gc0KYln5vlogrxw?=
+ =?iso-8859-1?Q?D83t/TWWoWIoQ9ga55HvW/Ik9Q=3D=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_AS8P195MB1775013C1DA7A3807B9CE91198F49AS8P195MB1775EURP_"
+MIME-Version: 1.0
+X-OriginatorOrg: sct-15-20-4755-11-msonline-outlook-49ed2.templateTenant
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: AS8P195MB1775.EURP195.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-CrossTenant-Network-Message-Id: 5acdd8f6-43f8-496f-54a1-08daedd0164f
+X-MS-Exchange-CrossTenant-originalarrivaltime: 03 Jan 2023 21:18:40.9312
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-rms-persistedconsumerorg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AS1P195MB1520
+X-N0C-Node-IP: 185.221.182.45
+
+--_000_AS8P195MB1775013C1DA7A3807B9CE91198F49AS8P195MB1775EURP_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Les informations sur le concern=E9
+
+
+
+Envoy=E9 depuis mon appareil Galaxy
+
+
+
+-------- Message d'origine --------
+De : Ne r=E9pondez pas <contact@fiidewgal.com>
+Date : 03/01/2023 13:25 (GMT+00:00)
+=C0 : assiatou226@outlook.fr
+Objet : Vous avez une nouvelle demande d'int=E9r=EAt
+
+
+Bonjour Assiatou Barry,
+
+Amadou Diallo a manifest=E9 son int=E9r=EAt pour vous.
+
+Veuillez contacter l'=E9quipe administrative si vous avez d'autres question=
+s.
+
+Merci,
+
+Ne r=E9pondez pas
+
+--_000_AS8P195MB1775013C1DA7A3807B9CE91198F49AS8P195MB1775EURP_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+</head>
+<body>
+<div dir=3D"auto">Les informations sur le concern=E9&nbsp;</div>
+<div dir=3D"auto"><br>
+</div>
+<div dir=3D"auto"><br>
+</div>
+<div dir=3D"auto"><br>
+</div>
+<div id=3D"composer_signature" dir=3D"auto">
+<div dir=3D"auto" style=3D"font-size:12px; color:#575757">Envoy=E9 depuis m=
+on appareil Galaxy</div>
+</div>
+<div dir=3D"auto"><br>
+</div>
+<div><br>
+</div>
+<div><br>
+</div>
+<div>-------- Message d'origine --------</div>
+<div>De : Ne r=E9pondez pas &lt;contact@fiidewgal.com&gt; </div>
+<div>Date : 03/01/2023 13:25 (GMT+00:00) </div>
+<div>=C0 : assiatou226@outlook.fr </div>
+<div>Objet : Vous avez une nouvelle demande d'int=E9r=EAt </div>
+<div><br>
+</div>
+<div>
+<p>Bonjour Assiatou Barry,</p>
+<p>Amadou Diallo a manifest=E9 son int=E9r=EAt pour vous.</p>
+<p>Veuillez contacter l'=E9quipe administrative si vous avez d'autres quest=
+ions.</p>
+<p>Merci,</p>
+<p>Ne r=E9pondez pas</p>
+</div>
+</body>
+</html>
+
+--_000_AS8P195MB1775013C1DA7A3807B9CE91198F49AS8P195MB1775EURP_--

@@ -1,0 +1,78 @@
+Return-Path: <abdoulrahim008@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id cm81G/ifpGPxuTkA3R2AvA
+	(envelope-from <abdoulrahim008@gmail.com>)
+	for <contact@fiidewgal.com>; Thu, 22 Dec 2022 19:20:40 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NdJX82Fx3z34SDnG
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="oU1dyKxu"
+X-N0C-MailScanner-eFa-Watermark: 1672338037.49926@KT6GAMSIgyAfUm09J0f2dA
+X-N0C-MailScanner-eFa-From: abdoulrahim008@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 9C69C401AEEF.A1996
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ed1-f43.google.com ([209.85.208.43] [209.85.208.43])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 9C69C401AEEF
+	for <contact@fiidewgal.com>; Thu, 22 Dec 2022 19:20:03 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 9C69C401AEEF
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 9C69C401AEEF
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=oU1dyKxu
+Received: by mail-ed1-f43.google.com with SMTP id b69so4074380edf.6
+        for <contact@fiidewgal.com>; Thu, 22 Dec 2022 10:20:03 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=1Q1MrUcFzJHVYuMLynzMiyxo7XavcfHZb7k1HJXQMPM=;
+        b=oU1dyKxur0w9N+VsmLwdpAuLHpbkH0/TbaeEyfM1PzzDcFCeKu7Rb0Qqp2b7PcKbZG
+         fYKmDnoex1Ib62yzIYUwizVEYlLm4Bw/D+52P3cVkFVszWAOkYHy2rYVVPnzJAFx78/7
+         Y+T6P7CtV3kSq7q4H1L9DimTE/zqPtPD9nFOMPuCyCNmP5WEhZDyi6gHUdi/YDDGcW33
+         K8cCmrtzLw4Z+3XrsKGhKO69YVRzBpwPB25JZQiTQllKjA1Sjo56M+VNE/S1tMk1JNy8
+         4HmdTmLuEuFv1efPFiEJsgtom2NlMHTzoJ1fvPDZqR/TiPtPs8AjPqdGaAZOcc5OcI+C
+         /1Kg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=1Q1MrUcFzJHVYuMLynzMiyxo7XavcfHZb7k1HJXQMPM=;
+        b=v1USKd93wayNoXZ7gZiv+uwXtYPnSKvSV6WUK48uAHlsI86raisrUKBPlA2VicwwBC
+         kKWUqhz7HlZrj7ae94lH5yMrORiPwh80EHzrlwOv2mjcwdYTPG/gI0PvxnuT2OW9BsPC
+         lG65sCGsq9HppsueEnBDILGcLkuLzIaW+XYsbVi/2OpRE+9GORqGQdSu8stHgmm4jFwh
+         gneCUDiegxPP4S8DzdYOHL3i9x07rH+TcHCOPWdA8C5LphKJFS7kFof9UH2i3l7N9JBE
+         h34lntsc0CeFz6qsQkLmAu8rZOXttE/zsyoXY74fa6Y8nV4rhASaULwLbKpSJec0VO2I
+         sVxw==
+X-Gm-Message-State: AFqh2kqKc8/m53AZg8HAX01JyOLUN06MWvAFjlTk4NJmnGxz0PiWLuxT
+	FEpE/fzogduG1liyJH6DIBEUtW/Ek3Cmmm9oYJ1Uuenw
+X-Google-Smtp-Source: AMrXdXtKG76iasGrVr5yTUuEmm8LQm/+AxcQ8uaVU5Oiw3p4PwUp3yMh2aqdConLXD2QTTKcDfJhls3NTJTLNbwxA+g=
+X-Received: by 2002:a50:99ca:0:b0:46c:edb5:afea with SMTP id
+ n10-20020a5099ca000000b0046cedb5afeamr539038edb.315.1671733202839; Thu, 22
+ Dec 2022 10:20:02 -0800 (PST)
+MIME-Version: 1.0
+From: Abdoulrahim Jallow <abdoulrahim008@gmail.com>
+Date: Thu, 22 Dec 2022 18:18:33 +0000
+Message-ID: <CAGWBy_+ZKndyTPS9dssuBLoADPWiJoChSmoktoi-37ORBbRWcw@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000b6eb9b05f06eb793"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000b6eb9b05f06eb793
+Content-Type: text/plain; charset="UTF-8"
+
+Cet etre membre de se group
+
+--000000000000b6eb9b05f06eb793
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Cet etre membre de se group=C2=A0</div>
+
+--000000000000b6eb9b05f06eb793--

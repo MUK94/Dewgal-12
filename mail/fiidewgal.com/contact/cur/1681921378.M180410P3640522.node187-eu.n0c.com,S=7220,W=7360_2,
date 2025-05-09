@@ -1,0 +1,140 @@
+Return-Path: <dioulake.dansokho1993@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id TyCuCmIVQGTKjDcA3R2AvA
+	(envelope-from <dioulake.dansokho1993@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 19 Apr 2023 18:22:58 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Q1mKs5vTrz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="jmuw11yt"
+X-N0C-MailScanner-eFa-Watermark: 1682526176.01758@OUlh+U6GuazqW9nG1ZQXFw
+X-N0C-MailScanner-eFa-From: dioulake.dansokho1993@gmail.com
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: F1B0C4020D4E.AA86D
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ej1-f43.google.com ([209.85.218.43] [209.85.218.43])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id F1B0C4020D4E
+	for <contact@fiidewgal.com>; Wed, 19 Apr 2023 18:22:23 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com F1B0C4020D4E
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com F1B0C4020D4E
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=jmuw11yt
+Received: by mail-ej1-f43.google.com with SMTP id b16so7966174ejz.3
+        for <contact@fiidewgal.com>; Wed, 19 Apr 2023 09:22:22 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1681921342; x=1684513342;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=yL9MjPnF3qkw+vzSY/BZLU5wmYTxrVk2n5Ns1jo3h6c=;
+        b=jmuw11ytAHHM36x2Naonhl3i1JY39g/nZAvJrKXYffNHxCPnNbYR+qth6v3MQPfwX7
+         zjKVFAkQffg71xLqvX1E0owVlxvf9hbMDRQgR4+qtS2wlVjN0EbHMZgtt2kmNaQX2bLJ
+         cZT+fm3eRmJ45bkCg9aRztdjor00mDT9eNv7wVkyQINyxjgU+2SyovJGipIdy0y/S27D
+         Z/aRklM/2QeE0WOBOqK9pQAunR7kQodHK8+en6ShLjOnDiro/as90/evGg8GpRdIpiEm
+         V3Ore0Zq8Tgz2wyLJKdmhTU/AixgEzGSeQVnM0B8nHpDgRuJDU5WYQQ+pvxqDArnXQed
+         XJfA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1681921342; x=1684513342;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=yL9MjPnF3qkw+vzSY/BZLU5wmYTxrVk2n5Ns1jo3h6c=;
+        b=ET1i3bNkdHOMCmLIUAQMGLJhp8e269Z7pnCK9Xe6aDQdx5epMa+j6SdtLSo2r7+G2s
+         w3lVm0+ntI3JPuogyo2qC3v1m5SbWJ3i+RKhm95wdaoKIRnDgVd/RF7uk/D9hrfjPI8p
+         Xz3VX2sSWBG2L4Zri8RSzVynjDjLfWk31meh3fDB30YVZ4Jpox4EocjG65JLrniEEhtr
+         1H9lNncAML1ydeYrF1dxmphpHDsRcgDGDDKoVe/bLZGkwNfoxe3ztYfEyrAmrwQVnq8G
+         UjDfxChf3nZ5e8fx81NwCLG1jLU2UkaEgu58uWTUgaMN0hUiXXwP+SvzXaVPtwVo80FB
+         kPSA==
+X-Gm-Message-State: AAQBX9flrByuYvh03f3kUbmT9OQISXEDmxgZFjTONgSF/0jLhffKRgRX
+	DKt12dGreNzZ5ZIiqW5i+zFLRBTWJ0XVo30DKUtvWt6H
+X-Google-Smtp-Source: AKy350aksxLXHWhKtX06a6FZtT1kzeZxsbR3+UbX3O7YC3T+AMUynX5y2kHTtCcAavrAZ3gWMPaILgTk8hdOhR+X534=
+X-Received: by 2002:a17:906:f107:b0:895:58be:957 with SMTP id
+ gv7-20020a170906f10700b0089558be0957mr15710066ejb.2.1681921341745; Wed, 19
+ Apr 2023 09:22:21 -0700 (PDT)
+MIME-Version: 1.0
+References: <7bb8cab23279d30d4baef81b9ed0413b@fiidewgal.com>
+In-Reply-To: <7bb8cab23279d30d4baef81b9ed0413b@fiidewgal.com>
+From: Dioulake Dansokho <dioulake.dansokho1993@gmail.com>
+Date: Wed, 19 Apr 2023 16:22:09 +0000
+Message-ID: <CAOTVVWTCLe7_soUsA0bKcmq-OwxTvTOARoed2Yxr-hnyV027mg@mail.gmail.com>
+Subject: Re: Ouverture de compte
+To: =?UTF-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>
+Content-Type: multipart/alternative; boundary="0000000000001d6d9f05f9b2d461"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000001d6d9f05f9b2d461
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+dioulake.dansokho, j'habite =C3=A0 k=C3=A9dougou S=C3=A9n=C3=A9gal mo num=
+=C3=A9ro est 77 146 93 59
+
+Le mer. 19 avr. 2023 =C3=A0 16:18, Ne r=C3=A9pondez pas <contact@fiidewgal.=
+com> a
+=C3=A9crit :
+
+> ASalam Aleykoum Dioulake DANSOKHO,
+>
+> Nous sommes heureux de vous accueillir sur la plateforme Fii Dewgal.
+>
+> Pour compl=C3=A9ter votre inscription, nous vous demandons de nous faire
+>
+> parvenir vos informations : nom, pr=C3=A9nom, email valide,
+>
+> photo, pays de r=C3=A9sidence et ville, sur notre WhatsApp 001 646 752 91=
+15 =C3=A0
+> d=C3=A9faut de cela, tout profil incomplet sera imm=C3=A9diatement suppri=
+m=C3=A9.
+>
+> Vous pourrez vous connecter =C3=A0 partir de ce lien : https://fiidewgal.=
+com
+>
+> Cliquez =C3=A9galement sur ce lien pour savoir comment activer votre comp=
+te :
+> https://www.youtube.com/live/JtK1qhN9lbU?feature=3Dshare
+>
+> Cliquez aussi sur ce lien pour savoir comment ajouter votre photo :
+> https://www.youtube.com/live/VU3RH8dIHvk?feature=3Dshare
+>
+> L=E2=80=99=C3=A9quipe Fii Dewgal !
+>
+> Merci !
+>
+> Ne r=C3=A9pondez pas
+>
+
+--0000000000001d6d9f05f9b2d461
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">dioulake.dansokho, j&#39;habite =C3=A0 k=C3=A9dougou S=C3=
+=A9n=C3=A9gal mo num=C3=A9ro est 77 146 93 59</div><br><div class=3D"gmail_=
+quote"><div dir=3D"ltr" class=3D"gmail_attr">Le mer. 19 avr. 2023 =C3=A0 16=
+:18, Ne r=C3=A9pondez pas &lt;<a href=3D"mailto:contact@fiidewgal.com">cont=
+act@fiidewgal.com</a>&gt; a =C3=A9crit=C2=A0:<br></div><blockquote class=3D=
+"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding=
+-left:1ex"><p>ASalam Aleykoum Dioulake DANSOKHO,</p><p>Nous sommes heureux =
+de vous accueillir sur la plateforme Fii Dewgal.</p><p>Pour compl=C3=A9ter =
+votre inscription, nous vous demandons de nous faire=C2=A0</p><p>parvenir v=
+os informations=C2=A0: nom, pr=C3=A9nom, email valide,=C2=A0</p><p>photo, p=
+ays de r=C3=A9sidence et ville, sur notre WhatsApp 001 646 752 9115 =C3=A0 =
+d=C3=A9faut de cela, tout profil incomplet sera imm=C3=A9diatement supprim=
+=C3=A9.=C2=A0</p><p>Vous pourrez vous connecter =C3=A0 partir de ce lien : =
+<a href=3D"https://fiidewgal.com" target=3D"_blank" rel=3D"noreferrer">http=
+s://fiidewgal.com</a>=C2=A0</p><p>Cliquez =C3=A9galement sur ce lien pour s=
+avoir comment activer votre compte=C2=A0: <a href=3D"https://www.youtube.co=
+m/live/JtK1qhN9lbU?feature=3Dshare" target=3D"_blank" rel=3D"noreferrer">ht=
+tps://www.youtube.com/live/JtK1qhN9lbU?feature=3Dshare</a></p><p>Cliquez au=
+ssi sur ce lien pour savoir comment ajouter votre photo : <a href=3D"https:=
+//www.youtube.com/live/VU3RH8dIHvk?feature=3Dshare" target=3D"_blank" rel=
+=3D"noreferrer">https://www.youtube.com/live/VU3RH8dIHvk?feature=3Dshare</a=
+></p><p>L=E2=80=99=C3=A9quipe Fii Dewgal !</p><p>Merci !<br></p><p>Ne r=C3=
+=A9pondez pas</p>
+
+</blockquote></div>
+
+--0000000000001d6d9f05f9b2d461--

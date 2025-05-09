@@ -1,0 +1,147 @@
+Return-Path: <>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id mGq2ClE7h2MnjikA3R2AvA
+	(envelope-from <>)
+	for <contact@fiidewgal.com>; Wed, 30 Nov 2022 12:15:29 +0100
+Received: by node187-eu.n0c.com (Postfix)
+	id 2878A4002BAC; Wed, 30 Nov 2022 06:15:29 -0500 (EST)
+Date: Wed, 30 Nov 2022 06:15:29 -0500 (EST)
+From: MAILER-DAEMON@node187-eu.n0c.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: contact@fiidewgal.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="D98844002B9B.1669806929/node187-eu.n0c.com"
+Message-Id: <20221130111529.2878A4002BAC@node187-eu.n0c.com>
+
+This is a MIME-encapsulated message.
+
+--D98844002B9B.1669806929/node187-eu.n0c.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host node187-eu.n0c.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<Kounkourediallo@gmail.com>: host gmail-smtp-in.l.google.com[74.125.71.27]
+    said: 550-5.1.1 The email account that you tried to reach does not exist.
+    Please try 550-5.1.1 double-checking the recipient's email address for
+    typos or 550-5.1.1 unnecessary spaces. Learn more at 550 5.1.1
+    https://support.google.com/mail/?p=NoSuchUser
+    f9-20020a5d64c9000000b00241dc4afbe8si754713wri.836 - gsmtp (in reply to
+    RCPT TO command)
+
+--D98844002B9B.1669806929/node187-eu.n0c.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; node187-eu.n0c.com
+X-Postfix-Queue-ID: D98844002B9B
+X-Postfix-Sender: rfc822; contact@fiidewgal.com
+Arrival-Date: Wed, 30 Nov 2022 06:15:28 -0500 (EST)
+
+Final-Recipient: rfc822; Kounkourediallo@gmail.com
+Original-Recipient: rfc822;Kounkourediallo@gmail.com
+Action: failed
+Status: 5.1.1
+Remote-MTA: dns; gmail-smtp-in.l.google.com
+Diagnostic-Code: smtp; 550-5.1.1 The email account that you tried to reach does
+    not exist. Please try 550-5.1.1 double-checking the recipient's email
+    address for typos or 550-5.1.1 unnecessary spaces. Learn more at 550 5.1.1
+    https://support.google.com/mail/?p=NoSuchUser
+    f9-20020a5d64c9000000b00241dc4afbe8si754713wri.836 - gsmtp
+
+--D98844002B9B.1669806929/node187-eu.n0c.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <contact@fiidewgal.com>
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NMc7h5cW9z34SDnL
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="Gd/R3HZt"
+X-N0C-MailScanner-eFa-Watermark: 1670411648.44105@3Kf3l4z2pYGUOlMVYp0L9A
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 93F3C4016FD1.A9A27
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 93F3C4016FD1
+	for <Kounkourediallo@gmail.com>; Wed, 30 Nov 2022 12:13:40 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 93F3C4016FD1
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 93F3C4016FD1
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1669806820;
+	bh=3kFxwM4c9rn0mgjK9SuMCmVzp8RtEpBLJrwLxIAjlx8=;
+	h=Date:Subject:From:To:From;
+	b=Gd/R3HZt932q+zkGsLfBpL/Aat47zjxhYJoIJncvZUELCgezZpXkpxIoNGn6mPiSL
+	 /oo80g36GnELLdtKV94NvX9BN6i3T8HNwHsZKFgQHJsnVfj2jZGK0i+k/hZi/jJz/h
+	 So1rSdn+6HAMxlN6KRXYCc48kgXckytxu2VvI0D8=
+Message-ID: <e973006935eb0712d1eae7c0a7483906@fiidewgal.com>
+Date: Wed, 30 Nov 2022 12:13:40 +0100
+Subject: Informations
+From: contact@fiidewgal.com
+To: Kounkourediallo@gmail.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<p class=3D"p1" style=3D"margin-right: 0px; margin-bottom: 0px; margin-left=
+: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-=
+stretch: normal; line-height: normal; font-family: &quot;Helvetica Neue&quo=
+t;;">SALAM ALEYKOUM ,<span class=3D"Apple-converted-space">&nbsp;</span></p=
+><p class=3D"p1" style=3D"margin-right: 0px; margin-bottom: 0px; margin-lef=
+t: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font=
+-stretch: normal; line-height: normal; font-family: &quot;Helvetica Neue&qu=
+ot;;">BIENVENUE SUR LA PLATEFORME Fii DEWGAL ,</p><p class=3D"p1" style=3D"=
+margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-numer=
+ic: normal; font-variant-east-asian: normal; font-stretch: normal; line-hei=
+ght: normal; font-family: &quot;Helvetica Neue&quot;;">POUR DISCUTER SUR LA=
+ PLATEFORME IL FAUT ENVOYER UNE DEMANDE D'INTERET</p><p class=3D"p1" style=
+=3D"margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-n=
+umeric: normal; font-variant-east-asian: normal; font-stretch: normal; line=
+-height: normal; font-family: &quot;Helvetica Neue&quot;;">QUI CORRESPOND A=
+' UNE DEMANDE DE RENDEZ-VOUS , SI LA REPONSE EST FAVORABLE</p><p class=3D"p=
+1" style=3D"margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-v=
+ariant-numeric: normal; font-variant-east-asian: normal; font-stretch: norm=
+al; line-height: normal; font-family: &quot;Helvetica Neue&quot;;">LE CHAT =
+SE DEBLOQUE.COMME IL Y'A UNE DIFFERENCE D'HEURE ENTRE LES PAYS L'HEURE</p><=
+p class=3D"p1" style=3D"margin-right: 0px; margin-bottom: 0px; margin-left:=
+ 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-s=
+tretch: normal; line-height: normal; font-family: &quot;Helvetica Neue&quot=
+;;">DE REFERENCE EST L'HEURE DE PARIS POUR PRENDRE UN RENDEZ-VOUS MEME SI V=
+OUS</p><p class=3D"p1" style=3D"margin-right: 0px; margin-bottom: 0px; marg=
+in-left: 0px; font-variant-numeric: normal; font-variant-east-asian: normal=
+; font-stretch: normal; line-height: normal; font-family: &quot;Helvetica N=
+eue&quot;;">ETES DANS LE MEME PAYS AUTRE QUE LA FRANCE.</p><p class=3D"p1" =
+style=3D"margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-vari=
+ant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal;=
+ line-height: normal; font-family: &quot;Helvetica Neue&quot;;">POUR PLUS D=
+=E2=80=99INFORMATION LA VIDEO CI-DESSOUS VOUS EXPLIQUE EN DETAIL.</p><p cla=
+ss=3D"p1" style=3D"margin-right: 0px; margin-bottom: 0px; margin-left: 0px;=
+ font-variant-numeric: normal; font-variant-east-asian: normal; font-stretc=
+h: normal; line-height: normal; font-family: &quot;Helvetica Neue&quot;;">h=
+ttps://www.youtube.com/watch?v=3DZBrmweGHV88</p><p class=3D"p1" style=3D"ma=
+rgin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-numeric=
+: normal; font-variant-east-asian: normal; font-stretch: normal; line-heigh=
+t: normal; font-family: &quot;Helvetica Neue&quot;;">MERCI POUR VOTRE COMPR=
+EHENSION!</p>
+
+--D98844002B9B.1669806929/node187-eu.n0c.com--

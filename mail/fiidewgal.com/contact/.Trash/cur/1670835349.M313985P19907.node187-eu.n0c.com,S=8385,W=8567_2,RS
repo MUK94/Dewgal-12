@@ -1,0 +1,182 @@
+Return-Path: <hajaissatu81@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id QGCYEpXslmPDTQAA3R2AvA
+	(envelope-from <hajaissatu81@gmail.com>)
+	for <contact@fiidewgal.com>; Mon, 12 Dec 2022 09:55:49 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NVwSz54zZz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="QTMQGxFS"
+X-N0C-MailScanner-eFa-Watermark: 1671440141.70179@u0YSozgB2HFS/sUmNCuC+Q
+X-N0C-MailScanner-eFa-From: hajaissatu81@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 7CEAE4003222.AE545
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-pg1-f181.google.com ([209.85.215.181] [209.85.215.181])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 7CEAE4003222
+	for <contact@fiidewgal.com>; Mon, 12 Dec 2022 09:55:08 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 7CEAE4003222
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 7CEAE4003222
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=QTMQGxFS
+Received: by mail-pg1-f181.google.com with SMTP id f9so7709402pgf.7
+        for <contact@fiidewgal.com>; Mon, 12 Dec 2022 00:55:08 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=tbsiJTeBOmVO6RfXf0izImH58f/uJ7dwCYot90S9qb0=;
+        b=QTMQGxFSMnHhkbXSo7/+5RtOk+EyB4l/l9zSsDPVsOyZetYeiOOkbn+mhtY9i2M4dT
+         6R8OpQ4N+9KtiE50Ht88VVTfu0YcmNS5XgpmNvdG/ILAvfHXyVQOhiuK6SuWbl6raEEz
+         8+wTTnefyc957gKPD2RaLzgCuuugWPuA3BtA3MnAiVntNjKUiJc5dKfPc7A2iQB1M43H
+         C/GydUUepJSUXdP4RZG0IA+wRTw5ZnmE+SZqFl5YuO2ywtiTV++sOResoIHotRK7xtfH
+         ymxLMYKcinjfdkWnm8FZ2iz27ceikH0H07h5GZvlg1L2sLjrcDnM0vosEHHPEccM2E8g
+         1pWw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=tbsiJTeBOmVO6RfXf0izImH58f/uJ7dwCYot90S9qb0=;
+        b=yoF5dYefif3RxzmHV0inxBp//io6RNC9dgQrDK0ZpElSm+Mak1qioSFb/oZH4/WVhU
+         i6LELpwwC1PYJ9gEnV5Pkcz3P16npH3F9LeQMTWW1ZfTJX0UJiwskfR7eLSypIETqIIQ
+         Ld7opTJHUc4EyTGe1SzJnOXUhlVlUiTbW4BA2f9JXNZpydVGJxiBr7+tsZ8ydoYpeJ6N
+         yMUyrtk6Vl1s5BxuYO4xblwt5XhQLNeHRQDdGKSRJk2rxhtpvLx+XVPYpz1RPPT6BEAk
+         KTFbrjEOKUEB9OWKB1F8xZ7Jq+caeBK65GAf/ThqkJJnK1S1h9A13Cw6qrg9RMtbLJz8
+         2SoQ==
+X-Gm-Message-State: ANoB5plTbdy/65dd2aUBrbf8CGWFgNmh2LSmi/+Y4eVtp717ZcKyJ2Cg
+	kzTvQVIhkzOgHo/A5WnS9NeMPQzb3OV0IkBHAao6diyR
+X-Google-Smtp-Source: AA0mqf5YyL+oV6fSbT9DBmc4XphzgR8pMxBdK3pr1t5F/X3wJtkmk+Xo66t3g7wZtFnTGbevBPO8U6Bom5iPkJQ6vMc=
+X-Received: by 2002:aa7:982b:0:b0:577:391e:16ac with SMTP id
+ q11-20020aa7982b000000b00577391e16acmr12721768pfl.38.1670835306280; Mon, 12
+ Dec 2022 00:55:06 -0800 (PST)
+MIME-Version: 1.0
+References: <861189f6f66d655f96950ef3d43442fc@fiidewgal.com>
+ <CAEoMEm-ndgfkNO6xJA-7ownRwnJ2h3wNrCv0eCWU2kV+Cipjww@mail.gmail.com> <bb2707267d1111c326c44157469dc5ff@fiidewgal.com>
+In-Reply-To: <bb2707267d1111c326c44157469dc5ff@fiidewgal.com>
+From: Aissatou Djouhariou Diallo <hajaissatu81@gmail.com>
+Date: Mon, 12 Dec 2022 08:54:53 +0000
+Message-ID: <CAEoMEm_WFHS+kdb7Eqkk=tK_HLywPwTysYpmFQrwzYgJ1Jy-qw@mail.gmail.com>
+Subject: Re: Informations et Rappel
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000e8bce405ef9da835"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000e8bce405ef9da835
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+C"est le 622 50 69 11 comme vous refusez de m'aider a m'inscrire, arretez
+de m'envoyer des messages de rappel
+
+
+
+On Sun, 11 Dec 2022, 22:39 , <contact@fiidewgal.com> wrote:
+
+> Le 2022-12-11 15:58, Aissatou Djouhariou Diallo a =C3=A9crit :
+> > Merci de supreme ma requested svp , je ne suis plus interesser
+> >
+> > On Sun, 11 Dec 2022, 21:52 , <contact@fiidewgal.com> wrote:
+> >
+> >> Salam Aleykoum ,
+> >>
+> >> Nous sommes tr=C3=A8s heureux de vous avoir parmi nos
+> >>
+> >> membres dans la plateforme et nous souhaitons que
+> >>
+> >> Vous y rester.C=E2=80=99est pourquoi nous vous prions de
+> >>
+> >> mettre =C3=A0 jour votre profil en mettant correctement
+> >>
+> >> Votre date de naissance , votre =C3=A9tat civil , votre photo
+> >>
+> >> et votre numero de telephone avec l'indicatif
+> >>
+> >> Si cela est compliqu=C3=A9 pour vous faites nous parvenir
+> >>
+> >> votre num=C3=A9ro de membre qui est sur votre profil public
+> >>
+> >> avec vos informations cit=C3=A9es ci dessus .
+> >>
+> >> Vous pouvez =C3=A9galement nous faire parvenir votre numero
+> >>
+> >> de membre avec votre photo et num=C3=A9ro de telephone sur
+> >>
+> >> notre WhatsApp ; juste scanner le QR Code ci-dessous.
+> >>
+> >> Merci pour votre comprehension!
+> >>
+> >>
+> >
+> https://www.facebook.com/messenger_media/?attachment_id=3D681462546690285=
+&message_id=3Dmid.%24cAAAAByb93tmLEoHGhGE4Tx4ScJMo&thread_id=3D100005079398=
+330
+> Veillez m'envoyer votre numero de membre pour supprimer votre compte .
+> Merci!
+>
+
+--000000000000e8bce405ef9da835
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">C&quot;est le 622 50 69 11 comme vous refusez de m&#39;ai=
+der a m&#39;inscrire, arretez de m&#39;envoyer des messages de rappel=C2=A0=
+<div dir=3D"auto"><div dir=3D"auto"><br><div dir=3D"auto"><br></div></div><=
+/div></div><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_a=
+ttr">On Sun, 11 Dec 2022, 22:39 , &lt;<a href=3D"mailto:contact@fiidewgal.c=
+om">contact@fiidewgal.com</a>&gt; wrote:<br></div><blockquote class=3D"gmai=
+l_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left=
+:1ex">Le 2022-12-11 15:58, Aissatou Djouhariou Diallo a =C3=A9crit=C2=A0:<b=
+r>
+&gt; Merci de supreme ma requested svp , je ne suis plus interesser<br>
+&gt; <br>
+&gt; On Sun, 11 Dec 2022, 21:52 , &lt;<a href=3D"mailto:contact@fiidewgal.c=
+om" target=3D"_blank" rel=3D"noreferrer">contact@fiidewgal.com</a>&gt; wrot=
+e:<br>
+&gt; <br>
+&gt;&gt; Salam Aleykoum ,<br>
+&gt;&gt; <br>
+&gt;&gt; Nous sommes tr=C3=A8s heureux de vous avoir parmi nos<br>
+&gt;&gt; <br>
+&gt;&gt; membres dans la plateforme et nous souhaitons que<br>
+&gt;&gt; <br>
+&gt;&gt; Vous y rester.C=E2=80=99est pourquoi nous vous prions de<br>
+&gt;&gt; <br>
+&gt;&gt; mettre =C3=A0 jour votre profil en mettant correctement<br>
+&gt;&gt; <br>
+&gt;&gt; Votre date de naissance , votre =C3=A9tat civil , votre photo<br>
+&gt;&gt; <br>
+&gt;&gt; et votre numero de telephone avec l&#39;indicatif<br>
+&gt;&gt; <br>
+&gt;&gt; Si cela est compliqu=C3=A9 pour vous faites nous parvenir<br>
+&gt;&gt; <br>
+&gt;&gt; votre num=C3=A9ro de membre qui est sur votre profil public<br>
+&gt;&gt; <br>
+&gt;&gt; avec vos informations cit=C3=A9es ci dessus .<br>
+&gt;&gt; <br>
+&gt;&gt; Vous pouvez =C3=A9galement nous faire parvenir votre numero<br>
+&gt;&gt; <br>
+&gt;&gt; de membre avec votre photo et num=C3=A9ro de telephone sur<br>
+&gt;&gt; <br>
+&gt;&gt; notre WhatsApp ; juste scanner le QR Code ci-dessous.<br>
+&gt;&gt; <br>
+&gt;&gt; Merci pour votre comprehension!<br>
+&gt;&gt; <br>
+&gt;&gt; <br>
+&gt; <a href=3D"https://www.facebook.com/messenger_media/?attachment_id=3D6=
+81462546690285&amp;message_id=3Dmid.%24cAAAAByb93tmLEoHGhGE4Tx4ScJMo&amp;th=
+read_id=3D100005079398330" rel=3D"noreferrer noreferrer" target=3D"_blank">=
+https://www.facebook.com/messenger_media/?attachment_id=3D681462546690285&a=
+mp;message_id=3Dmid.%24cAAAAByb93tmLEoHGhGE4Tx4ScJMo&amp;thread_id=3D100005=
+079398330</a><br>
+Veillez m&#39;envoyer votre numero de membre pour supprimer votre compte .<=
+br>
+Merci!<br>
+</blockquote></div>
+
+--000000000000e8bce405ef9da835--

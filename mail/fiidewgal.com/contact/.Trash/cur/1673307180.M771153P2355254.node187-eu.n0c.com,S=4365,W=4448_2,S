@@ -1,0 +1,83 @@
+Return-Path: <sowsalam23@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id KDjjLSykvGM28CMA3R2AvA
+	(envelope-from <sowsalam23@gmail.com>)
+	for <contact@fiidewgal.com>; Tue, 10 Jan 2023 00:33:00 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NrVcD3gJKzp5Ynn
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="L2ctC2j5"
+X-N0C-MailScanner-eFa-Watermark: 1673911977.96143@NtEc2fNhPBV6Nmyvq8ptXg
+X-N0C-MailScanner-eFa-From: sowsalam23@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 66684401B23D.A62B3
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ej1-f47.google.com ([209.85.218.47] [209.85.218.47])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 66684401B23D
+	for <contact@fiidewgal.com>; Tue, 10 Jan 2023 00:32:26 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 66684401B23D
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 66684401B23D
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=L2ctC2j5
+Received: by mail-ej1-f47.google.com with SMTP id jo4so24285997ejb.7
+        for <contact@fiidewgal.com>; Mon, 09 Jan 2023 15:32:26 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=U9g7h6Lpj7lmUt0pracHwaF9M/2kpK+o9kY3cOqXa/I=;
+        b=L2ctC2j5tLODWlFsJQJOct6kPDLz6US/da9oUMnXKxkd3CXbxVAH8dGNGEJAF7P3dq
+         mIRIx1LzvfSJiclzbHAwEiHUrjMe58MeAkOPA7QQ4/vPzKeJwAjH8aM/Udv92tDNFdUk
+         X3MKeF3Uqmp+991e+/xBDKA5YiF1geLEThlXDsqJOlAvr4ejur1rhWH8ik/wNZgjS4Bk
+         llj/hjnj5mDK90yO4ty249T4fGuHQTXjCgYSZ3X5vyiLB5KEkG2yK7CcLV3v/9Xlv7w0
+         0zDmyBqQFh/qe9tC/3L9yvJi0UC2VM4PzRdDdOCnhseXCI+jr/sgx3m5HJlNc5xmLiBl
+         c2lA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=U9g7h6Lpj7lmUt0pracHwaF9M/2kpK+o9kY3cOqXa/I=;
+        b=MgsFuY8HwJ7mtQ5RtyyVGJp/n+P5rHygPkNXx5fl3sErGk0j4JbSAl0z7JAZvauE3h
+         U83Qv5exHK47fh8SOmrH8NZ/z3bEtLrtLMG/s9qDF+xEJJ7oWt5j+O5gj16yuVTJvrN9
+         giUlkeXitU+FClKWZ8UZ2IWSAoMsrySZQcsvG2rtbpJNjiYEz/ad3yUhoX9SInVQepDM
+         nbX4FdmE9RlT7T8SHK6ikStfZMlknjB1OLfWjeuMWu2uHajL7eLarCKdGHihzf5M6c8D
+         n9C6tvQwSWBo8VsRMZKqQYxVPYTDpdjM0L5GBJATMO+cWZngq8zOw9CpzitkrGDuz0o/
+         HVzQ==
+X-Gm-Message-State: AFqh2kqPIDFf8pF1TYEJgEInH7t4S61yRYfJsm3oJwLQa8xDsfAE/0hB
+	ew4eG50FAKZ3hEzYTeV3Z0mMPyC1/r0S8XDz1eup3gOA
+X-Google-Smtp-Source: AMrXdXutFOz6xIpPfSU31cGyQDquNRCuntn5dFy4jiUAqYSMPl4q0/g+n8+wL7h9n1/DxbvTowkQ8TMh/n1xHV6PolU=
+X-Received: by 2002:a17:906:369b:b0:83d:2544:a11 with SMTP id
+ a27-20020a170906369b00b0083d25440a11mr5979626ejc.226.1673307145623; Mon, 09
+ Jan 2023 15:32:25 -0800 (PST)
+MIME-Version: 1.0
+From: Salam Sow <sowsalam23@gmail.com>
+Date: Tue, 10 Jan 2023 00:32:04 +0100
+Message-ID: <CAOwPZmgROGuZ8CYZj1f6tpEoeCrE79NRVROyiNztFA5PwpQ+Fw@mail.gmail.com>
+Subject: Bonjour
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000003dc2405f1dd2eeb"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000003dc2405f1dd2eeb
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+C est par rapport =C3=A0 hassatou balade
+Que dois je faire pour converser avec elle ?
+Merci =C3=A0 vous
+
+--00000000000003dc2405f1dd2eeb
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">C est par rapport =C3=A0 hassatou balade<div dir=3D"auto"=
+>Que dois je faire pour converser avec elle ?</div><div dir=3D"auto">Merci =
+=C3=A0 vous=C2=A0</div></div>
+
+--00000000000003dc2405f1dd2eeb--

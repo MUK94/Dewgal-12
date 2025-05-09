@@ -1,0 +1,77 @@
+Return-Path: <md6070373@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id X54OIPDEtGNNyxUA3R2AvA
+	(envelope-from <md6070373@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 04 Jan 2023 01:14:40 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Nmqq42vk1z3F9l
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="DiGgZUe+"
+X-N0C-MailScanner-eFa-Watermark: 1673396077.96156@pfNj1ncE+lKQX8cUHTJRfA
+X-N0C-MailScanner-eFa-From: md6070373@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: EB7B7401AEF6.AA212
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-vk1-f180.google.com ([209.85.221.180] [209.85.221.180])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id EB7B7401AEF6
+	for <contact@fiidewgal.com>; Wed,  4 Jan 2023 01:14:06 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com EB7B7401AEF6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com EB7B7401AEF6
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=DiGgZUe+
+Received: by mail-vk1-f180.google.com with SMTP id f184so12099776vkh.2
+        for <contact@fiidewgal.com>; Tue, 03 Jan 2023 16:14:05 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=zWNtkkS64Z/0vKEhHoDxWtBXULDZuBTYcMvOaHLdr80=;
+        b=DiGgZUe+kmeDMK3XWfMdwa3UyoNzUZhqjXfLAAzw9bfOQd5o1t0QX2MgOhom7p6rFP
+         05FEgdgnKq7owB0tjmw0pn57STlAkV3AKxbNftr+1rtnJTgvrJUWPfBmlcrRi8ZeYGUg
+         9L7AMAkLIhrM+ifcEgKxA6szYByEkHxbb0upulXKyiLcBoXY4AQ+90VBgtAQP9zGlpjK
+         DsmWdo/2/IfvXLQBqSSw7N2a9UcejwLx3zaF6Y8UlFthd+E94uKD6B01XNMfi2ZxUFVK
+         Men4+O79FRPAVmwLRzq8yum1fsKaIld6DM0frU6+QAdWmajyadA5hH2PGu9P9p4ZYLD3
+         2FEA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=zWNtkkS64Z/0vKEhHoDxWtBXULDZuBTYcMvOaHLdr80=;
+        b=2v1M7/9dkeKFXg6nGMA6DDq/q+PHiEPWiWwk610JY2pyjUg799IrW2VMaQBY+RCmm8
+         twVS0FvK577WJ0/7r5dX4KRuQhDqIDdiX2VUyVyZB9FxSbfF8s8jSM41z7Fn5meYujUj
+         JboRJMddv7vOHgdDSztpIk+PjwcmgYXrWgi7+QSlKa2UzRr+TN4LmrJB4/9XbL7xnqKk
+         XTORMQ0kf3tzNLtX/V+UwBKtebB3cbN3j+acuN0d3bvSWC1JbgLGWKrgC+FCqOAw8BpJ
+         Trkv0nHokSxZDGZ3dP07SAfjWXhu4v6do7EA2HFbX4D8ZV7bbzDQtEr5znoD1SmK20mi
+         ZCvQ==
+X-Gm-Message-State: AFqh2kqcUszA1OH6NK7doJgmHwTVfclDg0pHY+gE7+rU9e1SyoIhId1E
+	L4pXKfLvZ9zq+P6umwTTzf4sLzz87ImewKFynqIAWPst
+X-Google-Smtp-Source: AMrXdXtcQYScT+lsMebMc4SkgYLdcDAkHON76pP3vqlLWoRhYNholVoBq5nkDcoERBMgObXalftbVixRtiicPqmeHpE=
+X-Received: by 2002:a1f:2f84:0:b0:3d4:77a3:a57c with SMTP id
+ v126-20020a1f2f84000000b003d477a3a57cmr4844216vkv.21.1672791244388; Tue, 03
+ Jan 2023 16:14:04 -0800 (PST)
+MIME-Version: 1.0
+From: Mamadou Dialo <md6070373@gmail.com>
+Date: Wed, 4 Jan 2023 00:13:52 +0000
+Message-ID: <CAC_H0awUH1NZwu4VFcJCZTSP6G+4w95XB4fh31s+AQLxW3-rNA@mail.gmail.com>
+Subject: Slt moi je veux mai marie
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000e7c0ac05f1650f3b"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000e7c0ac05f1650f3b
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+--000000000000e7c0ac05f1650f3b
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"></div>
+
+--000000000000e7c0ac05f1650f3b--

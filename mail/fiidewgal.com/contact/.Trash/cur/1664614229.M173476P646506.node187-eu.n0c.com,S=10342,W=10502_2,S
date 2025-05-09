@@ -1,0 +1,160 @@
+Return-Path: <rebecca@card-dna.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id ndtBClX/N2Nq3QkA3R2AvA
+	(envelope-from <rebecca@card-dna.com>)
+	for <contact@fiidewgal.com>; Sat, 01 Oct 2022 10:50:29 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Mfgm4608pz34SDmv
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=card-dna-com.20210112.gappssmtp.com header.i=@card-dna-com.20210112.gappssmtp.com header.b="HBGHBCxf"
+X-N0C-MailScanner-eFa-Watermark: 1665219022.78309@CgqrZloKbRS+Rly8/Y6mRw
+X-N0C-MailScanner-eFa-From: rebecca@card-dna.com
+X-N0C-MailScanner-eFa-SpamScore: s
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: BF6424062997.A4CAA
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-io1-f70.google.com ([209.85.166.70] [209.85.166.70])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id BF6424062997
+	for <contact@fiidewgal.com>; Sat,  1 Oct 2022 10:49:49 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com BF6424062997
+Authentication-Results: node187-eu.n0c.com; dmarc=none (p=none dis=none) header.from=card-dna.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=card-dna.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com BF6424062997
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=card-dna-com.20210112.gappssmtp.com header.i=@card-dna-com.20210112.gappssmtp.com header.a=rsa-sha256 header.s=20210112 header.b=HBGHBCxf
+Received: by mail-io1-f70.google.com with SMTP id l84-20020a6b3e57000000b006a3fe90910cso4182146ioa.16
+        for <contact@fiidewgal.com>; Sat, 01 Oct 2022 01:49:49 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=card-dna-com.20210112.gappssmtp.com; s=20210112;
+        h=to:from:subject:date:message-id:reply-to:mime-version:from:to:cc
+         :subject:date;
+        bh=saqXh+kCPH/XcgkzgLWOw6u6H1a6SpS1A1WK33D1IUI=;
+        b=HBGHBCxfhM0f7W/tgENqNd1hPM/BPa6xINpCcIsuRzpRsYg8RE09tjqiSzRQx9EZEC
+         vBa3LASsblBLmWTtKKsYUFD7r2Qtif8tMIwfy6EQD3x40E8gBEBBu0D6YaOlCAtNfCEx
+         g5kWio7KU0cWgvf/xRQPD5AlSngXzOpyOH5YTn0APanUiW8/lnp/ryOLNgIGX84vZJpD
+         fNQ+X+sPJcs9c0+yM+XMDBzfncgABV9xay716KKXiubJJBnvk/HJAlyIKKFC/stZK6vt
+         8e6O1KXjssyKn+ODorf+egcudUnDDvVd9oh+4TgkWttldITRpSCbJNuebz5g6H6Cd9Et
+         htcg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:from:subject:date:message-id:reply-to:mime-version
+         :x-gm-message-state:from:to:cc:subject:date;
+        bh=saqXh+kCPH/XcgkzgLWOw6u6H1a6SpS1A1WK33D1IUI=;
+        b=PKKxij+/Vy6vWiu4TteqHE0wX6ceXDoflTSTQZ7h5MH5EYumJ0wGVfG3Zc9/FoRHiP
+         g6rFCh3usMv8JF2pN/WAe7bnLrCxyPiG5CjvS/OeA/jj6H6rHsP/Q+JQjCZIsQCx+z6E
+         eUQWEQmagcVFcg+HlN/vJrFBePNc0/ftusEpjaC/pSy4HWc42sbXRPZRs0DspFNuDod0
+         zFttbdrGp5PDMWTHJQ9g6hAlBHT2eLXjhtmqsghnHzP/Pn09MoVHATpUReSq6T8LxJDx
+         +SCBeMuaHFUVGTiW1PeNhcK2FvkRiyAL3sd4rsa8wRqINyKXBx0MxcBfBO2oas71vTOx
+         PjKw==
+X-Gm-Message-State: ACrzQf3u3o3HabOiXztpFllHoVoPQt3uNmJSN0JXm/ie9OJUHnZXl5bl
+	Mj2z7JYI4c7dSsjJy5JKraT/YwuXlbDJ
+X-Google-Smtp-Source: AMsMyM6VquqH6UzegjVOLoBpASa2nXhIcTwPU34gCrRe49L+cm64lJtxQXexVPg339iRs1/EVdpbHxqXYQ==
+MIME-Version: 1.0
+X-Received: by 2002:a05:6638:14cb:b0:358:4759:be8c with SMTP id
+ l11-20020a05663814cb00b003584759be8cmr6348317jak.13.1664614188101; Sat, 01
+ Oct 2022 01:49:48 -0700 (PDT)
+Reply-To: rebecca@card-dna.com
+Message-ID: <0000000000005eea6305e9f531ea@google.com>
+Date: Sat, 01 Oct 2022 08:49:48 +0000
+Subject: Issues in your fiidewgal.com
+From: Rebecca <rebecca@card-dna.com>
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000005eea5505e9f531e7"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000005eea5505e9f531e7
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+
+<p class="MsoNormal" style="margin: 0in 0in 10pt; line-height: 16.8667px;  
+font-size: 11pt; font-family: Calibri, &quot;sans-serif&quot;;"><font  
+face="verdana, sans-serif"><b>Hello&nbsp;<u><span style="color:  
+blue;">fiidewgal.com</span></u>,</b><br><br>My name is&nbsp;<b>Rebecca</b>,  
+and I'm a Digital Marketing Consultant.<br><br>You can't expect your  
+website&nbsp;<b><u><span style="color:  
+blue;">fiidewgal.com</span></u></b>&nbsp;to increase your revenue with so  
+many errors. Many business owners get puzzled as their website isn't  
+performing well, while others' are flourishing. That's unfortunate, but not  
+your fortune!<br><br>Now, I will show you the number of broken links, pages  
+that returned 4XX status code upon request, images with no ALT text, pages  
+with no meta description tag, not having a unique meta description, having  
+a too long title, etc., found in your website&nbsp;<b><u><span  
+style="color: blue;">fiidewgal.com</span></u></b>&nbsp;too many issues to  
+worry about!<br><br>If this is something you  
+are&nbsp;<b>interested</b>&nbsp;in, and then allow me to send you a&nbsp;<b  
+style="background-color: rgb(255, 255, 0);">No obligation Audit  
+Report.</b><br><br>I'd be happy to send you our&nbsp;<b  
+style="background-color: rgb(255, 255, 0);">Package, Pricing, and Past work  
+details if you'd like to assess our work.<br></b><b><br></b></font></p><p  
+class="MsoNormal" style="margin: 0in 0in 0.0001pt; line-height: normal;  
+font-size: 11pt;"><span style="font-size: small;"><span style="font-family:  
+Georgia, &quot;serif&quot;;">Kind Regards,</span></span><b  
+style="font-size: small;"><span style="font-family: Georgia,  
+&quot;serif&quot;;"><br></span></b><font color="#0000ff"><b  
+style="font-size: small;"><span style="font-family: Georgia,  
+&quot;serif&quot;;">Rebecca<br></span></b><b>Digital Marketing  
+Consultant&nbsp;</b></font></p><p class="MsoNormal" style="margin: 0in 0in  
+10pt; line-height: 11.2pt; font-size: 11pt;"><br style="font-family: Arial,  
+Helvetica, sans-serif; font-size: 14.6667px;"></p><div  
+style="font-family:Helvetica,Arial,sans-serif;color:#999999;padding:0"  
+valign="top" align="center"><p  
+style="font-size:13px;line-height:16px"><br>This email was sent by Rebecca  
+using <a  
+href="https://workspace.google.com/marketplace/app/mail_merge_smtp/253286665163"  
+style="color:#427fed;font-size:13px;font-family:Helvetica,Arial,sans-serif;text-decoration:none"  
+target="_blank">Mail merge SMTP</a><br/> If you don't want to receive this  
+type of email in the future, please <a  
+href="https://script.google.com/macros/s/AKfycbyBQ-Ar36K7L6_mFCARXwN-bC7oyHZC7sMBRBf7efgM_X1ClxTdsXTgC10CtDPhCVJX/exec?userId=1a311f86-7603-48c5-be59-16b9b6fb77af"  
+style="color:#427fed;font-size:13px;font-family:Helvetica,Arial,sans-serif;text-decoration:none"  
+target="_blank">unsubscribe</a><br></p></div>
+
+--0000000000005eea5505e9f531e7
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<p class=3D"MsoNormal" style=3D"margin: 0in 0in 10pt; line-height: 16.8667p=
+x; font-size: 11pt; font-family: Calibri, &quot;sans-serif&quot;;"><font fa=
+ce=3D"verdana, sans-serif"><b>Hello&nbsp;<u><span style=3D"color: blue;">fi=
+idewgal.com</span></u>,</b><br><br>My name is&nbsp;<b>Rebecca</b>, and I'm =
+a Digital Marketing Consultant.<br><br>You can't expect your website&nbsp;<=
+b><u><span style=3D"color: blue;">fiidewgal.com</span></u></b>&nbsp;to incr=
+ease your revenue with so many errors. Many business owners get puzzled as =
+their website isn't performing well, while others' are flourishing. That's =
+unfortunate, but not your fortune!<br><br>Now, I will show you the number o=
+f broken links, pages that returned 4XX status code upon request, images wi=
+th no ALT text, pages with no meta description tag, not having a unique met=
+a description, having a too long title, etc., found in your website&nbsp;<b=
+><u><span style=3D"color: blue;">fiidewgal.com</span></u></b>&nbsp;too many=
+ issues to worry about!<br><br>If this is something you are&nbsp;<b>interes=
+ted</b>&nbsp;in, and then allow me to send you a&nbsp;<b style=3D"backgroun=
+d-color: rgb(255, 255, 0);">No obligation Audit Report.</b><br><br>I'd be h=
+appy to send you our&nbsp;<b style=3D"background-color: rgb(255, 255, 0);">=
+Package, Pricing, and Past work details if you'd like to assess our work.<b=
+r></b><b><br></b></font></p><p class=3D"MsoNormal" style=3D"margin: 0in 0in=
+ 0.0001pt; line-height: normal; font-size: 11pt;"><span style=3D"font-size:=
+ small;"><span style=3D"font-family: Georgia, &quot;serif&quot;;">Kind Rega=
+rds,</span></span><b style=3D"font-size: small;"><span style=3D"font-family=
+: Georgia, &quot;serif&quot;;"><br></span></b><font color=3D"#0000ff"><b st=
+yle=3D"font-size: small;"><span style=3D"font-family: Georgia, &quot;serif&=
+quot;;">Rebecca<br></span></b><b>Digital Marketing Consultant&nbsp;</b></fo=
+nt></p><p class=3D"MsoNormal" style=3D"margin: 0in 0in 10pt; line-height: 1=
+1.2pt; font-size: 11pt;"><br style=3D"font-family: Arial, Helvetica, sans-s=
+erif; font-size: 14.6667px;"></p><div style=3D"font-family:Helvetica,Arial,=
+sans-serif;color:#999999;padding:0" valign=3D"top" align=3D"center"><p styl=
+e=3D"font-size:13px;line-height:16px"><br>This email was sent by Rebecca us=
+ing <a href=3D"https://workspace.google.com/marketplace/app/mail_merge_smtp=
+/253286665163" style=3D"color:#427fed;font-size:13px;font-family:Helvetica,=
+Arial,sans-serif;text-decoration:none" target=3D"_blank">Mail merge SMTP</a=
+><br/> If you don't want to receive this type of email in the future, pleas=
+e <a href=3D"https://script.google.com/macros/s/AKfycbyBQ-Ar36K7L6_mFCARXwN=
+-bC7oyHZC7sMBRBf7efgM_X1ClxTdsXTgC10CtDPhCVJX/exec?userId=3D1a311f86-7603-4=
+8c5-be59-16b9b6fb77af" style=3D"color:#427fed;font-size:13px;font-family:He=
+lvetica,Arial,sans-serif;text-decoration:none" target=3D"_blank">unsubscrib=
+e</a><br></p></div><img src=3D"https://ssl.google-analytics.com/collect?v=
+=3D1&t=3Devent&tid=3DUA-10351017-8&cid=3D2b8f8d7e-c62e-4be1-b073-9f0a17e903=
+2f&ec=3DMmSMTP - Issues in your fiidewgal.com&ea=3DContact@fiidewgal.com%20=
+is%20opening%20the%20email" style=3D"display:none"/>
+--0000000000005eea5505e9f531e7--

@@ -1,0 +1,85 @@
+Return-Path: <saifoulayehansagherediallo1991@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 0JOJCNgAj2QERA4A3R2AvA
+	(envelope-from <saifoulayehansagherediallo1991@gmail.com>)
+	for <contact@fiidewgal.com>; Sun, 18 Jun 2023 15:04:24 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4QkY54024Mz34SDmj
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="IS4KpBPo"
+X-N0C-MailScanner-eFa-Watermark: 1687698262.48095@lI5cP5dp0WSSS3hk+W95Tg
+X-N0C-MailScanner-eFa-From: saifoulayehansagherediallo1991@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: s
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 26B334019B0A.AEEAE
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-yw1-f170.google.com ([209.85.128.170] [209.85.128.170])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 26B334019B0A
+	for <contact@fiidewgal.com>; Sun, 18 Jun 2023 15:04:21 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 26B334019B0A
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 26B334019B0A
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=IS4KpBPo
+Received: by mail-yw1-f170.google.com with SMTP id 00721157ae682-5701810884aso23960247b3.0
+        for <contact@fiidewgal.com>; Sun, 18 Jun 2023 06:04:21 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1687093459; x=1689685459;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=QSWZqP+rMki20oinYMH/D6bubDsee/Fp4mmeUrWD6W4=;
+        b=IS4KpBPomBYpu0mQxoOwsouDSxM04AwjNFK1dvXXJhysvlJLzPe3HpvN0do03NIq5H
+         q4jRcJsZclrjZiKuuObxu5yLP1Bexf815uuQYrcXwokv8Ja7fBz4ezlYRYi3CxPkdzHG
+         bnAdhMQ8DQmxWHlEnCBhVFcYyTN/8AEDffQdvvfQeucSvI/HmhGirJefpyNQmCjfNdHh
+         +jOQ155NNCni0z2tEMkbi2P4ZJ9E2lStF9vmheAvJFBAsAst1xLcBles1WNjqObfKdjY
+         ZVvIZRzNMCq8jbvCwOfRDvDd+5EPqMj0PWM34bDbjMp8m7O6iLVgAxdJaZgdvWGD8Q+E
+         WDig==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1687093459; x=1689685459;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=QSWZqP+rMki20oinYMH/D6bubDsee/Fp4mmeUrWD6W4=;
+        b=MsZIsUi5sytt+o5JaYEvQXai08IUsOtxHRMpqLBDCXYFY/mqi+dCorFoZsnu8Cl+sn
+         OfTkycWuhBH63D43QwETCFzXcOHlZwA8/q9pw1paBPwzzqCF2TezJcq1M0S3zWggXKc3
+         zX/agURgouot5x9Q/B36XJAbjwkTM603hcXeRVJdf6qUni2R0P2GxlEredW3K8tnTMlt
+         AhHXOw4WSJcJsQMhm42quJwKY2xd6wQlG58hKXnydDBHDQYdz+bZVGauODbs7bGTL+gj
+         3sJERhrCeBl+DXhiPALSqJsyvuUYbb4G5AbadTcAamw8sGzfJdlajrFn+YZjwdlHdQY6
+         2iXw==
+X-Gm-Message-State: AC+VfDz83LkbAblBSxioec9NY5OmYHmT2ZBlcgZaavn/rMDcfAauBZWC
+	lAEQAGlWTBTvQBU5st+iFxXJpl9rWu1sVcyGtzMZpZeA
+X-Google-Smtp-Source: ACHHUZ7DfaQz4XhkOp3LTS3tH4wy5vM3k1so/oECPaXFBduqd23pt+UOjJBrOyuqolbW8H1r+XOhEYES/aJDdusdy/8=
+X-Received: by 2002:a25:abe2:0:b0:be6:7314:19d5 with SMTP id
+ v89-20020a25abe2000000b00be6731419d5mr3450697ybi.23.1687093459683; Sun, 18
+ Jun 2023 06:04:19 -0700 (PDT)
+MIME-Version: 1.0
+From: Saifoulaye Diallo <saifoulayehansagherediallo1991@gmail.com>
+Date: Sun, 18 Jun 2023 13:05:00 +0000
+Message-ID: <CAMWe-dgTkkHAzK7mES=yAmfas-NCTuJCA=7GDw5FUz55FEwjug@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000005e0ef105fe670e91"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000005e0ef105fe670e91
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Asalamou aleykoum wa ramatoulaye Guil=C3=A0 mi windi ka dental fii dewgal h=
+a=C3=A0
+djoni mi fa=C3=A0m=C3=A0li hay fouy ka dental hila  fa=C3=A0l=C3=A0 houmpit=
+=C3=A0d=C3=A9 ko fewdi gh=C3=A0
+
+--0000000000005e0ef105fe670e91
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Asalamou aleykoum wa ramatoulaye Guil=C3=A0 mi windi ka d=
+ental fii dewgal ha=C3=A0 djoni mi fa=C3=A0m=C3=A0li hay fouy ka dental hil=
+a=C2=A0 fa=C3=A0l=C3=A0 houmpit=C3=A0d=C3=A9 ko fewdi gh=C3=A0</div>
+
+--0000000000005e0ef105fe670e91--

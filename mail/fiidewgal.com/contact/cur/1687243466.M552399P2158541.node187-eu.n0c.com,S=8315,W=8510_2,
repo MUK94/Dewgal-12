@@ -1,0 +1,195 @@
+Return-Path: <support=taboola.com__1ie7gwoiepzjmbl9.vjzyrmldl07z9wqt@i4fmxjed1y43a35h.7mxpr.d-ehcxea2.usa226.bnc.salesforce.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id ODLcIMpKkWTN7yAA3R2AvA
+	(envelope-from <support=taboola.com__1ie7gwoiepzjmbl9.vjzyrmldl07z9wqt@i4fmxjed1y43a35h.7mxpr.d-ehcxea2.usa226.bnc.salesforce.com>)
+	for <contact@fiidewgal.com>; Tue, 20 Jun 2023 08:44:26 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4QlcYj5s13z34SDmp
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=taboola.com header.i=@taboola.com header.b="KNdW8Zrs"
+X-N0C-MailScanner-eFa-Watermark: 1687848136.66807@mzDTzbGfe5RXhD0W+zOT7g
+X-N0C-MailScanner-eFa-From: support=taboola.com__1ie7gwoiepzjmbl9.vjzyrmldl07z9wqt@i4fmxjed1y43a35h.7mxpr.d-ehcxea2.usa226.bnc.salesforce.com
+X-N0C-MailScanner-eFa-SpamScore: ss
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 7AE5540198A0.A30BB
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from smtp-0a95d0409ce604816.core1.sfdc-lywfpd.mta.salesforce.com ([44.230.10.181] [44.230.10.181])
+	(using TLSv1.2 with cipher ECDHE-ECDSA-AES256-GCM-SHA384 (256/256 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 7AE5540198A0
+	for <contact@fiidewgal.com>; Tue, 20 Jun 2023 08:42:02 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 7AE5540198A0
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=reject dis=none) header.from=taboola.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=i4fmxjed1y43a35h.7mxpr.d-ehcxea2.usa226.bnc.salesforce.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 7AE5540198A0
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (1024-bit key; secure) header.d=taboola.com header.i=@taboola.com header.a=rsa-sha256 header.s=sfdc header.b=KNdW8Zrs
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=taboola.com; s=sfdc;
+	t=1687243320; bh=KJ1T4nzpD/eJ/FgmSTo7EthvYIl4C/Yxfkbj+c2moGQ=;
+	h=Date:From:To:Subject:MIME-Version:Content-Type;
+	b=KNdW8ZrsA2bQ5UQE2i9Mg17V2snzTqWARCZfkjgq3lKEqXCGGzrABrhwNMx9arDjx
+	 +HETaSn9pCDq2011Ve8cFfVy3Dup4r0iq2hhB96QlsvHM4EYYLnc612HBWgzaPG9Yz
+	 1F/iQrJwZ0F49lHy6+QahLWnqvrm7cKwxOBvF7KM=
+Received: from [127.0.0.1] ([127.0.0.1:41388] helo=eaas-4.eaas.emailinfra.svc.cluster.local)
+	by mx1.core1.sfdc-lywfpd.mta.salesforce.com (envelope-from <support=taboola.com__1ie7gwoiepzjmbl9.vjzyrmldl07z9wqt@i4fmxjed1y43a35h.7mxpr.d-ehcxea2.usa226.bnc.salesforce.com>)
+	(ecelerity 4.4.0.19839 r(msys-ecelerity:tags/4.4.0.0^0)) with ESMTP
+	id 24/11-18508-83A41946; Tue, 20 Jun 2023 06:42:00 +0000
+Received: from 127.0.0.1 (localhost. [127.0.0.1]) by eaas-4 (EaaS) id
+  <msrzy000000000000000000000000000000000000000000000RWJH9V00Hxin325tQbKHxxudKvpjog@sfdc.net>
+  for <"contact@fiidewgal.com" <contact@fiidewgal.com>> Tue, 20 Jun 2023
+  06:42:00 GMT (GMT)
+Date: Tue, 20 Jun 2023 06:42:00 +0000 (GMT)
+From: Taboola Support <support@taboola.com>
+To: "contact@fiidewgal.com" <contact@fiidewgal.com>
+Message-ID: <msrzy000000000000000000000000000000000000000000000RWJH9V00Hxin325tQbKHxxudKvpjog@sfdc.net>
+References: <500Nr000000r9Wc.5MW70uYETiCUTZPTqPXYng.sYpjc3qu1f/HnENDt6psSblyj7o9YRs912oTXCYDEUs=.3o000000HQ9o@sfdc.net>
+ <500Nr000000r9Wc.DLRS-aNyQ6W2kVuPfJPUeg.YVLDv49hGk8h2ZD6SBu5fh9z2yrDIY2adxXhR6j5yps=.3o000000HQ9o@sfdc.net>
+Subject: Monetize my dating website
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_90_1945380560.1687243320695"
+X-Priority: 3
+X-SFDC-LK: 00Dd0000000eHCX
+X-SFDC-User: 0053o00000ALFV2
+X-Sender: postmaster@salesforce.com
+X-mail_abuse_inquiries: http://www.salesforce.com/company/abuse.jsp
+X-SFDC-TLS-NoRelay: 1
+X-SFDC-Binding: 1WrIRBV94myi25uB
+X-SFDC-App: coreapp
+X-SFDC-EmailCategory: apiSingleMailViaApex
+X-SFDC-EntityId: 500Nr000000r9Wc
+X-SFDC-Interface: internal
+X-N0C-Node-IP: 185.221.182.45
+
+------=_Part_90_1945380560.1687243320695
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_89_2086238604.1687243320695"
+
+------=_Part_89_2086238604.1687243320695
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hi Abdoul,=20
+
+I hope you're having a great day! =F0=9F=98=8A=20
+
+I wanted to kindly remind you that we are still awaiting the screenshot of =
+last month's data for the page views of your website. Your input is crucial=
+ in helping us resolve any issues or concerns you may have.=20
+
+If you could provide us with the screenshot as soon as possible, it would g=
+reatly assist us in addressing your case effectively. We value your feedbac=
+k and want to ensure your satisfaction with our services.=20
+
+Please feel free to reach out to us at  support@taboola.com (mailto:support=
+@taboola.com) if you have any questions or need further assistance. We're h=
+ere to help!=20
+
+Thank you for your cooperation, and have a fantastic day!=20
+
+Best regards,
+
+Melchie Fernandez
+PS Engineer - External
+Taboola Professional Services
+
+This notification is related to Case 00600697
+
+[ ref:_00Dd0eHCX._500Nrr9Wc:ref ]
+------=_Part_89_2086238604.1687243320695
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			body{
+				font-family: Arial;
+			}
+			ul, li{
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			.approvalBox {
+				background-color: #ffffff00;
+				max-width: 400px;
+				padding: 5px 0px;
+				margin: 0px 0;
+                                font-size: 14px;
+			}
+			ul {
+				margin: 20px auto 0;
+				display: block;
+				max-width: 410px;
+			}
+			li.rightL{
+				margin-top: 0px;
+			}
+			a.btn {
+				box-sizing: border-box;
+				color: #fff;
+				display: block;
+				/*height: 50px;*/
+				width: 200px;
+				border-radius: 5px;
+				border-width: 2px;
+				border-style: solid;
+				font-size: 11px;
+				text-decoration: none;
+				position: relative;
+				margin: 0 auto;
+			}
+			span.big {
+				font-size: 22px;
+			}
+			a.btn.c {
+				background-color: #004b7a;
+				border-color: #00659f;
+			}
+			a.btn.r {
+				background-color: #e74f51;
+				border-color: #e74f51;
+			}
+			.textC {
+				float: left;
+				margin-left: 14px;
+				margin-top: 4px;
+                line-height: 180%;
+			}
+			.imgC {
+				float: right;
+				margin-right: 12px;
+				margin-top: 8px;
+			}
+		</style>
+	</head>
+	<body><p>Hi Abdoul, <br><br>I hope you&#39;re having a great day! &#128522; <br><br>I wanted to kindly remind you that we are still awaiting the screenshot of last month&#39;s data for the page views of your website. Your input is crucial in helping us resolve any issues or concerns you may have. <br><br>If you could provide us with the screenshot as soon as possible, it would greatly assist us in addressing your case effectively. We value your feedback and want to ensure your satisfaction with our services. <br><br>Please feel free to reach out to us at  support@taboola.com (mailto:support@taboola.com) if you have any questions or need further assistance. We&#39;re here to help! <br><br>Thank you for your cooperation, and have a fantastic day! <br><br>Best regards,<br /><br />
+If no further action is required, you can set this case to closed at any time by clicking the button below: 
+		<div class="approvalBox">
+			
+			<ul>
+				<li>
+					<a href="http://taboola-services.force.com/apex/CaseApproval?caseID=500Nr000000r9Wc&action=approve&surveyType=2" class="btn c">
+						<div class="textC"><div class="innerC"><span class="big">Close Case</span><br />My issue was resolved</div></div>
+						<div class="imgC"><img src="http://taboola-services.force.com/servlet/servlet.ImageServer?id=0150V00000EZX2b&oid= 00Dd0000000eHCX&lastMod=1542799282000" alt="Confirm" /></div>
+						<br style="clear: both;" />
+					</a>
+				</li>
+				<li class="rightL"></li>
+			</ul>
+			<br style="clear: both;" />
+		</div>
+
+<br />Thanks,<br />Melchie Fernandez<br />PS Engineer - External<br />Taboola Professional Services<br /><br />This notification is related to Case 00600697
+
+[ ref:_00Dd0eHCX._500Nrr9Wc:ref ]<br />
+</p>
+</body>
+</html>
+------=_Part_89_2086238604.1687243320695--
+
+------=_Part_90_1945380560.1687243320695--

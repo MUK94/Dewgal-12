@@ -1,0 +1,212 @@
+Return-Path: <dialloelhaj35@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 4IowLf56o2OLNS8A3R2AvA
+	(envelope-from <dialloelhaj35@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 21 Dec 2022 22:30:38 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Ncmnp4ZgRz34SDmh
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="K91G0kLf"
+X-N0C-MailScanner-eFa-Watermark: 1672263035.76606@SFqNzEydvGSIPvZcL9jNrg
+X-N0C-MailScanner-eFa-From: dialloelhaj35@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: E6206401AEF7.A3820
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ed1-f51.google.com ([209.85.208.51] [209.85.208.51])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id E6206401AEF7
+	for <contact@fiidewgal.com>; Wed, 21 Dec 2022 22:30:04 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com E6206401AEF7
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com E6206401AEF7
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=K91G0kLf
+Received: by mail-ed1-f51.google.com with SMTP id d14so315123edj.11
+        for <contact@fiidewgal.com>; Wed, 21 Dec 2022 13:30:03 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:subject:message-id:to:from:date:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=ROOM+H0wY7hJmbbO9kdTVoyoJ6p8LfVlF6Fk+Ay7Ry4=;
+        b=K91G0kLfDnH1C53E6RvMMsGXOKTq2H0EeZOd7GUYa9r4EZ+sCj87NFYUVc+s/sehwb
+         Rcrt0EGkQfNZyaEQknRUObkXT72342UsQsGiSB5TPQfT1QbwngBQYySM6TWWIpnEnQLn
+         UeJsfZAhcaA3V7k4AR5h302xLHh0KZ+kn6u2MlbvEdgyRFE5xmRqbENLUY07rZEx2V59
+         m9tLUHk0TUZ1CICeKWzMKMeKe59KqX+Mg1/yXP185c6K2T5EbsVOgGumvkr3nVrcAQZs
+         qoD9NUeihWpD1lvKE1wozBDagyE2zPbiT9M2Y0+a9ciqHD47bM4RxHs0PIZ5zvoFdHdN
+         JRZg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=mime-version:subject:message-id:to:from:date:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=ROOM+H0wY7hJmbbO9kdTVoyoJ6p8LfVlF6Fk+Ay7Ry4=;
+        b=CS4tqge1bL8FtycYaGF8NdUpPF77Jx21X+UfTF0JLB8fSuLjreJCw3z3vVLns3rTEN
+         x3hI5dw9o69lNJGcIVR48Hxd0rJoIcj35iABdUZ2wGWb1NMysPxlO8YtbCw50SZNeu56
+         1QuDVR6/Mv/iBe7tY43G+NlwnskGGwRQauW38uYkv0EfCTlv4vMDPN0pPQsZkz8MUdPX
+         VoReIxGSR94afJw4dj9KSy140R/vQl+M2PJgE3kCArHLNB7gaxuwxK9U4dnd7RgmZ1jx
+         j4axMbNhRgqsdt9ly/OJZXBxkKQcSVVJtl+YQMlKN+IQ1JSkS5oi/SE+rkM0wh+1Qo0P
+         3D7g==
+X-Gm-Message-State: AFqh2kqDzPAWbfwM2sUT66E+A4Iz25LbPYqDd+Zu1jq1Y4auk18XkPLE
+	onewHF3Cq/2g++O4WH65L0MjERaDNLU=
+X-Google-Smtp-Source: AMrXdXtizBiOMz2zm6TPHNoJZFw5PNUfmljHaOcTStCks7+eLjFg2j8LVFjQbphnhZ6PuaJKVy4BpA==
+X-Received: by 2002:a05:6402:1947:b0:46b:b19b:5e01 with SMTP id f7-20020a056402194700b0046bb19b5e01mr2635319edz.38.1671658203046;
+        Wed, 21 Dec 2022 13:30:03 -0800 (PST)
+Received: from localhost ([105.71.144.33])
+        by smtp.gmail.com with ESMTPSA id g14-20020a056402114e00b00477f0d89e8fsm6165780edw.6.2022.12.21.13.30.01
+        for <contact@fiidewgal.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Wed, 21 Dec 2022 13:30:02 -0800 (PST)
+Date: Wed, 21 Dec 2022 21:23:28 +0100 (GMT+01:00)
+From: dialloelhaj35@gmail.com
+To: =?UTF-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>
+Message-ID: <134656290.1.1671654208170@localhost>
+Subject: dialloelhaj35@gmail.com
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_0_156384315.1671654208145"
+X-N0C-Node-IP: 185.221.182.45
+
+------=_Part_0_156384315.1671654208145
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<p dir=3D"ltr"><a href=3D"mailto:dialloelhaj35@gmail.com">dialloelhaj35@gma=
+il.com</a></p>
+<p dir=3D"ltr">--<br>
+Sent from <a href=3Dhttps://play.google.com/store/apps/details?id=3Dcom.fas=
+tsigninemail.securemail.bestemail>AVNSoftware Inc.</a> for Android</p>
+<br/>
+22:17 from contact@fiidewgal.com:<br/><div style=3D"border-left: 1px solid =
+#4b89dc;padding-left: 8px;margin-left:6px;margin-right: 5px;">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" bgco=
+lor=3D"#e8ebef">
+=09<tr>
+=09=09<td align=3D"center" valign=3D"top" class=3D"container" style=3D"padd=
+ing:50px 10px;">
+=09=09=09<!-- Container -->
+=09=09=09<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0">
+=09=09=09=09<tr>
+=09=09=09=09=09<td align=3D"center">
+=09=09=09=09=09=09<table width=3D"650" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" class=3D"mobile-shell">
+=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09<td class=3D"td" bgcolor=3D"#ffffff" style=3D"width=
+:650px; min-width:650px; font-size:0pt; line-height:0pt; padding:0; margin:=
+0; font-weight:normal;">
+=09=09=09=09=09=09=09=09=09<!-- Header -->
+=09=09=09=09=09=09=09=09=09<table width=3D"100%" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff">
+=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09<td class=3D"p30-15-0" style=3D"padding: 4=
+0px 30px 0px 30px;">
+=09=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<th class=3D"column" style=3D"fon=
+t-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"img m-cente=
+r" style=3D"font-size:0pt; line-height:0pt; text-align:left;"><img src=3D"h=
+ttps://fiidewgal.com/public/uploads/all/3ePHoiM5cMGmckWJJkq03HVSXUcK8mKuITM=
+5NqBG.png" width=3D"191" height=3D"24" border=3D"0" alt=3D"" /></td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</th>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<th class=3D"column-empty" width=
+=3D"1" style=3D"font-size:0pt; line-height:0pt; padding:0; margin:0; font-w=
+eight:normal;"></th>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<th class=3D"column" width=3D"120=
+" style=3D"font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight=
+:normal;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"text-header=
+ right" style=3D"color:#000000; font-family:'Fira Mono', Arial,sans-serif; =
+font-size:12px; line-height:16px; text-align:right;"><a href=3D"https://fii=
+dewgal.com" target=3D"_blank" class=3D"link" style=3D"color:#000001; text-d=
+ecoration:none;"><span class=3D"link" style=3D"color:#000001; text-decorati=
+on:none;">Fii Dewgal</span></a></td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</th>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"separator" style=3D"=
+padding-top: 40px; border-bottom:4px solid #000000; font-size:0pt; line-hei=
+ght:0pt;">&nbsp;</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09<!-- END Header -->
+
+=09=09=09=09=09=09=09=09=09<!-- Intro -->
+=09=09=09=09=09=09=09=09=09<table width=3D"100%" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff">
+=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09<td class=3D"p30-15" style=3D"padding: 70p=
+x 30px 70px 30px;">
+=09=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"h2 center pb10" styl=
+e=3D"color:#000000; font-family:'Ubuntu', Arial,sans-serif; font-size:50px;=
+ line-height:60px; text-align:center; padding-bottom:10px;">v=C3=A9rificati=
+on de l&#039;E-mail</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"h5 center blue pb30"=
+ style=3D"font-family:'Ubuntu', Arial,sans-serif; font-size:20px; line-heig=
+ht:26px; text-align:center; color:#2e57ae; padding-bottom:30px;">Please cli=
+ck the button below to verify your email address. </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+                                                                           =
+                                 <tr>
+                                                            <td class=3D"h5=
+ center blue pb30" style=3D"font-family:'Ubuntu', Arial,sans-serif; font-si=
+ze:20px; line-height:26px; text-align:center; color:#2e57ae; padding-bottom=
+:30px;">
+                                                                <a href=3D"=
+https://fiidewgal.com/verification-confirmation/eyJpdiI6InJOeVZERkpEQnpiRGN=
+jRjc4THZ0Rmc9PSIsInZhbHVlIjoiMU40RDkrMmVJNlc5MGppVHRJenFldz09IiwibWFjIjoiMj=
+ExZjVlN2M1OTg1MDljYTFiYmU1M2I0N2NhYzQyMmNjZTE2NjE4ZTBkMjc0OTcxMTc2NTAwOTQ4Y=
+zc3OTljZCIsInRhZyI6IiJ9" style=3D"background: #007bff;padding: 0.9rem 2rem;=
+font-size: 0.875rem;color:#fff;border-radius: .2rem;" target=3D"_blank">Cli=
+ck Here</a>
+                                                            </td>
+                                                        </tr>
+                                                    =09=09=09=09=09=09=09=
+=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09<!-- END Intro -->
+=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09<td class=3D"text-footer" style=3D"padding-top: 30p=
+x; color:#1f2125; font-family:'Fira Mono', Arial,sans-serif; font-size:12px=
+; line-height:22px; text-align:center;">
+=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09</table>
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09=09<!-- END Container -->
+=09=09</td>
+=09</tr>
+</table>
+</div>
+------=_Part_0_156384315.1671654208145--

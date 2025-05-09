@@ -1,0 +1,77 @@
+Return-Path: <baldeboubacar052@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id uh43O+E82mPKcAwA3R2AvA
+	(envelope-from <baldeboubacar052@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 01 Feb 2023 11:20:17 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4P6Hww4htxz34SDmh
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="mSEaXcJd"
+X-N0C-MailScanner-eFa-Watermark: 1675851595.77292@sVZyLEGN/uYPd0sK0FrRyA
+X-N0C-MailScanner-eFa-From: baldeboubacar052@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: D6B75401AEF3.A0E35
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-yb1-f175.google.com ([209.85.219.175] [209.85.219.175])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id D6B75401AEF3
+	for <contact@fiidewgal.com>; Wed,  1 Feb 2023 11:19:22 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com D6B75401AEF3
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com D6B75401AEF3
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=mSEaXcJd
+Received: by mail-yb1-f175.google.com with SMTP id t16so21721259ybk.2
+        for <contact@fiidewgal.com>; Wed, 01 Feb 2023 02:19:22 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=2WjCWrxkuT/P8XVFIwPRQUKQg4BJ+OnvaFM7piflUfI=;
+        b=mSEaXcJdkiITpmkuM2IYfOXSJhXWiQHmob+hK7tNYTGaBf/KusdY3U4nhu7AleHyiQ
+         icTAzZaDE5EZk5PnJRbdP9+H6BKDhNAHBsL+R+7p8MF1QSCFpAfVOQUy6hY0cRPydry0
+         JmXDMwwIz7ReuBQAG9yxPivyS6p//609pqAPUpUdyxkCF4rDKkBUBI/Yp/5tEaiUoj5o
+         PpUrjhw23oMhOk2rwWhmuNwr4cVFMmfOlWFXNDNUAPwjCBw3jQmH21GrNm22ASW/loRL
+         gJbQq8n7D9CF03lagNn7Z63eoAr37ITExHdpEA59MfXk2P2eHC3Dy4KevtPwiXF2NUvp
+         lEFg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=2WjCWrxkuT/P8XVFIwPRQUKQg4BJ+OnvaFM7piflUfI=;
+        b=f3hEMjxG7HojVO/YKG/Rx233Oa1JhZvGNxmgH3npLBKK/DDHZhlbm8YdRKnfTXHtTj
+         LEtEwhfmB3a+6aWqLm5DREDKsYkilSKJ83ZVLYiT9MhkCbwbFyPSLvFkdrJ0zhXAbHLP
+         bR5JR/uiQ1oTL+j1qhJvlkxyiHKRTKLP/SLw1yVpEl9qZmncOoEmHwrFLe9X3rf+o3A3
+         APuDF75mBhv+x+5Dchp8UAiGw4Pi4IcqhenxPKxA1vKce7heVbwHh6h+jn1aFpavbeWn
+         1sl59Pj+5a8dY5463+Mw1iqpnVnp8CDd7PPfdCl8RlDtOKHbBUpwOCkafErYQPC0H1Ua
+         w+og==
+X-Gm-Message-State: AO0yUKXw+Hu8e0GWJiWYuhdxM0EzJeV0wjMELPXykKXv8uXMm4+PcFpS
+	4JXcy709z7qanL7odEwnudC3/ahtgZTqsdzOfp0tT3VV
+X-Google-Smtp-Source: AK7set8vhfmD9PW+tDUXDD3GrP0YDyotTsd/SzVSJe/VDCP7jGeLAwd2B/aTZwQf8n8FlwauvSiz77OWmuNUJMtiioQ=
+X-Received: by 2002:a25:aa2e:0:b0:7bb:3b2d:718f with SMTP id
+ s43-20020a25aa2e000000b007bb3b2d718fmr269794ybi.302.1675246761279; Wed, 01
+ Feb 2023 02:19:21 -0800 (PST)
+MIME-Version: 1.0
+From: Balde Boubacar <baldeboubacar052@gmail.com>
+Date: Wed, 1 Feb 2023 11:19:09 +0100
+Message-ID: <CANubC6A3Y6C9jCPQj0TJHfYnsw7Up3hdJhwvEU4pJe3zD=Y=WQ@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000001e054305f3a0c8c5"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000001e054305f3a0c8c5
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+--0000000000001e054305f3a0c8c5
+Content-Type: text/html; charset="UTF-8"
+
+
+
+--0000000000001e054305f3a0c8c5--

@@ -1,0 +1,77 @@
+Return-Path: <tthiernomamadoudiallo@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id b7c/HXKpOWR/zCoA3R2AvA
+	(envelope-from <tthiernomamadoudiallo@gmail.com>)
+	for <contact@fiidewgal.com>; Fri, 14 Apr 2023 21:28:50 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Pymhc2QCmz34SDmj
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="nHPZMYC8"
+X-N0C-MailScanner-eFa-Watermark: 1682105307.45549@lIS7yBhD4H3U7m0pSS37Qw
+X-N0C-MailScanner-eFa-From: tthiernomamadoudiallo@gmail.com
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 9E1884063278.A7B64
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-yw1-f171.google.com ([209.85.128.171] [209.85.128.171])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 9E1884063278
+	for <contact@fiidewgal.com>; Fri, 14 Apr 2023 21:27:55 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 9E1884063278
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=tempfail smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 9E1884063278
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=nHPZMYC8
+Received: by mail-yw1-f171.google.com with SMTP id 00721157ae682-54bfa5e698eso517635807b3.13
+        for <contact@fiidewgal.com>; Fri, 14 Apr 2023 12:27:16 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1681500435; x=1684092435;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=7COOnl8h+Xra9Nte/G7/OXoiw5+FGIsu9jX/75TQV+A=;
+        b=nHPZMYC83pyiGC7bVUm2hc6qIkemoolRkco4VVEhPdIclKxF0C0OulZvzst/7lKVY2
+         1Q3+J41s/K2GiC79WMtQO+Hk+cKaYnDHMDaFuaom2hIRNx7BU0bynqZ9fzOMyT7d7c8o
+         NyzAsd8uzLEJ4YMA4wypIW0um9opPONr0vcieG/iAl6gPa3Q4+Vi1iB6XDrSDGjwo2QT
+         o8qzYjsSn/Vn0PIkhUC9w8UDI2dC9C8z/9Zj8qDbjAX2Sx7RKrmle6OHMLw0k4TFGfCc
+         TMViu7Y9rVh33WLERCChBwNszEQbqHdLVTQ3x9zKDD9Ys6Yti4naHqslLrOsC+uyaXi9
+         Fv1Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1681500435; x=1684092435;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=7COOnl8h+Xra9Nte/G7/OXoiw5+FGIsu9jX/75TQV+A=;
+        b=Lc7hSP2nnBqiiv/N6szSU92Slze8xrADRZPJcONUl4A1qJBUjbewXnOuPiuE+5ik1j
+         xajqDwDS+7WCJ33ijj7pjk/aRnj8e3QnHBRgGuG0Df3k6BkhYxbm6hQUnj5KehU+JA8M
+         IUil/Eg9D1ze/wd3p598muLcNGWsnH1PyWR6oIuH9FIBa1h7QFDZoh2VSt2zWmJWIMWR
+         ThudlbWcB2zwizIM41kzqpcyAKW9BdySXT9avAiTtMcVi+qiRAZe3HGTJA/X+0Z0vCWa
+         j8r4vo4nTUC+/O7LGmrhInnB7sAYeS5ipF4AXim/fjPregDtHc7cqgBRdMQn4NClJA9D
+         0KqA==
+X-Gm-Message-State: AAQBX9casbUnBnaCwoaV6q5SolhcaRVVY1uKr/ciGlGfv6VqHT56z1Gz
+	xgKZcTjE0QLWox3PVzLWv6FEHMk7Jbesgb/P+VIjyBDv
+X-Google-Smtp-Source: AKy350ai5exQdHswWxw86oJiZ2QstK2ggrKgMHN0MjZzgqdl2Ts2buEJsoN4k9vrfRvbG9864v1RjVQMlI8HD/bBVYQ=
+X-Received: by 2002:a81:b550:0:b0:54c:1ebc:7b7f with SMTP id
+ c16-20020a81b550000000b0054c1ebc7b7fmr4355696ywk.3.1681500435274; Fri, 14 Apr
+ 2023 12:27:15 -0700 (PDT)
+MIME-Version: 1.0
+From: Thiernomamadou Diallo Thiernomamadou Diallo <tthiernomamadoudiallo@gmail.com>
+Date: Fri, 14 Apr 2023 22:27:04 +0300
+Message-ID: <CAJjBryo29wc1DPgGpJ02ZWHgCNxvx2-+vSSwqupxAEVec=T3qg@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000225f9f05f950d467"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000225f9f05f950d467
+Content-Type: text/plain; charset="UTF-8"
+
+tthiernomamadoudiallo@gmail.com
+
+--000000000000225f9f05f950d467
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"><a href="mailto:tthiernomamadoudiallo@gmail.com">tthiernomamadoudiallo@gmail.com</a><div dir="auto"><br></div></div>
+
+--000000000000225f9f05f950d467--

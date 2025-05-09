@@ -1,0 +1,81 @@
+Return-Path: <sowaliou02100@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id GP/XEF6Ar2NqACEA3R2AvA
+	(envelope-from <sowaliou02100@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 31 Dec 2022 01:20:46 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NkN7y1JrDz1tVt
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="a7kTuEqT"
+X-N0C-MailScanner-eFa-Watermark: 1673050818.30127@15roGfKb79fU/neZD2mKxw
+X-N0C-MailScanner-eFa-From: sowaliou02100@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: B50CA40664F9.A9455
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-vk1-f173.google.com ([209.85.221.173] [209.85.221.173])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id B50CA40664F9
+	for <contact@fiidewgal.com>; Sat, 31 Dec 2022 01:19:45 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com B50CA40664F9
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com B50CA40664F9
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=a7kTuEqT
+Received: by mail-vk1-f173.google.com with SMTP id 6so10769438vkz.0
+        for <contact@fiidewgal.com>; Fri, 30 Dec 2022 16:19:45 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=KmNHj8jc7Rk4yUvO4HLeqs4k8Q7OWUjFqCqOpeYjgUE=;
+        b=a7kTuEqTx/tuHSDwWj12Y25NpKgOGSSJxJ373NDbX8JYgjHScStHd1p2k6AqU0QzNd
+         zTIGPJ4t8tLX9m8bSExOZEYjzYoAiNrTEj2VL/cktOWHmuXBKwUrbh24TZfBWOnGMdE0
+         Pw4Buk2CAwFKPABNz1g/TaOJFS+7PzW+3F0DjpNq/MVwPZn6yvPAm9T24GVp9zL7Kikw
+         YenXtXiFLbG2eG4M/45hWHogQVJvVNN8O2gpOfql6QTnI1pIK1xUPbLXk4LEymun7Z3s
+         B6F3BrJrXB9tITG/rJ8n3ZNPklyWkuGV2t8wGviC3IYjIJffv2wkQehFSf9xl7u22nUD
+         ctvQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=KmNHj8jc7Rk4yUvO4HLeqs4k8Q7OWUjFqCqOpeYjgUE=;
+        b=eHFcwG5GUDeQZQE8fG6PYcSKmODNznDgJYKuUO0/cBcmvxaIJIjq+iF75tReG3C/RR
+         ruTOqs8IRk+/IIg//YBA91Mq7KwjRfH/ptuKf8/4DfPaEKuxSDkZEG6K47rgG6OjWWBU
+         OvyOc1uu7HVZ6Y2uqKgMlhh9oZzfYqTs1FkDIS0UgmdcjZoW8eMJTq8JpqofAK6g9QRq
+         H5+iPOfHnicYD7qwLZO3tTCvnH1p4dlxKEYtKjp6ivsNNIAgSXgOqVy5A2tiBglEbVUY
+         qyYOljZ01vF85dQblGQiKMZEQDJySD7N8+UvZEB0EeSgzFpS9oHPHfJZAP0In4TwLfJH
+         NHHQ==
+X-Gm-Message-State: AFqh2kqXG/urkpqc8GFzaw/z5cpdpLM6Th/hxyuCIj9t6AEdao9KO9w6
+	jjH35gl1Rkr4LqvVUWcnjbvEtfVTOVfnGLPCVZ80r8pt
+X-Google-Smtp-Source: AMrXdXtsN4nrrt+SWzfNMMb6w+e3tAkY8iIp+yih2HvAV0LkGwv5cPofHFXq0lnUrgLtYYJtrx1b0KEHf4iXDXLgcDU=
+X-Received: by 2002:a1f:9050:0:b0:3d5:a49f:2dcb with SMTP id
+ s77-20020a1f9050000000b003d5a49f2dcbmr277539vkd.9.1672445984395; Fri, 30 Dec
+ 2022 16:19:44 -0800 (PST)
+MIME-Version: 1.0
+From: aliou sow <sowaliou02100@gmail.com>
+Date: Sat, 31 Dec 2022 01:19:32 +0100
+Message-ID: <CAFhGFZ7W7PNGg-WDnck-vGbZ6X4aqiFUmXitskTYFvPVG5_fTg@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000ce57ec05f114acc0"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000ce57ec05f114acc0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour
+J'ai =C3=A9crivez mais =C3=A7a marche pas
+
+--000000000000ce57ec05f114acc0
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Bonjour=C2=A0<div dir=3D"auto">J&#39;ai =C3=A9crivez mais=
+ =C3=A7a marche pas=C2=A0</div></div>
+
+--000000000000ce57ec05f114acc0--

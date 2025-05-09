@@ -1,0 +1,80 @@
+Return-Path: <djallomohammedaliou97@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id KHZ3F+GatmOv/icA3R2AvA
+	(envelope-from <djallomohammedaliou97@gmail.com>)
+	for <contact@fiidewgal.com>; Thu, 05 Jan 2023 10:39:45 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NnhJd1jZ9z1wKR
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="qM3qcsl3"
+X-N0C-MailScanner-eFa-Watermark: 1673516379.25132@bCGDnA1uftOp90qAfIDvzQ
+X-N0C-MailScanner-eFa-From: djallomohammedaliou97@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 72299401B23D.AED3F
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-pg1-f176.google.com ([209.85.215.176] [209.85.215.176])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 72299401B23D
+	for <contact@fiidewgal.com>; Thu,  5 Jan 2023 10:39:06 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 72299401B23D
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 72299401B23D
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=qM3qcsl3
+Received: by mail-pg1-f176.google.com with SMTP id 79so24132015pgf.11
+        for <contact@fiidewgal.com>; Thu, 05 Jan 2023 01:39:06 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=z7l04pC2SDV9xP56Kr7JPcM3HZILpjEbufI4i6XdmzE=;
+        b=qM3qcsl3OpB9Ip0sHkGbCawNW302xxMiaE4kl1oo0mymSqOPzocQoQyIfL1AvTpB7D
+         dI0lFox3DLuf2KjoYjUdKoENRFFmWT/rzDPHvP5vnPaVdXT7ElPioZebqNHrxtF47Lby
+         kVFjg+Zc7iy2it/KIaWAN6SYEdZXd3u6k9StXBH2Cakp1bBlCTOPrwXWot9mmjo16Muj
+         RjpeqZrvmS+TjRstXk7blam7XhcBymhKYyDR5q1tFRh/qLNNLadN4CWC5cpih6HxBO8Q
+         aWGqP/yWa8WbUedZ2OcG5TXYuO0l31Nfbbqngtbxp5qsnAgdeUK06BZuD2I0U9hQKiEr
+         R60g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=z7l04pC2SDV9xP56Kr7JPcM3HZILpjEbufI4i6XdmzE=;
+        b=rth+tHM7HsIiWS4h9JDb8W5gD8jNuP49/lvUvgfSUxG/ASQY40evuIzwr+bSW1N2CT
+         kCccd9TDyjlhlQ5VcLRydhy/CmETxnchwNdpI1y/A65KI4n2+VCdG75bQ3v0adJGkRA5
+         dBSPOUhR/b928qN5dC7r/SxjDv61IU7Xa3yzuaNVmMwKstYtkZjWIWyZeDw9kYEdlPz+
+         1HEFAQGl3ibaFLhU/nz9xypszas3oOZGKGm72HVcC5lWgw57prHZ7TXia/adHrIlcaq2
+         Hjjbeh1kedbG0mteDOvXafIRuhMbS6LEG600IGzzC+uS69sWrZsVvtI01/8yTywD4kRL
+         pBQA==
+X-Gm-Message-State: AFqh2koJZPGvkm0YGeu5kPBi6rRpvI42Lf+xQ8WmV+K6B5CndEUxrLIj
+	WUJDgBYFY00T+9HEHNGVUk7PFhUT/7JBSa7JS48y/93G
+X-Google-Smtp-Source: AMrXdXudjGtGAD7BX/ftu63I26dgtkygFNkMu6eXd+gXaXg8c50UTJxwC8N33szfRPzy11opgWoF73j6u1Yh008FSSE=
+X-Received: by 2002:a63:557:0:b0:4a0:8210:f45a with SMTP id
+ 84-20020a630557000000b004a08210f45amr1528367pgf.395.1672911544649; Thu, 05
+ Jan 2023 01:39:04 -0800 (PST)
+MIME-Version: 1.0
+From: Mohammed aliou Djallo <djallomohammedaliou97@gmail.com>
+Date: Thu, 5 Jan 2023 09:38:52 +0000
+Message-ID: <CACVrK=o5Nh=JCCQgmzXAEoSH9Otsz-bx_ysqcoDkWbA+zH9v9A@mail.gmail.com>
+Subject: 
+To: =?UTF-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>
+Content-Type: multipart/alternative; boundary="0000000000005c0e1305f181122b"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000005c0e1305f181122b
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour, je suis tomb=C3=A9 amoureux de vous, je t'aime en mariage.
+
+--0000000000005c0e1305f181122b
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Bonjour, je suis tomb=C3=A9 amoureux de vous, je t&#39;ai=
+me en mariage.</div>
+
+--0000000000005c0e1305f181122b--

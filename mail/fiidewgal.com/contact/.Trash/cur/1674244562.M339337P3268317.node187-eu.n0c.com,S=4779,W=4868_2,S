@@ -1,0 +1,89 @@
+Return-Path: <guissebintou23@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 6Y0hFNLxymPd3jEA3R2AvA
+	(envelope-from <guissebintou23@gmail.com>)
+	for <contact@fiidewgal.com>; Fri, 20 Jan 2023 20:56:02 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Nz9Gn2H0tz34VbQQ
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="RuhL8TIA"
+X-N0C-MailScanner-eFa-Watermark: 1674849354.20486@lUiZG1wZsNBTZU0CIV9OGw
+X-N0C-MailScanner-eFa-From: guissebintou23@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 48D314017F86.AA57F
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-yb1-f176.google.com ([209.85.219.176] [209.85.219.176])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 48D314017F86
+	for <contact@fiidewgal.com>; Fri, 20 Jan 2023 20:55:19 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 48D314017F86
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 48D314017F86
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=RuhL8TIA
+Received: by mail-yb1-f176.google.com with SMTP id t16so3444405ybk.2
+        for <contact@fiidewgal.com>; Fri, 20 Jan 2023 11:55:19 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=fBNU5wuSu/Vma3i66D0fyiY+cuDMt95aaWSzdzDcuws=;
+        b=RuhL8TIAAlhNDk4YvNO6+Xiq6d8hRkv6O1jsxPmmUHULmP8clByUbtSoEZhiznrzP5
+         jVM0JmFF+vTSkJcVZkp+MWs6PJTEoOqfYzYjxcPtEgEZY0j0e3RYxV/VI2tc6WjNX1c0
+         THq8M9PUob9/Jm3j+ouwpRTeUpN/WsXziHYvz0ncGAeXMPQQyDYmNZZs+0akInoLJ0Ql
+         dD0en5ZlsL2WU6n6apT0nNazW9p5McnyEp8NoFHMXtY2TUtZ73M9sNvHlIhcoiFacoP9
+         VIUL8Ap5Y4LG4uKDGBIie9obX66hgEVHHAHgVxl/ZtGTKAP3/noUK4K2TyKwmi6oF9MW
+         wusw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=fBNU5wuSu/Vma3i66D0fyiY+cuDMt95aaWSzdzDcuws=;
+        b=0Up14N5578coFKt/M1sruz7oeMlBgHSuB+kUc8CCrLuOXpotPq7R2lBZVXW/CIEmT0
+         9+53+egVlvlOx64FSCvXEXpR8JIx9bZhiuNBRFsCFjuZum7CEkO9odMD7YFon0QM16wa
+         0uEY+aCz8UtBFCQ4XJkKzrEyUECnEaHKCXW8if5//b/OHdv0dc8jS495h4KmOQStCfDn
+         z+vAV/GJZFWvJxB9eamYBIlXiYUBgtzDf3zqUqt4mDMCfGfA77V0GXBzbT08TmdY3Vvd
+         GjKbTgvIDNYzb/1dGFzdWDy1atpqP5uGVz1nJBuUFecePpV2CDX7BVJahRswBWo5D9tX
+         s0dA==
+X-Gm-Message-State: AFqh2kqI/YzD3tM6p1lNYkmfXzpingztXx/mE83j3dHoRW7eFYRaHe1/
+	JYOp9ZRaLGa2yP3jJYvk1fRn79DtMRN6V+OdBD5V3gw9
+X-Google-Smtp-Source: AMrXdXvjLW02iVLaj5Iq47tdS/FoaF4YjNeMv60/BxhIdsBR3U7kClHnfNMWaDTsN6EVFXBQ0CEXH/zcNIy2qCwp7Gk=
+X-Received: by 2002:a5b:d45:0:b0:7c8:140f:3c1b with SMTP id
+ f5-20020a5b0d45000000b007c8140f3c1bmr2148384ybr.575.1674244517701; Fri, 20
+ Jan 2023 11:55:17 -0800 (PST)
+MIME-Version: 1.0
+From: =?UTF-8?Q?Guiss=C3=A9_Bintou?= <guissebintou23@gmail.com>
+Date: Fri, 20 Jan 2023 19:52:09 +0000
+Message-ID: <CACwvGJDZ2=NG3ttrm=00KbsSg332XEovJ_Q_axX8aMXNYeMU3Q@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000beaae405f2b76db6"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000beaae405f2b76db6
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Salam waleykoum ya Akhi ou ya oukty j'aimerais int=C3=A9grer l'association =
+de
+fidewgal si possible j'aimerais me trouver un mari =C3=A0 travers votre
+association incha'Allah merci pour la compr=C3=A9hension et j'esp=C3=A8re a=
+voir de
+r=C3=A9ponse bient=C3=B4t incha'Allah.
+Salam waleykoum
+
+--000000000000beaae405f2b76db6
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Salam waleykoum ya Akhi ou ya oukty j&#39;aimerais int=C3=
+=A9grer l&#39;association de fidewgal si possible j&#39;aimerais me trouver=
+ un mari =C3=A0 travers votre association incha&#39;Allah merci pour la com=
+pr=C3=A9hension et j&#39;esp=C3=A8re avoir de r=C3=A9ponse bient=C3=B4t inc=
+ha&#39;Allah.=C2=A0<div dir=3D"auto">Salam waleykoum=C2=A0</div></div>
+
+--000000000000beaae405f2b76db6--

@@ -1,0 +1,238 @@
+Return-Path: <alphaaj8@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id JaC9BSdVPWQltBYA3R2AvA
+	(envelope-from <alphaaj8@gmail.com>)
+	for <contact@fiidewgal.com>; Mon, 17 Apr 2023 16:18:15 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Q0Tfs40Fcz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="kK5wM/Jw"
+X-N0C-MailScanner-eFa-Watermark: 1682345728.66104@PU1tJ66iWjWFCZZXhqQSSQ
+X-N0C-MailScanner-eFa-From: alphaaj8@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: s
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 47A92401AEEF.A690B
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-vs1-f41.google.com ([209.85.217.41] [209.85.217.41])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 47A92401AEEF
+	for <contact@fiidewgal.com>; Mon, 17 Apr 2023 16:14:33 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 47A92401AEEF
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 47A92401AEEF
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=kK5wM/Jw
+Received: by mail-vs1-f41.google.com with SMTP id g41so11130481vsv.8
+        for <contact@fiidewgal.com>; Mon, 17 Apr 2023 07:14:33 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1681740872; x=1684332872;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=mAJS0l5xQjYucRYDQvouVuwEZw5CWE4xP/2Z34R2cVc=;
+        b=kK5wM/JwYv7uRrdk23SGXztM1Rge0fQ69wBNl5hqso0F5m91RGrKJ5eIkNxdxgnOed
+         XrDDVDW3Z0MZaygdvn+AVwdeUHJLjfJoytJ3ksUxUWaYNK13TV4xB0T3c0oRbG8YmXfd
+         Oo0QTnQjIDU6+SyWWp7gQ1HGPFlrDEB+xdm3Yy9wnZM7LEVmJz5MoKm67o1ecp2jkxZ3
+         AxvulyZioRV/0Cvqd9g1UCoD6JyLEBL14j789FRa4mm4Nim903lIFIqmNL1QtsV7ld84
+         3wSiChqo9KFZ52KAJC+OwGi5vNBjhZkzREWqhCM+jzyT8MdeIPPSpcQ77QCUr80T5x48
+         njOg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1681740872; x=1684332872;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=mAJS0l5xQjYucRYDQvouVuwEZw5CWE4xP/2Z34R2cVc=;
+        b=glVaJ50htoQ88dlN3irbv7GPPlH1uQKls/8gR4/HOrWEqgAnrO68WEpspgLBdnCV6E
+         GyaZFoeFmeYgQakv8NbViR7f6kdelFyOvkS6XlBeuLbLXT0WdcjChn64n/rqquAhsQC3
+         KdBxt8QBAROWGj/2qQAvnmiy+Q30SFxU1pZ233rVzDqzsGw7JRD470bQ8tVji/Xj7EzA
+         9oA9BVL/eQpbDuWT/UO3GQ5zXuw9N/7AEDae2mtu6p7ymbjQIPCdKZe6wWxxvJEo3kAs
+         0ZD5l7Ybj2xYefgSyUIamKPtxQu5WkHxZ4MAoGfx4QsboHEZdjSg2VJ5anYQiz8ZbBUk
+         fm/w==
+X-Gm-Message-State: AAQBX9f2YRCaz1TaOvxubKTfBlbfh10HR8K6bsl+eZicmGnvo0g6q0NB
+	TXMmkRKq/fFLjMRm6vBeoHi8GYFRAhmm1pnTVCPOsx8+7R8=
+X-Google-Smtp-Source: AKy350a6lyth2oYw/VZtYg2KpIg0QmgJFipNG0lgAidT/oWucwl6KXUa5Zli/xP0sI/JRfPPf3TiPmSwN69iIG5F4Wc=
+X-Received: by 2002:a67:d719:0:b0:42c:e27b:f34c with SMTP id
+ p25-20020a67d719000000b0042ce27bf34cmr8168032vsj.6.1681740871938; Mon, 17 Apr
+ 2023 07:14:31 -0700 (PDT)
+MIME-Version: 1.0
+References: <12d8d1926572d9261fbcf9802428761d@fiidewgal.com> <CAEtvyFet13X8V-+sNx4d3Otbq4bxwuE-hLX-A51sBE6cH-sqbA@mail.gmail.com>
+In-Reply-To: <CAEtvyFet13X8V-+sNx4d3Otbq4bxwuE-hLX-A51sBE6cH-sqbA@mail.gmail.com>
+From: Jalloh Alpha <alphaaj8@gmail.com>
+Date: Mon, 17 Apr 2023 15:14:19 +0100
+Message-ID: <CAEtvyFcYU+dnf4zhPcV0Xat9L=mm-OrF+5zQVH6WKDhXXHZY+w@mail.gmail.com>
+Subject: Re: Email Verification - Fii Dewgal
+To: =?UTF-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>
+Content-Type: multipart/alternative; boundary="00000000000046b59c05f988cf69"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000046b59c05f988cf69
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+I'm interested my name is Mohamed Alpha jalloh nationality Guinean but
+presently living in Cameroon
+
+On Mon, 17 Apr 2023, 15:11 Jalloh Alpha, <alphaaj8@gmail.com> wrote:
+
+>
+> On Mon, 17 Apr 2023, 14:54 Ne r=C3=A9pondez pas, <contact@fiidewgal.com> =
+wrote:
+>
+>> Fii Dewgal <https://fiidewgal.com>
+>>
+>> v=C3=A9rification de l'E-mail
+>> Please click the button below to verify your email address.
+>> Click Here
+>> <https://fiidewgal.com/verification-confirmation/eyJpdiI6Ijh1cG5PSFlYSFF=
+OKzUxcDQwMEY1aGc9PSIsInZhbHVlIjoiWmczeWJmS3FvV21JTUhDUXVxZmpCdz09IiwibWFjIj=
+oiYzNkYzA0NDVhNzE5ZWFlZDA3ZGE4MmI3MTdhMWQ4YWEzYzFlYjFkOWM0MjZjMGJmNGQ1ZWM0N=
+GQ3MDJiMjZmNCIsInRhZyI6IiJ9>
+>>
+>
+
+--00000000000046b59c05f988cf69
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">I&#39;m interested my name is Mohamed Alpha jalloh nation=
+ality Guinean but presently living in Cameroon=C2=A0</div><br><div class=3D=
+"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr">On Mon, 17 Apr 2023, 15=
+:11 Jalloh Alpha, &lt;<a href=3D"mailto:alphaaj8@gmail.com">alphaaj8@gmail.=
+com</a>&gt; wrote:<br></div><blockquote class=3D"gmail_quote" style=3D"marg=
+in:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><div dir=3D"auto=
+"></div><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr=
+">On Mon, 17 Apr 2023, 14:54 Ne r=C3=A9pondez pas, &lt;<a href=3D"mailto:co=
+ntact@fiidewgal.com" target=3D"_blank" rel=3D"noreferrer">contact@fiidewgal=
+.com</a>&gt; wrote:<br></div><blockquote class=3D"gmail_quote" style=3D"mar=
+gin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><table width=3D=
+"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#e8ebef"=
+>
+        <tr>
+        <td align=3D"center" valign=3D"top" style=3D"padding:50px 10px">
+           =20
+            <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0">
+                <tr>
+                    <td align=3D"center">
+                        <table width=3D"650" border=3D"0" cellspacing=3D"0"=
+ cellpadding=3D"0">
+                            <tr>
+                                <td bgcolor=3D"#ffffff" style=3D"width:650p=
+x;min-width:650px;font-size:0pt;line-height:0pt;padding:0;margin:0;font-wei=
+ght:normal">
+                                   =20
+                                    <table width=3D"100%" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff">
+                                        <tr>
+                                            <td style=3D"padding:40px 30px =
+0px 30px">
+                                                <table width=3D"100%" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                                                    <tr>
+                                                        <th style=3D"font-s=
+ize:0pt;line-height:0pt;padding:0;margin:0;font-weight:normal">
+                                                            <table width=3D=
+"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                                                                <tr>
+                                                                    <td sty=
+le=3D"font-size:0pt;line-height:0pt;text-align:left"><img src=3D"https://fi=
+idewgal.com/public/uploads/all/3ePHoiM5cMGmckWJJkq03HVSXUcK8mKuITM5NqBG.png=
+" width=3D"" height=3D"24" border=3D"0" alt=3D""></td>
+                                                                </tr>
+                                                            </table>
+                                                        </th>
+                                                        <th width=3D"1" sty=
+le=3D"font-size:0pt;line-height:0pt;padding:0;margin:0;font-weight:normal">=
+</th>
+                                                        <th width=3D"120" s=
+tyle=3D"font-size:0pt;line-height:0pt;padding:0;margin:0;font-weight:normal=
+">
+                                                            <table width=3D=
+"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                                                                <tr>
+                                                                    <td sty=
+le=3D"color:#000000;font-family:&#39;Fira Mono&#39;,Arial,sans-serif;font-s=
+ize:12px;line-height:16px;text-align:right"><a href=3D"https://fiidewgal.co=
+m" style=3D"color:#000001;text-decoration:none" rel=3D"noreferrer noreferre=
+r" target=3D"_blank"><span style=3D"color:#000001;text-decoration:none">Fii=
+ Dewgal</span></a></td>
+                                                                </tr>
+                                                            </table>
+                                                        </th>
+                                                    </tr>
+                                                </table>
+                                                <table width=3D"100%" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                                                    <tr>
+                                                        <td style=3D"paddin=
+g-top:40px;border-bottom:4px solid #000000;font-size:0pt;line-height:0pt">=
+=C2=A0</td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                   =20
+
+                                   =20
+                                    <table width=3D"100%" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff">
+                                        <tr>
+                                            <td style=3D"padding:70px 30px =
+70px 30px">
+                                                <table width=3D"100%" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                                                    <tr>
+                                                        <td style=3D"color:=
+#000000;font-family:&#39;Ubuntu&#39;,Arial,sans-serif;font-size:50px;line-h=
+eight:60px;text-align:center;padding-bottom:10px">v=C3=A9rification de l&#3=
+9;E-mail</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style=3D"font-f=
+amily:&#39;Ubuntu&#39;,Arial,sans-serif;font-size:20px;line-height:26px;tex=
+t-align:center;color:#2e57ae;padding-bottom:30px">Please click the button b=
+elow to verify your email address. </td>
+                                                    </tr>
+                                                                           =
+                             <tr>
+                                                        <td style=3D"font-f=
+amily:&#39;Ubuntu&#39;,Arial,sans-serif;font-size:20px;line-height:26px;tex=
+t-align:center;color:#2e57ae;padding-bottom:30px">
+                                                            <a href=3D"http=
+s://fiidewgal.com/verification-confirmation/eyJpdiI6Ijh1cG5PSFlYSFFOKzUxcDQ=
+wMEY1aGc9PSIsInZhbHVlIjoiWmczeWJmS3FvV21JTUhDUXVxZmpCdz09IiwibWFjIjoiYzNkYz=
+A0NDVhNzE5ZWFlZDA3ZGE4MmI3MTdhMWQ4YWEzYzFlYjFkOWM0MjZjMGJmNGQ1ZWM0NGQ3MDJiM=
+jZmNCIsInRhZyI6IiJ9" style=3D"background:#007bff;padding:0.9rem 2rem;font-s=
+ize:0.875rem;color:#fff;border-radius:.2rem" rel=3D"noreferrer noreferrer" =
+target=3D"_blank">Click Here</a>
+                                                        </td>
+                                                    </tr>
+                                                                           =
+                         </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                   =20
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style=3D"padding-top:30px;color:#1f2125=
+;font-family:&#39;Fira Mono&#39;,Arial,sans-serif;font-size:12px;line-heigh=
+t:22px;text-align:center">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+           =20
+        </td>
+    </tr>
+</table>
+</blockquote></div>
+</blockquote></div>
+
+--00000000000046b59c05f988cf69--

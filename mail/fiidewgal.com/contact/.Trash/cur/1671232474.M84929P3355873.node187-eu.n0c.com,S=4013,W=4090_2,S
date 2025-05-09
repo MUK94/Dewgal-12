@@ -1,0 +1,77 @@
+Return-Path: <boypeulboy@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id Qjf4BNr7nGPhNDMA3R2AvA
+	(envelope-from <boypeulboy@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 17 Dec 2022 00:14:34 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NYlL11hjbz35wv
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="HJOF7lEV"
+X-N0C-MailScanner-eFa-Watermark: 1671837257.26603@TmTs6+DkJcG0ncd3EgVZyA
+X-N0C-MailScanner-eFa-From: boypeulboy@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 224E4401AEF6.A4261
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-qk1-f170.google.com ([209.85.222.170] [209.85.222.170])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 224E4401AEF6
+	for <contact@fiidewgal.com>; Sat, 17 Dec 2022 00:13:43 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 224E4401AEF6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 224E4401AEF6
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=HJOF7lEV
+Received: by mail-qk1-f170.google.com with SMTP id z17so1559127qki.11
+        for <contact@fiidewgal.com>; Fri, 16 Dec 2022 15:13:43 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=jim8QVauUHlgQoiGBF9V9pQRz6MxCgStVOHojKst+DY=;
+        b=HJOF7lEVDeKkosqDrHSA13Whgqcq2wtsuwf7wN9B1zaFeCf2VTPHrnhGS67QpVlCZ5
+         /+K8HRSe/IGVT/CxvK5kNZnOtZJ/FKi6Iu91myitRdI6by2dN3KALO9T5mVT72IoKU7S
+         vHabDgqIfTZsAwnpch4MgqfSjFjKjXASjQueA8KQ6OFGIZWp6yNQBaXje6NfFHUU+joI
+         whsytybP1goyIgN/cQwwG6tuGW4r+bs+lK8uVelABdPGWjXSIHLJtrQgeACUH7BbB9Wh
+         +YTCXHGW5EucZxKfiqvABIA4znZgkPGZn5i0sv0LG3aN6TMmuzk4gj32Ak2v9zfzkekK
+         ciAw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=jim8QVauUHlgQoiGBF9V9pQRz6MxCgStVOHojKst+DY=;
+        b=EH3hQDVnK6i8mBeItrw2fLtDxYHf6T/qMOVoDEXiivmEWekY0g6hw7LXzFX/zWswGb
+         e/YrMdUBudPkl8D93aBT6dYIx2G26rLOUwtp333FLZSz2cKzE82LaT3zKYUMHibqjO7N
+         Tlzm9YBWDqJargdXEVGJQ5whN+fSIQExQeowECTuYktW95NFSS4EevfravGWIKJy/ptk
+         StJMROL7/HR23fXL385r2eNAhjcfCtaVDBYgmap3eSaQlfOr82F/VzGIG5hB3zDPjzxk
+         XemXfxonHxBNNB18F0Z6BiqdiYpwUjlE79JdbnFNxHJwvlj8fWq9HEbRdl9w9COSvigl
+         ChWA==
+X-Gm-Message-State: ANoB5pkzpnZWNqca/6VnSc2vj4iWDWqUbDEUdcPa6FITQN276zklnKfz
+	J9P2IE6Z7F310e4UdXVUY9yNuscyyVlM+vadOVx0d9Z0
+X-Google-Smtp-Source: AA0mqf7Wohgm0AlqrjHZqSuNCV33DjrAp2AxkIR26RYC7aEIrEO6TekaDziIks6Bzc1JXabm68UEU64DSLynlvSPSHk=
+X-Received: by 2002:a05:620a:ed2:b0:6df:923d:13ba with SMTP id
+ x18-20020a05620a0ed200b006df923d13bamr85095332qkm.751.1671232421225; Fri, 16
+ Dec 2022 15:13:41 -0800 (PST)
+MIME-Version: 1.0
+From: Boypeul Boy <boypeulboy@gmail.com>
+Date: Fri, 16 Dec 2022 23:13:28 +0000
+Message-ID: <CAMbmfFYd64XuXU_bwfhEzODWTNe7gi+fYtZD7R1zHtYLdXpORQ@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000cdeb8005effa1eb8"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000cdeb8005effa1eb8
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+--000000000000cdeb8005effa1eb8
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"></div>
+
+--000000000000cdeb8005effa1eb8--

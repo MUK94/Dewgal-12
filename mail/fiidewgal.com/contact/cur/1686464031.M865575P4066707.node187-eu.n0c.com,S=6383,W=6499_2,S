@@ -1,0 +1,116 @@
+Return-Path: <989-gzb-065.0.163768.0.0.15728.9.104743797-7@mkto.taboola.com>
+Delivered-To: Contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id A6eGMx9mhWSTDT4A3R2AvA
+	(envelope-from <989-gzb-065.0.163768.0.0.15728.9.104743797-7@mkto.taboola.com>)
+	for <Contact@fiidewgal.com>; Sun, 11 Jun 2023 08:13:51 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Qf4Jb43TRz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=taboola.com header.i=@taboola.com header.b="pdCYN/IT";
+	dkim=pass (1024-bit key) header.d=mktdns.com header.i=@mktdns.com header.b="k6WLoDfS"
+X-N0C-MailScanner-eFa-Watermark: 1687068706.26734@NhCTlH69+SOWdd12zYcfCw
+X-N0C-MailScanner-eFa-From: 989-gzb-065.0.163768.0.0.15728.9.104743797-7@mkto.taboola.com
+X-N0C-MailScanner-eFa-SpamScore: sss
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: A27F5401A32D.A707F
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mkto.taboola.com ([185.28.196.170] [185.28.196.170])
+	(using TLSv1.2 with cipher ECDHE-ECDSA-AES256-GCM-SHA384 (256/256 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id A27F5401A32D
+	for <Contact@fiidewgal.com>; Sun, 11 Jun 2023 06:04:04 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com A27F5401A32D
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=reject dis=none) header.from=taboola.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=mkto.taboola.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com A27F5401A32D
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (1024-bit key; secure) header.d=taboola.com header.i=@taboola.com header.a=rsa-sha256 header.s=m1 header.b=pdCYN/IT;
+	dkim=pass (1024-bit key; unprotected) header.d=mktdns.com header.i=@mktdns.com header.a=rsa-sha256 header.s=m1 header.b=k6WLoDfS
+X-MSFBL: 2C0unjFwfDqHwOvajIG13RgoqLGKsn0sCSYm5VLwe9k=|eyJ1IjoiOTg5LUdaQi0
+	wNjU6MDoxMjE5NTo1ODgzMDozOjE1NzI4Ojk6MTYzNzY4OjEwNDc0Mzc5Ny03Iiw
+	iciI6IkNvbnRhY3RAZmlpZGV3Z2FsLmNvbSIsImIiOiJkdnAtMTg1LTI4LTE5Ni0
+	xNzAiLCJnIjoiYmctbG9uZC0xNDUifQ==
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1686456244;
+	s=m1; d=taboola.com; i=@taboola.com;
+	h=Content-Type:MIME-Version:Subject:To:From:Date;
+	bh=KerY2RzgiNDJsmvwqVGIAadphgwJmCtuyw341hcTctk=;
+	b=pdCYN/ITjCtcR9Zr+i/1KtnOXtsydhQxrYSVXJUFglYpK0Jl5VGhgrr48s2yPk9H
+	G6KN+VervPb4Sw3oOvOgDSCFly/dCaYAahyHP9Dze6S2QAQ1h7EbDzwVJdyFg3AHYu1
+	9+UcWBVQC6Yk6GnbmRQa+sOlxdKNfZNB7nXuTolE=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1686456244;
+	s=m1; d=mktdns.com; i=@mktdns.com;
+	h=Content-Type:MIME-Version:Subject:To:From:Date;
+	bh=KerY2RzgiNDJsmvwqVGIAadphgwJmCtuyw341hcTctk=;
+	b=k6WLoDfSKvnutCVE6ZXZQ4EDc/2fhjlJHSVqX2EsYuxHQmhKUW1grCxCm5JXJvuL
+	3frkd/R3LMCeaWJ5B4ftSwfX3EDIHvCUcLP3QskVB3SlaOv+0NnTmVIcTUOq/P+n8IL
+	yB96MWoppNcDZlrbk6YprvWH4dEhhjHjNx3y5djk=
+Date: Sat, 10 Jun 2023 23:04:04 -0500 (CDT)
+From: Taboola <no-reply@taboola.com>
+Reply-To: no-reply@taboola.com
+To: Contact@fiidewgal.com
+Message-ID: <1003603222.1067005.1686456244132@lonmktmail-trigger1d.marketo.org>
+Subject: Thank you for your interest in Taboola!
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1067004_138016377.1686456244132"
+X-Binding: bg-lond-145
+X-MarketoID: 989-GZB-065:0:12195:58830:3:15728:9:163768:104743797-7
+X-Mailfrom: 989-GZB-065.0.163768.0.0.15728.9.104743797-7@mkto.taboola.com
+List-Unsubscribe: <mailto:L5MWQYTYI5EFU52OK5HW4NCYJ5UXEVSMJJFHSMBZFV4VA6TWNFSXQSKJKNYTKYKEPBCE2PI=.163768.15728.9@unsub-lon.mktomail.com>
+X-MktArchive: false
+X-MSYS-API: {"options":{"open_tracking":false,"click_tracking":false}}
+X-MktMailDKIM: true
+X-N0C-Node-IP: 185.221.182.45
+
+------=_Part_1067004_138016377.1686456244132
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hi Abdoul,=C2=A0
+
+Thank you for your interest in Taboola! A member of our team will review yo=
+ur inquiry and be in touch shortly.=20
+
+Best,=20
+Taboola
+
+Click here: https://pages.taboola.com/Subscription-Center.html?mkt_tok=3DOT=
+g5LUdaQi0wNjUAAAGMR5jHo_oQNaMo5qGi-n2kd7Wm3kn_4UiruOIhfug6_RSFRRIdzNnFg9mpo=
+t6KO3kp33MOvbV_OXu2A8WtnSOZWq4wwOiAdRCY6Bxls8FVbxqG7LYq to manage your subs=
+criptions and here: https://www.taboola.com/privacy-policy to read our priv=
+acy policy.
+
+------=_Part_1067004_138016377.1686456244132
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<title></title> 
+</head> 
+<body style=""><style type="text/css">div#emailPreHeader{ display: none !important; }</style><div id="emailPreHeader" style="mso-hide:all; visibility:hidden; opacity:0; color:transparent; mso-line-height-rule:exactly; line-height:0; font-size:0px; overflow:hidden; border-width:0; display:none !important;">Hello and thank you for your interest in partnering with Taboola! </div>
+<div style="">
+<div class="mktEditable" id="edit_text_1" style="">
+<div>
+<span style="font-size: 12px;"><span style="font-size: 12px;"><span style="font-family: arial, helvetica, sans-serif;">Hi Abdoul,&nbsp;<br><br>Thank you for your interest in Taboola! A member of our team will review your inquiry and be in touch shortly. <br><br>Best, <br>Taboola</span></span></span>
+<span style="font-size: 12px;"><br></span>
+</div>
+</div>
+</div>
+<a href=
+"http://me.taboola.com/OTg5LUdaQi0wNjUAAAGMR5jHozJwyC6h1HjDhw4S6UaKj-8t774wVI2A5AN1U-FcB2tmG_bMIdRFZ8L-JVONFbmY9o4="
+></a>
+<img src="http://me.taboola.com/trk?t=1&mid=OTg5LUdaQi0wNjU6MDoxMjE5NTo1ODgzMDozOjE1NzI4Ojk6MTYzNzY4OjEwNDc0Mzc5Ny03Om51bGw%3D" width="1" height="1" style="display:none !important;" alt="" />
+
+<p><font face="Verdana" size="1"><a href=
+"http://me.taboola.com/u/OTg5LUdaQi0wNjUAAAGMR5jHo8ZlewrdCuRA_i3KeC5iCIZqZkwYKzs5Znh6wvKlzmh1FrynI5i-1C3ioi9Ss3whNtE="
+>Click here</a> to manage your subscriptions and <a href=
+"http://me.taboola.com/u/OTg5LUdaQi0wNjUAAAGMR5jHo3WQ1tu6xeGa9scuOljOrawFIeBso47JVkrF_4Shx3soYcJL3iwawSuNnYm5gPXIyQA="
+>here</a> to read our privacy policy.</font></p>
+</body>
+</html>
+------=_Part_1067004_138016377.1686456244132--

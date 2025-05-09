@@ -1,0 +1,78 @@
+Return-Path: <abdulb781983@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id NF2vMOKjxWPLnjwA3R2AvA
+	(envelope-from <abdulb781983@gmail.com>)
+	for <contact@fiidewgal.com>; Mon, 16 Jan 2023 20:22:10 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NwhjZ4JjLz34SDnH
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="be7u58Bu"
+X-N0C-MailScanner-eFa-Watermark: 1674501712.67594@norL8Hp9zCyJ0wDwF3AEmQ
+X-N0C-MailScanner-eFa-From: abdulb781983@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: A4B9040049E0.AFD32
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-lj1-f171.google.com ([209.85.208.171] [209.85.208.171])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id A4B9040049E0
+	for <contact@fiidewgal.com>; Mon, 16 Jan 2023 20:21:18 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com A4B9040049E0
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com A4B9040049E0
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=be7u58Bu
+Received: by mail-lj1-f171.google.com with SMTP id s22so30981694ljp.5
+        for <contact@fiidewgal.com>; Mon, 16 Jan 2023 11:21:18 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=UlyeC9wyHt7Bjky+3odAR97wIwz4j6bOcs2A2ILmYPU=;
+        b=be7u58BuEUbg7N4WM9X27Uso3phJEhv/fwg9/lYgNIH/lyk+GP4MpkI+vSQYo9geXl
+         gOZrarkG3JfOiECV4JKqgc/1xktxHaszxVM22+XQA03MGSdILkv9N+gC4ZtJpPlZhD8R
+         kPGCDg37/Cn0xq3TXR5OijL71Bc53OI/Wlhzrpl5xbi/3ee/viTOwK7lA7mziMTqKWXP
+         5DfRjuOw3qt8NaVFdsYZRKhlCJRGtatsIMT+TGSb84vj31kiZHs7QeXCuBa7ePqZ+QmS
+         jvvr1Sl+pjPsFNalZ8N+XBW96lQ9FS3j/XBuDRiTrjOE4CxBQwo4O5SPi4t0RTlLh673
+         jUiw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=UlyeC9wyHt7Bjky+3odAR97wIwz4j6bOcs2A2ILmYPU=;
+        b=XpEt0fu+yUlWs+qazxTKMrD5I8f+R6iQLuuvJoH71veqec2hxS3oXcKdLH1DLPnzhq
+         s28wPBeNZVMaRC69OsNuhCZhLQOaV5bnqXoepePaMw/CkClrzovk8MDyS4g6ofo1Dq94
+         lAhPA+AQCvxyrJujCNZS+XJVgRuqdPsMfIxWBE6o65hnO6JzAWqWFvAttfzRL94Jj9+Q
+         0YIn3uq2E9YHk7cVcTDrcCKHOZ29e1IdS0phLY6OXwUyySpvf0YtWJhpmnwPwja/vOB7
+         czO/pkGES0PAfMVMFeIGHiot2VO7hAp9DjbTsj785DmtXP3dsz4kf7peJ3sUBSPp+Gb6
+         jqxw==
+X-Gm-Message-State: AFqh2krWDgeENUpQnXYC3K7tULp+RFOjAcvVfOaq4AMZ2emDucS6Glx0
+	j7s0Du/UQfdAzSb75SFCQrq6VPKPrZcQATAlkR8FDiGn
+X-Google-Smtp-Source: AMrXdXt4duxYC2we11u97VSwHbYlyfI6YA+FtUHY1wFM/luKkPddqKb52nkw3nHv2JGbvFMDPxqNS5x8F7XY9FY1a6Q=
+X-Received: by 2002:a2e:b0e9:0:b0:285:56e0:4140 with SMTP id
+ h9-20020a2eb0e9000000b0028556e04140mr79791ljl.271.1673896877601; Mon, 16 Jan
+ 2023 11:21:17 -0800 (PST)
+MIME-Version: 1.0
+From: ABDUL BARRIE <abdulb781983@gmail.com>
+Date: Mon, 16 Jan 2023 19:21:04 +0000
+Message-ID: <CAM5F6D9Qd7WzDgTiJx74kkSEnQXUXqSP3LSnsX-qnkjsXGudig@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000c7bca305f2667c9d"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000c7bca305f2667c9d
+Content-Type: text/plain; charset="UTF-8"
+
+Hi
+
+--000000000000c7bca305f2667c9d
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Hi=C2=A0</div>
+
+--000000000000c7bca305f2667c9d--

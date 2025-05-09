@@ -1,0 +1,121 @@
+Return-Path: <>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id uHb7Kh+bkGRgQxsA3R2AvA
+	(envelope-from <>)
+	for <contact@fiidewgal.com>; Mon, 19 Jun 2023 20:14:55 +0200
+Received: by node187-eu.n0c.com (Postfix)
+	id ADF8140049E7; Mon, 19 Jun 2023 14:14:55 -0400 (EDT)
+Date: Mon, 19 Jun 2023 14:14:55 -0400 (EDT)
+From: MAILER-DAEMON@node187-eu.n0c.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: contact@fiidewgal.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="7A7B040049E6.1687198495/node187-eu.n0c.com"
+Message-Id: <20230619181455.ADF8140049E7@node187-eu.n0c.com>
+
+This is a MIME-encapsulated message.
+
+--7A7B040049E6.1687198495/node187-eu.n0c.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host node187-eu.n0c.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<amaddialloporeda7@gmail.com>: host gmail-smtp-in.l.google.com[74.125.71.27]
+    said: 550-5.1.1 The email account that you tried to reach does not exist.
+    Please try 550-5.1.1 double-checking the recipient's email address for
+    typos or 550-5.1.1 unnecessary spaces. Learn more at 550 5.1.1
+    https://support.google.com/mail/?p=NoSuchUser
+    k4-20020adfe3c4000000b003111b690935si73503wrm.343 - gsmtp (in reply to RCPT
+    TO command)
+
+--7A7B040049E6.1687198495/node187-eu.n0c.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; node187-eu.n0c.com
+X-Postfix-Queue-ID: 7A7B040049E6
+X-Postfix-Sender: rfc822; contact@fiidewgal.com
+Arrival-Date: Mon, 19 Jun 2023 14:14:55 -0400 (EDT)
+
+Final-Recipient: rfc822; amaddialloporeda7@gmail.com
+Original-Recipient: rfc822;amaddialloporeda7@gmail.com
+Action: failed
+Status: 5.1.1
+Remote-MTA: dns; gmail-smtp-in.l.google.com
+Diagnostic-Code: smtp; 550-5.1.1 The email account that you tried to reach does
+    not exist. Please try 550-5.1.1 double-checking the recipient's email
+    address for typos or 550-5.1.1 unnecessary spaces. Learn more at 550 5.1.1
+    https://support.google.com/mail/?p=NoSuchUser
+    k4-20020adfe3c4000000b003111b690935si73503wrm.343 - gsmtp
+
+--7A7B040049E6.1687198495/node187-eu.n0c.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <contact@fiidewgal.com>
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4QlHwv2nKpz34SDmj
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="kAh6S6qm"
+X-N0C-MailScanner-eFa-Watermark: 1687803284.46402@inbNyEHcrFxM0EAf1aFl0A
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 9835640049E6.A4F10
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 9835640049E6
+	for <amaddialloporeda7@gmail.com>; Mon, 19 Jun 2023 20:14:43 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 9835640049E6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 9835640049E6
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1687198483;
+	bh=FAxPEYbZhXbVBjmwbFo1l1JwHzsCB4QIksJiMkgdODE=;
+	h=Date:Subject:From:To:From;
+	b=kAh6S6qmw+iPxk3sOKx9FWG9g8E7UymjD5WAy+O0dLM1JpoM2sMxI1ouVqy1Wcs58
+	 io6Dl8vexs/sfJbLo+hnEzpSdxJwj74III7vaH0TpZYK2x2Ga8h1T1LQ3vIZxyc39P
+	 AC9VLYOdttbjkVxTAa/9txJ5uEiuY0LSsvSH2G4E=
+Message-ID: <c3dd28cac2ad31d3d78a6375512910db@fiidewgal.com>
+Date: Mon, 19 Jun 2023 20:14:43 +0200
+Subject: Ouverture de compte
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: amaddialloporeda7@gmail.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<p>ASalam Aleykoum Amadou Diallo,</p><p>Nous sommes heureux de vous accueil=
+lir sur la plateforme Fii Dewgal.</p><p>Pour compl=C3=A9ter votre inscripti=
+on, nous vous demandons de nous faire&nbsp;</p><p>parvenir vos informations=
+&nbsp;: nom, pr=C3=A9nom, email valide,&nbsp;</p><p>photo, pays de r=C3=
+=A9sidence et ville, sur notre WhatsApp 001 646 752 9115 =C3=A0 d=C3=A9faut=
+ de cela, tout profil incomplet sera imm=C3=A9diatement supprim=C3=A9.&nbsp=
+;</p><p>Vous pourrez vous connecter =C3=A0 partir de ce lien : https://fiid=
+ewgal.com&nbsp;</p><p>Cliquez =C3=A9galement sur ce lien pour savoir commen=
+t activer votre compte&nbsp;: https://www.youtube.com/live/JtK1qhN9lbU?feat=
+ure=3Dshare</p><p>Cliquez aussi sur ce lien pour savoir comment ajouter vot=
+re photo : https://www.youtube.com/live/VU3RH8dIHvk?feature=3Dshare</p><p>L=
+=E2=80=99=C3=A9quipe Fii Dewgal !</p><p>Merci !<br></p><p>Ne r=C3=A9pondez =
+pas</p>
+
+
+--7A7B040049E6.1687198495/node187-eu.n0c.com--

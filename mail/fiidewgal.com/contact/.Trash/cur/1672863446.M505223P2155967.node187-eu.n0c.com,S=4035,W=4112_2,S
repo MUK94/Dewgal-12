@@ -1,0 +1,77 @@
+Return-Path: <thiathiamosow94@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id YKIEHtbetWO/5SAA3R2AvA
+	(envelope-from <thiathiamosow94@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 04 Jan 2023 21:17:26 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NnLVs5C0sz1wKN
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="ZaCWdGNo"
+X-N0C-MailScanner-eFa-Watermark: 1673468243.36081@lU1Eg2qEzr1a7v22+S4Bmw
+X-N0C-MailScanner-eFa-From: thiathiamosow94@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: D4C20401AEF6.A866A
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-qk1-f180.google.com ([209.85.222.180] [209.85.222.180])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id D4C20401AEF6
+	for <contact@fiidewgal.com>; Wed,  4 Jan 2023 21:16:49 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com D4C20401AEF6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com D4C20401AEF6
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=ZaCWdGNo
+Received: by mail-qk1-f180.google.com with SMTP id l1so4778392qkg.11
+        for <contact@fiidewgal.com>; Wed, 04 Jan 2023 12:16:49 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=/apWWJ9S5uX1nDWipc/39UQVXc0m6WUcqojdn6JAxVA=;
+        b=ZaCWdGNoH/n6j1raNzp3eCDmX7sIrSYiBcfvaVYynfL71ofADRONOX05GvD9PlSGu+
+         qYH/CeXhzWSWU8gCUMNPIsbocMzrPe/bOIJ9jH/tRQ1oRnVbmT/Z9c5kUsu6IKX4fBtD
+         0BHIZK1GJ1x0DugzzINdI/C58/ihquB5BMtBAXuQSHTRSJZoR+y+niEnHKW/00ibzPo2
+         Q7KONAsdr7F1vhvMnHA2QF/OTOIOZlpB8uPdAfpwThZ7NoYegX2F5BxoqJXDciz9AOMf
+         56HEJ03l0f1dHDzqaZwCD9JQ8tiKt/cXTbgUIrZBBt8QOiHmXCQgVOs1vs7IpfMY7Ih/
+         +GPg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=/apWWJ9S5uX1nDWipc/39UQVXc0m6WUcqojdn6JAxVA=;
+        b=OAcvzBZ2fEtyovQShqdfCWYaHXuc6J11xgrgNbpSq3/Frf1DiJyfwjfTyOYAOH6q7X
+         I/6iVTj0jQetu0jNw0OdS54j56x6Slnfg9s6SbfInlwERIIJ6gbs39KvAPK75b/9yeih
+         OM+X5ka8HOymJAWdcqeVWPszckGlTHrJe0nIC2W6MeEzdFDXXz41BZCQxHnNft8HL2ZH
+         IvVBRcThMdebsJ3wodo+odzpbZtpZF/0KHKMeXwoZHgw97WCg1VO7ArCq0VSWL5kBubV
+         zBjJs7erfl75wlPjzFZSw7EQdIkv4j6QWgdA02Ap8aWjoM31rS0n4mpkMBS5+kLuhBhX
+         Me4A==
+X-Gm-Message-State: AFqh2kp1TyVG9rm/KZXaa9Sj97jjJzMuksQwFKDX4RZY3ZwZb3+d2MW7
+	kCymlKdm4HIVCwjLZ1DdFlrjEAE4JKevU53IZEt65sdq
+X-Google-Smtp-Source: AMrXdXvVNNqFSKtytByo53cOtV0vUUWLMfTrogcOkhXnzpUVJo56+Qs9MKk7W3vKQmY0JedE70ceJGwbbpi2fKWDX9w=
+X-Received: by 2002:a05:620a:10bc:b0:702:5acf:5fbe with SMTP id
+ h28-20020a05620a10bc00b007025acf5fbemr2311307qkk.765.1672863408337; Wed, 04
+ Jan 2023 12:16:48 -0800 (PST)
+MIME-Version: 1.0
+From: Thiathia mo sow <thiathiamosow94@gmail.com>
+Date: Wed, 4 Jan 2023 20:16:38 +0000
+Message-ID: <CABjKPCrJvatyJ-bVQ_gof7Ebfj9ZJHLmG=FrW+JAewnodRf1OA@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000036372505f175ddec"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000036372505f175ddec
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+--00000000000036372505f175ddec
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"></div>
+
+--00000000000036372505f175ddec--

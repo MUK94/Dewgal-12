@@ -1,0 +1,121 @@
+Return-Path: <fatimatousoow@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id uHoaG9ZssWMBGzQA3R2AvA
+	(envelope-from <fatimatousoow@gmail.com>)
+	for <contact@fiidewgal.com>; Sun, 01 Jan 2023 12:21:58 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NlGmP2sgPz5tvvC
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="Y7IEvHK7"
+X-N0C-MailScanner-eFa-Watermark: 1673176915.05374@8P+WFFZlGjE7RDoxBf2JIA
+X-N0C-MailScanner-eFa-From: fatimatousoow@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 8C89C40049E3.A0768
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-pj1-f47.google.com ([209.85.216.47] [209.85.216.47])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 8C89C40049E3
+	for <contact@fiidewgal.com>; Sun,  1 Jan 2023 12:21:21 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 8C89C40049E3
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 8C89C40049E3
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=Y7IEvHK7
+Received: by mail-pj1-f47.google.com with SMTP id o1-20020a17090a678100b00219cf69e5f0so30134897pjj.2
+        for <contact@fiidewgal.com>; Sun, 01 Jan 2023 03:21:21 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=C87o+X8ESNDnlAgf8WPriFA+27fH4NIZynUCQoGlRBw=;
+        b=Y7IEvHK70AblqOfqqCS+RQeH0pKbQNP7InU4nnuU2BFdzU+0/2NxFroWdynljUl3y/
+         VJCfypq32xEHxT1xpjFH6KpmOqC1kF8kapzDQHPL/FurBT/n++c8pCnNbswj+jN0KVBf
+         K2xHjjJRu9zps62fVq6dC55Z8tq8meepq6QTpVGCNy5R9FQI+AFbB0R7KaQCCKFZhXS0
+         a1M2FlIPm9ff3HwCyojCI1+SGpyfe2YOw5eMaY8f8E6owp+ibkMAzhttvSJXEcCirViw
+         O6y3OMGxXDBK0dS0pSowD9V6ZJqwbGhCUYLnDG9nhFn+Ot+0bwH1kn10cR6ZOx0dAtDo
+         eqBQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=C87o+X8ESNDnlAgf8WPriFA+27fH4NIZynUCQoGlRBw=;
+        b=3PmfZKua6lMmzzxlY5aI97SstY6Ae7fRxWITJdD/QuhMAtH36oR0BHPVc79Sd6YPBL
+         X20tQdncT5wGphr/C2ixgQpTk9fAhVFG8ZH2ssCWM35KRkAEADtzRG7KSr7g7lM88BrL
+         8QdDuuinu/f9HpSL/+GMyUbNt5mvXDACLXhtacCNJWhrCHslGP8Ih5xAP2Oyc4xpXtya
+         MMuK4S12RO9vn0CX77GDIqmphUxVGfumWFY+vqadUQaNyFbm+07JpdFb9B+P5bIs4qjL
+         zu9gP4ivaTjk6VsKx5RYGPl8ptJpKjsswVAiyUwkNUxYp9Audpz4/5TZae9BkAR83g42
+         VdPw==
+X-Gm-Message-State: AFqh2kp22/YJCSIWeV770/N0zC/SeDBO0Vv1kU78jBcXVNPFApJBn/97
+	Rog/A/b3VCcdThaWSW6CPCv5Ow5Un60KvwLn0CcbAFik
+X-Google-Smtp-Source: AMrXdXsZMOsgpvejP7BuCJRO2Oryg/2BWFiwtDF8BjiYBWeTMGNhlqn+22KKdXm5oe+mnPrL35QvnjLyfXj7ANQlxlU=
+X-Received: by 2002:a17:90a:9e3:b0:223:d9d2:1243 with SMTP id
+ 90-20020a17090a09e300b00223d9d21243mr3117000pjo.6.1672572079752; Sun, 01 Jan
+ 2023 03:21:19 -0800 (PST)
+MIME-Version: 1.0
+References: <47d5f45aa67c4c9cc3b9024f8f2d46c6@fiidewgal.com> <CAFUFDhc8wkHpKO9XdsgCDpDHLRVHVRCLQ0bn+3QcOwXu3QsqsQ@mail.gmail.com>
+In-Reply-To: <CAFUFDhc8wkHpKO9XdsgCDpDHLRVHVRCLQ0bn+3QcOwXu3QsqsQ@mail.gmail.com>
+From: Fatimatou Sow <fatimatousoow@gmail.com>
+Date: Sun, 1 Jan 2023 12:21:08 +0100
+Message-ID: <CAFUFDhfhOruDEQXv3ZQfCm2MhCkxfQbXp9B7ambSj36_mBtPqQ@mail.gmail.com>
+Subject: =?UTF-8?Q?Re=3A_Vous_avez_une_nouvelle_demande_d=27int=C3=A9r=C3=AAt?=
+To: =?UTF-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>
+Content-Type: multipart/alternative; boundary="000000000000accb2905f13208ad"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000accb2905f13208ad
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour comment vas tu
+
+Le dim. 1 janv. 2023 =C3=A0 12:05, Fatimatou Sow <fatimatousoow@gmail.com> =
+a
+=C3=A9crit :
+
+> Bonjour comment allez vous
+>
+> Le dim. 1 janv. 2023 =C3=A0 08:44, Ne r=C3=A9pondez pas <contact@fiidewga=
+l.com> a
+> =C3=A9crit :
+>
+>> Bonjour Fatimatou Sow,
+>>
+>> Mamadou Cherif Diallo a manifest=C3=A9 son int=C3=A9r=C3=AAt pour vous.
+>>
+>> Veuillez contacter l'=C3=A9quipe administrative si vous avez d'autres
+>> questions.
+>>
+>> Merci,
+>>
+>> Ne r=C3=A9pondez pas
+>>
+>
+
+--000000000000accb2905f13208ad
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Bonjour comment vas tu=C2=A0</div><br><div class=3D"gmail=
+_quote"><div dir=3D"ltr" class=3D"gmail_attr">Le dim. 1 janv. 2023 =C3=A0 1=
+2:05, Fatimatou Sow &lt;<a href=3D"mailto:fatimatousoow@gmail.com">fatimato=
+usoow@gmail.com</a>&gt; a =C3=A9crit=C2=A0:<br></div><blockquote class=3D"g=
+mail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-l=
+eft:1ex"><div dir=3D"auto">Bonjour comment allez vous=C2=A0</div><br><div c=
+lass=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr">Le dim. 1 janv. =
+2023 =C3=A0 08:44, Ne r=C3=A9pondez pas &lt;<a href=3D"mailto:contact@fiide=
+wgal.com" target=3D"_blank" rel=3D"noreferrer">contact@fiidewgal.com</a>&gt=
+; a =C3=A9crit=C2=A0:<br></div><blockquote class=3D"gmail_quote" style=3D"m=
+argin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><p>Bonjour Fa=
+timatou Sow,</p><p>Mamadou Cherif Diallo a manifest=C3=A9 son int=C3=A9r=C3=
+=AAt pour vous.</p><p>Veuillez contacter l&#39;=C3=A9quipe administrative s=
+i vous avez d&#39;autres questions.</p><p>Merci,</p><p>Ne r=C3=A9pondez pas=
+</p>
+
+</blockquote></div>
+</blockquote></div>
+
+--000000000000accb2905f13208ad--

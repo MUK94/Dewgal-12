@@ -1,0 +1,78 @@
+Return-Path: <oumarmbaye274@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id SFFEOxYvjmOIiScA3R2AvA
+	(envelope-from <oumarmbaye274@gmail.com>)
+	for <contact@fiidewgal.com>; Mon, 05 Dec 2022 18:49:10 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NQrdf6FGTz34SDnK
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="cH3o7/lj"
+X-N0C-MailScanner-eFa-Watermark: 1670867348.1035@sbfKahwugKSD8HZIUKhqmA
+X-N0C-MailScanner-eFa-From: oumarmbaye274@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: C952C401AEF3.A3CFA
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-wr1-f51.google.com ([209.85.221.51] [209.85.221.51])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id C952C401AEF3
+	for <contact@fiidewgal.com>; Mon,  5 Dec 2022 18:48:35 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com C952C401AEF3
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com C952C401AEF3
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=cH3o7/lj
+Received: by mail-wr1-f51.google.com with SMTP id h7so13787520wrs.6
+        for <contact@fiidewgal.com>; Mon, 05 Dec 2022 09:48:35 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=+RnntrmacRthxBtrd7Ps5hN+NGrL5M22didLUdYrdVU=;
+        b=cH3o7/lj82Gvv426rw51MxGhyTeDVxpM2+5vGtNr73T3HD48LGahyNEoYSTqwTXSfY
+         7xEWVhDgJj6/9ybp1o2TIafpr0tDL2Q3PCWpMdc6REzn7FLgEQM36zPM5nzGGC74tW4z
+         iDL7UXBDe3i+rjZaF3obpC//fZJFWCKvLiSwHNfGhyrxRwtP/mcCoRpmY7RQ4xlYJWXX
+         LwFe2uzxAo/CZ2cmO0BFKlDjChviHjX4jK9cemZ9hfX4JCNzdZzDQYFxG9eODUlbtQeI
+         lu3SGRERq968DaCAALmaA4xJsn3qX+ksKvrPJxu/YCZY2Oy5nIeiSzLpi0VBoakYob12
+         efFQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=+RnntrmacRthxBtrd7Ps5hN+NGrL5M22didLUdYrdVU=;
+        b=lUD967s00mLUoKn+zoLQiakuOh1L/kQ5Qswdp0f/YN17g2oRxxemqZrtgPtPqJwtWi
+         kFQV/jUBn7ycyk7JMJa/yKMa8UYSW9aaSYxxVLJ66hTJc6H8rgnpqbm9j4ct37uNdFpf
+         KtJatoHxUQ8Fjcy+lsvk2woEQ46j5EqfAVQL952Ma90viCpA7ORsIDF9sBljL0rqu3gr
+         mPabvWgpL/juThI4yJzgfTvo3JR93EPw2e1zMcBHl3i9x6HbeAPJrldu8HlBvzRS8mTJ
+         qrPG/sQIIs8yKmiLd+GL2WIVkX9K6kXlxeYBqZ4HnrPUIZIsPCbO2DYzB9EMSJj79bi1
+         avzQ==
+X-Gm-Message-State: ANoB5pmdK8DWQxd0a6cLoFAtO771Kg7/KA70rcAeVXc/E9Y9Jh3fiVcc
+	twsPPqOEH/9pbxFAuQinevvYtIQi0jKS8UoDa/DtLTn+X0o=
+X-Google-Smtp-Source: AA0mqf5VC98a8DPh60dm6zQYAlEh4k5QKTdNAKmnohnHmE2fkhaRUGCtPtXZz7EIrsN06UriuITZN26SImi1c1KXW08=
+X-Received: by 2002:a5d:4b45:0:b0:242:1ade:1145 with SMTP id
+ w5-20020a5d4b45000000b002421ade1145mr21810716wrs.483.1670262515188; Mon, 05
+ Dec 2022 09:48:35 -0800 (PST)
+MIME-Version: 1.0
+From: oumar Mbaye <oumarmbaye274@gmail.com>
+Date: Mon, 5 Dec 2022 18:48:38 +0100
+Message-ID: <CAFW_Bt5s7L=22wYeG5NV2xLDFZ47NKqddDv0A4aNu=4hRWsMWQ@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000e644ff05ef184b7a"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000e644ff05ef184b7a
+Content-Type: text/plain; charset="UTF-8"
+
+ce bon
+
+--000000000000e644ff05ef184b7a
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">ce bon=C2=A0</div>
+
+--000000000000e644ff05ef184b7a--

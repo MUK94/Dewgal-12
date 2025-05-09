@@ -1,0 +1,77 @@
+Return-Path: <mohamediallo1980@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id hzyCAM4izmN4XBEA3R2AvA
+	(envelope-from <mohamediallo1980@gmail.com>)
+	for <contact@fiidewgal.com>; Mon, 23 Jan 2023 07:01:50 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4P0fcs0sbGz34nwbc
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="gy3y2pu5"
+X-N0C-MailScanner-eFa-Watermark: 1675058505.48434@IP7NLGMBLH+12JiCAoJOdA
+X-N0C-MailScanner-eFa-From: mohamediallo1980@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 3AF68401AEF7.A6240
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-lf1-f48.google.com ([209.85.167.48] [209.85.167.48])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 3AF68401AEF7
+	for <contact@fiidewgal.com>; Mon, 23 Jan 2023 07:01:12 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 3AF68401AEF7
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 3AF68401AEF7
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=gy3y2pu5
+Received: by mail-lf1-f48.google.com with SMTP id o20so16602188lfk.5
+        for <contact@fiidewgal.com>; Sun, 22 Jan 2023 22:01:12 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=bYpzBAZE9fzqn+Ophf0TLGJ8MZaqLYka5rOFXjNGIqk=;
+        b=gy3y2pu5b9OAZe+wLmQyapnM62EXmh2+5UOXsumtzOiPQgfWtfxcGF6Wxb18K+vUdu
+         +vvs2I1MzYszpfZuWCkipFhFnCHJFGu/vV7YDNbY91aRZQDq28zej40g78YgWL9uhIt/
+         smywBwZb5IEiybXysJtzIUnkzO3zHYOV4xB1QkNEsMhTOSRzyEF5huhVcYv9Vue1AEVs
+         Omiy1w7BdEIFfQBZfh+iGR9vgoPF5nzXk6X//Z+G9xHouowR3bvjCtg662UFMYCalr3J
+         KTiU6w4XQaRFAKE56lHSm+qBRUy2LyTjS5PRcum1a5oXgcfCthFY8xzu5L8YQp2BkQKj
+         Q8Cg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=bYpzBAZE9fzqn+Ophf0TLGJ8MZaqLYka5rOFXjNGIqk=;
+        b=LpnW+o7whAPJDrXhwzRbMOn1HX3WlDoi2//0JyzkWN+kZiIpTnz7r7QWCl1f4TQOVo
+         PC3KgBR/BsFyBC7uQVwvKgCb6faRTY6okfrGtmKOl+FrnOB9PG/brBhc+npwcvWEW/ow
+         v10NgPOvQvwkq3h15gVOoVljevWaydSyH2O3M5xwRayzOylbZqbNVeDFkuiIYOJWraXD
+         fvzcjvI72QhoB0h1uRdBtd3j02/kRtE2c1UwJp22y0KUlKEhfCvDYeoHeBELo5zDx1lf
+         8GTjl4m6jxQ6VzN5fsGeJTKTsIUDpaxa67q7NFQfL1XdaiN7in7MTb1xzjq0z3D4KiTW
+         crog==
+X-Gm-Message-State: AFqh2koWebG+tcO377tI2tEZcjoJdOYnR00xbJXAbdjMk3l3hi09POzt
+	I/GVr8JM85iCC3XtVtKzXa2Qmhi+wvOyNPuE7OC+1cie
+X-Google-Smtp-Source: AMrXdXsJF2Pbf6ZlBTWWAY2beB7YgptXriU596XG8y0lazpgnJkShH3Y3Yqbsi3TGecr496huGZw2qWjrzFa/JNwlTc=
+X-Received: by 2002:a05:6512:6cf:b0:4d5:a5e6:b6f2 with SMTP id
+ u15-20020a05651206cf00b004d5a5e6b6f2mr496695lff.91.1674453671251; Sun, 22 Jan
+ 2023 22:01:11 -0800 (PST)
+MIME-Version: 1.0
+From: Diallo Mohamedkokolou <mohamediallo1980@gmail.com>
+Date: Mon, 23 Jan 2023 07:00:59 +0100
+Message-ID: <CAGLdBP=nGT9XyeMdbaX=jLJGy5BiZo3kNAex9ueusf8xzXH1XA@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000044936605f2e82041"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000044936605f2e82041
+Content-Type: text/plain; charset="UTF-8"
+
+Comment s'inscrire ??
+
+--00000000000044936605f2e82041
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto">Comment s&#39;inscrire ??</div>
+
+--00000000000044936605f2e82041--

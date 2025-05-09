@@ -1,0 +1,1211 @@
+Return-Path: <>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id uOa/I/VZr2PZZB8A3R2AvA
+	(envelope-from <>)
+	for <contact@fiidewgal.com>; Fri, 30 Dec 2022 22:36:53 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NkJVs3M3vznqZg
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=sandbergdev.onmicrosoft.com header.i=@sandbergdev.onmicrosoft.com header.b="cRHxXfNC"
+X-N0C-MailScanner-eFa-Watermark: 1673041009.36434@XE8nT/PzH7o0FMPxFrb1qg
+X-N0C-MailScanner-eFa-From: 
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 8995B40664E8.A66B3
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from MM0P280CU005-vft-obe.outbound.protection.outlook.com ([52.102.162.7] [52.102.162.7])
+	(using TLSv1.2 with cipher ECDHE-ECDSA-AES256-GCM-SHA384 (256/256 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 8995B40664E8
+	for <contact@fiidewgal.com>; Fri, 30 Dec 2022 22:36:47 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 8995B40664E8
+Authentication-Results: node187-eu.n0c.com; dmarc=none (p=none dis=none) header.from=sandbergdev.onmicrosoft.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.helo=MM0P280CU005-vft-obe.outbound.protection.outlook.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 8995B40664E8
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (1024-bit key; unprotected) header.d=sandbergdev.onmicrosoft.com header.i=@sandbergdev.onmicrosoft.com header.a=rsa-sha256 header.s=selector1-sandbergdev-onmicrosoft-com header.b=cRHxXfNC
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=OVeLc8/gJogvM6YOXVwNTgdEYf+DG975W1eyBi3E9j+JaJSGe024rxh9BYwXIWPy6uQZ/Q6sqZfFlkXiflPO09wIhrMiJKVm6g95u6udSKv/zVGvPPK4/68Vnv5j8/2veAHrLMQv80IkJx0f6Y55ASmvklvUguHMM1xNT0B42SUvKIKV7qACz/2nrDeNVz344lfF5g+i44sNRRT4gpOM5sy903fPFtbA/Lh9euFfOCONAPikODPbROnZxXiVeBDiakdXvmhOaQP0N39FWaXtVz3+GHvaKyHyZ1SkuVw7fITXBPbAYGMafCvvWFxLwju99qJ8OYFKeKWZzT91FMV5Vw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=fE6XraO68DgDyJE3g1R1o7Pu4rEIzBgeWXZeYt0I6cM=;
+ b=Uah6DCWURpEjWSCm7XyjqhmYvAxhm93L1D20oehkT7TL9SZon2czpT23yJCcpuosrSbtSAVvJkLRCJpW65T6oPUm/jZ7KjKeT+/qwu87rjQAt/W1A6YepPTERDg39b3kDk/35zPed/wm8b2vPcgcwS5Y12f5TnHsmM8lkf+STGVmn9Vw9Tu/MvOwDaV6O6+BYdcC3SETwwsA57yQj3tTIuMKgekxtgNa+RIbp0G3KOhNVprf5kB2x+hn0bohL2r/pWHxGQo9+wQ+UrbjZVTLaXmwy94Gs/1ZKxZKDkuul6X5rUT9MLRUIDtMlNIF2ME5mGoE8pVtbGoGf687VI7w8g==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=pass
+ action=none header.from=sandbergdev.onmicrosoft.com; dkim=pass
+ header.d=sandbergdev.onmicrosoft.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=sandbergdev.onmicrosoft.com; s=selector1-sandbergdev-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=fE6XraO68DgDyJE3g1R1o7Pu4rEIzBgeWXZeYt0I6cM=;
+ b=cRHxXfNCvF+LlXEROczS4+yzloldjX+YUGFcuXCExlZhD2rgr8DdSSwYimRFr5thr0sViHT9gWDArb+E71MlOnZWO7b9GlT9Y/2aIL9G5N1FCk727krLiZkNlz8afU7eHTb5H84q1gLmzSWfHCH0DAcFl9EImkdA6Z1QqgyWFZA=
+MIME-Version: 1.0
+From: <postmaster@sandbergdev.onmicrosoft.com>
+To: <contact@fiidewgal.com>
+Date: Fri, 30 Dec 2022 21:36:44 +0000
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="4864ac8e-e455-4b31-8f9c-5b687bdf9e31"
+X-MS-Exchange-Message-Is-Ndr: 
+Content-Language: en-US
+Message-ID: 
+ <176c6565-9265-4b9e-b32f-7ddc6c670538@GVYP280MB0286.SWEP280.PROD.OUTLOOK.COM>
+In-Reply-To: <10e15d9fb09c40a49453c08bf3291b11@fiidewgal.com>
+References: <10e15d9fb09c40a49453c08bf3291b11@fiidewgal.com>
+Subject: Undeliverable: Email Verification - Fii Dewgal
+Auto-Submitted: auto-replied
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: GVYP280MB0286:EE_
+X-MS-Exchange-SenderADCheck: 1
+X-MS-Exchange-AntiSpam-Relay: 0
+X-Microsoft-Antispam: BCL:0;
+X-Microsoft-Antispam-Message-Info: 
+	Iadw5UUm9TNP165QyiZ4UG0f1OpwTNsadpjFSsUH553KFh80WEfL7yDQW84/FTjEq306NjkaqmpOFKZlSEvKtqPKtZieuNiNTYiz3Hf20xwkKttom+ZlGHMs4lYgnFKEXhI8tTHoFDF4R8U+1ZrwT7aExTmoayYO/hdxuSPP2hu6NkRmAHhbFyuyex377Q/cEM18sdMGCP/NpFTYIzBQIZgGzVJCVWqFbmCquW2N9SBE0oOLywKof84bN301NqeVWWJQpnQzdYItiuX1glPC29TNXiuZ/h0kUxqNP0wDtpOHoj9VtWhMzFpsqSwonlzKKOCyj3g+HxiYul/Gvn1LbkjrF5ACdNEymz06NreuGxaH+E68uH2yvkVW+qd/fq3vc5FxqZ8sSGC7jBwptWgcLtAerB3WfWIEQDN7o83zxO0VoLcNlI0FGsbqt52P6AAKMXNt+/0Hlg08uxYMDhLtYAxjbIEFEFyE9bXOlr9qhb3j9Jc7sOoD5jMVt8L4AggZjCMgl/M0Is3dBos5fD6SMea1TiRvUKLU4JhA7EF+wvKR3p2oXB9cwgUPJGAr2bmx4mQcm6sILx9fg4wdtSI6jwqdeXJq0zjTj3jv6ofijepPyJTYpEWJsKNifRAccBVuh51A0wXWfhBB9YjS1G3vsXbkld4FpqMvLrT/0Q3FSLqS8bbUfJOkTSIlta8euWAseZElmBAFx6tfxYkNxRiL/fWb+qZrThgglYtUh4qvWg7CLNlFIZ5lgLy5MDKhg+hrZ8Zc6HJInkv8JmSbUuNII9TDXqVSIztazGewED097R8=
+X-Forefront-Antispam-Report: 
+	CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:;PTR:;CAT:NONE;SFS:(13230022)(50650200009)(136003)(396003)(376002)(366004)(346002)(39850400004)(451199015)(1690799008)(1930700014)(66899015)(31686004)(166002)(15650500001)(8676002)(66946007)(2906002)(2876002)(78352004)(78496005)(5660300002)(30864003)(52230400001)(83380400001)(31696002)(15974865002)(32400700002)(498600001)(316002)(42882007)(6916009)(42186006)(19627235002)(9686003)(579004);DIR:OUT;SFP:1501;
+X-MS-Exchange-AntiSpam-MessageData-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-0: 
+	HnypH7nEx14wSM5t6etPt45XdkLV5BqnYNUG8jSYieToWIRi2RS+ST/C8y5afSaYaAPSKq5GWa9cFDkEPb9dW7SllOWFqdjGe6958b5It6K1nlMV7GO6gjxirn8Nt1s+EuzPglVuwSq7PZMMMLVVHZLK1Hc/Blvbro2b4wYqowGblQyFsyPb0SxwtFvQIR9D
+X-OriginatorOrg: sandbergdev.onmicrosoft.com
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 30 Dec 2022 21:36:44.9602
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-AuthSource: GVYP280MB0286.SWEP280.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+	e695ee52-658d-4f92-43e5-08daeaadf2c5
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: GVYP280MB0286
+X-N0C-Node-IP: 185.221.182.45
+
+--4864ac8e-e455-4b31-8f9c-5b687bdf9e31
+Content-Type: multipart/alternative; differences=Content-Type;
+	boundary="50502255-3bd5-4d01-9be2-26b06042ddbe"
+
+--50502255-3bd5-4d01-9be2-26b06042ddbe
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+[https://products.office.com/en-us/CMSImages/Office365Logo_Orange.png?versi=
+on=3Db8d100a9-0a8b-8e6a-88e1-ef488fee0470]
+Your message to srafiou097@gaim.com couldn't be delivered.
+srafiou097 wasn't found at gaim.com.
+contact         Office 365      srafiou097
+Action Required                 Recipient
+Unknown To address
+
+How to Fix It
+The address may be misspelled or may not exist. Try one or more of the foll=
+owing:
+
+  *   Send the message again following these steps: In Outlook, open this n=
+on-delivery report (NDR) and choose Send Again from the Report ribbon. In O=
+utlook on the web, select this NDR, then select the link "To send this mess=
+age again, click here." Then delete and retype the entire recipient address=
+. If prompted with an Auto-Complete List suggestion don't select it. After =
+typing the complete address, click Send.
+  *   Contact the recipient (by phone, for example) to check that the addre=
+ss exists and is correct.
+  *   The recipient may have set up email forwarding to an incorrect addres=
+s. Ask them to check that any forwarding they've set up is working correctl=
+y.
+  *   Clear the recipient Auto-Complete List in Outlook or Outlook on the w=
+eb by following the steps in this article: Fix email delivery issues for er=
+ror code 5.1.10 in Office 365<https://go.microsoft.com/fwlink/?LinkId=3D532=
+972>, and then send the message again. Retype the entire recipient address =
+before selecting Send.
+
+If the problem continues, forward this message to your email admin. If you'=
+re an email admin, refer to the More Info for Email Admins section below.
+
+Was this helpful? Send feedback to Microsoft<https://go.microsoft.com/fwlin=
+k/?LinkId=3D525921>.
+________________________________
+
+More Info for Email Admins
+Status code: 550 5.1.10
+
+This error occurs because the sender sent a message to an email address hos=
+ted by Office 365 but the address is incorrect or doesn't exist at the dest=
+ination domain. The error is reported by the recipient domain's email serve=
+r, but most often it must be fixed by the person who sent the message. If t=
+he steps in the How to Fix It section above don't fix the problem, and you'=
+re the email admin for the recipient, try one or more of the following:
+
+The email address exists and is correct - Confirm that the recipient addres=
+s exists, is correct, and is accepting messages.
+
+Synchronize your directories - If you have a hybrid environment and are usi=
+ng directory synchronization make sure the recipient's email address is syn=
+ced correctly in both Office 365 and in your on-premises directory.
+
+Errant forwarding rule - Check for forwarding rules that aren't behaving as=
+ expected. Forwarding can be set up by an admin via mail flow rules or mail=
+box forwarding address settings, or by the recipient via the Inbox Rules fe=
+ature.
+
+Recipient has a valid license - Make sure the recipient has an Office 365 l=
+icense assigned to them. The recipient's email admin can use the Office 365=
+ admin center to assign a license (Users > Active Users > select the recipi=
+ent > Assigned License > Edit).
+
+Mail flow settings and MX records are not correct - Misconfigured mail flow=
+ or MX record settings can cause this error. Check your Office 365 mail flo=
+w settings to make sure your domain and any mail flow connectors are set up=
+ correctly. Also, work with your domain registrar to make sure the MX recor=
+ds for your domain are configured correctly.
+
+For more information and additional tips to fix this issue, see Fix email d=
+elivery issues for error code 5.1.10 in Office 365<https://go.microsoft.com=
+/fwlink/?LinkId=3D532972>.
+
+Original Message Details
+Created Date:   12/30/2022 9:36:31 PM
+Sender Address: contact@fiidewgal.com
+Recipient Address:      srafiou097@gaim.com
+Subject:        Email Verification - Fii Dewgal
+
+Error Details
+Reported error: 550 5.1.10 RESOLVER.ADR.RecipientNotFound; Recipient srafio=
+u097@gaim.com not found by SMTP address lookup
+DSN generated by:       GVYP280MB0286.SWEP280.PROD.OUTLOOK.COM
+
+Message Hops
+HOP     TIME (UTC)      FROM    TO      WITH    RELAY TIME
+1       12/30/2022
+9:36:31 PM      fiidewgal.com   mailfilter-eu.n0c.com   SMTP    *
+2       12/30/2022
+9:36:43 PM      node187-eu.n0c.com      mx-gate13-hz2.hornetsecurity.com   =
+             12 sec
+3       12/30/2022
+9:36:43 PM      hsmx05.antispameurope.com       DB5EUR01FT037.mail.protecti=
+on.outlook.com       Microsoft SMTP Server (version=3DTLS1_2, cipher=3DTLS_=
+ECDHE_RSA_WITH_AES_256_GCM_SHA384)    *
+4       12/30/2022
+9:36:44 PM      DB5EUR01FT037.eop-EUR01.prod.protection.outlook.com     DUZ=
+PR01CA0064.outlook.office365.com     Microsoft SMTP Server (version=3DTLS1_=
+2, cipher=3DTLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384)    1 sec
+5       12/30/2022
+9:36:44 PM      DUZPR01CA0064.eurprd01.prod.exchangelabs.com    GVYP280MB02=
+86.SWEP280.PROD.OUTLOOK.COM  Microsoft SMTP Server (version=3DTLS1_2, ciphe=
+r=3DTLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384)    *
+
+Original Message Headers
+
+Received: from DUZPR01CA0064.eurprd01.prod.exchangelabs.com
+ (2603:10a6:10:3c2::17) by GVYP280MB0286.SWEP280.PROD.OUTLOOK.COM
+ (2603:10a6:150:36::9) with Microsoft SMTP Server (version=3DTLS1_2,
+ cipher=3DTLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5944.18; Fri, 30 =
+Dec
+ 2022 21:36:44 +0000
+Received: from DB5EUR01FT037.eop-EUR01.prod.protection.outlook.com
+ (2603:10a6:10:3c2:cafe::8d) by DUZPR01CA0064.outlook.office365.com
+ (2603:10a6:10:3c2::17) with Microsoft SMTP Server (version=3DTLS1_2,
+ cipher=3DTLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5966.17 via Front=
+end
+ Transport; Fri, 30 Dec 2022 21:36:44 +0000
+Authentication-Results: spf=3Dsoftfail (sender IP is 83.246.65.101)
+ smtp.mailfrom=3Dfiidewgal.com; dkim=3Dpass (signature was verified)
+ header.d=3Dfiidewgal.com;dmarc=3Dpass action=3Dnone header.from=3Dfiidewga=
+l.com;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ fiidewgal.com discourages use of 83.246.65.101 as permitted sender)
+Received: from hsmx05.antispameurope.com (83.246.65.101) by
+ DB5EUR01FT037.mail.protection.outlook.com (10.152.4.212) with Microsoft SM=
+TP
+ Server (version=3DTLS1_2, cipher=3DTLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) =
+id
+ 15.20.5944.17 via Frontend Transport; Fri, 30 Dec 2022 21:36:43 +0000
+Received: from node187-eu.n0c.com (185.221.182.45) by mx-gate13-hz2.hornets=
+ecurity.com;
+ Fri, 30 Dec 2022 22:36:43 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NkJVV6yF9znqZg
+Authentication-Results-Original: mailfilter-eu.n0c.com; dkim=3Dpass (1024-b=
+it
+ key) header.d=3Dfiidewgal.com header.i=3D@fiidewgal.com header.b=3D"gIbMvX=
+2M"
+X-N0C-MailScanner-eFa-Watermark: 1673040992.40539@gllwcMLgQb77G+L19XpUvw
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 7743140664D5.ACDA2
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+        (using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+        (no client certificate requested)       (Authenticated sender: cont=
+act@fiidewgal.com)
+        by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 77431406=
+64D5
+        for <srafiou097@gaim.com>; Fri, 30 Dec 2022 22:36:31 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 7743140664D5
+Authentication-Results-Original: node187-eu.n0c.com; dmarc=3Dpass (p=3Dnone
+ dis=3Dnone) header.from=3Dfiidewgal.com
+Authentication-Results-Original: node187-eu.n0c.com; spf=3Dpass
+ smtp.mailfrom=3Dfiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 7743140664D5
+DKIM-Signature: v=3D1; a=3Drsa-sha256; c=3Drelaxed/relaxed; d=3Dfiidewgal.c=
+om;
+        s=3Ddefault; t=3D1672436191;
+        bh=3Db3uNT6e7krn4qizLJdZXsJB+zMkZvKk6JC4r6tGWnY0=3D;
+        h=3DDate:Subject:From:To:From;
+        b=3DgIbMvX2MBPipvmFh7s7XT7oXZKBCblNpC9tDYuNIqfCyMBnYKnIu/sXGd2UnJL0=
+xN
+         EUeFe6MbPx2qBqilMJIizIR5sZtVZOAQl+CnFNXwfCGJe1xMSYwaMBSVY9mj94e443
+         YUNrcTbf5FmA9hWkpK4WhcTn2nJzo/hf2gnHF/U8=3D
+Message-ID: <10e15d9fb09c40a49453c08bf3291b11@fiidewgal.com>
+Date: Fri, 30 Dec 2022 22:36:31 +0100
+Subject: Email Verification - Fii Dewgal
+From: Ne =3D?utf-8?Q?r=3DC3=3DA9pondez?=3D pas <contact@fiidewgal.com>
+To: srafiou097@gaim.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=3Dutf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+X-antispameurope-Connect: node187-eu.n0c.com[185.221.182.45],TLS=3D1;EMIG=
+=3D0
+X-antispameurope-DKIM: PASS
+X-antispameurope-DKIM: Positive policy
+X-antispameurope-Digest: d1a75981923203a84926e709cd1ff2da
+X-antispameurope-MSGID: b2d795cc571a0e29db5c247d1f24237c-7d2b94bc701f44e272=
+5625f35177271e
+X-antispameurope-Mailarchiv: E-Mail archived by www.antispameurope.com for:=
+ srafiou097@gaim.com
+X-antispameurope-Mailarchivtype: inbound
+X-antispameurope-REASON: NOREASON:HO-WL
+X-antispameurope-SPFRESULT: NONE
+X-antispameurope-Spamstatus: CLEAN
+X-antispameurope-Virusscan: CLEAN
+X-antispameurope-WC: 5:283:0:8392:0:77:0:0:0:0:0:0:0:0:1:0:2:76:77:76:0:1:0=
+:0:0:69:0:0:0:0:0:0:0:0::0:1:0:0:0:0:0
+X-antispameurope-body-digest: 00a9a900583cb03a9cf0afbc3f6853eb
+X-antispameurope-date: 1672436196
+X-antispameurope-disclaimer: This E-Mail was scanned by www.antispameurope.=
+com E-Mailservice on mx-gate13-hz2 with 538EA1900F4C
+X-antispameurope-orig-host: node187-eu.n0c.com
+X-antispameurope-orig-ip: 185.221.182.45
+X-antispameurope-orig: ca2572152f00a2c41f4f74c048a2d916
+X-antispameurope-recipient: srafiou097@gaim.com
+X-antispameurope-sender: contact@fiidewgal.com
+X-antispameurope: INCOMING:
+X-hornetsecurity-identifier: 186924e4cd723ebcf59b9bca2c00e1f6
+Return-Path: contact@fiidewgal.com
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: d9ba0b24-d598-4e70-a77d-0ab918e3681b:0
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: DB5EUR01FT037:EE_|GVYP280MB0286:EE_
+X-MS-Office365-Filtering-Correlation-Id: 4796d9fd-df4d-4c07-111e-08daeaadf2=
+21
+
+
+--50502255-3bd5-4d01-9be2-26b06042ddbe
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+1" />
+  <head>
+    <title>
+          DSN
+        </title>
+  </head>
+  <body style=3D"        background-color: white;      ">
+    <table style=3D"        background-color: white;         max-width: 548=
+px;         color: black;         border-spacing: 0px 0px;         padding-=
+top: 0px;         padding-bottom: 0px;        border-collapse: collapse;   =
+   " width=3D"548" cellspacing=3D"0" cellpadding=3D"0">
+      <tbody>
+        <tr>
+          <td style=3D"        text-align: left;        padding-bottom: 20p=
+x;      ">
+            <img height=3D"28" width=3D"126" style=3D"        max-width: 10=
+0%;      " src=3D"https://products.office.com/en-us/CMSImages/Office365Logo=
+_Orange.png?version=3Db8d100a9-0a8b-8e6a-88e1-ef488fee0470" />
+          </td>
+        </tr>
+        <tr>
+          <td style=3D"        font-family: 'Segoe UI', Frutiger, Arial, sa=
+ns-serif;        font-size: 16px;         padding-bottom: 10px;         -ms=
+-text-size-adjust: 100%;        text-align: left;      ">Your message to <s=
+pan style=3D"        color: #0072c6;      ">srafiou097@gaim.com</span> coul=
+dn't be delivered.<br /></td>
+        </tr>
+        <tr>
+          <td style=3D"        font-family: 'Segoe UI', Frutiger, Arial, sa=
+ns-serif;         font-size: 24px;         padding-top: 0px;         paddin=
+g-bottom: 20px;         text-align: center;         -ms-text-size-adjust: 1=
+00%;      ">
+            <span style=3D"        color: #0072c6;      ">srafiou097</span>=
+ wasn't found at <span style=3D"        color: #0072c6;      ">gaim.com</sp=
+an>.<br /></td>
+        </tr>
+        <tr>
+          <td style=3D"        padding-bottom: 15px;         padding-left: =
+0px;         padding-right: 0px;         border-spacing: 0px 0px;      ">
+            <table style=3D"        max-width: 548px;         font-weight: =
+600;        border-spacing: 0px 0px;         padding-top: 0px;         padd=
+ing-bottom: 0px;        border-collapse: collapse;      ">
+              <tbody>
+                <tr>
+                  <td style=3D"        font-family: 'Segoe UI', Frutiger, A=
+rial, sans-serif;        font-size: 15px;        font-weight: 600;        t=
+ext-align: left;        width: 181px;        -ms-text-size-adjust: 100%;   =
+     vertical-align: bottom;      ">
+                    <font color=3D"#ffffff">
+                      <span style=3D"color:#000000">contact</span>
+                    </font>
+                  </td>
+                  <td style=3D"        font-family: 'Segoe UI', Frutiger, A=
+rial, sans-serif;        font-size: 15px;        font-weight: 600;        t=
+ext-align: center;        width: 186px;        -ms-text-size-adjust: 100%; =
+       vertical-align: bottom;      ">
+                    <font color=3D"#ffffff">
+                      <span style=3D"color:#000000">Office 365</span>
+                    </font>
+                  </td>
+                  <td style=3D"        font-family: 'Segoe UI', Frutiger, A=
+rial, sans-serif;         -ms-text-size-adjust: 100%;         font-size: 15=
+px;         font-weight: 600;        text-align: right;         width: 181p=
+x;         vertical-align: bottom;      ">
+                    <font color=3D"#ffffff">
+                      <span style=3D"color:#000000">srafiou097</span>
+                    </font>
+                  </td>
+                </tr>
+                <tr>
+                  <td style=3D"        font-family: 'Segoe UI', Frutiger, A=
+rial, sans-serif;        -ms-text-size-adjust: 100%;        font-size: 14px=
+;        font-weight: 400;        text-align: left;        padding-top: 0px=
+;        padding-bottom: 0px;        vertical-align: middle;        width: =
+181px;      ">
+                    <font color=3D"#ffffff">
+                      <span style=3D"        color: #c00000;      ">
+                        <b>Action Required</b>
+                      </span>
+                    </font>
+                  </td>
+                  <td style=3D"        font-family: 'Segoe UI', Frutiger, A=
+rial, sans-serif;        -ms-text-size-adjust: 100%;        font-size: 14px=
+;        font-weight: 400;        text-align: center;        padding-top: 0=
+px;        padding-bottom: 0px;        vertical-align: middle;        width=
+: 186px;      " />
+                  <td style=3D"        font-family: 'Segoe UI', Frutiger, A=
+rial, sans-serif;        -ms-text-size-adjust: 100%;        font-size: 14px=
+;        font-weight: 400;        text-align: right;        padding-top: 0p=
+x;        padding-bottom: 0px;        vertical-align: middle;        width:=
+ 181px;      ">
+                    <font color=3D"#ffffff">
+                      <span style=3D"color:#000000">Recipient</span>
+                    </font>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan=3D"3" style=3D"        padding-top:0;        =
+padding-bottom:0;        padding-left:0;        padding-right:0      ">
+                    <table cellspacing=3D"0" cellpadding=3D"0" style=3D"   =
+     border-spacing: 0px 0px;        padding-top: 0px;        padding-botto=
+m: 0px;        padding-left: 0px;        padding-right: 0px;        border-=
+collapse: collapse;      ">
+                      <tbody>
+                        <tr height=3D"10">
+                          <td width=3D"180" height=3D"10" bgcolor=3D"#c0000=
+0" style=3D"        width: 180px;        line-height: 10px;        height: =
+10px;        font-size: 6px;        padding-top: 0;        padding-bottom: =
+0;        padding-left: 0;        padding-right: 0;      "><!--[if gte mso =
+15]>&nbsp;<![endif]--></td>
+                          <td width=3D"4" height=3D"10" bgcolor=3D"#ffffff"=
+ style=3D"        width: 4px;        line-height: 10px;        height: 10px=
+;        font-size: 6px;        padding-top: 0;        padding-bottom: 0;  =
+      padding-left: 0;        padding-right: 0;      "><!--[if gte mso 15]>=
+&nbsp;<![endif]--></td>
+                          <td width=3D"180" height=3D"10" bgcolor=3D"#ccccc=
+c" style=3D"        width: 180px;        line-height: 10px;        height: =
+10px;        font-size: 6px;        padding-top: 0;        padding-bottom: =
+0;        padding-left: 0;        padding-right: 0;      "><!--[if gte mso =
+15]>&nbsp;<![endif]--></td>
+                          <td width=3D"4" height=3D"10" bgcolor=3D"#ffffff"=
+ style=3D"        width: 4px;        line-height: 10px;        height: 10px=
+;        font-size: 6px;        padding-top: 0;        padding-bottom: 0;  =
+      padding-left: 0;        padding-right: 0;      "><!--[if gte mso 15]>=
+&nbsp;<![endif]--></td>
+                          <td width=3D"180" height=3D"10" bgcolor=3D"#ccccc=
+c" style=3D"        width: 180px;        line-height: 10px;        height: =
+10px;        font-size: 6px;        padding-top: 0;        padding-bottom: =
+0;        padding-left: 0;        padding-right: 0;      "><!--[if gte mso =
+15]>&nbsp;<![endif]--></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style=3D"        font-family: 'Segoe UI', Frutiger, A=
+rial, sans-serif;        -ms-text-size-adjust: 100%;        font-size: 14px=
+;        text-align: left;        width: 181px;        line-height: 20px;  =
+      font-weight: 400;        padding-top: 0px;        padding-left: 0px; =
+       padding-right: 0px;        padding-bottom: 0px;      ">
+                    <font color=3D"#ffffff">
+                      <span style=3D"        color: #c00000;      ">Unknown=
+ To address</span>
+                    </font>
+                  </td>
+                  <td style=3D"        font-family: 'Segoe UI', Frutiger, A=
+rial, sans-serif;        -ms-text-size-adjust: 100%;        font-size: 14px=
+;        text-align: center;        width: 186px;        line-height: 20px;=
+        font-weight: 400;        padding-top: 0px;        padding-left: 0px=
+;        padding-right: 0px;        padding-bottom: 0px;      " />
+                  <td style=3D"        font-family: 'Segoe UI', Frutiger, A=
+rial, sans-serif;        -ms-text-size-adjust: 100%;        font-size: 14px=
+;        text-align: right;        width: 181px;        line-height: 20px; =
+       font-weight: 400;        padding-top: 0px;        padding-left: 0px;=
+        padding-right: 0px;        padding-bottom: 0px;      " />
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style=3D"        width: 100%;        padding-top: 0px;       =
+ padding-right: 10px;        padding-left: 10px;      ">
+            <br />
+            <table style=3D"        width: 100%;        padding-right: 0px;=
+        padding-left: 0px;        padding-top: 0px;        padding-bottom: =
+0px;        background-color: #f2f5fa;        margin-left: 0px;      ">
+              <tbody>
+                <tr>
+                  <td style=3D"        font-family: 'Segoe UI', Frutiger, A=
+rial, sans-serif;        -ms-text-size-adjust: 100%;        font-size: 21px=
+;        font-weight: 500;        background-color: #f2f5fa;        padding=
+-top: 0px;        padding-bottom: 0px;        padding-left: 10px;        pa=
+dding-right: 10px;      ">How to Fix It</td>
+                </tr>
+                <tr>
+                  <td style=3D"        font-family: 'Segoe UI', Frutiger, A=
+rial, sans-serif;        -ms-text-size-adjust: 100%;        font-size: 16px=
+;        font-weight: 400;        padding-top: 0px;        padding-bottom: =
+6px;        padding-left: 10px;        padding-right: 10px;        backgrou=
+nd-color: #f2f5fa;      ">The address may be misspelled or may not exist. T=
+ry one or more of the following:</td>
+                </tr>
+                <tr>
+                  <td style=3D"         padding-top: 0px;         padding-b=
+ottom: 0px;         padding-left: 0px;         padding-right: 0px;        b=
+order-spacing: 0px 0px;      ">
+                    <ul style=3D"        font-family: 'Segoe UI', Frutiger,=
+ Arial, sans-serif;        -ms-text-size-adjust: 100%;        font-size: 16=
+px;        font-weight: 400;        margin-left: 40px;        margin-bottom=
+: 5px;        background-color: #f2f5fa;        padding-top: 0px;        pa=
+dding-bottom: 0px;        padding-left: 6px;        padding-right: 6px;    =
+  ">
+                      <li>Send the message again following these steps: In =
+Outlook, open this non-delivery report (NDR) and choose <b>Send Again</b> f=
+rom the Report ribbon. In Outlook on the web, select this NDR, then select =
+the link "<b>To send this message again, click here.</b>" Then delete and r=
+etype the entire recipient address. If prompted with an Auto-Complete List =
+suggestion don't select it. After typing the complete address, click <b>Sen=
+d</b>.</li>
+                      <li>Contact the recipient (by phone, for example) to =
+check that the address exists and is correct.</li>
+                      <li>The recipient may have set up email forwarding to=
+ an incorrect address. Ask them to check that any forwarding they've set up=
+ is working correctly.</li>
+                      <li>Clear the recipient Auto-Complete List in Outlook=
+ or Outlook on the web by following the steps in this article: <a href=3D"h=
+ttps://go.microsoft.com/fwlink/?LinkId=3D532972">Fix email delivery issues =
+for error code 5.1.10 in Office 365</a>, and then send the message again. R=
+etype the entire recipient address before selecting <b>Send</b>.</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td style=3D"        font-family: 'Segoe UI', Frutiger, A=
+rial, sans-serif;        -ms-text-size-adjust: 100%;        font-size: 16px=
+;        font-weight: 400;        padding-top: 0px;        padding-bottom: =
+6px;        padding-left: 10px;        padding-right: 10px;        backgrou=
+nd-color: #f2f5fa;      ">If the problem continues, forward this message to=
+ your email admin. If you're an email admin, refer to the <b>More Info for =
+Email Admins</b> section below.</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style=3D"        font-family: 'Segoe UI', Frutiger, Arial, sa=
+ns-serif;        -ms-text-size-adjust: 100%;        font-size: 14px;       =
+ font-weight: 400;        padding-top: 10px;        padding-bottom: 0px;   =
+     padding-bottom: 4px;      ">
+            <br />
+            <em>Was this helpful? <a href=3D"https://go.microsoft.com/fwlin=
+k/?LinkId=3D525921">Send feedback to Microsoft</a>.</em>
+          </td>
+        </tr>
+        <tr>
+          <td style=3D"        -ms-text-size-adjust: 100%;        font-size=
+: 0px;        line-height: 0px;        padding-top: 0px;        padding-bot=
+tom: 0px;      ">
+            <hr />
+          </td>
+        </tr>
+        <tr>
+          <td style=3D"        font-family: 'Segoe UI', Frutiger, Arial, sa=
+ns-serif;        -ms-text-size-adjust: 100%;        font-size: 21px;       =
+ font-weight: 500;      ">
+            <br />More Info for Email Admins</td>
+        </tr>
+        <tr>
+          <td style=3D"        font-family: 'Segoe UI', Frutiger, Arial, sa=
+ns-serif;        -ms-text-size-adjust: 100%;        font-size: 14px;      "=
+>
+            <em>Status code: 550 5.1.10</em>
+            <br />
+            <br />This error occurs because the sender sent a message to an=
+ email address hosted by Office 365 but the address is incorrect or doesn't=
+ exist at the destination domain. The error is reported by the recipient do=
+main's email server, but most often it must be fixed by the person who sent=
+ the message. If the steps in the <b>How to Fix It</b> section above don't =
+fix the problem, and you're the email admin for the recipient, try one or m=
+ore of the following:<br /><br /><b>The email address exists and is correct=
+</b> - Confirm that the recipient address exists, is correct, and is accept=
+ing messages.<br /><br /><b>Synchronize your directories</b> - If you have =
+a hybrid environment and are using directory synchronization make sure the =
+recipient's email address is synced correctly in both Office 365 and in you=
+r on-premises directory.<br /><br /><b>Errant forwarding rule</b> - Check f=
+or forwarding rules that aren't behaving as expected. Forwarding can be set=
+ up by an admin via mail flow rules or mailbox forwarding address settings,=
+ or by the recipient via the Inbox Rules feature.<br /><br /><b>Recipient h=
+as a valid license</b> - Make sure the recipient has an Office 365 license =
+assigned to them. The recipient's email admin can use the Office 365 admin =
+center to assign a license (Users &gt; Active Users &gt; select the recipie=
+nt &gt; Assigned License &gt; Edit).<br /><br /><b>Mail flow settings and M=
+X records are not correct</b> - Misconfigured mail flow or MX record settin=
+gs can cause this error. Check your Office 365 mail flow settings to make s=
+ure your domain and any mail flow connectors are set up correctly. Also, wo=
+rk with your domain registrar to make sure the MX records for your domain a=
+re configured correctly.<br /><br />For more information and additional tip=
+s to fix this issue, see <a href=3D"https://go.microsoft.com/fwlink/?LinkId=
+=3D532972">Fix email delivery issues for error code 5.1.10 in Office 365</a=
+>.<br /><br /></td>
+        </tr>
+        <tr>
+          <td style=3D"        font-family: 'Segoe UI', Frutiger, Arial, sa=
+ns-serif;        -ms-text-size-adjust: 100%;        font-size: 17px;       =
+ font-weight: 500;      ">Original Message Details</td>
+        </tr>
+        <tr>
+          <td style=3D"        font-size: 14px;        line-height: 20px;  =
+      font-family: 'Segoe UI', Frutiger, Arial, sans-serif;        -ms-text=
+-size-adjust: 100%;        font-weight: 500;      ">
+            <table style=3D"        width: 100%;        border-collapse: co=
+llapse;        margin-left: 10px;      ">
+              <tbody>
+                <tr>
+                  <td valign=3D"top" style=3D"        font-family: 'Segoe U=
+I', Frutiger, Arial, sans-serif;        font-size: 14px;        -ms-text-si=
+ze-adjust: 100%;        white-space: nowrap;        font-weight: 500;      =
+  width: 140px;      ">Created Date:</td>
+                  <td style=3D"        font-family: 'Segoe UI', Frutiger, A=
+rial, sans-serif;        -ms-text-size-adjust: 100%;        font-size: 14px=
+;        font-weight: 400;      ">12/30/2022 9:36:31 PM</td>
+                </tr>
+                <tr>
+                  <td valign=3D"top" style=3D"        font-family: 'Segoe U=
+I', Frutiger, Arial, sans-serif;        font-size: 14px;        -ms-text-si=
+ze-adjust: 100%;        white-space: nowrap;        font-weight: 500;      =
+  width: 140px;      ">Sender Address:</td>
+                  <td style=3D"        font-family: 'Segoe UI', Frutiger, A=
+rial, sans-serif;        -ms-text-size-adjust: 100%;        font-size: 14px=
+;        font-weight: 400;      ">contact@fiidewgal.com</td>
+                </tr>
+                <tr>
+                  <td style=3D"        font-family: 'Segoe UI', Frutiger, A=
+rial, sans-serif;        font-size: 14px;        -ms-text-size-adjust: 100%=
+;        white-space: nowrap;        font-weight: 500;        width: 140px;=
+      ">Recipient Address:</td>
+                  <td style=3D"        font-family: 'Segoe UI', Frutiger, A=
+rial, sans-serif;        -ms-text-size-adjust: 100%;        font-size: 14px=
+;        font-weight: 400;      ">srafiou097@gaim.com</td>
+                </tr>
+                <tr>
+                  <td style=3D"        font-family: 'Segoe UI', Frutiger, A=
+rial, sans-serif;        font-size: 14px;        -ms-text-size-adjust: 100%=
+;        white-space: nowrap;        font-weight: 500;        width: 140px;=
+      ">Subject:</td>
+                  <td style=3D"        font-family: 'Segoe UI', Frutiger, A=
+rial, sans-serif;        -ms-text-size-adjust: 100%;        font-size: 14px=
+;        font-weight: 400;      ">Email Verification - Fii Dewgal</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style=3D"        font-family: 'Segoe UI', Frutiger, Arial, sa=
+ns-serif;        -ms-text-size-adjust: 100%;        font-size: 17px;       =
+ font-weight: 500;      ">
+            <br />Error Details</td>
+        </tr>
+        <tr>
+          <td style=3D"        font-size: 14px;        line-height: 20px;  =
+      font-family: 'Segoe UI', Frutiger, Arial, sans-serif;        -ms-text=
+-size-adjust: 100%;        font-weight: 500;      ">
+            <table style=3D"        width: 100%;        border-collapse: co=
+llapse;        margin-left: 10px;      ">
+              <tbody>
+                <tr>
+                  <td valign=3D"top" style=3D"        font-family: 'Segoe U=
+I', Frutiger, Arial, sans-serif;        font-size: 14px;        -ms-text-si=
+ze-adjust: 100%;        white-space: nowrap;        font-weight: 500;      =
+  width: 140px;      ">Reported error:</td>
+                  <td style=3D"        font-family: 'Segoe UI', Frutiger, A=
+rial, sans-serif;        -ms-text-size-adjust: 100%;        font-size: 14px=
+;        font-weight: 400;      ">
+                    <em>550 5.1.10 RESOLVER.ADR.RecipientNotFound; Recipien=
+t srafiou097@gaim.com not found by SMTP address lookup</em>
+                  </td>
+                </tr>
+                <tr>
+                  <td style=3D"        font-family: 'Segoe UI', Frutiger, A=
+rial, sans-serif;        font-size: 14px;        -ms-text-size-adjust: 100%=
+;        white-space: nowrap;        font-weight: 500;        width: 140px;=
+      ">DSN generated by:</td>
+                  <td style=3D"        font-family: 'Segoe UI', Frutiger, A=
+rial, sans-serif;        -ms-text-size-adjust: 100%;        font-size: 14px=
+;        font-weight: 400;      ">GVYP280MB0286.SWEP280.PROD.OUTLOOK.COM</t=
+d>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <table style=3D"width: 880px;" cellspacing=3D"0">
+      <tr>
+        <td colspan=3D"6" style=3D"        padding-top: 4px;        border-=
+bottom: 1px solid #999999;        padding-bottom: 4px;        line-height: =
+120%;        font-size: 17px;        font-family: 'Segoe UI', Frutiger, Ari=
+al, sans-serif;        -ms-text-size-adjust: 100%;        font-weight: 500;=
+      ">Message Hops</td>
+      </tr>
+      <tr>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        background-color: #f2f5fa;        border-bottom: 1p=
+x solid #999999;        white-space: nowrap;        padding: 8px;      ">HO=
+P</td>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        background-color: #f2f5fa;        border-bottom: 1p=
+x solid #999999;        white-space: nowrap;        padding: 8px;        wi=
+dth: 80px;      ">TIME (UTC)</td>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        background-color: #f2f5fa;        border-bottom: 1p=
+x solid #999999;        white-space: nowrap;        padding: 8px;      ">FR=
+OM</td>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        background-color: #f2f5fa;        border-bottom: 1p=
+x solid #999999;        white-space: nowrap;        padding: 8px;      ">TO=
+</td>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        background-color: #f2f5fa;        border-bottom: 1p=
+x solid #999999;        white-space: nowrap;        padding: 8px;      ">WI=
+TH</td>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        background-color: #f2f5fa;        border-bottom: 1p=
+x solid #999999;        white-space: nowrap;        padding: 8px;      ">RE=
+LAY TIME</td>
+      </tr>
+      <tr>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        border-bottom: 1px solid #999999;        padding: 8=
+px;        text-align: center;      ">1</td>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        border-bottom: 1px solid #999999;        padding: 8=
+px;        text-align: left;        width: 80px;      ">12/30/2022<br />9:3=
+6:31 PM</td>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        border-bottom: 1px solid #999999;        padding: 8=
+px;        text-align: left;      ">fiidewgal.com</td>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        border-bottom: 1px solid #999999;        padding: 8=
+px;        text-align: left;      ">mailfilter-eu.n0c.com</td>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        border-bottom: 1px solid #999999;        padding: 8=
+px;        text-align: left;      ">SMTP</td>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        border-bottom: 1px solid #999999;        padding: 8=
+px;        text-align: left;      ">*</td>
+      </tr>
+      <tr>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        border-bottom: 1px solid #999999;        padding: 8=
+px;        text-align: center;      ">2</td>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        border-bottom: 1px solid #999999;        padding: 8=
+px;        text-align: left;        width: 80px;      ">12/30/2022<br />9:3=
+6:43 PM</td>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        border-bottom: 1px solid #999999;        padding: 8=
+px;        text-align: left;      ">node187-eu.n0c.com</td>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        border-bottom: 1px solid #999999;        padding: 8=
+px;        text-align: left;      ">mx-gate13-hz2.hornetsecurity.com</td>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        border-bottom: 1px solid #999999;        padding: 8=
+px;        text-align: left;      "></td>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        border-bottom: 1px solid #999999;        padding: 8=
+px;        text-align: left;      ">12&nbsp;sec</td>
+      </tr>
+      <tr>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        border-bottom: 1px solid #999999;        padding: 8=
+px;        text-align: center;      ">3</td>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        border-bottom: 1px solid #999999;        padding: 8=
+px;        text-align: left;        width: 80px;      ">12/30/2022<br />9:3=
+6:43 PM</td>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        border-bottom: 1px solid #999999;        padding: 8=
+px;        text-align: left;      ">hsmx05.antispameurope.com</td>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        border-bottom: 1px solid #999999;        padding: 8=
+px;        text-align: left;      ">DB5EUR01FT037.mail.protection.outlook.c=
+om</td>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        border-bottom: 1px solid #999999;        padding: 8=
+px;        text-align: left;      ">Microsoft SMTP Server (version=3DTLS1_2=
+, cipher=3DTLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384)</td>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        border-bottom: 1px solid #999999;        padding: 8=
+px;        text-align: left;      ">*</td>
+      </tr>
+      <tr>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        border-bottom: 1px solid #999999;        padding: 8=
+px;        text-align: center;      ">4</td>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        border-bottom: 1px solid #999999;        padding: 8=
+px;        text-align: left;        width: 80px;      ">12/30/2022<br />9:3=
+6:44 PM</td>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        border-bottom: 1px solid #999999;        padding: 8=
+px;        text-align: left;      ">DB5EUR01FT037.eop-EUR01.prod.protection=
+.outlook.com</td>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        border-bottom: 1px solid #999999;        padding: 8=
+px;        text-align: left;      ">DUZPR01CA0064.outlook.office365.com</td=
+>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        border-bottom: 1px solid #999999;        padding: 8=
+px;        text-align: left;      ">Microsoft SMTP Server (version=3DTLS1_2=
+, cipher=3DTLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384)</td>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        border-bottom: 1px solid #999999;        padding: 8=
+px;        text-align: left;      ">1&nbsp;sec</td>
+      </tr>
+      <tr>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        border-bottom: 1px solid #999999;        padding: 8=
+px;        text-align: center;      ">5</td>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        border-bottom: 1px solid #999999;        padding: 8=
+px;        text-align: left;        width: 80px;      ">12/30/2022<br />9:3=
+6:44 PM</td>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        border-bottom: 1px solid #999999;        padding: 8=
+px;        text-align: left;      ">DUZPR01CA0064.eurprd01.prod.exchangelab=
+s.com</td>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        border-bottom: 1px solid #999999;        padding: 8=
+px;        text-align: left;      ">GVYP280MB0286.SWEP280.PROD.OUTLOOK.COM<=
+/td>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        border-bottom: 1px solid #999999;        padding: 8=
+px;        text-align: left;      ">Microsoft SMTP Server (version=3DTLS1_2=
+, cipher=3DTLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384)</td>
+        <td style=3D"        font-size: 12px;        font-family: 'Segoe UI=
+', Frutiger, Arial, sans-serif;        -ms-text-size-adjust: 100%;        f=
+ont-weight: 500;        border-bottom: 1px solid #999999;        padding: 8=
+px;        text-align: left;      ">*</td>
+      </tr>
+    </table>
+    <p style=3D"        font-family: 'Segoe UI', Frutiger, Arial, sans-seri=
+f;        -ms-text-size-adjust: 100%;        font-size: 17px;        font-w=
+eight: 500;        padding-top: 4px;        padding-bottom: 0;        margi=
+n-top: 19px;        margin-bottom: 5px;      ">Original Message Headers</p>
+    <pre style=3D"        color: gray;        white-space: pre;        padd=
+ing-top: 0;        margin-top: 5px;      ">Received: from DUZPR01CA0064.eur=
+prd01.prod.exchangelabs.com
+ (2603:10a6:10:3c2::17) by GVYP280MB0286.SWEP280.PROD.OUTLOOK.COM
+ (2603:10a6:150:36::9) with Microsoft SMTP Server (version=3DTLS1_2,
+ cipher=3DTLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5944.18; Fri, 30 =
+Dec
+ 2022 21:36:44 +0000
+Received: from DB5EUR01FT037.eop-EUR01.prod.protection.outlook.com
+ (2603:10a6:10:3c2:cafe::8d) by DUZPR01CA0064.outlook.office365.com
+ (2603:10a6:10:3c2::17) with Microsoft SMTP Server (version=3DTLS1_2,
+ cipher=3DTLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5966.17 via Front=
+end
+ Transport; Fri, 30 Dec 2022 21:36:44 +0000
+Authentication-Results: spf=3Dsoftfail (sender IP is 83.246.65.101)
+ smtp.mailfrom=3Dfiidewgal.com; dkim=3Dpass (signature was verified)
+ header.d=3Dfiidewgal.com;dmarc=3Dpass action=3Dnone header.from=3Dfiidewga=
+l.com;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ fiidewgal.com discourages use of 83.246.65.101 as permitted sender)
+Received: from hsmx05.antispameurope.com (83.246.65.101) by
+ DB5EUR01FT037.mail.protection.outlook.com (10.152.4.212) with Microsoft SM=
+TP
+ Server (version=3DTLS1_2, cipher=3DTLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) =
+id
+ 15.20.5944.17 via Frontend Transport; Fri, 30 Dec 2022 21:36:43 +0000
+Received: from node187-eu.n0c.com (185.221.182.45) by mx-gate13-hz2.hornets=
+ecurity.com;
+ Fri, 30 Dec 2022 22:36:43 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NkJVV6yF9znqZg
+Authentication-Results-Original: mailfilter-eu.n0c.com;	dkim=3Dpass (1024-b=
+it
+ key) header.d=3Dfiidewgal.com header.i=3D@fiidewgal.com header.b=3D"gIbMvX=
+2M"
+X-N0C-MailScanner-eFa-Watermark: 1673040992.40539@gllwcMLgQb77G+L19XpUvw
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 7743140664D5.ACDA2
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal=
+.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 7743140664D5
+	for &lt;srafiou097@gaim.com&gt;; Fri, 30 Dec 2022 22:36:31 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 7743140664D5
+Authentication-Results-Original: node187-eu.n0c.com; dmarc=3Dpass (p=3Dnone
+ dis=3Dnone) header.from=3Dfiidewgal.com
+Authentication-Results-Original: node187-eu.n0c.com; spf=3Dpass
+ smtp.mailfrom=3Dfiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 7743140664D5
+DKIM-Signature: v=3D1; a=3Drsa-sha256; c=3Drelaxed/relaxed; d=3Dfiidewgal.c=
+om;
+	s=3Ddefault; t=3D1672436191;
+	bh=3Db3uNT6e7krn4qizLJdZXsJB+zMkZvKk6JC4r6tGWnY0=3D;
+	h=3DDate:Subject:From:To:From;
+	b=3DgIbMvX2MBPipvmFh7s7XT7oXZKBCblNpC9tDYuNIqfCyMBnYKnIu/sXGd2UnJL0xN
+	 EUeFe6MbPx2qBqilMJIizIR5sZtVZOAQl+CnFNXwfCGJe1xMSYwaMBSVY9mj94e443
+	 YUNrcTbf5FmA9hWkpK4WhcTn2nJzo/hf2gnHF/U8=3D
+Message-ID: &lt;10e15d9fb09c40a49453c08bf3291b11@fiidewgal.com&gt;
+Date: Fri, 30 Dec 2022 22:36:31 +0100
+Subject: Email Verification - Fii Dewgal
+From: Ne =3D?utf-8?Q?r=3DC3=3DA9pondez?=3D pas &lt;contact@fiidewgal.com&gt=
+;
+To: srafiou097@gaim.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=3Dutf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+X-antispameurope-Connect: node187-eu.n0c.com[185.221.182.45],TLS=3D1;EMIG=
+=3D0
+X-antispameurope-DKIM: PASS
+X-antispameurope-DKIM: Positive policy
+X-antispameurope-Digest: d1a75981923203a84926e709cd1ff2da
+X-antispameurope-MSGID: b2d795cc571a0e29db5c247d1f24237c-7d2b94bc701f44e272=
+5625f35177271e
+X-antispameurope-Mailarchiv: E-Mail archived by www.antispameurope.com for:=
+ srafiou097@gaim.com
+X-antispameurope-Mailarchivtype: inbound
+X-antispameurope-REASON: NOREASON:HO-WL
+X-antispameurope-SPFRESULT: NONE
+X-antispameurope-Spamstatus: CLEAN
+X-antispameurope-Virusscan: CLEAN
+X-antispameurope-WC: 5:283:0:8392:0:77:0:0:0:0:0:0:0:0:1:0:2:76:77:76:0:1:0=
+:0:0:69:0:0:0:0:0:0:0:0::0:1:0:0:0:0:0
+X-antispameurope-body-digest: 00a9a900583cb03a9cf0afbc3f6853eb
+X-antispameurope-date: 1672436196
+X-antispameurope-disclaimer: This E-Mail was scanned by www.antispameurope.=
+com E-Mailservice on mx-gate13-hz2 with 538EA1900F4C
+X-antispameurope-orig-host: node187-eu.n0c.com
+X-antispameurope-orig-ip: 185.221.182.45
+X-antispameurope-orig: ca2572152f00a2c41f4f74c048a2d916
+X-antispameurope-recipient: srafiou097@gaim.com
+X-antispameurope-sender: contact@fiidewgal.com
+X-antispameurope: INCOMING:
+X-hornetsecurity-identifier: 186924e4cd723ebcf59b9bca2c00e1f6
+Return-Path: contact@fiidewgal.com
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: d9ba0b24-d598-4e70-a77d-0ab918e3681b:0
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: DB5EUR01FT037:EE_|GVYP280MB0286:EE_
+X-MS-Office365-Filtering-Correlation-Id: 4796d9fd-df4d-4c07-111e-08daeaadf2=
+21
+</pre>
+  </body>
+</html>=
+
+--50502255-3bd5-4d01-9be2-26b06042ddbe--
+
+--4864ac8e-e455-4b31-8f9c-5b687bdf9e31
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns;GVYP280MB0286.SWEP280.PROD.OUTLOOK.COM
+Received-From-MTA: dns;hsmx05.antispameurope.com
+Arrival-Date: Fri, 30 Dec 2022 21:36:44 +0000
+
+Final-Recipient: rfc822;srafiou097@gaim.com
+Action: failed
+Status: 5.1.10
+Diagnostic-Code: smtp;550 5.1.10 RESOLVER.ADR.RecipientNotFound; Recipient srafiou097@gaim.com not found by SMTP address lookup
+
+
+--4864ac8e-e455-4b31-8f9c-5b687bdf9e31
+Content-Type: message/rfc822
+
+Received: from DUZPR01CA0064.eurprd01.prod.exchangelabs.com
+ (2603:10a6:10:3c2::17) by GVYP280MB0286.SWEP280.PROD.OUTLOOK.COM
+ (2603:10a6:150:36::9) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5944.18; Fri, 30 Dec
+ 2022 21:36:44 +0000
+Received: from DB5EUR01FT037.eop-EUR01.prod.protection.outlook.com
+ (2603:10a6:10:3c2:cafe::8d) by DUZPR01CA0064.outlook.office365.com
+ (2603:10a6:10:3c2::17) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5966.17 via Frontend
+ Transport; Fri, 30 Dec 2022 21:36:44 +0000
+Authentication-Results: spf=softfail (sender IP is 83.246.65.101)
+ smtp.mailfrom=fiidewgal.com; dkim=pass (signature was verified)
+ header.d=fiidewgal.com;dmarc=pass action=none header.from=fiidewgal.com;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ fiidewgal.com discourages use of 83.246.65.101 as permitted sender)
+Received: from hsmx05.antispameurope.com (83.246.65.101) by
+ DB5EUR01FT037.mail.protection.outlook.com (10.152.4.212) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.5944.17 via Frontend Transport; Fri, 30 Dec 2022 21:36:43 +0000
+Received: from node187-eu.n0c.com (185.221.182.45) by mx-gate13-hz2.hornetsecurity.com;
+ Fri, 30 Dec 2022 22:36:43 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NkJVV6yF9znqZg
+Authentication-Results-Original: mailfilter-eu.n0c.com;	dkim=pass (1024-bit
+ key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="gIbMvX2M"
+X-N0C-MailScanner-eFa-Watermark: 1673040992.40539@gllwcMLgQb77G+L19XpUvw
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 7743140664D5.ACDA2
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 7743140664D5
+	for <srafiou097@gaim.com>; Fri, 30 Dec 2022 22:36:31 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 7743140664D5
+Authentication-Results-Original: node187-eu.n0c.com; dmarc=pass (p=none
+ dis=none) header.from=fiidewgal.com
+Authentication-Results-Original: node187-eu.n0c.com; spf=pass
+ smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 7743140664D5
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1672436191;
+	bh=b3uNT6e7krn4qizLJdZXsJB+zMkZvKk6JC4r6tGWnY0=;
+	h=Date:Subject:From:To:From;
+	b=gIbMvX2MBPipvmFh7s7XT7oXZKBCblNpC9tDYuNIqfCyMBnYKnIu/sXGd2UnJL0xN
+	 EUeFe6MbPx2qBqilMJIizIR5sZtVZOAQl+CnFNXwfCGJe1xMSYwaMBSVY9mj94e443
+	 YUNrcTbf5FmA9hWkpK4WhcTn2nJzo/hf2gnHF/U8=
+Message-ID: <10e15d9fb09c40a49453c08bf3291b11@fiidewgal.com>
+Date: Fri, 30 Dec 2022 22:36:31 +0100
+Subject: Email Verification - Fii Dewgal
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: srafiou097@gaim.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+X-antispameurope-Connect: node187-eu.n0c.com[185.221.182.45],TLS=1;EMIG=0
+X-antispameurope-DKIM: PASS
+X-antispameurope-DKIM: Positive policy
+X-antispameurope-Digest: d1a75981923203a84926e709cd1ff2da
+X-antispameurope-MSGID: b2d795cc571a0e29db5c247d1f24237c-7d2b94bc701f44e2725625f35177271e
+X-antispameurope-Mailarchiv: E-Mail archived by www.antispameurope.com for: srafiou097@gaim.com
+X-antispameurope-Mailarchivtype: inbound
+X-antispameurope-REASON: NOREASON:HO-WL
+X-antispameurope-SPFRESULT: NONE
+X-antispameurope-Spamstatus: CLEAN
+X-antispameurope-Virusscan: CLEAN
+X-antispameurope-WC: 5:283:0:8392:0:77:0:0:0:0:0:0:0:0:1:0:2:76:77:76:0:1:0:0:0:69:0:0:0:0:0:0:0:0::0:1:0:0:0:0:0
+X-antispameurope-body-digest: 00a9a900583cb03a9cf0afbc3f6853eb
+X-antispameurope-date: 1672436196
+X-antispameurope-disclaimer: This E-Mail was scanned by www.antispameurope.com E-Mailservice on mx-gate13-hz2 with 538EA1900F4C
+X-antispameurope-orig-host: node187-eu.n0c.com
+X-antispameurope-orig-ip: 185.221.182.45
+X-antispameurope-orig: ca2572152f00a2c41f4f74c048a2d916
+X-antispameurope-recipient: srafiou097@gaim.com
+X-antispameurope-sender: contact@fiidewgal.com
+X-antispameurope: INCOMING:
+X-hornetsecurity-identifier: 186924e4cd723ebcf59b9bca2c00e1f6
+Return-Path: contact@fiidewgal.com
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: d9ba0b24-d598-4e70-a77d-0ab918e3681b:0
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: DB5EUR01FT037:EE_|GVYP280MB0286:EE_
+X-MS-Office365-Filtering-Correlation-Id: 4796d9fd-df4d-4c07-111e-08daeaadf221
+
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" bgco=
+lor=3D"#e8ebef">
+=09<tr>
+=09=09<td align=3D"center" valign=3D"top" class=3D"container" style=3D"padd=
+ing:50px 10px;">
+=09=09=09<!-- Container -->
+=09=09=09<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0">
+=09=09=09=09<tr>
+=09=09=09=09=09<td align=3D"center">
+=09=09=09=09=09=09<table width=3D"650" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" class=3D"mobile-shell">
+=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09<td class=3D"td" bgcolor=3D"#ffffff" style=3D"width=
+:650px; min-width:650px; font-size:0pt; line-height:0pt; padding:0; margin:=
+0; font-weight:normal;">
+=09=09=09=09=09=09=09=09=09<!-- Header -->
+=09=09=09=09=09=09=09=09=09<table width=3D"100%" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff">
+=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09<td class=3D"p30-15-0" style=3D"padding: 4=
+0px 30px 0px 30px;">
+=09=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<th class=3D"column" style=3D"fon=
+t-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"img m-cente=
+r" style=3D"font-size:0pt; line-height:0pt; text-align:left;"><img src=3D"h=
+ttps://fiidewgal.com/public/uploads/all/3ePHoiM5cMGmckWJJkq03HVSXUcK8mKuITM=
+5NqBG.png" width=3D"191" height=3D"24" border=3D"0" alt=3D"" /></td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</th>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<th class=3D"column-empty" width=
+=3D"1" style=3D"font-size:0pt; line-height:0pt; padding:0; margin:0; font-w=
+eight:normal;"></th>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<th class=3D"column" width=3D"120=
+" style=3D"font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight=
+:normal;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"text-header=
+ right" style=3D"color:#000000; font-family:'Fira Mono', Arial,sans-serif; =
+font-size:12px; line-height:16px; text-align:right;"><a href=3D"https://fii=
+dewgal.com" target=3D"_blank" class=3D"link" style=3D"color:#000001; text-d=
+ecoration:none;"><span class=3D"link" style=3D"color:#000001; text-decorati=
+on:none;">Fii Dewgal</span></a></td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</th>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"separator" style=3D"=
+padding-top: 40px; border-bottom:4px solid #000000; font-size:0pt; line-hei=
+ght:0pt;">&nbsp;</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09<!-- END Header -->
+
+=09=09=09=09=09=09=09=09=09<!-- Intro -->
+=09=09=09=09=09=09=09=09=09<table width=3D"100%" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff">
+=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09<td class=3D"p30-15" style=3D"padding: 70p=
+x 30px 70px 30px;">
+=09=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"h2 center pb10" styl=
+e=3D"color:#000000; font-family:'Ubuntu', Arial,sans-serif; font-size:50px;=
+ line-height:60px; text-align:center; padding-bottom:10px;">v=C3=A9rificati=
+on de l&#039;E-mail</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"h5 center blue pb30"=
+ style=3D"font-family:'Ubuntu', Arial,sans-serif; font-size:20px; line-heig=
+ht:26px; text-align:center; color:#2e57ae; padding-bottom:30px;">Please cli=
+ck the button below to verify your email address. </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+                                                                           =
+                                 <tr>
+                                                            <td class=3D"h5=
+ center blue pb30" style=3D"font-family:'Ubuntu', Arial,sans-serif; font-si=
+ze:20px; line-height:26px; text-align:center; color:#2e57ae; padding-bottom=
+:30px;">
+                                                                <a href=3D"=
+https://fiidewgal.com/verification-confirmation/eyJpdiI6IjAyVGZNUnBicXFSR2p=
+wSmJZYVZQK2c9PSIsInZhbHVlIjoiUy85and0T3JpMEt4eU5nUjllRFZoZz09IiwibWFjIjoiOG=
+U5OGFjMTE4ZjA4NDI5NTdmNDM3YmJkOGI3YTczODcyMmE2YjM5MTE1NDM0MGMxMTI2OWViOTM1N=
+WJkMDg0MyIsInRhZyI6IiJ9" style=3D"background: #007bff;padding: 0.9rem 2rem;=
+font-size: 0.875rem;color:#fff;border-radius: .2rem;" target=3D"_blank">Cli=
+ck Here</a>
+                                                            </td>
+                                                        </tr>
+                                                    =09=09=09=09=09=09=09=
+=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09<!-- END Intro -->
+=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09<td class=3D"text-footer" style=3D"padding-top: 30p=
+x; color:#1f2125; font-family:'Fira Mono', Arial,sans-serif; font-size:12px=
+; line-height:22px; text-align:center;">
+=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09</table>
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09=09<!-- END Container -->
+=09=09</td>
+=09</tr>
+</table>
+
+--4864ac8e-e455-4b31-8f9c-5b687bdf9e31--

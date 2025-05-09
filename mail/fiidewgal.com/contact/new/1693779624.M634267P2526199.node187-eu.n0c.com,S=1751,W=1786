@@ -1,0 +1,35 @@
+Return-Path: <contact@fiidewgal.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id eCk1JagG9WT3iyYA3R2AvA
+	(envelope-from <contact@fiidewgal.com>)
+	for <contact@fiidewgal.com>; Mon, 04 Sep 2023 00:20:24 +0200
+Received: from [127.0.0.1] (unknown [185.221.182.45])
+	by node187-eu.n0c.com (Postfix) with ESMTPSA id 74DC240353C3
+	for <contact@fiidewgal.com>; Sun,  3 Sep 2023 18:20:24 -0400 (EDT)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 74DC240353C3
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 74DC240353C3
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1693779624;
+	bh=gJaaiBlocTaRkJsQtF+xTBIvocNCQMCujHLB0iIbPlU=;
+	h=From:To:Subject:Date:From;
+	b=EE97oRnHH7ypeRrwycKjoyX0iA8uoai5O8t5JxgLEIM96b8CphCYskpqhD+byLMFP
+	 iBPEwCro5zun8CfmV6XNmxK/Iw3Fe0VeL1ECdkPS5YgiHVTuWNbHwHfpstM1T4jyqT
+	 rm+4qWcz48K/gTaNYdYwLenWqFQGIInRzpggGzIA=
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: contact@fiidewgal.com
+Subject: Inscription des membres
+Message-ID: <39128bcfc39b8f8b468486b4400a3f53@fiidewgal.com>
+MIME-Version: 1.0
+Date: Mon, 04 Sep 2023 00:20:24 +0200
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<p>F=C3=A9licitations !<br></p><p>Vous avez un nouveau membre enregistr=
+=C3=A9 dans votre syst=C3=A8me.</p><p>Nom du membre : yaya sylla</p><p>L'e-=
+mail est : yayabahh234@gmail.com</p><p>Profil de membre : https://fiidewgal=
+.com/admin/members/3222</p><p>Merci,</p><p>Ne r=C3=A9pondez pas</p>
+

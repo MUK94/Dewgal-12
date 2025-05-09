@@ -1,0 +1,111 @@
+Return-Path: <>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id iDU/Oh9x6mN1wy4A3R2AvA
+	(envelope-from <>)
+	for <contact@fiidewgal.com>; Mon, 13 Feb 2023 18:19:27 +0100
+Received: by node187-eu.n0c.com (Postfix)
+	id ED007401AEF7; Mon, 13 Feb 2023 12:19:27 -0500 (EST)
+Date: Mon, 13 Feb 2023 12:19:27 -0500 (EST)
+From: MAILER-DAEMON@node187-eu.n0c.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: contact@fiidewgal.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="B2AB7401AEF6.1676308767/node187-eu.n0c.com"
+Message-Id: <20230213171927.ED007401AEF7@node187-eu.n0c.com>
+
+This is a MIME-encapsulated message.
+
+--B2AB7401AEF6.1676308767/node187-eu.n0c.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host node187-eu.n0c.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<mamadjankambayabah@gmail.com>: host gmail-smtp-in.l.google.com[64.233.167.27]
+    said: 550-5.1.1 The email account that you tried to reach does not exist.
+    Please try 550-5.1.1 double-checking the recipient's email address for
+    typos or 550-5.1.1 unnecessary spaces. Learn more at 550 5.1.1
+    https://support.google.com/mail/?p=NoSuchUser
+    j18-20020adfea52000000b002c53f5b1407si9897651wrn.1011 - gsmtp (in reply to
+    RCPT TO command)
+
+--B2AB7401AEF6.1676308767/node187-eu.n0c.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; node187-eu.n0c.com
+X-Postfix-Queue-ID: B2AB7401AEF6
+X-Postfix-Sender: rfc822; contact@fiidewgal.com
+Arrival-Date: Mon, 13 Feb 2023 12:19:27 -0500 (EST)
+
+Final-Recipient: rfc822; mamadjankambayabah@gmail.com
+Original-Recipient: rfc822;mamadjankambayabah@gmail.com
+Action: failed
+Status: 5.1.1
+Remote-MTA: dns; gmail-smtp-in.l.google.com
+Diagnostic-Code: smtp; 550-5.1.1 The email account that you tried to reach does
+    not exist. Please try 550-5.1.1 double-checking the recipient's email
+    address for typos or 550-5.1.1 unnecessary spaces. Learn more at 550 5.1.1
+    https://support.google.com/mail/?p=NoSuchUser
+    j18-20020adfea52000000b002c53f5b1407si9897651wrn.1011 - gsmtp
+
+--B2AB7401AEF6.1676308767/node187-eu.n0c.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <contact@fiidewgal.com>
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4PFrg34VTVz34SDmx
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="rFxTCaY0"
+X-N0C-MailScanner-eFa-Watermark: 1676913566.51186@mjaoDeGAIJ/rGQh3Td4jTQ
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 915BE401AEF6.A667E
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 915BE401AEF6
+	for <mamadjankambayabah@gmail.com>; Mon, 13 Feb 2023 18:19:25 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 915BE401AEF6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 915BE401AEF6
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1676308765;
+	bh=lLyKVOKi0+iqPE44jOD24j9nHMCZ+b2PaetudCV5xOI=;
+	h=Date:Subject:From:To:From;
+	b=rFxTCaY0QyJtfJ0Kx1SuqnlcsLb8tlAqE4r8MQqUZdgxrZn52Sw5ZmDFjtDXn4xky
+	 DFum3dIKCfZXFawzg/shXVso695piGCqU+Fc/0P0yOHrujWZwygCUXP+FWx0RmaoMN
+	 LT86UjfuUf3tYYznY52Or4QJ2coq8xu8b0OD5hkU=
+Message-ID: <813ceca9e398e0e2cbe3f82511cbaf12@fiidewgal.com>
+Date: Mon, 13 Feb 2023 18:19:25 +0100
+Subject: =?utf-8?Q?R=C3=A9initialisation?= du mot de passe
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: mamadjankambayabah@gmail.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<p>Bonjour&nbsp;Manmadian Bah,</p><p>Votre code de v=C3=A9rification pour l=
+a r=C3=A9initialisation du mot de passe est : [[code]]<br></p><p><br></p><p=
+>Merci !<br></p><p>Ne r=C3=A9pondez pas</p>
+
+
+--B2AB7401AEF6.1676308767/node187-eu.n0c.com--

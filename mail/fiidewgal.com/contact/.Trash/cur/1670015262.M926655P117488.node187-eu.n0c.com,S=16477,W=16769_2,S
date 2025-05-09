@@ -1,0 +1,292 @@
+Return-Path: <registration@facebookmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id ptojNx5pimPwygEA3R2AvA
+	(envelope-from <registration@facebookmail.com>)
+	for <contact@fiidewgal.com>; Fri, 02 Dec 2022 22:07:42 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NP5B62mHvz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=facebookmail.com header.i=@facebookmail.com header.b="A71N3Vmh"
+X-N0C-MailScanner-eFa-Watermark: 1670620059.05355@a8zhwIIE1VijykL6NzhNpg
+X-N0C-MailScanner-eFa-From: registration@facebookmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 4F22D401AEF3.A76E6
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from 66-220-155-155.mail-mail.facebook.com ([66.220.155.155] [66.220.155.155])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 4F22D401AEF3
+	for <contact@fiidewgal.com>; Fri,  2 Dec 2022 22:07:32 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 4F22D401AEF3
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=reject dis=none) header.from=facebookmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=facebookmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 4F22D401AEF3
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (1024-bit key; unprotected) header.d=facebookmail.com header.i=@facebookmail.com header.a=rsa-sha256 header.s=s1024-2013-q3 header.b=A71N3Vmh
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=facebookmail.com;
+	s=s1024-2013-q3; t=1670015240;
+	bh=cg9AmtjcsMQ83QG5tHDnmSUuuMJjs2CQCYFEBGFzIls=;
+	h=Date:To:Subject:From:MIME-Version:Content-Type;
+	b=A71N3VmhcgBb85mtzQso8vugeVdaRVpRoJycQeWQeGyVWOCtr+4BUQbFmcExmyQg7
+	 uoDAA/r+4I+VyK2VQKHuBjgT3zGq2owgHS79LDVE29e2RJrUPhrCFM9jJTfkqBNijq
+	 7/PJ5c0ig+7dDeIZ4Z1jy0M4p5VUNCQ66XkeIuQ0=
+X-Facebook: from 2401:db00:221c:b20:face:0:2e0:0 ([MTI3LjAuMC4x]) 
+	by www.facebook.com with HTTPS (ZuckMail);
+Date: Fri, 2 Dec 2022 13:07:20 -0800
+To: Fii Dewgal <contact@fiidewgal.com>
+Subject: FB-12687 est votre code de confirmation Facebook
+X-Priority: 3
+X-Mailer: ZuckMail [version 1.00]
+From: "Facebook" <registration@facebookmail.com>
+Reply-to: noreply <noreply@facebookmail.com>
+Errors-To: registration@facebookmail.com
+X-Facebook-Notify: registration:first_send; mailid=U1U5eede6f9108eaG5b07a2a3ca95G5eedeb9270bbcG3c2
+Feedback-ID: 0:registration:Facebook
+X-FACEBOOK-PRIORITY: 1
+X-Auto-Response-Suppress: All
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_13191417adaf601396dfb28e0377f1e2"
+Message-ID: <4f3cc2e8-7285-11ed-ab75-cb05097cebd2@facebookmail.com>
+X-N0C-Node-IP: 185.221.182.45
+
+
+--b1_13191417adaf601396dfb28e0377f1e2
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+Confirmer votre compte
+https://www.facebook.com/n/?confirmemail.php&e=3Dcontact%40fiidewgal.com&c=
+=3D12687&cuid=3DAYiya7xeTleGlOhY5yjDeNFDpXrvPFoNB8IuDNizEt1vfzlE4gTjakXTHt=
+k352ZD4r5b4VJ7_YHeEAiKvOPBaklGe8EqisNau7-zsYm89FmT4mww6Jqj0vQuV72qUjh3xdQ&=
+aref=3D1670015240047548&medium=3Demail&mid=3D5eede6f9108eaG5b07a2a3ca95G5e=
+edeb9270bbcG3c2&bcode=3D2.1670015240.AbzOWKnbvD2HHnUPGE0&n_m=3Dcontact%40f=
+iidewgal.com
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+Bonjour Fii,
+
+Bonjour Fii,
+
+Vous avez r=C3=A9cemment cr=C3=A9=C3=A9 un compte sur Facebook. Pour =
+terminer votre inscription, veuillez confirmer votre compte.
+
+Merci,
+L=E2=80=99=C3=A9quipe Facebook
+
+Il pourra vous =C3=AAtre demand=C3=A9 de saisir ce code de =
+confirmation=C2=A0:
+
+FB-12687
+
+Facebook vous permet de rester en contact avec tous vos amis. Une fois =
+inscrit(e) sur Facebook, vous pouvez partager des photos, organiser des =
+=C3=A9v=C3=A8nements et bien plus encore.
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+Ce message a =C3=A9t=C3=A9 envoy=C3=A9 =C3=A0 contact@fiidewgal.com sur =
+votre demande.
+Meta Platforms, Inc., Attention: Community Support, 1 Facebook Way, Menlo =
+Park, CA 94025
+Pour contribuer =C3=A0 la protection de votre compte, veuillez ne pas =
+transf=C3=A9rer cet e-mail. Suivez le lien ci-dessous pour en savoir plus.
+https://www.facebook.com/email_forward_notice/?mid=3D5eede6f9108eaG5b07a2a=
+3ca95G5eedeb9270bbcG3c2
+
+
+--b1_13191417adaf601396dfb28e0377f1e2
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional =
+//EN"><html><head><title>Facebook</title><meta http-equiv=3D"Content-Type" =
+content=3D"text/html; charset=3Dutf-8" /><style nonce=3D"S2jUy3c0">@media =
+all and (max-width: 480px){*[class].ib_t{min-width:100% =
+!important}*[class].ib_row{display:block =
+!important}*[class].ib_ext{display:block !important;padding:10px 0 5px =
+0;vertical-align:top !important;width:100% =
+!important}*[class].ib_img,*[class].ib_mid{vertical-align:top =
+!important}*[class].mb_blk{display:block =
+!important;padding-bottom:10px;width:100% =
+!important}*[class].mb_hide{display:none =
+!important}*[class].mb_inl{display:inline =
+!important}*[class].d_mb_flex{display:block =
+!important}}.d_mb_show{display:none}.d_mb_flex{display:flex}@media only =
+screen and (max-device-width: 480px){.d_mb_hide{display:none =
+!important}.d_mb_show{display:block !important}.d_mb_flex{display:block =
+!important}}.mb_text h1,.mb_text h2,.mb_text h3,.mb_text h4,.mb_text =
+h5,.mb_text h6{line-height:normal}.mb_work_text =
+h1{font-size:18px;line-height:normal;margin-top:4px}.mb_work_text =
+h2,.mb_work_text =
+h3{font-size:16px;line-height:normal;margin-top:4px}.mb_work_text =
+h4,.mb_work_text h5,.mb_work_text =
+h6{font-size:14px;line-height:normal}.mb_work_text =
+a{color:#1270e9}.mb_work_text p{margin-top:4px}</style></head><body =
+style=3D"margin:0;padding:0;" dir=3D"ltr" bgcolor=3D"#ffffff"><table =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center" =
+id=3D"email_table" style=3D"border-collapse:collapse;"><tr><td =
+id=3D"email_content" style=3D"font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;background:#ffffff;"><table =
+border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr style=3D""><td height=3D"20" =
+style=3D"line-height:20px;" colspan=3D"3">&nbsp;</td></tr><tr><td =
+height=3D"1" colspan=3D"3" style=3D"line-height:1px;"><span =
+style=3D"color:#FFFFFF;font-size:1px;opacity:0;">=C2=A0 Bonjour Fii, =
+=C2=A0 Vous avez r=C3=A9cemment cr=C3=A9=C3=A9 un compte sur Facebook. =
+Pour terminer votre inscription, veuillez confirmer votre compte. =
+=C2=A0</span></td></tr><tr><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr style=3D""><td =
+height=3D"15" style=3D"line-height:15px;" =
+colspan=3D"3">&nbsp;</td></tr><tr><td width=3D"32" align=3D"left" =
+valign=3D"middle" style=3D"height:32;line-height:0px;"><a =
+href=3D"https://www.facebook.com/n/?confirmemail.php&amp;e=3Dcontact%40fii=
+dewgal.com&amp;c=3D12687&amp;cuid=3DAYgLMYQfasfLMniDQGkFOlVL6Qxcrc0IWQ_rrG=
+hJEHbNU5LR58s7QHukD2BBbPy4v7Tklj7pOAJ0IbBE21ucfvCSGlD33c00F6sAv-pQC0EkWYo6=
+slD4En63vX8OVXES1C8&amp;aref=3D1670015240047548&amp;medium=3Demail&amp;mid=
+=3D5eede6f9108eaG5b07a2a3ca95G5eedeb9270bbcG3c2&amp;bcode=3D2.1670015240.A=
+bzOWKnbvD2HHnUPGE0&amp;n_m=3Dcontact%40fiidewgal.com" =
+style=3D"color:#1b74e4;text-decoration:none;"><img width=3D"32" =
+src=3D"https://static.xx.fbcdn.net/rsrc.php/v3/yc/r/I92GqZOkKcu.png" =
+height=3D"32" style=3D"border:0;" /></a></td><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+width=3D"100%" style=3D""><a href=3D"https://www.facebook.com/n/?confirmem=
+ail.php&amp;e=3Dcontact%40fiidewgal.com&amp;c=3D12687&amp;cuid=3DAYgLMYQfa=
+sfLMniDQGkFOlVL6Qxcrc0IWQ_rrGhJEHbNU5LR58s7QHukD2BBbPy4v7Tklj7pOAJ0IbBE21u=
+cfvCSGlD33c00F6sAv-pQC0EkWYo6slD4En63vX8OVXES1C8&amp;aref=3D16700152400475=
+48&amp;medium=3Demail&amp;mid=3D5eede6f9108eaG5b07a2a3ca95G5eedeb9270bbcG3=
+c2&amp;bcode=3D2.1670015240.AbzOWKnbvD2HHnUPGE0&amp;n_m=3Dcontact%40fiidew=
+gal.com" style=3D"color:#1877f2;text-decoration:none;font-family:Helvetica =
+Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:19p=
+x;line-height:32px;">Action requise=C2=A0: confirmez votre compte =
+Facebook</a></td></tr><tr style=3D"border-bottom:solid 1px #e5e5e5;"><td =
+height=3D"15" style=3D"line-height:15px;" =
+colspan=3D"3">&nbsp;</td></tr></table></td><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr style=3D""><td =
+height=3D"28" style=3D"line-height:28px;">&nbsp;</td></tr><tr><td =
+style=3D""><span class=3D"mb_text" style=3D"font-family:Helvetica =
+Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:16p=
+x;line-height:21px;color:#141823;">Bonjour Fii,</span></td></tr><tr =
+style=3D""><td height=3D"28" =
+style=3D"line-height:28px;">&nbsp;</td></tr><tr><td style=3D""><span =
+class=3D"mb_text" style=3D"font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;font-size:16px;line-height:21px;col=
+or:#141823;">Vous avez r=C3=A9cemment cr=C3=A9=C3=A9 un compte sur =
+Facebook. Pour terminer votre inscription, veuillez confirmer votre =
+compte.</span></td></tr><tr style=3D""><td height=3D"28" =
+style=3D"line-height:28px;">&nbsp;</td></tr></table></td><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr style=3D""><td =
+height=3D"2" style=3D"line-height:2px;" =
+colspan=3D"3">&nbsp;</td></tr><tr><td class=3D"mb_blk" style=3D""><a =
+href=3D"https://www.facebook.com/n/?confirmemail.php&amp;e=3Dcontact%40fii=
+dewgal.com&amp;c=3D12687&amp;cuid=3DAYjZNzD5GEBQIxYM4c7Js92ZSXRlNLl7DU-cuC=
+j5f3FVuRnKoanO3LuYyVqdjuqskvLNG3NIW-fEYTawaMFn0h5yS_JyMFiXuz5xyC2b_to2yX4A=
+L_jS2Szc1UneBPUy-to&amp;aref=3D1670015240047548&amp;medium=3Demail&amp;mid=
+=3D5eede6f9108eaG5b07a2a3ca95G5eedeb9270bbcG3c2&amp;bcode=3D2.1670015240.A=
+bzOWKnbvD2HHnUPGE0&amp;n_m=3Dcontact%40fiidewgal.com" =
+style=3D"color:#1b74e4;text-decoration:none;"><table border=3D"0" =
+width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td style=3D"border-collapse:colla=
+pse;border-radius:6px;text-align:center;display:block;background:#1877f2;p=
+adding:8px 16px 10px 16px;"><a href=3D"https://www.facebook.com/n/?confirm=
+email.php&amp;e=3Dcontact%40fiidewgal.com&amp;c=3D12687&amp;cuid=3DAYjZNzD=
+5GEBQIxYM4c7Js92ZSXRlNLl7DU-cuCj5f3FVuRnKoanO3LuYyVqdjuqskvLNG3NIW-fEYTawa=
+MFn0h5yS_JyMFiXuz5xyC2b_to2yX4AL_jS2Szc1UneBPUy-to&amp;aref=3D167001524004=
+7548&amp;medium=3Demail&amp;mid=3D5eede6f9108eaG5b07a2a3ca95G5eedeb9270bbc=
+G3c2&amp;bcode=3D2.1670015240.AbzOWKnbvD2HHnUPGE0&amp;n_m=3Dcontact%40fiid=
+ewgal.com" =
+style=3D"color:#1b74e4;text-decoration:none;display:block;"><center><font =
+size=3D"3"><span style=3D"font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;white-space:nowrap;font-weight:bold=
+;vertical-align:middle;color:#ffffff;font-size:14px;line-height:14px;">Con=
+firmer&nbsp;votre&nbsp;compte</span></font></center></a></td></tr></table>=
+</a></td><td width=3D"100%" class=3D"mb_hide" style=3D""></td></tr><tr =
+style=3D""><td height=3D"32" style=3D"line-height:32px;" =
+colspan=3D"3">&nbsp;</td></tr></table></td><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr><td =
+style=3D""><span class=3D"mb_text" style=3D"font-family:Helvetica =
+Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:16p=
+x;line-height:21px;color:#141823;">Il pourra vous =C3=AAtre demand=C3=A9 =
+de saisir ce code de confirmation=C2=A0:</span></td></tr><tr =
+style=3D""><td height=3D"14" =
+style=3D"line-height:14px;">&nbsp;</td></tr><tr><td style=3D""><span =
+class=3D"mb_text" style=3D"font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;font-size:16px;line-height:21px;col=
+or:#141823;"><center><table border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr><td =
+style=3D"font-size:20px;font-family:LucidaGrande,tahoma,verdana,arial,sans=
+-serif;padding:10px;background-color:#f2f2f2;border-left:1px solid =
+#ccc;border-right:1px solid #ccc;border-top:1px solid =
+#ccc;border-bottom:1px solid =
+#ccc;">FB-12687</td></tr></table></center></span></td></tr><tr =
+style=3D""><td height=3D"14" =
+style=3D"line-height:14px;">&nbsp;</td></tr><tr><td style=3D""><span =
+class=3D"mb_text" style=3D"font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;font-size:14px;line-height:19px;col=
+or:#898f9c;">Facebook vous permet de rester en contact avec tous vos amis. =
+Une fois inscrit(e) sur Facebook, vous pouvez partager des photos, =
+organiser des =C3=A9v=C3=A8nements et bien plus =
+encore.</span></td></tr><tr style=3D""><td height=3D"14" =
+style=3D"line-height:14px;">&nbsp;</td></tr></table></td><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" align=3D"left" style=3D"border-collapse:collapse;"><tr =
+style=3D"border-top:solid 1px #e5e5e5;"><td height=3D"19" =
+style=3D"line-height:19px;">&nbsp;</td></tr><tr><td =
+style=3D"font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana=
+,arial,sans-serif;font-size:11px;color:#aaaaaa;line-height:16px;">Ce =
+message a =C3=A9t=C3=A9 envoy=C3=A9 =C3=A0 <a =
+href=3D"mailto:contact&#064;fiidewgal.com" style=3D"color:#1b74e4;text-dec=
+oration:none;">contact&#064;fiidewgal.com</a> sur votre demande.<br />Meta =
+Platforms, Inc., Attention: Community Support, 1 Facebook Way, Menlo Park, =
+CA 94025</td></tr></table></td><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr><td =
+style=3D"font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana=
+,arial,sans-serif;font-size:11px;color:#aaaaaa;line-height:16px;"><span =
+class=3D"mb_text" style=3D"font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;font-size:16px;line-height:21px;col=
+or:#141823;;font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;font-size:11px;color:#aaaaaa;line-h=
+eight:16px;">Pour contribuer =C3=A0 la protection de votre compte, =
+veuillez ne pas transf=C3=A9rer cet e-mail. <a =
+style=3D"color:#1b74e4;text-decoration:none;" href=3D"https://www.facebook=
+.com/email_forward_notice/?mid=3D5eede6f9108eaG5b07a2a3ca95G5eedeb9270bbcG=
+3c2">En savoir plus</a></span></td></tr></table></td><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr =
+style=3D""><td height=3D"20" style=3D"line-height:20px;" =
+colspan=3D"3">&nbsp;</td></tr></table><span style=3D""><img =
+src=3D"https://www.facebook.com/email_open_log_pic.php?cn=3DknTzsjrhvF&amp=
+;mid=3D5eede6f9108eaG5b07a2a3ca95G5eedeb9270bbcG3c2" =
+style=3D"border:0;width:1px;height:1px;" =
+/></span></td></tr></table></body></html>
+
+
+
+--b1_13191417adaf601396dfb28e0377f1e2--
+

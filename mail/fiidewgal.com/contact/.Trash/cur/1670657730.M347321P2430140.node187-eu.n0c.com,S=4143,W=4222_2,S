@@ -1,0 +1,79 @@
+Return-Path: <ab308443@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id h+6eFMI2lGO8FCUA3R2AvA
+	(envelope-from <ab308443@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 10 Dec 2022 08:35:30 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NTfnF4N3Qz34SDn2
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="hapPLbp+"
+X-N0C-MailScanner-eFa-Watermark: 1671262523.33826@jPiA1IjuUykS11aJqgP/Lw
+X-N0C-MailScanner-eFa-From: ab308443@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: EDEFB401AEEF.AD249
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-pf1-f169.google.com ([209.85.210.169] [209.85.210.169])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id EDEFB401AEEF
+	for <contact@fiidewgal.com>; Sat, 10 Dec 2022 08:34:49 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com EDEFB401AEEF
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com EDEFB401AEEF
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=hapPLbp+
+Received: by mail-pf1-f169.google.com with SMTP id g1so5252779pfk.2
+        for <contact@fiidewgal.com>; Fri, 09 Dec 2022 23:34:48 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=4WhPCbT0a/pq3eP4THskLrqodf5fSX+kDMlKe0NLgwU=;
+        b=hapPLbp+Vvy44iYq3WMh96CqeP9Xx8rBn6somhFg9AEEfP1rz/UthNiA0G2iKgHAFH
+         uqJdYkd8C/CG7sVwXnku5afl50ElMUnKDZRnIG4lV8qMA0UOCfdbpM6f2G0BnjpvwvDv
+         ijar7lHiXNMSnXKIq5pkif3PtAze8ptkHAmNs6c5ZmDtoJEfau/Lo7bmRX/kWiYYmDOc
+         rcCnGJ6Yyfk190dUzo6MGlHqsDZVvBNaEaj7aRvLRgLKp6NV+NyRn1ffFiU3FXbYIHF7
+         DnZsrEID8Q64RrTe5SeObUAxs+pIx9bs2WLPgMGRs5iiIROnQpTmc3fBXmW6qwxUTiuJ
+         +1TA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=4WhPCbT0a/pq3eP4THskLrqodf5fSX+kDMlKe0NLgwU=;
+        b=q5KE89yb4O96LXKnb+H3iyk+qHPGb7pf5S7+ZY9usSbk5EQbYTfrYHDf/DeZQ/yc9x
+         gjvsV8XwM8fASu2L3fL5U+Aow1SBC0LUHxIFe4YgFDxuRk3Ylxbtf87i1v8+8lFMkB19
+         8NDg2GcKel/tx/7iLPXQB5FuXy47FEjFHAJ4fJ6412F5OGaoEcJg9sEkBbPhtUz429XY
+         hDv13SoizKOdx3rUhcLI3ebNgN/EQJek6aPeREu8qPDU7hadFGr+vwkneBZXiBTQGe6R
+         fT6uY8d4tdqsYMmXP75qXnga7eXZbfJHslHxOBaMo3tMzlxmyBEkupAVt4xCri0tnWFo
+         IUpw==
+X-Gm-Message-State: ANoB5pnUAuIDSTCJcjgCg89+CuqPPCkHRUbJuPSa+pA+QjcPQDLlc7aV
+	JDgtpbEhoGAGbtZsLACPKeS4or0e2TuClmpDdZU251ax
+X-Google-Smtp-Source: AA0mqf7yqtGIqeoCZ+hYIXOdUW8SxlNoZebAGEyy8NZ+TY05uAVOwCAd3kwaaQDobkYIGfXKX4jzEPxsCV9nIfWGXIU=
+X-Received: by 2002:a05:6a02:118:b0:477:cce0:49d with SMTP id
+ bg24-20020a056a02011800b00477cce0049dmr60139816pgb.74.1670657687072; Fri, 09
+ Dec 2022 23:34:47 -0800 (PST)
+MIME-Version: 1.0
+From: aliu balde <ab308443@gmail.com>
+Date: Sat, 10 Dec 2022 07:34:36 +0000
+Message-ID: <CAGYEro1C8v5Nai8sUg6ZUyym2tb9txLtE9ky-PdmycNQ2JRNDA@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000fab57005ef744dcd"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000fab57005ef744dcd
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Eu s=C3=B3 portugueses
+
+--000000000000fab57005ef744dcd
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Eu s=C3=B3 portugueses=C2=A0</div>
+
+--000000000000fab57005ef744dcd--

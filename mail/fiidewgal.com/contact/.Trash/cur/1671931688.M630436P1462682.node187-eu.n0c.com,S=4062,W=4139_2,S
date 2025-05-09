@@ -1,0 +1,77 @@
+Return-Path: <aladjicisse1983@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id sLqDJSinp2OaURYA3R2AvA
+	(envelope-from <aladjicisse1983@gmail.com>)
+	for <contact@fiidewgal.com>; Sun, 25 Dec 2022 02:28:08 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NfjwS3gvyz1wy1
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="FGrEMXZZ"
+X-N0C-MailScanner-eFa-Watermark: 1672536483.66585@fp9KpRTNuAuqgDJUtACeRQ
+X-N0C-MailScanner-eFa-From: aladjicisse1983@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 14E26401AEF6.A0B15
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-lf1-f51.google.com ([209.85.167.51] [209.85.167.51])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 14E26401AEF6
+	for <contact@fiidewgal.com>; Sun, 25 Dec 2022 02:27:31 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 14E26401AEF6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 14E26401AEF6
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=FGrEMXZZ
+Received: by mail-lf1-f51.google.com with SMTP id m6so1471955lfj.11
+        for <contact@fiidewgal.com>; Sat, 24 Dec 2022 17:27:31 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=KPpXxil5vlVRAUEu6T5sYzItzubyzC2v5129JKVWmMQ=;
+        b=FGrEMXZZ202pA4sntc/T95DBULsEq2NvuVzJKBMpgdvlsBTItjDmSRZs2y+3V/2RIM
+         UpEK8x/v0gT3l3x/25eEQQWPDI/1dcifFyBrrsYgHEYPOfpbnu68AAyDTvxW4RpKu/fv
+         CcUnDERQpcSmYdumIwIqFdLViP8O6+Ef8ZcSZNJXUkyUgZW8sxlZzgkJiETOcviLmsun
+         WMULiBM7tP4QGgaTuxvvSLkzldAMikxt5kWejJiQeeHo7V5bwIb7ILJfLpxaEa9Xi6tY
+         0XKuzBMwyKT5ze0GLe7BS75j9/J1MyQsXKhmJYlKTlWCEwW+SK/3Dl1sWUlz3lj2Zq/P
+         MH5w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=KPpXxil5vlVRAUEu6T5sYzItzubyzC2v5129JKVWmMQ=;
+        b=J6JPc3WqvQRYyynZq8K+iQLW2tVy3GrwLTiCOA93kFiYSDI+lCP2VptXxBPB/QogWm
+         iqVlFFAOCDfAA3S/6f9QmKl0Bs2uXZIOO79dSJu19tl70fR4T02nYVnoDc58kXdihcMS
+         10HKQ9t+9uJB5+dtXG4dvBzMR4CbdhkXwyvW+1jmcnuftsV++GiHWBXJlAERmZ9oB8Ax
+         ur2VD3MWayHA/n5SCVnHdgK4Rh7v5j1+6RcE1Iln5vkykqxoVwE+R33UgZRSSkDAu44N
+         Tvg8zFOAwHS43Fl7jojhyOEeg78dbIJw9WjrgZiC2qzAe/7dPYYhjvK4UOFFF49+FMBl
+         v3/w==
+X-Gm-Message-State: AFqh2koqFPLEK6SU517UoXw9GGfBU6ThSUql3i2mIDRcda+/iOFdRBop
+	c/T4FNX9udOHW7CFPNUJh2BsUj/XMotj0R4keTYIFxax
+X-Google-Smtp-Source: AMrXdXvkyxMsFJDWrQLBnPbrBWj8eIfaEJ5sQawsXgE4gQDB+k040qZqq9qcA1wDUD2wa6INjmwjWC6EjqwJID2darg=
+X-Received: by 2002:a05:6512:3f07:b0:4ca:f873:7cf3 with SMTP id
+ y7-20020a0565123f0700b004caf8737cf3mr454453lfa.89.1671931650251; Sat, 24 Dec
+ 2022 17:27:30 -0800 (PST)
+MIME-Version: 1.0
+From: aladji cisse <aladjicisse1983@gmail.com>
+Date: Sun, 25 Dec 2022 01:27:17 +0000
+Message-ID: <CAEzzc8gN0Qw3iTZm3ZP23dT0YCd-rZxR5mif66snajof_Mn3-Q@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000001a20f205f09cec91"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000001a20f205f09cec91
+Content-Type: text/plain; charset="UTF-8"
+
+On djarama fami an
+
+--0000000000001a20f205f09cec91
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto">On djarama fami an</div>
+
+--0000000000001a20f205f09cec91--

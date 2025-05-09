@@ -1,0 +1,77 @@
+Return-Path: <lamaranatinkadiallo@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id FWrNF/dhpWNcDQEA3R2AvA
+	(envelope-from <lamaranatinkadiallo@gmail.com>)
+	for <contact@fiidewgal.com>; Fri, 23 Dec 2022 09:08:23 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NdfvB3qNYz34SDnJ
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="B80zyk0z"
+X-N0C-MailScanner-eFa-Watermark: 1672387700.1396@HH9y+BgEB6nc7ZWVXb8uzQ
+X-N0C-MailScanner-eFa-From: lamaranatinkadiallo@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 0D4FC401A42D.A03E2
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-pg1-f182.google.com ([209.85.215.182] [209.85.215.182])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 0D4FC401A42D
+	for <contact@fiidewgal.com>; Fri, 23 Dec 2022 09:07:48 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 0D4FC401A42D
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 0D4FC401A42D
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=B80zyk0z
+Received: by mail-pg1-f182.google.com with SMTP id d10so2857383pgm.13
+        for <contact@fiidewgal.com>; Fri, 23 Dec 2022 00:07:47 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=yFrywq6LP+2Ql+gxt+m1p5vqb8Ew+N8ey8C/4bmP+7w=;
+        b=B80zyk0z5bIlIHyKktZ1X7oZcp9qhX+orsb2G6/bFReVA0zSEUoNWZSVvlir4UHgtF
+         6cZrC69N6R8WBPPuKn/krcomUXQu14INCqON7Ed7U3LyzVLDmKXmND807SgMQSNBPaXm
+         CT8AaXnSFKamd4v2pMLv88411aGNXnZ4C4kkkwBNFHvJBCrmJXyWmgI6ci/0GbLIlGTY
+         v2EKdYSTw5fxiaBxjwpKnpUcdtltSA+VYv5VqXVt1xv9cTF9RziRl7/8e4jDRuiQEvPQ
+         BGRFD+Zm74GJsUz0jW7rbswhDMafHCGY98AIzeFmvpTn1KxlHwTfCU/Pflq2K6rGPk7O
+         y/Cg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=yFrywq6LP+2Ql+gxt+m1p5vqb8Ew+N8ey8C/4bmP+7w=;
+        b=P/gxgJk6W+Gne8R+uuQ8ofvDzz7DKYvjdqymHlA8rL9Jp7kazGCSg95/rykLaZkg/b
+         R30+r3JGx0VOkNbMwKjk7bmawLyt/D2pZTTFpVKzL8B5Ro5omkqdtr6zLcimY4SDyJP8
+         n4U3oegcirx4e0W9UGfX9WsBUZRu2JHJhForhamD2whCnRF5QKBnF72wK/s+MQdQtYmJ
+         lHAd9Fdu+6/aog/dWtQIWiTtrw945PrBoN+IJgZEkkbQEd8Z+wHDUjEerYi7lFppH58z
+         3s9nEzTe7594BUPPgu3ks+xLw5IQI5eplRI1tfI0WN99U4uLO0Q8VMKLc8zhtRdUk4Gk
+         nv3w==
+X-Gm-Message-State: AFqh2kpF1ghP2rgqkk4BrDQsGM1cNbDZbKNC85asw7a2DPyVtnTmLaou
+	Zc+ajW+UKhgxo/9vlFSnrmgtbuTJIsNWr5i4fmv2qWAE
+X-Google-Smtp-Source: AMrXdXvLptm5CPoeA3DmaWGAR+IpFVwNFk2yufS+/NgqneuP3Sy4m65ztMdYih6u+gvLps31kUoW1sWroDqKuNdwdIc=
+X-Received: by 2002:aa7:870c:0:b0:561:a494:b299 with SMTP id
+ b12-20020aa7870c000000b00561a494b299mr605259pfo.34.1671782865705; Fri, 23 Dec
+ 2022 00:07:45 -0800 (PST)
+MIME-Version: 1.0
+From: Lamarana Diallo <lamaranatinkadiallo@gmail.com>
+Date: Thu, 22 Dec 2022 12:32:09 +0000
+Message-ID: <CAEK83GS5S8f9Ac=84zMuNEyvkYGehYyxUWyv4tuK=eQ_XvKnNQ@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000da1e4305f07a479b"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000da1e4305f07a479b
+Content-Type: text/plain; charset="UTF-8"
+
+Hello
+
+--000000000000da1e4305f07a479b
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto">Hello</div>
+
+--000000000000da1e4305f07a479b--

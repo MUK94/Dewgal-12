@@ -1,0 +1,71 @@
+Return-Path: <dialloabdoul98@gmx.de>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id tDX7K7FisGP9AioA3R2AvA
+	(envelope-from <dialloabdoul98@gmx.de>)
+	for <contact@fiidewgal.com>; Sat, 31 Dec 2022 17:26:25 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NknZ84rt4z1tVw
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmx.de header.i=@gmx.de header.b="XAZWGFSy"
+X-N0C-MailScanner-eFa-Watermark: 1673108782.25853@PQF+EdEHkhtUmYZYiwDlQg
+X-N0C-MailScanner-eFa-From: dialloabdoul98@gmx.de
+X-N0C-MailScanner-eFa-SpamScore: s
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 26B9C4002DDB.A2694
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mout.gmx.net ([212.227.17.20] [212.227.17.20])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 26B9C4002DDB
+	for <contact@fiidewgal.com>; Sat, 31 Dec 2022 17:26:21 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 26B9C4002DDB
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmx.de
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmx.de
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 26B9C4002DDB
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; secure) header.d=gmx.de header.i=@gmx.de header.a=rsa-sha256 header.s=s31663417 header.b=XAZWGFSy
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=gmx.de; s=s31663417;
+	t=1672503980; bh=RKfYBwdXE0luzF3gdDdMNi9rtMaBQk3JWFS63anfDEc=;
+	h=X-UI-Sender-Class:From:To:Subject:Date;
+	b=XAZWGFSy26uDSyel6E5WDM51dAAKPrS7Ltk7R9wS42/F8N2X6+YS1J2/wqXJxIZKl
+	 kbUAyxPiQq7MhNTCUrZyt9Eo4D/K/95Vuiye3BRilIwh7WX06IbPobOdlI7EtrzxF9
+	 Os++MpQmG+XduGqmJ4eiBtlsX//oHEjPdieDPDQ3sRhHJw1roPpN0zVo6ji+Gf7hMd
+	 RFu1HFnw+0Yw5RogBsZSHzeYtC6iufC9xTZDKfaF4rrPhSAfAdYUV+PhXWn0q/oTMN
+	 qUEwf+VFzFoJ03TdNdcdWJW6i04ykLmm30gxlIQFVJFojaJwIc3dH9mcXmJRAU63uZ
+	 jbUEBjpxWn8Eg==
+X-UI-Sender-Class: 724b4f7f-cbec-4199-ad4e-598c01a50d3a
+Received: from [77.247.85.69] ([77.247.85.69]) by
+ msvc-mesg-gmx123.server.lan (via HTTP); Sat, 31 Dec 2022 17:26:20 +0100
+MIME-Version: 1.0
+Message-ID: <trinity-7858237f-85ea-41aa-83cd-4cb3016a0684-1672503980522@msvc-mesg-gmx123>
+From: Abdoul wahab Diallo <Dialloabdoul98@gmx.de>
+To: contact@fiidewgal.com
+Subject: Text
+Content-Type: text/html; charset=UTF-8
+Importance: normal
+Date: Sat, 31 Dec 2022 17:26:20 +0100
+X-Priority: 3
+X-Provags-ID: V03:K1:xGwldk9XCs0CZc/UzwtxySJePp5G1ZOdtspOtIe0d/xQ9RO7mpX9BymDK4kLmDe1G+ZNn
+ fPG8NxB5SMq8wCjJP2T8Wy5QFsUJyrL1TOyVVtyJ9iyOHe2BOM9/T+plA2fSoNWfr60j994dN7yC
+ XcbF1bTDp5CvCgt1m6hT7U+7wGUszain07i+jEb1N/71TPQn+pvV0/0LpBnPj6iw8tW1OmFDX31H
+ nwvSkVusyANW1Fpb2W702WmDvgqFZO35KkeHcaxQAyGZI9OKmthkGZ1HlCDXoDkp4YepcqumYJgN
+ JKfIZRx3cjT7DRQE0dW+nch
+X-Spam-Flag: NO
+UI-OutboundReport: notjunk:1;M01:P0:FAhMnO6Nh/A=;OSLUMWfaU+AWYosZyRML+mrucZW
+ p2mI+ssciAE4rvNJanS2URTJM3WtBu2zVPnslcZk9wBC1lF6YbS/lM278Lz4HxHOPRU7S0EFr
+ rUUiRJnSotNx8EqbZR4F67lBb3O/g9epu8JOePaclIgFOrlQGcK+JFRF9giCykZUZlit/TMc9
+ vJoEsnnIGLvSfa0EB7TySIjD5mw3TNS4R+XkZuT+M3vUeDlA26cg4L8g3SN3DPPp5z0Iw0Db4
+ +djqcxgqrRk+jcMPLbTMk4Gma25vJFC+bORa77R7BadaSWoh+a/RuhK0q/XMfVoxZSfGacNkt
+ WaS9HolcLHbsJbf+rOqFQCWmhDDQdxJs3ZKrIwiW+7DuHsLntzpUQyyhLyE9TlZ+UxBuzCEzF
+ Ka5NVd1CoZjVrYTXdpRmQ2GBSCJYeWy2H/4h+3JuF6rbcY/pOG2Zny4iaHpLF25+GlewbbLIg
+ kO4YqqkvWUQSoQTLzqtJz7cTCoVqD/ODMlAYeDrr49AmCkXL47O5a0JxUf9ILf1F2UXX5QMAq
+ r4wOFpogPWPMF+JiMbvrn/+qR9E0YtyESJ8FTmvwyC7LUbwlF/vf6+J5qKeyiaYE6iCN51A8i
+ e9yPAQqcer3Zt+LonFaEsOvxha/v/knRcbuJTdIqwno9tjc7zCdj7HYHzS0sCdL0/6wVmN0zQ
+ SZiPmstlUy8hZsGDmIzSzMeSDKtXERQfzjhN6bJ3W0aQZhZDl4WrGjFtzL6o11otJHWl6gcs4
+ Hcc473hpgqQW1wctxftmR9x7QGxv3p5O24ZV37eusH7s1XDetjmNurP9drrnIa/pXa02pISKl
+ POU80Q94Z1V7JPi+TmBkdCLg==
+X-N0C-Node-IP: 185.221.182.45
+
+<html><body>Slt jesper que vous aller bien<br/><br/>--<br/>Diese Nachricht wurde von meinem Android Mobiltelefon mit GMX Mail gesendet.</body></html>

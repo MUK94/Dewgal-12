@@ -1,0 +1,47 @@
+Return-Path: <contact@fiidewgal.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id mARcB220tWSGcAQA3R2AvA
+	(envelope-from <contact@fiidewgal.com>)
+	for <contact@fiidewgal.com>; Mon, 17 Jul 2023 23:36:45 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4R4b4r6w2wz34SDmk
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="S1x9kRcN"
+X-N0C-MailScanner-eFa-Watermark: 1690234602.96651@+TxVUO7/DCBy63pvl6vSkw
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: E78D84011458.A8226
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from [127.0.0.1] ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id E78D84011458
+	for <contact@fiidewgal.com>; Mon, 17 Jul 2023 23:36:42 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com E78D84011458
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com E78D84011458
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1689629801;
+	bh=U9mh57F36+1NovngneewwhiKshlxvCkuJDzCDHpoalc=;
+	h=From:To:Subject:Date:From;
+	b=S1x9kRcNgSgfA22XqR7c8dpNTSv3FscsNKdDpoMmoClkm7h24d3b6o6ERpUzJrD9G
+	 rOXm/Dtlik7EGmV2S1+XCUNggA/u3TSEI8q6vXFQTSFya4+5DRK+a3HXcsNefiTQEG
+	 tXishyQbG9ZZgBalVfXgeF27+5+bMn0jeOOITMdE=
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: contact@fiidewgal.com
+Subject: Inscription des membres
+Message-ID: <6baef335f6fc63b6d72d508d89fd5228@fiidewgal.com>
+MIME-Version: 1.0
+Date: Mon, 17 Jul 2023 23:36:41 +0200
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<p>F=C3=A9licitations !<br></p><p>Vous avez un nouveau membre enregistr=
+=C3=A9 dans votre syst=C3=A8me.</p><p>Nom du membre : Mamadou Barry</p><p>L=
+'e-mail est : mbarry2@mail.bhc.edu</p><p>Profil de membre : https://fiidewg=
+al.com/admin/members/3195</p><p>Merci,</p><p>Ne r=C3=A9pondez pas</p>
+

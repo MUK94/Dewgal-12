@@ -1,0 +1,77 @@
+Return-Path: <mbah63214@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id c2EmMkutmWOVoRMA3R2AvA
+	(envelope-from <mbah63214@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 14 Dec 2022 12:02:35 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NXCBM4qSZz34nwc5
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="UPaZbAwo"
+X-N0C-MailScanner-eFa-Watermark: 1671620552.81717@eU6VY40ik0Q3Dct02+47Pg
+X-N0C-MailScanner-eFa-From: mbah63214@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 355B34048DA4.A0A6F
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-lj1-f175.google.com ([209.85.208.175] [209.85.208.175])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 355B34048DA4
+	for <contact@fiidewgal.com>; Wed, 14 Dec 2022 12:02:01 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 355B34048DA4
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 355B34048DA4
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=UPaZbAwo
+Received: by mail-lj1-f175.google.com with SMTP id h10so6251761ljk.11
+        for <contact@fiidewgal.com>; Wed, 14 Dec 2022 03:02:01 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=qQpojJQLpRrxPfJnQELl4osEgF3T9CYI5xcKewkeLFs=;
+        b=UPaZbAwoJetB6AaC5yy+lqiyllVoQmODKx87IXk1mgvg7CLTxH5ol5+uZwavX+dpiy
+         oAQaVF3Ru/a9bbpsifiSE0j+ZY6LTCbiTu7SJHovEMvCaF/39e7LQ3PV42N5OAVnFA4T
+         lNowBR9vQQlpqaBY1+xVGvKIfGjsINxiqfwh7DgKQi6t+qDUE4vuqIsmCs7S+qGsqGuF
+         iM2uUInPcGfvwejDJplmE3zFe16+GD4V+Tm6/o4No228Pu59f07W9ZnBG/3/QbQ7SiOw
+         YJujw1JxvGrvnDVEzZEUlN8xPwMmOLmD4vXTpgGtc+2SbiR+8x1VDACVPug2K0qGmakz
+         V6pQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=qQpojJQLpRrxPfJnQELl4osEgF3T9CYI5xcKewkeLFs=;
+        b=WTx5/nYauXwo8B2lDVKd3ZqdEsEgP9nPsywtRlkBQToADTycGb3r7k856wT8FltVZr
+         IXD98RS73TEruaoi8yEUf1dGjWoD/XIt1Tg6/muU0V8BYGkWQ4Ftr4AyAYBjoHXlx9/y
+         Dn0EbUis3vRaKX7bvph5oPjjXk4P4o3sN99j+mckMBUgbNsYQlTmRK1+zHNNNYXAefQV
+         ATLP8Th86IFExftRVyaYNMe2CbnSZ38TO1c5OGxCPLHwCHR93BROFmtltAkbXJ09PKAI
+         ylJEyRWEWTnvcOIYMxEf7tLIbYFInQ7mhvU14hM/MJr38jOLBMQEdYkLZN+JrJdQFsOR
+         4qIw==
+X-Gm-Message-State: ANoB5pmlT4xminSKf76OGMXH+7UIucFXhzeniiSaCsnQrFW4N345dD2O
+	4GVS22pqIo365WOAOh50oV/0Qj1sAOCaXt9m0TJylwq0
+X-Google-Smtp-Source: AA0mqf4FyTKlWkX3x79O4s02ChLBR3GHf3//lIOhG21F0FGhTu1pT4HHJOTMkxR+C0Rqq1XMuo6p2tR7sbG8gRO7q98=
+X-Received: by 2002:a2e:b5b4:0:b0:27a:eaf:7f30 with SMTP id
+ f20-20020a2eb5b4000000b0027a0eaf7f30mr4885679ljn.528.1671015720176; Wed, 14
+ Dec 2022 03:02:00 -0800 (PST)
+MIME-Version: 1.0
+From: Mohamed Bah <mbah63214@gmail.com>
+Date: Wed, 14 Dec 2022 11:01:48 +0000
+Message-ID: <CAG2uRaUsh3A4uYpD8tK0y1RhXv_eqG1DpUBH7cLCt-J7G4Dayw@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000006a4fce05efc7aa9e"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000006a4fce05efc7aa9e
+Content-Type: text/plain; charset="UTF-8"
+
+Please i only speak English language so sent the messages in to English ok
+
+--0000000000006a4fce05efc7aa9e
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto">Please i only speak English language so sent the messages in to English ok<div dir="auto"><br></div></div>
+
+--0000000000006a4fce05efc7aa9e--

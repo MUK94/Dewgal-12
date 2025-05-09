@@ -1,0 +1,78 @@
+Return-Path: <baa305503@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id OBVBCJ2PpGMODTkA3R2AvA
+	(envelope-from <baa305503@gmail.com>)
+	for <contact@fiidewgal.com>; Thu, 22 Dec 2022 18:10:53 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NdGzd0CBTz34SDnJ
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="P9gQBSGg"
+X-N0C-MailScanner-eFa-Watermark: 1672333844.98023@z9KHWCfvteyPV+A7uZryiw
+X-N0C-MailScanner-eFa-From: baa305503@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: s
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 4CD20401AEEF.ACCDF
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-pl1-f177.google.com ([209.85.214.177] [209.85.214.177])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 4CD20401AEEF
+	for <contact@fiidewgal.com>; Thu, 22 Dec 2022 18:10:10 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 4CD20401AEEF
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 4CD20401AEEF
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=P9gQBSGg
+Received: by mail-pl1-f177.google.com with SMTP id s7so2600835plk.5
+        for <contact@fiidewgal.com>; Thu, 22 Dec 2022 09:10:10 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=5Oxt8w+vkyeqV2AAlJeQeK/d+ue/tmaR0FuobC9qja8=;
+        b=P9gQBSGgvqZa+MAwonq0AbukU43PhooRKGRY0QOrdbK5lODNTDnAKGJsspG5I0d7KS
+         bRXHfl+9HN8tXHbZ3vTVLvCdh2elVOOmKvpBzZ4Agguw7aySKaQh395SK2GxZvjLv7Zt
+         ZygTQkjyw44IaSEpuwd2GnzoWQd2evWV9ovIkM3YTchEmhB/4V9v46TWzwMMzUuvFUKA
+         tovLEQDfDRuYIM9avof/peTCIwrVUpI0PIXHA0VbG5sWoDUg3PblJ6mFTSQ/Kg1FeZe/
+         qMug98NCk1+S7n69Xjv8J5I+3wK4wIWscvsfSd14PI0MuAURiRP0+omsj4kdJDxCMyi+
+         D0Jg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=5Oxt8w+vkyeqV2AAlJeQeK/d+ue/tmaR0FuobC9qja8=;
+        b=H8dFEyb3Zrh5BkyBP5QYUmtYR0oJJAEoifHvAXbojR1OIF/Nj9CF8UdyzalooilffJ
+         AigR3Q8alh8w9PxVlLoMMbaWoMDa5v5AM2A0PXv/XCjO8Gp6hfwR4XtP9n7Kme8onVYO
+         7erKskFnehcC+yNr/FPvwlKJgRlMO6FVEyEgciVtZH6Y0GDBU+OiTieqoPaOnu7B3+0O
+         PADrpP4e5hbVMH2XG3811q/lssRn5jRfYh0rMpmYjYtu5rqQ1//Xp2CwglxQK37WuImr
+         DcjeZqtIzka5yWAMjis3VjCsRTxM+c2cowhmGmIyLUBKWF/DKMMCVHXH4S6l++qFqDpV
+         qgaQ==
+X-Gm-Message-State: AFqh2kq6Qnq1/FJf+E5M7s9JlcRn+/+h8f2ZbELRmR9D9J8xrGSuxqv/
+	FTz8JBRdXNDEEhjQ/2fKN7JgE/2pn2Ib+v5VjWMQVfUJ
+X-Google-Smtp-Source: AMrXdXuX9x8Fq7Mxr+PEOKK6KdOmkS1tzAtsR9t1VhSe1o8or5DNYv4lVK81g5fcM9ZgvY+/NiQPoBTSE7sVAZZE8oY=
+X-Received: by 2002:a17:90a:6344:b0:223:2edd:51c0 with SMTP id
+ v4-20020a17090a634400b002232edd51c0mr496409pjs.188.1671729008079; Thu, 22 Dec
+ 2022 09:10:08 -0800 (PST)
+MIME-Version: 1.0
+From: Amadou Ba <baa305503@gmail.com>
+Date: Wed, 21 Dec 2022 23:55:26 +0000
+Message-ID: <CAJpvTK7WmuyAyYNPTE6rtCHK9w9ntKm0EeDXsUxiT=sxCNOykA@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000aff97705f06dbd8f"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000aff97705f06dbd8f
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+--000000000000aff97705f06dbd8f
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"></div>
+
+--000000000000aff97705f06dbd8f--

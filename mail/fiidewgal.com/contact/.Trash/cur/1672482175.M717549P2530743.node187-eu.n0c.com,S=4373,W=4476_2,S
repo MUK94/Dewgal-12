@@ -1,0 +1,103 @@
+Return-Path: <>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id QNuvKn8NsGO3nSYA3R2AvA
+	(envelope-from <>)
+	for <contact@fiidewgal.com>; Sat, 31 Dec 2022 11:22:55 +0100
+Received: by node187-eu.n0c.com (Postfix)
+	id AC5114002DAC; Sat, 31 Dec 2022 05:22:55 -0500 (EST)
+Date: Sat, 31 Dec 2022 05:22:55 -0500 (EST)
+From: MAILER-DAEMON@node187-eu.n0c.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: contact@fiidewgal.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="A240D4002DAF.1672482175/node187-eu.n0c.com"
+Message-Id: <20221231102255.AC5114002DAC@node187-eu.n0c.com>
+
+This is a MIME-encapsulated message.
+
+--A240D4002DAF.1672482175/node187-eu.n0c.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host node187-eu.n0c.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<mamadoualioudialloyornoneymar@mail.com>: host mx01.mail.com[74.208.5.22] said:
+    550 Requested action not taken: mailbox unavailable (in reply to RCPT TO
+    command)
+
+--A240D4002DAF.1672482175/node187-eu.n0c.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; node187-eu.n0c.com
+X-Postfix-Queue-ID: A240D4002DAF
+X-Postfix-Sender: rfc822; contact@fiidewgal.com
+Arrival-Date: Sat, 31 Dec 2022 05:22:53 -0500 (EST)
+
+Final-Recipient: rfc822; mamadoualioudialloyornoneymar@mail.com
+Original-Recipient: rfc822;mamadoualioudialloyornoneymar@mail.com
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; mx01.mail.com
+Diagnostic-Code: smtp; 550 Requested action not taken: mailbox unavailable
+
+--A240D4002DAF.1672482175/node187-eu.n0c.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <contact@fiidewgal.com>
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NkdVj3ztLz1tVw
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="a7DhxAev"
+X-N0C-MailScanner-eFa-Watermark: 1673086968.81952@kVyz7H7hdVhlOvgCVFyyiA
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 82C064002DAC.A4926
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 82C064002DAC
+	for <mamadoualioudialloyornoneymar@mail.com>; Sat, 31 Dec 2022 11:22:46 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 82C064002DAC
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 82C064002DAC
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1672482166;
+	bh=DR3TmqttEOP+P6hTy/2wwDxTzI5SpZTDZYKAr9FMa0M=;
+	h=Date:Subject:From:To:From;
+	b=a7DhxAevLG+4kndyMUtYUKyppE8QV2RGrEC45dS7rDzJi0Lxm8+/FoWfWMkqmIaYp
+	 SqXwv5T1AvzLCv4Yvil1mwH7yCWA/Q7YudXCIGpmU5FFH4rF+x9s9/DQncvgofqkEk
+	 w6PGfxQvOSId2UBRKxQh4tTsO6swvIlSwwf9GvKE=
+Message-ID: <6610ecf228d5e04ba7b4da52c9b82bcb@fiidewgal.com>
+Date: Sat, 31 Dec 2022 11:22:46 +0100
+Subject: =?utf-8?Q?R=C3=A9initialisation?= du mot de passe
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: mamadoualioudialloyornoneymar@mail.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<p>Bonjour&nbsp;Diallo Mamadou aliou,</p><p>Votre code de v=C3=A9rification=
+ pour la r=C3=A9initialisation du mot de passe est : [[code]]<br></p><p><br=
+></p><p>Merci !<br></p><p>Ne r=C3=A9pondez pas</p>
+
+
+--A240D4002DAF.1672482175/node187-eu.n0c.com--

@@ -1,0 +1,78 @@
+Return-Path: <idissabaldethierno@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id EAMRE5l3sGOnwyoA3R2AvA
+	(envelope-from <idissabaldethierno@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 31 Dec 2022 18:55:37 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NkqY51WF9z34nwbq
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="Pyf58WOZ"
+X-N0C-MailScanner-eFa-Watermark: 1673114134.95244@AE3Msv9bTE8RoYNbM/P8Bg
+X-N0C-MailScanner-eFa-From: idissabaldethierno@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 9D7104063565.A8586
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-wm1-f44.google.com ([209.85.128.44] [209.85.128.44])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 9D7104063565
+	for <contact@fiidewgal.com>; Sat, 31 Dec 2022 18:55:01 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 9D7104063565
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 9D7104063565
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=Pyf58WOZ
+Received: by mail-wm1-f44.google.com with SMTP id k26-20020a05600c1c9a00b003d972646a7dso14690457wms.5
+        for <contact@fiidewgal.com>; Sat, 31 Dec 2022 09:55:01 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=yvUwnFaJxIfkbegH0MBmTAJSdHfUmzkb4d+DZMlb0vo=;
+        b=Pyf58WOZwd3Q3icZtRComxEjfWLUulCnWP4pw2JkP4uDYdNeplG5syz1te/5jptDtx
+         xTFY48/cOvEHubEmppbSp+el+DR/9oqcOJzOB6vnVH1wsYkVx7bn5S1ezbEuIc7qe2ET
+         +goFS0mjD1jqPXSc4AnY4a0tQg9G2PIARWrP61ax6hjB9uj+8/1YLwD0vobdsdjov63y
+         Jby1dJ0Ud9laflWkXxqq4BPzeb0HbJU8xHi7gjm+ORClcRZ2N43Ro1KpwuVi6+z7ZOGc
+         6pj1Rm+9uVcfQWZpJ84Bhc4aislyOqrfCAsTCsHhu6tjs7GJOpAwd5bGXPSpEOfmkXbw
+         d78g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=yvUwnFaJxIfkbegH0MBmTAJSdHfUmzkb4d+DZMlb0vo=;
+        b=GTD17Zd7cdC8bvc2gWTglAHucVqfhlRLQpFzLZ2meDBbNIOsUOgudImyw2YYJ02vg9
+         UFjwbCmVxv4g1Hn9rykJ7eEe+Uqdt3eyiDYZlrjwrLCQEMucmvd53kSENvNElT4gtI3T
+         DNfIcQ80+iCO9+Gc9oeUPCNFy2dfmtQcHVrystQ4AEo3Vjt+5KO3EnrMcZlQAru9/hXL
+         FH/X2mXEhPA4G3eswJPx2s3eoGrVvJ+kZd6Mw91KAyxTTj3ZIKamIge0AH4whBnkR8qA
+         H/8WpiCgDGW3f3TV7WTOm7xrLJr+N3XhMbq5FCXG3IQGZJJLi6hqrgdMn+xfUUaHGmf3
+         l+fw==
+X-Gm-Message-State: AFqh2kriwjokZCP2W/MFM7+Arclg2Fnu++tv5d1ctGZkXwes8mKMmN5g
+	fYcJZwgiOkFekTcVRGyTkEJLVxQPvQtWpref424NUhZ7
+X-Google-Smtp-Source: AMrXdXtbBdPXDfMRQHayK85/9xn/E4Uvs31EnFQ399Gr8hQVXvNDIvgteaoZsQ3xTFnvanBsr+84tsBX4MNaa+LGsmc=
+X-Received: by 2002:a7b:cb97:0:b0:3c6:e1b5:71c2 with SMTP id
+ m23-20020a7bcb97000000b003c6e1b571c2mr2069718wmi.94.1672509300766; Sat, 31
+ Dec 2022 09:55:00 -0800 (PST)
+MIME-Version: 1.0
+From: Thierno Idissa balde <idissabaldethierno@gmail.com>
+Date: Sat, 31 Dec 2022 17:50:42 +0000
+Message-ID: <CAO0krOj5fj8j9-SYir4mXYQFBd5pfchB3u3ZKLtG7ZNhN=n6rw@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000c17ccb05f1236a48"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000c17ccb05f1236a48
+Content-Type: text/plain; charset="UTF-8"
+
+thierno idrissa balde
+
+--000000000000c17ccb05f1236a48
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">thierno idrissa balde=C2=A0</div>
+
+--000000000000c17ccb05f1236a48--

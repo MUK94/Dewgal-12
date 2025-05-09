@@ -1,0 +1,78 @@
+Return-Path: <masaidoudiallo753@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id td+XHbXLO2TSGgQA3R2AvA
+	(envelope-from <masaidoudiallo753@gmail.com>)
+	for <contact@fiidewgal.com>; Sun, 16 Apr 2023 12:19:33 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4PzmPw2GJ2z34SDmj
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="qtH7tJ8u"
+X-N0C-MailScanner-eFa-Watermark: 1682245167.32295@k4jlTu456F6R8JC7lvOwSw
+X-N0C-MailScanner-eFa-From: masaidoudiallo753@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: ss
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: D2FEB401AEEF.AE23F
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ua1-f49.google.com ([209.85.222.49] [209.85.222.49])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id D2FEB401AEEF
+	for <contact@fiidewgal.com>; Sun, 16 Apr 2023 12:18:52 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com D2FEB401AEEF
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com D2FEB401AEEF
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=qtH7tJ8u
+Received: by mail-ua1-f49.google.com with SMTP id o2so15061618uao.11
+        for <contact@fiidewgal.com>; Sun, 16 Apr 2023 03:18:51 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1681640330; x=1684232330;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=HSq3p1QMf9+mY0cmU48qe81oR2rKUuk4T0aONks6pp0=;
+        b=qtH7tJ8uMc+K142TaUK+zjaLHjfSd/4uwm3kB7jKSaQAUyNgSA7AMG8Xr2IvWBg+dj
+         gc3K1IMvwyT5uPVSYNAxuNFRg2bE379apbNUwc5PYGePKwoGhkh+h9PyRns3B4Ik/eiA
+         7Lyidkdsg4WWZFwITDk0PAnphh4QOrtPmDtCjJ0/DeIHHCIBlGi4FnOQ/ssU2we8Beio
+         yC6fLfJ+5zMKpSnuOSS+1Gy7qjSHmGQXUSrwDPWOJ1rhHtYjV70O/P9YzxqPRtc026Zu
+         +JekEQgaKXa2xb8ezVFszs4jyGeHZyGjfQMIi8uSkVOa4QT4WRQMufc56137GyDbIjBe
+         s57w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1681640330; x=1684232330;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=HSq3p1QMf9+mY0cmU48qe81oR2rKUuk4T0aONks6pp0=;
+        b=lLHtG+Kl3YreJ0deVvssmRe4yQ30POVj85ZAwcT7R4ql58uKTBjvn99autIxdLNq+D
+         dNJfREacoO3OQhmQmVWCaKv5MOB36DQGbtDCVDhp99GgFwD8A6SY9V8KPc01/iKV7ZQJ
+         hp6wKFoD9Ez1pWFaWbUAIBiCpXbk0bVlDf/6D4SqFE+ijUNbIjGrBM3gyRsGcFJue1TG
+         /DWGMJXB1GGXFTFX0PLpn9FQdkm4f4fS6Tmp1wS83Dm7BuNmCwprAyoujYF0+L6foNcE
+         CwCDEZ7r+AK+Us1IIthxdRwaO63edkSZH7kW8roNEEjtWrZ6JO6ri46BsUuDPn5n4PQZ
+         Uu5A==
+X-Gm-Message-State: AAQBX9ceGgoZaxqMKgD9QLt3yFX1FKNss88iHD0ZEQ7psXsdvSjpfC48
+	T6gBjGPOz/AnI4BhRzXmJzk3+wzo1q7Q3VIhctp/RId+
+X-Google-Smtp-Source: AKy350bJIS+VFY0XNVDs6noCh3YpztOCZJ1qh70DDfRcA8/nSuYonS6jrgoGgVasUjvlG8/OTz9StZrTmQqnhzwn/3Y=
+X-Received: by 2002:a1f:2012:0:b0:440:60f4:cb30 with SMTP id
+ g18-20020a1f2012000000b0044060f4cb30mr4464093vkg.3.1681640330480; Sun, 16 Apr
+ 2023 03:18:50 -0700 (PDT)
+MIME-Version: 1.0
+From: Masaidou Diallo <masaidoudiallo753@gmail.com>
+Date: Sun, 16 Apr 2023 10:18:38 +0000
+Message-ID: <CAKeya_unVSLHWEB-iO4Cc7nOpLrvY_k+Ez=DxXhuxxBZ4dXgGQ@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000089ce5405f971660f"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000089ce5405f971660f
+Content-Type: text/plain; charset="UTF-8"
+
+masaidoudiallo753@gmail.com
+
+--00000000000089ce5405f971660f
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"><a href="mailto:masaidoudiallo753@gmail.com">masaidoudiallo753@gmail.com</a><div dir="auto"><br></div></div>
+
+--00000000000089ce5405f971660f--

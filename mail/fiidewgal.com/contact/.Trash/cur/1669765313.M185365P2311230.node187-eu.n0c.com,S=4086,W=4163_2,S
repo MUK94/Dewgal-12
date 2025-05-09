@@ -1,0 +1,77 @@
+Return-Path: <diallohassa97@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id SV75CsGYhmM+RCMA3R2AvA
+	(envelope-from <diallohassa97@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 30 Nov 2022 00:41:53 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NMJlN3GMjz34SDnJ
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="VFOCsX5w"
+X-N0C-MailScanner-eFa-Watermark: 1670370109.5455@ZcUAGjRYsEoYThXd0+pxAg
+X-N0C-MailScanner-eFa-From: diallohassa97@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 841764002B91.A5B52
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ed1-f47.google.com ([209.85.208.47] [209.85.208.47])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 841764002B91
+	for <contact@fiidewgal.com>; Wed, 30 Nov 2022 00:41:15 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 841764002B91
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 841764002B91
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=VFOCsX5w
+Received: by mail-ed1-f47.google.com with SMTP id e13so21913543edj.7
+        for <contact@fiidewgal.com>; Tue, 29 Nov 2022 15:41:15 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=P4HkZKrcT0ThPRcXSOmH04z/rEKr4T3/TAlpXrZCnAU=;
+        b=VFOCsX5w+cEXgcWz6D5r9orR76s9EqyaO6tKrJQ5lrlht7wqHgJiqd50ptaRgsTrHq
+         IXbWq9MVgSkLXjg3ers1Tky5WoLZJA7Y062tPzLxzzEFmXLq1jtZzGv2CiVoPgbDohlp
+         HYIFCMcMDbnCmwVSnd43beK86gWTWF2i/QclLB1/nCn1qEu6aTXsyEugIakT5x+VDyOT
+         FDCO1uYkPkahzCbdSFgccVhzLm903D+uDXjF3ArueWb8nn7tltVSAxN0EF5DLNTB9ISc
+         +Du2RO5TswOaA/7xAUzHMLW8cxAUY5bLU0NRCP1UT5KADREOxEpOVbtFlBrKjXSOK8ub
+         +++g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=P4HkZKrcT0ThPRcXSOmH04z/rEKr4T3/TAlpXrZCnAU=;
+        b=HL/wU+8vvAkRYpv1HTcifA+8e6qvccs5kCyIKGvNOcG0KVF5oL1cT5OsHVPYSJ+hUv
+         HhYhR0Xjl8fLWDh24RM7h0+mjDVgjW0WxgLnH9tNtoamIjX4cdVWYqGBk3lzy26B2G89
+         dTqUachkgMU6Ba2nu8zbrBB9i2S8skmXVCrzVOL86xpEvjPO79jLhrzcPoCYQD1hTfsg
+         gQxne28j3VELvDPOhy20QKrONXEbds0ulTosH9GPqFye9ugPtVl1lTmHBHIt0hBJRzKv
+         WXb1uI/7q26E3mNX3emejwC+R0Ir2/Rzmq8Ntr+ceR/YXloVei6InwR0H/YPvBY6SCm6
+         Aafw==
+X-Gm-Message-State: ANoB5pkOY/qvr9Uwwc9kVF57dtWeEKpAsdyBDTAnwuOdjjqHHB7cFX2T
+	uwDfnPGfe5+hKDRqtoSsa1vdivnLq4GpYOvUDBJi4b1B
+X-Google-Smtp-Source: AA0mqf4PtIaJVSPiVbS5e0avJi8gymZi3qNSWfFFg3FZT2R+OENMmHwCwlbiAN0ZLId7CyfOEYTiM4389gtEBIC4C44=
+X-Received: by 2002:a05:6402:1f14:b0:461:c7ef:b09e with SMTP id
+ b20-20020a0564021f1400b00461c7efb09emr40348392edb.58.1669765274760; Tue, 29
+ Nov 2022 15:41:14 -0800 (PST)
+MIME-Version: 1.0
+From: Diallo Hassan <diallohassa97@gmail.com>
+Date: Tue, 29 Nov 2022 23:41:02 +0000
+Message-ID: <CAEoRp-Y9CMjkpaGTazHgaB389hbKOpATbOFYcLCzV+_872rcwQ@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000000f7a4d05eea48642"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000000f7a4d05eea48642
+Content-Type: text/plain; charset="UTF-8"
+
+Assalamou alaykoun
+
+--0000000000000f7a4d05eea48642
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto">Assalamou alaykoun<div dir="auto"><br></div></div>
+
+--0000000000000f7a4d05eea48642--

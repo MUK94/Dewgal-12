@@ -1,0 +1,78 @@
+Return-Path: <youssouf2522@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id oSWjM6x2o2PGDC8A3R2AvA
+	(envelope-from <youssouf2522@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 21 Dec 2022 22:12:12 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NcmNX08fvz34SDmh
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="X4iXsc42"
+X-N0C-MailScanner-eFa-Watermark: 1672261929.61354@yNov++yHOYzw9vP/vPvjLA
+X-N0C-MailScanner-eFa-From: youssouf2522@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 997CF401AEF7.ABA80
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-vk1-f177.google.com ([209.85.221.177] [209.85.221.177])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 997CF401AEF7
+	for <contact@fiidewgal.com>; Wed, 21 Dec 2022 22:11:35 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 997CF401AEF7
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 997CF401AEF7
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=X4iXsc42
+Received: by mail-vk1-f177.google.com with SMTP id v81so102313vkv.5
+        for <contact@fiidewgal.com>; Wed, 21 Dec 2022 13:11:35 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=+fCB34874xUxVH7y8kFOXdw/j6J2XkS+3w6ERCX4QWs=;
+        b=X4iXsc42cNpty4NA6eBk6mQzzuqeHS6ml5DqlYlruaOENnK8dXxO2pKWNrOm/pcJpw
+         SZoCHqk481GvkvWWyvlkoTyT2ViSnqkhUrMQcUWiBbxt+gxgaTscbdBKzNm+0O1Rt6KA
+         OZum0R8Jcx3LxkJWwDw7ZoMXu8y1wg6Gz9VlYzBCndY6EgFLvmfukmUlvoyrQ0Fcs0Ks
+         DNvhBe1IqUT5fHd0uUKY/jvW0ONLIZFkqzGxgVLk68BU08K3/NHkGEAEPHzjMBWm4IXW
+         G9LXSmEwbtblHjbBfURydya+o9gPkgTapPTFLyD6u7vOUGD78f3Tw1tSpDItOdGYUG0l
+         2ajQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=+fCB34874xUxVH7y8kFOXdw/j6J2XkS+3w6ERCX4QWs=;
+        b=o46eCpXeEwFjYSOimT6Yfm6kYO+9l+YmMuFVZ0zET1UfoBMrybk75Vn4bXfeDdplhK
+         kdR9KERzngBtxHn4pznbetP14oVcLb8L7NkufxBMzF/gB2cys4uShkb60wgOfqcBj4TD
+         zCsBx1+gnFSIgPBds6T369o5VokvrqOVMI8rbfLSOtMrrDW6YFOyybQRuo8e6phKz68b
+         XYghyqMrOIsUFvjr7ylW+PeMSEJj4XPzeSbnOPecVW9sn5p/dhlbcqClxFo31BzTAo13
+         5TPS3cEGjBj8Uku3TzxL0Z2Y6y6MUUvq8FDXU6DsyAa7Vd+THxRn5ZuySk0EEZiA8dcy
+         O9+g==
+X-Gm-Message-State: AFqh2kpaVB9Uo9y3mXaJcS9NxsGqhmPBwVXsJULPpD5RIw9rudR33ymj
+	bju4kkR4pek8ZDjNvsCWWuatnQvGSscc4ukNidzCuhRl
+X-Google-Smtp-Source: AMrXdXtJ6EcMVfGTLkRV2uiygz8R9wyuYvhhYM2nriiUkWGHd7E34POt30OKO8y08t0PyRLxMZyCXd9kjxMgnZstYRg=
+X-Received: by 2002:ac5:c30c:0:b0:3bd:c450:c71f with SMTP id
+ j12-20020ac5c30c000000b003bdc450c71fmr355242vkk.30.1671657094057; Wed, 21 Dec
+ 2022 13:11:34 -0800 (PST)
+MIME-Version: 1.0
+From: Youssouf Diallo <youssouf2522@gmail.com>
+Date: Wed, 21 Dec 2022 21:11:03 +0000
+Message-ID: <CAJQ2OTBRdbmqTnH15StCsiTAyMqqJbTFwNwLjEin6=iyLzLiXg@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000047123105f05cffa6"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000047123105f05cffa6
+Content-Type: text/plain; charset="UTF-8"
+
+Salut
+
+--00000000000047123105f05cffa6
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Salut=C2=A0</div>
+
+--00000000000047123105f05cffa6--

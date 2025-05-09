@@ -1,0 +1,136 @@
+Return-Path: <hajaissatu81@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 0supAC6g22NtgxoA3R2AvA
+	(envelope-from <hajaissatu81@gmail.com>)
+	for <contact@fiidewgal.com>; Thu, 02 Feb 2023 12:36:14 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4P6xZ519B3z34nwbx
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="F3azkQ0g"
+X-N0C-MailScanner-eFa-Watermark: 1675942459.50171@jdL8D/W5BAdHugVyJUFeWA
+X-N0C-MailScanner-eFa-From: hajaissatu81@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: D506B401B23D.AEF76
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-pf1-f179.google.com ([209.85.210.179] [209.85.210.179])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id D506B401B23D
+	for <contact@fiidewgal.com>; Thu,  2 Feb 2023 12:31:14 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com D506B401B23D
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com D506B401B23D
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=F3azkQ0g
+Received: by mail-pf1-f179.google.com with SMTP id z3so968328pfb.2
+        for <contact@fiidewgal.com>; Thu, 02 Feb 2023 03:31:14 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=g7PM+8Ka7GRkVUGfk3vVUmxskfV4izHhrSCUAHmSeOc=;
+        b=F3azkQ0glgOfIZ0PSYZQ1+3pXFFzEg1j4rGQUU/dbt/DTRgiI6BEokPnC/On5meZi+
+         glayNl1lCioJYg+rxgdTJjsCt+Z99Xlz68E0Qw7UfuqeiJvo/h3kxv9aOFVZo34NEdWg
+         KgialfeqzelS6Yp/3ABmiUYNMp4gWwH6NVMNXPIO9sQs58Fzql1Zb9DWXlTOZ9MHwXLU
+         f94LL5KTtJ+MV4Ux7cXxtT7K1H/7z6xF1vSKau2OuA74vw/ryTIqC2OmN++TfBLIrPQv
+         4bC7zTSUDgx7txjFn9J1sDvKSweXt5Bey2k1ThDhlKUV5qVaK9pWJWLw/kq6HIDYMK7W
+         koSg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=g7PM+8Ka7GRkVUGfk3vVUmxskfV4izHhrSCUAHmSeOc=;
+        b=Ac09ul7XBZ5Tdburn9xb6aoJGH2ZqXceyh8dqGGHngmOkvT+bI5EYiEDP3Vb87thSt
+         w01eoKwXlJy6P9uALYai0Bllz9gxfragk187XRtymnj5uf5qkM7HaA2HzhWfHh/xskP6
+         J/e+TldsbL5ahWIJY81eniMR3a0eIJ32Q3BN8THmAnATMs0Yyyv7Xi2u0mE0h+sMz2AZ
+         eTWjJd1vr72n4MkB/REhoj96CLKOWT2+ARCemTC9pFEsF+yXfSZboDhxemXd0THZpHPJ
+         /UHtinFU2SrO6573Z1TjjIGjYFnBSuyK9ZId26rsKyTlcMgiQY1kHxJfWnuillaDz64w
+         huIA==
+X-Gm-Message-State: AO0yUKWxmVO3okLErfjsBARarNX3VEDeMw1ytMFy5nyRRxYnxiLecHGU
+	YPjePJ1mflJDwvl5BJ7bs0HFDYjbh7/caDx6Boh7O3k2
+X-Google-Smtp-Source: AK7set+JTK14O0hssI/+CbHFFEx8stdPNlQBj3miSwi6zlTAl9MXKMbZYxEpfSp7gyYggkdzMXaHLDuJGvcarVVvLbI=
+X-Received: by 2002:a63:409:0:b0:479:45df:425e with SMTP id
+ 9-20020a630409000000b0047945df425emr1005819pge.116.1675337472480; Thu, 02 Feb
+ 2023 03:31:12 -0800 (PST)
+MIME-Version: 1.0
+References: <5ad2ce342dea3b480a622d2b6de8aada@fiidewgal.com>
+In-Reply-To: <5ad2ce342dea3b480a622d2b6de8aada@fiidewgal.com>
+From: Aissatou Djouhariou Diallo <hajaissatu81@gmail.com>
+Date: Thu, 2 Feb 2023 11:30:58 +0000
+Message-ID: <CAEoMEm_eqy=Qy1B6khvY7Le2UbFD2eqQaExUtPS=QTzhF6Gw6g@mail.gmail.com>
+Subject: Re: Rappel avant la suppression de votre compte sans photo .
+To: =?UTF-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>
+Content-Type: multipart/alternative; boundary="000000000000ed1b8005f3b5e6bb"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000ed1b8005f3b5e6bb
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Vous pouvez supprimer le compte,  j'ai d=C3=BB enlever la photo par ce que =
+je ne
+comprends pas comment =C3=A7a marche. J'ai eu des demandes d'int=C3=A9r=C3=
+=AAts que j'ai
+accept=C3=A9 et =C3=A7a c'est arr=C3=AAt=C3=A9 l=C3=A0, j'ai suivi les inst=
+ructions bet nothing at
+all
+
+On Thu, 2 Feb 2023, 10:27 , <contact@fiidewgal.com> wrote:
+
+> Salam Aleykou,
+> Vous =C3=AAtes inscrites sur la plateforme Fii DEWGAL mais vous n'avez pa=
+s
+> ajouter de photo
+> de profil ni ajouter vos informations sur votre formulaire ; dans le
+> soucis d'ameliorer
+> le bon fonctionnement de la plateforme nous vous prions de bien vouloir
+> remplir vos
+> informations et d'ajouter votre photo de profil =C3=A0 defaut votre compt=
+e
+> sera supprimer.
+> Si vous n'avez pas acces =C3=A0 votre compte veillez forunir votre nom ,
+> prenom ,
+> date de naissance ,e-mail adresse ,photo sur notre whatsApp au 001 646
+> 752 9115
+> ou scanner le QR code on vous aidera =C3=A0 ajouter vos informations et
+> photo.
+> Merci pour votre comprehension!
+
+--000000000000ed1b8005f3b5e6bb
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Vous pouvez supprimer le compte,=C2=A0 j&#39;ai d=C3=BB e=
+nlever la photo par ce que je ne comprends pas comment =C3=A7a marche. J&#3=
+9;ai eu des demandes d&#39;int=C3=A9r=C3=AAts que j&#39;ai accept=C3=A9 et =
+=C3=A7a c&#39;est arr=C3=AAt=C3=A9 l=C3=A0, j&#39;ai suivi les instructions=
+ bet nothing at all</div><br><div class=3D"gmail_quote"><div dir=3D"ltr" cl=
+ass=3D"gmail_attr">On Thu, 2 Feb 2023, 10:27 , &lt;<a href=3D"mailto:contac=
+t@fiidewgal.com">contact@fiidewgal.com</a>&gt; wrote:<br></div><blockquote =
+class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid=
+;padding-left:1ex">Salam Aleykou,<br>
+Vous =C3=AAtes inscrites sur la plateforme Fii DEWGAL mais vous n&#39;avez =
+pas <br>
+ajouter de photo<br>
+de profil ni ajouter vos informations sur votre formulaire ; dans le <br>
+soucis d&#39;ameliorer<br>
+le bon fonctionnement de la plateforme nous vous prions de bien vouloir <br=
+>
+remplir vos<br>
+informations et d&#39;ajouter votre photo de profil =C3=A0 defaut votre com=
+pte <br>
+sera supprimer.<br>
+Si vous n&#39;avez pas acces =C3=A0 votre compte veillez forunir votre nom =
+, <br>
+prenom ,<br>
+date de naissance ,e-mail adresse ,photo sur notre whatsApp au 001 646 <br>
+752 9115<br>
+ou scanner le QR code on vous aidera =C3=A0 ajouter vos informations et <br=
+>
+photo.<br>
+Merci pour votre comprehension!</blockquote></div>
+
+--000000000000ed1b8005f3b5e6bb--

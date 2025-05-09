@@ -1,0 +1,134 @@
+Return-Path: <hajaissatu81@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id IHAbG1Sjl2ME9wYA3R2AvA
+	(envelope-from <hajaissatu81@gmail.com>)
+	for <contact@fiidewgal.com>; Mon, 12 Dec 2022 22:55:32 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NWFmf5QpTz34nwbm
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="Ml9pXwOC"
+X-N0C-MailScanner-eFa-Watermark: 1671486925.37164@HqtgtHgYE0CUn5JfGdnmfw
+X-N0C-MailScanner-eFa-From: hajaissatu81@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: CE0BB401A44B.A7A7D
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-pj1-f49.google.com ([209.85.216.49] [209.85.216.49])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id CE0BB401A44B
+	for <contact@fiidewgal.com>; Mon, 12 Dec 2022 22:54:52 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com CE0BB401A44B
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com CE0BB401A44B
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=Ml9pXwOC
+Received: by mail-pj1-f49.google.com with SMTP id o1-20020a17090a678100b00219cf69e5f0so1396849pjj.2
+        for <contact@fiidewgal.com>; Mon, 12 Dec 2022 13:54:52 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=RbZUefmj7W2n16Xu1foEHYSnsjmOFvrivJV2vq0bhKs=;
+        b=Ml9pXwOCSbS5zz7a5MhIsRWrdQSplRKRT+rEGPaeLs/9MEeHvnlXzuYRZiY4HONAlJ
+         WbL9q/bt7GuFlCLeVSQOreRKSiJXH5Msl7R0c6T53/wejlavko3oMIccMyRVaPjXF/sU
+         621+lcHh4im0IAb4qto8lb4w+miDeVbCyQK00fJ9XfZB6/yxoCpiEQP1JIjheSPtTgKt
+         4Yj+4ui9Os49xbFjET/JlqHxPRF00sz/qTWNjuHNEbU1uci5RY6+EJYdWzZTK078boMr
+         ssB8XDL5dOJ5FiGWtrBI/LUPDZIa49kxvBm7VKqPp0zhBi6k0I2mUDkBKh0+5g0Ug5so
+         ZT8A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=RbZUefmj7W2n16Xu1foEHYSnsjmOFvrivJV2vq0bhKs=;
+        b=HHMLapD+gc9OlgzPqfe8MGU4w7sTy6xV7LD3cyvmDADAF6/Zi7cDWwuW6cdynVk4DH
+         V1ugCVdlqNnYiNQHAW8ICSeoeVZklYbTGNlAYGWKhlWnmbCqh9ENEwQ3Yvbl3OGtumEF
+         n+m40tVUHmKN7r/l9A0GD5MpuF8BxgY/sI7LViSm6en5wlXwB96JULRpPQfNNwtJ4ifG
+         s9ydj0b5UTAVt0KV70n7MKVObgx+/iHMZz1SZLOm7tSSa0KHPq3rad7dEdZyswaCt+Ln
+         KmUI0iLiYLXZM/USGtK0CghKStWCV7zXiJiemlkSFvp0btz8GLGmx7p73CNdiH8PLvGH
+         WuVg==
+X-Gm-Message-State: ANoB5plIp64rSVp4KBCtLofTV6f1pEnyeQHSfho9AHFwS0L8xs74HKoC
+	Cn03aTNefg7f8cQuvKc34KeNfW84CnDVse5h7DJepn5n
+X-Google-Smtp-Source: AA0mqf6k97e2w2d/suF59DVVeuQlO1l/Fa/syS1J2gSBZ2OqaPQJX31JQdTNBRd6+MIm5Jee+sJLk1snwDLQEzhe2pI=
+X-Received: by 2002:a17:90a:cf96:b0:21b:99ea:cde5 with SMTP id
+ i22-20020a17090acf9600b0021b99eacde5mr48514pju.149.1670882090257; Mon, 12 Dec
+ 2022 13:54:50 -0800 (PST)
+MIME-Version: 1.0
+References: <861189f6f66d655f96950ef3d43442fc@fiidewgal.com>
+ <CAEoMEm-ndgfkNO6xJA-7ownRwnJ2h3wNrCv0eCWU2kV+Cipjww@mail.gmail.com>
+ <bb2707267d1111c326c44157469dc5ff@fiidewgal.com> <CAEoMEm_WFHS+kdb7Eqkk=tK_HLywPwTysYpmFQrwzYgJ1Jy-qw@mail.gmail.com>
+ <7092b374f1841cfcec4241aa5d6c812e@fiidewgal.com> <CAEoMEm-VJj5LEKS33TNs52HcwzbZKGh=nu8eGfL42UKk_VZmKg@mail.gmail.com>
+ <CAEoMEm8yrpNrUaBfofs171RcEeLi9FbB8zBbCYrFJV8RctoKoA@mail.gmail.com>
+ <aac14ac5deaf3eda1421d4421de45e4c@fiidewgal.com> <CAEoMEm_u5f3S0uisFOn6b7f_mLNRX6cADzuWedDL9m_4OhMvZg@mail.gmail.com>
+ <23b6a234f3b3c47c6d07a857ee1644fe@fiidewgal.com>
+In-Reply-To: <23b6a234f3b3c47c6d07a857ee1644fe@fiidewgal.com>
+From: Aissatou Djouhariou Diallo <hajaissatu81@gmail.com>
+Date: Mon, 12 Dec 2022 21:53:29 +0000
+Message-ID: <CAEoMEm-P1WowSuc0pw0vz409CzqtSxFUfkKfAZAdmBko=vBjiA@mail.gmail.com>
+Subject: Re: Photo
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000073921605efa88da1"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000073921605efa88da1
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+3 octoobre 1981, je suis divorcee et j'ai 3 filles.  Je suis assistante
+executive Billingue.
+
+On Mon, 12 Dec 2022, 21:33 , <contact@fiidewgal.com> wrote:
+
+> Le 2022-12-12 15:21, Aissatou Djouhariou Diallo a =C3=A9crit :
+> > Mon email est : hajaissatu81@gmail.com
+> >
+> > On Mon, 12 Dec 2022, 21:19 , <contact@fiidewgal.com> wrote:
+> >
+> >> Le 2022-12-12 14:38, Aissatou Djouhariou Diallo a =C3=A9crit :
+> >>> Bonjour
+> >>>
+> >>> Merci de trouver ma photo ci-bas, pour toute information
+> >>> complementaire mon num est 622 50 69 11
+> >>>
+> >>>>
+> >> J'ai vu votre photo rappeler moi votre e-mail s'il vous plait pour
+> >> vous
+> >> retrouver et rajouter votre photo.
+> ok j'ai vu votre profil donner moi votre date de naissance svp.
+>
+
+--00000000000073921605efa88da1
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">3 octoobre 1981, je suis divorcee et j&#39;ai 3 filles.=
+=C2=A0 Je suis assistante executive Billingue.=C2=A0</div><br><div class=3D=
+"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr">On Mon, 12 Dec 2022, 21=
+:33 , &lt;<a href=3D"mailto:contact@fiidewgal.com">contact@fiidewgal.com</a=
+>&gt; wrote:<br></div><blockquote class=3D"gmail_quote" style=3D"margin:0 0=
+ 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">Le 2022-12-12 15:21, A=
+issatou Djouhariou Diallo a =C3=A9crit=C2=A0:<br>
+&gt; Mon email est : <a href=3D"mailto:hajaissatu81@gmail.com" target=3D"_b=
+lank" rel=3D"noreferrer">hajaissatu81@gmail.com</a><br>
+&gt; <br>
+&gt; On Mon, 12 Dec 2022, 21:19 , &lt;<a href=3D"mailto:contact@fiidewgal.c=
+om" target=3D"_blank" rel=3D"noreferrer">contact@fiidewgal.com</a>&gt; wrot=
+e:<br>
+&gt; <br>
+&gt;&gt; Le 2022-12-12 14:38, Aissatou Djouhariou Diallo a =C3=A9crit :<br>
+&gt;&gt;&gt; Bonjour<br>
+&gt;&gt;&gt; <br>
+&gt;&gt;&gt; Merci de trouver ma photo ci-bas, pour toute information<br>
+&gt;&gt;&gt; complementaire mon num est 622 50 69 11<br>
+&gt;&gt;&gt; <br>
+&gt;&gt;&gt;&gt; <br>
+&gt;&gt; J&#39;ai vu votre photo rappeler moi votre e-mail s&#39;il vous pl=
+ait pour<br>
+&gt;&gt; vous<br>
+&gt;&gt; retrouver et rajouter votre photo.<br>
+ok j&#39;ai vu votre profil donner moi votre date de naissance svp.<br>
+</blockquote></div>
+
+--00000000000073921605efa88da1--

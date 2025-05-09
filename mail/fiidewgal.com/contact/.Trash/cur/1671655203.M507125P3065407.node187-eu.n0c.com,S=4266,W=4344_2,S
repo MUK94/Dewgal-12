@@ -1,0 +1,78 @@
+Return-Path: <md4725866@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id AMAmHiNvo2M/xi4A3R2AvA
+	(envelope-from <md4725866@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 21 Dec 2022 21:40:03 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NclgR2n20z34SDmh
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="juCd//uH"
+X-N0C-MailScanner-eFa-Watermark: 1672260000.9014@6wcpN13NDcgiFguVtQz9WA
+X-N0C-MailScanner-eFa-From: md4725866@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 5C306401AEF7.A3A7A
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-oo1-f51.google.com ([209.85.161.51] [209.85.161.51])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 5C306401AEF7
+	for <contact@fiidewgal.com>; Wed, 21 Dec 2022 21:39:27 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 5C306401AEF7
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 5C306401AEF7
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=juCd//uH
+Received: by mail-oo1-f51.google.com with SMTP id c190-20020a4a4fc7000000b004a3addd10b5so7985oob.1
+        for <contact@fiidewgal.com>; Wed, 21 Dec 2022 12:39:27 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=u4LGzazYwOnNYArRoGbHMftkOYIWqkaueSJ64CKW02k=;
+        b=juCd//uHrXhHNtt8Q2fQRXAvUdnswX8j8lITmSd1e5ERsdeMKJjIX4D9l4+Gbk3Sa+
+         GqaQGzNhd3rzrSHxy8q0EcLdOIkx1e4ukbOKLjxcVsnPNLY0ZUtjFgZ9c4ppplzn1BaK
+         Amazv4sYYCOQEqq5s7ObQVJtIldE/5tTkyIh4lCceAfi94pEmDvY4whdlDObdp3mx20x
+         q3Qas58Op4taGg2TcYxUtp3Onzj5yeZ2c5O6tHH16+oLXIAy6VX77Bw6SLk6+WAuBkBt
+         RtT75tRniCDJiTHrhpbjumYvFB6sgahgMo63MSOlUixvstAEcl5xU/BcTT/o8vQSttID
+         Ahwg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=u4LGzazYwOnNYArRoGbHMftkOYIWqkaueSJ64CKW02k=;
+        b=VqdrpArKLQQU4hnG0eYBLW2Jeg9VqBVmckft07E+O/kjzjFyInvmAZ7BlCXGegQlYL
+         k3G4UqqDKDM++78tiu0burdas1nDvB4cEv5WZdFxvBGaj936dZljtllltlAy30aFBLoR
+         HPFfYrMj0wn1vJjSms1wZs4imxeV6vuoo2dlzqH3xTkCNVCMRZQ/FMk9TshNY7O74KTj
+         tbKlhlGe1oFlVTXeh092/qPEd3LCEwY7BdwNuQisOOIWq+VIkMbhJC54u6tSxNlAjWDA
+         mwkxa9ZcGEopUNLyc1dM0l6lEnOQz6DjHyEvUSxvzp/5qn2SML/OPhnjfKM0cgis45N+
+         hawg==
+X-Gm-Message-State: AFqh2kriYJ7xLZSI5AQlYbDJg24zcQCAy7gR6MkinXUAaNhElf56seY8
+	xH936Yi3Omu8qw83AdzoDp1I8+oVj6DGMnhoRoxXEMqu
+X-Google-Smtp-Source: AMrXdXv8zJhdihXOnSEqk7zJa62G4GhmNcqd2ySLViUhgFQt3hkiorBouL5tE06xlITXm53LAiKC9yl7eBdb+vf8ko0=
+X-Received: by 2002:a4a:dd9a:0:b0:49f:4297:5612 with SMTP id
+ h26-20020a4add9a000000b0049f42975612mr146516oov.13.1671655165688; Wed, 21 Dec
+ 2022 12:39:25 -0800 (PST)
+MIME-Version: 1.0
+From: Mamadousaliou Diallo <md4725866@gmail.com>
+Date: Wed, 21 Dec 2022 21:39:08 +0100
+Message-ID: <CAGbpH=UzrNP0kr5u_MbuF_-dhQJZEpAH7maVNcjwrRXJxYQWGA@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000567fc705f05c8c54"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000567fc705f05c8c54
+Content-Type: text/plain; charset="UTF-8"
+
+Lorsque vous voyer mon message et vous m'ajouter dans cette plateforme
+voici mon adresse WhatsApp 0024162246543
+
+--000000000000567fc705f05c8c54
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto">Lorsque vous voyer mon message et vous m&#39;ajouter dans cette plateforme voici mon adresse WhatsApp 0024162246543</div>
+
+--000000000000567fc705f05c8c54--

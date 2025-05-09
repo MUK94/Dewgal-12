@@ -1,0 +1,86 @@
+Return-Path: <abdrodiallotmo@yahoo.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id VEHRCo71sWPXfTkA3R2AvA
+	(envelope-from <abdrodiallotmo@yahoo.com>)
+	for <contact@fiidewgal.com>; Sun, 01 Jan 2023 22:05:18 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NlWjS4ZYPzQPhYj
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=yahoo.com header.i=@yahoo.com header.b="NtcipsWN"
+X-N0C-MailScanner-eFa-Watermark: 1673211914.30801@PRjDxT6h5RaRptqfTzfWVA
+X-N0C-MailScanner-eFa-From: abdrodiallotmo@yahoo.com
+X-N0C-MailScanner-eFa-SpamScore: ssss
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 69F764008347.A236B
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from sonic309-21.consmr.mail.ne1.yahoo.com ([66.163.184.147] [66.163.184.147])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 69F764008347
+	for <contact@fiidewgal.com>; Sun,  1 Jan 2023 22:05:12 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 69F764008347
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=reject dis=none) header.from=yahoo.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=yahoo.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 69F764008347
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=yahoo.com header.i=@yahoo.com header.a=rsa-sha256 header.s=s2048 header.b=NtcipsWN
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1672607110; bh=/6KUCNngwr/vz/mj0eNylpmS5gbYqspftTSZcF6A5WU=; h=Date:From:To:References:From:Subject:Reply-To; b=NtcipsWNGkM8l4FrlzWwulFZKmyF+yfyM3Lu3zA9dZblEORmq4VqYVV8e5pabhGbaJWIu0faArboKTViDuWE0QTGttt/Z0CJel71jckMCf0dd5Fb1iVLCWjQQnoUeeS/wvQ6pOyNurOmPFNGj8NXbV5SLQk8IbWcGe+x8JtHoyqSAY0zdK9h1Ynb9clsTEdIKc4K2BWWkOQol7GXflL+uTICfNFihrIv2t12DrbIhh3Zy1LS5hTo8l/OYCV5GUPDBhtO5KUg96FCC0xV5qMBzTrh3TVnjexz11zoicq9FsdZfmFKBt7Hdlabr+/Wq7bNBJ/TMzWjYD4NnKtYOHiI7A==
+X-SONIC-DKIM-SIGN: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1672607110; bh=69r5+0w7dCe8iymLiZeZVW1peCtOQIUcRiXUobifASe=; h=X-Sonic-MF:Date:From:To:From:Subject; b=AU6XVwKQQ89yHrQPyKlWWBHQk8NfRjiez4HGZtDE/Kxpg30mg2Sa0+YGhmUDC6g7CXFGy+v5G5s7eAbW9J1Uo0O/P2oCWZJRpjdR/GxM05edeJkKOuK9tlEfTCTFLkznmIQuqBCHS+ksbehQ7shNhEIWMqQvcGpeRk+8cPyZ/B2Nup1oGvJzAGhOa3YWsIxqDivPKN9oturNt6caF/9XU9HvXlmZe/h00pOitNz6XnlquGoBcTlxvp6C97xSohW+QkLYDg1t9zuh+vrY+FSXOeHEZL1Cx6j98AT3gvTQsFDqaWE+wi96e1X3ZhtH8PHrBztVECxJTUnd+Y1eaPHo2Q==
+X-YMail-OSG: XfuEFP0VM1knWuDwFfzQiRd_sZkmICIHcmLOFPhxq7Kk50kVTdRkZvzfcsIMx4l
+ FHcmfgOiXVn3ZAjyCTNzQj6vXSItepOlO6OyvgU3XGzWCnPR7O1y8Ul0BBk_ReY9zdCFFxzcfxzB
+ dqJ9aKZX4gu.s22HciXZPibA6QiQhczcEXhFdfYLrBsW6PCB0Yca0SKjJFtRDU_kvdLZfMys9EDs
+ ViRhFZsIHBx21WWIuM1Goi5dIjQBQgASyABvUYW5cE93XokuCt54BbwNbnaR.n..fYjO3_ia3Wcj
+ rw6rGRp0seL0SFB638BH.BO5F2nVgwHkJx5tV9YbYGZujzBiL84GQxE3o0JuUY5UZSPKODGnst09
+ gZOiP.v3LHabf228ElAJANxNuoTSk9ShDS5moQKUhFABOScQuWeze16yumdcdIuGQ2EvW_Gtxv2O
+ BVlBwWlmC9UGeX0LFAsyAMyfZV8ZRWm79HUKPNUaFcTkbTn9we5qvH1hIjZLlS.mz7Fm3OROd0wZ
+ v_6UTh.XXp45Bv7PvZLKoCCXK9ZaH.31y48nI5bmJFiulRwBCveDFKlQFGGgRan5jUlhfGU1TJSJ
+ zo5P86EfP1FFWldkEXBRHPBsVUVWOUyMEsQM3zGBf3hwqLuehtBM2zY3HoWw8n_4gdHVBHGXaZMl
+ UheWdFQlSDgiabGFmxCY2OD2r7yU4EaF.6Ppglf1kSg8hfMCuaIidDNExW2wXI_MEUJDM_EjobeN
+ j1BLlNCkY4J45.mRDu8SuswO_WKmPdQvITUTo50mZCc23KihPrC_CNV1YMDuuLeo5ZE2ETmM04.B
+ 6UnCjO1UpI2Wp6W7dctFz64NEOKXIHK6GgHc2yHEUNosljF6CAh.toK.K7LBaMXhQZSQWYnppQA.
+ FJMr5PvQ3Hmb7k.FTF2nxXYsjftrrycNHgaKCwvUgpfzyQU4.U5fOGnsoFb8Fa8dIq.q1XshZdt8
+ XNYwNxqnrP6h4.ERPczi0xY9Cb2pSs9vT_ZvhovUr7wgysvf3b.JkPh9YzMAsiBlJGg8z4fLxwNX
+ ovJ8G_ia8MGcFjcRmW6g3EyRjLOdcDZh6.8Y1atQxHFxgaFNcvUZBF.fn4BKYKZTQzJIyfysfhgW
+ t_Y08t_1BpghAVnAfafhHFtPF2cDgQnquSnrt6WUbWJOMg1BIDd_aM.TUtbpoZvB3vaXz64heK4K
+ sIBkHVRIu9VedH97cLtKw_C7NtDmJU5RQEvtAk9RPFdMJOfRo3x47lN_JczIpQPLb3XrzbLZIegh
+ gADCcSC52LUfuu7._8_Pb91m2_9V3zqK1gYCDgVTt3c_FLB0TjH34vdGXQLJ.teSnV5FdfvH0n_S
+ RipFEf7CVbrDL.5.sj.h1QIOM5xd13_nhsXDSTrLpi0C3LubPg7jAt1b_x3ePyVaVH3Q74HzuK2p
+ 6fYgrJNgU50AYjRfjhj1_T2FO0rlXSwryKOB0BNU0pRLsqlHSkUS_zHCq8n0k3XY4VXBtXMkKQHg
+ 9szcwPJIwlo6J2._E5dKfot6mG2AEd3hjMtK9IjFsGIwFA1tImpmXR_FT3tzTzIh3.U4RSSdL8Ev
+ OCDMYPKbt3OwYWc77ZQUP7CrVTHRp04IBfxgmxUrFAKBSa84NSEYm7gtlhesHZ0Vq2jJHXHNa9b5
+ xkgvx_OnB44DjanqzpuXAIU91FiHBiw8L_lohCpWePYGuun.Avwl7dypYVwjmm5zis_Yesf9epM1
+ xmZcpnNiOui_Rfgk8qNOoz4vPX8zp7FH_O3ADi7.lFcfzgM5gaRur389psWw5xdcVV2x0aki_.rH
+ 2yrTEXxayLRVGJAdnR9UZSKwvZtGPBnW2rqXhTSkBY_kCQDKsJCnGRlWuxmUTNAR2pj9ZEM7Jmeq
+ h25hsY4O6tzu518qvpO_L_Mj.RgbcaU0Bi95_d.dZqDkwcCX3M57rYvqOgyOnEKecare8nlU_Yvu
+ OFOgMnrjfnF7DpXJGmF6wBmmt3FgyYeY0rl9QJ3yvCxfVmF1gViNjKpJsQ823BOtwmpEwzG5sl9v
+ vwUCoU8VbQ2pa7RhSRy6CMGioyskZy6VDSrcO9bCQdTyCvo7pbIp.8MQeGoRG0wUlvobOzD8OgyT
+ X4s5yTX89WUSaul6q7QWxEI1bNb5PFuOtXlI.0ydcAFMELhGvQRCtfuunDuSszc3Cbj0qbFyBx.d
+ qLOi1Vc2A3o8VM8lX
+X-Sonic-MF: <abdrodiallotmo@yahoo.com>
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic309.consmr.mail.ne1.yahoo.com with HTTP; Sun, 1 Jan 2023 21:05:10 +0000
+Received: by hermes--production-gq1-d898c4779-4ndbh (Yahoo Inc. Hermes SMTP Server) with ESMTPA ID cb4be59584b43fedd6a1efd126db6dd8;
+          Sun, 01 Jan 2023 21:05:03 +0000 (UTC)
+Date: Sun, 01 Jan 2023 21:04:50 +0000
+Message-ID: <03883667-8222-4a00-adc2-2881806f5614@email.android.com>
+X-Android-Message-ID: <03883667-8222-4a00-adc2-2881806f5614@email.android.com>
+From: Diallo Abdourahmane <abdrodiallotmo@yahoo.com>
+To: contact@fiidewgal.com
+Importance: Normal
+X-Priority: 3
+X-MSMail-Priority: Normal
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: base64
+References: <03883667-8222-4a00-adc2-2881806f5614.ref@email.android.com>
+X-Mailer: WebService/1.1.20982 mail.backend.jedi.jws.acl:role.jedi.acl.token.atz.jws.hermes.yahoo
+X-N0C-Node-IP: 185.221.182.45
+
+PGRpdiBkaXI9J2F1dG8nPkJvbnNvaXIsIGonYWkgdnUgdm90cmUgc2l0ZSBpbnRlcm5ldCBzdXIg
+RmFjZWJvb2sgZGFucyB1bmUgdmlkw6lvIGRlIEhhZHlhIHByw6lzaWUgcXVlIGplIHRyb3V2ZSBp
+bnTDqXJlc3NhbnQuIEV0IGF1c3NpdMO0dCBqJ2FpIGNyw6nDqSBtb24gY29tcHRlIG1haXMgamUg
+bmUgcGFydmllbnMgcGFzIMOgIHNhdm9pciBsJ3V0aWxpc2VyLiZuYnNwOzxkaXYgZGlyPSJhdXRv
+Ij5NZXJjaSBkZSBtJ2Fzc2lzdGVyLjwvZGl2PjxkaXYgZGlyPSJhdXRvIj5DZHQ8L2Rpdj48L2Rp
+dj4=
+

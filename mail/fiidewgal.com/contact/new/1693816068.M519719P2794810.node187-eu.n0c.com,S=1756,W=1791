@@ -1,0 +1,35 @@
+Return-Path: <contact@fiidewgal.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id JDXUHgSV9WQ6pSoA3R2AvA
+	(envelope-from <contact@fiidewgal.com>)
+	for <contact@fiidewgal.com>; Mon, 04 Sep 2023 10:27:48 +0200
+Received: from [127.0.0.1] (unknown [185.221.182.45])
+	by node187-eu.n0c.com (Postfix) with ESMTPSA id 5F46140353D2
+	for <contact@fiidewgal.com>; Mon,  4 Sep 2023 04:27:47 -0400 (EDT)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 5F46140353D2
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 5F46140353D2
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1693816067;
+	bh=WuZO4MAPTUUaWQVh51VI4u376EJcAkVmZd/+Ler4jSQ=;
+	h=From:To:Subject:Date:From;
+	b=g+3BIQq753HQyeq/6yHXTj+hJba3WmQyFUTCmHoqqkW60DEwBPQSy8dftVovMexzz
+	 heBUYjR10nMbj8C3r2N+5A3ojkoCxFhJ5+TRQi5ukD5tj2K7yW1qAkdw8+LiatXNJr
+	 vlz2+kZNd5lbSAiUj0DvThXS6tVX+4rWh9MQKbo0=
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: contact@fiidewgal.com
+Subject: Inscription des membres
+Message-ID: <cf7c5df18d2210d41ac8d019db933b70@fiidewgal.com>
+MIME-Version: 1.0
+Date: Mon, 04 Sep 2023 10:27:47 +0200
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<p>F=C3=A9licitations !<br></p><p>Vous avez un nouveau membre enregistr=
+=C3=A9 dans votre syst=C3=A8me.</p><p>Nom du membre : Alhassane Sow</p><p>L=
+'e-mail est : Alassanesow491@yahoo.fr</p><p>Profil de membre : https://fiid=
+ewgal.com/admin/members/3223</p><p>Merci,</p><p>Ne r=C3=A9pondez pas</p>
+

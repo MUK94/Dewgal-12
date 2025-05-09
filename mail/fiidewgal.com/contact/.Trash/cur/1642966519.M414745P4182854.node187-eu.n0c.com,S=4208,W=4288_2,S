@@ -1,0 +1,80 @@
+Return-Path: <sramatoulaye953@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id EWSpGPet7WFG0z8A3R2AvA
+	(envelope-from <sramatoulaye953@gmail.com>)
+	for <contact@fiidewgal.com>; Sun, 23 Jan 2022 20:35:19 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Jhjxy2Zvzz35cqF0
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="ifVl7zG0"
+X-N0C-MailScanner-eFa-Watermark: 1643571316.74661@i4NBvkCXdbb0LHkAK0BcTA
+X-N0C-MailScanner-eFa-From: sramatoulaye953@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 24A3D4020D36.A49B3
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-oi1-f170.google.com ([209.85.167.170] [209.85.167.170])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 24A3D4020D36
+	for <contact@fiidewgal.com>; Sun, 23 Jan 2022 20:35:15 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 24A3D4020D36
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 24A3D4020D36
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="ifVl7zG0"
+Received: by mail-oi1-f170.google.com with SMTP id p203so5765258oih.10
+        for <contact@fiidewgal.com>; Sun, 23 Jan 2022 11:35:15 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=Jh2e/ptnpteRkW29YgIIn6dcdbOIv7ZLB/E5yTqVmCY=;
+        b=ifVl7zG0kB/SJm7kRHi1EDDOI+3RwD73eID1S2MFVJN4febgilQICcbd4CYU4BP+KF
+         SXktd8wz9mPZbmS9hDeGYKoq48wZe1ysx7F8S65HwAzd0ypmjjzO5kZgwULjhOI7QnNB
+         PyY8R+f9hoMf7x+dM2Z5k/mQtqA0FoFjAr9B/G++JyblJmHCHNpabC4D5cC1z0mbtGSe
+         4Q4z/2rlApuAi+VAwt48NuX9JAMvTzjXmxSEhH6hwslnov70UrC9nUNWn8/74Yk62wwl
+         PzJ+6n0HAJlYtNwlFmWAFBSZENpNvlkHd+EMjGTzMHivh0Zl/a9A83VH25TmpoKQIjpk
+         NrLA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=Jh2e/ptnpteRkW29YgIIn6dcdbOIv7ZLB/E5yTqVmCY=;
+        b=u7DmPLt9NzAapIIepxTO2VUiOueBtdChXLh6EUz+uDOLggNRoxBtoZakcFwYh4LkiY
+         0Wm4stcdQPKqdKYElT7rPALbN7vK3lfvW+jpLfOs2d3J3CMG09JQrPygyj1Xv670B8up
+         Op9FTOWFfTqJkFN9WIvQnqxtfTJgDumgUGfqL64SxkkAtxmrDux1dfQi1r8LP/dNkd0u
+         +nyU8i+/T3F9fz9kMUxX0UPQF1EgmE6+UMm9IVVOAZZS5J8XgO+yEJpwGxtbzy/8HAod
+         9voTZ4V3VURYZscX/TPCxSdxFVZ5EuqpajSqDVj856TF2ecHZNxV/VnHNr0HG9W7Ke8q
+         W1pQ==
+X-Gm-Message-State: AOAM530tNYoQ2tkmAXxsceXEgr1n8B+3UB8ygnuqHQmg/tq2nd/oB+NA
+	EOIAzxkpEXZx3xfc5K1VQoMULtVkyvkp+HQdxGE3rG/U
+X-Google-Smtp-Source: ABdhPJxg/yFWVWsZKx/QQPMds4vkTqlWHqIavdmFYsJGNexzQOGdsLY/rqWuVRlOGLURH8wxzWBv/+/2KRKQs+8Wzxk=
+X-Received: by 2002:aca:1a02:: with SMTP id a2mr1808610oia.95.1642966513628;
+ Sun, 23 Jan 2022 11:35:13 -0800 (PST)
+MIME-Version: 1.0
+From: Ramatoulaye Sow <sramatoulaye953@gmail.com>
+Date: Sun, 23 Jan 2022 19:35:01 +0000
+Message-ID: <CAFvgpOgYb0KdX4P-hYwiDdd7Q4WwZHy8w5BjA896o4CFouop+Q@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000006c37de05d644f3e4"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000006c37de05d644f3e4
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour je m'appelle Ramatoulaye Sow
+Je vie en Guin=C3=A9e Conakry
+J'aimerais =C3=A9changer avec vous =F0=9F=99=8F
+
+--0000000000006c37de05d644f3e4
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Bonjour je m&#39;appelle Ramatoulaye Sow<div dir=3D"auto"=
+>Je vie en Guin=C3=A9e Conakry</div><div dir=3D"auto">J&#39;aimerais =C3=A9=
+changer avec vous =F0=9F=99=8F</div></div>
+
+--0000000000006c37de05d644f3e4--

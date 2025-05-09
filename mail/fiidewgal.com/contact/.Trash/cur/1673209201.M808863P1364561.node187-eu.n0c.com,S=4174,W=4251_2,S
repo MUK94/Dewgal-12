@@ -1,0 +1,77 @@
+Return-Path: <abdoussalamdiallo380@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id MtgUMHElu2NR0hQA3R2AvA
+	(envelope-from <abdoussalamdiallo380@gmail.com>)
+	for <contact@fiidewgal.com>; Sun, 08 Jan 2023 21:20:01 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NqpN04tL4z34SDmj
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="hNy0FeNL"
+X-N0C-MailScanner-eFa-Watermark: 1673813998.29418@aL1uzB4iKqTkd2HvZYgUmA
+X-N0C-MailScanner-eFa-From: abdoussalamdiallo380@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: AD8034020D58.AE169
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-vs1-f52.google.com ([209.85.217.52] [209.85.217.52])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id AD8034020D58
+	for <contact@fiidewgal.com>; Sun,  8 Jan 2023 21:19:26 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com AD8034020D58
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com AD8034020D58
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=hNy0FeNL
+Received: by mail-vs1-f52.google.com with SMTP id m2so6638066vsv.9
+        for <contact@fiidewgal.com>; Sun, 08 Jan 2023 12:19:26 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=ZWqA6bQsOll6UFTisB7bUmp+/E5AD1KjSw/C28lISYY=;
+        b=hNy0FeNLhXzmi/prYkv4YOMyn2nMRS5NZbUKfIjftT56yxcY6NOFEX4nYlQZ2anzL5
+         Dx1da2hqvvN8eXzyue8KmuGOFBWz8r+MAAxXtSNPyfha56/TGRHB+ZjG1byuSSefoQNx
+         +iKfrnV9vj8hy0eTnFikXHr0vsGu8DEnTWmy9xa4RSE3DR/k7rTDI7VKpsgET/oUMCDf
+         lyI/hrf2i4t3c5i2S7Qt5GxFXYhUsiSQdVYDI0nfDieC8FvZ0XP+QQ+SMndqn767odoQ
+         A7qmwxb0HGSioXNuuz+h3Ss39uj+YcPTrJZvc8ktM72XAxQ4HcUuY7L/QxsrgHoVlG+I
+         N7Mw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=ZWqA6bQsOll6UFTisB7bUmp+/E5AD1KjSw/C28lISYY=;
+        b=UbNt6MapNPpu/pLuJaT5iZyy8mJTOp2XwDTrH6fr2Sy+rFkPDYdFCBVuP9T/dQcKkS
+         yYR3Ikh9P7DJNaYKIe1dhLxUHtDyxnqMdIzyEGWYcswn5BPMKnrJHQsCNSUvzVngiLoA
+         toZcD+CTD8TCUYN50xONWMY2dZX4GbPZBS3iudSHyGTylqOQpKP6WZWwUGk7HgRiJRiE
+         JY266rBjM5C4L71zS/68jI02onUHVFCV6yOqkRb9ZXMYHVe5kLD04D0dvrIk22ppj6Kf
+         RTonM58r3Hzgb6SMy+wHljM42kf8Ni+U1gz+98TRhjYAki/ehKsZVs9thQGUC5ZI5GpX
+         Dhvg==
+X-Gm-Message-State: AFqh2kq033Kf1Tx5lR6QyzbGfkH6R7l5c7e6O3AD7y3rvvQuSK4cetWR
+	i77Inp8izpSk51FEhJcXBTw2+Csc7cJygCvakPSfce2+
+X-Google-Smtp-Source: AMrXdXvjjzRajnVdjagxiW5wFq25Ams+UblUsMJYj0rSY541F25Mbe9Th/PskgvCqiPRBMM442qtRLXHetVHp87IZ7s=
+X-Received: by 2002:a05:6102:3e06:b0:3b5:fd8:7948 with SMTP id
+ j6-20020a0561023e0600b003b50fd87948mr9325963vsv.85.1673209165347; Sun, 08 Jan
+ 2023 12:19:25 -0800 (PST)
+MIME-Version: 1.0
+From: Diallo Abdoussalam <abdoussalamdiallo380@gmail.com>
+Date: Sun, 8 Jan 2023 20:19:14 +0000
+Message-ID: <CAJwAApe45rpAgAcV0E_dKXHU6e3jk7aHqHpM948eh0UVGR28Jg@mail.gmail.com>
+Subject: abdoussalam168@icloud.com
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000ef815305f1c65d6e"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000ef815305f1c65d6e
+Content-Type: text/plain; charset="UTF-8"
+
+abdoussalam168@icloud.com
+
+--000000000000ef815305f1c65d6e
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"><a href="mailto:abdoussalam168@icloud.com">abdoussalam168@icloud.com</a></div>
+
+--000000000000ef815305f1c65d6e--

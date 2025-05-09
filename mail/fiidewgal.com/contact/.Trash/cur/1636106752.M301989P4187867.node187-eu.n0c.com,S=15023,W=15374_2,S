@@ -1,0 +1,351 @@
+Return-Path: <martaghosal@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id zGfxEQAChWHb5j8A3R2AvA
+	(envelope-from <martaghosal@gmail.com>)
+	for <contact@fiidewgal.com>; Fri, 05 Nov 2021 11:05:52 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Hlx3L6dzGz34SDml
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="dXhSZicj"
+X-N0C-MailScanner-eFa-Watermark: 1636711549.46942@YIaKgqBr2KGsyTQdgR+7rg
+X-N0C-MailScanner-eFa-From: martaghosal@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: s
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: B9B45401CAFE.A5B4B
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-il1-f178.google.com ([209.85.166.178] [209.85.166.178])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id B9B45401CAFE
+	for <contact@fiidewgal.com>; Fri,  5 Nov 2021 11:05:48 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com B9B45401CAFE
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com B9B45401CAFE
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="dXhSZicj"
+Received: by mail-il1-f178.google.com with SMTP id j28so8954585ila.1
+        for <contact@fiidewgal.com>; Fri, 05 Nov 2021 03:05:47 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=YbLoSUFna2a0XSmGNtQDNUPkwVDWMHULzTyBB+vSYjc=;
+        b=dXhSZicjuoi/cVnZInvQ3hmtCk/O/ChxIuG93FdtR9X9++mBpnDHSM7eAibUrpxXCH
+         K0YYK/q6q9LOCsq3BLM7/tIpizbqO3qWcBJ3ymmX3oe40cNbcHhde4I57RkDkLoDt5iC
+         hq4fCxsPlenaFfxlMumWVGxJBckmU5kqjWjvD8v2FlSKK+zYLnL8KcyHJ+QZOjNzu3Ce
+         3PoVS3kgwu+YJbeRlAxuSxd7HeE8h93O8+s9BZ9UKI0j5rudzZosUbTULli7/0mgHSQY
+         UGCiX7TlqiqVPGF2yy3Dv/3LstQWLuiEfzbsFQCitpAlph4eghrz1FYoH3VXXTfJKyTF
+         j0qg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=YbLoSUFna2a0XSmGNtQDNUPkwVDWMHULzTyBB+vSYjc=;
+        b=Ad0wTl06zc/0l8Nd13H8vUzuzb1pFTLPJue+05Y/FbHVWagVWpAFyDW6/f2mDFqaab
+         CpcNPluRtQXW1Xl7HTJjYiGd52BrxHCYZEdgkdHUFgAoz/rkZAMyU6L4GOhuSjVJSpci
+         ysRHCCCdlofjxav7kD6ZmgZgqkK3ry63P5qLIHpOevx6wkORF77FuGgHNkKRl3lXVKF3
+         FXUc0R6AZcRvu4jkTKtx/XjS0q/XSctesY3qYRCX0PmfU/1gDSXXAypwyEegUABmbVO+
+         3fS8aeU0hn+HuNWzj88ywlMuBeKyasjAXpi/JTzTLzmwTiPxkh6DY2ZyYoBn7/heCRK+
+         s/OA==
+X-Gm-Message-State: AOAM532GQBtDL3uxIulRp2iqsXf1oKSRqN9mu9QL3K3KSS7q9LEO+/Ex
+	4sWSXQVDBSwMoIQ8SKANXP/CC2lSy3odZIQstpmGGbCJyhw=
+X-Google-Smtp-Source: ABdhPJyhlzDlZaDbYkji3EaVJXYvkX2B0QCuGjoa133gdhPkC37iqHdcZS/un6IKgHu1tXcaLbItN9Epm6LEmHlNw6Y=
+X-Received: by 2002:a05:6e02:604:: with SMTP id t4mr38349981ils.129.1636106746037;
+ Fri, 05 Nov 2021 03:05:46 -0700 (PDT)
+MIME-Version: 1.0
+From: Marta Ghosal <martaghosal@gmail.com>
+Date: Fri, 5 Nov 2021 15:35:29 +0530
+Message-ID: <CAJueSjZfDasrztwefKExd6vFv6KxKMpEqPJ5m+iJqfvZLhxCwg@mail.gmail.com>
+Subject: Performance Feedback Report of Fiidewgal.com
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000698b3105d007c94f"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000698b3105d007c94f
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Admin*,*
+
+My name is David Woolley, and I've been working as a professional PPC &
+Organic Search Expert for over a decade.
+
+I'm writing this email to offer you a low-cost yet extremely effective
+digital marketing plan that will help your website get found on search
+engine listings and drive a good amount of potential sales.
+
+
+
+But before your website is ready for full-fledged marketing and promotion,
+make sure it fulfills the following critical requirements:
+
+
+
+1. *Up-to-date Meta data* - Search engine friendly precise Meta data is
+needed for better Google ranking and it provides the information about the
+webpage of a website.
+
+
+
+2. *Image Alt tag Fixing - *Check whether your relevant "img" Tags are
+missing the alt attributes or not. Because, using relevant keywords and
+text in the alt attribute can help both users and search engines better
+interpret the subject of an image.
+
+
+
+3. *SE Friendly URL =E2=80=93* Wherever possible, use clear SEO friendly UR=
+Ls which
+clearly but concisely describe the content of the web page. Clean and SEO
+friendly URLs are also more likely to appear higher in search engines than
+dynamic URLs.
+
+
+
+4. *Site Loading Speed - *Try to use the GZIP encoding. This is a very good
+idea, because it reduces the overall loading time of a web page.
+
+
+
+5. *Custom 404 Error Page -* Custom 404 error pages are an opportunity for
+you to reduce customer frustration and link to other pages on your site.
+Try to take the benefits of it.
+
+
+6. *Social media marketing* - The impact of social media is huge now, take
+advantage of this digital version of word-of-mouth marketing. Create social
+media profiles associated with your website on Facebook, Pinterest,
+LinkedIn, and other sites that are of interest to your customers.
+
+
+
+Let me know if you'd like further details along with a *premium technical
+audit report *on your website* for No Cost*.
+
+I look forward to hearing from you.
+
+
+
+Best Regards,
+
+David.
+
++1 323 455 4555.
+
+Skype: davidseo08.
+
+
+
+
+
+P:S- If you are not interested in this proposal please mail us
+*Unsubscribe.*
+
+--000000000000698b3105d007c94f
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 12pt;font-size:11pt;font-fam=
+ily:&quot;Calibri&quot;,&quot;sans-serif&quot;"><span style=3D"font-size:10=
+pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:black;backg=
+round:white none repeat scroll 0% 0%">Dear=C2=A0<span>Admin<b>,</b></span><=
+span></span></span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 12pt;font-size:11pt;font-fam=
+ily:&quot;Calibri&quot;,&quot;sans-serif&quot;"><span style=3D"font-size:10=
+pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;">My name is David=
+ Woolley, and I&#39;ve been
+working as a professional PPC &amp; Organic Search Expert for over a decade=
+.<span></span></span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;font-size:11pt;font=
+-family:&quot;Calibri&quot;,&quot;sans-serif&quot;"><span style=3D"font-siz=
+e:10pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;">I&#39;m
+writing this email to offer you a low-cost yet extremely effective digital
+marketing plan that will help your website get found on search engine listi=
+ngs
+and drive a good amount of potential sales.<span></span></span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;font-size:11pt;font=
+-family:&quot;Calibri&quot;,&quot;sans-serif&quot;"><span style=3D"font-siz=
+e:10pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;"><span>=C2=A0=
+</span></span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;font-size:11pt;font=
+-family:&quot;Calibri&quot;,&quot;sans-serif&quot;"><span style=3D"font-siz=
+e:10pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;">But
+before your website is ready for full-fledged marketing and promotion, make
+sure it fulfills the following critical requirements: <span></span></span><=
+/p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;font-size:11pt;font=
+-family:&quot;Calibri&quot;,&quot;sans-serif&quot;"><span style=3D"font-siz=
+e:10pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;"><span>=C2=A0=
+</span></span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;font-size:11pt;font=
+-family:&quot;Calibri&quot;,&quot;sans-serif&quot;"><span style=3D"font-siz=
+e:10pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;">1.=C2=A0<b>U=
+p-to-date
+Meta data</b>=C2=A0- Search engine friendly precise Meta data is needed for
+better Google ranking and it provides the information about the webpage of =
+a
+website.<span></span></span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;font-size:11pt;font=
+-family:&quot;Calibri&quot;,&quot;sans-serif&quot;"><span style=3D"font-siz=
+e:10pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;"><span>=C2=A0=
+</span></span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;font-size:11pt;font=
+-family:&quot;Calibri&quot;,&quot;sans-serif&quot;"><span style=3D"font-siz=
+e:10pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;">2.=C2=A0<b>I=
+mage
+Alt tag Fixing - </b>Check whether your relevant &quot;img&quot; Tags are
+missing the alt attributes or not. Because, using relevant keywords and tex=
+t in
+the alt attribute can help both users and search engines better interpret t=
+he
+subject of an image.<span></span></span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;font-size:11pt;font=
+-family:&quot;Calibri&quot;,&quot;sans-serif&quot;"><span style=3D"font-siz=
+e:10pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;"><span>=C2=A0=
+</span></span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;font-size:11pt;font=
+-family:&quot;Calibri&quot;,&quot;sans-serif&quot;"><span style=3D"font-siz=
+e:10pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;">3.=C2=A0<b>S=
+E
+Friendly URL =E2=80=93</b> Wherever possible, use clear SEO friendly URLs w=
+hich clearly
+but concisely describe the content of the web page. Clean and SEO friendly =
+URLs
+are also more likely to appear higher in search engines than dynamic URLs.<=
+span></span></span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;font-size:11pt;font=
+-family:&quot;Calibri&quot;,&quot;sans-serif&quot;"><span style=3D"font-siz=
+e:10pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;"><span>=C2=A0=
+</span></span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;font-size:11pt;font=
+-family:&quot;Calibri&quot;,&quot;sans-serif&quot;"><span style=3D"font-siz=
+e:10pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;">4.
+<b>Site Loading Speed - </b>Try to use the
+GZIP encoding. This is a very good idea, because it reduces the overall loa=
+ding
+time of a web page.<span></span></span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;font-size:11pt;font=
+-family:&quot;Calibri&quot;,&quot;sans-serif&quot;"><span style=3D"font-siz=
+e:10pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;"><span>=C2=A0=
+</span></span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;font-size:11pt;font=
+-family:&quot;Calibri&quot;,&quot;sans-serif&quot;"><span style=3D"font-siz=
+e:10pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;">5.
+<b>Custom 404 Error Page -</b> Custom 404 error pages are an opportunity fo=
+r
+you to reduce customer frustration and link to other pages on your site. Tr=
+y to
+take the benefits of it.<span></span></span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;font-size:11pt;font=
+-family:&quot;Calibri&quot;,&quot;sans-serif&quot;"><span style=3D"font-siz=
+e:10pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;"><br>
+6.=C2=A0<b>Social media marketing</b>=C2=A0- The impact of social media is =
+huge
+now, take advantage of this digital version of word-of-mouth marketing. Cre=
+ate
+social media profiles associated with your website on Facebook, Pinterest,
+LinkedIn, and other sites that are of interest to your customers.<span></sp=
+an></span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;font-size:11pt;font=
+-family:&quot;Calibri&quot;,&quot;sans-serif&quot;"><span style=3D"font-siz=
+e:10pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;"><span>=C2=A0=
+</span></span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 12pt;font-size:11pt;font-fam=
+ily:&quot;Calibri&quot;,&quot;sans-serif&quot;"><span style=3D"font-size:10=
+pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;">Let me know if y=
+ou&#39;d like further details
+along with a=C2=A0<b>premium technical audit report=C2=A0</b>on your websit=
+e<b>=C2=A0for
+No Cost</b>.<span></span></span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;font-size:11pt;font=
+-family:&quot;Calibri&quot;,&quot;sans-serif&quot;"><span style=3D"font-siz=
+e:10pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;">I
+look forward to hearing from you.<span></span></span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;font-size:11pt;font=
+-family:&quot;Calibri&quot;,&quot;sans-serif&quot;"><span style=3D"font-siz=
+e:10pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;"><span>=C2=A0=
+</span></span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;font-size:11pt;font=
+-family:&quot;Calibri&quot;,&quot;sans-serif&quot;"><span style=3D"font-siz=
+e:10pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;">Best
+Regards,<span></span></span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;font-size:11pt;font=
+-family:&quot;Calibri&quot;,&quot;sans-serif&quot;"><span style=3D"font-siz=
+e:10pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;">David.<span>=
+</span></span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;font-size:11pt;font=
+-family:&quot;Calibri&quot;,&quot;sans-serif&quot;"><span style=3D"font-siz=
+e:10pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;">+1
+323 455 4555.<a name=3D"_GoBack"></a><span></span></span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;font-size:11pt;font=
+-family:&quot;Calibri&quot;,&quot;sans-serif&quot;"><span style=3D"font-siz=
+e:10pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;">Skype:
+davidseo08.<span></span></span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;font-size:11pt;font=
+-family:&quot;Calibri&quot;,&quot;sans-serif&quot;"><span style=3D"font-siz=
+e:10pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;"><span>=C2=A0=
+</span></span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;font-size:11pt;font=
+-family:&quot;Calibri&quot;,&quot;sans-serif&quot;"><span style=3D"font-siz=
+e:10pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;"><span>=C2=A0=
+</span></span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;font-size:11pt;font=
+-family:&quot;Calibri&quot;,&quot;sans-serif&quot;"><span style=3D"font-siz=
+e:10pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;">P:S-
+If you are not interested in this proposal please mail us=C2=A0<b><span sty=
+le=3D"color:red">Unsubscribe</span>.</b><span></span></span></p>
+
+
+
+
+
+</div>
+
+--000000000000698b3105d007c94f--

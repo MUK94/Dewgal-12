@@ -1,0 +1,995 @@
+Return-Path: <294-tkb-300.0.271988.0.0.43105.9.126475570-1@marketopages.twilio.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id fqbPFoRjsWSftyIA3R2AvA
+	(envelope-from <294-tkb-300.0.271988.0.0.43105.9.126475570-1@marketopages.twilio.com>)
+	for <contact@fiidewgal.com>; Fri, 14 Jul 2023 17:02:28 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4R2ZTH3FvVz34SDmw
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=marketopages.twilio.com header.i=@marketopages.twilio.com header.b="AvBlksll"
+X-N0C-MailScanner-eFa-Watermark: 1689951636.57332@uJzTSPrLCMO2vjBKGd4s5A
+X-N0C-MailScanner-eFa-From: 294-tkb-300.0.271988.0.0.43105.9.126475570-1@marketopages.twilio.com
+X-N0C-MailScanner-eFa-SpamScore: ss
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 98B1F4054167.AE099
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from o6.smtpgw.twilio.com ([149.72.185.22] [149.72.185.22])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 98B1F4054167
+	for <contact@fiidewgal.com>; Fri, 14 Jul 2023 17:00:33 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 98B1F4054167
+Authentication-Results: node187-eu.n0c.com; dmarc=none (p=none dis=none) header.from=team.twilio.com
+Authentication-Results: node187-eu.n0c.com; spf=fail smtp.mailfrom=marketopages.twilio.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 98B1F4054167
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=marketopages.twilio.com header.i=@marketopages.twilio.com header.a=rsa-sha256 header.s=s1 header.b=AvBlksll
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=marketopages.twilio.com;
+	h=from:subject:mime-version:content-type:list-unsubscribe:reply-to:to:
+	cc:content-type:from:subject:to;
+	s=s1; bh=qk2NBgMVKMhxKy4LsPbs5oY7xEQQ9kBB3n8q/UYNBNM=;
+	b=AvBlksllnnp6SGo2BZEfahL1tP7eN/qA1/Ph8xxzVwGHu0XbM1lo33ckcMg3130sgX4n
+	bzh1Tq8WfJkAhm+TVc/CfyjhxpgHdiuq+yEldiu6q0lSDQN/49PDcD/fvY0pEuFf5DK1a5
+	dzfIbjUFcFRvc2/OzsDUhXTCZK0Zu1mnmaJ7Z8W4hjIbqzQTUrtShcJPrHQwXSwsNwPhUd
+	8n7YfJBQHKC/OU5Lz725s6aZWE2EnfptSo3GkAT8/QUXhHXCuPoZzk0XL/tos4IJxw+ZEy
+	9t6ZTEljMcWSzxM/T2S+qkys7U71Iy6FPrKZLCWV9MRCN68XPwQ/G1ZrQwRfV5FQ==
+Received: by filterdrecv-5ffc5df45c-74xp7 with SMTP id filterdrecv-5ffc5df45c-74xp7-1-64B1630F-7C
+        2023-07-14 15:00:31.381668436 +0000 UTC m=+5585065.783647067
+Received: from marketorelayer0006p1mdw1.sendgrid.net (unknown)
+	by geopod-ismtpd-28 (SG) with ESMTP id N_eP7kaZQSS6Y7hYY_-B9g
+	for <contact@fiidewgal.com>; Fri, 14 Jul 2023 15:00:31.275 +0000 (UTC)
+Received: from marketopages.twilio.com (unknown [10.42.8.57])
+	by marketorelayer0006p1mdw1.sendgrid.net (Postfix) with ESMTP id EB699240F35
+	for <contact@fiidewgal.com>; Fri, 14 Jul 2023 15:00:30 +0000 (UTC)
+X-MSFBL: KAGzZBKTadHIQUsw1RQaPJCQt6HhVTcE/lpEthXelHc=|eyJyIjoiY29udGFjdEB
+	maWlkZXdnYWwuY29tIiwiZyI6ImJnLXNqZC0zMDkiLCJiIjoiZHZwLTE5Mi0yOC0
+	xNDctNTQiLCJ1IjoiMjk0LVRLQi0zMDA6MDozNTI5OTozNjI5MzU6MDo0MzEwNTo
+	5OjI3MTk4ODoxMjY0NzU1NzAtMSJ9
+Date: Fri, 14 Jul 2023 15:00:31 +0000 (UTC)
+From: Team Twilio <teamtwilio@team.twilio.com>
+Message-ID: <359400220.19438907.1689346830814@sjmktmail-trigger1e.marketo.org>
+Subject: Getting Started with WhatsApp =?UTF-8?B?8J+SrA==?=
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_19438906_798615332.1689346830814"
+X-Binding: bg-sjd-309
+X-MarketoID: 294-TKB-300:0:35299:362935:0:43105:9:271988:126475570-1
+X-Mailfrom: 294-TKB-300.0.271988.0.0.43105.9.126475570-1@marketopages.twilio.com
+List-Unsubscribe: <mailto:MYYW2TCOJ5UXUNRXNZLGSOBSKZQXUYLIGU2HM6RTOIYXQYRRJNLGOZSYLJRDOT2OOBYVKPI=.271988.43105.9@unsub-sj.mktomail.com>
+X-MktArchive: false
+X-MSYS-API: {"options":{"open_tracking":false,"click_tracking":false}}
+X-MktMailDKIM: true
+Reply-To: teamtwilio@twilio.com
+X-SG-EID: 
+ =?us-ascii?Q?tZ5lMlOwv4qvkJKB+uUUpQyD64N4DeeubhRDzmul=2Fc6qJLhut=2FLXZkHoKJM323?=
+ =?us-ascii?Q?F1b1j+miMkrAZ+CUtpmdVTzYcM=2FspmNozVZGhaV?=
+ =?us-ascii?Q?Z7YiBz+zbr8QgLInsWr97pkZbo3Rr0+bvCjEUDx?=
+ =?us-ascii?Q?zzcBW2lHvK1kvfQUcucnH05q9fodsduREoyfBCS?=
+ =?us-ascii?Q?z1FLXMx9b7NZnc+kLvZ5Q9D1NbrTd3yL34suuCc?=
+ =?us-ascii?Q?z+qV13WHVc=2Ffmmgla7GsGUBNVXSz7bU4a4toFS?=
+To: contact@fiidewgal.com
+X-Entity-ID: kkJi8LAd8zjiEfndTN/FNA==
+X-N0C-Node-IP: 185.221.182.45
+
+------=_Part_19438906_798615332.1689346830814
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Hi=C2=A0ABDOUL,=20
+
+Now that you've set up your WhatsApp Business account on Twilio, we wanted =
+to share some tips and best practices on how you can scale your messaging s=
+trategy and make the most out of the platform.
+
+Notifications Messages with Templates=20
+
+Learn how to create pre-approved  message templates <https://u3528416.ct.se=
+ndgrid.net/ls/click?upn=3DOHV4-2FqkTPBIi8pj9zljUkGvaabq0ecKgjN5WVH8ZDzf9L2e=
+5lzgUfaj8K-2B2VpbaMsPLfZx-2BCNZrLAGKl-2FonFnpVueziFBsEsOa4OSsOazewdeb6lHu83=
+SGZj7tN0jXK28BSGyvldmUJkUJJ3xwiRnX4lTAYqjDy5STHaA5DUhJs-3DvPFy_LRmZwZTIHdvE=
+bXw2vhgkxkl-2FJtBSxyK0rKKCwe5gPGaLZLZzLelStk1vod7Huw7PlIVUCTW-2FRRhHZEsBZb0=
+OSGyhgvWf8DxsaphLmVmIW3HuJyUKbkHPi4uU35zs2neDr6WlLsd-2FgWu-2F9nyqlNmptX6pCC=
+N4GUlGU5HHdrdmc1r9z30jZd5pkoAWxrarmLCtahLUDPhugz1BnYwjtMs1gg-3D-3D> so that=
+ you can send alerts, reminders, and other important notifications to your =
+customers with ease.
+
+Add Buttons to Messages=20
+
+Adding buttons to your messages <https://u3528416.ct.sendgrid.net/ls/click?=
+upn=3DOHV4-2FqkTPBIi8pj9zljUkGvaabq0ecKgjN5WVH8ZDzf9L2e5lzgUfaj8K-2B2VpbaMv=
+kGQG-2BGMQRgtMmlqrqdiLT-2BdGRKR5qmV7L4lkh-2FS4h0i4LYntrLgMtSOzI-2B4zwmbv8cV=
+aalonNOno1-2BoT6znBPNkZwZG8wUZNZ1Sjxb9KI8-3Duu0D_LRmZwZTIHdvEbXw2vhgkxkl-2F=
+JtBSxyK0rKKCwe5gPGaLZLZzLelStk1vod7Huw7Pz0vspuJfbhga5j-2FH7nth5-2BuYstoKRZQ=
+AYWuxHIcPOSN7Xyk0Y5jyDnjLj9ZVaCnCA2tyQyggtZeQwG-2BgWE0UE8TBawS61xEAYusAQXvI=
+BuAzcBGIEsL-2FCs4eZZ2OC01Z6Od30gb-2FWCv1AxwfhQ6GTg-3D-3D> to give your cust=
+omers convenient options to respond or take action quickly. Buttons can be =
+used for a variety of purposes, such as confirming appointments, providing =
+feedback, or making a purchase.
+
+Best Practices for Conversational Messaging=20
+
+Our blog,  Best Practices for Conversational Messaging <https://u3528416.ct=
+.sendgrid.net/ls/click?upn=3DOHV4-2FqkTPBIi8pj9zljUkGvaabq0ecKgjN5WVH8ZDzf9=
+L2e5lzgUfaj8K-2B2VpbaMFVRG5UC3Kv9qOhEGndfUbY7kcxglV5EF6AJChF-2FleIWUt69Kwgq=
+QlA2Xt7rxpHF1QZa7hJNerPWU2zPK-2BmzeFu2Ah3MjDKGj7Wroq6aNSFE-3DfP9z_LRmZwZTIH=
+dvEbXw2vhgkxkl-2FJtBSxyK0rKKCwe5gPGaLZLZzLelStk1vod7Huw7PS3Y4c-2B-2BnCzezWZ=
+VC7JB1I-2FUBaKdU7lJRyxWJqyA4AquLeIGy8LBIob3QHNB1rGaCsCIoS0Y98NBFGlSgpJTQanj=
+w1goAMQOo5Z8bcW2chuNegTzeun-2FM2C0jLnk5nKnR8IinMPOum3Rj7bRSIHbN1w-3D-3D>, p=
+rovides tips on managing templates and opt-ins for conversational messaging=
+ on the WhatsApp Business Platform.
+
+Just can=E2=80=99t get enough? Need a helping hand? Explore our Help Center=
+<https://u3528416.ct.sendgrid.net/ls/click?upn=3DOHV4-2FqkTPBIi8pj9zljUkGva=
+abq0ecKgjN5WVH8ZDzf9L2e5lzgUfaj8K-2B2VpbaMfbq9w7AeGV4Fz5MHCrmyIU5zzPYG7A3eK=
+GLut66OQr-2FEyjMjDK5GpXjFzbMkCHvf8nCoH793-2BnL0s-2FLC1N3XQQDBPtM7QeYMBOeFKX=
+JYbcc-3DWnYg_LRmZwZTIHdvEbXw2vhgkxkl-2FJtBSxyK0rKKCwe5gPGaLZLZzLelStk1vod7H=
+uw7PHuPoroFeGUGcUb-2FDZxjX0u6Q3IZkxNHLxM8zEW5bKqlC1D1HMM4Qy4k0Wq95ntfxl7wpn=
+3gaFib5ZfFhGPVuVV3gsJ5qfYnAClYQqNIvLWhraNDRYb9YuVRHNiGO2pPvAhuZ1IYX1E3zi-2B=
+-2BkdN3-2BTA-3D-3D> to find helpful blogs and support articles.
+
+Best,
+Team Twilio
+
+This email was sent to contact@fiidewgal.com.
+
+Don't want to receive emails from Twilio? Change your email preferences <ht=
+tps://u3528416.ct.sendgrid.net/ls/click?upn=3DOHV4-2FqkTPBIi8pj9zljUkGvaabq=
+0ecKgjN5WVH8ZDzf9L2e5lzgUfaj8K-2B2VpbaMeXnFHFxVLAlefxux8q-2F-2Bikl9thbdBSY2=
+sOcT-2BTpAZZx6209dujRg-2F8ybBGQ3VeBcygvqsHIA4A2u9KA2d9g8XPkBLV5ACpz-2FcV72o=
+vX7OPI-3DBEFg_LRmZwZTIHdvEbXw2vhgkxkl-2FJtBSxyK0rKKCwe5gPGaLZLZzLelStk1vod7=
+Huw7PQHZJXXkCv9Clp74X2nPWKUqE-2Fm2ttuI7Kbcgs99NLSr-2FR7DXB18huGWxVblCVuuqoW=
+SwvBg-2Bd8FWB0SvUExAcDHACSrkEGwSwso-2FaHUQi-2FbTmo7gOuSXwihtbRs6MGWGl-2BsGT=
+E6PJog-2FpKHpBEgFkg-3D-3D>.
+
+If you have any questions or concerns, please contact us at <https://u35284=
+16.ct.sendgrid.net/ls/click?upn=3DOHV4-2FqkTPBIi8pj9zljUkGvaabq0ecKgjN5WVH8=
+ZDzf9L2e5lzgUfaj8K-2B2VpbaM9nlNmrQPX4bZPu9mxCD9P8FYr9w37wNNj3bRBbXBAqsZ2zqU=
+nyojEZgLenlZs364u1PzDAAep0P0soPymmFJWQkfLqNLINybHS4497et0EQ-3DF1qY_LRmZwZTI=
+HdvEbXw2vhgkxkl-2FJtBSxyK0rKKCwe5gPGaLZLZzLelStk1vod7Huw7PW3fg79lu4dp4t5pAI=
+dztuS5u1DxOXnHtkSy4Cr0aVQMg-2BTPiZVWl16thr2PmQDJbZupXkHBygY65lLLU-2B9tbQYxK=
+7dXVGx07uiOKs-2FyFsX7z4xBCaIhYLKCBeiKALqGJodx3NIjG4tpM2Z65WonUUw-3D-3D>.
+
+If you're having trouble reading this email, try the web version <https://u=
+3528416.ct.sendgrid.net/ls/click?upn=3DOHV4-2FqkTPBIi8pj9zljUkLjItY90ZL4gJ-=
+2BRbbhpMOMpMv2ZlAGy2tK-2BGXLK8E-2BKtY4xllS9STBx3fbClV6rkp5nbAlFdI9JZoao1wJ4=
+5GlXXbTZY5B5oqem9HTn2h8iZn0DBKP2Gh5U-2FuPALCtdOsKUKdkJ5CWfdLtyJheYt-2BvqYw9=
+TCjMX0JSRaRgdHSpnJuZdugqLSm-2FlWSVumIHWaS761QzKn76Pb3NmcpcaDUZEleS3RE72nA8h=
+o9DnA4VVH83oIlB0GdW8SynWNXFcre3Mmr0T2T1BlIEZLnvkJplErjZqN1HBNde6xnMJ8zSEzBs=
+SN90XqgAcycdPmdUhiNxhMuTQ283qw7XjdZqygNXW1d15qK-2FX1g4aY5nvLv-2FVG3QFP_LRmZ=
+wZTIHdvEbXw2vhgkxkl-2FJtBSxyK0rKKCwe5gPGaLZLZzLelStk1vod7Huw7P9LeZ8LD7ItfJj=
+R3dRcwc3qWevNOPbkulSjY1kffsTVZgEa24h-2Fc7Ed-2FDq0Bjaj142U9IFZTbFzM3j3Lw-2Fs=
+IqzDL3dk1-2FroG-2Fmk-2BmdWPoJWlUmNDdlUBLF-2Fm1BfVBXA1fcbODShPs2ECWWhywWtdeH=
+g-3D-3D>.
+
+Twilio 101 Spear Street, San Francisco, CA 94105
+
+This email was sent to contact@fiidewgal.com. If you no longer wish to rece=
+ive these emails you may unsubscribe or update your preferences here: https=
+://u3528416.ct.sendgrid.net/ls/click?upn=3DOHV4-2FqkTPBIi8pj9zljUkKNr39pANy=
+FQVtCsZDf64ZKC6-2BU1M8HUmidvI2iADh0Qlb-2BVIpG2JIgHkeI7hIdP9iC8-2FtjnmnoSAFc=
+ZTrXF6pk-3DqFdt_LRmZwZTIHdvEbXw2vhgkxkl-2FJtBSxyK0rKKCwe5gPGaLZLZzLelStk1vo=
+d7Huw7Pfsc0jB849s2VVlTilstS4d90Esn73NNusXcswlN-2F523J42gJXKicUy2PQAtwQqCnxL=
+V7xLAl09zsrlvXMInWLv1YN4M0sloCU-2F-2FfGRP6B3J4jiL6eHRH5iwEKEjb5FNfEQ-2BbsuM=
+-2BWDv9pflMoDwWlA-3D-3D
+
+------=_Part_19438906_798615332.1689346830814
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>=20
+<title></title>=20
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8" />=
+=20
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0" />=20
+<!--[if !mso]><!-->=20
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge" />=20
+<!--<![endif]-->=20
+<!--Image-->   =20
+<!-- Buttons -->   =20
+<!-- One Column -->   =20
+<!-- Two Column -->    =20
+<!-- Three Column -->      =20
+<style type=3D"text/css">
+  @media screen and (min-width: 10px) {
+    .buttonwrapper a {
+      display: block !important
+    }
+  }
+
+  div[style*=3D"margin: 16px 0"] {
+    margin: 0 !important
+  }
+
+  @media screen and (max-width: 499px) {
+    .inner {
+      padding-left: 20px !important;
+      padding-right: 20px !important
+    }
+
+    .column {
+      max-width: 100% !important
+    }
+
+    .image img {
+      margin: 0 auto !important
+    }
+
+    .three-col .copy,
+    .two-col-bleed .copy {
+      text-align: center !important
+    }
+
+    .three-col .copy .buttonwrapper,
+    .two-col-bleed .copy .buttonwrapper {
+      margin: 0 auto !important;
+      float: none !important
+    }
+
+    .two-col .image img,
+    .two-col-bleed .image img {
+      max-width: 100% !important
+    }
+
+    .buffered {
+      padding-left: 0 !important;
+      padding-right: 0 !important
+    }
+
+    .reset-width {
+      width: auto !important
+    }
+
+    .reset-height {
+      height: auto !important
+    }
+
+    .section-masthead {
+      font-size: 21px !important;
+      line-height: 1.2em !important
+    }
+
+    .section-masthead .contents {
+      font-size: 16px !important;
+      line-height: 1.2em !important
+    }
+
+    .hero-inner {
+      padding: 20px !important
+    }
+
+    .footer-links {
+      line-height: 30px !important
+    }
+
+    .footer-multi img {
+      width: 20px !important
+    }
+
+    .social {
+      margin-top: 5px !important
+    }
+
+    .social td {
+      width: 40px !important
+    }
+
+    .social img {
+      width: 30px !important
+    }
+
+    .stroke-right {
+      border: none !important
+    }
+  }
+
+  @media screen and (min-width: 370px) and (max-width: 499px) {
+    .outer {
+      width: 85% !important;
+      margin: 0 auto !important
+    }
+  }
+
+  @media screen and (min-width: 500px) and (max-width: 615px) {
+    .footer-three .column {
+      max-width: 30% !important
+    }
+
+    .three-col .column {
+      max-width: 33% !important
+    }
+
+    .two-col .column,
+    .two-col-bleed .column {
+      max-width: 50% !important;
+      vertical-align: top !important
+    }
+
+    .two-col-sidebar .left {
+      max-width: 33% !important
+    }
+
+    .two-col-sidebar .right {
+      max-width: 67% !important
+    }
+
+    .one-col .inner {
+      padding-left: 20px !important;
+      padding-right: 20px !important
+    }
+
+    .two-col .inner,
+    .two-col-sidebar .inner {
+      padding-left: 13px !important;
+      padding-right: 13px !important
+    }
+
+    .three-col .inner {
+      padding-left: 14px !important;
+      padding-right: 14px !important
+    }
+
+    .hero-inner {
+      padding: 10px 30px !important
+    }
+  }
+
+  @media screen and (max-width: 615px) {
+    .hide {
+      display: none !important
+    }
+  }
+  </style>=20
+<!--[if(mso)|(IE)]>
+<style type=3D"text/css">
+    table {border-collapse: collapse !important; mso-table-lspace:0pt !impo=
+rtant; mso-table-rspace:0pt !important;}
+    .links-headings a, .links-headings h1 a, .links-headings h2 a, .links-h=
+eadings h3 a {color: #008CFF !important; text-decoration: none !important;}
+    .links-copy a {color: #008CFF !important; text-decoration: none !import=
+ant;}
+    .links-copy h1 a, .links-copy h2 a, .links-copy h3 a, .links-copy h4 a,=
+ .links-copy h5 a, .links-copy h6 a {color: #008CFF !important; text-decora=
+tion: none !important;}
+  </style>
+  <![endif]-->=20
+<!--[if mso]>
+<style type=3D"text/css">
+    ol, ul {margin-left: 25px !important; margin-top: 0 !important;}
+    .button {padding: 4px 2px 4px 2px !important;}
+  </style>
+  <xml>
+    <o:OfficeDocumentSettings>
+      <o:AllowPNG/>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+   </o:OfficeDocumentSettings>
+  </xml>
+  <![endif]-->=20
+</head>=20
+<body style=3D"margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;pa=
+dding-top:0;padding-bottom:0;padding-right:0;padding-left:0;"><style type=
+=3D"text/css">div#emailPreHeader{ display: none !important; }</style><div i=
+d=3D"emailPreHeader" style=3D"mso-hide:all; visibility:hidden; opacity:0; c=
+olor:transparent; mso-line-height-rule:exactly; line-height:0; font-size:0p=
+x; overflow:hidden; border-width:0; display:none !important;">we wanted to =
+share some tips and best practices on how you can scale your messaging stra=
+tegy and make the most out of the platform.
+</div>=20
+<center>=20
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" =
+border=3D"0" class=3D"wrapper" style=3D"background-color:#EEEEEE;margin-top=
+:0;margin-bottom:0;margin-right:auto;margin-left:auto;font-family:system,-a=
+pple-system,BlinkMacSystemFont,'SegoeUI','Roboto','Oxygen','Ubuntu','Cantar=
+ell','FiraSans','DroidSans',Helvetica,sans-serif;table-layout:fixed;width:1=
+00%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center">=20
+<center>=20
+<!--[if(mso)|(IE)]>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"600">
+<tr>
+<td><![endif]-->=20
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"outer" sty=
+le=3D"margin-top:0;margin-bottom:0;margin-right:auto;margin-left:auto;width=
+:100%;max-width:600px;">=20
+<tbody>=20
+<tr>=20
+<td bgcolor=3D"#ffffff" class=3D"mktoContainer" id=3D"main-container">
+<table class=3D"mktoModule section-masthead" id=3D"module-masthead" width=
+=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"backgro=
+und-color:#FFFFFF;">=20
+<tbody>=20
+<tr class=3D"one-col">=20
+<td class=3D"inner" style=3D"padding-top:20px;padding-bottom:20px;padding-l=
+eft:30px;padding-right:30px;">=20
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" clas=
+s=3D"contents" style=3D"text-align:left;font-size:16px;line-height:18px;col=
+or:#333333;">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left"> <a href=3D
+"https://u3528416.ct.sendgrid.net/ls/click?upn=3DOHV4-2FqkTPBIi8pj9zljUkGva=
+abq0ecKgjN5WVH8ZDzf9L2e5lzgUfaj8K-2B2VpbaM1SW1G2PQCBrYQeGvM70ukp64pm64mgkyt=
+Dp3yEQGABLrrJtmyTGYVaXu1ublED-2Fd8QLADYLFUDDK-2ByA-2FeRUSvBj8Vm54CH9THn4lbM=
+0Ugyk-3Dh-rf_LRmZwZTIHdvEbXw2vhgkxkl-2FJtBSxyK0rKKCwe5gPGaLZLZzLelStk1vod7H=
+uw7PG8zsyBpeRJDO46eE6qPMKEGR9DbWl3LAEEyWkqvpgscOs5YCJZvt9AK84eTED1oFzMW-2BT=
+ahx-2B21zkPuEhX0wVJeqEqDREn7WUG5xaXnBjzJDQdXlajTLDaW6UUeyo5gGS8SgIMfRBqUPw-=
+2B3ENwdPAQ-3D-3D" style=3D"color: rgb(242, 47, 70); text-decoration: underl=
+ine; text-decoration:none;"
+> <img src=3D"https://pages.twilio.com/rs/294-TKB-300/images/twilio-logo-re=
+d_2.png" width=3D"150" alt=3D"Twilio" style=3D"width:100%;max-width:150px;b=
+order-width:0;height:auto;display:block;" class=3D"align-left" /> </a> </td=
+>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table class=3D"mktoModule section-hero contents" id=3D"module-fullwidth-im=
+age" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=
+=3D"font-size:16px;line-height:24px;text-align:left;color:#333333;">=20
+<tbody>=20
+<tr class=3D"one-col">=20
+<td class=3D"image" style=3D"font-size:28px;">=20
+<div class=3D"mktoImg" id=3D"img-fullwidth" style=3D"margin-top:0;margin-bo=
+ttom:0;margin-right:0;margin-left:0;" mktolockimgsize=3D"true" mktolockimgs=
+tyle=3D"true">
+<a style=3D"color: rgb(242, 47, 70); text-decoration: underline; text-decor=
+ation:none;" href=3D
+"https://u3528416.ct.sendgrid.net/ls/click?upn=3DOHV4-2FqkTPBIi8pj9zljUkGva=
+abq0ecKgjN5WVH8ZDzf9L2e5lzgUfaj8K-2B2VpbaMH7fYXXU2RNyV-2BIJG-2FSaQPrj-2Fklp=
+Cw-2BCsDAWU4syrmZJMd07SDBhckcOKwsGjSBZNnJHyO1dixrm2UGdvFjS7TKCx7w47n3wGTNi8=
+-2FwI0xDg-3DHEvP_LRmZwZTIHdvEbXw2vhgkxkl-2FJtBSxyK0rKKCwe5gPGaLZLZzLelStk1v=
+od7Huw7PQhSNxxmyWW16G1qbOtRszzQ-2FS2cBPU-2BL84V-2FPiPERmbGms1Mf66NNz71UgRQg=
+E5cCGpqlDEf3GJG1uW2RsW8w-2BvvDCFjZbOxHJUOuZfUIOhHsRHUBmB-2F46KHGBIiNXYEhxKi=
+WKxIZ642QJE9X0OVkw-3D-3D" target=3D"_blank"
+> <img width=3D"600" style=3D"border-width:0;height:auto;display:block;widt=
+h:100%;max-width:600px;" src=3D"https://pages.twilio.com/rs/294-TKB-300/ima=
+ges/10681_banner.png" alt=3D"Getting Started with WhatsApp" /> </a>
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table class=3D"mktoModule section-intro contents" id=3D"module-rich-text" =
+width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"fo=
+nt-size:16px;line-height:24px;text-align:left;color:#333333;">=20
+<tbody>=20
+<tr class=3D"one-col">=20
+<td class=3D"inner copy" align=3D"left" style=3D"text-align:left;padding-to=
+p:0;padding-bottom:30px;padding-right:30px;padding-left:30px;">=20
+<div class=3D"links-copy" style=3D"margin-top:0;margin-bottom:0;margin-righ=
+t:0;margin-left:0;">=20
+<div class=3D"mktEditable" id=3D"body-copy" style=3D"margin-top:0;margin-bo=
+ttom:0;margin-right:0;margin-left:0;">
+<p style=3D"margin: 22px 0 12px 0;">Hi&nbsp;ABDOUL,</p>=20
+<p style=3D"margin: 22px 0 12px 0;">Now that you've set up your WhatsApp Bu=
+siness account on Twilio, we wanted to share some tips and best practices o=
+n how you can scale your messaging strategy and make the most out of the pl=
+atform.</p>
+</div>=20
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table class=3D"mktoModule section-multicol split-content" id=3D"module-spl=
+it-left1" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">=20
+<tbody>=20
+<tr class=3D"two-col">=20
+<td class=3D"inner" style=3D"padding-bottom:0px;">=20
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td class=3D"container" style=3D"font-size:0;text-align:center;">=20
+<!--[if(mso)|(IE)]>
+                           =20
+<table align=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" wi=
+dth=3D"92%">
+<tr>
+<td width=3D"10%" valign=3D"top">
+                            <![endif]-->=20
+<div class=3D"column left" style=3D"margin-top:0;margin-bottom:0;margin-rig=
+ht:20px;margin-left:0;display:inline-block;vertical-align:middle;width:100%=
+;max-width:100px;">=20
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td class=3D"buffered" style=3D"padding-top:0;padding-right:7px;padding-lef=
+t:7px;padding-bottom:15px;">=20
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" clas=
+s=3D"contents" style=3D"text-align:center;color:#333333;font-size:13px;line=
+-height:18px;">=20
+<tbody>=20
+<tr>=20
+<td class=3D"image" style=3D"font-size:14px;color:#333333;">=20
+<div class=3D"mktoImg" id=3D"icon-split-1" style=3D"margin-top:0;margin-bot=
+tom:0;margin-right:0;margin-left:0;" mktolockimgsize=3D"true" mktolockimgst=
+yle=3D"true">
+<a style=3D"color: rgb(242, 47, 70); text-decoration: underline; color:#333=
+333;text-decoration:none;" target=3D"_blank" href=3D
+"https://u3528416.ct.sendgrid.net/ls/click?upn=3DOHV4-2FqkTPBIi8pj9zljUkGva=
+abq0ecKgjN5WVH8ZDzf9L2e5lzgUfaj8K-2B2VpbaMH7fYXXU2RNyV-2BIJG-2FSaQPrj-2Fklp=
+Cw-2BCsDAWU4syrmZJMd07SDBhckcOKwsGjSBZNnJHyO1dixrm2UGdvFjS7TKCx7w47n3wGTNi8=
+-2FwI0xDg-3DFcWf_LRmZwZTIHdvEbXw2vhgkxkl-2FJtBSxyK0rKKCwe5gPGaLZLZzLelStk1v=
+od7Huw7PAOqmXgjPL4OlLC-2BtgqF-2Fd-2BqRSkf8OCbZeEvxtoPA6RoJpoNJMbvs-2FDZzVyc=
+ja3NW-2B8WQT1ZhmYrkUKyZm2gtF9brokUL3sm8xGJ2NqopeaqneEQh73CTBF-2FmV2MnNHkhKl=
+QV-2B9gHoUb91sZYz36ooA-3D-3D"
+> <img width=3D"100" style=3D"border-radius:4px;border-width:0;height:auto;=
+display:block;width:100%;max-width:100px !important;" src=3D"https://pages.=
+twilio.com/rs/294-TKB-300/images/10681_logo_1.png" alt=3D"Notifications Mes=
+sages with Templates" /> </a>
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+</div>=20
+<!--[if(mso)|(IE)]></td>
+<td width=3D"90%" valign=3D"top"><![endif]-->=20
+<div class=3D"column right" style=3D"margin-top:0;margin-bottom:0;margin-ri=
+ght:0;margin-left:0;display:inline-block;vertical-align:middle;width:100%;m=
+ax-width:435px;">=20
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td class=3D"buffered" style=3D"padding-top:0;padding-right:7px;padding-lef=
+t:7px;padding-bottom:15px;">=20
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" clas=
+s=3D"contents" style=3D"text-align:left;color:#333333;font-size:13px;line-h=
+eight:18px;">=20
+<tbody>=20
+<tr>=20
+<td class=3D"copy with-list" align=3D"left" style=3D"text-align:left;">=20
+<div class=3D"links-copy" style=3D"margin-top:0;margin-bottom:0;margin-righ=
+t:0;margin-left:0;">=20
+<div class=3D"mktEditable" id=3D"split-text-area1" style=3D"margin-top:0;ma=
+rgin-bottom:0;margin-right:0;margin-left:0;">
+<h4 style=3D"font-size: 16px; line-height: 20px; margin: 0 0 14px 0;">Notif=
+ications Messages with Templates</h4>=20
+<p style=3D"margin: 0 0 14px 0; font-size: 16px; line-height: 22px;">Learn =
+how to create pre-approved <a href=3D
+"https://u3528416.ct.sendgrid.net/ls/click?upn=3DOHV4-2FqkTPBIi8pj9zljUkGva=
+abq0ecKgjN5WVH8ZDzf9L2e5lzgUfaj8K-2B2VpbaMH7fYXXU2RNyV-2BIJG-2FSaQPrj-2Fklp=
+Cw-2BCsDAWU4syrmZJMd07SDBhckcOKwsGjSBZNnJHyO1dixrm2UGdvFjS7TKCx7w47n3wGTNi8=
+-2FwI0xDg-3DRwA8_LRmZwZTIHdvEbXw2vhgkxkl-2FJtBSxyK0rKKCwe5gPGaLZLZzLelStk1v=
+od7Huw7P440Y2P2Z4rTM-2BiN8JGiWsRyIG5q-2B9CGlMVnYSEYrFnffekf0j2ch3clhXGOKaRf=
+Y4Z1v7x-2BFo4Eef5fUnLbotwZ3eZZ5g-2B1lZEdr6puuoNjYJUifhaYa0dnsyBlaOV1HIyHcbF=
+aim88Eq89EikXrDQ-3D-3D" target=3D"_blank" style=3D"-webkit-text-size-adjust=
+: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; co=
+lor: #008cff; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; te=
+xt-decoration: none;"
+> message templates</a> so that you can send alerts, reminders, and other i=
+mportant notifications to your customers with ease.</p>
+</div>=20
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+</div>=20
+<!--[if(mso)|(IE)]>
+                            </td>
+</tr>
+</table>
+                            <![endif]--> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr class=3D"two-col">=20
+<td class=3D"inner" style=3D"padding-bottom:0px;">=20
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td class=3D"container" style=3D"font-size:0;text-align:center;">=20
+<!--[if(mso)|(IE)]>
+                           =20
+<table align=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" wi=
+dth=3D"92%">
+<tr>
+<td width=3D"10%" valign=3D"top">
+                            <![endif]-->=20
+<div class=3D"column left" style=3D"margin-top:0;margin-bottom:0;margin-rig=
+ht:20px;margin-left:0;display:inline-block;vertical-align:middle;width:100%=
+;max-width:100px;">=20
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td class=3D"buffered" style=3D"padding-top:0;padding-right:7px;padding-lef=
+t:7px;padding-bottom:15px;">=20
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" clas=
+s=3D"contents" style=3D"text-align:center;color:#333333;font-size:13px;line=
+-height:18px;">=20
+<tbody>=20
+<tr>=20
+<td class=3D"image" style=3D"font-size:14px;color:#333333;">=20
+<div class=3D"mktoImg" id=3D"icon-split-2" style=3D"margin-top:0;margin-bot=
+tom:0;margin-right:0;margin-left:0;" mktolockimgsize=3D"true" mktolockimgst=
+yle=3D"true">
+<a style=3D"color: rgb(242, 47, 70); text-decoration: underline; color:#333=
+333;text-decoration:none;" target=3D"_blank" href=3D
+"https://u3528416.ct.sendgrid.net/ls/click?upn=3DOHV4-2FqkTPBIi8pj9zljUkGva=
+abq0ecKgjN5WVH8ZDzf9L2e5lzgUfaj8K-2B2VpbaMuy5BljcM1GJjM-2BssD5NAU1GzkB1UNRi=
+X3z8n0Lz1IxnF-2BeLtz8X3pOId95DZbXGAgrlLi3-2BmkqRDGF4GL2tvmbJHRamM3hJ8Bi0iRu=
+4dH7A-3DYGJu_LRmZwZTIHdvEbXw2vhgkxkl-2FJtBSxyK0rKKCwe5gPGaLZLZzLelStk1vod7H=
+uw7PDo-2BQKuKvk0zlABTnMuxfvzys3ZrujvYyvorwVyM-2BdqQmGs5yiJYR2Qh6VWmXW6TorEc=
+B4tuO0rysrPzWNeRG7ENqnFdKl5x5wYFKbhVkhiWEZBLH6WN0UH-2BK-2BR0pW2lllbSgzp2tzJ=
+VT5mM8xD-2FDwg-3D-3D"
+> <img width=3D"100" style=3D"border-radius:4px;border-width:0;height:auto;=
+display:block;width:100%;max-width:100px !important;" src=3D"https://pages.=
+twilio.com/rs/294-TKB-300/images/10681_logo2.png" alt=3D"Add Buttons to Mes=
+sages " /> </a>
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+</div>=20
+<!--[if(mso)|(IE)]></td>
+<td width=3D"90%" valign=3D"top"><![endif]-->=20
+<div class=3D"column right" style=3D"margin-top:0;margin-bottom:0;margin-ri=
+ght:0;margin-left:0;display:inline-block;vertical-align:middle;width:100%;m=
+ax-width:435px;">=20
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td class=3D"buffered" style=3D"padding-top:0;padding-right:7px;padding-lef=
+t:7px;padding-bottom:15px;">=20
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" clas=
+s=3D"contents" style=3D"text-align:left;color:#333333;font-size:13px;line-h=
+eight:18px;">=20
+<tbody>=20
+<tr>=20
+<td class=3D"copy with-list" align=3D"left" style=3D"text-align:left;">=20
+<div class=3D"links-copy" style=3D"margin-top:0;margin-bottom:0;margin-righ=
+t:0;margin-left:0;">=20
+<div class=3D"mktEditable" id=3D"split-text-area2" style=3D"margin-top:0;ma=
+rgin-bottom:0;margin-right:0;margin-left:0;">
+<h4 style=3D"font-size: 16px; line-height: 20px; margin: 0 0 14px 0;">Add B=
+uttons to Messages</h4>=20
+<p style=3D"margin: 0 0 14px 0; font-size: 16px; line-height: 22px;"><a hre=
+f=3D
+"https://u3528416.ct.sendgrid.net/ls/click?upn=3DOHV4-2FqkTPBIi8pj9zljUkGva=
+abq0ecKgjN5WVH8ZDzf9L2e5lzgUfaj8K-2B2VpbaMuy5BljcM1GJjM-2BssD5NAU1GzkB1UNRi=
+X3z8n0Lz1IxnF-2BeLtz8X3pOId95DZbXGAgrlLi3-2BmkqRDGF4GL2tvmbJHRamM3hJ8Bi0iRu=
+4dH7A-3DUEjS_LRmZwZTIHdvEbXw2vhgkxkl-2FJtBSxyK0rKKCwe5gPGaLZLZzLelStk1vod7H=
+uw7P5dZ4lElYZMH4hnF-2F86u8ocajtpLcpsf9t4yKVe4KBVlRQ5vGc3MlLIimX67Af55smPNNW=
+GVnpRaRZswyQfLswZEdb6HaMM-2BfJNrl2jvo4YrPS5maftqA5OHAOuSheJ4eDD-2BhK7a10f2J=
+jFpyuPXzvw-3D-3D" target=3D"_blank" style=3D"-webkit-text-size-adjust: 100%=
+; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; color: #=
+008cff; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; text-dec=
+oration: none;"
+>Adding buttons to your messages</a> to give your customers convenient opti=
+ons to respond or take action quickly. Buttons can be used for a variety of=
+ purposes, such as confirming appointments, providing feedback, or making a=
+ purchase.</p>
+</div>=20
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+</div>=20
+<!--[if(mso)|(IE)]>
+                            </td>
+</tr>
+</table>
+                            <![endif]--> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr class=3D"two-col">=20
+<td class=3D"inner" style=3D"padding-bottom:50px;">=20
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td class=3D"container" style=3D"font-size:0;text-align:center;">=20
+<!--[if(mso)|(IE)]>
+                           =20
+<table align=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" wi=
+dth=3D"92%">
+<tr>
+<td width=3D"10%" valign=3D"top">
+                            <![endif]-->=20
+<div class=3D"column left" style=3D"margin-top:0;margin-bottom:0;margin-rig=
+ht:20px;margin-left:0;display:inline-block;vertical-align:middle;width:100%=
+;max-width:100px;">=20
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td class=3D"buffered" style=3D"padding-top:0;padding-right:7px;padding-lef=
+t:7px;padding-bottom:15px;">=20
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" clas=
+s=3D"contents" style=3D"text-align:center;color:#333333;font-size:13px;line=
+-height:18px;">=20
+<tbody>=20
+<tr>=20
+<td class=3D"image" style=3D"font-size:14px;color:#333333;">=20
+<div class=3D"mktoImg" id=3D"icon-split-3" style=3D"margin-top:0;margin-bot=
+tom:0;margin-right:0;margin-left:0;" mktolockimgsize=3D"true" mktolockimgst=
+yle=3D"true">
+<a style=3D"color: rgb(242, 47, 70); text-decoration: underline; color:#333=
+333;text-decoration:none;" target=3D"_blank" href=3D
+"https://u3528416.ct.sendgrid.net/ls/click?upn=3DOHV4-2FqkTPBIi8pj9zljUkGva=
+abq0ecKgjN5WVH8ZDzf9L2e5lzgUfaj8K-2B2VpbaMEJYcAsTyd9LuyDrdXkLAPMbCmshx-2FYE=
+tkfTiHaJNW5teEWll-2FKIZlkqXb5kJgeRY03CAHOSIk63dorMio8AczTlVw79O740G2t0eJsbd=
+9eo-3DAu2z_LRmZwZTIHdvEbXw2vhgkxkl-2FJtBSxyK0rKKCwe5gPGaLZLZzLelStk1vod7Huw=
+7PEL8Gkw1QAfbunMA8Co3ercxB0MGbhpGIaSsZYbLgxkRERkXoGO-2FjQI6zWCwpkCVSRZXc1ln=
+EKAeuAKvY6I0EnupDWY73J1hK7NceRQdfXtOtEaU3FL-2FQ-2BOQvAToVsrVY8o7ANErvImxYus=
+Uf6LaKXw-3D-3D"
+> <img width=3D"100" style=3D"border-radius:4px;border-width:0;height:auto;=
+display:block;width:100%;max-width:100px !important;" src=3D"https://pages.=
+twilio.com/rs/294-TKB-300/images/logo_10681_3.png" alt=3D"Best Practices fo=
+r Conversational Messaging" /> </a>
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+</div>=20
+<!--[if(mso)|(IE)]></td>
+<td width=3D"90%" valign=3D"top"><![endif]-->=20
+<div class=3D"column right" style=3D"margin-top:0;margin-bottom:0;margin-ri=
+ght:0;margin-left:0;display:inline-block;vertical-align:middle;width:100%;m=
+ax-width:435px;">=20
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td class=3D"buffered" style=3D"padding-top:0;padding-right:7px;padding-lef=
+t:7px;padding-bottom:0px;">=20
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" clas=
+s=3D"contents" style=3D"text-align:left;color:#333333;font-size:13px;line-h=
+eight:18px;">=20
+<tbody>=20
+<tr>=20
+<td class=3D"copy with-list" align=3D"left" style=3D"text-align:left;">=20
+<div class=3D"links-copy" style=3D"margin-top:0;margin-bottom:0;margin-righ=
+t:0;margin-left:0;">=20
+<div class=3D"mktEditable" id=3D"split-text-area3" style=3D"margin-top:0;ma=
+rgin-bottom:0;margin-right:0;margin-left:0;">
+<h4 style=3D"font-size: 16px; line-height: 20px; margin: 0 0 14px 0;">Best =
+Practices for Conversational Messaging</h4>=20
+<p style=3D"margin: 0 0 0 0;"><span style=3D"font-size: 16px; line-height: =
+22px;">Our blog, <a href=3D
+"https://u3528416.ct.sendgrid.net/ls/click?upn=3DOHV4-2FqkTPBIi8pj9zljUkGva=
+abq0ecKgjN5WVH8ZDzf9L2e5lzgUfaj8K-2B2VpbaMEJYcAsTyd9LuyDrdXkLAPMbCmshx-2FYE=
+tkfTiHaJNW5teEWll-2FKIZlkqXb5kJgeRY03CAHOSIk63dorMio8AczTlVw79O740G2t0eJsbd=
+9eo-3DLAZT_LRmZwZTIHdvEbXw2vhgkxkl-2FJtBSxyK0rKKCwe5gPGaLZLZzLelStk1vod7Huw=
+7PpztihUcU6qusupZfa0pj3ksjut80f2M5EXimBm9mamCf93Pw2GXCTy4B8mmt5SUC7rlaepK7a=
+C-2FpTUijXEQLgA-2BCY98fSl2f-2FWYbF2Fkq7sh7avCkSzm5k6Q0V-2BPPlybfnAxyz-2FLWi=
+Yk-2BT-2BDILYMpw-3D-3D" target=3D"_blank" style=3D"-webkit-text-size-adjust=
+: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; co=
+lor: #008cff; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; te=
+xt-decoration: none;"
+> Best Practices for Conversational Messaging</a>, provides tips on managin=
+g templates and opt-ins for conversational messaging on the WhatsApp Busine=
+ss Platform.</span></p>
+</div>=20
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+</div>=20
+<!--[if(mso)|(IE)]>
+                            </td>
+</tr>
+</table>
+                            <![endif]--> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table class=3D"mktoModule section-intro contents" id=3D"module-rich-headin=
+gs1" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=
+=3D"font-size:16px;line-height:24px;text-align:left;color:#333333;">=20
+<tbody>=20
+<tr class=3D"one-col">=20
+<td class=3D"inner copy" align=3D"left" style=3D"text-align:left;padding-to=
+p:10px;padding-bottom:30px;padding-right:30px;padding-left:30px;border:0px =
+solid black;">=20
+<div class=3D"links-headings" style=3D"margin-top:0;margin-bottom:0;margin-=
+right:0;margin-left:0;">=20
+<div class=3D"mktEditable" id=3D"body-copy-headings1" style=3D"margin-top:0=
+;margin-bottom:0;margin-right:0;margin-left:0;">
+<p style=3D"margin: 22px 0 12px 0;">Just can=E2=80=99t get enough? Need a h=
+elping hand? Explore our <a href=3D
+"https://u3528416.ct.sendgrid.net/ls/click?upn=3DOHV4-2FqkTPBIi8pj9zljUkGva=
+abq0ecKgjN5WVH8ZDzf9L2e5lzgUfaj8K-2B2VpbaMGAtvmG3wKrKDQ1kNR63htujSb426g2e2q=
+4v7CK2kerNDoLmymzPAObQ22JbktIsEtMwjay9nymQXaOovsMbntZgMbBwWS6Gcr50OmNpSU5A-=
+3DIOzJ_LRmZwZTIHdvEbXw2vhgkxkl-2FJtBSxyK0rKKCwe5gPGaLZLZzLelStk1vod7Huw7Pw4=
+xfI9AhECf3AJG3EvxkMECj8rLRZgWSjMUgqpNE65AcupsGcLQH-2FR5iKpmoeSM8AgOcrBKGiNW=
+cwP0PujAFdB3dp94L6Wi1yMMWQTLVk8a5OBDhFKhLTAGHUmILSWdXUyIszWFgIWdNkrnSat5mBw=
+-3D-3D" target=3D"_blank" style=3D"-webkit-text-size-adjust: 100%; -ms-text=
+-size-adjust: 100%; -webkit-font-smoothing: antialiased; color: #008cff; fo=
+nt-family: Helvetica Neue, Helvetica, Arial, sans-serif; text-decoration: n=
+one;"
+> Help Center</a> to find helpful blogs and support articles.</p>=20
+<p style=3D"margin: 22px 0 12px 0;">Best,<br />Team Twilio</p>
+</div>=20
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+<tr>=20
+<td>=20
+<!-- FOOTER START -->=20
+<table style=3D"margin: 0 auto;width:100%" cellspacing=3D"0" cellpadding=3D=
+"0" border=3D"0" width=3D"width:100%">=20
+<tbody>=20
+<tr>=20
+<td class=3D"mktoSnippet" id=3D"Footer">=20
+<table id=3D"footer" style=3D"-webkit-text-size-adjust: 100%; -ms-text-size=
+-adjust: 100%; -webkit-font-smoothing: antialiased; color: #2c2c2a; font-fa=
+mily: Helvetica Neue, Helvetica, Arial, sans-serif; width: 100%; padding: 2=
+4px 0;">=20
+<tbody>=20
+<tr style=3D"-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -w=
+ebkit-font-smoothing: antialiased; color: #2c2c2a; font-family: Helvetica N=
+eue, Helvetica, Arial, sans-serif;">=20
+<td style=3D"-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -w=
+ebkit-font-smoothing: antialiased; color: #2c2c2a; font-family: Helvetica N=
+eue, Helvetica, Arial, sans-serif; border-collapse: collapse; width: 100%;"=
+ height=3D"150" align=3D"center"> <p style=3D"-webkit-text-size-adjust: 100=
+%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; color: =
+#bcb6aa; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; margin:=
+ 0; font-size: 13px; line-height: 18px; text-decoration: none; padding-bott=
+om: 12px;"><img alt=3D"We can't wait to see what you build!" src=3D"https:/=
+/pages.twilio.com/rs/294-TKB-300/images/twilio-footer-byline-serif.png" sty=
+le=3D"max-width: 100%; border: none; outline: none; -ms-interpolation-mode:=
+ bicubic; width: 306px; height: 30px;" width=3D"306" height=3D"30" /></p> <=
+p style=3D"-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -web=
+kit-font-smoothing: antialiased; color: #b1aca0; font-family: Helvetica Neu=
+e, Helvetica, Arial, sans-serif; margin: 0; font-size: 13px; line-height: 1=
+8px; text-decoration: none; padding-bottom: 24px;"><a href=3D
+"https://u3528416.ct.sendgrid.net/ls/click?upn=3DOHV4-2FqkTPBIi8pj9zljUkGva=
+abq0ecKgjN5WVH8ZDzf9L2e5lzgUfaj8K-2B2VpbaMSuGTN-2Bcdk8-2BZbbBmpl9g9MsRkViBS=
+DKakXMI5-2FD5luUzScTWxWNzFVs9RKcPSjZQ2PKEL22UzIWmGElX6ywAZIibcWvfyMVb-2BVSI=
+qskeprU-3DAuAj_LRmZwZTIHdvEbXw2vhgkxkl-2FJtBSxyK0rKKCwe5gPGaLZLZzLelStk1vod=
+7Huw7PyyEFB8ePU6k1fMsW6iG2lQNHY6LCFvvz5s-2Bp-2FGQQm4z7T8AdHTVKOclz7vIBxUSjG=
+0fshThjUByeMKfd0U63gs1lowJm3MteWCGI-2B5Yv0w687k5nDzsdHVPUKTYlKsOa0Q-2F4laRJ=
+fD0vgYsn40xMRw-3D-3D" style=3D"-webkit-text-size-adjust: 100%; -ms-text-siz=
+e-adjust: 100%; -webkit-font-smoothing:=20
+antialiased; color: #8f8776; font-family: Helvetica Neue, Helvetica, Arial,=
+ sans-serif; text-decoration: none; font-size: 13px; line-height: 18px;" ta=
+rget=3D"_blank"
+><img alt=3D"Twilio" src=3D"https://pages.twilio.com/rs/294-TKB-300/images/=
+twilio-footer-logo.png" style=3D"-webkit-text-size-adjust: 100%; -ms-text-s=
+ize-adjust: 100%; -webkit-font-smoothing: antialiased; color: #2c2c2a; font=
+-family:=20
+Helvetica Neue, Helvetica, Arial, sans-serif; outline: none; text-decoratio=
+n: none; -ms-interpolation-mode: bicubic; max-width: 100%; border: none;" w=
+idth=3D"32" height=3D"32" /> </a></p> <p style=3D"-webkit-text-size-adjust:=
+ 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; col=
+or: #b1aca0; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; mar=
+gin: 0; font-size: 13px; line-height: 18px; text-decoration: none; padding-=
+bottom: 24px;">This email was sent to <a href=3D
+"mailto:contact@fiidewgal.com" style=3D"-webkit-text-size-adjust: 100%; -ms=
+-text-size-adjust: 100%;=20
+-webkit-font-smoothing: antialiased; color: #8f8776; font-family: Helvetica=
+ Neue, Helvetica, Arial, sans-serif; text-decoration: none; font-size: 13px=
+; line-height: 18px;" target=3D"_blank" class=3D"mktNoTrack"
+>contact@fiidewgal.com</a>.<br /> Don't want to receive emails from Twilio?=
+ <a href=3D
+"https://u3528416.ct.sendgrid.net/ls/click?upn=3DOHV4-2FqkTPBIi8pj9zljUkGva=
+abq0ecKgjN5WVH8ZDzf9L2e5lzgUfaj8K-2B2VpbaMeXnFHFxVLAlefxux8q-2F-2Bikl9thbdB=
+SY2sOcT-2BTpAZZx6209dujRg-2F8ybBGQ3VeBcygvqsHIA4A2u9KA2d9g8XPkBLV5ACpz-2FcV=
+72ovX7OPI-3D9bYY_LRmZwZTIHdvEbXw2vhgkxkl-2FJtBSxyK0rKKCwe5gPGaLZLZzLelStk1v=
+od7Huw7Phqng4wWV2twX1BKHx3KDu3JST0lW4vWDGrCX4DL1CK1Ay8wNy2kX1eyFeDzaeR98-2B=
+X-2BqrcnW5DC4HOoQOpQm8KIXR7pBDuwSUbWWd1CEVqAHrshc-2Fc3OpB-2FpIvibJqUmr2zK-2=
+FVRo0xoIbX7rRaf7pg-3D-3D" style=3D"-webkit-text-size-adjust: 100%; -ms-text=
+-size-adjust:=20
+100%; -webkit-font-smoothing: antialiased; color: #8f8776; font-family: Hel=
+vetica Neue, Helvetica, Arial, sans-serif; text-decoration: none; font-size=
+: 13px; line-height: 18px;" target=3D"_blank"
+>Change your email preferences</a><a href=3D"https://u3528416.ct.sendgrid.n=
+et/ls/click?upn=3DOHV4-2FqkTPBIi8pj9zljUkLjItY90ZL4gJ-2BRbbhpMOMqHKmaHNzXZQ=
+pEgfL3YNcqI5K-2B12UIZbt5jjc3HkrfwnTZnr5r9XWhK4R4Nm793SRYsS6-2FKpDCLIdHSeLF7=
+zVGxYrQa5-2F2OZLt3zP2PMfB-2FpyMiqNBt6zdzlWeqhIxgZ5CTxMeUlIVcsMP5E8B3NQp2F7a=
+p4xo39NIuFT7CgUyG2Z-2BpLOy72I-2BswlfyvAbFh1bHxbJJiih62qz3pvpfrGSsYWnvRO-2BY=
+PBLO1ztEKUKa6h2cSJmiAfxZpN9-2B-2BiPhtE0-3D8NXJ_LRmZwZTIHdvEbXw2vhgkxkl-2FJt=
+BSxyK0rKKCwe5gPGaLZLZzLelStk1vod7Huw7P0dVM6YDyFWi9NhoQX5whplvHHWQ5Gc0gumxbi=
+qUPMo3eqFqJbHFq8TViM7X6qGaYUPSFD1USL5yjYqz8oj-2BsL5Eg7fjUawtWRPcThPiX2-2F0P=
+tk8o5FGE8JhuI5NlEjr6fpEPXIYVo3jNlWIfE4R7Pw-3D-3D"></a>.<br /> If you have a=
+ny questions or concerns, please contact us at <a href=3D
+"https://u3528416.ct.sendgrid.net/ls/click?upn=3DOHV4-2FqkTPBIi8pj9zljUkLw1=
+bglmhJGzuA3zs-2F4EN1htXgmpD9iMlUhDdPJxeHFwsUS5_LRmZwZTIHdvEbXw2vhgkxkl-2FJt=
+BSxyK0rKKCwe5gPGaLZLZzLelStk1vod7Huw7PPavjSngsTwDEox-2Bmbq7fW4sYxynkhAKZ-2B=
+1z9URXd5X7-2BpQGaH3Ib6Us4lAaggRSdSN0l0eY0gd1fIJIq8SWU3LGDbYQmO-2FGCAICjHsBK=
+-2FZtb1V89ez75wOMtHwlJKAxDJ9Ug8H-2BVrWi8ny-2FJGf2mcA-3D-3D" style=3D"-webki=
+t-text-size-adjust: 100%;=20
+-ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; color: #8f=
+8776; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; text-decor=
+ation: none; font-size: 13px; line-height: 18px;" target=3D"_blank" class=
+=3D"mktNoTrack"
+>https://www.twilio.com/help/contact</a>.</p> <p style=3D"-webkit-text-size=
+-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialia=
+sed; color: #b1aca0; font-family: Helvetica Neue, Helvetica, Arial, sans-se=
+rif; margin: 0; font-size: 13px; line-height: 18px; text-decoration: none; =
+padding-bottom: 24px;">If you're having trouble reading this email, try the=
+<span class=3D"link" style=3D"-webkit-text-size-adjust: 100%;=20
+-ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; color: #8f=
+8776; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;"> <a href=
+=3D"https://u3528416.ct.sendgrid.net/ls/click?upn=3DOHV4-2FqkTPBIi8pj9zljUk=
+LjItY90ZL4gJ-2BRbbhpMOMpMv2ZlAGy2tK-2BGXLK8E-2BKtY4xllS9STBx3fbClV6rkp5nbAl=
+FdI9JZoao1wJ45GlXXbTZY5B5oqem9HTn2h8iZn0DBKP2Gh5U-2FuPALCtdOsKUKdkJ5CWfdLty=
+JheYt-2BvqYw9TCjMX0JSRaRgdHSpnJuZdugqLSm-2FlWSVumIHWaS761QzKn76Pb3NmcpcaDUZ=
+EleS3RE72nA8ho9DnA4VVH83oIlB0GdW8SynWNXFcre3Mmr0T2T1BlIEZLnvkJplErjZqN1HBNd=
+e6xnMJ8zSEzBsSN90XqgAcycdPmdUhiNxhMuTQ283qw7XjdZqygNXW1d15qK-2FX1g4aY5nvLv-=
+2FVGdYZF_LRmZwZTIHdvEbXw2vhgkxkl-2FJtBSxyK0rKKCwe5gPGaLZLZzLelStk1vod7Huw7P=
+jyEshmr-2BkOYJSIzE7sYmRti3svfe6Gx6TBlv8tDXsB3P-2B3YR6cqR-2Bn00H0E2oNu2Qv8Gr=
+Wa-2FiXSPPZkg9RPu3ukHajps8-2FHvJ0J-2FYEp1NgQEtDhwEAupza3-2B5sBWDma-2FDegbxV=
+MqdiG5a8UgaRlr8Q-3D-3D" style=3D"-webkit-text-size-adjust: 100%; -ms-text-s=
+ize-adjust: 100%; -webkit-font-smoothing: antialiased; color: #8f8776; font=
+-family: Helvetica Neue, Helvetica, Arial, sans-serif; text-decoration: non=
+e; font-size: 13px; line-height: 18px;" target=3D"_blank" class=3D"mktNoTra=
+ck">web version</a></span>.</p> <p style=3D"-webkit-text-size-adjust: 100%;=
+ -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; color: #b=
+1aca0; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; margin: 0=
+; font-size: 13px; line-height: 18px; text-decoration: none; padding-bottom=
+: 24px;">Twilio <a style=3D"text-decoration: none; color: #b1aca0;">101 Spe=
+ar Street, San Francisco, CA 94105</a></p> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<!-- FOOTER END --> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<!--[if(mso)|(IE)]></td>
+</tr>
+</table>
+<![endif]-->=20
+</center> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+</center> =20
+<a href=3D
+"https://u3528416.ct.sendgrid.net/ls/click?upn=3DOHV4-2FqkTPBIi8pj9zljUkGva=
+abq0ecKgjN5WVH8ZDzf9L2e5lzgUfaj8K-2B2VpbaMrj3M0KJKBKQFqS-2FQP3356CQFMByQlLj=
+lmbEzD6db-2F4tVCBje621GZYqZHVlyJ3f6kLh1zHtw5nvIHVSIP5LYq4E7IuxK80-2B0RxOkRc=
+YLTWc-3Dbunu_LRmZwZTIHdvEbXw2vhgkxkl-2FJtBSxyK0rKKCwe5gPGaLZLZzLelStk1vod7H=
+uw7PncX01y-2B3whpVLzNLi-2F0SvsZ0ubFWO6SjLm-2FtZd9YG9vdHe4yUfp10oX4F7GACZ89t=
+nNAmKI5vqFNutBlCw5zmoK7lq4h1kgJsfQ32k4bWSI0VVjN401TYonxhXc6B3n1hDulFIeecriq=
+V7p-2FQqfn3w-3D-3D"
+></a>
+<img src=3D"https://links.twilio.com/trk?t=3D1&mid=3DMjk0LVRLQi0zMDA6MDozNT=
+I5OTozNjI5MzU6MDo0MzEwNTo5OjI3MTk4ODoxMjY0NzU1NzAtMTpudWxs" width=3D"1" hei=
+ght=3D"1" style=3D"display:none !important;" alt=3D"" />
+<img src=3D"https://u3528416.ct.sendgrid.net/wf/open?upn=3DhfIqhjxrH5PXl2rH=
+T1sLDSbkHm5DfGEeuy5gByu56jticOKY-2FNMCUXEXEHHP-2BeFTGaLrmUaF6qyguhHgJ-2FCYY=
+5p6TgNBadgq-2FqYnpPv6ipCFku-2F8KwFsTy1iHL5-2BvITQlXVYac7kxVNVxHN9QnjZlsJurG=
+8Tqve2BwULJYyzX-2Fc2jUsBTigLp6wWzR3zj2SEkj6iZ8qWKCC-2Fq7f3IpPzfWFTKGpKFHcij=
+o8oBBSAFjM-3D" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"heig=
+ht:1px !important;width:1px !important;border-width:0 !important;margin-top=
+:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-l=
+eft:0 !important;padding-top:0 !important;padding-bottom:0 !important;paddi=
+ng-right:0 !important;padding-left:0 !important;"/></body>
+</html>
+------=_Part_19438906_798615332.1689346830814--

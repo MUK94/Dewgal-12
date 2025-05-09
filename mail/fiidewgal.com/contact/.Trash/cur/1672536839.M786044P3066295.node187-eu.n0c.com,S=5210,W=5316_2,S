@@ -1,0 +1,106 @@
+Return-Path: <ramabahk@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 1pvBLgfjsGO3yS4A3R2AvA
+	(envelope-from <ramabahk@gmail.com>)
+	for <contact@fiidewgal.com>; Sun, 01 Jan 2023 02:33:59 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Nl1jy4WvLz5YqpL
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="jY/2z8N8"
+X-N0C-MailScanner-eFa-Watermark: 1673141636.29198@eLkQvD7vdWaiomyZQIUbMg
+X-N0C-MailScanner-eFa-From: ramabahk@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 33C5440044AA.AFB84
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-pf1-f171.google.com ([209.85.210.171] [209.85.210.171])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 33C5440044AA
+	for <contact@fiidewgal.com>; Sun,  1 Jan 2023 02:33:23 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 33C5440044AA
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 33C5440044AA
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=jY/2z8N8
+Received: by mail-pf1-f171.google.com with SMTP id 6so13947317pfz.4
+        for <contact@fiidewgal.com>; Sat, 31 Dec 2022 17:33:23 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=U98r4vB610li3UQCKNYoyqQ3lpupj1PF8T+OhOc3x+8=;
+        b=jY/2z8N8xVCH1uCxysAvfdNjd6q10EgvC5DK9CmAMb7ygg77nryxkkyH4DyJ+VdKTG
+         dHPCw3ITXqfOHhrvP2sRZduAOaESyZ52sBoulgne9F/PXeSdVYJsM31JPru+vHbrNv2B
+         J3QVtRRpegHBmB6L/K3j9usnkgf3nVqqmMDW0noCYxHNce/Iq+p+YMjulxSk2GANDaFb
+         hGrHX8lLW4MbGiYxonGFEP7KxZEiQNzPtyGG1BnGaFB3/M2RLr6qCIgFKFmT5fa92m8k
+         E8yeMf5hvtrTpbL1eHXkGt15aloe8zF2CQ1uKiBXETrwakX/ESo4tymnoKnxn7GM8EqL
+         DXdg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=U98r4vB610li3UQCKNYoyqQ3lpupj1PF8T+OhOc3x+8=;
+        b=SnR7JfuOsUvDMVdzibTlDV1iwVhPG702YH6QgqLT6YEVa3wKrcHnYzadWLDWRZCLVW
+         j5ESyaB/KfucQEhL7xDFl49A39XphV8H1KAHV4sajbkgmy48k+CzRpq1rT/FWWUX4euV
+         ygSHqAEqDs0p7fBTFQntNrvenoTEe4+2IkmqpobxiGoF6sM6oT+rTPb8Ra6ouOGAJJ+J
+         mZgJeja8kwzcLgRGsHA0qzWwqNM1Rz1IsRF7LaCm9WU4yHUd9MJZKtIPrs55iYHUw0Tq
+         HcUD1fooWU9LiAO5A79H97Op8BuRvRvfrKHV0/V8JF3Jjs6NP/oiJQ5tC380cmN02wM1
+         HaPg==
+X-Gm-Message-State: AFqh2koMZFEgBWMF52R3DlCAnes3/NHu6H77LI1ewaqhXItHUjYoV182
+	pSHvPvnvyFRZST2NmjjklmKZ/5ggXOewDGPltkasw6GU
+X-Google-Smtp-Source: AMrXdXvMBeIwQZYfirwo1DUGYKruLGjACwaazaEIq6YrJ9AzYMakiWHPu0rR42h+yXLLqz0aS0EZgF2nBgDZPIPl1Kc=
+X-Received: by 2002:a05:6a00:17a6:b0:581:e973:7386 with SMTP id
+ s38-20020a056a0017a600b00581e9737386mr459748pfg.27.1672536801204; Sat, 31 Dec
+ 2022 17:33:21 -0800 (PST)
+MIME-Version: 1.0
+References: <6f6474c44e4403f40bf29b20f9c72593@fiidewgal.com>
+In-Reply-To: <6f6474c44e4403f40bf29b20f9c72593@fiidewgal.com>
+From: Rama Bah <ramabahk@gmail.com>
+Date: Sun, 1 Jan 2023 01:32:46 +0000
+Message-ID: <CAMZcv=pB1LuraCC-9Sufco1n1vSndfAaWJFMfoB6ePYFpBef2g@mail.gmail.com>
+Subject: =?UTF-8?Q?Re=3A_R=C3=A9initialisation_du_mot_de_passe?=
+To: =?UTF-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>
+Content-Type: multipart/alternative; boundary="000000000000e8dd7305f129d1de"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000e8dd7305f129d1de
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
++224627998669
+
+Le dim. 1 janv. 2023 =C3=A0 01:29, Ne r=C3=A9pondez pas <contact@fiidewgal.=
+com> a
+=C3=A9crit :
+
+> Bonjour Ramatoulaye Balde,
+>
+> Votre code de v=C3=A9rification pour la r=C3=A9initialisation du mot de p=
+asse est :
+> [[code]]
+>
+>
+> Merci !
+>
+> Ne r=C3=A9pondez pas
+>
+
+--000000000000e8dd7305f129d1de
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">+224627998669</div><br><div class=3D"gmail_quote"><div di=
+r=3D"ltr" class=3D"gmail_attr">Le dim. 1 janv. 2023 =C3=A0 01:29, Ne r=C3=
+=A9pondez pas &lt;<a href=3D"mailto:contact@fiidewgal.com">contact@fiidewga=
+l.com</a>&gt; a =C3=A9crit=C2=A0:<br></div><blockquote class=3D"gmail_quote=
+" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><=
+p>Bonjour=C2=A0Ramatoulaye Balde,</p><p>Votre code de v=C3=A9rification pou=
+r la r=C3=A9initialisation du mot de passe est : [[code]]<br></p><p><br></p=
+><p>Merci !<br></p><p>Ne r=C3=A9pondez pas</p>
+
+</blockquote></div>
+
+--000000000000e8dd7305f129d1de--

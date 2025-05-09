@@ -1,0 +1,78 @@
+Return-Path: <moussadiallodiallo50@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id GiIPGTnE5mMDvwkA3R2AvA
+	(envelope-from <moussadiallodiallo50@gmail.com>)
+	for <contact@fiidewgal.com>; Fri, 10 Feb 2023 23:24:57 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4PD7Zx0WS8z34SDml
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="pgOAcXv9"
+X-N0C-MailScanner-eFa-Watermark: 1676672694.254@ED6Ms+9kUgX7P/PGJQrfOg
+X-N0C-MailScanner-eFa-From: moussadiallodiallo50@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: s
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 60C86401AEF6.A069E
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ed1-f50.google.com ([209.85.208.50] [209.85.208.50])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 60C86401AEF6
+	for <contact@fiidewgal.com>; Fri, 10 Feb 2023 23:24:21 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 60C86401AEF6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 60C86401AEF6
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=pgOAcXv9
+Received: by mail-ed1-f50.google.com with SMTP id u21so6122422edv.3
+        for <contact@fiidewgal.com>; Fri, 10 Feb 2023 14:24:21 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=e1RQhEjieEAjnBGX8iLTj8CYqc93nQ0WPaZZQfKVStM=;
+        b=pgOAcXv9MNEr3M7JfbqIs9ChYY8Dmj/74MqFcAiF3IWmtU35mVp0tGR68CJMoVXluT
+         PjRqSvhihGsI8oEN+fBjgpr80kmigxq0OwDGSSIN7hWY5FGweTo6gjLGREVSrvl+qHw3
+         RCmAtcVlZI/5dlivPJAPmcjQ3AUkOoyVDXb9Waw9vnF4+44RwonYnCOXJ78r+OSDmsMe
+         o5T9IpdlOD1uP+qsfhmBNYU+cnYeJLHokuYeQm1rSPJhDzDrsCnI/lW3oo8Vao4N0sl9
+         CPL5Qu4QyuGjg53muWwnwKXHnvw4YVpbpLS++hCO7HdwlLQ21mDrIMP0Ez9H9qZzLYzE
+         sXYw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=e1RQhEjieEAjnBGX8iLTj8CYqc93nQ0WPaZZQfKVStM=;
+        b=WvR6PUJNe68XxTEvsDJzF86ek+fOkFUwgDLeYXOqw7Pj2GBAWI5W3rZ3eKMWaP3kkb
+         jIZ/s6VC66ysM0DMix206DUEciP9QFvz8xvmSWTSYKM2bvKsc+O8m9kF7WdCVSUJUfWf
+         fYsH1My8fGcqR+DhwGcqVvMVnLX3IC5RniKFWkoCdlxP2efueP7+YWt8akvNy1OQTZXf
+         dtW9JGaOAT6/JPnVBmW87YxbdLSvDht9+kiwkBTOChwBWkEWWm4TbkuSEPlv5VhHQskX
+         b1q8i5RdT++qDxlijDN4t7bvHb8GMGof7AQfZsvV7aW9Isx/3Iy0PuDLahifOylDzCBr
+         PgyA==
+X-Gm-Message-State: AO0yUKWPQKj6/EJt0jnmcTTzbzdEV2niSGmqgHT4wBEvewEZ5H1a29iG
+	P3uGninHIyopm0CKvrCng6bG/oa3NShdiTrlwFaemsa4
+X-Google-Smtp-Source: AK7set+TAM/kBuz1zaN5VmQ3icRCwVW9Hggmd7UrCRHrZWMatNgX7FclXeku11v6LxD8EfDXWHFvhFsamEy4GMdHERA=
+X-Received: by 2002:a50:99cc:0:b0:4a2:4274:5891 with SMTP id
+ n12-20020a5099cc000000b004a242745891mr3812736edb.3.1676067860486; Fri, 10 Feb
+ 2023 14:24:20 -0800 (PST)
+MIME-Version: 1.0
+From: Moussa Diallo Diallo <moussadiallodiallo50@gmail.com>
+Date: Fri, 10 Feb 2023 22:21:23 +0000
+Message-ID: <CALNyj2Eb1RLfcZnADOtL4qkX62w074Ay5sg8f9VyH4c3ax1wJg@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000719f5505f45ff506"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000719f5505f45ff506
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+--000000000000719f5505f45ff506
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"><div dir="auto"><br></div><div dir="auto"><br></div></div>
+
+--000000000000719f5505f45ff506--

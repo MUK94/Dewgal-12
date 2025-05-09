@@ -1,0 +1,80 @@
+Return-Path: <oumarso765@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 1M6/K/afOmTHMTYA3R2AvA
+	(envelope-from <oumarso765@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 15 Apr 2023 15:00:38 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4PzCqK2mmhz34TWtM
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="LAlyL7dk"
+X-N0C-MailScanner-eFa-Watermark: 1682167833.12137@OtEkqp6P3SK2wi0ibmB0SQ
+X-N0C-MailScanner-eFa-From: oumarso765@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: sss
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 26BE6406355D.A3A36
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-wr1-f41.google.com ([209.85.221.41] [209.85.221.41])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 26BE6406355D
+	for <contact@fiidewgal.com>; Sat, 15 Apr 2023 14:49:59 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 26BE6406355D
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 26BE6406355D
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=LAlyL7dk
+Received: by mail-wr1-f41.google.com with SMTP id ffacd0b85a97d-2efbaad9d76so376162f8f.0
+        for <contact@fiidewgal.com>; Sat, 15 Apr 2023 05:49:59 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1681562998; x=1684154998;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=P5bTMOJ6CIF3sOZ+4wR1FUKvTyrRzSAKnVrFPzjc6dQ=;
+        b=LAlyL7dkcC1i0E4zfRoF4RK0mlo5OH93aR2KvFngGmi6KLc+gma8RCP5nzp5YRJfrG
+         DTC6Sm8HpYb0bWx+GhfkoM1T65DvmRZp8tYCJGPqjs9CfFzKW0sYBSSiv8T5OMfdvZ3e
+         HAF9sNZeAE3EjwwpCX3pidl0S5No9RPwCV6QPxjaKsEcAaHgfdtfKSK1NV7eCWpVIUYS
+         EzjQsmpXQLyJoKx6CrzsU4ZN0yh58aT9LlgZUiNPWp2+vEoCKCvZR7MenZyKkTXOP8eC
+         ne55kuGK078L3ublOESRImDTK/jsgK/fn48EZXjkOcvm8L4R00RcxZxAqiVMgUspmnsc
+         AMtg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1681562998; x=1684154998;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=P5bTMOJ6CIF3sOZ+4wR1FUKvTyrRzSAKnVrFPzjc6dQ=;
+        b=A/yrTPVlopcF23cVlA6HEO+iBLzacUjeMv29XTQy0H6OuN+h2ZmjQhjqgMdURvQYnZ
+         JycR+oEJRy5YoLULFwzvpCqG1valbCdfFL0swM7AF5YGteiOnp7A9V5f0rv2CJUHp5ef
+         CvLiCkRv6LL7pmM9OnLMqeUoGPCZO4G//KO0PWc0NCcGQd1ZHo0RAek99/FmlRTWXAoe
+         TbGzkoMK2DWXKbDPDveb2VHRdjEYJpZZ92CbQdrfqD9ngOQVgj2/+Q+On+zZhRkUZNom
+         irxom6Jin1t6jyEeQY88+k4aihVxiWO0JGtVLlz4SYhRCmZch28VIg1Otqi15/Y6UWqx
+         mE9A==
+X-Gm-Message-State: AAQBX9d6Eqo9IQ4N8Gyp0rL5jjVGeHVUtifYqylJvBkOP69M83uLzYnJ
+	HObjt0IkPmYWADps4L+0AVZK+9agNyBE2eyGVzGNBtHj
+X-Google-Smtp-Source: AKy350ZrMvI/Bjqmitn7ONJ4x9XW7uOkPVXRr0jSsPt4a+HWl45WDtBynlcp5eytlXEIwn4YX6r82AgrC+gklOP5ZmI=
+X-Received: by 2002:a05:6000:1187:b0:2f7:a039:1507 with SMTP id
+ g7-20020a056000118700b002f7a0391507mr1190397wrx.7.1681562998251; Sat, 15 Apr
+ 2023 05:49:58 -0700 (PDT)
+MIME-Version: 1.0
+From: Oumar Sow <oumarso765@gmail.com>
+Date: Sat, 15 Apr 2023 12:49:46 +0000
+Message-ID: <CAN_0V10hk2SaJ22iSa0ZihM+F4EkT6G0_EvoTuw8mgcYRyOhPg@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000002da27d05f95f65cb"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000002da27d05f95f65cb
+Content-Type: text/plain; charset="UTF-8"
+
+Oumarso765@gmail.com
+
+--0000000000002da27d05f95f65cb
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto"><a href=3D"mailto:Oumarso765@gmail.com">Oumarso765@gmail.=
+com</a>=C2=A0</div>
+
+--0000000000002da27d05f95f65cb--

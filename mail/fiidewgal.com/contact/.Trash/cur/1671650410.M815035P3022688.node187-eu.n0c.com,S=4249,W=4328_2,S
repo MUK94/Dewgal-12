@@ -1,0 +1,79 @@
+Return-Path: <syannick744@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id qNaCMGpco2NgHy4A3R2AvA
+	(envelope-from <syannick744@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 21 Dec 2022 20:20:10 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NcjvG4ybxz34SDmh
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="PbA6Y2+e"
+X-N0C-MailScanner-eFa-Watermark: 1672255208.26238@/rdrEfnkPZ0t58VCrc6KXw
+X-N0C-MailScanner-eFa-From: syannick744@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: A8134401AEF7.ACC10
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-yw1-f196.google.com ([209.85.128.196] [209.85.128.196])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id A8134401AEF7
+	for <contact@fiidewgal.com>; Wed, 21 Dec 2022 20:19:34 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com A8134401AEF7
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com A8134401AEF7
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=PbA6Y2+e
+Received: by mail-yw1-f196.google.com with SMTP id 00721157ae682-3b56782b3f6so223992967b3.13
+        for <contact@fiidewgal.com>; Wed, 21 Dec 2022 11:19:34 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=toIEDvrgLBQr+QlJX7c2BvQIt59+EgcSon44t++rI2A=;
+        b=PbA6Y2+eD9UtGQt8thZGCqmnZ8d2VdDgX0CcvUOnYtXtOkvff3sstgW3uHx2HW83bb
+         MQwrfVKZWjbzTQyV2JRA8vpgJTbfM5zZc8v7THt4VzIPPX5dyn1+yHZ7Fkc+AtdqruTJ
+         N+hTM7JGCaGFSkV4Z7l43XiBEoiA7F9uwKEU0A1t/NWXxASc/9h5knXzvf48a1teNYLg
+         qaNd6nodSoESIpb2JIk1JSrpSe+aaPqYehH1yho2PphRDQgho2to40/V1Un8JL1ua0Gm
+         CeZCB2HqwFtmMSSwtUI22Dd/gmA9mMZLdO9OQfoHs/6QWvLasNyNirLH2e8i0gBrJ5QN
+         aUVQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=toIEDvrgLBQr+QlJX7c2BvQIt59+EgcSon44t++rI2A=;
+        b=5Q1v5XKG1cuJab1wSkVCdQFGUX7JdpHiWC1nPjxCYBaK5+DCZn67p2AbgyldeohA/U
+         J5RRWubHWXUykXB9/B3f4Uy89FRqZKZsndfOYlmUKIspc6D/qR3R9CWShQS+W4hLqjfe
+         pDhbk9vlQWQAx+HUnKaPdSBstclPKMtd9ZwWckj8Bv5ieejXQ/dLhYS6R0Fjm5TnZE5Y
+         sbhZkq8DCb2pRuEb+NLWs+b0yt/OCZCutkpjMtd4RoGDgdBITG0ILSoJe6Z9oVlzsmFw
+         vAU6NId0O/6qU5u/DT9epOorqjR2RIebxZkTbjZCYWeJEhMgCsFffa8pwYpXK8VIs1Cw
+         KQsw==
+X-Gm-Message-State: AFqh2kqRPNVoAzf6GMelzVx6M5Kji26r4E9w64gHWr+fiL717Pmr3Wa+
+	RQoxV0SySYeozIOamqmZktcHnitqrn7BDQUN3R6UPR/4
+X-Google-Smtp-Source: AMrXdXs4qDP5dSc/3SDGk7WXV1+Eg8uVcoKG3uRhq3qb4AAILNq9+h7CYKriAoQXaLGqNduijRtH+TcmVMI3CmhZBac=
+X-Received: by 2002:a81:7384:0:b0:3b4:7ccb:5410 with SMTP id
+ o126-20020a817384000000b003b47ccb5410mr314275ywc.69.1671650373325; Wed, 21
+ Dec 2022 11:19:33 -0800 (PST)
+MIME-Version: 1.0
+From: =?UTF-8?B?WcOkbm7Dr2NrIFPDtncgZMOvbmfDvGkgY8OvdHk=?= <syannick744@gmail.com>
+Date: Wed, 21 Dec 2022 20:19:17 +0100
+Message-ID: <CAB+6SQ0GRDAkbZk1w7Gp9uVwezmtmwpfze7xibzJTu3sLgWzsw@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000b0d8af05f05b6eaf"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000b0d8af05f05b6eaf
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+SmUgc3VpcyBpbnTDqXJlc3PDqQ0K
+--000000000000b0d8af05f05b6eaf
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Je suis int=C3=A9ress=C3=A9=C2=A0<div dir=3D"auto"><br></=
+div></div>
+
+--000000000000b0d8af05f05b6eaf--

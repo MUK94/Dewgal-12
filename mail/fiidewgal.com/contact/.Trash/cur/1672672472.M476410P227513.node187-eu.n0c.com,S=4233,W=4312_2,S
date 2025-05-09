@@ -1,0 +1,79 @@
+Return-Path: <ftoubintasow49@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id ni1RHNj0smO5eAMA3R2AvA
+	(envelope-from <ftoubintasow49@gmail.com>)
+	for <contact@fiidewgal.com>; Mon, 02 Jan 2023 16:14:32 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NlztJ2TLMz1wJQ
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="PH92OJtw"
+X-N0C-MailScanner-eFa-Watermark: 1673277269.98346@bpfmroFc8zT+n3o7b3y8Aw
+X-N0C-MailScanner-eFa-From: ftoubintasow49@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 611104008376.AA5FA
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ej1-f49.google.com ([209.85.218.49] [209.85.218.49])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 611104008376
+	for <contact@fiidewgal.com>; Mon,  2 Jan 2023 16:13:57 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 611104008376
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 611104008376
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=PH92OJtw
+Received: by mail-ej1-f49.google.com with SMTP id kw15so67049120ejc.10
+        for <contact@fiidewgal.com>; Mon, 02 Jan 2023 07:13:57 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=wdnJ34WXprx3gtpPTEXHKVYKHz5clzW+GgniphIutXM=;
+        b=PH92OJtwNc0QsVZidYq2I9V3QzAHIY/Lins4kU4Tdcy7E6kYvJMN/QGcZ2NmWkQCe2
+         8EZpGNTlQBL1lcsxGO0bUldmevrbheo4ULxcS9YHsWXUDXxmoml6X/TF3nPqfsoA7Cz4
+         ZNjijJo8MKWvK0x2TuPOCVwmTwJRTYshC8tuC6U4p9aEyqWbFKnOYNggQMLCYEIXWtp3
+         /QGdh0Q7GB0NPs0ErWFzF7rtLhONBXX45GAHurLQRgBUbcNuhKYqkHnhFLvt9nlq3kQ3
+         vQFq84lZW52hDI0bgDdeIdDzhYu3IIuiVZcb1kyiRz1C8DSIOKtaNoJHSNFI8U9GvlPn
+         WNLg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=wdnJ34WXprx3gtpPTEXHKVYKHz5clzW+GgniphIutXM=;
+        b=qtXhbeN1FsBIFQqJLrPYsVrebaJnwGFEgKO+V+Blld/i3jaK9o8AJuI5S7ZzaUExLn
+         5/PTQ2ZmSjYsXf0Dsac5RNxx0MJ/RyxOEwNYVYrDQbjClXSzurcsc6pHd1nmmtKTNaM6
+         CWFkaeoesJjgWLc3ljzQpjM9WI4qdfmP7SsbZWuDYQ7ZG29oeYsw4o0m+TTTB5rBHCJz
+         mu+8wee5jzLr/fk+4qdcRvgYC2Uj0j73H+KmEKN1ezuCYFtSm7b/PNw8vYaW0fV1r7Cf
+         6CNw1fnT2JHeVZHSJX5VDSPvgCdIBV91FOHD8SMiyPhcNtq6Z3i+StxYKCNmczKbrexP
+         YRSA==
+X-Gm-Message-State: AFqh2kqiT/CKfgxgJqBnDzRxP2wpP7/GZQIej6mtcECwEzvQ8KSLGibJ
+	WD5SnK10Sor98k4XgeS0ZQbNqJ6hyzz5lh55f+5mWBhC
+X-Google-Smtp-Source: AMrXdXt4ObzJ7TN8qiT/jUNsZ8ER0vfZ4SulJ5Gz0W1HK0Svtixn+YuFRoNmafaSR/uYpCuLPqF7HYC+iKixugeoSyo=
+X-Received: by 2002:a17:906:edbb:b0:7c0:d88b:4326 with SMTP id
+ sa27-20020a170906edbb00b007c0d88b4326mr4082930ejb.108.1672672436757; Mon, 02
+ Jan 2023 07:13:56 -0800 (PST)
+MIME-Version: 1.0
+From: Binta Sow <ftoubintasow49@gmail.com>
+Date: Mon, 2 Jan 2023 15:13:44 +0000
+Message-ID: <CADiChdaBy6Mn=SZJLSn_C-twBN+sewfmT5oqaC2bBenJUMj7+Q@mail.gmail.com>
+Subject: 
+To: =?UTF-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>
+Content-Type: multipart/alternative; boundary="0000000000006b296905f1496657"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000006b296905f1496657
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Expliqu=C3=A9 nous comment ont s'inscrit
+
+--0000000000006b296905f1496657
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Expliqu=C3=A9 nous comment ont s&#39;inscrit</div>
+
+--0000000000006b296905f1496657--

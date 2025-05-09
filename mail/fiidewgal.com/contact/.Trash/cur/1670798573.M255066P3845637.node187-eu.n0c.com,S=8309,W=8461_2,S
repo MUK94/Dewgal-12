@@ -1,0 +1,152 @@
+Return-Path: <alphaaj8@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 2ZoeD+1clmMFrjoA3R2AvA
+	(envelope-from <alphaaj8@gmail.com>)
+	for <contact@fiidewgal.com>; Sun, 11 Dec 2022 23:42:53 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NVfsl4yDrz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="j04YNxjW"
+X-N0C-MailScanner-eFa-Watermark: 1671403366.36341@cIuYQWGIn6+PbfRohvoVIw
+X-N0C-MailScanner-eFa-From: alphaaj8@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 7C638401AEEF.A541E
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ua1-f43.google.com ([209.85.222.43] [209.85.222.43])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 7C638401AEEF
+	for <contact@fiidewgal.com>; Sun, 11 Dec 2022 23:42:14 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 7C638401AEEF
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 7C638401AEEF
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=j04YNxjW
+Received: by mail-ua1-f43.google.com with SMTP id v21so2730806uam.1
+        for <contact@fiidewgal.com>; Sun, 11 Dec 2022 14:42:14 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=WK0oFn1jg6uoUGbPJRp8Pu5iPFPkcSVgXkXnBVFOvJY=;
+        b=j04YNxjWbq8kygbJ/MK9x3pr8vRnKBKB0MNXE9ddX9yBFWdgldI2UtV8lzLlj/Rh8K
+         OdSa6aIofk2iq8vuL8wxtQT1eYu7fk9T6NosPVXv7UVD1G1RsvLXu0vC09tC1XkQHfsQ
+         UFBN6m1k24PdK4EfnqvLaZvvqUGJm7PBJfNZpWUS7r8ggcTmFAGMul0Ue2VeI24/GobZ
+         urWVrVjNJKZwnV2Tc6vYhe5Gt76GOl6COCZ4mbgKkiKdswiiAa1HgOU6p6SilersXg2x
+         E3UkM9LhOGstvnMVtysm5JnuYqVMvuwMSuRz3dfCHU1vpxe2hPpbEsRM94K+AjUoxIhV
+         5J+A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=WK0oFn1jg6uoUGbPJRp8Pu5iPFPkcSVgXkXnBVFOvJY=;
+        b=yoGJQv8ibdU7eCq+cmMOlKEPgn3tFq2osEtThkefAWPiCJzYJxWjpgofWPuDOuZO1E
+         oltMoyJCsCTR81hvC/cLYITqNCjJDSpuZE1WJLDm2UpyJnJ/7kYkG9KYXJWwR8SymjNw
+         fAwcWmW2hckXWEAK3M0SV2TIr597RvnwMdxrUah8ZhugRA3I+v5L5bjVKopPjccPgeg8
+         OZ48TjbPxpDQI1KS9nVxByMcgIYXbw5LLSOOFEJ9AAxmlXFxildf710Fr1rz7POnmeR1
+         lJUkjMV+PPCpHm3ObI7Pd0aU7wmu9f3XNY3nPXf2CP13U476EkXlXB+AvNTUVD+Uur40
+         lz3Q==
+X-Gm-Message-State: ANoB5pl0QUxD6fwxtsjdUN8ygnz6d+lbj1PkO73F2CYfAfvv8eGInhxy
+	o2lQN5SrZbBz/zRtciMMcAx3ih/2TiozV6trApBOxeow
+X-Google-Smtp-Source: AA0mqf5NWMkwrCdKVUMx2lYwRh1RRhzeT9LNs562D/DAfEX019iQrlezpwdP3KXL9rTANEDzQxi/lUzNndCjGySEECU=
+X-Received: by 2002:ab0:3419:0:b0:418:fd99:4ff3 with SMTP id
+ z25-20020ab03419000000b00418fd994ff3mr37351225uap.46.1670798533088; Sun, 11
+ Dec 2022 14:42:13 -0800 (PST)
+MIME-Version: 1.0
+References: <506c7e255972b2b756df862acfa1084a@www.fiidewgal.com>
+In-Reply-To: <506c7e255972b2b756df862acfa1084a@www.fiidewgal.com>
+From: Jalloh Alpha <alphaaj8@gmail.com>
+Date: Sun, 11 Dec 2022 23:41:30 +0100
+Message-ID: <CAEtvyFei0+qMKK9jkRi=456vL9tKcHpyUnjKSf=aujzg-Pr7xA@mail.gmail.com>
+Subject: Re: Informations
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000000e593105ef9519d0"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000000e593105ef9519d0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Merci.
+
+On Sat, 10 Dec 2022, 04:04 , <contact@fiidewgal.com> wrote:
+
+> FD20221
+>
+> Salam Aleykoum ,
+>
+> Nous sommes tr=C3=A8s heureux de vous avoir parmi nos
+>
+> membres dans la plateforme et nous souhaitons que
+>
+> Vous y rester.C=E2=80=99est pourquoi nous vous prions de
+>
+> mettre =C3=A0 jour votre profil en mettant correctement
+>
+> Votre date de naissance , votre =C3=A9tat civil ;votre photo
+>
+> et votre numero de telephone avec l'indicatif
+>
+> Si cela est compliqu=C3=A9 pour vous faites nous parvenir
+>
+> votre num=C3=A9ro de membre qui est sur votre profil public
+>
+> avec vos informations cit=C3=A9es ci dessus .
+>
+> Merci pour votre comprehension!
+>
+
+--0000000000000e593105ef9519d0
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Merci.=C2=A0</div><br><div class=3D"gmail_quote"><div dir=
+=3D"ltr" class=3D"gmail_attr">On Sat, 10 Dec 2022, 04:04 , &lt;<a href=3D"m=
+ailto:contact@fiidewgal.com">contact@fiidewgal.com</a>&gt; wrote:<br></div>=
+<blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1p=
+x #ccc solid;padding-left:1ex"><p><span style=3D"color:rgb(255,255,255);fon=
+t-family:Poppins,sans-serif;font-size:12px">FD20221</span></p><p style=3D"m=
+argin-right:0px;margin-bottom:0px;margin-left:0px;font-variant-numeric:norm=
+al;font-variant-east-asian:normal;font-stretch:normal;line-height:normal;fo=
+nt-family:&quot;Helvetica Neue&quot;">Salam Aleykoum ,</p><p style=3D"margi=
+n-right:0px;margin-bottom:0px;margin-left:0px;font-variant-numeric:normal;f=
+ont-variant-east-asian:normal;font-stretch:normal;line-height:normal;font-f=
+amily:&quot;Helvetica Neue&quot;">Nous sommes tr=C3=A8s heureux de vous avo=
+ir parmi nos </p><p style=3D"margin-right:0px;margin-bottom:0px;margin-left=
+:0px;font-variant-numeric:normal;font-variant-east-asian:normal;font-stretc=
+h:normal;line-height:normal;font-family:&quot;Helvetica Neue&quot;">membres=
+ dans la plateforme et nous souhaitons que<span>=C2=A0</span></p><p style=
+=3D"margin-right:0px;margin-bottom:0px;margin-left:0px;font-variant-numeric=
+:normal;font-variant-east-asian:normal;font-stretch:normal;line-height:norm=
+al;font-family:&quot;Helvetica Neue&quot;">Vous y rester.C=E2=80=99est pour=
+quoi nous vous prions de<span>=C2=A0</span></p><p style=3D"margin-right:0px=
+;margin-bottom:0px;margin-left:0px;font-variant-numeric:normal;font-variant=
+-east-asian:normal;font-stretch:normal;line-height:normal;font-family:&quot=
+;Helvetica Neue&quot;">mettre =C3=A0 jour votre profil en mettant correctem=
+ent<span>=C2=A0</span></p><p style=3D"margin-right:0px;margin-bottom:0px;ma=
+rgin-left:0px;font-variant-numeric:normal;font-variant-east-asian:normal;fo=
+nt-stretch:normal;line-height:normal;font-family:&quot;Helvetica Neue&quot;=
+">Votre date de naissance , votre =C3=A9tat civil ;votre photo </p><p style=
+=3D"margin-right:0px;margin-bottom:0px;margin-left:0px;font-variant-numeric=
+:normal;font-variant-east-asian:normal;font-stretch:normal;line-height:norm=
+al;font-family:&quot;Helvetica Neue&quot;">et votre numero de telephone ave=
+c l&#39;indicatif</p><p style=3D"margin-right:0px;margin-bottom:0px;margin-=
+left:0px;font-variant-numeric:normal;font-variant-east-asian:normal;font-st=
+retch:normal;line-height:normal;font-family:&quot;Helvetica Neue&quot;">Si =
+cela est compliqu=C3=A9 pour vous faites nous parvenir </p><p style=3D"marg=
+in-right:0px;margin-bottom:0px;margin-left:0px;font-variant-numeric:normal;=
+font-variant-east-asian:normal;font-stretch:normal;line-height:normal;font-=
+family:&quot;Helvetica Neue&quot;">votre num=C3=A9ro de membre qui est sur =
+votre profil public </p><p style=3D"margin-right:0px;margin-bottom:0px;marg=
+in-left:0px;font-variant-numeric:normal;font-variant-east-asian:normal;font=
+-stretch:normal;line-height:normal;font-family:&quot;Helvetica Neue&quot;">=
+avec vos informations cit=C3=A9es ci dessus .</p><p style=3D"margin-right:0=
+px;margin-bottom:0px;margin-left:0px;font-variant-numeric:normal;font-varia=
+nt-east-asian:normal;font-stretch:normal;line-height:normal;font-family:&qu=
+ot;Helvetica Neue&quot;">Merci pour votre comprehension!</p>
+</blockquote></div>
+
+--0000000000000e593105ef9519d0--

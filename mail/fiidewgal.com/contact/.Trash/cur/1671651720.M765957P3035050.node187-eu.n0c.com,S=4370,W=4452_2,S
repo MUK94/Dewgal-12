@@ -1,0 +1,82 @@
+Return-Path: <bailothiathiasow@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 5duTLYhho2OqTy4A3R2AvA
+	(envelope-from <bailothiathiasow@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 21 Dec 2022 20:42:00 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NckNR6P6Gz34SDnG
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="DmQ3RmL0"
+X-N0C-MailScanner-eFa-Watermark: 1672256513.78406@OveYjCk1P2YTHPfxhbF1EQ
+X-N0C-MailScanner-eFa-From: bailothiathiasow@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 0E087401AEF7.AF9DE
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-yw1-f182.google.com ([209.85.128.182] [209.85.128.182])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 0E087401AEF7
+	for <contact@fiidewgal.com>; Wed, 21 Dec 2022 20:41:20 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 0E087401AEF7
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 0E087401AEF7
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=DmQ3RmL0
+Received: by mail-yw1-f182.google.com with SMTP id 00721157ae682-43ea87d0797so196960247b3.5
+        for <contact@fiidewgal.com>; Wed, 21 Dec 2022 11:41:19 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=O8JwfqZftLK0pArkBnVUfyoMAiRBeDLbXsMiou99Su8=;
+        b=DmQ3RmL0rOJ23UZAdRFOhb5o/6vNmok7AR3NvDXGV35w7WZocqBxo40B8QJvCDw3ty
+         wya5HHnUgugE7sahRBp0v3Wgx+uEVFIuPQKee3iTN/chyvoyJtfOi3iZ71WIBPnHgt8O
+         ENmYsla4c/DRb2CvgzMhBy98uR224L/UeMKq8lpf3g7f7Yv/9VKGHFLxksOpUwARNo/z
+         PIOYrwwJFIhwokB5RScNZPMlzN60BFs6STt9QUYvp7MWMSbxyT9WBVipLc9J1wQXpqRz
+         3wVWVhzbuk49uo2aF9yNDSlSm/4+aG8MK+sqyE9hTbBWuIWzqrkfKXcbU56qqFdoSQ+T
+         pviA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=O8JwfqZftLK0pArkBnVUfyoMAiRBeDLbXsMiou99Su8=;
+        b=QSqdDNinSLx4SjDozVAja+76d64SxPcpPBmOsdP7LJflxHJhpvBakn2gqdg03PZF6d
+         9kK7b1tORmqk8zctVc/4a+Nd2x1nWwoehC/cVxevYw6q4hjp5D6JuRPzh89n/CgnUj7X
+         zCgpon3AuK7gYVAtamTkQy8uelHiqmclWWNGoTkWg5b8a4yXuqhu3mqPy3Wzxi4+Ogdj
+         EezLE8zLB/V7Odx8aH+qJp461q13j7Pz2yzXxhge6ExcNhdpUjxXtG6lYX9C8hbYjOi0
+         UYEep9NmveoDdSDtxOQoDJrNjneaVbXiNY1Z9Q4vW6MIT9SZx9NhDIInr+geWuIQITwg
+         dOoQ==
+X-Gm-Message-State: AFqh2krW/z35CBEULrfrW2W+HWnhTkhlADcKL4CtF6nXSVxOHt2L2+A7
+	XEapSbQnYRT1a76uuaejGfCqSDFL5Xa6s5yMCDTOuNm5
+X-Google-Smtp-Source: AMrXdXvYTRT81bAKmTeP1ZzTiKFX78Jg6s1ZrJQegvUeJT7+LWH4Qxyk8fJ670s85zlVmEEVG0tCARETR1QzX+76Mjw=
+X-Received: by 2002:a81:9885:0:b0:45e:455a:972a with SMTP id
+ p127-20020a819885000000b0045e455a972amr280263ywg.429.1671651678656; Wed, 21
+ Dec 2022 11:41:18 -0800 (PST)
+MIME-Version: 1.0
+From: Bailothiathia Sow <bailothiathiasow@gmail.com>
+Date: Wed, 21 Dec 2022 19:41:06 +0000
+Message-ID: <CAL=mVp7kxMMx+BViPgHHFY6DmecPPDMnCk7LVENG=dYyDfSL8Q@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000007e9a7c05f05bbc83"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000007e9a7c05f05bbc83
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour je m'appelle bailo.thiathia sow 38ans mari=C3=A9 p=C3=A8re de 2enfa=
+nts je une
+2=C3=A8me femme
+
+--0000000000007e9a7c05f05bbc83
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Bonjour je m&#39;appelle bailo.thiathia sow 38ans mari=C3=
+=A9 p=C3=A8re de 2enfants je une 2=C3=A8me femme=C2=A0</div>
+
+--0000000000007e9a7c05f05bbc83--

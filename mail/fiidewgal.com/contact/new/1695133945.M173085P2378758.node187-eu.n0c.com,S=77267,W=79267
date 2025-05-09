@@ -1,0 +1,2000 @@
+Return-Path: <989-GZB-065.0.182570.0.0.28184.9.104743797@mkto.taboola.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id GJE9CvmwCWUGTCQA3R2AvA
+	(envelope-from <989-GZB-065.0.182570.0.0.28184.9.104743797@mkto.taboola.com>)
+	for <contact@fiidewgal.com>; Tue, 19 Sep 2023 16:32:25 +0200
+Received: from mkto.taboola.com (unknown [185.28.196.170])
+	by node187-eu.n0c.com (Postfix) with ESMTPS id AF532401B203
+	for <contact@fiidewgal.com>; Tue, 19 Sep 2023 10:32:24 -0400 (EDT)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com AF532401B203
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=reject dis=none) header.from=taboola.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=mkto.taboola.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com AF532401B203
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (1024-bit key; secure) header.d=taboola.com header.i=@taboola.com header.a=rsa-sha256 header.s=m1 header.b=f421ztDk;
+	dkim=pass (1024-bit key; unprotected) header.d=mktdns.com header.i=@mktdns.com header.a=rsa-sha256 header.s=m1 header.b=gQJHupDq
+X-MSFBL: SkC0ioQ2x2xIPWyCn/Y6mFlYTH6IHyFA3LCvwuC6Lxc=|eyJnIjoiYmctbG9uZC0
+	xNDUiLCJiIjoiZHZwLTE4NS0yOC0xOTYtMTcwIiwidSI6Ijk4OS1HWkItMDY1OjA
+	6MTMxNTQ6NjQxNjE6NzA1Njc3OjI4MTg0Ojk6MTgyNTcwOjEwNDc0Mzc5NyIsInI
+	iOiJjb250YWN0QGZpaWRld2dhbC5jb20ifQ==
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1695133946;
+	s=m1; d=taboola.com; i=@taboola.com;
+	h=Content-Type:MIME-Version:Subject:To:From:Date;
+	bh=Jr2tIypOH5tos/hlagoaGAaI8BusO7xYmZHW60Z5HY4=;
+	b=f421ztDkHDBXdkeqpwelfeHdJ/4n/SA5IJF8X84uiFXrhWZf4KIyfdAUdN65tUG5
+	jAss5CRQPwpXAF7aKF7h5scCDBZz+OpzppgJZaKVaTCx1F9Gq45mWX5WS/fXgBOEPTr
+	SfQ4n2ditLWjGXbw1cu+X/DKjoCRHXfOxfwOTfjA=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1695133946;
+	s=m1; d=mktdns.com; i=@mktdns.com;
+	h=Content-Type:MIME-Version:Subject:To:From:Date;
+	bh=Jr2tIypOH5tos/hlagoaGAaI8BusO7xYmZHW60Z5HY4=;
+	b=gQJHupDq2+aryxmIdX36c2FCpU8ZgBxGocvuvUO8KDwAcDD1jnt7v+m8cqWX70OR
+	yH+XXNV1s4DzkvuQNSK/LCXuuB4N68kAJEYebbGq0u6AAgZuK4Tom24vZ02BXk02QS+
+	WPxTa8KYU//jIgPja3F/wBgj7R9mofO4ghTBAzWQ=
+Date: Tue, 19 Sep 2023 09:32:26 -0500 (CDT)
+From: Taboola <onlinemarketing@taboola.com>
+Reply-To: onlinemarketing@taboola.com
+To: contact@fiidewgal.com
+Message-ID: <196688779.76342323.1695133946218@lonmktmail-batch1a.marketo.org>
+Subject: =?UTF-8?Q?Taboola Powers Native Ads on Yahoo's New Zealand
+ Properties =F0=9F=91=80?=
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_76342322_918661498.1695133946217"
+X-Binding: bg-lond-145
+List-Unsubscribe: <mailto:L5MWQYTYI5EFU52OK5HW4NCYJ5UXEVSMJJFHSMBZFV4VA6TWNFSXQSKJKNYTKYKEPBCE2PI=.182570.28184.9@unsub-lon.mktomail.com>
+X-MarketoID: 989-GZB-065:0:13154:64161:705677:28184:9:182570:104743797
+X-PVIQ: mkto-989GZB065-000001-000000-182570
+X-Mailfrom: 989-GZB-065.0.182570.0.0.28184.9.104743797@mkto.taboola.com
+X-MktArchive: false
+X-MSYS-API: {"options":{"open_tracking":false,"click_tracking":false}}
+X-MktMailDKIM: true
+
+------=_Part_76342322_918661498.1695133946217
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Press & News
+Advertisers Can Now Run Native Ads on Yahoo Properties in New Zealand, Excl=
+usively Through Taboola
+Taboola now powers recommendations across Yahoo properties in New Zealand, =
+giving advertisers access to some of the most visited properties on the ope=
+n web including Yahoo, Yahoo Finance, Yahoo Mail, and more.
+Find Out More <http://me.taboola.com/dc/9_HR30S54z_bMzcdWVHG28pkLsBjjntJcno=
+yStTq5hGmR8JJBW_e51IsRjgvTIaAsC-N9ABZDeQfibpUQkndjsfRPtnjVCWt2UnJHVRmfEkUn7=
+oZLnBeKP4xgF1kZxiHGKf4V_rZuSZJtZ7EpkrKqoJNXCMF-r6Hq8XvJOCpCex2m5y5OWh-h-huI=
+V522TSGwJ9rQPW1mO7NvhsQekfpviP-E_UCTQo05hZpJsi7hMr4B5o8kUZo7kzAs-XzBagNzQUs=
+K1Ow4zXpWeJiGSwnTsMdHoOQl_A5UEgbmV5tkmQ=3D/OTg5LUdaQi0wNjUAAAGOTNQBWVy3-T6c=
+XkxD3m4Hvd-5Vv40A7wPkI7LqrO2Y2McaoXq3aWRf5g0TZxPPjjmVLK3rA0=3D>
+Digiday Names Taboola a Finalist for The Digiday Technology Awards Under =
+=E2=80=9CBest Native Advertising Platform=E2=80=9D Category
+This achievement is based on a successful engagement and mutual case study =
+between Taboola, The Oliver Agency and The Loop, a brand providing world-cl=
+ass airport shopping experiences at the Montreal International Airport.
+View Now <http://me.taboola.com/dc/9_HR30S54z_bMzcdWVHG28pkLsBjjntJcnoyStTq=
+5hExhvZT6t8foQU-XTVxnBULRdHynDxs7JndnV3X9m0pnBJAyerUbZB0DOpyRi6qec40gmaOYou=
+0ebqSePptlGYjJwvATRKAumGRA8CqFGmDqheNW9998QXN_qsMLHEHUiSf_cM5uXQJCQZXjSELtr=
+p7RzsWnsJsaVFyYbT8XM1WNA=3D=3D/OTg5LUdaQi0wNjUAAAGOTNQBWVy3-T6cXkxD3m4Hvd-5=
+Vv40A7wPkI7LqrO2Y2McaoXq3aWRf5g0TZxPPjjmVLK3rA0=3D>
+The Holiday Ad Creative Playbook for Brands and Agencies
+Cautious spending meets creative advertising! The solution? A game plan tai=
+lored to the 5 stages of holiday shopping: Discovery, Consideration, Cyber =
+Five, Urgent Purchasing, and Q5. Learn the 6 advertising strategies for eac=
+h stage in our 2023 Holiday Creative Playbook.
+Read on The Drum <http://me.taboola.com/OTg5LUdaQi0wNjUAAAGOTNQBWfTztVx-heP=
+zPcULlRp4ICbqUOJ19S15E5GOX2kUbT0JXGK-IKlgyZSszdA1nuhugxE=3D>
+Blog Posts
+Optimize Native Ad Performance at Scale with Maximize Conversions
+Taboola has launched Maximize Conversions: a performance-focused bidding st=
+rategy designed to help native advertisers do more with their budgets.
+Explore More <http://me.taboola.com/dc/2_Yw4H0nEydwun7o3aNL41gmbjRyVOgEojXd=
+htenhKkUp7S2sjwLxHeiCgmHck-10mE9Ng-8ENpUbIWGDEe_U5oR7FnXnR9aWoiih1Fw225HsZV=
+lknYHFd_8RLA15YUB97h-lV71utfjx_lekwYq53uqENBJkPfOmB_hhcajJ-U=3D/OTg5LUdaQi0=
+wNjUAAAGOTNQBWVy3-T6cXkxD3m4Hvd-5Vv40A7wPkI7LqrO2Y2McaoXq3aWRf5g0TZxPPjjmVL=
+K3rA0=3D>
+6 Holiday Creative Strategies for Taboola Campaign Success
+Prepare for holiday marketing success with Taboola's Q4 2023 Holiday Creati=
+ve Playbook. Get top strategies and creative recommendations to boost your =
+seasonal sales and meet year-end goals. Supercharge your 2023 holiday campa=
+ign with 6 key strategies.
+See the Strategies <http://me.taboola.com/dc/2_Yw4H0nEydwun7o3aNL4_2N44UCkT=
+-1VKkl5yLBNBIj2XQwN3JsPXA3kU4oBJPHmDdz3Tn5LrbpXunbE65o1CmV-jDHFp1P6SMrALN6G=
+erAqEAb1DLDQym0YOLUZGGNos8qID2cwYFxaqJFuq8TsHfPUgmOfGnhOcGkRJoL-jdSF56TY4f9=
+942cuobBWV6I/OTg5LUdaQi0wNjUAAAGOTNQBWVy3-T6cXkxD3m4Hvd-5Vv40A7wPkI7LqrO2Y2=
+McaoXq3aWRf5g0TZxPPjjmVLK3rA0=3D>
+Maximize Your Auto Ads Performance with Taboola=E2=80=99s Data-Driven Creat=
+ive Playbook
+Whether you=E2=80=99re running video or image ads on the open web =E2=80=94=
+ or just looking to update your copy and landing pages =E2=80=94 this playb=
+ook has the data you need to hit the road with your revamped campaigns.
+Download the Playbook <http://me.taboola.com/dc/2_Yw4H0nEydwun7o3aNL4y_G5Vn=
+eHIulnImNF4Y8VLkhLWxqybJFOGzEeFj85z0GJxUFkG4c0Ys5UKOsPsGdA6twgOYhKqQHMFhEDr=
+jzEkPcAsSm9JQTP0yu1iC-XhKyeXLfqNSJYwWWuIv2aXyQjUdaADKBgtJgdVu0DyimpxuNt2c0Y=
+Tygcn-1F4bgR6KU/OTg5LUdaQi0wNjUAAAGOTNQBWVy3-T6cXkxD3m4Hvd-5Vv40A7wPkI7LqrO=
+2Y2McaoXq3aWRf5g0TZxPPjjmVLK3rA0=3D>
+The Barbie Movie is a Perfect Example of Content Marketing =E2=80=93 Here=
+=E2=80=99s What It Can Teach Us
+The Barbie movie has dazzled audiences worldwide, but did you know it's mor=
+e than just a film? It's a $147 million lesson in content marketing! Discov=
+er how Barbie's success can inspire your marketing strategy, regardless of =
+your budget.
+Read Now <http://me.taboola.com/dc/2_Yw4H0nEydwun7o3aNL43rraIZ135aZHQSg8ALX=
+pQW23ktqDtT7Fp7QXVLcA82xCKP6FBZ1_j47lga--In0QyyIC8SStL0jAaGDqDPZFYRGsAf9Q-7=
+irpqbuJ1h8iSrcwNsNFWAZxoZNz6EMNg0AM2-07rWvV4IqMrlwSG-pE8=3D/OTg5LUdaQi0wNjU=
+AAAGOTNQBWVy3-T6cXkxD3m4Hvd-5Vv40A7wPkI7LqrO2Y2McaoXq3aWRf5g0TZxPPjjmVLK3rA=
+0=3D>
+E-commerce Creative Insights for Every Industry to Ensure a Merry Marketing=
+ Season
+Advertisers, prepare for the winter holidays! Taboola's Q4 2023 Holiday Cre=
+ative Playbook offers data-backed insights for high-converting campaigns. G=
+et industry-specific creative tips and a full strategy guide for holiday su=
+ccess.
+Learn More <http://me.taboola.com/dc/2_Yw4H0nEydwun7o3aNL4_2N44UCkT-1VKkl5y=
+LBNBJ7IgwiWj2VE14R0AoLBiJGsoQZMMqJ1atQc5JMgUXqueJ3i1veBLd8qQYTTfP0tGNvwJc28=
+u8MuCHKw5UqE4a_6wsKbbbR8jZWdsPwKAmWw8134vRl97OjvIFLK8lXoApCtopkJIFAbI3dM8K3=
+J95J/OTg5LUdaQi0wNjUAAAGOTNQBWVy3-T6cXkxD3m4Hvd-5Vv40A7wPkI7LqrO2Y2McaoXq3a=
+WRf5g0TZxPPjjmVLK3rA0=3D>
+Gaming Ad Campaigns: Level-Up Your Creative Strategy
+To help you level-up your gaming campaigns, we=E2=80=99ve compiled the Tabo=
+ola Creative Playbook: Gaming =E2=80=94 a go-to strategy guide for advertis=
+ers of gaming apps, mobile and desktop games, gaming consoles, social casin=
+o games, sports games, and more.
+View Now <http://me.taboola.com/dc/2_Yw4H0nEydwun7o3aNL45Gric9_P5J1QyJBVwou=
+X5tf-FCDoG_vRkv-qeu5r6lL3ygqKgqW-KF2yxNV6KOcBmPdOfWsK1O7uWpb5XdliEGZOeS_xiu=
+pgBznEQZQ10PH8EF0LefBsxxu3m2MUPb1MGFs4E9LHUq8y1U8-wnnfiRstAnuRU8nF5UbRFoaIJ=
+UB/OTg5LUdaQi0wNjUAAAGOTNQBWVy3-T6cXkxD3m4Hvd-5Vv40A7wPkI7LqrO2Y2McaoXq3aWR=
+f5g0TZxPPjjmVLK3rA0=3D>
+Case Studies
+Planit Beats Vodafone=E2=80=99s B2B Campaign Targets by Over 250% with Tabo=
+ola
+Throughout the course of the 12 week campaign, Planit decreased CPC by 58% =
+and increased CTR by 242%. Taboola drove a 363% higher CTR and a 49% lower =
+CPC than direct competitors.
+See the Study <http://me.taboola.com/dc/9_HR30S54z_bMzcdWVHG2zJxnFM-3_MMF1_=
+ZJr6xtbt4YzhRkgZw4TkZ5-yigKViRhb18sbW9vvmVEZyqs62jfNgzPaPHGQ3n6CzeqSJSI8SJI=
+SIoj-W899cgIaLMokROTeOjzdR4QiA3GL6U3jx-KjiH8510b7JueNejzpBSfOtQ9jeY59eG9jNm=
+JTDHQFd/OTg5LUdaQi0wNjUAAAGOTNQBWVy3-T6cXkxD3m4Hvd-5Vv40A7wPkI7LqrO2Y2McaoX=
+q3aWRf5g0TZxPPjjmVLK3rA0=3D>
+ICICI Prudential Life Insurance Achieves 2X Increase in ROI with Taboola Im=
+age Ads
+With Taboola, ICICI Prudential Life Insurance achieved a 30% increase in le=
+ads month-over-month, 2x increase in ROI quarter-over-quarter, and 50% decr=
+ease in CPL across their platform and CRM.
+Get More Info <http://me.taboola.com/dc/9_HR30S54z_bMzcdWVHG2zJxnFM-3_MMF1_=
+ZJr6xtbtKsKOf6X9Buaaz09sseIIEEU970hdtGPYh-ox6yWdy8TGWKRJjT5KEK9DGb9biZRocWM=
+K1nMtjk1cqPxTHxBBszkt7xYuAzH_NQ2XtCW64y4_Bsjy-0V__VgCXtkV3URo2j-rr2lPe4T6CU=
+cWCATG9j44O7XEdUNyfSqnJkN1DRw=3D=3D/OTg5LUdaQi0wNjUAAAGOTNQBWVy3-T6cXkxD3m4=
+Hvd-5Vv40A7wPkI7LqrO2Y2McaoXq3aWRf5g0TZxPPjjmVLK3rA0=3D>
+Watch the Recording <http://me.taboola.com/dc/1g_IPHiF4hSe-bgW3WrOzAsjf03Bf=
+xJXSreDi7Vy5Grs6CDuxcm_XlDw6KppL2pM4E6Bxoc80YLBOJR_ksnABEG0A-WrKxbUnuqRsXPw=
+5zVjAQWVf5S5OH-wwUIKIAkag11zw781m0CwCcOSU-syU7au0lLGMs7QD7NecjQ4GmFZef2f3Dv=
+_ehWBy3i23AC8fC19qFH9W-V6lsvzvZx5w_X8KC2wKxUSe1o2QwONtfWANAVTpgAHYMj02M5-m4=
+ivZxYT4cszAsEvoLQmq9OzjPwlvoKMlya2PoQBWkiu9lADXOZCh-936z6SFv0KF98QmGW1CRSrs=
+FLR8nzh5mrqWg=3D=3D/OTg5LUdaQi0wNjUAAAGOTNQBWVy3-T6cXkxD3m4Hvd-5Vv40A7wPkI7=
+LqrO2Y2McaoXq3aWRf5g0TZxPPjjmVLK3rA0=3D>: Campaign Strategies to Sleigh the=
+ Holidays
+Help <http://me.taboola.com/dc/9_HR30S54z_bMzcdWVHG2yurV3z8xVkq9SfKgGqdYYIo=
+x3g_JJyUFetqnhatYqgmOWyVUTgHGKTpBNKqnJprv8gCx-XJ56Wnrb_An-hYHdzjiSm9kdzlfC4=
+6OhbGI38cmxeYckdS8kLw8ng-ZW27jy868UoI7_sVxzDh__sGDyY=3D/OTg5LUdaQi0wNjUAAAG=
+OTNQBWVy3-T6cXkxD3m4Hvd-5Vv40A7wPkI7LqrO2Y2McaoXq3aWRf5g0TZxPPjjmVLK3rA0=3D=
+>
+Blog <http://me.taboola.com/dc/JxGfWrq4oJcafjOJYDQo7ntWG9rKEIs9qaWRYpO48Kl_=
+VTJV5el3pORSZ_hI4tiefvhBNY_5hzgsLP1iSx40EKYgG8whwT3uFSiGwwZ7aI0LM0mSjzsyRKv=
+H8v07-IA-ZlXp28rocDtZAe6PYnlDwQ=3D=3D/OTg5LUdaQi0wNjUAAAGOTNQBWVy3-T6cXkxD3=
+m4Hvd-5Vv40A7wPkI7LqrO2Y2McaoXq3aWRf5g0TZxPPjjmVLK3rA0=3D>
+=C2=A9 2023 Taboola, Inc.=20
+16 Madison Square West, New York, NY, 10010, United States=20
+If you no longer wish to receive these emails you may unsubscribe <[[https:=
+//pages.taboola.com/UnsubscribePage.html?mkt_unsubscribe=3D1&mkt_tok=3DOTg5=
+LUdaQi0wNjUAAAGOTNQBWlvjPvVv37ETK9FWoY0j4fsSDWsLrYPkUTGPuRTLToi3vODRdMqCyp7=
+moEVgbLM9YfBSOUvTselmpSGTC6dQ8U4s7PPwcZ0qftXq8ItG6MPO]]> at any time.
+
+------=_Part_76342322_918661498.1695133946217
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microso=
+ft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office">
+<head>=20
+<!--[if gte mso 9]><xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml><![endif]-->=20
+<title>Taboola</title>=20
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8" />=
+=20
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge" />=20
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0 " />=20
+<meta name=3D"format-detection" content=3D"telephone=3Dno" />              =
+       =20
+<!-- New_meta -->    =20
+<style type=3D"text/css">
+body {
+=09margin: 0 auto;
+=09padding: 0;
+=09-webkit-text-size-adjust: 100% !important;
+=09-ms-text-size-adjust: 100% !important;
+=09-webkit-font-smoothing: antialiased !important;
+}
+img {
+=09border: 0 !important;
+=09outline: none !important;
+}
+p {
+=09Margin: 0px !important;
+=09Padding: 0px !important;
+}
+table {
+=09mso-table-lspace: 0px;
+=09mso-table-rspace: 0px;
+}
+td, a, span {
+=09mso-line-height-rule: exactly;
+}
+.ExternalClass * {
+=09line-height: 100%;
+}
+.em_defaultlink a {
+=09color: inherit;
+=09text-decoration: none;
+}
+.em_g_img + div {
+=09display: none;
+}
+a[x-apple-data-detectors], u + .em_body a, #MessageViewBody a {
+=09color: inherit;
+=09text-decoration: none;
+=09font-size: inherit;
+=09font-family: inherit;
+=09font-weight: inherit;
+=09line-height: inherit;
+}
+
+@media only screen and (max-width:599px) {
+.em_main_table {
+=09width: 100%!important;
+}
+.em_wrapper {
+=09width: 100%!important;
+}
+.em_hauto {
+=09height: auto !important;
+=09background-size: cover!important;
+}
+.em_hide {
+=09display: none!important;
+}
+.em_full_img img {
+=09width: 100%!important;
+=09height: auto!important;
+}
+.em_full_img1 img {
+=09width: 100%!important;
+=09height: auto!important;
+=09max-width: none!important;
+}
+.em_center {
+=09text-align: center!important;
+}
+.em_side15 {
+=09width: 15px!important;
+}
+.em_aside15 {
+=09padding: 0px 15px!important;
+}
+.em_aside10 {
+=09padding: 0px 10px!important;
+}
+.em_pbottom {
+=09padding-bottom: 20px!important;
+}
+.em_pbottom10 {
+=09padding-bottom: 10px!important;
+}
+.em_ptop {
+=09padding-top: 20px!important;
+}
+.em_pad {
+=09padding: 20px 15px!important;
+}
+.em_pad0 {
+=09padding: 0px!important;
+}
+.em_prbl {
+=09padding: 0px 15px 20px!important;
+}
+u+.em_body .em_full_wrap {
+=09width: 100%!important;
+=09width: 100vw!important;
+}
+.em_h30 {
+=09height: 30px !important;
+=09font-size: 1px !important;
+=09line-height: 1px !important;
+}
+.em_h20 {
+=09height: 40px !important;
+=09font-size: 1px !important;
+=09line-height: 1px !important;
+}
+.em_f24 {
+=09font-size: 30px !important;
+=09line-height: 37px !important;
+}
+}
+
+@media screen and (max-width:480px) {
+.em_prbl {
+=09padding: 0px 15px 20px!important;
+}
+.em_h30 {
+=09height: 35px !important;
+=09font-size: 1px !important;
+=09line-height: 1px !important;
+}
+.em_h20 {
+=09height: 25px !important;
+=09font-size: 1px !important;
+=09line-height: 1px !important;
+}
+.em_f24 {
+=09font-size: 23px !important;
+=09line-height: 30px !important;
+}
+}
+
+@media screen and (max-width:374px) {
+.em_prbl {
+=09padding: 0px 15px 20px !important;
+}
+.em_f18 {
+=09font-size: 18px !important;
+=09line-height: 20px !important;
+=09padding-bottom: 2px!important;
+}
+.em_f24 {
+=09font-size: 21px !important;
+=09line-height: 28px !important;
+}
+.em_f18 {
+=09font-size: 18px !important;
+=09line-height: 20px !important;
+}
+.em_h30 {
+=09height: 30px !important;
+=09font-size: 1px !important;
+=09line-height: 1px !important;
+}
+.em_h20 {
+=09height: 20px !important;
+=09font-size: 1px !important;
+=09line-height: 1px !important;
+}
+}
+</style>=20
+</head>=20
+<body class=3D"em_body" style=3D"margin:0px auto; padding:0px;" bgcolor=3D"=
+#FFFFFF"><style type=3D"text/css">div#emailPreHeader{ display: none !import=
+ant; }</style><div id=3D"emailPreHeader" style=3D"mso-hide:all; visibility:=
+hidden; opacity:0; color:transparent; mso-line-height-rule:exactly; line-he=
+ight:0; font-size:0px; overflow:hidden; border-width:0; display:none !impor=
+tant;">Media Newsletter</div>=20
+<!-- =3D=3D Body Section =3D=3D -->=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" clas=
+s=3D"em_full_wrap" bgcolor=3D"#FFFFFF" style=3D"table-layout:fixed;">=20
+<tbody>
+<tr>=20
+<td align=3D"center" valign=3D"top">
+<table align=3D"center" width=3D"600" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0" class=3D"em_main_table" style=3D"width:600px; table-layout:fixe=
+d;">=20
+<tbody>
+<tr>=20
+<td align=3D"center" valign=3D"top">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" clas=
+s=3D"mktoContainer" id=3D"Template" align=3D"center" bgcolor=3D"#e9f1f4">
+<tr class=3D"mktoModule" id=3D"Background_Section21dbd505-2655-4834-a76c-8e=
+19f125ecaf">=20
+<td align=3D"center" valign=3D"top" style=3D"padding:11px 10px;" bgcolor=3D=
+"#E9F1F4">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center">=20
+<tbody>=20
+<tr>=20
+<td class=3D"em_hauto" height=3D"150" align=3D"center" bgcolor=3D"#FFFFFF" =
+valign=3D"top" background=3D"https://pages.taboola.com/rs/989-GZB-065/image=
+s/eml-marketo_template-headerArtboard 2.jpg" style=3D"background-image:url(=
+https://pages.taboola.com/rs/989-GZB-065/images/eml-marketo_template-header=
+Artboard 2.jpg); width:580px; height:150px; background-repeat:no-repeat; ba=
+ckground-position:center top; ">=20
+<!--[if gte mso 9]>
+                      <v:image xmlns:v=3D"urn:schemas-microsoft-com:vml" fi=
+ll=3D"true" stroke=3D"false" style=3D" border: 0;display: inline-block; wid=
+th:580px;height:150px;" src=3D"https://pages.taboola.com/rs/989-GZB-065/ima=
+ges/eml-marketo_template-headerArtboard 2.jpg" />
+                  <v:rect xmlns:v=3D"urn:schemas-microsoft-com:vml" fill=3D=
+"true" stroke=3D"false" style=3D" border: 0;display: inline-block;position:=
+ absolute; width:580px;height:150px;">
+                    <v:fill opacity=3D"0%" color=3D"#080808"  />
+                    <v:textbox inset=3D"0,0,0,0">
+                      <![endif]-->=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center">=20
+<tbody>=20
+<tr>=20
+<td width=3D"20" style=3D"width:20px; line-height:0px; font-size:0px;" clas=
+s=3D"em_side15">&nbsp;</td>=20
+<td align=3D"center" valign=3D"top">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=20
+<tbody>=20
+<tr>=20
+<td class=3D"em_h20" height=3D"48" style=3D"font-size:1px; line-height: 1px=
+; height: 48px;">&nbsp;</td>=20
+</tr>=20
+<tr>=20
+<td align=3D"center" valign=3D"top">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"middle" style=3D"width:64px;font-size:0px;line=
+-height:0px;" width=3D"64"> </td>=20
+<td class=3D"em_defaultlink" valign=3D"top" align=3D"left" style=3D"font-fa=
+mily: 'Helvetica Neue LT Std', Helvetica, Arial, 'sans-serif'; font-size: 2=
+0px;font-weight:100; line-height: 22px; color: #ffffff; ">=20
+<div id=3D"hdr_text01f2932ab2-ecfc-4ade-8b4f-29ee1c353a73" class=3D"mktoTex=
+t">=20
+<div>=20
+<br />=20
+</div>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+<tr>=20
+<td align=3D"center" valign=3D"top">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=20
+<tbody>=20
+<tr>=20
+<td width=3D"20" style=3D"width:20px; line-height:0px; font-size:0px;" clas=
+s=3D"em_side15">&nbsp;</td>=20
+<td class=3D"em_defaultlink em_f24" valign=3D"top" align=3D"left" style=3D"=
+font-family: 'Helvetica Neue LT Std', Helvetica, Arial, 'sans-serif'; font-=
+size: 37px;font-weight:300; line-height: 44px;text-transform:uppercase;lett=
+er-spacing:0.3px; color: #FFCA0A; ">=20
+<div id=3D"hdr_text027f364016-6cf2-4cbd-b085-36dfd90253e4" class=3D"mktoTex=
+t">=20
+<div>=20
+<br />=20
+</div>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+<tr>=20
+<td class=3D"em_h30" height=3D"35" style=3D"font-size:1px; line-height: 1px=
+; height: 35px;">&nbsp;</td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+<td width=3D"20" style=3D"width:20px; line-height:0px; font-size:0px;" clas=
+s=3D"em_side15">&nbsp;</td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<!--[if gte mso 9]>
+                        </v:textbox>
+                      </v:rect>
+                      </v:image>
+                      <![endif]--></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Blog_Post_Heading_Section">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px ;" bgcol=
+or=3D"#E9F1F4">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" bgcolor=3D"#FFFFFF">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"top" style=3D"padding:0px 50px 15px 19px;" c=
+lass=3D"em_prbl">=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"top">=20
+<table border=3D"0" width=3D"100" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"left" style=3D"border-radius: 0px 0px 6px 6px;width:100px;" bgcolor=3D"=
+#054165">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"middle" height=3D"34" style=3D"height: 34px;=
+ font-family: 'Helvetica Neue LT Std', Helvetica, Arial, 'sans-serif'; font=
+-size: 12px;line-height: 14px; color: #FFFFFF; font-weight: 500; " class=3D=
+"em_defaultlink">=20
+<div class=3D"mktoText" id=3D"cta2">=20
+<div>
+ Press &amp; News=20
+</div>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Case_Studies_Content1_Sectionb1240749-a81f-4=
+029-9001-16fec671608b">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px ;" bgcol=
+or=3D"#E9F1F4">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" bgcolor=3D"#FFFFFF">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"top" style=3D"padding:0px 40px 24px 19px;" c=
+lass=3D"em_prbl">=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"font-family:  'Helvetica Neue LT=
+ Std', Helvetica, Arial, 'sans-serif'; font-size: 18px; line-height: 26px; =
+color: #054164;font-weight:bold; letter-spacing:0.3px; " class=3D"em_defaul=
+tlink em_f18">=20
+<div class=3D"mktoText" id=3D"text753d40180-e002-44b5-ba56-3c1731e6fa1e">=
+=20
+<div>
+ Advertisers Can Now Run Native Ads on Yahoo Properties in New Zealand, Exc=
+lusively Through Taboola=20
+</div>=20
+</div></td>=20
+</tr>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"font-family: 'Helvetica Neue LT =
+Std', Helvetica, Arial, 'sans-serif'; font-size: 14px; line-height: 18px; c=
+olor: #4E4F4F; font-weight: 300; " class=3D"em_defaultlink">=20
+<div class=3D"mktoText" id=3D"text885228cac-ec81-4238-b9ce-2fc88fde470d">=
+=20
+<div>=20
+<br />Taboola now powers recommendations across Yahoo properties in New Zea=
+land, giving advertisers access to some of the most visited properties on t=
+he open web including Yahoo, Yahoo Finance, Yahoo Mail, and more.=20
+<br />=20
+</div>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Left_align_CTA_Frame_Section586c3d72-3014-4c=
+65-9da2-e0dc12705d41">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px 10px;" b=
+gcolor=3D"#E9F1F4">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" bgcolor=3D"#FFFFFF">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"padding:0px 50px 16px 19px;" cla=
+ss=3D"em_prbl">=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top">=20
+<table border=3D"0" width=3D"142" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"left" style=3D"border-radius: 6px;width:142px; border: 2px solid #05416=
+4;" bgcolor=3D"#ffffff">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"middle" height=3D"32" style=3D"height: 32px;=
+ font-family: 'Helvetica Neue LT Std', Helvetica, Arial, 'sans-serif'; font=
+-size: 12px;color: #054164; font-weight: 600; " class=3D"em_defaultlink">=
+=20
+<div class=3D"mktoText" id=3D"cta07f998cec8-3bca-4a13-8b83-e68b6d33e1a7">=
+=20
+<div>=20
+<span style=3D"font-size: 12px;"><a href=3D
+"http://me.taboola.com/dc/9_HR30S54z_bMzcdWVHG28pkLsBjjntJcnoyStTq5hGmR8JJB=
+W_e51IsRjgvTIaAsC-N9ABZDeQfibpUQkndjsfRPtnjVCWt2UnJHVRmfEkUn7oZLnBeKP4xgF1k=
+ZxiHGKf4V_rZuSZJtZ7EpkrKqoJNXCMF-r6Hq8XvJOCpCex2m5y5OWh-h-huIV522TSGwJ9rQPW=
+1mO7NvhsQekfpviP-E_UCTQo05hZpJsi7hMr4B5o8kUZo7kzAs-XzBagNzQUsK1Ow4zXpWeJiGS=
+wnTprEyyq-Hf1eh91k_Bvxvgc=3D/OTg5LUdaQi0wNjUAAAGOTNQBWVy3-T6cXkxD3m4Hvd-5Vv=
+40A7wPkI7LqrO2Y2McaoXq3aWRf5g0TZxPPjjmVLK3rA0=3D" target=3D"_blank" style=
+=3D"color: #054164; text-decoration: none; line-height: 32px; display: bloc=
+k;"
+>Find Out More</a></span>=20
+</div>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Spacer_Section1ebd16f05-86e4-40cb-90b8-36bd8=
+0c6bd4c">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px ;" bgcol=
+or=3D"#E9F1F4" class=3D"em_pad0">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center">=20
+<tbody>=20
+<tr>=20
+<td bgcolor=3D"#E9F1F4" height=3D"2px" style=3D"height:2px;font-size:0px;li=
+ne-height:0px;background-color:#E9F1F4"><img alt=3D"" src=3D"https://pages.=
+taboola.com/rs/989-GZB-065/images/202203spacer.gif" height=3D"1" style=3D"d=
+isplay:block;height:1px;" border=3D"0" /></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Case_Studies_Content1_Section8fd82086-6b0e-4=
+ef7-b71d-3c32a1da424b">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px ;" bgcol=
+or=3D"#E9F1F4">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" bgcolor=3D"#FFFFFF">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"top" style=3D"padding:0px 40px 24px 19px;" c=
+lass=3D"em_prbl">=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"font-family:  'Helvetica Neue LT=
+ Std', Helvetica, Arial, 'sans-serif'; font-size: 18px; line-height: 26px; =
+color: #054164;font-weight:bold; letter-spacing:0.3px; " class=3D"em_defaul=
+tlink em_f18">=20
+<div class=3D"mktoText" id=3D"text77dda2d3f-0d64-4fb0-a497-3ef92fab90c0">=
+=20
+<div>=20
+<br />Digiday Names Taboola a Finalist for The Digiday Technology Awards Un=
+der =E2=80=9CBest Native Advertising Platform=E2=80=9D Category=20
+</div>=20
+</div></td>=20
+</tr>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"font-family: 'Helvetica Neue LT =
+Std', Helvetica, Arial, 'sans-serif'; font-size: 14px; line-height: 18px; c=
+olor: #4E4F4F; font-weight: 300; " class=3D"em_defaultlink">=20
+<div class=3D"mktoText" id=3D"text8e67ac4af-b7b8-4140-99bf-d8010475302f">=
+=20
+<div>=20
+<br />This achievement is based on a successful engagement and mutual case =
+study between Taboola, The Oliver Agency and The Loop, a brand providing wo=
+rld-class airport shopping experiences at the Montreal International Airpor=
+t.=20
+<br />=20
+</div>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Left_align_CTA_Frame_Section2a3e2df2-ff4c-44=
+3a-bb28-24fd2f224ca0">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px 10px;" b=
+gcolor=3D"#E9F1F4">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" bgcolor=3D"#FFFFFF">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"padding:0px 50px 16px 19px;" cla=
+ss=3D"em_prbl">=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top">=20
+<table border=3D"0" width=3D"142" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"left" style=3D"border-radius: 6px;width:142px; border: 2px solid #05416=
+4;" bgcolor=3D"#ffffff">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"middle" height=3D"32" style=3D"height: 32px;=
+ font-family: 'Helvetica Neue LT Std', Helvetica, Arial, 'sans-serif'; font=
+-size: 12px;color: #054164; font-weight: 600; " class=3D"em_defaultlink">=
+=20
+<div class=3D"mktoText" id=3D"cta072dd84627-8d1c-40ca-8eb1-99b69e2a884a">=
+=20
+<div>=20
+<span style=3D"font-size: 12px;"><a href=3D
+"http://me.taboola.com/dc/9_HR30S54z_bMzcdWVHG28pkLsBjjntJcnoyStTq5hExhvZT6=
+t8foQU-XTVxnBULRdHynDxs7JndnV3X9m0pnBJAyerUbZB0DOpyRi6qec40gmaOYou0ebqSePpt=
+lGYjJwvATRKAumGRA8CqFGmDqheNW9998QXN_qsMLHEHUiSf_cM5uXQJCQZXjSELtrp7_mGEYXB=
+6nm-kIcAeG9RLTA=3D=3D/OTg5LUdaQi0wNjUAAAGOTNQBWVy3-T6cXkxD3m4Hvd-5Vv40A7wPk=
+I7LqrO2Y2McaoXq3aWRf5g0TZxPPjjmVLK3rA0=3D" target=3D"_blank" style=3D"color=
+: #054164; text-decoration: none; line-height: 32px; display: block;"
+>View Now</a></span>=20
+</div>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Spacer_Section103518347-0331-4a6f-adf2-c7c39=
+0746e83">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px ;" bgcol=
+or=3D"#E9F1F4" class=3D"em_pad0">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center">=20
+<tbody>=20
+<tr>=20
+<td bgcolor=3D"#E9F1F4" height=3D"2px" style=3D"height:2px;font-size:0px;li=
+ne-height:0px;background-color:#E9F1F4"><img alt=3D"" src=3D"https://pages.=
+taboola.com/rs/989-GZB-065/images/202203spacer.gif" height=3D"1" style=3D"d=
+isplay:block;height:1px;" border=3D"0" /></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Case_Studies_Content1_Sectione86416d1-6e6a-4=
+748-a578-b2a28570697b">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px ;" bgcol=
+or=3D"#E9F1F4">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" bgcolor=3D"#FFFFFF">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"top" style=3D"padding:0px 40px 24px 19px;" c=
+lass=3D"em_prbl">=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"font-family:  'Helvetica Neue LT=
+ Std', Helvetica, Arial, 'sans-serif'; font-size: 18px; line-height: 26px; =
+color: #054164;font-weight:bold; letter-spacing:0.3px; " class=3D"em_defaul=
+tlink em_f18">=20
+<div class=3D"mktoText" id=3D"text76d22f013-8b5b-4fc7-a80c-9a4f53bfbf72">=
+=20
+<div>=20
+<br />The Holiday Ad Creative Playbook for Brands and Agencies=20
+</div>=20
+</div></td>=20
+</tr>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"font-family: 'Helvetica Neue LT =
+Std', Helvetica, Arial, 'sans-serif'; font-size: 14px; line-height: 18px; c=
+olor: #4E4F4F; font-weight: 300; " class=3D"em_defaultlink">=20
+<div class=3D"mktoText" id=3D"text898f07436-9236-4ea9-a7bf-c995c6abd7ba">=
+=20
+<div>=20
+<br />Cautious spending meets creative advertising! The solution? A game pl=
+an tailored to the 5 stages of holiday shopping: Discovery, Consideration, =
+Cyber Five, Urgent Purchasing, and Q5. Learn the 6 advertising strategies f=
+or each stage in our 2023 Holiday Creative Playbook.=20
+<br />=20
+</div>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Left_align_CTA_Frame_Section6f987f7d-cfd5-44=
+97-9822-bdbefa763018">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px 10px;" b=
+gcolor=3D"#E9F1F4">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" bgcolor=3D"#FFFFFF">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"padding:0px 50px 16px 19px;" cla=
+ss=3D"em_prbl">=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top">=20
+<table border=3D"0" width=3D"142" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"left" style=3D"border-radius: 6px;width:142px; border: 2px solid #05416=
+4;" bgcolor=3D"#ffffff">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"middle" height=3D"32" style=3D"height: 32px;=
+ font-family: 'Helvetica Neue LT Std', Helvetica, Arial, 'sans-serif'; font=
+-size: 12px;color: #054164; font-weight: 600; " class=3D"em_defaultlink">=
+=20
+<div class=3D"mktoText" id=3D"cta07760f12b3-50c1-4556-871a-9064d1eaa95b">=
+=20
+<div>=20
+<span style=3D"font-size: 12px;"><a href=3D
+"http://me.taboola.com/OTg5LUdaQi0wNjUAAAGOTNQBWfTztVx-hePzPcULlRp4ICbqUOJ1=
+9S15E5GOX2kUbT0JXGK-IKlgyZSszdA1nuhugxE=3D" target=3D"_blank" style=3D"colo=
+r: #054164; text-decoration: none; line-height: 32px; display: block;"
+>Read on The Drum</a></span>=20
+</div>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Spacer_Section195cd11d1-f20e-4362-a6fb-66d5c=
+f102167">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px ;" bgcol=
+or=3D"#E9F1F4" class=3D"em_pad0">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center">=20
+<tbody>=20
+<tr>=20
+<td bgcolor=3D"#E9F1F4" height=3D"10px" style=3D"height:10px;font-size:0px;=
+line-height:0px;background-color:#E9F1F4"><img alt=3D"" src=3D"https://page=
+s.taboola.com/rs/989-GZB-065/images/202203spacer.gif" height=3D"1" style=3D=
+"display:block;height:1px;" border=3D"0" /></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Case_Studies_Heading_Section">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px ;" bgcol=
+or=3D"#E9F1F4">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" bgcolor=3D"#FFFFFF">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"top" style=3D"padding:0px 50px 11px 19px;" c=
+lass=3D"em_prbl">=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"top">=20
+<table border=3D"0" width=3D"100" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"left" style=3D"border-radius: 0px 0px 6px 6px;width:100px;" bgcolor=3D"=
+#1E3F66">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"middle" height=3D"34" style=3D"height: 34px;=
+ font-family: 'Helvetica Neue LT Std', Helvetica, Arial, 'sans-serif'; font=
+-size: 12px;line-height: 14px; color: #FFFFFF; font-weight: 500; " class=3D=
+"em_defaultlink">=20
+<div class=3D"mktoText" id=3D"cta3">=20
+<div>
+ Blog Posts=20
+</div>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Case_Studies_Content1_Section14e73245-f5b6-4=
+1d9-8ca3-ecd801d427a3">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px ;" bgcol=
+or=3D"#E9F1F4">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" bgcolor=3D"#FFFFFF">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"top" style=3D"padding:0px 40px 24px 19px;" c=
+lass=3D"em_prbl">=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"font-family:  'Helvetica Neue LT=
+ Std', Helvetica, Arial, 'sans-serif'; font-size: 18px; line-height: 26px; =
+color: #054164;font-weight:bold; letter-spacing:0.3px; " class=3D"em_defaul=
+tlink em_f18">=20
+<div class=3D"mktoText" id=3D"text7f15385a0-0bc8-44af-b428-97106358caff">=
+=20
+<div>
+ Optimize Native Ad Performance at Scale with Maximize Conversions=20
+</div>=20
+</div></td>=20
+</tr>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"font-family: 'Helvetica Neue LT =
+Std', Helvetica, Arial, 'sans-serif'; font-size: 14px; line-height: 18px; c=
+olor: #4E4F4F; font-weight: 300; " class=3D"em_defaultlink">=20
+<div class=3D"mktoText" id=3D"text88e4b4227-e9b4-41ac-a350-c3090522285d">=
+=20
+<div>=20
+<br />Taboola has launched Maximize Conversions: a performance-focused bidd=
+ing strategy designed to help native advertisers do more with their budgets=
+.=20
+<br />=20
+</div>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Left_align_CTA_Frame_Section97860710-c876-40=
+c8-bda6-b531dd15d054">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px 10px;" b=
+gcolor=3D"#E9F1F4">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" bgcolor=3D"#FFFFFF">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"padding:0px 50px 16px 19px;" cla=
+ss=3D"em_prbl">=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top">=20
+<table border=3D"0" width=3D"142" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"left" style=3D"border-radius: 6px;width:142px; border: 2px solid #05416=
+4;" bgcolor=3D"#ffffff">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"middle" height=3D"32" style=3D"height: 32px;=
+ font-family: 'Helvetica Neue LT Std', Helvetica, Arial, 'sans-serif'; font=
+-size: 12px;color: #054164; font-weight: 600; " class=3D"em_defaultlink">=
+=20
+<div class=3D"mktoText" id=3D"cta07dc84c48b-1284-4e8e-9b2c-f2267fbb8018">=
+=20
+<div>=20
+<span style=3D"font-size: 12px;"><a href=3D
+"http://me.taboola.com/dc/2_Yw4H0nEydwun7o3aNL41gmbjRyVOgEojXdhtenhKkUp7S2s=
+jwLxHeiCgmHck-10mE9Ng-8ENpUbIWGDEe_U5oR7FnXnR9aWoiih1Fw225HsZVlknYHFd_8RLA1=
+5YUB97h-lV71utfjx_lekwYq51g3rO-imyW8Tm0EueqDArYH-Fun6kbfSs0Gu7rsdHTG/OTg5LU=
+daQi0wNjUAAAGOTNQBWVy3-T6cXkxD3m4Hvd-5Vv40A7wPkI7LqrO2Y2McaoXq3aWRf5g0TZxPP=
+jjmVLK3rA0=3D" target=3D"_blank" style=3D"color: #054164; text-decoration: =
+none; line-height: 32px; display: block;"
+>Explore More</a></span>=20
+</div>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Spacer_Section1681454ec-fea0-4d2f-8894-c8780=
+db93250">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px ;" bgcol=
+or=3D"#E9F1F4" class=3D"em_pad0">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center">=20
+<tbody>=20
+<tr>=20
+<td bgcolor=3D"#E9F1F4" height=3D"2px" style=3D"height:2px;font-size:0px;li=
+ne-height:0px;background-color:#E9F1F4"><img alt=3D"" src=3D"https://pages.=
+taboola.com/rs/989-GZB-065/images/202203spacer.gif" height=3D"1" style=3D"d=
+isplay:block;height:1px;" border=3D"0" /></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Case_Studies_Content1_Section03fa6811-64f5-4=
+768-9c8d-61b4cb30da79">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px ;" bgcol=
+or=3D"#E9F1F4">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" bgcolor=3D"#FFFFFF">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"top" style=3D"padding:0px 40px 24px 19px;" c=
+lass=3D"em_prbl">=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"font-family:  'Helvetica Neue LT=
+ Std', Helvetica, Arial, 'sans-serif'; font-size: 18px; line-height: 26px; =
+color: #054164;font-weight:bold; letter-spacing:0.3px; " class=3D"em_defaul=
+tlink em_f18">=20
+<div class=3D"mktoText" id=3D"text7d1042902-dee8-4fe5-aa5b-64acd87c61a1">=
+=20
+<div>=20
+<br />6 Holiday Creative Strategies for Taboola Campaign Success=20
+</div>=20
+</div></td>=20
+</tr>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"font-family: 'Helvetica Neue LT =
+Std', Helvetica, Arial, 'sans-serif'; font-size: 14px; line-height: 18px; c=
+olor: #4E4F4F; font-weight: 300; " class=3D"em_defaultlink">=20
+<div class=3D"mktoText" id=3D"text839bb229e-bfbc-4c4a-8431-28d5c16f20d5">=
+=20
+<div>=20
+<br />Prepare for holiday marketing success with Taboola's Q4 2023 Holiday =
+Creative Playbook. Get top strategies and creative recommendations to boost=
+ your seasonal sales and meet year-end goals. Supercharge your 2023 holiday=
+ campaign with 6 key strategies.=20
+<br />=20
+</div>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Left_align_CTA_Frame_Sectionce41a299-e8b6-4c=
+0d-8d0e-dcdcda04891f">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px 10px;" b=
+gcolor=3D"#E9F1F4">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" bgcolor=3D"#FFFFFF">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"padding:0px 50px 16px 19px;" cla=
+ss=3D"em_prbl">=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top">=20
+<table border=3D"0" width=3D"142" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"left" style=3D"border-radius: 6px;width:142px; border: 2px solid #05416=
+4;" bgcolor=3D"#ffffff">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"middle" height=3D"32" style=3D"height: 32px;=
+ font-family: 'Helvetica Neue LT Std', Helvetica, Arial, 'sans-serif'; font=
+-size: 12px;color: #054164; font-weight: 600; " class=3D"em_defaultlink">=
+=20
+<div class=3D"mktoText" id=3D"cta0727713832-73a4-41de-b6b2-43c2c55b450f">=
+=20
+<div>=20
+<span style=3D"font-size: 12px;"><a href=3D
+"http://me.taboola.com/dc/2_Yw4H0nEydwun7o3aNL4_2N44UCkT-1VKkl5yLBNBIj2XQwN=
+3JsPXA3kU4oBJPHmDdz3Tn5LrbpXunbE65o1CmV-jDHFp1P6SMrALN6GerAqEAb1DLDQym0YOLU=
+ZGGNos8qID2cwYFxaqJFuq8TsHfPUgmOfGnhOcGkRJoL-jcfp6yhu7jaY5RbiKZe9lhc/OTg5LU=
+daQi0wNjUAAAGOTNQBWVy3-T6cXkxD3m4Hvd-5Vv40A7wPkI7LqrO2Y2McaoXq3aWRf5g0TZxPP=
+jjmVLK3rA0=3D" target=3D"_blank" style=3D"color: #054164; text-decoration: =
+none; line-height: 32px; display: block;"
+>See the Strategies</a></span>=20
+</div>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Spacer_Section1c5e4c24e-53c3-4676-9b08-8d109=
+936b73f">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px ;" bgcol=
+or=3D"#E9F1F4" class=3D"em_pad0">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center">=20
+<tbody>=20
+<tr>=20
+<td bgcolor=3D"#E9F1F4" height=3D"2px" style=3D"height:2px;font-size:0px;li=
+ne-height:0px;background-color:#E9F1F4"><img alt=3D"" src=3D"https://pages.=
+taboola.com/rs/989-GZB-065/images/202203spacer.gif" height=3D"1" style=3D"d=
+isplay:block;height:1px;" border=3D"0" /></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Case_Studies_Content1_Section216f66e4-eef6-4=
+76d-a7ba-4b3d2df55fcc">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px ;" bgcol=
+or=3D"#E9F1F4">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" bgcolor=3D"#FFFFFF">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"top" style=3D"padding:0px 40px 24px 19px;" c=
+lass=3D"em_prbl">=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"font-family:  'Helvetica Neue LT=
+ Std', Helvetica, Arial, 'sans-serif'; font-size: 18px; line-height: 26px; =
+color: #054164;font-weight:bold; letter-spacing:0.3px; " class=3D"em_defaul=
+tlink em_f18">=20
+<div class=3D"mktoText" id=3D"text7f5cf7fd5-01f9-41e6-87ae-cead3991908e">=
+=20
+<div>=20
+<br />Maximize Your Auto Ads Performance with Taboola=E2=80=99s Data-Driven=
+ Creative Playbook=20
+</div>=20
+</div></td>=20
+</tr>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"font-family: 'Helvetica Neue LT =
+Std', Helvetica, Arial, 'sans-serif'; font-size: 14px; line-height: 18px; c=
+olor: #4E4F4F; font-weight: 300; " class=3D"em_defaultlink">=20
+<div class=3D"mktoText" id=3D"text80067058e-6737-459f-8dba-e59192164081">=
+=20
+<div>=20
+<br />Whether you=E2=80=99re running video or image ads on the open web =E2=
+=80=94 or just looking to update your copy and landing pages =E2=80=94 this=
+ playbook has the data you need to hit the road with your revamped campaign=
+s.=20
+<br />=20
+</div>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Left_align_CTA_Frame_Section0a69fb57-3ccd-45=
+1f-bcdd-5c414687c67b">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px 10px;" b=
+gcolor=3D"#E9F1F4">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" bgcolor=3D"#FFFFFF">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"padding:0px 50px 16px 19px;" cla=
+ss=3D"em_prbl">=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top">=20
+<table border=3D"0" width=3D"142" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"left" style=3D"border-radius: 6px;width:142px; border: 2px solid #05416=
+4;" bgcolor=3D"#ffffff">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"middle" height=3D"32" style=3D"height: 32px;=
+ font-family: 'Helvetica Neue LT Std', Helvetica, Arial, 'sans-serif'; font=
+-size: 12px;color: #054164; font-weight: 600; " class=3D"em_defaultlink">=
+=20
+<div class=3D"mktoText" id=3D"cta0770880c4c-0e1c-4312-ab85-4a8fc4923179">=
+=20
+<div>=20
+<span style=3D"font-size: 11px;"><a href=3D
+"http://me.taboola.com/dc/2_Yw4H0nEydwun7o3aNL4y_G5VneHIulnImNF4Y8VLkhLWxqy=
+bJFOGzEeFj85z0GJxUFkG4c0Ys5UKOsPsGdA6twgOYhKqQHMFhEDrjzEkPcAsSm9JQTP0yu1iC-=
+XhKyeXLfqNSJYwWWuIv2aXyQjUdaADKBgtJgdVu0DyimpxtHe8_m27lMMT5s45L7kv21/OTg5LU=
+daQi0wNjUAAAGOTNQBWVy3-T6cXkxD3m4Hvd-5Vv40A7wPkI7LqrO2Y2McaoXq3aWRf5g0TZxPP=
+jjmVLK3rA0=3D" target=3D"_blank" style=3D"color: #054164; text-decoration: =
+none; line-height: 32px; display: block;"
+>Download the Playbook</a></span>=20
+</div>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Spacer_Section1bd7eb87e-1871-46a0-a5f4-53ce7=
+3e97a2e">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px ;" bgcol=
+or=3D"#E9F1F4" class=3D"em_pad0">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center">=20
+<tbody>=20
+<tr>=20
+<td bgcolor=3D"#E9F1F4" height=3D"2px" style=3D"height:2px;font-size:0px;li=
+ne-height:0px;background-color:#E9F1F4"><img alt=3D"" src=3D"https://pages.=
+taboola.com/rs/989-GZB-065/images/202203spacer.gif" height=3D"1" style=3D"d=
+isplay:block;height:1px;" border=3D"0" /></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Case_Studies_Content1_Section9e91cf48-164c-4=
+e36-87b1-e352d96a7045">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px ;" bgcol=
+or=3D"#E9F1F4">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" bgcolor=3D"#FFFFFF">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"top" style=3D"padding:0px 40px 24px 19px;" c=
+lass=3D"em_prbl">=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"font-family:  'Helvetica Neue LT=
+ Std', Helvetica, Arial, 'sans-serif'; font-size: 18px; line-height: 26px; =
+color: #054164;font-weight:bold; letter-spacing:0.3px; " class=3D"em_defaul=
+tlink em_f18">=20
+<div class=3D"mktoText" id=3D"text7c46ebb9d-6f08-411f-82b7-054d766bf64e">=
+=20
+<div>=20
+<br />The Barbie Movie is a Perfect Example of Content Marketing =E2=80=93 =
+Here=E2=80=99s What It Can Teach Us=20
+</div>=20
+</div></td>=20
+</tr>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"font-family: 'Helvetica Neue LT =
+Std', Helvetica, Arial, 'sans-serif'; font-size: 14px; line-height: 18px; c=
+olor: #4E4F4F; font-weight: 300; " class=3D"em_defaultlink">=20
+<div class=3D"mktoText" id=3D"text8e436d363-4521-4605-80f4-af9cd840f999">=
+=20
+<div>=20
+<br />The Barbie movie has dazzled audiences worldwide, but did you know it=
+'s more than just a film? It's a $147 million lesson in content marketing! =
+Discover how Barbie's success can inspire your marketing strategy, regardle=
+ss of your budget.=20
+<br />=20
+</div>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Left_align_CTA_Frame_Section7ebbc6e3-8d6d-4e=
+56-8a16-54d707078d01">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px 10px;" b=
+gcolor=3D"#E9F1F4">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" bgcolor=3D"#FFFFFF">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"padding:0px 50px 16px 19px;" cla=
+ss=3D"em_prbl">=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top">=20
+<table border=3D"0" width=3D"142" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"left" style=3D"border-radius: 6px;width:142px; border: 2px solid #05416=
+4;" bgcolor=3D"#ffffff">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"middle" height=3D"32" style=3D"height: 32px;=
+ font-family: 'Helvetica Neue LT Std', Helvetica, Arial, 'sans-serif'; font=
+-size: 12px;color: #054164; font-weight: 600; " class=3D"em_defaultlink">=
+=20
+<div class=3D"mktoText" id=3D"cta0772cd940d-0fdd-4408-8723-1ef2e8b69ef3">=
+=20
+<div>=20
+<span style=3D"font-size: 12px;"><a href=3D
+"http://me.taboola.com/dc/2_Yw4H0nEydwun7o3aNL43rraIZ135aZHQSg8ALXpQW23ktqD=
+tT7Fp7QXVLcA82xCKP6FBZ1_j47lga--In0QyyIC8SStL0jAaGDqDPZFYRGsAf9Q-7irpqbuJ1h=
+8iSrcwNsNFWAZxoZNz6EMNg0AG3d6pwQHXTbUL-0cnQ-Ox4=3D/OTg5LUdaQi0wNjUAAAGOTNQB=
+WVy3-T6cXkxD3m4Hvd-5Vv40A7wPkI7LqrO2Y2McaoXq3aWRf5g0TZxPPjjmVLK3rA0=3D" tar=
+get=3D"_blank" style=3D"color: #054164; text-decoration: none; line-height:=
+ 32px; display: block;"
+>Read Now</a></span>=20
+</div>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Spacer_Section133a5e822-295e-451a-b219-d0d0a=
+6d8ccd5">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px ;" bgcol=
+or=3D"#E9F1F4" class=3D"em_pad0">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center">=20
+<tbody>=20
+<tr>=20
+<td bgcolor=3D"#E9F1F4" height=3D"2px" style=3D"height:2px;font-size:0px;li=
+ne-height:0px;background-color:#E9F1F4"><img alt=3D"" src=3D"https://pages.=
+taboola.com/rs/989-GZB-065/images/202203spacer.gif" height=3D"1" style=3D"d=
+isplay:block;height:1px;" border=3D"0" /></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Case_Studies_Content1_Section744c5c50-aa3c-4=
+c83-bca4-e53f65a832be">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px ;" bgcol=
+or=3D"#E9F1F4">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" bgcolor=3D"#FFFFFF">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"top" style=3D"padding:0px 40px 24px 19px;" c=
+lass=3D"em_prbl">=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"font-family:  'Helvetica Neue LT=
+ Std', Helvetica, Arial, 'sans-serif'; font-size: 18px; line-height: 26px; =
+color: #054164;font-weight:bold; letter-spacing:0.3px; " class=3D"em_defaul=
+tlink em_f18">=20
+<div class=3D"mktoText" id=3D"text71c61be2a-a2ec-47a6-9fde-988f0267e97d">=
+=20
+<div>=20
+<br />E-commerce Creative Insights for Every Industry to Ensure a Merry Mar=
+keting Season=20
+</div>=20
+</div></td>=20
+</tr>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"font-family: 'Helvetica Neue LT =
+Std', Helvetica, Arial, 'sans-serif'; font-size: 14px; line-height: 18px; c=
+olor: #4E4F4F; font-weight: 300; " class=3D"em_defaultlink">=20
+<div class=3D"mktoText" id=3D"text8e996cd1a-e284-4bba-9380-07ef17f26469">=
+=20
+<div>=20
+<br />Advertisers, prepare for the winter holidays! Taboola's Q4 2023 Holid=
+ay Creative Playbook offers data-backed insights for high-converting campai=
+gns. Get industry-specific creative tips and a full strategy guide for holi=
+day success.=20
+<br />=20
+</div>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Left_align_CTA_Frame_Section469c491c-f234-46=
+c6-b641-2121b181316b">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px 10px;" b=
+gcolor=3D"#E9F1F4">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" bgcolor=3D"#FFFFFF">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"padding:0px 50px 16px 19px;" cla=
+ss=3D"em_prbl">=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top">=20
+<table border=3D"0" width=3D"142" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"left" style=3D"border-radius: 6px;width:142px; border: 2px solid #05416=
+4;" bgcolor=3D"#ffffff">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"middle" height=3D"32" style=3D"height: 32px;=
+ font-family: 'Helvetica Neue LT Std', Helvetica, Arial, 'sans-serif'; font=
+-size: 12px;color: #054164; font-weight: 600; " class=3D"em_defaultlink">=
+=20
+<div class=3D"mktoText" id=3D"cta0721c76261-fe2b-4620-9438-b6c9e96f65d9">=
+=20
+<div>=20
+<a href=3D
+"http://me.taboola.com/dc/2_Yw4H0nEydwun7o3aNL4_2N44UCkT-1VKkl5yLBNBJ7IgwiW=
+j2VE14R0AoLBiJGsoQZMMqJ1atQc5JMgUXqueJ3i1veBLd8qQYTTfP0tGNvwJc28u8MuCHKw5Uq=
+E4a_6wsKbbbR8jZWdsPwKAmWw8134vRl97OjvIFLK8lXoAoLmIb1_nz6eu0r5nuOT90O/OTg5LU=
+daQi0wNjUAAAGOTNQBWVy3-T6cXkxD3m4Hvd-5Vv40A7wPkI7LqrO2Y2McaoXq3aWRf5g0TZxPP=
+jjmVLK3rA0=3D" target=3D"_blank" style=3D"color: #054164; text-decoration: =
+none; line-height: 32px; display: block;"
+>Learn More</a>=20
+</div>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Spacer_Section1693aa70e-aa89-4ab4-b04c-051fc=
+be5dca6">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px ;" bgcol=
+or=3D"#E9F1F4" class=3D"em_pad0">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center">=20
+<tbody>=20
+<tr>=20
+<td bgcolor=3D"#E9F1F4" height=3D"2px" style=3D"height:2px;font-size:0px;li=
+ne-height:0px;background-color:#E9F1F4"><img alt=3D"" src=3D"https://pages.=
+taboola.com/rs/989-GZB-065/images/202203spacer.gif" height=3D"1" style=3D"d=
+isplay:block;height:1px;" border=3D"0" /></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Case_Studies_Content1_Section4fb538d3-cc74-4=
+01d-932f-470ecc0ab140">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px ;" bgcol=
+or=3D"#E9F1F4">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" bgcolor=3D"#FFFFFF">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"top" style=3D"padding:0px 40px 24px 19px;" c=
+lass=3D"em_prbl">=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"font-family:  'Helvetica Neue LT=
+ Std', Helvetica, Arial, 'sans-serif'; font-size: 18px; line-height: 26px; =
+color: #054164;font-weight:bold; letter-spacing:0.3px; " class=3D"em_defaul=
+tlink em_f18">=20
+<div class=3D"mktoText" id=3D"text717a3606a-99b9-487c-b515-56ad9e9de781">=
+=20
+<div>=20
+<br />Gaming Ad Campaigns: Level-Up Your Creative Strategy=20
+</div>=20
+</div></td>=20
+</tr>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"font-family: 'Helvetica Neue LT =
+Std', Helvetica, Arial, 'sans-serif'; font-size: 14px; line-height: 18px; c=
+olor: #4E4F4F; font-weight: 300; " class=3D"em_defaultlink">=20
+<div class=3D"mktoText" id=3D"text8e3c02056-c5d8-4d55-8347-91cb26985638">=
+=20
+<div>=20
+<br />To help you level-up your gaming campaigns, we=E2=80=99ve compiled th=
+e Taboola Creative Playbook: Gaming =E2=80=94 a go-to strategy guide for ad=
+vertisers of gaming apps, mobile and desktop games, gaming consoles, social=
+ casino games, sports games, and more.=20
+<br />=20
+<br />=20
+</div>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Left_align_CTA_Frame_Sectionbeca450e-c852-44=
+06-8f91-5892be662bae">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px 10px;" b=
+gcolor=3D"#E9F1F4">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" bgcolor=3D"#FFFFFF">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"padding:0px 50px 16px 19px;" cla=
+ss=3D"em_prbl">=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top">=20
+<table border=3D"0" width=3D"142" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"left" style=3D"border-radius: 6px;width:142px; border: 2px solid #05416=
+4;" bgcolor=3D"#ffffff">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"middle" height=3D"32" style=3D"height: 32px;=
+ font-family: 'Helvetica Neue LT Std', Helvetica, Arial, 'sans-serif'; font=
+-size: 12px;color: #054164; font-weight: 600; " class=3D"em_defaultlink">=
+=20
+<div class=3D"mktoText" id=3D"cta0705b6c024-c400-4ae1-b942-69f8785fe1c1">=
+=20
+<div>=20
+<a href=3D
+"http://me.taboola.com/dc/2_Yw4H0nEydwun7o3aNL45Gric9_P5J1QyJBVwouX5tf-FCDo=
+G_vRkv-qeu5r6lL3ygqKgqW-KF2yxNV6KOcBmPdOfWsK1O7uWpb5XdliEGZOeS_xiupgBznEQZQ=
+10PH8EF0LefBsxxu3m2MUPb1MGFs4E9LHUq8y1U8-wnnfiSPTLf3YnwxHjMW8oymoX20moxHYOK=
+wcUdPDqtUXzvpeQ=3D=3D/OTg5LUdaQi0wNjUAAAGOTNQBWVy3-T6cXkxD3m4Hvd-5Vv40A7wPk=
+I7LqrO2Y2McaoXq3aWRf5g0TZxPPjjmVLK3rA0=3D" target=3D"_blank" style=3D"color=
+: #054164; text-decoration: none; line-height: 32px; display: block;"
+>View Now</a>=20
+</div>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Spacer_Section1b00635c6-c2a8-4543-82ee-96e8d=
+b71e18b">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px ;" bgcol=
+or=3D"#E9F1F4" class=3D"em_pad0">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center">=20
+<tbody>=20
+<tr>=20
+<td bgcolor=3D"#E9F1F4" height=3D"10px" style=3D"height:10px;font-size:0px;=
+line-height:0px;background-color:#E9F1F4"><img alt=3D"" src=3D"https://page=
+s.taboola.com/rs/989-GZB-065/images/202203spacer.gif" height=3D"1" style=3D=
+"display:block;height:1px;" border=3D"0" /></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Data_Reports_Heading_Section">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px ;" bgcol=
+or=3D"#E9F1F4">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" bgcolor=3D"#FFFFFF">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"top" style=3D"padding:0px 50px 13px 19px;" c=
+lass=3D"em_prbl">=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"top">=20
+<table border=3D"0" width=3D"100" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"left" style=3D"border-radius: 0px 0px 6px 6px;width:100px;" bgcolor=3D"=
+#1E3F66">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"middle" height=3D"34" style=3D"height: 34px;=
+ font-family: 'Helvetica Neue LT Std', Helvetica, Arial, 'sans-serif'; font=
+-size: 12px; color: #FFFFFF;line-height: 14px; font-weight: 500; " class=3D=
+"em_defaultlink">=20
+<div class=3D"mktoText" id=3D"cta4">=20
+<div>
+ Case Studies=20
+</div>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Case_Studies_Content1_Section2bddc79c-ecfb-4=
+244-8e46-8261ef6ee2fa">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px ;" bgcol=
+or=3D"#E9F1F4">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" bgcolor=3D"#FFFFFF">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"top" style=3D"padding:0px 40px 24px 19px;" c=
+lass=3D"em_prbl">=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"font-family:  'Helvetica Neue LT=
+ Std', Helvetica, Arial, 'sans-serif'; font-size: 18px; line-height: 26px; =
+color: #054164;font-weight:bold; letter-spacing:0.3px; " class=3D"em_defaul=
+tlink em_f18">=20
+<div class=3D"mktoText" id=3D"text7521bb2dc-88f7-4460-bf7a-db2f16814267">=
+=20
+<div>
+ Planit Beats Vodafone=E2=80=99s B2B Campaign Targets by Over 250% with Tab=
+oola=20
+</div>=20
+</div></td>=20
+</tr>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"font-family: 'Helvetica Neue LT =
+Std', Helvetica, Arial, 'sans-serif'; font-size: 14px; line-height: 18px; c=
+olor: #4E4F4F; font-weight: 300; " class=3D"em_defaultlink">=20
+<div class=3D"mktoText" id=3D"text84d209fef-8947-4e77-9ad4-b30905c67e06">=
+=20
+<div>=20
+<br />Throughout the course of the 12 week campaign, Planit decreased CPC b=
+y 58% and increased CTR by 242%. Taboola drove a 363% higher CTR and a 49% =
+lower CPC than direct competitors.=20
+<br />=20
+</div>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Left_align_CTA_Frame_Sectionaaef1c18-be1f-4d=
+38-b2a2-8332fbe0a07c">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px 10px;" b=
+gcolor=3D"#E9F1F4">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" bgcolor=3D"#FFFFFF">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"padding:0px 50px 16px 19px;" cla=
+ss=3D"em_prbl">=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top">=20
+<table border=3D"0" width=3D"142" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"left" style=3D"border-radius: 6px;width:142px; border: 2px solid #05416=
+4;" bgcolor=3D"#ffffff">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"middle" height=3D"32" style=3D"height: 32px;=
+ font-family: 'Helvetica Neue LT Std', Helvetica, Arial, 'sans-serif'; font=
+-size: 12px;color: #054164; font-weight: 600; " class=3D"em_defaultlink">=
+=20
+<div class=3D"mktoText" id=3D"cta07f937a335-4fd8-4eba-b383-7651a1629722">=
+=20
+<div>=20
+<a href=3D
+"http://me.taboola.com/dc/9_HR30S54z_bMzcdWVHG2zJxnFM-3_MMF1_ZJr6xtbt4YzhRk=
+gZw4TkZ5-yigKViRhb18sbW9vvmVEZyqs62jfNgzPaPHGQ3n6CzeqSJSI8SJISIoj-W899cgIaL=
+MokROTeOjzdR4QiA3GL6U3jx-KjiH8510b7JueNejzpBSfOqRwZ-l527yp2tyInHyIE7jK6F_No=
+QT-zsEqS-XARiPA=3D=3D/OTg5LUdaQi0wNjUAAAGOTNQBWVy3-T6cXkxD3m4Hvd-5Vv40A7wPk=
+I7LqrO2Y2McaoXq3aWRf5g0TZxPPjjmVLK3rA0=3D" target=3D"_blank" style=3D"color=
+: #054164; text-decoration: none; line-height: 32px; display: block;"
+>See the Study</a>=20
+</div>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Spacer_Section147f7d292-8a45-46fb-9334-c56a8=
+37873d3">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px ;" bgcol=
+or=3D"#E9F1F4" class=3D"em_pad0">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center">=20
+<tbody>=20
+<tr>=20
+<td bgcolor=3D"#E9F1F4" height=3D"2px" style=3D"height:2px;font-size:0px;li=
+ne-height:0px;background-color:#E9F1F4"><img alt=3D"" src=3D"https://pages.=
+taboola.com/rs/989-GZB-065/images/202203spacer.gif" height=3D"1" style=3D"d=
+isplay:block;height:1px;" border=3D"0" /></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Case_Studies_Content1_Sectionb4ebb7c0-fe70-4=
+994-8599-a8397768937e">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px ;" bgcol=
+or=3D"#E9F1F4">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" bgcolor=3D"#FFFFFF">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"top" style=3D"padding:0px 40px 24px 19px;" c=
+lass=3D"em_prbl">=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"font-family:  'Helvetica Neue LT=
+ Std', Helvetica, Arial, 'sans-serif'; font-size: 18px; line-height: 26px; =
+color: #054164;font-weight:bold; letter-spacing:0.3px; " class=3D"em_defaul=
+tlink em_f18">=20
+<div class=3D"mktoText" id=3D"text74e006d89-0b4f-4ab6-b46b-03c2628ee273">=
+=20
+<div>=20
+<br />ICICI Prudential Life Insurance Achieves 2X Increase in ROI with Tabo=
+ola Image Ads=20
+</div>=20
+</div></td>=20
+</tr>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"font-family: 'Helvetica Neue LT =
+Std', Helvetica, Arial, 'sans-serif'; font-size: 14px; line-height: 18px; c=
+olor: #4E4F4F; font-weight: 300; " class=3D"em_defaultlink">=20
+<div class=3D"mktoText" id=3D"text8644b8357-7d03-4fd4-8112-f8f9b78a5eca">=
+=20
+<div>=20
+<br />With Taboola, ICICI Prudential Life Insurance achieved a 30% increase=
+ in leads month-over-month, 2x increase in ROI quarter-over-quarter, and 50=
+% decrease in CPL across their platform and CRM.=20
+<br />=20
+</div>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Left_align_CTA_Frame_Sectionb6fee188-1b6e-4b=
+48-b0c9-c12114801fe8">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px 10px;" b=
+gcolor=3D"#E9F1F4">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" bgcolor=3D"#FFFFFF">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"padding:0px 50px 16px 19px;" cla=
+ss=3D"em_prbl">=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top">=20
+<table border=3D"0" width=3D"142" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"left" style=3D"border-radius: 6px;width:142px; border: 2px solid #05416=
+4;" bgcolor=3D"#ffffff">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"middle" height=3D"32" style=3D"height: 32px;=
+ font-family: 'Helvetica Neue LT Std', Helvetica, Arial, 'sans-serif'; font=
+-size: 12px;color: #054164; font-weight: 600; " class=3D"em_defaultlink">=
+=20
+<div class=3D"mktoText" id=3D"cta074d40d37f-51f3-4d5f-a25d-b10d769be367">=
+=20
+<div>=20
+<a href=3D
+"http://me.taboola.com/dc/9_HR30S54z_bMzcdWVHG2zJxnFM-3_MMF1_ZJr6xtbtKsKOf6=
+X9Buaaz09sseIIEEU970hdtGPYh-ox6yWdy8TGWKRJjT5KEK9DGb9biZRocWMK1nMtjk1cqPxTH=
+xBBszkt7xYuAzH_NQ2XtCW64y4_Bsjy-0V__VgCXtkV3URoS2vlaSOKteP2z7qVe1pbCKPFEllf=
+4DT-XJPESPpHngg=3D=3D/OTg5LUdaQi0wNjUAAAGOTNQBWVy3-T6cXkxD3m4Hvd-5Vv40A7wPk=
+I7LqrO2Y2McaoXq3aWRf5g0TZxPPjjmVLK3rA0=3D" target=3D"_blank" style=3D"color=
+: #054164; text-decoration: none; line-height: 32px; display: block;"
+>Get More Info</a>=20
+</div>=20
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"Spacer_Section1">=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 10px 0px ;" bgcol=
+or=3D"#E9F1F4" class=3D"em_pad0">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center">=20
+<tbody>=20
+<tr>=20
+<td bgcolor=3D"#E9F1F4" height=3D"10px" style=3D"height:10px;font-size:0px;=
+line-height:0px;background-color:#E9F1F4"><img alt=3D"" src=3D"https://page=
+s.taboola.com/rs/989-GZB-065/images/202203spacer.gif" height=3D"1" style=3D=
+"display:block;height:1px;" border=3D"0" /></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>
+</table></td>=20
+</tr>=20
+</tbody>
+</table></td>=20
+</tr>=20
+</tbody>
+</table>=20
+<!-- =3D=3D //Body Section =3D=3D -->=20
+<!-- =3D=3D Footer Section =3D=3D -->=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" clas=
+s=3D"em_full_wrap" bgcolor=3D"#FFFFFF" style=3D"table-layout:fixed;">=20
+<tbody>
+<tr>=20
+<td align=3D"center" valign=3D"top">
+<table align=3D"center" width=3D"600" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0" class=3D"em_main_table" style=3D"width:600px; table-layout:fixe=
+d;" bgcolor=3D"#FFFFFF">=20
+<tbody>
+<tr>=20
+<td align=3D"center" valign=3D"top">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 23px 34px 83px 37px;"=
+ class=3D"em_pad">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"top" style=3D"font-family:  'Helvetica Neue =
+LT Std', Helvetica, Arial, 'sans-serif'; font-size: 11px; line-height: 14px=
+; color: #636363;font-weight: 300;padding-bottom:21px;  " class=3D"em_defau=
+ltlink ">
+<div class=3D"mktoText" id=3D"ftrtxt1">
+<div>
+<span style=3D"color: #3366ff;"><a href=3D
+"http://me.taboola.com/dc/1g_IPHiF4hSe-bgW3WrOzAsjf03BfxJXSreDi7Vy5Grs6CDux=
+cm_XlDw6KppL2pM4E6Bxoc80YLBOJR_ksnABEG0A-WrKxbUnuqRsXPw5zVjAQWVf5S5OH-wwUIK=
+IAkag11zw781m0CwCcOSU-syU7au0lLGMs7QD7NecjQ4GmFZef2f3Dv_ehWBy3i23AC8fC19qFH=
+9W-V6lsvzvZx5w_X8KC2wKxUSe1o2QwONtfWANAVTpgAHYMj02M5-m4ivZxYT4cszAsEvoLQmq9=
+OzjPwlvoKMlya2PoQBWkiu9lADXOZCh-936z6SFv0KF98Qk0ZO88DpIob0tpaeGKKUEQ=3D=3D/=
+OTg5LUdaQi0wNjUAAAGOTNQBWVy3-T6cXkxD3m4Hvd-5Vv40A7wPkI7LqrO2Y2McaoXq3aWRf5g=
+0TZxPPjjmVLK3rA0=3D" target=3D"_blank" style=3D"color: #3366ff;"
+><span style=3D"text-decoration: underline;">Watch the Recording</span></a>=
+</span>: Campaign Strategies to Sleigh the Holidays
+</div>
+</div></td>=20
+</tr>=20
+<tr>=20
+<td align=3D"center" valign=3D"top" style=3D"padding-bottom:14px;">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=20
+<tbody>
+<tr>=20
+<td class=3D"em_defaultlink" valign=3D"top" align=3D"center" style=3D"font-=
+family: 'Helvetica Neue LT Std', Helvetica, Arial, 'sans-serif'; font-size:=
+ 11px;font-weight:300; line-height: 18px; color: #054164; ">
+<div id=3D"ftrtxt2" class=3D"mktoText">
+<div>=20
+<a href=3D
+"http://me.taboola.com/dc/9_HR30S54z_bMzcdWVHG2yurV3z8xVkq9SfKgGqdYYIox3g_J=
+JyUFetqnhatYqgmOWyVUTgHGKTpBNKqnJprv8gCx-XJ56Wnrb_An-hYHdzjiSm9kdzlfC46OhbG=
+I38cmxeYckdS8kLw8ng-ZW27jy868UoI7_sVxzDh__sGDyY=3D/OTg5LUdaQi0wNjUAAAGOTNQB=
+WVy3-T6cXkxD3m4Hvd-5Vv40A7wPkI7LqrO2Y2McaoXq3aWRf5g0TZxPPjjmVLK3rA0=3D" tar=
+get=3D"_blank" style=3D"color: #054164; text-decoration: none;"
+>Help</a>=20
+</div>
+</div></td>=20
+<td width=3D"11" style=3D"width:11px;">&nbsp;</td>=20
+<td align=3D"center" valign=3D"middle" style=3D"width:26px;font-size:0px;li=
+ne-height:0px;" width=3D"26">
+<div class=3D"mktoImg" id=3D"ftrimg" mktolockimgsize=3D"true">
+<a href=3D
+"http://me.taboola.com/dc/6pbG5n14wJJfzVd67YJfaAWy3oXZjY5Gc4Gd8_nWLWqJhLUVN=
+2WSNi95mWvTmU8Tl9SFRTRXk8h2Re-6uSt23D7F1mKZmNGI8xYgvuhf_zh0ligchAO43-5jPuP2=
+rLFh/OTg5LUdaQi0wNjUAAAGOTNQBWVy3-T6cXkxD3m4Hvd-5Vv40A7wPkI7LqrO2Y2McaoXq3a=
+WRf5g0TZxPPjjmVLK3rA0=3D" target=3D"_blank"
+><img src=3D"https://pages.taboola.com/rs/989-GZB-065/images/202203ftr_img.=
+png" width=3D"26" height=3D"20" style=3D"display: block; max-width: 26px; f=
+ont-family: Arial, sans-serif; font-size: 16px; line-height: 25px; color: #=
+ffffff;" /></a>
+</div></td>=20
+<td width=3D"11" style=3D"width:11px;">&nbsp;</td>=20
+<td class=3D"em_defaultlink" valign=3D"top" align=3D"center" style=3D"font-=
+family: 'Helvetica Neue LT Std', Helvetica, Arial, 'sans-serif'; font-size:=
+ 11px;font-weight:300; line-height: 18px; color: #054164; ">
+<div id=3D"ftrtxt3" class=3D"mktoText">
+<div>=20
+<a href=3D
+"http://me.taboola.com/dc/JxGfWrq4oJcafjOJYDQo7ntWG9rKEIs9qaWRYpO48Kl_VTJV5=
+el3pORSZ_hI4tiefvhBNY_5hzgsLP1iSx40EKYgG8whwT3uFSiGwwZ7aI0LM0mSjzsyRKvH8v07=
+-IA-ZlXp28rocDtZAe6PYnlDwQ=3D=3D/OTg5LUdaQi0wNjUAAAGOTNQBWVy3-T6cXkxD3m4Hvd=
+-5Vv40A7wPkI7LqrO2Y2McaoXq3aWRf5g0TZxPPjjmVLK3rA0=3D" target=3D"_blank" sty=
+le=3D"color: #054164; text-decoration: none;"
+>Blog</a>=20
+</div>
+</div></td>=20
+</tr>=20
+</tbody>
+</table></td>=20
+</tr>=20
+<tr>=20
+<td align=3D"center" valign=3D"top" style=3D"font-family:  'Helvetica Neue =
+LT Std', Helvetica, Arial, 'sans-serif'; font-size: 11px; line-height: 14px=
+; color: #636363;font-weight: 300;padding-bottom:10px;  " class=3D"em_defau=
+ltlink ">
+<div class=3D"mktoText" id=3D"ftrtxt4">
+<div>
+ =C2=A9 2023 Taboola, Inc.=20
+<br />16 Madison Square West, New York, NY, 10010, United States=20
+<br />If you no longer wish to receive these emails you may=20
+<span style=3D"text-decoration: underline;"><a href=3D"https://pages.tabool=
+a.com/UnsubscribePage.html?mkt_unsubscribe=3D1&mkt_tok=3DOTg5LUdaQi0wNjUAAA=
+GOTNQBWlvjPvVv37ETK9FWoY0j4fsSDWsLrYPkUTGPuRTLToi3vODRdMqCyp7moEVgbLM9YfBSO=
+UvTselmpSGTC6dQ8U4s7PPwcZ0qftXq8ItG6MPO" target=3D"_blank" id=3D"">unsubscr=
+ibe</a></span> at any time.=20
+</div>
+</div></td>=20
+</tr>=20
+<tr>=20
+<td align=3D"center" valign=3D"top" style=3D"padding-top:10px;">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center">=
+=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"middle" style=3D"padding-right: 7px;">
+<div class=3D"mktoImg" id=3D"in" mktolockimgsize=3D"true">
+<a href=3D
+"http://me.taboola.com/OTg5LUdaQi0wNjUAAAGOTNQBWUeWNMhrDkwgzWc0UiJZZCxLiHto=
+VAWmuEkrqrQOxqqP9uvHF-tt0EHzIgMUCs6n_kU=3D" target=3D"_blank" style=3D"text=
+-decoration: none;"
+><img src=3D"https://pages.taboola.com/rs/989-GZB-065/images/202203in.png" =
+alt=3D"in" border=3D"0" width=3D"35" style=3D"display: block; max-width: 35=
+px; font-family: Arial, sans-serif; font-size: 20px; line-height: 24px; col=
+or: #003f68; " /></a>
+</div></td>=20
+<td align=3D"center" valign=3D"middle" style=3D"padding-right: 7px;">
+<div class=3D"mktoImg" id=3D"tw" mktolockimgsize=3D"true">
+<a href=3D
+"http://me.taboola.com/dc/qRrMJDEUlv6ss-mBIC1z6ikrUVPjncY4xqcaRVNw862CE5I7e=
+jsf64g7-3vC7-o1G2GAY_VkUhTPOTrWMJivI5UZt1NNy1RyF5RLCpmypEbPvFPqulwsypKkdC4h=
+bb2TWk7jri_eznvhMdQ7v39Ptw=3D=3D/OTg5LUdaQi0wNjUAAAGOTNQBWVy3-T6cXkxD3m4Hvd=
+-5Vv40A7wPkI7LqrO2Y2McaoXq3aWRf5g0TZxPPjjmVLK3rA0=3D" target=3D"_blank" sty=
+le=3D"text-decoration: none;"
+><img src=3D"https://pages.taboola.com/rs/989-GZB-065/images/202203tw.png" =
+alt=3D"tw" border=3D"0" width=3D"35" style=3D"display: block; max-width: 35=
+px; font-family: Arial, sans-serif; font-size: 20px; line-height: 24px; col=
+or: #003f68;" /></a>
+</div></td>=20
+<td align=3D"center" valign=3D"middle" style=3D"padding-right: 7px;">
+<div class=3D"mktoImg" id=3D"fb" mktolockimgsize=3D"true">
+<a href=3D
+"http://me.taboola.com/dc/uq3EykqQY7h0Yyhe2BWhMBrIa3BrHocZuFgOE9CF1rjpfmfWq=
+3IVGfiFDZsv8a-qkK_zkYsrhLc_g9-bL8WiZ02GxFe_ubYG0SrQENBRy1_CLNFgogDuIpVPLnNd=
+vpxJg3qODJmvX5Qiup6GGU4KwA=3D=3D/OTg5LUdaQi0wNjUAAAGOTNQBWVy3-T6cXkxD3m4Hvd=
+-5Vv40A7wPkI7LqrO2Y2McaoXq3aWRf5g0TZxPPjjmVLK3rA0=3D" target=3D"_blank" sty=
+le=3D"text-decoration: none;"
+><img src=3D"https://pages.taboola.com/rs/989-GZB-065/images/202203fb.png" =
+alt=3D"fb" border=3D"0" width=3D"35" style=3D"display: block; max-width: 35=
+px; font-family: Arial, sans-serif; font-size: 20px; line-height: 24px; col=
+or: #003f68;" /></a>
+</div></td>=20
+<td align=3D"center" valign=3D"middle">
+<div class=3D"mktoImg" id=3D"insta" mktolockimgsize=3D"true">
+<a href=3D
+"http://me.taboola.com/dc/WhZcq50CsoLLiaLsfDq43kw0RgEWU6D8Guls4gtmuHpLcYHv2=
+0HYtA3IMuPmKwKhhMxRfFBLPQBj00DeLPMoX4mWk9qL3Jh79DVl_U2gWD3Z8xlMZyKMsfAK9pxg=
+LAmpfsl4V10VQmsVvNsT0HDf3g=3D=3D/OTg5LUdaQi0wNjUAAAGOTNQBWVy3-T6cXkxD3m4Hvd=
+-5Vv40A7wPkI7LqrO2Y2McaoXq3aWRf5g0TZxPPjjmVLK3rA0=3D" target=3D"_blank" sty=
+le=3D"text-decoration: none;"
+><img src=3D"https://pages.taboola.com/rs/989-GZB-065/images/202203insta.pn=
+g" alt=3D"insta" border=3D"0" width=3D"35" style=3D"display: block; max-wid=
+th: 35px; font-family: Arial, sans-serif; font-size: 20px; line-height: 24p=
+x; color: #003f68;" /></a>
+</div></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+<tr>=20
+<td class=3D"em_hide" style=3D"line-height:1px;min-width:600px;background-c=
+olor:#FFFFFF"><img alt=3D"" src=3D"https://pages.taboola.com/rs/989-GZB-065=
+/images/202203spacer.gif" height=3D"1" width=3D"600" style=3D"max-height:1p=
+x; min-height:1px; display:block; width:600px; min-width:600px;" border=3D"=
+0" /></td>=20
+</tr>=20
+</tbody>
+</table></td>=20
+</tr>=20
+</tbody>
+</table>=20
+<!-- =3D=3D //Footer Section =3D=3D --> =20
+<a href=3D
+"http://me.taboola.com/OTg5LUdaQi0wNjUAAAGOTNQBWTeJUt4Ramj9GGJ9_gX6UEpy01lY=
+9JeTd7UZ1ROnKKNQh_bzfclvMVMP7US8bxNoU-0=3D"
+></a>
+<img src=3D"http://me.taboola.com/trk?t=3D1&mid=3DOTg5LUdaQi0wNjUAAAGOTNQBW=
+ulCWTWHHtKYLMqnnSYPXDqVhJPEON2T5mfX_fX7yaP1dMRZDBurTZV8qUtu8t9a9D3IbrkSDhqR=
+MbfesS86zbaR1oB-FRW9Fz5MZq_kZPXWCUQeeJWws1zVy5nV2OX5EbCOcSJxaXKNLOL2" width=
+=3D"1" height=3D"1" style=3D"display:none !important;" alt=3D"" />
+</body>
+</html>
+------=_Part_76342322_918661498.1695133946217--

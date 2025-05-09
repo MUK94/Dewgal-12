@@ -1,0 +1,142 @@
+Return-Path: <diallohalifax99@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id Bd12Krp8fWJfzyUA3R2AvA
+	(envelope-from <diallohalifax99@gmail.com>)
+	for <contact@fiidewgal.com>; Thu, 12 May 2022 23:31:38 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4KzlMs3204z34SHGp
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="emdFNKd4"
+X-N0C-MailScanner-eFa-Watermark: 1652995894.62156@s+jumtaX84/gt+04uN4aGQ
+X-N0C-MailScanner-eFa-From: diallohalifax99@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 4F6454062939.A6CC9
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-qt1-f169.google.com ([209.85.160.169] [209.85.160.169])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 4F6454062939
+	for <contact@fiidewgal.com>; Thu, 12 May 2022 23:31:03 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 4F6454062939
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 4F6454062939
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="emdFNKd4"
+Received: by mail-qt1-f169.google.com with SMTP id p4so5467642qtq.12
+        for <contact@fiidewgal.com>; Thu, 12 May 2022 14:31:03 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=/5hq1BbG3wjhCfcsa+C5PAagVOyv0Ys/clvqL60Efh8=;
+        b=emdFNKd4v7FHm+6r7chaanKKAtG6HQ62PH4yhASoqnb1MNuj1RhsWTb17UhLI2CUjU
+         3sI8RtHQFeCMEnpQw7ykboxJAGFyt49SqYN2zF7JXhIrfga3R9J3VlZUm8EA/0ysH32F
+         JSSha9yOPTrHGZM7BWW9pZpUfWwGrSem44X8N3KjgzKdrafuXleqY8GOEJd+DUbhpo34
+         n10V6R89Y2TK5IwHqBfu8/kgPNGJGOD6+oSoOgHhIWTPa46Dd3YN7hsSpjsIqRBPIp3T
+         kJtDXOo8OQbHC740SiNrmWo6wd2Ey4kP3gluJoLnrFuE6PekAUoUMPUEU03uqyOW/EQE
+         L7Qw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=/5hq1BbG3wjhCfcsa+C5PAagVOyv0Ys/clvqL60Efh8=;
+        b=zeJwCEe27pqdZpP8SJ5/ECXmlgrM7zVr+8G1b2Y6GnLBHoqZh8PEp5BMfNXX4818pY
+         HIQQ1cZfGTfukh6Uu9Ik45qNYuJAWrkNVf4QUJ84WzbKiV5SzjvRkWvHQnv6Ma/a9zrS
+         IVEjLhh5UUTeKJLNPjtTHbFco7xQP8Gq6UlbXDVPtlv4CComhi4BOSDbkenaaOXOQC7E
+         fz6TZafZk5w62pjF3pdG0MeQwaG4bXcZbGIorf3oAZHzUxaRacgvDVDV9lBIrVm8MfaW
+         l/sj3NzHaxZRlqEo4ERsO431HTY1VN208KLVJQL67bvDRuccBxk5+Fiqdd+3i06/CILJ
+         N02g==
+X-Gm-Message-State: AOAM530Nf3jp6lNR17A0Rp6QG/ElAlIDr7PSleeE3A9uxObJTbkGD3Sj
+	Vt2c3Gr9zyAFCEOPsD7vf3PI7o8ipJxtx/3c3JUDdriW
+X-Google-Smtp-Source: ABdhPJy6z7+y4io/V+7+wejzJJSFWoAd4x1Wky4GIuI4tNeHK96ySVRglJe4HphdjU+Tzz7ZO8UtJPYgUZWRMMH5d9w=
+X-Received: by 2002:ac8:5fca:0:b0:2f5:30da:3092 with SMTP id
+ k10-20020ac85fca000000b002f530da3092mr957587qta.611.1652391061914; Thu, 12
+ May 2022 14:31:01 -0700 (PDT)
+MIME-Version: 1.0
+References: <05eedbf6abcf82b43d6f92fffbc56b4f@www.fiidewgal.com>
+ <CAGBP=b_LqQgMbkNgqfgGnf8FPaHhEPH22Fx2KY3HZbGbXDNj+A@mail.gmail.com> <260bdd1ad41899edef48e2583c44e847@fiidewgal.com>
+In-Reply-To: <260bdd1ad41899edef48e2583c44e847@fiidewgal.com>
+From: Mamadou Diallo <diallohalifax99@gmail.com>
+Date: Thu, 12 May 2022 22:30:51 +0100
+Message-ID: <CAGBP=b9+vRHZ4k1O6wqYXp_c7Jdjw_aCeb=YaycmNmjtGp6+=w@mail.gmail.com>
+Subject: Re: Informations
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000046a44e05ded746ac"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000046a44e05ded746ac
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Thank you!
+
+On Thu, 12 May 2022, 22:07 , <contact@fiidewgal.com> wrote:
+
+> Le 2022-05-12 16:28, Mamadou Diallo a =C3=A9crit :
+> > I don't remember the website please can you send me the link?
+> >
+> > On Thu, 12 May 2022, 01:40 , <contact@fiidewgal.com> wrote:
+> >
+> >> Salamaleykoum ,
+> >>
+> >> Nous sommes tr=C3=A8s heureux de vous accueillir sur la plateforme .
+> >>
+> >> Pour multiplier votre chance d=E2=80=99avoir des int=C3=A9r=C3=AAts ex=
+prim=C3=A9s
+> >>
+> >> =C3=80 votre =C3=A9gard , veillez mettre au moins deux photos de vous.
+> >>
+> >> La vie priv=C3=A9e , la discr=C3=A9tion de tout un chacun est respect=
+=C3=A9e ,
+> >>
+> >> Il est interdit de donner une fausse identit=C3=A9 sur la plateforme.
+> >>
+> >> Merci pour votre compr=C3=A9hension!
+> >>
+> >> L=E2=80=99equipe Fii Dewgal!
+> Voici le site https://www.fiidewgal.com/
+>
+
+--00000000000046a44e05ded746ac
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Thank you!=C2=A0</div><br><div class=3D"gmail_quote"><div=
+ dir=3D"ltr" class=3D"gmail_attr">On Thu, 12 May 2022, 22:07 , &lt;<a href=
+=3D"mailto:contact@fiidewgal.com">contact@fiidewgal.com</a>&gt; wrote:<br><=
+/div><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-le=
+ft:1px #ccc solid;padding-left:1ex">Le 2022-05-12 16:28, Mamadou Diallo a =
+=C3=A9crit=C2=A0:<br>
+&gt; I don&#39;t remember the website please can you send me the link?<br>
+&gt; <br>
+&gt; On Thu, 12 May 2022, 01:40 , &lt;<a href=3D"mailto:contact@fiidewgal.c=
+om" target=3D"_blank" rel=3D"noreferrer">contact@fiidewgal.com</a>&gt; wrot=
+e:<br>
+&gt; <br>
+&gt;&gt; Salamaleykoum ,<br>
+&gt;&gt; <br>
+&gt;&gt; Nous sommes tr=C3=A8s heureux de vous accueillir sur la plateforme=
+ .<br>
+&gt;&gt; <br>
+&gt;&gt; Pour multiplier votre chance d=E2=80=99avoir des int=C3=A9r=C3=AAt=
+s exprim=C3=A9s<br>
+&gt;&gt; <br>
+&gt;&gt; =C3=80 votre =C3=A9gard , veillez mettre au moins deux photos de v=
+ous.<br>
+&gt;&gt; <br>
+&gt;&gt; La vie priv=C3=A9e , la discr=C3=A9tion de tout un chacun est resp=
+ect=C3=A9e ,<br>
+&gt;&gt; <br>
+&gt;&gt; Il est interdit de donner une fausse identit=C3=A9 sur la platefor=
+me.<br>
+&gt;&gt; <br>
+&gt;&gt; Merci pour votre compr=C3=A9hension!<br>
+&gt;&gt; <br>
+&gt;&gt; L=E2=80=99equipe Fii Dewgal!<br>
+Voici le site <a href=3D"https://www.fiidewgal.com/" rel=3D"noreferrer nore=
+ferrer" target=3D"_blank">https://www.fiidewgal.com/</a><br>
+</blockquote></div>
+
+--00000000000046a44e05ded746ac--

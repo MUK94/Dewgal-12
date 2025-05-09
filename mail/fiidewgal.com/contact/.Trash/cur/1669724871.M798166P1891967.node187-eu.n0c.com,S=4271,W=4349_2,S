@@ -1,0 +1,78 @@
+Return-Path: <alphaaj8@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id +FKAL8f6hWN/3hwA3R2AvA
+	(envelope-from <alphaaj8@gmail.com>)
+	for <contact@fiidewgal.com>; Tue, 29 Nov 2022 13:27:51 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NM1ng4pbrz34SDnG
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="cBzziRBl"
+X-N0C-MailScanner-eFa-Watermark: 1670329668.64056@fNGl7w6BmxjA2vnsoTbMQg
+X-N0C-MailScanner-eFa-From: alphaaj8@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: BA7B440546F3.A4E63
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ua1-f50.google.com ([209.85.222.50] [209.85.222.50])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id BA7B440546F3
+	for <contact@fiidewgal.com>; Tue, 29 Nov 2022 13:27:15 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com BA7B440546F3
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com BA7B440546F3
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=cBzziRBl
+Received: by mail-ua1-f50.google.com with SMTP id c26so4966087uak.5
+        for <contact@fiidewgal.com>; Tue, 29 Nov 2022 04:27:15 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=qASaD1UKTf3Nq+FKUVkjLqJESVbtNEQUYI5kraZWIaE=;
+        b=cBzziRBlBvoCwUnFwvEDscSoRih3Ei048Ocm10VrHaZZXjP9rOvXqAlW9nWNFPRMx2
+         2mFaIOdbt9F8hVLC4BGQkkgkKFEryvNwjNsRjpp1QTgWB6jfi+o1MDwGP/GgDW/RYaSa
+         4WugXNhuNEREtUxvjr2YPxzZjfAWxNG7PwoKZds2OmrcCMCzR6tueXyx8BuAsPW/6bhL
+         YUa8KDBkXZha2KoZ/9s0lOQZvc2JZ06GIxlNW9jSnOph/rI+nDNGmIuAYAFmQT1cgw+i
+         wFuZnf1DE8EQQ0dxDT5CRXGGbu+fbkd4MLsJ5vbJ1oiwdFGWDIX4KC0ADuh2NUzUp7AW
+         2KLQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=qASaD1UKTf3Nq+FKUVkjLqJESVbtNEQUYI5kraZWIaE=;
+        b=FGCfoT0tTPoqvqr2wEEPIcXacsA6jmVrjai91z3Yf1bHNLmgFlL5+55T2r6kUKV+Kg
+         R4rvf6qwe065Vlr0Vkbf1hjt6MLMdnL71iu8kAB5MAU14zsYfhJ3dGnrIX8HeI6k2rbX
+         hC8U4wfhtOaPQll2a0h9xN54UY25YpU85LI+Pm2XtpI6YrkLDBNjPebng509J7FB2Z4X
+         iD8YC8ByZDbtR8z9C6QQHI3TQxbLwD7ShP0YYWe/89kidkaqw2UstlsbiHbMX6iY1C2E
+         ugPNDOIPNQ3rFtB/hfM/BRAsJWKPazK3OB1HSwOfqUzDO/QvVYJkIKikkGxlZI0BihqU
+         DMAw==
+X-Gm-Message-State: ANoB5pmLL4a9Cd31mjBqL/0KML7z+k788OltRdOMdqF4UvjTh1VDFSJX
+	XZgcgiKzO4yAeC21djhRXQTfp2QlT1hAm/Ng8yRPRnUX
+X-Google-Smtp-Source: AA0mqf5FCtIUV3dPrPIVW9XbkBmuReJvcbVg76zkrO6w28rqx+U2Hlzc5/UByzQDcKv8rgMGYQ2LLaZumoMCJGTHDOk=
+X-Received: by 2002:ab0:7258:0:b0:418:c0a0:556d with SMTP id
+ d24-20020ab07258000000b00418c0a0556dmr23138045uap.104.1669724834248; Tue, 29
+ Nov 2022 04:27:14 -0800 (PST)
+MIME-Version: 1.0
+From: Jalloh Alpha <alphaaj8@gmail.com>
+Date: Tue, 29 Nov 2022 13:27:01 +0100
+Message-ID: <CAEtvyFdTxzAkZ631nAiLCsx8TjuDjPc-rhL0+6WiVOQXqX9Oag@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000009e3c0605ee9b1b64"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000009e3c0605ee9b1b64
+Content-Type: text/plain; charset="UTF-8"
+
+Wa_ Aliakumu salami. But I'm not understanding well. Please if possible we
+gonna chat on whatsapp My number+237656196755
+
+--0000000000009e3c0605ee9b1b64
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto">Wa_ Aliakumu salami. But I&#39;m not understanding well. Please if possible we gonna chat on whatsapp My number+237656196755<div dir="auto"><br></div></div>
+
+--0000000000009e3c0605ee9b1b64--

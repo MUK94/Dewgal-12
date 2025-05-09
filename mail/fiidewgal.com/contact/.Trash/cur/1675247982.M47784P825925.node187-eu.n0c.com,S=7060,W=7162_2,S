@@ -1,0 +1,102 @@
+Return-Path: <hawamina1@yahoo.fr>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 0HTHAm5B2mNFmgwA3R2AvA
+	(envelope-from <hawamina1@yahoo.fr>)
+	for <contact@fiidewgal.com>; Wed, 01 Feb 2023 11:39:42 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4P6JMK6Yksz34VbQN
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=yahoo.fr header.i=@yahoo.fr header.b="A7W2qr7H"
+X-N0C-MailScanner-eFa-Watermark: 1675852765.92952@3IWJi1DM/F+ZTFMRGpFn8Q
+X-N0C-MailScanner-eFa-From: hawamina1@yahoo.fr
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: C8901401AEF3.A861F
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from sonic304-21.consmr.mail.ir2.yahoo.com ([77.238.179.146] [77.238.179.146])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id C8901401AEF3
+	for <contact@fiidewgal.com>; Wed,  1 Feb 2023 11:39:23 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com C8901401AEF3
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=reject dis=none) header.from=yahoo.fr
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=yahoo.fr
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com C8901401AEF3
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=yahoo.fr header.i=@yahoo.fr header.a=rsa-sha256 header.s=s2048 header.b=A7W2qr7H
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.fr; s=s2048; t=1675247963; bh=RLEhBVprdlKY3l9n2iw3TRJnmGODcxTcSpvMrDotXcQ=; h=From:Subject:Date:References:In-Reply-To:To:From:Subject:Reply-To; b=A7W2qr7HqJG2mkH4J62uksXxEkNFFOLsSgoWFOpfA94XGRcCd8/kCHrY3mE9Hj19lj23+80PyXNc2raYaJCvmCpE5mrBd/G+fK8DwInYtsDfXLOAtiGRuOnXAouawCF5IQirJfuAxcC/bCa7xIR90GTZuN+/8liJaZ45CFCRNcfwZhaE1OxOscBhEWECcLKt0CB7i2JoCqPRS0Dpd/fb04OnMZ+jkEl+JqjyIOiNWPQ5QecUjOAmX/1/5kxKkkCQAjmaU2UAGmlaJeSpheeOyoYzvejGW6ygBuUUYuBqhnfK1r/OCq2K1jNw5Y7xcOIHDaqjmY+CoueTef/20ooB+Q==
+X-SONIC-DKIM-SIGN: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1675247963; bh=X5UmHix/4uKkTbicVjGNZDZyXsQB/JUdM17jSiHfBo9=; h=X-Sonic-MF:From:Subject:Date:To:From:Subject; b=nCE3Wb97mMwiAUqUmEDFFZJoaCje2AY5dWw9kx9Cft9zubrRLiiz02q3SEt+zjIqFebx2cwiHm1NXVBsYBIRrmgT+v6LZmzcrvsowQkeCcfTR/Sq17LTn1g5SgcqshH2w4GsTGw6Lp59gRsmn6s92m/uFL+kvrRg4zTIYuJEO+UTWOx8AL+oF1qg+Tt73hhY8+uOEGkUzr/SD+ieH1QTkKzLB70n49/S/gejkRTpApNnCXpqhESxf54YyJ7UgJ5xd4MjAteAGv9pV0zguBH8VPDgEygT71mD7rz/K4/RojkOJpad9XIFXMU4MzqjKNJLzaowByLA7CwHqA9w/Y7y3w==
+X-YMail-OSG: bdA3jGoVM1mMJBa6qklfWLGsVN7ULIVlej3ZtzsXCHcCnK3WpLLWJCMyhYVD1ZD
+ Q3de2AeqMfSySyY4EbtFgzPg88FC2oy0OO6VIYv5q8tzvTFL6eDnEN4CL1Uuv0wnZ1ZTNUeLd8V1
+ OwhuS.LzjaOJ9u0xtvdyoXJ4oxdwRAGrqbBLKwS_QVNEV1UoqrSsmC66gdHGtRCAIp3JT.p_Lw1F
+ TjClSD2INQi553W6N4rmtVufh9aa9_PL782P1dgXzekWPRkqIN.YmpR_1WAis2oEl0JNPBQJFEfQ
+ PsfppVulqyhWT8RF8RQEgfy7QKubCui7ADFI75cpuYNlQ.UVdb0POHhYHQNgcmoVUNOVJlpX0fQ6
+ fGazzYW15OQ9Favd3hxTT3vbMWczSI.YSbA_xwbmWX5peVaeVe5tSGVX22tawvlSVGSg3fuBC0.2
+ udp5XVZMQh2w0VnMJoqJhpB5xYH6NUCD2JyqGalp.khtBdNhRIJoW7xbXA3a8JkputBdxyvtspdC
+ d0xTB1axguvs4We_k_zjBjBi.WQluQTZNrvx3ISABzirlCM5Gx_56nxjDjqIGxLKPbDRWht0oz0i
+ Mg0kKvyl.q.YJcW0kSlKwhCsMIm_.J72UkHNkeGgYECoBeq3zac1VZym4_kqI9SAGvsJJOxXQH4q
+ Ki2Adn4vUPwEOnKHbjVz2joe8t3BJkIIXdgAvuIMrVcQ1itRuPH8U_xoiW6Iahl3qSIqcN62s6ws
+ O1wv0bAYdspq.KXLK7BPT0NigBrZVRz_rv4wOUqF7PVuWyJ6GIFOqLSIQS_kUxesSrv5_Vi29M1v
+ 5e.UB6Sws8v5Y.XYaQbWlSd7y8o4QlqlWcMKZ1u.oK8sd_COMySg.3jVa3xdrqaUBuQ_HNx44bRr
+ bPVn8iSlIE0n5KHKGSKS5nkfVr.VOlMgK8p8AQnuHrBr97YW3AQAG4AzEaxdJhEkeLNh7HWtVHbV
+ 54kb3nL31GKVJlyDwSdo3qrGcI7LvHc2VHP_VCn7EYMSP5pn4KldR2y3JvlPZiSWMK83UIqv8NBo
+ OGvlucnYJPnFEa5SlZPz41Cv8VTu3O5qCIUmVAT4tn9.iW8xu4RkpLqZiAGy45hQ5_vjvoyewKnp
+ ShK2yAIp1G2KDjsQO0pvVMgM0CUYXMEArAPSCQwwkCAQFS8Z0xOnobQD9D_vVX8MiGiAfgPaKerS
+ dGxwZ170p700ckmlwwzVq9GKSIf56B8GUgkb1BJH6nAZMmS5DBVEGPlfV1cHbN093jk_Y4FawLCe
+ M5_RkuyRh4qA2YulJoOLNc3aRJCh45hURZm0z9QipN.Iudb.ba0SIa6l5IalRxKEWb1g7.MfW3Us
+ U9JKDoI9RB1RYMa3i9DKmPBOAJp8APEWld1uvIglz1F_UtJRoQHwNFq6CXNJGMVaKTv3xglU_sAG
+ iu_fleuCTae.JVh9jC0poxkOjbvze7plBUae4Q6z.iKg1hEt79u_rIgVL_E1scSCQV2sELA4BYGG
+ QnrggIo9MNvpMDvSa2AbHxCKg7qqYFqtV4aqNO6EQw0ns.fyoseszlhbYqqfmzDFWIDDTayRI5ap
+ DGUhQACtkZipHTiyHRLEfQ9A7mFllbvDlFNEQ7WEh3vcuCb9M5QLPjwB8Vjh2tuKggRczPPP6ic.
+ 86VIM92WU5zkC0UpDq.2_0qz87W9jXeW4Qn_cdlC33ezHGpP2EXOZBzQCyywI7V7DnGafwLl6Ff3
+ Ke2glQTeTmp3lO.NReIXDRN0RbrCGfgctVpGjJ1m7973I7DWYv17sCwNMDuCTtKNkgQ5BKbFgx4K
+ nGPfYP.7Z71whdrzd4WetjnejtTARps_ZFAjafUy8E66btGuQFPoJ8kliH4C4N.KYhXz0kB5qNjv
+ FR0j82tZ44cxnpE8p0ceWqSYDSYV74ay9pzi5UGOVj9qPbC21Kah2f9tYbMunIYLuhpb9GvP_QNz
+ sYownQveYtL8kIsv.VPV.LHDyvVNHlaxob9.aUHNBeSdpU9QgrB4rc_XcYQGBOVlg.cj0jcVxQhP
+ cgh0t0cUvUxXQ2vDSHZuWw1J5.ykfJNsViU3EHEhHfrI9ttmLVAtw8uHzaidwdva.S.VbP_QzZNh
+ mVzGrGmHrgnChvicinwWaBjAKD0m2gefVK07prQp1_htW24Hc3mVss4qUXyiaYaNOmoQFfVAQ8ce
+ CzlytMkFHD6VJitC0585VHBfGnXJtP.JhtNSIEYIBNsJ.uI2dgrwXBg3KDZe1hqAjiVlXEWFc.TM
+ Xv6pEO98gypRg2HqH25vDTgqO3GcncoevSl7SIQcJCA--
+X-Sonic-MF: <hawamina1@yahoo.fr>
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic304.consmr.mail.ir2.yahoo.com with HTTP; Wed, 1 Feb 2023 10:39:23 +0000
+Received: by hermes--production-ir2-65c64dfd66-lx9xq (Yahoo Inc. Hermes SMTP Server) with ESMTPA ID 0871cd1c4d39a2d44fc8cec0d1197800;
+          Wed, 01 Feb 2023 10:39:20 +0000 (UTC)
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+From: Aminah <hawamina1@yahoo.fr>
+Mime-Version: 1.0 (1.0)
+Subject: Re: Rappel avant la suppression de votre compte sans photo .
+Date: Wed, 1 Feb 2023 11:39:07 +0100
+Message-Id: <10C370AB-3003-42D9-B690-5CC25FF489B5@yahoo.fr>
+References: <0020e3694422b87fa6500625e0c475ad@fiidewgal.com>
+In-Reply-To: <0020e3694422b87fa6500625e0c475ad@fiidewgal.com>
+To: contact@fiidewgal.com
+X-Mailer: iPhone Mail (20C65)
+X-N0C-Node-IP: 185.221.182.45
+
+ASA. Je vous ai envoy=C3=A9 un message sur whatsapp=20
+
+Sendt fra min iPhone
+
+> 1. feb. 2023 kl. 10:48 skrev contact@fiidewgal.com:
+>=20
+> =EF=BB=BFSalam Aleykoum ,
+> Nous sommes tr=C3=A8s heureux de vous avoir parmi nos
+> membres dans la plateforme et nous souhaitons que
+> Vous y rester.C=E2=80=99est pourquoi nous vous prions de
+> mettre =C3=A0 jour votre profil en mettant correctement
+> Votre date de naissance , votre =C3=A9tat civil ;votre photo
+> et votre numero de telephone avec l'indicatif
+> Si cela est compliqu=C3=A9 pour vous faites nous parvenir
+> votre num=C3=A9ro de membre qui est sur votre profil public
+> avec vos informations cit=C3=A9es ci dessus .
+> Vous pouvez =C3=A9galement nous faire parvenir votre numero
+> de membre avec  votre photo et num=C3=A9ro de telephone sur
+> notre WhatsApp 001 646 752 9115 ou juste scanner le QR Code ci)
+> joint ci-dessous .Sans votre photo , le profil sera d=C3=A9sactiv=C3=A9.
+> Si votre compte n'est pas confirmer faites nous parvenir vos
+> informations sur whatsApp pour vous inscrire.
+> Merci pour votre comprehension!
+> <318090110_681462550023618_1622813815272714109_n.jpg>
+

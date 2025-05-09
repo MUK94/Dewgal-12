@@ -1,0 +1,78 @@
+Return-Path: <amadousadjob72@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id bC/FEYSzB2TqkzYA3R2AvA
+	(envelope-from <amadousadjob72@gmail.com>)
+	for <contact@fiidewgal.com>; Tue, 07 Mar 2023 22:58:28 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4PWTpq5NZMz34SDn0
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="TEHm0bQm"
+X-N0C-MailScanner-eFa-Watermark: 1678831106.46411@XPw+VHZvRxWBGUx37C9CMg
+X-N0C-MailScanner-eFa-From: amadousadjob72@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: sss
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: B48C7401AEEF.A5841
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-pj1-f42.google.com ([209.85.216.42] [209.85.216.42])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id B48C7401AEEF
+	for <contact@fiidewgal.com>; Tue,  7 Mar 2023 22:57:52 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com B48C7401AEEF
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com B48C7401AEEF
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=TEHm0bQm
+Received: by mail-pj1-f42.google.com with SMTP id h11-20020a17090a2ecb00b00237c740335cso87550pjs.3
+        for <contact@fiidewgal.com>; Tue, 07 Mar 2023 13:57:52 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112; t=1678226270;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=vfdprsMAXDAOc42sK3GaUp6LGA5wTGJeUTyt4c2yQQ8=;
+        b=TEHm0bQm0+az2h38Ol7NIhxizem4qbzoGxUx4XL3Fxmqz0LuFlOK2hfjOmUmzfoAs3
+         XOrEFLLHHJW9m4Co0TSkM240+vp3ArOmYKIewptmT95vA2ALSOiLzKY1MNF65NLlMWSs
+         fdMqc9GWeTDoFr3Rc5KK1tfAsWicHOK7UHskjL9pQcN53B1cOzVZfH42MU89RJcppd2I
+         cfQV1qzOyfXm2dS3gOXGT4lOQSpH19wh0haXk5dvS3CPWFOZatvmQJ66p1xhFAelffqn
+         kspsQHt9Fb9RYpBhr3rpMOg3bwbkadEDvl3R2ZdCGIrNIkj7gZ665WgM3It+b/LNDj8z
+         6CLw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112; t=1678226270;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=vfdprsMAXDAOc42sK3GaUp6LGA5wTGJeUTyt4c2yQQ8=;
+        b=N2g8+cOxL/wznx3FgKOEvEJLkOPAcow7ot6Lo1aFNxR0xU4oc+3BUxiYSDAk8SrZoI
+         A3SpL9r1ZOZAzlImi0or3y0k/KqcfHQGA57mM4nABrUyHVwFlY/TdIocMl7cR3zWotOQ
+         0kdCnXDmkfw3WNJKt33VU07NsT2tm+KcdHJUkCBAeIAvea1ZhGD6+Trsm4lk9wuRzJZZ
+         2je7s/foi7r4wpRBBHN36QZPjg2VzUzxjW4Fd+yrqBZK2jbfBLYwdCtgKKUI/Jumk/DG
+         nReGOUwO7iAKWj6Td4xUflKTq1YGXEkO5++HlXDhmEfL8cc4gp11SD9BEzgmamryfWDm
+         i3VA==
+X-Gm-Message-State: AO0yUKVORhEFRLXmg5pFm7WpQ6kX/PgoPPkkz1mzVjSDC9VEn4t7Q6pM
+	lhOxV1af1lh+QI8o2OZfyz8+Lr3VGC7X3SAMyrQuCn11
+X-Google-Smtp-Source: AK7set+qodzvPzK+alIpz11J4HPPiZJkHnzIjtSZ6KhPEMioHSB8FPT+k34nTnMsF1HLv8A1e9Toody2UGv8s/vUZJQ=
+X-Received: by 2002:a17:902:edc7:b0:19e:6185:116c with SMTP id
+ q7-20020a170902edc700b0019e6185116cmr6177657plk.1.1678226270500; Tue, 07 Mar
+ 2023 13:57:50 -0800 (PST)
+MIME-Version: 1.0
+From: Amadou sadjo Barry <amadousadjob72@gmail.com>
+Date: Sun, 26 Feb 2023 01:07:08 +0000
+Message-ID: <CAGcaLULhpPnnokfV1wzUR5_NFEz3nrd4VXjdo+eiu0wiZcb5fg@mail.gmail.com>
+Subject: =?UTF-8?Q?M=C3=A9canique?=
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000b4bc4705f656801c"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000b4bc4705f656801c
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+--000000000000b4bc4705f656801c
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"></div>
+
+--000000000000b4bc4705f656801c--

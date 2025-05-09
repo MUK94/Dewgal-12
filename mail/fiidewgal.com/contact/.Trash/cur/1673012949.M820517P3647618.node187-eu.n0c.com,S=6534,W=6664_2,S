@@ -1,0 +1,130 @@
+Return-Path: <djallomohammedaliou97@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 5mLUMNUmuGOCqDcA3R2AvA
+	(envelope-from <djallomohammedaliou97@gmail.com>)
+	for <contact@fiidewgal.com>; Fri, 06 Jan 2023 14:49:09 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NpPnx3mxDzZdG66
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="UZiidrvF"
+X-N0C-MailScanner-eFa-Watermark: 1673617737.67807@jl2Fh5iDLxk1jSNkJDuWGg
+X-N0C-MailScanner-eFa-From: djallomohammedaliou97@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: B6C1B400B475.A5440
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-pj1-f54.google.com ([209.85.216.54] [209.85.216.54])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id B6C1B400B475
+	for <contact@fiidewgal.com>; Fri,  6 Jan 2023 14:48:24 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com B6C1B400B475
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com B6C1B400B475
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=UZiidrvF
+Received: by mail-pj1-f54.google.com with SMTP id q64so1535390pjq.4
+        for <contact@fiidewgal.com>; Fri, 06 Jan 2023 05:48:24 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=99YdfTDUMKnBzgpq7qDPB90EyJuPXG84bzJWh+9AFR8=;
+        b=UZiidrvF0YGalCNMMRBRo0qBFt2ibIcNYNP+uoVDtRf6VaGEsLLtrDyM5VI/vnYZsF
+         wduyXCLC2bjSQoGirgInLLmnBsF8T9iIa5wE24dgG0gcVbXvb6RooenOVxGGg+dDI0D2
+         IogPgkLVYV0N9t+lA0FmHmaJT82VjeFmT0RifFHorTvbLYQAoreTWVr6IYF4W+tMhgx7
+         qLFdVOdsGa7g4GdOHA2cmEXbr8PTC7vpysUyxtkEvruQzOwd/kLX11kisOBgRZLjXXrg
+         PbBhB02MMZRJD2U5BvAG5Y6ScZmvHkndHCI9QmrrqvrAqdmHSxLoahi0av3ezpQLGk/O
+         llKg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=99YdfTDUMKnBzgpq7qDPB90EyJuPXG84bzJWh+9AFR8=;
+        b=Bl+srjwvh+Zzobjeh6iu9uaR3cNhxW4pur1QXGw2fvHU7CYZRXFxu7D8Vyx/aqUK2t
+         ogyg8srjAlwYMQmD9eMEqwDz1vGr474NcDTNG3TsSe3joeISkUTAqsVzzj5wbGd1tu78
+         oypObFYGMbxOzIaAqrga7NZP0bnVUX05ChaZnUM9isE4P2Se++/57eYxjAl9t7ioyC8B
+         /DW2WCnzxZS6LgAox7FY4mXDnILU33T86qx5rdq/x8sd3filRgr6+V6HZanZxCwrtUic
+         9726xRIBY0w1y1Yw80lcUG2afGOtKKeu5FZ3fRNYBGZL/VhGL6u8AMGTjFOtsoP5vthw
+         B+Ug==
+X-Gm-Message-State: AFqh2koniTLYgTHFOjp5k5OGCp27UovGMBSvV2dNOKGVdqW6jaZJFJ1d
+	43HS8540EWfX0/F84T43NcPIK80BBd3QEafIEA5rNuXI
+X-Google-Smtp-Source: AMrXdXsdYbFj8PWAA2GcfOkUb4HPQ4HeBTYrxbvzCpg1kO/qXgtH8Y30Oi5dx/GI67veKepW+gpqlW/Js5ZDjAnwqbU=
+X-Received: by 2002:a17:902:d544:b0:192:78ef:d82b with SMTP id
+ z4-20020a170902d54400b0019278efd82bmr3291701plf.72.1673012902817; Fri, 06 Jan
+ 2023 05:48:22 -0800 (PST)
+MIME-Version: 1.0
+References: <503e55999e511de47f8a2dfe400530da@fiidewgal.com> <CACVrK=rUTO9s8cgyYCU+dgqHAUiNza+CpJgaT=0KfHPJgj7mxw@mail.gmail.com>
+In-Reply-To: <CACVrK=rUTO9s8cgyYCU+dgqHAUiNza+CpJgaT=0KfHPJgj7mxw@mail.gmail.com>
+From: Mohammed aliou Djallo <djallomohammedaliou97@gmail.com>
+Date: Fri, 6 Jan 2023 13:48:10 +0000
+Message-ID: <CACVrK=pbrtUb=s0jD6-A9bjNk5-p_W6LHMh418kh6LHKm0=1Tg@mail.gmail.com>
+Subject: =?UTF-8?B?UmU6IEludMOpcsOqdCBhY2NlcHTDqQ==?=
+To: =?UTF-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>
+Content-Type: multipart/alternative; boundary="000000000000c6f37005f198ab6d"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000c6f37005f198ab6d
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Rougue je suis tomb=C3=A9 amoureux de toi pour une mariage et tu sois l=C3=
+=A0 m=C3=A8re de
+mes enfants.
+
+
+Le ven. 6 janv. 2023 =C3=A0 13:45, Mohammed aliou Djallo <
+djallomohammedaliou97@gmail.com> a =C3=A9crit :
+
+> Je suis tomb=C3=A9 amoureux de toi pour une mariage et tu sois l=C3=A0 m=
+=C3=A8re de mes
+> enfants.
+>
+> Le mer. 4 janv. 2023 =C3=A0 15:53, Ne r=C3=A9pondez pas <contact@fiidewga=
+l.com> a
+> =C3=A9crit :
+>
+>> Bonjour Aliou Diallo,
+>>
+>> Rouguiatou Diallo a accept=C3=A9 votre int=C3=A9r=C3=AAt. Vous pouvez ma=
+intenant vous
+>> envoyer des messages.
+>>
+>> Veuillez contacter l'=C3=A9quipe administrative si vous avez d'autres
+>> questions.
+>>
+>> Merci,
+>>
+>> Ne r=C3=A9pondez pas
+>>
+>
+
+--000000000000c6f37005f198ab6d
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Rougue je suis tomb=C3=A9 amoureux de toi pour une mariag=
+e et tu sois l=C3=A0 m=C3=A8re de mes enfants.<div dir=3D"auto"><br></div><=
+/div><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr">L=
+e ven. 6 janv. 2023 =C3=A0 13:45, Mohammed aliou Djallo &lt;<a href=3D"mail=
+to:djallomohammedaliou97@gmail.com">djallomohammedaliou97@gmail.com</a>&gt;=
+ a =C3=A9crit=C2=A0:<br></div><blockquote class=3D"gmail_quote" style=3D"ma=
+rgin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><div dir=3D"au=
+to">Je suis tomb=C3=A9 amoureux de toi pour une mariage et tu sois l=C3=A0 =
+m=C3=A8re de mes enfants.</div><br><div class=3D"gmail_quote"><div dir=3D"l=
+tr" class=3D"gmail_attr">Le mer. 4 janv. 2023 =C3=A0 15:53, Ne r=C3=A9ponde=
+z pas &lt;<a href=3D"mailto:contact@fiidewgal.com" rel=3D"noreferrer norefe=
+rrer" target=3D"_blank">contact@fiidewgal.com</a>&gt; a =C3=A9crit=C2=A0:<b=
+r></div><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border=
+-left:1px #ccc solid;padding-left:1ex"><p>Bonjour Aliou Diallo,</p><p>Rougu=
+iatou Diallo a accept=C3=A9 votre int=C3=A9r=C3=AAt. Vous pouvez maintenant=
+ vous envoyer des messages.</p><p>Veuillez contacter l&#39;=C3=A9quipe admi=
+nistrative si vous avez d&#39;autres questions.</p><p>Merci,<br></p><p>Ne r=
+=C3=A9pondez pas</p>
+
+</blockquote></div>
+</blockquote></div>
+
+--000000000000c6f37005f198ab6d--

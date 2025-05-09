@@ -1,0 +1,82 @@
+Return-Path: <ibrahima961931@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id MjWMKJKZ8GNC9DEA3R2AvA
+	(envelope-from <ibrahima961931@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 18 Feb 2023 10:25:38 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4PJjw16K3Hz34SDmk
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="cnjucFKC"
+X-N0C-MailScanner-eFa-Watermark: 1677317134.74366@VMxPP7Y737Dwl5/9g2NmmQ
+X-N0C-MailScanner-eFa-From: ibrahima961931@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: BFCF7401AEF6.AA49D
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-qv1-f48.google.com ([209.85.219.48] [209.85.219.48])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id BFCF7401AEF6
+	for <contact@fiidewgal.com>; Sat, 18 Feb 2023 10:25:02 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com BFCF7401AEF6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com BFCF7401AEF6
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=cnjucFKC
+Received: by mail-qv1-f48.google.com with SMTP id jy21so1769789qvb.3
+        for <contact@fiidewgal.com>; Sat, 18 Feb 2023 01:25:02 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112; t=1676712301;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=OGaml3LL4jx+4C/YReynm8scwYuxuu31kl5gatN0+4E=;
+        b=cnjucFKC15hDOtuPWO1fyYuax7/02E90phxYhwg7NOvTcIotgZIqokr7ruoXQvw/2n
+         DFrUdQjHbzcxQ7qDIkoqew2joTQ/M9N8D7SC0uw71rQ1AcPwFDYnPxjqDz+TQEDbIx45
+         gM5JxA5s4qzQzTFM8Xj0Mt92zkn95PhyFONHmhOE0BFm9Qb4lctWvD6YZC9RkKSiUhgZ
+         Abor/zIWGv7X7NGPi5YjezsoDQ13GjIYjH+ydpuJ9kh/QxMld0KBUKy+tFmJZjGiWZqB
+         tgRqLEAva+TVal6q2tbZPNj3tWK8cldALy/dFLT5Vif1vXbrRKnOJ7P1lipWhUqiCU5d
+         vtkg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112; t=1676712301;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=OGaml3LL4jx+4C/YReynm8scwYuxuu31kl5gatN0+4E=;
+        b=xXobW5/izOYSMp5GxdcsFSZBMYMhtDvyJa3uZTsfT59/No8C414kLQqefW6f13xx1u
+         lnbfOB46Gf0jNny1QLci0GETAEk9gYoy/rhd5MSSHRbSWqrrw9uhk2NoIOgcgh+vbEAQ
+         mock8tbM3BRuUgunxkSvFL0coq23xSCfargCtPY6JZTG0PzzbogbcFgpfLqmwmu8C+4D
+         mHYaaj2zkInBH7XMxUFT7aoB6LS6WsQ1dKXZ2zz0m2uCJZDpcBXWU3Q3BOScxw3PyUvk
+         cgNWsubTKwrHOffpE1UyoUO0g1hwOBCqODuEbgdvIZoISFJXZQzHhjLgW2U5HyfhA0u8
+         MOQg==
+X-Gm-Message-State: AO0yUKXY9xYwtqAONWXypoSTQvgPZvAR/Q8apxIX6HebFDNKo1gYHBwU
+	5eUv/u5GHlP6DTTB8t1i0uEYpqeXFip6+sFJgHZFOels
+X-Google-Smtp-Source: AK7set8yFD/EsZupiIbooEuXO6BAKn69kO+ml+LRo+2UQEmdMXvOvTGk1WJQQeJDX4BmrSziT1WJQCpgytEBeNw3GLI=
+X-Received: by 2002:a0c:aac7:0:b0:56e:aea4:fcc4 with SMTP id
+ g7-20020a0caac7000000b0056eaea4fcc4mr260982qvb.57.1676712301398; Sat, 18 Feb
+ 2023 01:25:01 -0800 (PST)
+MIME-Version: 1.0
+From: Ibrahima Diallo <ibrahima961931@gmail.com>
+Date: Sat, 18 Feb 2023 09:24:49 +0000
+Message-ID: <CAD9kRw0c95u=rbXiHdnxB7kr3jZuu5CM+gVadXm3R9Egkw4enw@mail.gmail.com>
+Subject: Demande
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000001d8d9805f4f60167"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000001d8d9805f4f60167
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour je m'appelle ibrahima Diallo je veux int=C3=A9grer le groupe potal =
+fini
+dewgal
+
+--0000000000001d8d9805f4f60167
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Bonjour je m&#39;appelle ibrahima Diallo je veux int=C3=
+=A9grer le groupe potal fini dewgal</div>
+
+--0000000000001d8d9805f4f60167--

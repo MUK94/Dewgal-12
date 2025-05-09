@@ -1,0 +1,235 @@
+Return-Path: <digitalpriyanakgoyal0014@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id cB4CMLktqGJfDBoA3R2AvA
+	(envelope-from <digitalpriyanakgoyal0014@gmail.com>)
+	for <contact@fiidewgal.com>; Tue, 14 Jun 2022 08:42:01 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4LMf486R63z34SFb1
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=fail reason="signature verification failed" (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="LXBCwiMy"
+X-N0C-MailScanner-eFa-Watermark: 1655793711.56512@7d6tQFc5zPtWGvaaLOjsYQ
+X-N0C-MailScanner-eFa-From: digitalpriyanakgoyal0014@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: E37C440664DA.A01DD
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-lf1-f43.google.com ([209.85.167.43] [209.85.167.43])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id E37C440664DA
+	for <contact@fiidewgal.com>; Tue, 14 Jun 2022 08:41:19 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com E37C440664DA
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com E37C440664DA
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="LXBCwiMy"
+Received: by mail-lf1-f43.google.com with SMTP id p18so12384822lfr.1
+        for <contact@fiidewgal.com>; Mon, 13 Jun 2022 23:41:18 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:sender:from:date:message-id:subject:to;
+        bh=v0kzUN5Oe3hmKMG4jUDEzWf7hk1cnbLBr9vqutRfH20=;
+        b=LXBCwiMykYpS6GZtRu/up33+7HAPZvWzQI64aPMutGTygefy4kzzr7/EI4WRatKZ7Q
+         bfeexPCQQmdvqao5srWOo6RAkz8fwdKKileJ2SiloTdYPhWYkI404fbnlwBE6kP+SeGI
+         hmM8X1iTBOA9coqP9Jgqiilc+I5vkl+ygTLghuo75T11c3Qt2O7Wm1z4zzPvlzny/Y35
+         HcVIbLpcUl97Besyj0qcQWnonCHJK9EPa10F0ukMaNYHLv59jSg3clrS/ZVGjZu2/hV0
+         Ye3rAgQfahY8t5hi/MjW4MEg9QJDO2K+M/sNURHAREbjUDkJz9Do4lHVz6tBpuhlxGG8
+         LFlw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:sender:from:date:message-id:subject
+         :to;
+        bh=v0kzUN5Oe3hmKMG4jUDEzWf7hk1cnbLBr9vqutRfH20=;
+        b=0eYtaivuKvjnw4mFA0mSsPf7+pkdAE42NfcqqRU9MUR++QO85wVveg06mleFLEYJMB
+         svd3nc7FDViwUi0Uf1HzZAa6H7XsgbCmcNdVm6lv3prh20eb/1Y7mFoK7jZyMi1C+kn8
+         n+LLJ7yRF61ksHF4OClLvKnBo9A3hGnjlM7X+P675zkxHabN3Le1ZntEtlr5Y3qK9M+A
+         Cz5lh+Ivzj5eJNoFpfAeY+3iOGDeiPrY/696Z4VZD6QS7mLlAX8UzF1lQboJhi57AlGh
+         aX8xBh/Fr4b1e/JajVhLFIh0iCkUJhW4GZt6PF87UqmJ2Pplj/qdH6qOA15bBJttNLyf
+         c7BQ==
+X-Gm-Message-State: AJIora+0MwhcjX4IrNMnSJjKxC35hq/3DhjX0JRBu21KHr2JtuUz+YuG
+	gkwmJEds6mdgPLr1bWecKJbDf04g9dt+SAFHpqe4NLIC+Ho=
+X-Google-Smtp-Source: AGRyM1tGI9JIYZ9tPnVEfrqtHeKU9MzF9Ptn3Jtpqw4VoC3N3kzHVh0K6I202KpSqM0Jeh0dq2nyO+roztSUjfr/3v0=
+X-Received: by 2002:a05:6512:529:b0:479:2158:da27 with SMTP id
+ o9-20020a056512052900b004792158da27mr2050647lfc.389.1655188877500; Mon, 13
+ Jun 2022 23:41:17 -0700 (PDT)
+Received: from 52669349336 named unknown by gmailapi.google.com with HTTPREST;
+ Mon, 13 Jun 2022 23:41:16 -0700
+Received: from 52669349336 named unknown by gmailapi.google.com with HTTPREST;
+ Mon, 13 Jun 2022 23:41:15 -0700
+MIME-Version: 1.0
+Sender: Priyanka <digitalpriyanakgoyal0014@gmail.com>
+From: Priyanka <digitalpriyanakgoyal0014@gmail.com>
+Date: Mon, 13 Jun 2022 23:41:16 -0700
+X-Google-Sender-Auth: Qi568lKw11vmA-h_Rimihp1__-0
+Message-ID: <CAAqmcd1gz6JU6Ti8XJhk8dX=8KvYw+W5mw7LmCt8iaO_s_2qsA@mail.gmail.com>
+Subject: Boost Your website's Traffic & Ranking
+To: Contact <contact@fiidewgal.com>
+Content-Type: multipart/alternative; boundary="0000000000001466eb05e162b1f3"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000001466eb05e162b1f3
+Content-Type: text/plain; charset="UTF-8"
+
+Hello Business Owner, www.fiidewgal.com
+
+
+
+Want more customers and clients in your local area on Google?
+
+
+
+We will give you, more visitors to your business, more visitors mean more
+sales
+
+
+
+May I send you a quote and price list??
+
+-------
+
+*Regards,*
+
+*Priyanka Goyal*
+
+*Business Development Manager*
+
+
+
+
+
+
+[image: beacon]
+
+--0000000000001466eb05e162b1f3
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><p class=3D"MsoNormal" style=3D"margin:0cm 0cm 10pt;line-h=
+eight:115%;font-size:11pt;font-family:Calibri,&quot;sans-serif&quot;"><span=
+ lang=3D"EN-US">=C2=A0</span></p><p class=3D"MsoNormal" style=3D"margin:0cm=
+ 0cm 0.0001pt;line-height:normal;background-image:initial;background-positi=
+on:initial;background-size:initial;background-repeat:initial;background-ori=
+gin:initial;background-clip:initial;font-size:11pt;font-family:Calibri,&quo=
+t;sans-serif&quot;"><span lang=3D"EN-US">Hello
+Business Owner,</span><span lang=3D"EN-US"> <a href=3D"http://www.fiidewgal=
+.com">www.fiidewgal.com</a></span><span lang=3D"EN-US"></span></p><p class=
+=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;line-height:normal;backgrou=
+nd-image:initial;background-position:initial;background-size:initial;backgr=
+ound-repeat:initial;background-origin:initial;background-clip:initial;font-=
+size:11pt;font-family:Calibri,&quot;sans-serif&quot;"><span lang=3D"EN-US">=
+=C2=A0</span></p><p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;li=
+ne-height:normal;background-image:initial;background-position:initial;backg=
+round-size:initial;background-repeat:initial;background-origin:initial;back=
+ground-clip:initial;font-size:11pt;font-family:Calibri,&quot;sans-serif&quo=
+t;"><span lang=3D"EN-US">Want more
+customers and clients in your local area on Google?</span></p><p class=3D"M=
+soNormal" style=3D"margin:0cm 0cm 0.0001pt;line-height:normal;background-im=
+age:initial;background-position:initial;background-size:initial;background-=
+repeat:initial;background-origin:initial;background-clip:initial;font-size:=
+11pt;font-family:Calibri,&quot;sans-serif&quot;"><span lang=3D"EN-US">=C2=
+=A0</span></p><p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;line-=
+height:normal;background-image:initial;background-position:initial;backgrou=
+nd-size:initial;background-repeat:initial;background-origin:initial;backgro=
+und-clip:initial;font-size:11pt;font-family:Calibri,&quot;sans-serif&quot;"=
+><span lang=3D"EN-US">We will
+give you, more visitors to your business, more visitors mean more sales</sp=
+an></p><p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;line-height:=
+normal;background-image:initial;background-position:initial;background-size=
+:initial;background-repeat:initial;background-origin:initial;background-cli=
+p:initial;font-size:11pt;font-family:Calibri,&quot;sans-serif&quot;"><span =
+lang=3D"EN-US">=C2=A0</span></p><p class=3D"MsoNormal" style=3D"margin:0cm =
+0cm 0.0001pt;line-height:normal;font-size:11pt;font-family:Calibri,&quot;sa=
+ns-serif&quot;">
+
+
+
+
+
+
+
+
+
+
+
+</p><p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;line-height:nor=
+mal;background-image:initial;background-position:initial;background-size:in=
+itial;background-repeat:initial;background-origin:initial;background-clip:i=
+nitial;font-size:11pt;font-family:Calibri,&quot;sans-serif&quot;"><span lan=
+g=3D"EN-US">May I send
+you a quote and price list??</span></p><p class=3D"MsoNormal" style=3D"marg=
+in:0cm 0cm 0.0001pt;line-height:12.65pt;font-size:11pt;font-family:Calibri,=
+&quot;sans-serif&quot;"><span lang=3D"EN-US">-------</span></p><p class=3D"=
+MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;line-height:12.65pt;font-size:1=
+1pt;font-family:Calibri,&quot;sans-serif&quot;"><b><span lang=3D"EN-US">Reg=
+ards,</span></b><span lang=3D"EN-US"></span></p><p class=3D"MsoNormal" styl=
+e=3D"margin:0cm 0cm 0.0001pt;line-height:12.65pt;font-size:11pt;font-family=
+:Calibri,&quot;sans-serif&quot;"><b><span lang=3D"EN-US" style=3D"font-size=
+:8pt;font-family:Arial,&quot;sans-serif&quot;;color:black">Priyanka Goyal</=
+span></b><span lang=3D"EN-US">=C2=A0=C2=A0</span></p><p class=3D"MsoNormal"=
+ style=3D"margin:0cm 0cm 0.0001pt;line-height:12.65pt;font-size:11pt;font-f=
+amily:Calibri,&quot;sans-serif&quot;"><b><span lang=3D"EN-US">Business Deve=
+lopment Manager</span></b><span lang=3D"EN-US"></span></p><p class=3D"MsoNo=
+rmal" style=3D"margin:0cm 0cm 0.0001pt;line-height:12.65pt;font-size:11pt;f=
+ont-family:Calibri,&quot;sans-serif&quot;"><span lang=3D"EN-US">=C2=A0</spa=
+n></p><p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;line-height:n=
+ormal;font-size:11pt;font-family:Calibri,&quot;sans-serif&quot;"><span lang=
+=3D"EN-US">=C2=A0 =C2=A0=C2=A0</span></p><p class=3D"MsoNormal" style=3D"ma=
+rgin:0cm 0cm 0.0001pt;line-height:normal;font-size:11pt;font-family:Calibri=
+,sans-serif">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><p class=3D"MsoNormal" style=3D"margin:0cm 0cm 10pt;line-height:115%;fo=
+nt-size:11pt;font-family:Calibri,&quot;sans-serif&quot;"><span lang=3D"EN-U=
+S">=C2=A0</span></p></div>
+<img src=3D"https://dl.efa-project.org/static/1x1spacer.gif" width=3D"1" he=
+ight=3D"1" alt=3D"Web Bug from https://digitalpriyanakgoyal0014-dot-yamm-tr=
+ack.appspot.com/2LEb1KQUMwyz2x8J3TQ6c1ygsCHKAudNyJz6QNXtmnhSR5_FggQGN2pHyOQ=
+tCP-0Ad1u9vyTGT7ano1BnlmpOUlW7B83FLtF7hjEtAUaISKU2OBRyLFCWXo4waPHEzAY-eKzHI=
+N9_NHrJQuTPk0mO_iAD68tZg0tK9KStJx31wQ" />
+
+--0000000000001466eb05e162b1f3--

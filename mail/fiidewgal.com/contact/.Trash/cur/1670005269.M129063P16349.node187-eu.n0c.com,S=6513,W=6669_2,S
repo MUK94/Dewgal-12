@@ -1,0 +1,156 @@
+Return-Path: <tech@support.planethoster.info>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id cD2gBxVCimPdPwAA3R2AvA
+	(envelope-from <tech@support.planethoster.info>)
+	for <contact@fiidewgal.com>; Fri, 02 Dec 2022 19:21:09 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NP1Tx07Klz34nwbd
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=support.planethoster.info header.i=@support.planethoster.info header.b="Rf0geKCH"
+X-N0C-MailScanner-eFa-Watermark: 1670610061.29961@vTz4+QES1fYwDsA81i+TWA
+X-N0C-MailScanner-eFa-From: tech@support.planethoster.info
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: AE048401AEF3.AD049
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from support-kayako.planethoster.net ([199.188.220.202] [199.188.220.202])
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id AE048401AEF3
+	for <contact@fiidewgal.com>; Fri,  2 Dec 2022 19:21:00 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com AE048401AEF3
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=support.planethoster.info
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=support.planethoster.info
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com AE048401AEF3
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (1024-bit key; unprotected) header.d=support.planethoster.info header.i=@support.planethoster.info header.a=rsa-sha256 header.s=default header.b=Rf0geKCH
+Received: by support-kayako.planethoster.net (Postfix, from userid 1000)
+	id 28EF71001FDDE; Fri,  2 Dec 2022 13:20:59 -0500 (EST)
+DKIM-Filter: OpenDKIM Filter v2.11.0 support-kayako.planethoster.net 28EF71001FDDE
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=support.planethoster.info; s=default; t=1670005259;
+	bh=5LIHJIl/tjnZsAe8oqu3MWYg9qE7H0iaBLq6ORSSCRk=;
+	h=To:Subject:Date:From:Reply-To:References:From;
+	b=Rf0geKCH+gXYp+gpkaaG2L/iE+fA1pPrdMd5Am6oS9HnWFW9oS5xuDch9TBOkFktf
+	 DT6Aky4LsGYrcmGn8AGhe7MggkeQJ/+mO6MWk7DEitBjwlm3jkYRhMM/UYz8FscpXc
+	 LlxptiwOcGvUNLt6ka0a5JgxyMC9FhdF1eKYzrdM=
+To: contact@fiidewgal.com
+Subject: [#YVH-890-88546]: =?utf-8?Q?R=C3=A9initialisation?= du mot de passe
+Message-ID: <38574e40ba622b99d79a1443fc5657d6@swift.generated>
+Date: Fri, 02 Dec 2022 19:20:59 +0100
+From: PlanetHoster <tech@support.planethoster.info>
+Reply-To: tech@support.planethoster.info
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_v4_1670005259_1cf8cdd07298f7dd49fdeee174f9a7d8_=_"
+X-Priority: 1 (Highest)
+References: <1d89fce52a1d0964dee6f8d5cdb1d7eb@fiidewgal.com>
+X-N0C-Node-IP: 185.221.182.45
+
+
+--_=_swift_v4_1670005259_1cf8cdd07298f7dd49fdeee174f9a7d8_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Ne r=C3=A9pondez pas,
+
+Merci pour votre confiance. Ceci est une r=C3=
+=A9ponse automatique afin de confirmer la r=C3=A9ception de votre message. =
+Nous traiterons votre billet dans les meilleurs d=C3=A9lais. Ci-dessous, vo=
+us trouverez les d=C3=A9tails de votre requ=C3=AAte. Pour r=C3=A9pondre - S=
+i vous =C3=AAtes membre de PlanetHoster, svp connectez-vous =C3=A0 l'interf=
+ace de support de PlanetHoster =C3=A0 l'adresse suivante: https://my.planet=
+hoster.com/v2/my-support/tickets - Si vous n'=C3=AAtes pas encore client, s=
+implement r=C3=A9pondre au courriel en gardant le num=C3=A9ro du billet dan=
+s l'objet.
+
+=09ID du ticket : YVH-890-88546
+=09Sujet : R=C3=A9initial=
+isation du mot de passe
+=09Service : Support Technique - FR
+=09Type=
+=C2=A0: Issue
+=09=C3=89tat=C2=A0: Open
+=09Priorit=C3=A9 : Normal
+
+V=
+ous pouvez v=C3=A9rifier l'=C3=A9tat de ce ticket ou le mettre =C3=A0 jour =
+en ligne sur : https://my.planethoster.com/v2/my-support/ticket/652156
+=
+
+
+
+Cordialement,
+PlanetHoster
+
+
+--
+
+---------------------=
+---------------------------------
+Helpdesk : https://my.planethoster.com/=
+v2/my-support/ticket/652156
+
+--_=_swift_v4_1670005259_1cf8cdd07298f7dd49fdeee174f9a7d8_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<font face=3D"Verdana, Arial, Helvetica" size=3D"2">Ne r=C3=A9pondez pas,<b=
+r />
+<br />
+Merci pour votre confiance. Ceci est une r=C3=A9ponse autom=
+atique afin de confirmer la r=C3=A9ception de votre message. Nous traiteron=
+s votre billet dans les meilleurs d=C3=A9lais. Ci-dessous, vous trouverez l=
+es d=C3=A9tails de votre requ=C3=AAte. Pour r=C3=A9pondre - Si vous =C3=
+=AAtes membre de PlanetHoster, svp connectez-vous =C3=A0 l'interface de sup=
+port de PlanetHoster =C3=A0 l'adresse suivante: <a href=3D"https://my.plane=
+thoster.com/v2/my-support/tickets" target=3D"_blank">https://my.planethoste=
+r.com/v2/my-support/tickets</a> - Si vous n'=C3=AAtes pas encore client, si=
+mplement r=C3=A9pondre au courriel en gardant le num=C3=A9ro du billet dans=
+ l'objet.<br />
+<br />
+&nbsp;&nbsp;&nbsp;<b>ID du ticket : </b>YVH-890-=
+88546<br />
+&nbsp;&nbsp;&nbsp;<b>Sujet : </b>R=C3=A9initialisation du mot=
+ de passe<br />
+&nbsp;&nbsp;&nbsp;<b>Service : </b>Support Technique - FR=
+<br />
+&nbsp;&nbsp;&nbsp;<b>Type=C2=A0: </b>Issue<br />
+&nbsp;&nbsp;&nb=
+sp;<b>=C3=89tat=C2=A0: </b>Open<br />
+&nbsp;&nbsp;&nbsp;<b>Priorit=C3=
+=A9 : </b>Normal<br />
+<br />
+Vous pouvez v=C3=A9rifier l'=C3=A9tat de =
+ce ticket ou le mettre =C3=A0 jour en ligne sur : <a href=3D"https://my.pla=
+nethoster.com/v2/my-support/ticket/652156" target=3D"_blank">https://my.pla=
+nethoster.com/v2/my-support/ticket/652156</a><br />
+<br />
+Cordialement=
+,<br />
+<br />
+PlanetHoster<br /><br /><br />
+--
+<br />
+Ticket su=
+mmary:
+<hr style=3D"margin-bottom: 6px; height: 1px; BORDER: none; color:=
+ #cfcfcf; background-color: #cfcfcf;" />
+<b>Ne r=C3=A9pondez pas: </b><br=
+><br><font face=3D"Verdana, Arial, Helvetica" color=3D"#222" size=3D"2"><p>=
+Bonjour=C2=A0M. B,</p><p>Votre code de v=C3=A9rification pour la r=C3=A9ini=
+tialisation du mot de passe est : [[code]]<br /></p><p><br /></p><p>Merci !=
+<br /></p><p>Ne r=C3=A9pondez pas</p><br />
+<br />
+</font>
+<br />
+<=
+HR style=3D"margin-bottom: 6px; height: 1px; BORDER: none; color: #cfcfcf; =
+background-color: #cfcfcf;" />
+Helpdesk : <a href=3D"https://my.planethos=
+ter.com/v2/my-support/ticket/652156" target=3D"_blank">https://my.planethos=
+ter.com/v2/my-support/ticket/652156</a><br />
+</font>
+
+--_=_swift_v4_1670005259_1cf8cdd07298f7dd49fdeee174f9a7d8_=_--
+

@@ -1,0 +1,77 @@
+Return-Path: <da8448660@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id SH57O6n6/WNCPwMA3R2AvA
+	(envelope-from <da8448660@gmail.com>)
+	for <contact@fiidewgal.com>; Tue, 28 Feb 2023 13:59:21 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4PQyB16Gghz34SDmx
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="Aurj4l1y"
+X-N0C-MailScanner-eFa-Watermark: 1678193939.73624@3DUBNRrHJvm2x9+pLsIcgQ
+X-N0C-MailScanner-eFa-From: da8448660@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 18115401A42D.AA2B8
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-lj1-f181.google.com ([209.85.208.181] [209.85.208.181])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 18115401A42D
+	for <contact@fiidewgal.com>; Tue, 28 Feb 2023 13:58:26 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 18115401A42D
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 18115401A42D
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=Aurj4l1y
+Received: by mail-lj1-f181.google.com with SMTP id z42so10063090ljq.13
+        for <contact@fiidewgal.com>; Tue, 28 Feb 2023 04:58:26 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112; t=1677589105;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=zqQ6RWI9fPdYsX+pGcIFca2bSI8e3XEp3snKNAb0uLU=;
+        b=Aurj4l1yGXHDsOgTAn8UqxEOtQQalRdBgJpvqfJvMKWMQPcG6S/BIn/c68e5zY9n57
+         A+KyXYeaXEDRmo67N/+w7ZUg4vewgzd3tu8Dp/RAfGK6vsWxXeLMtMNoFYQ85PlAvDSw
+         5Ec9FaVu+0BpKyBc9We+l5tkO3XTEFpFcKAKjxTIdLVx9XIsktNXysa7PiS3tjRAp5VD
+         aRdNvCEF6UMhw6abO1/bWEwAtjrP3DrsorHPW+m9cDMcKMJzcMjHDxAenj+s91BDYKRU
+         a9FqV5nyYRMw5/JfuL/eaOvBMcwQiGRlO80LbCfmfuBr0LYtnKg8L7+lPZYRWF9RgJbV
+         QiHQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112; t=1677589105;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=zqQ6RWI9fPdYsX+pGcIFca2bSI8e3XEp3snKNAb0uLU=;
+        b=sW2KcBB8Fqw3STsLW77Ez6CQtiZfq8GwQASJQ9dgYpWFiqB9BRbJAZJ543CdUdqrcQ
+         bJKLrD3vvg23XRDfEBL0wipelYqK/esosc7SH+Xay6oeX4aA1v+5tpz/P+5T3V/ayz5R
+         FViKQyaApYR18kltpLE5907L3B9aL/RMBX6Z/ICJqYIwqPu3rG3iz5kuxvSuiPQ1MnWL
+         Lnr7i+SOfFyC7mINjOE9XehNUM0D/AuroAzft43kneyId0OBbVAmXBYyoGY6G1IoCJqj
+         szunt4y6t1Btn3jLat89U/vQywbjd5LlrBoqBajUHYaYOLHTEQKlKKd642gZTTF7QbyJ
+         qfBw==
+X-Gm-Message-State: AO0yUKWZZRxfUUxPNOioEf0kZbQrTkSI2uAp/NIrR+eH6KHR3dRhwbEj
+	ZoUn+5K0RMaFiR5sCXodDU+0ovxBD7nCsHM3+pFSJ1Ls
+X-Google-Smtp-Source: AK7set96d6UeaJuIMuMEodo7qWUDESwsXpgccmcDyqNXiQ1u1aR8HeAy1WB1Svp71CGPkR/Waz9TP7WjQgolDvNFW+w=
+X-Received: by 2002:a2e:a223:0:b0:295:b026:8c33 with SMTP id
+ i3-20020a2ea223000000b00295b0268c33mr783540ljm.0.1677589104896; Tue, 28 Feb
+ 2023 04:58:24 -0800 (PST)
+MIME-Version: 1.0
+From: Diallo Alimou <da8448660@gmail.com>
+Date: Tue, 28 Feb 2023 12:58:11 +0000
+Message-ID: <CAFTz6O3giPCrZCvc+PqZEPopNneRd3wD3QGy55SP7bCD3JkiBQ@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000ad2c7c05f5c2261b"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000ad2c7c05f5c2261b
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+--000000000000ad2c7c05f5c2261b
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"></div>
+
+--000000000000ad2c7c05f5c2261b--

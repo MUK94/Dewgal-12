@@ -1,0 +1,89 @@
+Return-Path: <bembasow3@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id Egx3NiJgr2NNsx8A3R2AvA
+	(envelope-from <bembasow3@gmail.com>)
+	for <contact@fiidewgal.com>; Fri, 30 Dec 2022 23:03:14 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NkK5G5cMtznqZr
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="cuGDwLUb"
+X-N0C-MailScanner-eFa-Watermark: 1673042589.61651@nHWwPIb9RxLtffrxgbFLYQ
+X-N0C-MailScanner-eFa-From: bembasow3@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: A4EC240664D5.A8461
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-wr1-f45.google.com ([209.85.221.45] [209.85.221.45])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id A4EC240664D5
+	for <contact@fiidewgal.com>; Fri, 30 Dec 2022 23:02:37 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com A4EC240664D5
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com A4EC240664D5
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=cuGDwLUb
+Received: by mail-wr1-f45.google.com with SMTP id n3so20123291wrc.5
+        for <contact@fiidewgal.com>; Fri, 30 Dec 2022 14:02:37 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=LKMnZZDBNriGrt3uCKPUXE2UNamalPaaBxel2nqJze8=;
+        b=cuGDwLUbAcAFw2zl/I8h5HSjz+xP2533HiSZkms7AxfBc9nclqMfYhcPLTMxw+CkAp
+         Jo16989eg3tIlN0cZaF3n+WFsO7GL0gc1y3LYFGbrwC47U+jusLxPauPdqGw7F4mCh4I
+         SYagcEDyynMJuQGm9PMX/zEXSGq4KndVbl0nfmLPRpgaRj90cywnCXT6j2qS7jvQlnDw
+         sDJMl6cUohcyfgPTFrzL8eFkvSmGd+bSxtD46VZVm8JFjavB/HhpZX8sxyxLKokBoQZC
+         cGdbP3yqond2cIj2EDjJB3AdoA4+bDGp+MIr8UzZ0vcPH4Megcf6YWIdbp/0xSyYCIME
+         b52w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=LKMnZZDBNriGrt3uCKPUXE2UNamalPaaBxel2nqJze8=;
+        b=pFl3T+OVajA3sNDNnEn5CXt1RErRstiDP+K2cZID02qF1VyRGlbW1rtb0AJJrkf2Vr
+         JaWqbb+txuFjfphFgBxob0dVDBgDpbRRF2QGCacHH2q0W+2+wwpnrs0ecLVnllPSbr2l
+         //j7yrlduo9Vf+vowWKSKwJoFKPa/8GoYyM6iu+iGuMOG75ucIhhozXL0TYSvleixqzD
+         YO7s4b81Xfcr2/KL9VaTtSZA59DlMLw6F5RH9IT86TaF99goAcspI5Bue+SYk+p/r7AE
+         UW5Zb8QXmFUEBHqTZ3V8oqRtX0s2iooJra+fPMQY656OKMQkt3d/DotylIU+VwixeMfB
+         si+w==
+X-Gm-Message-State: AFqh2ko3Fh3yt1YXlRBl+MDFNXHaEptOLbS1KENCHFj0tbhRPlI5sdl2
+	FB/5pTbMbNh8HFoj0ndiTIueNU6bXx9IoZvaDRvteIqJ
+X-Google-Smtp-Source: AMrXdXvzfxF8RMLs7oSA0zNGuxVJ+JYeoi0orIPVGHg0dSZSij70rC6oKYiYrIqodVL+7J4nFGuOA0cQ8ZfvcZGJjuk=
+X-Received: by 2002:adf:ec49:0:b0:280:2403:7445 with SMTP id
+ w9-20020adfec49000000b0028024037445mr682632wrn.516.1672437756840; Fri, 30 Dec
+ 2022 14:02:36 -0800 (PST)
+MIME-Version: 1.0
+From: Bemba Sow <bembasow3@gmail.com>
+Date: Fri, 30 Dec 2022 23:02:26 +0100
+Message-ID: <CAJOA5YP4WN42pBqHswYUVrYkLB81wA6nyLGmXFqL2z7Gtigc1g@mail.gmail.com>
+Subject: =?UTF-8?Q?Question=3Fand_et_congratulations_=F0=9F=99=8F?=
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000067cdab05f112c2ef"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000067cdab05f112c2ef
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour
+Je me r=C3=A9joui,de vous d=C3=A9couvrir ! Et n=C3=A9cessaire pour notre co=
+mmunaut=C3=A9
+Acer effet ,j' ai tent=C3=A9 de me cr=C3=A9e un compte,mais j ai toujours p=
+as de
+confirmation
+Merci pour le service,et bien =C3=A0 vous
+
+--00000000000067cdab05f112c2ef
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Bonjour<div dir=3D"auto">Je me r=C3=A9joui,de vous d=C3=
+=A9couvrir ! Et n=C3=A9cessaire pour notre communaut=C3=A9</div><div dir=3D=
+"auto">Acer effet ,j&#39; ai tent=C3=A9 de me cr=C3=A9e un compte,mais j ai=
+ toujours pas de confirmation</div><div dir=3D"auto">Merci pour le service,=
+et bien =C3=A0 vous=C2=A0<br><div dir=3D"auto"><br></div></div></div>
+
+--00000000000067cdab05f112c2ef--

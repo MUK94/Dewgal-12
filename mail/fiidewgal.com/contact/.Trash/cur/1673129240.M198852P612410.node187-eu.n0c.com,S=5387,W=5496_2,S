@@ -1,0 +1,109 @@
+Return-Path: <alassanad17@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id zPO6CxjtuWM6WAkA3R2AvA
+	(envelope-from <alassanad17@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 07 Jan 2023 23:07:20 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NqDpJ06c2zJWdq
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="HK431iT8"
+X-N0C-MailScanner-eFa-Watermark: 1673734037.29697@3HEdONS2FyN14T2DCu4Hwg
+X-N0C-MailScanner-eFa-From: alassanad17@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 77477400F120.A40E9
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-oa1-f43.google.com ([209.85.160.43] [209.85.160.43])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 77477400F120
+	for <contact@fiidewgal.com>; Sat,  7 Jan 2023 23:06:44 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 77477400F120
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 77477400F120
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=HK431iT8
+Received: by mail-oa1-f43.google.com with SMTP id 586e51a60fabf-15651a0e01aso4448831fac.1
+        for <contact@fiidewgal.com>; Sat, 07 Jan 2023 14:06:44 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=4LY9iuBgXQxd8LzPgM9hEz6AgBJ7P36zJN1HwnIKr2Y=;
+        b=HK431iT89yJ5yxzujTn6uluLe4oUwSIEh7rvzvj+LGmUklqYn3ynLBDFk5uJwILsSG
+         ERIgYQyOA7QbHOB/l72VippZHEiUgFPBtH6fhMolarPD/QCcEIDMC4TP8gyu7wXZmxMX
+         RjaZH1M/qAz8Q0wGMxlSXrtLyk4RLfCElNCUz2ZIvcRq3k0mOINkFw7QWa+lUt8bm/+d
+         +4r0lMK4Tf7QpTT58l+wAL3NmFPbbTLwpyGKurUedYqg2CZyuPBxzNIZSGhCysL4zfLu
+         55hTaQcRJCgb+XaCEe47hco71GPIGc8GsrvfomzhYkhP6ndTNJFaK1V3zxwyC9QkD074
+         l2Uw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=4LY9iuBgXQxd8LzPgM9hEz6AgBJ7P36zJN1HwnIKr2Y=;
+        b=mdGuzJIRsjX9loVaivXFitL5eu9EzXk9po50N6v/N1aTKDMItdlE0gtSIU8UoEcyWe
+         TRkevflp4+limW41NolxvH8RzRt6z2H421EB/E/Dz/ZcEXrdFJghAOOPfgSfKrQLisGU
+         0NusGnsPlyp1nNHOqli+yoguAIXbvNLsR+Wldb7pLGeqn5EgUqPm3/GH1+ue0FXB2al8
+         cuDtWIwBiLcA6CsHrUeIUEZBhhlK/6IK/2b7gdu1/P38zmq+pxauLwjcHDsDr9LKTAwN
+         Pd43AMW5DkS1qLANAck8RoIs2eqUBddbcgkx9KN94erdiasmg/KbSf5YUnpRbLSu6Jv6
+         mnpA==
+X-Gm-Message-State: AFqh2kpHnlGeuinAkF57Lsf9Bi3wTS2zyFcQFLgYkrZWw5HqPlc4PA/l
+	YC2PUbDfC66R1BRjI1UmgDBJcB3yNHeQfyxExPjQ4mf9
+X-Google-Smtp-Source: AMrXdXsiPJOUbDI2HG3BK+wSumG6VkMiztvSMg9I0lxsbt13bWC6Yl9elkhEbKKrBX1txehH9IY0JabD4RW4cMy5kIk=
+X-Received: by 2002:a05:6870:f78f:b0:158:e462:eecf with SMTP id
+ fs15-20020a056870f78f00b00158e462eecfmr132623oab.125.1673129202547; Sat, 07
+ Jan 2023 14:06:42 -0800 (PST)
+MIME-Version: 1.0
+References: <1057fa72d7eec208f5bdd7103d103104@fiidewgal.com>
+In-Reply-To: <1057fa72d7eec208f5bdd7103d103104@fiidewgal.com>
+From: Alassana Diallo <alassanad17@gmail.com>
+Date: Sat, 7 Jan 2023 22:06:29 +0000
+Message-ID: <CAFTKodxFH-SZSBpvgSv5y2ihgkch95z62CBKTfvsnr34GArssQ@mail.gmail.com>
+Subject: =?UTF-8?B?UmU6IEludMOpcsOqdCBhY2NlcHTDqQ==?=
+To: =?UTF-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>
+Content-Type: multipart/alternative; boundary="000000000000c7ffa405f1b3bfef"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000c7ffa405f1b3bfef
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bonsoir
+
+Le ven. 6 janv. 2023 =C3=A0 21:50, Ne r=C3=A9pondez pas <contact@fiidewgal.=
+com> a
+=C3=A9crit :
+
+> Bonjour Alassane Diallo,
+>
+> Binta Diallo a accept=C3=A9 votre int=C3=A9r=C3=AAt. Vous pouvez maintena=
+nt vous envoyer
+> des messages.
+>
+> Veuillez contacter l'=C3=A9quipe administrative si vous avez d'autres que=
+stions.
+>
+> Merci,
+>
+> Ne r=C3=A9pondez pas
+>
+
+--000000000000c7ffa405f1b3bfef
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Bonsoir=C2=A0</div><br><div class=3D"gmail_quote"><div di=
+r=3D"ltr">Le ven. 6 janv. 2023 =C3=A0 21:50, Ne r=C3=A9pondez pas &lt;<a hr=
+ef=3D"mailto:contact@fiidewgal.com">contact@fiidewgal.com</a>&gt; a =C3=A9c=
+rit=C2=A0:<br></div><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0=
+ .8ex;border-left:1px #ccc solid;padding-left:1ex"><p>Bonjour Alassane Dial=
+lo,</p><p>Binta Diallo a accept=C3=A9 votre int=C3=A9r=C3=AAt. Vous pouvez =
+maintenant vous envoyer des messages.</p><p>Veuillez contacter l&#39;=C3=A9=
+quipe administrative si vous avez d&#39;autres questions.</p><p>Merci,<br><=
+/p><p>Ne r=C3=A9pondez pas</p>
+
+</blockquote></div>
+
+--000000000000c7ffa405f1b3bfef--

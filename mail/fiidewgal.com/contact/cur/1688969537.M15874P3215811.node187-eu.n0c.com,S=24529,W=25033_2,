@@ -1,0 +1,504 @@
+Return-Path: <989-gzb-065.0.175894.0.0.27626.9.104743797@mkto.taboola.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id gNThAEGhq2TDETEA3R2AvA
+	(envelope-from <989-gzb-065.0.175894.0.0.27626.9.104743797@mkto.taboola.com>)
+	for <contact@fiidewgal.com>; Mon, 10 Jul 2023 08:12:17 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4QztvN69b1z34SDmq
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=taboola.com header.i=@taboola.com header.b="GyDno/ZB";
+	dkim=pass (1024-bit key) header.d=mktdns.com header.i=@mktdns.com header.b="H+AjHQ2v"
+X-N0C-MailScanner-eFa-Watermark: 1689574248.2423@9+fbtNEcxyo9I84n9/hL2w
+X-N0C-MailScanner-eFa-From: 989-gzb-065.0.175894.0.0.27626.9.104743797@mkto.taboola.com
+X-N0C-MailScanner-eFa-SpamScore: s
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: EF19E40198A1.A0630
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mkto.taboola.com ([185.28.196.170] [185.28.196.170])
+	(using TLSv1.2 with cipher ECDHE-ECDSA-AES256-GCM-SHA384 (256/256 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id EF19E40198A1
+	for <contact@fiidewgal.com>; Mon, 10 Jul 2023 08:10:30 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com EF19E40198A1
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=reject dis=none) header.from=taboola.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=mkto.taboola.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com EF19E40198A1
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (1024-bit key; secure) header.d=taboola.com header.i=@taboola.com header.a=rsa-sha256 header.s=m1 header.b=GyDno/ZB;
+	dkim=pass (1024-bit key; unprotected) header.d=mktdns.com header.i=@mktdns.com header.a=rsa-sha256 header.s=m1 header.b=H+AjHQ2v
+X-MSFBL: oYWQe5eY/WG3cU4fIHselu9NJz8k5o0jvmiSyW5JEi0=|eyJnIjoiYmctbG9uZC0
+	xNDUiLCJiIjoiZHZwLTE4NS0yOC0xOTYtMTcwIiwidSI6Ijk4OS1HWkItMDY1OjA
+	6MTI4ODM6NjIzNTM6NjgzNTc3OjI3NjI2Ojk6MTc1ODk0OjEwNDc0Mzc5NyIsInI
+	iOiJjb250YWN0QGZpaWRld2dhbC5jb20ifQ==
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1688969429;
+	s=m1; d=taboola.com; i=@taboola.com;
+	h=Content-Type:MIME-Version:Subject:To:From:Date;
+	bh=0zYsKi44StipSr/0sf/zV+05tyyqZf75ym5kFmNUDFA=;
+	b=GyDno/ZBa0hw9oGVEWm/GiV2gBLhLLMBthayNlMHI3CR+LWSwSWF5JrkXopciqRL
+	gq7i3nLh1W40UN0Kn5t+PrCU4npY+DB9067FMmue7rgx1qwWnrGN/+UIZyUjYdrNqp2
+	2EvfqAqgsXW/8mAAByL7VutCne8gu6thFkNM7Me0=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1688969429;
+	s=m1; d=mktdns.com; i=@mktdns.com;
+	h=Content-Type:MIME-Version:Subject:To:From:Date;
+	bh=0zYsKi44StipSr/0sf/zV+05tyyqZf75ym5kFmNUDFA=;
+	b=H+AjHQ2v9G/Lj5e72TC9ki1ckv73AaAu5QWcF10Pb3BLFFW99SWQlmGKlx/pc30g
+	FJ5ibeFh8GQ7OGSJvY77GRNXclxTB7OIzBCjRV2sHxacieyh56vwjsCe4Yyi/m6ParB
+	WIxPEF1KaWog01OkGwY3LWzy1YdINjii9vofqq10=
+Date: Mon, 10 Jul 2023 01:10:29 -0500 (CDT)
+From: Taboola <onlinemarketing@taboola.com>
+Reply-To: onlinemarketing@taboola.com
+To: contact@fiidewgal.com
+Message-ID: <1268111484.160933229.1688969429392@lonmktmail-batch1a.marketo.org>
+Subject: See you at AWE in Barcelona?
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_160933228_1766948587.1688969429392"
+X-Binding: bg-lond-145
+List-Unsubscribe: <mailto:L5MWQYTYI5EFU52OK5HW4NCYJ5UXEVSMJJFHSMBZFV4VA6TWNFSXQSKJKNYTKYKEPBCE2PI=.175894.27626.9@unsub-lon.mktomail.com>
+X-MarketoID: 989-GZB-065:0:12883:62353:683577:27626:9:175894:104743797
+X-PVIQ: mkto-989GZB065-000001-000000-175894
+X-Mailfrom: 989-GZB-065.0.175894.0.0.27626.9.104743797@mkto.taboola.com
+X-MktArchive: false
+X-MSYS-API: {"options":{"open_tracking":false,"click_tracking":false}}
+X-MktMailDKIM: true
+X-N0C-Node-IP: 185.221.182.45
+
+------=_Part_160933228_1766948587.1688969429392
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello Abdoul,
+
+AWC Barcelona is just around the corner and the Taboola team is getting rea=
+dy to pack their bags for this legendary event.
+
+We'd like to meet you in Barcelona and talk all things native. Will you be =
+around?
+
+It would be a fantastic opportunity to connect in person and tell you about=
+ our most recent product updates and success stories! We will be joined by =
+Taboola veteran Nadim Kuttab who will present an AI-opening Masterclass on =
+the power of AI for content creation for native ads. Nadim will break down =
+how his team uses AI to generate dozens of landing pages and hundreds of ad=
+ variations daily, supplementing human creativity to bring to life million-=
+dollar native ad campaigns. From lead-generation to e-commerce and app-inst=
+all campaigns, this will be the summers=E2=80=99 ultimate native-ads master=
+class.
+
+Request a meeting with the team=C2=A0here <http://me.taboola.com/OTg5LUdaQi=
+0wNjUAAAGM3WTxixeZ7XuS6uu64BWytXDuvw37JwphvtUpMfzQLw0ubZVgbdL0D6djdMFgP3Izb=
+9_AOFQ=3D>.
+
+See you=20
+soon!
+
+Your Taboola Team
+Help <http://me.taboola.com/OTg5LUdaQi0wNjUAAAGM3WTxiz4bKwkA2wITsdqs5r2lPRr=
+JAGSbd69678jDHj3LT-CfZzu8n2ZXIOWA-iOBA8eCCIU=3D>
+Blog <http://me.taboola.com/OTg5LUdaQi0wNjUAAAGM3WTxi5sNHRXJqh9Hc0jWQ8NZUm5=
+ncuqLUMdhIxNCLkRa6tw49idShSzcaf_CkGu2R9I5pQU=3D>
+=C2=A9 2023 Taboola, Inc.
+Aldgate House, 2nd Floor, 33 Aldgate High Street, London EC3N 1DL, United K=
+ingdom
+ If you no longer wish to receive these emails you may unsubscribe <[[https=
+://pages.taboola.com/UnsubscribePage.html?mkt_unsubscribe=3D1&mkt_tok=3DOTg=
+5LUdaQi0wNjUAAAGM3WTxi3ZZx37rAG9KhB9lohrf_yIyRq3N-iFjV_HVsgw7loe7-N2aib0Rcf=
+DFIwIEAXhaxw72eQWKNPHvFHFc2ymNmxb4fL54oBAiVOQd0X5ksRsa]]> at any=C2=A0time.
+
+------=_Part_160933228_1766948587.1688969429392
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" style=3D"width: 100%;">
+<head>=20
+<!-- Marketo Variable Definitions -->                                      =
+                                                      =20
+<!-- Other Meta Tags -->=20
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8" />=
+=20
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1,=
+ minimum-scale=3D1, maximum-scale=3D1" />=20
+<meta name=3D"robots" content=3D"noindex,nofollow" />=20
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge" />=20
+<meta name=3D"x-apple-disable-message-reformatting" />=20
+<title>Clicktale Newsletter</title>=20
+<style type=3D"text/css">
+=09
+    /* CLIENT-SPECIFIC STYLES */
+    #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" =
+message */
+    .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail =
+to display emails at full width */
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass f=
+ont, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Ho=
+tmail to display normal line spacing */
+    body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:=
+100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+    table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacin=
+g between tables in Outlook 2007 and up */
+    img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of res=
+ized image in Internet Explorer */
+
+=09/* Force Hotmail to display normal line spacing */
+=09/* iOS BLUE LINKS */
+=09.appleBody a {color: .m_000;text-decoration: none;}
+=09.appleFooter a {color: .m_000;text-decoration: none;}
+=09@-ms-viewport {width: device-width}=09
+=09
+    /* RESET STYLES */
+    body{margin:0; padding:0;}
+    p{margin:0!important; padding:0!important; -webkit-margin-before: 0px!i=
+mportant; -webkit-margin-after: 0px!important; -webkit-margin-start: 0px!im=
+portant; -webkit-margin-end: 0px!important}
+    img{border:0; line-height:100%; outline:none; text-decoration:none;}
+    table{border-collapse:collapse !important;}
+    body{height:100% !important; margin:0; padding:0; width:100% !important=
+;}
+=09a{color: #164891!important; cursor: pointer!important; text-decoration: =
+none}
+    a:hover, .gt a:hover{text-decoration:underline!important;text-decoratio=
+n:underline} =20
+    a:hover, .gt a:hover{text-decoration:underline !important;text-decorati=
+on:underline} =20
+    .mobile-td a:hover {text-decoration: underline !important}=20
+
+    /* GENERAL STYLES */
+=09
+    /* MOBILE STYLES */
+    @media only screen and (max-width: 600px) {
+=09=09table[class=3D"m_boxing"]{width: 100% !important;}
+=09=09td[class=3D"outer"] {=09min-width: 0 !important; padding-top: 0px!imp=
+ortant}
+=09=09table[class=3D"m_hide"] { display: none !important}
+=09=09td[class=3D"header-btns"] img{margin: 0px 0px 5px 15px !important;}=
+=09=09
+=09=09td[class=3D"mobile-td"]{padding-left: 20px!important; padding-right: =
+20px!important; font-size: 19px!important; line-height: 23px!important}
+=09=09td[class=3D"mobile-cell-last"]{padding-bottom: 20px!important;font-si=
+ze: 19px!important; line-height: 19px!important}
+=09=09table[class=3D"mobile-column"]{width:100%!important;}
+=09=09img[class=3D"flexible-img"]{width:100% !important; height: auto!impor=
+tant}=09=09
+=09=09table[class=3D"mktoModule spacer-tbl"] img{height: 20px!important; wi=
+dth: 100%!important}
+   =09=09table[class=3D"mktoModule spacer-tbl"] img{height: 20px!important}=
+ =09     =20
+=09=09td[class=3D"vote-01"],td[class=3D"vote-02"]{width:20%!important}
+=09=09td[class=3D"vote-01"] img,td[class=3D"vote-02"] img{width:100%!import=
+ant; height: auto!important}
+=09=09.mob-txt{font-size: 19px!important; line-height: 23px!important}
+=09=09.mob-txt2{font-size: 19px!important; line-height: 19px!important}
+=09}
+=09</style>=20
+<!--[if mso]>
+<style type=3D=E2=80=9Dtext/css=E2=80=9D>
+=09body,td,div,p,a {
+=09font-family: 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+=09}
+</style>
+<![endif]-->=20
+</head>=20
+<body style=3D"background: #f1f1f1; margin-bottom: 0; -webkit-text-size-adj=
+ust: 100%; padding-bottom: 0; min-width: 100%; margin-top: 0; margin-right:=
+ 0; -ms-text-size-adjust: 100%; margin-left: 0; padding-top: 0; padding-rig=
+ht: 0; padding-left: 0; width: 100%;"><style type=3D"text/css">div#emailPre=
+Header{ display: none !important; }</style><div id=3D"emailPreHeader" style=
+=3D"mso-hide:all; visibility:hidden; opacity:0; color:transparent; mso-line=
+-height-rule:exactly; line-height:0; font-size:0px; overflow:hidden; border=
+-width:0; display:none !important;">Meet the Taboola Team</div>=20
+<style>
+    p{Margin:0!important; Padding:0!important; -webkit-margin-before: 0px!i=
+mportant; -webkit-margin-after: 0px!important; -webkit-margin-start: 0px!im=
+portant; -webkit-margin-end: 0px!important}
+=09a{cursor: pointer!important;text-decoration: none}  =20
+    a:hover{text-decoration:underline!important;text-decoration:underline} =
+=20
+    a:hover, .gt a:hover{text-decoration:underline !important;text-decorati=
+on:underline}    =20
+ </style>=20
+<!-- Outer table START -->=20
+<table bgcolor=3D"#f1f1f1" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"-webkit-text-size-adjust: 100%; -ms-text-size-adju=
+st: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; =
+border-collapse: collapse;">=20
+<tbody>=20
+<tr>=20
+<td class=3D"outer" valign=3D"top" style=3D"-webkit-text-size-adjust: 100%;=
+-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word=
+-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;m=
+in-width: 600px;border-collapse: collapse">=20
+<table width=3D"600" align=3D"center" id=3D"boxing" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" style=3D"-webkit-text-size-adjust: 100%; -ms-text=
+-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-sp=
+acing: 0; border-collapse: collapse;margin-top: 0; margin-right: auto; marg=
+in-bottom: 0; margin-left: auto;" class=3D"m_boxing">=20
+<tbody>=20
+<tr>=20
+<td class=3D"mktoContainer" id=3D"template-wrapper" style=3D"padding-bottom=
+: 15px; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-tab=
+le-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyph=
+ens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
+<table id=3D"spacer-3f20ea7be-c816-43c1-811d-12ad93168ced" bgcolor=3D"#F1F1=
+F1" class=3D"mktoModule spacer-tbl" style=3D"-webkit-text-size-adjust: 100%=
+; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;=
+ border-spacing: 0; border-collapse: collapse;" align=3D"center" border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td style=3D" -moz-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-l=
+space: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: no=
+ne;-ms-text-size-adjust: 100%;hyphens: none; border-collapse: collapse"> <i=
+mg alt=3D"" src=3D"http://pages.taboola.com/rs/989-GZB-065/images/3112-pixe=
+l%5B1%5D.png" width=3D"300" height=3D"3" style=3D"height: 3px; display:bloc=
+k" /> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table id=3D"top-logo-center88971da1-a7a3-4f1a-980f-fa6f889c630a" bgcolor=
+=3D"#FFFFFF" class=3D"mktoModule" style=3D"border: 1px solid #FFFFFF; -webk=
+it-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0p=
+t; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" al=
+ign=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"padding: 0px 0px 0px 0px; -moz-hyphens: none;=
+-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;=
+word-break: break-word;-webkit-hyphens: none;-ms-text-size-adjust: 100%;hyp=
+hens: none; border-collapse: collapse">=20
+<div class=3D"mktoImg" id=3D"top-logo-188971da1-a7a3-4f1a-980f-fa6f889c630a=
+" style=3D"margin: 0px!important; padding: 0px!important" mktolockimgsize=
+=3D"false">
+<a href=3D"#" target=3D"_blank"><img src=3D"https://pages.taboola.com/rs/98=
+9-GZB-065/images/110418_logo.png" width=3D"109" height=3D"42" style=3D"" />=
+</a>
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table id=3D"banner-imge6449387-9273-4b06-969a-523330d03822" class=3D"mktoM=
+odule" style=3D"-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;=
+ mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-co=
+llapse: collapse;" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td style=3D"border-bottom: 1px solid #FFFFFF; padding: 0px 0px 0px 0px; -m=
+oz-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-t=
+able-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-ms-text-size=
+-adjust: 100%;hyphens: none; border-collapse: collapse">=20
+<div class=3D"mktoImg" id=3D"top-bannere6449387-9273-4b06-969a-523330d03822=
+" style=3D"margin: 0px!important; padding: 0px!important" mktolockimgsize=
+=3D"false">=20
+<a href=3D
+"http://me.taboola.com/OTg5LUdaQi0wNjUAAAGM3WTxi0qQoOXsg6d975Y3jjD3DNJcxdAV=
+v4ZluvuLrHnxUNBoM0l2QhXE34IAtFnLe3xPXlc=3D" target=3D"_blank"
+><img src=3D"https://pages.taboola.com/rs/989-GZB-065/images/eml-AW_Barcelo=
+na_2023-Header.png" width=3D"600" class=3D"flexible-img" style=3D"display: =
+block" height=3D"307" /></a>=20
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table id=3D"simple-text-22811684d-f55e-4764-a293-911f3adf3dd8" class=3D"mk=
+toModule" bgcolor=3D"#ffffff" style=3D"-webkit-text-size-adjust: 100%; -ms-=
+text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; borde=
+r-spacing: 0; border-collapse: collapse" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td class=3D"mobile-td" style=3D"padding: 10px 38px 0px 38px; color: #2b2b2=
+b; font-family: Arial, sans-serif; font-size: 14px; line-height: 22px; -moz=
+-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-tab=
+le-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-ms-text-size-a=
+djust: 100%;hyphens: none; border-collapse: collapse">=20
+<div class=3D"mktEditable" id=3D"text-simple-22811684d-f55e-4764-a293-911f3=
+adf3dd8" style=3D"margin: 0px !important; padding: 0px!important">=20
+<div>
+<span style=3D"font-size: 16px;"><strong><br /></strong>Hello Abdoul,<br />=
+<br />AWC Barcelona is just around the corner and the Taboola team is getti=
+ng ready to pack their bags for this legendary event.<br /><br />We'd like =
+to meet you in Barcelona and talk all things native. Will you be around?<br=
+ /><br />It would be a fantastic opportunity to connect in person and tell =
+you about our most recent product updates and success stories! We will be j=
+oined by Taboola veteran Nadim Kuttab who will present an AI-opening Master=
+class on the power of AI for content creation for native ads. Nadim will br=
+eak down how his team uses AI to generate dozens of landing pages and hundr=
+eds of ad variations daily, supplementing human creativity to bring to life=
+ million-dollar native ad campaigns. From lead-generation to e-commerce and=
+ app-install campaigns, this will be the summers=E2=80=99 ultimate native-a=
+ds masterclass.<br /><br />Request a meeting with the team&nbsp;<a href=3D
+"http://me.taboola.com/OTg5LUdaQi0wNjUAAAGM3WTxi0qQoOXsg6d975Y3jjD3DNJcxdAV=
+v4ZluvuLrHnxUNBoM0l2QhXE34IAtFnLe3xPXlc=3D" target=3D"_blank"
+><span style=3D"text-decoration: underline;">here</span></a>.<br /><br />Se=
+e you soon!<br /><br />Your Taboola Team<br /><br /></span>
+</div>=20
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table id=3D"spacer-36fd37bb9-1f98-440e-8cd4-90989334bcec" bgcolor=3D"#F1F1=
+F1" class=3D"mktoModule spacer-tbl" style=3D"-webkit-text-size-adjust: 100%=
+; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;=
+ border-spacing: 0; border-collapse: collapse;" align=3D"center" border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td style=3D" -moz-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-l=
+space: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: no=
+ne;-ms-text-size-adjust: 100%;hyphens: none; border-collapse: collapse"> <i=
+mg alt=3D"" src=3D"http://pages.taboola.com/rs/989-GZB-065/images/3112-pixe=
+l%5B1%5D.png" width=3D"300" height=3D"3" style=3D"height: 3px; display:bloc=
+k" /> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table id=3D"footer471d6c58-25f5-4a1b-9a32-b1eba096d7c7" class=3D"mktoModul=
+e" bgcolor=3D"#ffffff" style=3D"-webkit-text-size-adjust: 100%; -ms-text-si=
+ze-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spaci=
+ng: 0; border-collapse: collapse" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td style=3D"padding-top: 10px" align=3D"center">=20
+<center>=20
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"320">=20
+<tbody>=20
+<tr>=20
+<td align=3D"right" width=3D"135" nowrap=3D"" style=3D"padding: 0px; font-f=
+amily: Arial, sans-serif; text-decoration: none!important; text-decoration:=
+ none; font-size: 12px">=20
+<div style=3D"margin: 0px; padding: 0px" class=3D"mktEditable" id=3D"symbol=
+SectionLink13f1e9189-87ee-4168-bc9f-aa08fea7bedc">
+<div>
+<a href=3D
+"http://me.taboola.com/OTg5LUdaQi0wNjUAAAGM3WTxiz4bKwkA2wITsdqs5r2lPRrJAGSb=
+d69678jDHj3LT-CfZzu8n2ZXIOWA-iOBA8eCCIU=3D" style=3D"color: #164891!importa=
+nt; font-family: Arial, sans-serif;" target=3D"_blank"
+><span color=3D"#164891">Help</span></a>
+</div>
+</div> </td>=20
+<td width=3D"50" align=3D"center">=20
+<div class=3D"mktoImg" id=3D"footer-logo5eb9335d-1673-4067-996e-db62befc974=
+0" style=3D"margin: 0px!important; padding: 0px!important" mktolockimgsize=
+=3D"false">
+<a href=3D
+"http://me.taboola.com/OTg5LUdaQi0wNjUAAAGM3WTxi7cd-1cNBX0bOSYmBnWdEx2VIasM=
+t6BWRw0MKTiKgjWFd2ipYuQaHsVxubYMoSR7SeA=3D" target=3D"_blank"
+><img src=3D"http://pages.taboola.com/rs/989-GZB-065/images/3112-footer-log=
+o[1].png" width=3D"30" height=3D"24" alt=3D"Taboola" style=3D"display:block=
+" /></a>
+</div> </td>=20
+<td align=3D"left" width=3D"135" nowrap=3D"" style=3D"padding: 0px; font-fa=
+mily: Arial, sans-serif; text-decoration: none!important; text-decoration: =
+none; font-size: 12px">=20
+<div style=3D"margin: 0px; padding: 0px" class=3D"mktEditable" id=3D"symbol=
+SectionLink234825253-a124-4de5-8e88-8f57d4e6a579">
+<div>
+<a href=3D
+"http://me.taboola.com/OTg5LUdaQi0wNjUAAAGM3WTxi5sNHRXJqh9Hc0jWQ8NZUm5ncuqL=
+UMdhIxNCLkRa6tw49idShSzcaf_CkGu2R9I5pQU=3D" style=3D"color: #164891!importa=
+nt; font-family: Arial, sans-serif;" target=3D"_blank"
+><span color=3D"#164891">Blog</span></a>
+</div>
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+</center> </td>=20
+</tr>=20
+<tr>=20
+<td align=3D"center" style=3D"padding-top: 10px; font-size: 12px; line-heig=
+ht: 13px; font-family: Arial, sans-serif; color: #555555">=20
+<div style=3D"margin: 0px; padding: 0px" class=3D"mktEditable" id=3D"footer=
+Section10b665add-af83-498b-bb4d-985005ecff7c">
+<div>
+=C2=A9 2023 Taboola, Inc.
+<br />Aldgate House, 2nd Floor, 33 Aldgate High Street, London EC3N 1DL, Un=
+ited Kingdom
+<br /> If you no longer wish to receive these emails you may=20
+<a href=3D"https://pages.taboola.com/UnsubscribePage.html?mkt_unsubscribe=
+=3D1&mkt_tok=3DOTg5LUdaQi0wNjUAAAGM3WTxi3ZZx37rAG9KhB9lohrf_yIyRq3N-iFjV_HV=
+sgw7loe7-N2aib0RcfDFIwIEAXhaxw72eQWKNPHvFHFc2ymNmxb4fL54oBAiVOQd0X5ksRsa" t=
+arget=3D"_blank" style=3D"text-decoration: underline; color: #615e5e;">unsu=
+bscribe</a> at any&nbsp;time.
+</div>
+</div> </td>=20
+</tr>=20
+<tr>=20
+<td align=3D"center" style=3D"padding-top: 10px; padding-bottom: 20px">=20
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0">=20
+<tbody>=20
+<tr>=20
+<td width=3D"34" align=3D"left">=20
+<div class=3D"mktoImg" id=3D"linkedin6ef3c111-7375-4a0a-97f0-cdec8ed94be8" =
+style=3D"margin: 0px!important; padding: 0px!important" mktolockimgsize=3D"=
+false">
+<a href=3D
+"http://me.taboola.com/OTg5LUdaQi0wNjUAAAGM3WTxi5om8QG9CueerXSwsBMPLBP0PCxc=
+f6uc9m9J-feNXTdUdsAqgsrZOoVyCi5fjxkcbPQ=3D" target=3D"_blank"
+><img src=3D"http://pages.taboola.com/rs/989-GZB-065/images/3112-linkedin%5=
+B1%5D.png" width=3D"31" height=3D"31" alt=3D"Linkedin" style=3D"display:blo=
+ck" /></a>
+</div> </td>=20
+<td width=3D"37" align=3D"center">=20
+<div class=3D"mktoImg" id=3D"twitterd415913c-e04f-4c38-8048-940d10c3a9e5" s=
+tyle=3D"margin: 0px!important; padding: 0px!important" mktolockimgsize=3D"f=
+alse">
+<a href=3D
+"http://me.taboola.com/OTg5LUdaQi0wNjUAAAGM3WTxiwV5lPnUsOqRRHxsuw-_yDqLEJSo=
+7lT1D3FxuBmnyUc-pi8KTbV_GlKPI0gdDw-e2qg=3D" target=3D"_blank"
+><img src=3D"http://pages.taboola.com/rs/989-GZB-065/images/3112-twitter%5B=
+1%5D.png" width=3D"31" height=3D"31" alt=3D"Twitter" style=3D"display:block=
+" /></a>
+</div> </td>=20
+<td width=3D"37" align=3D"center">=20
+<div class=3D"mktoImg" id=3D"facebooke5df4641-88a7-4956-ba74-1aa3cebe567c" =
+style=3D"margin: 0px!important; padding: 0px!important" mktolockimgsize=3D"=
+false">
+<a href=3D
+"http://me.taboola.com/OTg5LUdaQi0wNjUAAAGM3WTxixz6GrEo7J8vuaX-R0RiVvcpoDzB=
+tz3lQZVaCm4auNtEoNHM7_pyBG5OpN1rMkqFuDM=3D" target=3D"_blank"
+><img src=3D"http://pages.taboola.com/rs/989-GZB-065/images/3112-facebook%5=
+B1%5D.png" width=3D"31" height=3D"31" alt=3D"Facebook" style=3D"display:blo=
+ck" /></a>
+</div> </td>=20
+<td width=3D"34" align=3D"right">=20
+<div class=3D"mktoImg" id=3D"instagram5cc3dc1b-8623-4628-b475-e4aa484b7130"=
+ style=3D"margin: 0px!important; padding: 0px!important" mktolockimgsize=3D=
+"false">
+<a href=3D
+"http://me.taboola.com/OTg5LUdaQi0wNjUAAAGM3WTxi-okf6ZB4i25olNzxflQgAFQN9Z9=
+ZFEAmpP0HCGghs1xVv-sQNfZcfnSqUy8HXfkqHg=3D" target=3D"_blank"
+><img src=3D"http://pages.taboola.com/rs/989-GZB-065/images/3112-instagram%=
+5B1%5D.png" width=3D"31" height=3D"31" alt=3D"Instagram" style=3D"display:b=
+lock" /></a>
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<!-- Outer Table END --> </td>=20
+</tr>=20
+</tbody>=20
+</table> =20
+<a href=3D
+"http://me.taboola.com/OTg5LUdaQi0wNjUAAAGM3WTxixhOSTB8a8iZfjfKTyJLOXkmjV5O=
+E4PeHExzi1Qd4si2OFFKnct2Wo6Kp6vmPag_bsw=3D"
+></a>
+<img src=3D"http://me.taboola.com/trk?t=3D1&mid=3DOTg5LUdaQi0wNjU6MDoxMjg4M=
+zo2MjM1Mzo2ODM1Nzc6Mjc2MjY6OToxNzU4OTQ6MTA0NzQzNzk3OmNvbnRhY3RAZmlpZGV3Z2Fs=
+LmNvbQ%3D%3D" width=3D"1" height=3D"1" style=3D"display:none !important;" a=
+lt=3D"" />
+</body>
+</html>
+------=_Part_160933228_1766948587.1688969429392--

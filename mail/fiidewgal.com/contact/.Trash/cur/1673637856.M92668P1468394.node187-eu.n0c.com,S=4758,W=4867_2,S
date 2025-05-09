@@ -1,0 +1,109 @@
+Return-Path: <>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id MbFrBeCvwWPqZxYA3R2AvA
+	(envelope-from <>)
+	for <contact@fiidewgal.com>; Fri, 13 Jan 2023 20:24:16 +0100
+Received: by node187-eu.n0c.com (Postfix)
+	id 0CEBE40044CE; Fri, 13 Jan 2023 14:24:16 -0500 (EST)
+Date: Fri, 13 Jan 2023 14:24:16 -0500 (EST)
+From: MAILER-DAEMON@node187-eu.n0c.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: contact@fiidewgal.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="EBBC540049E2.1673637856/node187-eu.n0c.com"
+Message-Id: <20230113192416.0CEBE40044CE@node187-eu.n0c.com>
+
+This is a MIME-encapsulated message.
+
+--EBBC540049E2.1673637856/node187-eu.n0c.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host node187-eu.n0c.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<barryamadoudioulde179@gmail.com>: host
+    alt1.gmail-smtp-in.l.google.com[142.250.153.27] said: 452-4.2.2 The email
+    account that you tried to reach is over quota. Please direct 452-4.2.2 the
+    recipient to 452 4.2.2  https://support.google.com/mail/?p=OverQuotaTemp
+    h42-20020a0564020eaa00b00499c322d3b9si11801618eda.377 - gsmtp (in reply to
+    RCPT TO command)
+
+--EBBC540049E2.1673637856/node187-eu.n0c.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; node187-eu.n0c.com
+X-Postfix-Queue-ID: EBBC540049E2
+X-Postfix-Sender: rfc822; contact@fiidewgal.com
+Arrival-Date: Sun,  8 Jan 2023 14:06:05 -0500 (EST)
+
+Final-Recipient: rfc822; barryamadoudioulde179@gmail.com
+Original-Recipient: rfc822;barryamadoudioulde179@gmail.com
+Action: failed
+Status: 4.2.2
+Remote-MTA: dns; alt1.gmail-smtp-in.l.google.com
+Diagnostic-Code: smtp; 452-4.2.2 The email account that you tried to reach is
+    over quota. Please direct 452-4.2.2 the recipient to 452 4.2.2
+    https://support.google.com/mail/?p=OverQuotaTemp
+    h42-20020a0564020eaa00b00499c322d3b9si11801618eda.377 - gsmtp
+
+--EBBC540049E2.1673637856/node187-eu.n0c.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <contact@fiidewgal.com>
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Nqmkh449mz34SDmj
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="d/kdIPt7"
+X-N0C-MailScanner-eFa-Watermark: 1673809562.37503@9pVcVTn8NkOt4H+hATyb4Q
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: D012140049E2.A305E
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id D012140049E2
+	for <barryamadoudioulde179@gmail.com>; Sun,  8 Jan 2023 20:06:00 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com D012140049E2
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com D012140049E2
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1673204760;
+	bh=6PHbivczzFvIpF9RIUlYUGHit5ahqqu5Poqy0fxXno0=;
+	h=Date:Subject:From:To:From;
+	b=d/kdIPt7D2oYt2cQVFKQPkOp4IhMaFaFbCVorkWk3vszv1g9ZwRiF8Vy2z7nFfBKx
+	 1ZG10BHOgBsoqKYRGJOgY7ebcokJ1gF8CmYwifq+CT/MmmdBXx1fWkk9/1yW1l1QuS
+	 cmlFIsMeZ5DmbZxo3V6O7AFyDr4ljkFZf7IgjgUg=
+Message-ID: <f4ffb06f94556318a27052f3f73a172c@fiidewgal.com>
+Date: Sun, 08 Jan 2023 20:06:00 +0100
+Subject: =?utf-8?Q?R=C3=A9initialisation?= du mot de passe
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: barryamadoudioulde179@gmail.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<p>Bonjour&nbsp;Amadou dioulde Barry,</p><p>Votre code de v=C3=A9rification=
+ pour la r=C3=A9initialisation du mot de passe est : [[code]]<br></p><p><br=
+></p><p>Merci !<br></p><p>Ne r=C3=A9pondez pas</p>
+
+
+--EBBC540049E2.1673637856/node187-eu.n0c.com--

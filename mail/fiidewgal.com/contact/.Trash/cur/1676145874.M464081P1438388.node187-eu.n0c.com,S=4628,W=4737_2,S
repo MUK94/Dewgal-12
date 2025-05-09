@@ -1,0 +1,109 @@
+Return-Path: <>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id UMCXG9L052O08hUA3R2AvA
+	(envelope-from <>)
+	for <contact@fiidewgal.com>; Sat, 11 Feb 2023 21:04:34 +0100
+Received: by node187-eu.n0c.com (Postfix)
+	id 6EE68401AEF6; Sat, 11 Feb 2023 15:04:34 -0500 (EST)
+Date: Sat, 11 Feb 2023 15:04:34 -0500 (EST)
+From: MAILER-DAEMON@node187-eu.n0c.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: contact@fiidewgal.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="77B7A4019B24.1676145874/node187-eu.n0c.com"
+Content-Transfer-Encoding: 8bit
+Message-Id: <20230211200434.6EE68401AEF6@node187-eu.n0c.com>
+
+This is a MIME-encapsulated message.
+
+--77B7A4019B24.1676145874/node187-eu.n0c.com
+Content-Description: Notification
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+This is the mail system at host node187-eu.n0c.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<Fogosarre@gmail.com>: host gmail-smtp-in.l.google.com[64.233.167.27] said:
+    550-5.1.1 The email account that you tried to reach does not exist. Please
+    try 550-5.1.1 double-checking the recipient's email address for typos or
+    550-5.1.1 unnecessary spaces. Learn more at 550 5.1.1
+    https://support.google.com/mail/?p=NoSuchUser
+    d7-20020adff2c7000000b002c3e4f3e725si6829157wrp.859 - gsmtp (in reply to
+    RCPT TO command)
+
+--77B7A4019B24.1676145874/node187-eu.n0c.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; node187-eu.n0c.com
+X-Postfix-Queue-ID: 77B7A4019B24
+X-Postfix-Sender: rfc822; contact@fiidewgal.com
+Arrival-Date: Sat, 11 Feb 2023 15:04:33 -0500 (EST)
+
+Final-Recipient: rfc822; Fogosarre@gmail.com
+Original-Recipient: rfc822;Fogosarre@gmail.com
+Action: failed
+Status: 5.1.1
+Remote-MTA: dns; gmail-smtp-in.l.google.com
+Diagnostic-Code: smtp; 550-5.1.1 The email account that you tried to reach does
+    not exist. Please try 550-5.1.1 double-checking the recipient's email
+    address for typos or 550-5.1.1 unnecessary spaces. Learn more at 550 5.1.1
+    https://support.google.com/mail/?p=NoSuchUser
+    d7-20020adff2c7000000b002c3e4f3e725si6829157wrp.859 - gsmtp
+
+--77B7A4019B24.1676145874/node187-eu.n0c.com
+Content-Description: Undelivered Message Headers
+Content-Type: text/rfc822-headers
+Content-Transfer-Encoding: 8bit
+
+Return-Path: <contact@fiidewgal.com>
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4PDhQS5hDYz34SDmm
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="EpqjTCVL"
+X-N0C-MailScanner-eFa-Watermark: 1676750663.16784@pdr3HbyEyPVhttZvIcb5lQ
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 80F4E401AEF6.A7936
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from 127.0.0.1 ([10.123.0.37] [10.123.0.37])
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 80F4E401AEF6;
+	Sat, 11 Feb 2023 21:04:22 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 80F4E401AEF6
+Authentication-Results: node187-eu.n0c.com; dmarc=fail (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=fail smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 80F4E401AEF6
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1676145862;
+	bh=W6LhYP3Mw8ABZ56/at2CkiGzVOxr65LaIrzsDcUtwsU=;
+	h=Date:From:To:Subject:From;
+	b=EpqjTCVLcTRdsZH+0H2+kF4REL+rktIB23elPfr88TcfU6qvXW2ENRvmZGtiHT+Pl
+	 NYnGswg2ViS949RpnwYf4mCKOCWUofEovTu4RDJa/KoZVzvCZdatJ0oxR6zv/6OkBW
+	 TIPVJvzYeXSNP5/OCrEx/miZcT2apZs0CLkOCgNk=
+MIME-Version: 1.0
+Date: Sat, 11 Feb 2023 14:04:20 -0600
+From: contact@fiidewgal.com
+To: undisclosed-recipients:;
+Subject: POUR APPROUVER VOTRE INSCRIPTION
+Message-ID: <6d39e9a191433fe3b74efb70d8c85a52@fiidewgal.com>
+X-Sender: contact@fiidewgal.com
+Content-Type: multipart/mixed;
+ boundary="=_ddb26d7f8b119d520b2787f4166f736f"
+X-N0C-Node-IP: 185.221.182.45
+
+--77B7A4019B24.1676145874/node187-eu.n0c.com--

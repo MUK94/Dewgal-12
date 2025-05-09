@@ -1,0 +1,47 @@
+Return-Path: <contact@fiidewgal.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id NYWsM5tOt2PYMy8A3R2AvA
+	(envelope-from <contact@fiidewgal.com>)
+	for <contact@fiidewgal.com>; Thu, 05 Jan 2023 23:26:35 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Np1KR5BpwzNJkd
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="sFADJPI7"
+X-N0C-MailScanner-eFa-Watermark: 1673562393.26872@IMrlEwio4PouoJkSkft0Ow
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 2CCEA4004A02.A9485
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 2CCEA4004A02
+	for <contact@fiidewgal.com>; Thu,  5 Jan 2023 23:26:32 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 2CCEA4004A02
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 2CCEA4004A02
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1672957592;
+	bh=5TNsUyaqR9ZJ31wmzj9S4xdsomUaN8o3AVMGCF7eE3I=;
+	h=Date:Subject:From:To:From;
+	b=sFADJPI7K7oDqaAiMjoE+u/T4NEdwofkcNZ1At+ZcY8BGixL4ywkYowLXHcX6zhIV
+	 6/edITGuzcwUOnhysX5BeyieF6Yy9LMapquir8KkTS1ks/V+DWGSGRHt8K/APeqjns
+	 m29mKbgn2l3fjVzC1juy0/P6O0t2P52KfHqzUmDQ=
+Message-ID: <6f11c4e4a3ad44b7435f45edd20a8cd1@fiidewgal.com>
+Date: Thu, 05 Jan 2023 23:26:32 +0100
+Subject: Inscription des membres
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: contact@fiidewgal.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<p>F=C3=A9licitations !<br></p><p>Vous avez un nouveau membre enregistr=
+=C3=A9 dans votre syst=C3=A8me.</p><p>Nom du membre : Camara Sekouba</p><p>=
+L'e-mail est : saikououmar67.e@gmail.com</p><p>Profil de membre : https://f=
+iidewgal.com/admin/members/2162</p><p>Merci,</p><p>Ne r=C3=A9pondez pas</p>
+

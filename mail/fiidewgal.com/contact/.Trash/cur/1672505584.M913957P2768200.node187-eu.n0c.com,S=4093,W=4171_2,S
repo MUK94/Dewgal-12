@@ -1,0 +1,78 @@
+Return-Path: <bsalimatou349@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id FXZmNvBosGNIPSoA3R2AvA
+	(envelope-from <bsalimatou349@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 31 Dec 2022 17:53:04 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Nkp8w5g7qz1tW0
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="b6ECZLYK"
+X-N0C-MailScanner-eFa-Watermark: 1673110382.63473@MJ26jKO65+pc70NzkVl8Jg
+X-N0C-MailScanner-eFa-From: bsalimatou349@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 941C64002DDC.AF5C3
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-lj1-f170.google.com ([209.85.208.170] [209.85.208.170])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 941C64002DDC
+	for <contact@fiidewgal.com>; Sat, 31 Dec 2022 17:52:29 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 941C64002DDC
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 941C64002DDC
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=b6ECZLYK
+Received: by mail-lj1-f170.google.com with SMTP id g14so25087350ljh.10
+        for <contact@fiidewgal.com>; Sat, 31 Dec 2022 08:52:29 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=yYp0B1kbaxAQmxhuI+SycAFaJcZfaKyMkamitJoD9B8=;
+        b=b6ECZLYKWg/scHIGyBmtXJKdqQa+uNGWcL2ktITy52gmeImwXr0eHdFGErXv7xOkqh
+         +SxamVFwG55Gj8n1ZYFsavrRvmN31YrpVgYTip6VTzjzl/3dC+gXDCgFutDTRZmOBkQl
+         jnku6bWmyNyw8jpeBua+7nCYFnn8oUDx/LE2ocejWU1lQSoDjxoLO4ZzeSHu4ZaZSsUX
+         noAvL/xCqE4WQTAA2+4gVu0zqifD7L3495Z5PDmItcw66TPNslZRXkh0iGDGxd4LX2iL
+         INFtabB3kABaoVh47jhM4JvV+rOMA2fxpTA3bFHHUIW8rce5wWsEhYFc5Zh83uh+KuUG
+         4lsQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=yYp0B1kbaxAQmxhuI+SycAFaJcZfaKyMkamitJoD9B8=;
+        b=nYKSZ0PxYoaCQ/j6F806GMwhtyE5nHEFgbQxvmCyqBgJ9t17AXyDbT+6d3yK/Pa5G4
+         PFeDzAX5my4+2R/TgFqHLAjGsNOi1rKE6HzZQ5tpDV641mgPAs/dZUHjtkgWA0CFzNla
+         9uSbeymhZ7RaRr/igCGufp8OQEqmt6EtJTQAAV+vreAyrnZYu/2g8bt4bTg28yuMi+ty
+         jwjQ1Q0kSnwIgQNuIdFPT8qwizOOGuJGxbKM0fxQVG7oKE4ZQU1nFj3VxzMOPc1nfLy5
+         1B8yb5AIAcZvVHIKDm4pOniyQC2zSQzCQ4wnMkcntcVpSd+lUY4HRT/LJZRxLyz+0Xx3
+         JSmQ==
+X-Gm-Message-State: AFqh2ko8g62pNmL1ApqVHO/kZ61mu74R4Ram1rSu8jq/qaaluII0wA4N
+	IHJwgGF56u2giV5Vzxq6O4dZJY/4MWq8PLPvDj+ycDtK
+X-Google-Smtp-Source: AMrXdXuWUC++MRLS2uubLb39EnMdO0+chPmFQzUsz35qbJuVUYrEY47N5b/W++J/As/CG99cHLX20ucPM2RooYqm90g=
+X-Received: by 2002:a05:651c:95:b0:27f:b34c:13bc with SMTP id
+ 21-20020a05651c009500b0027fb34c13bcmr1544583ljq.437.1672505548795; Sat, 31
+ Dec 2022 08:52:28 -0800 (PST)
+MIME-Version: 1.0
+From: Salimatou Barry <bsalimatou349@gmail.com>
+Date: Sat, 31 Dec 2022 16:52:16 +0000
+Message-ID: <CADLhJVVP-jtNRXGHUy-ucsENTaL_wGVB1sTR57xE-BzJ6YgsBw@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000001ef27c05f1228b23"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000001ef27c05f1228b23
+Content-Type: text/plain; charset="UTF-8"
+
+Bonsoir
+
+--0000000000001ef27c05f1228b23
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Bonsoir=C2=A0</div>
+
+--0000000000001ef27c05f1228b23--

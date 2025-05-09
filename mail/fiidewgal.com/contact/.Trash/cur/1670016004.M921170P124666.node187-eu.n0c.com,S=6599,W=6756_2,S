@@ -1,0 +1,157 @@
+Return-Path: <tech@support.planethoster.info>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id SQ3JNgRsimP65gEA3R2AvA
+	(envelope-from <tech@support.planethoster.info>)
+	for <contact@fiidewgal.com>; Fri, 02 Dec 2022 22:20:04 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NP5SN5SLKz34nwbc
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=support.planethoster.info header.i=@support.planethoster.info header.b="PRcrmzaU"
+X-N0C-MailScanner-eFa-Watermark: 1670620798.63485@cci96ql0fRHvPFNiLEcHOg
+X-N0C-MailScanner-eFa-From: tech@support.planethoster.info
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: B030E401AEF3.AC8A8
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from support-kayako.planethoster.net ([199.188.220.202] [199.188.220.202])
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id B030E401AEF3
+	for <contact@fiidewgal.com>; Fri,  2 Dec 2022 22:19:57 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com B030E401AEF3
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=support.planethoster.info
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=support.planethoster.info
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com B030E401AEF3
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (1024-bit key; unprotected) header.d=support.planethoster.info header.i=@support.planethoster.info header.a=rsa-sha256 header.s=default header.b=PRcrmzaU
+Received: by support-kayako.planethoster.net (Postfix, from userid 1000)
+	id 28F851001FDDA; Fri,  2 Dec 2022 16:19:56 -0500 (EST)
+DKIM-Filter: OpenDKIM Filter v2.11.0 support-kayako.planethoster.net 28F851001FDDA
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=support.planethoster.info; s=default; t=1670015996;
+	bh=cC2RdqOhKRfzxyybqRZuA5MBbGMmvSLBCDSFMDm8vRM=;
+	h=To:Subject:Date:From:Reply-To:References:From;
+	b=PRcrmzaUu7BgJjn2c/WfpbpC4C6yQBGMUaQRFER+MYvvJ/S5FsoWlb3dQgXVq1LZw
+	 vd9UB6GPCswJKQ8Nd+XBH0HIIuPTztq6eIPQRR95hehEFIzxECTJD9g9UJ/YQ9r7Nq
+	 CwksTlSLbY8hpOiiJW72xgCZ27ZsDVoshV/jXPFY=
+To: contact@fiidewgal.com
+Subject: [#PTI-524-98841]: Vous avez une nouvelle demande =?utf-8?Q?d=27in?=  =?utf-8?Q?t=C3=A9r=C3=AAt?=
+Message-ID: <c617de199cfb37b030aa781a6b05a664@swift.generated>
+Date: Fri, 02 Dec 2022 22:19:56 +0100
+From: PlanetHoster <tech@support.planethoster.info>
+Reply-To: tech@support.planethoster.info
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_v4_1670015996_1747d73b08d9777ff8e993090853fe65_=_"
+X-Priority: 1 (Highest)
+References: <f61755551519e20d9c51e97219e22b01@fiidewgal.com>
+X-N0C-Node-IP: 185.221.182.45
+
+
+--_=_swift_v4_1670015996_1747d73b08d9777ff8e993090853fe65_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Ne r=C3=A9pondez pas,
+
+Merci pour votre confiance. Ceci est une r=C3=
+=A9ponse automatique afin de confirmer la r=C3=A9ception de votre message. =
+Nous traiterons votre billet dans les meilleurs d=C3=A9lais. Ci-dessous, vo=
+us trouverez les d=C3=A9tails de votre requ=C3=AAte. Pour r=C3=A9pondre - S=
+i vous =C3=AAtes membre de PlanetHoster, svp connectez-vous =C3=A0 l'interf=
+ace de support de PlanetHoster =C3=A0 l'adresse suivante: https://my.planet=
+hoster.com/v2/my-support/tickets - Si vous n'=C3=AAtes pas encore client, s=
+implement r=C3=A9pondre au courriel en gardant le num=C3=A9ro du billet dan=
+s l'objet.
+
+=09ID du ticket : PTI-524-98841
+=09Sujet : Vous avez une =
+nouvelle demande d'int=C3=A9r=C3=AAt
+=09Service : Support Technique - FR=
+
+=09Type=C2=A0: Issue
+=09=C3=89tat=C2=A0: Open
+=09Priorit=C3=A9 : Nor=
+mal
+
+Vous pouvez v=C3=A9rifier l'=C3=A9tat de ce ticket ou le mettre =
+=C3=A0 jour en ligne sur : https://my.planethoster.com/v2/my-support/ticket=
+/652180
+
+
+
+Cordialement,
+PlanetHoster
+
+
+--
+
+-----------=
+-------------------------------------------
+Helpdesk : https://my.planeth=
+oster.com/v2/my-support/ticket/652180
+
+--_=_swift_v4_1670015996_1747d73b08d9777ff8e993090853fe65_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<font face=3D"Verdana, Arial, Helvetica" size=3D"2">Ne r=C3=A9pondez pas,<b=
+r />
+<br />
+Merci pour votre confiance. Ceci est une r=C3=A9ponse autom=
+atique afin de confirmer la r=C3=A9ception de votre message. Nous traiteron=
+s votre billet dans les meilleurs d=C3=A9lais. Ci-dessous, vous trouverez l=
+es d=C3=A9tails de votre requ=C3=AAte. Pour r=C3=A9pondre - Si vous =C3=
+=AAtes membre de PlanetHoster, svp connectez-vous =C3=A0 l'interface de sup=
+port de PlanetHoster =C3=A0 l'adresse suivante: <a href=3D"https://my.plane=
+thoster.com/v2/my-support/tickets" target=3D"_blank">https://my.planethoste=
+r.com/v2/my-support/tickets</a> - Si vous n'=C3=AAtes pas encore client, si=
+mplement r=C3=A9pondre au courriel en gardant le num=C3=A9ro du billet dans=
+ l'objet.<br />
+<br />
+&nbsp;&nbsp;&nbsp;<b>ID du ticket : </b>PTI-524-=
+98841<br />
+&nbsp;&nbsp;&nbsp;<b>Sujet : </b>Vous avez une nouvelle deman=
+de d'int=C3=A9r=C3=AAt<br />
+&nbsp;&nbsp;&nbsp;<b>Service : </b>Support T=
+echnique - FR<br />
+&nbsp;&nbsp;&nbsp;<b>Type=C2=A0: </b>Issue<br />
+&n=
+bsp;&nbsp;&nbsp;<b>=C3=89tat=C2=A0: </b>Open<br />
+&nbsp;&nbsp;&nbsp;<b>P=
+riorit=C3=A9 : </b>Normal<br />
+<br />
+Vous pouvez v=C3=A9rifier l'=
+=C3=A9tat de ce ticket ou le mettre =C3=A0 jour en ligne sur : <a href=3D"h=
+ttps://my.planethoster.com/v2/my-support/ticket/652180" target=3D"_blank">h=
+ttps://my.planethoster.com/v2/my-support/ticket/652180</a><br />
+<br />=
+
+Cordialement,<br />
+<br />
+PlanetHoster<br /><br /><br />
+--
+<br=
+ />
+Ticket summary:
+<hr style=3D"margin-bottom: 6px; height: 1px; BORDE=
+R: none; color: #cfcfcf; background-color: #cfcfcf;" />
+<b>Ne r=C3=A9pond=
+ez pas: </b><br><br><font face=3D"Verdana, Arial, Helvetica" color=3D"#222"=
+ size=3D"2"><p>Bonjour M. B,</p><p>Aissatou Diallo a manifest=C3=A9 son int=
+=C3=A9r=C3=AAt pour vous.</p><p>Veuillez contacter l'=C3=A9quipe administra=
+tive si vous avez d'autres questions.</p><p>Merci,</p><p>Ne r=C3=A9pondez p=
+as</p><br />
+<br />
+</font>
+<br />
+<HR style=3D"margin-bottom: 6px;=
+ height: 1px; BORDER: none; color: #cfcfcf; background-color: #cfcfcf;" />=
+
+Helpdesk : <a href=3D"https://my.planethoster.com/v2/my-support/ticket/6=
+52180" target=3D"_blank">https://my.planethoster.com/v2/my-support/ticket/6=
+52180</a><br />
+</font>
+
+--_=_swift_v4_1670015996_1747d73b08d9777ff8e993090853fe65_=_--
+

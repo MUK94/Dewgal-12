@@ -1,0 +1,44 @@
+Return-Path: <contact@fiidewgal.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id u/Q2L2AKvGMU7h0A3R2AvA
+	(envelope-from <contact@fiidewgal.com>)
+	for <contact@fiidewgal.com>; Mon, 09 Jan 2023 13:36:48 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NrD344gSBzmB0G8
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="y8AC1opU"
+X-N0C-MailScanner-eFa-Watermark: 1673872601.08964@MaApSJ+xbFHJrGYlViFQbg
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: D03DC4002DBA.A9485
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id D03DC4002DBA
+	for <contact@fiidewgal.com>; Mon,  9 Jan 2023 13:36:38 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com D03DC4002DBA
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com D03DC4002DBA
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1673267798;
+	bh=Lu1Fr8EArh7EkQbFym5wiwgHJ55xCQV47DJCp1+Wj0M=;
+	h=Date:Subject:From:To:From;
+	b=y8AC1opU6LY6PVr96+zClL6HRi+Ks+DD4ZpnMz3WS8b3GX+xwAQSOJlUM4sZw9aAF
+	 0ShiN/c7YcYB7Rh//jWK8IXAa9230chzjb+Itya5XGdXRgq70L2OTbPU06FhBtM/1p
+	 Rzm1BTlaTqV89NtgI+CmhDb0hg9JeaYWwjxLf2rE=
+Message-ID: <e37533754e918ae93197fd5bf79f1945@fiidewgal.com>
+Date: Mon, 09 Jan 2023 13:36:38 +0100
+Subject: Mariage
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: contact@fiidewgal.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+Je veux marier
+

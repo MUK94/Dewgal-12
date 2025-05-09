@@ -1,0 +1,82 @@
+Return-Path: <asow00731@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id bV6gI+hsP2SXvy8A3R2AvA
+	(envelope-from <asow00731@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 19 Apr 2023 06:24:08 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Q1SNQ33hhz34SPwf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="aWfBmkjc"
+X-N0C-MailScanner-eFa-Watermark: 1682482919.84292@NwwrDzavOerqFeRBPrwMhw
+X-N0C-MailScanner-eFa-From: asow00731@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: s
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 9F5744020D4E.AB190
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-oo1-f45.google.com ([209.85.161.45] [209.85.161.45])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 9F5744020D4E
+	for <contact@fiidewgal.com>; Wed, 19 Apr 2023 06:19:30 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 9F5744020D4E
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 9F5744020D4E
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=aWfBmkjc
+Received: by mail-oo1-f45.google.com with SMTP id 006d021491bc7-545d82e1a1bso501469eaf.2
+        for <contact@fiidewgal.com>; Tue, 18 Apr 2023 21:19:29 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1681877968; x=1684469968;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=4wb5slHWK+ob7tUOG2sqA58m1vvY0OMAtrluafxqyTk=;
+        b=aWfBmkjcLx1glY1UfzpyRmJTSSVD5O6QRVEsi0ixWH25NRXgiq152QefnI2ojto6vl
+         p8s7IYgzmQ1bIrRw2gBwQtaWP2Fcj8S0zz9r/NP6HFMGCUDpCFLSBse6v9g16VhzHGm+
+         aQePzQp7veqAePJFTpn703MBsYW/b1rh0y8RUu6PNemHgfWHF4PweONBpVn0X9gmRLko
+         ltOTnwyUuAqWY+Nt2BkVR/UD2nFi+/WYomp0QGv3qz/KlSLT24KtFfjNnFoWNN+K9S1N
+         0K6Po8kzwtEr6WLDRAccBm0ZARx9waFyDdoTKDc4idxJ52x8Ee+oVDEWpxHDcgcHhWor
+         AR0A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1681877968; x=1684469968;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=4wb5slHWK+ob7tUOG2sqA58m1vvY0OMAtrluafxqyTk=;
+        b=Y1Dl9JCmNNbpRb/VNikIQZf/ZIUGmeFX13yNcxLwPOUBLQQefUDOOLmcQLCLyWUdGH
+         m/igEVDqwF4m8JBXYg/tYrWcEJKeqKsIDlDZZ/8yHj5RPCu4FtJSA/qVGJ7FH2BhPr41
+         9vCsONO0QDCqfwcBLAq7bC2XdPIPwWbfeZvApRl8rfaVNsiRcRvgIRGOlrtyAOe5Q5Z5
+         QNZ8IXI5Oe/TE/EqwBhAMbg/ulEFJukgNdnYiWVTBnJTq088wDoA+3A41vKSDhKpuWbJ
+         WaJFy8uQn66C3xt6wxnqUaZCbLscE++9VDlKjIgbGO0wasoNYvYJ0DkznFBeKfaPXyK8
+         2Aiw==
+X-Gm-Message-State: AAQBX9ehT0kFDzAXVWbhRyC2gS8KmSkcoT9oY42L9nh7v5Fi6lVRGrKa
+	MsVeTEkChJcBVz/DTJ87cUqWQwfx4DsXgfxjb29vOHlF
+X-Google-Smtp-Source: AKy350Yxc7d7Gfueof9EMa/X22FOO6y+2Nj7MYyO2EBSRtu66YMHwk806DUSIu89Q8BVtUd4QCDAkEsBMUTxEmNxsSA=
+X-Received: by 2002:a05:6808:1822:b0:38b:8d27:ff52 with SMTP id
+ bh34-20020a056808182200b0038b8d27ff52mr2444991oib.53.1681877967954; Tue, 18
+ Apr 2023 21:19:27 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 2002:a05:6358:342a:b0:115:8022:5f8a with HTTP; Tue, 18 Apr 2023
+ 21:19:27 -0700 (PDT)
+Received: by 2002:a05:6358:342a:b0:115:8022:5f8a with HTTP; Tue, 18 Apr 2023
+ 21:19:27 -0700 (PDT)
+From: Alpha Sow <asow00731@gmail.com>
+Date: Tue, 18 Apr 2023 21:19:27 -0700
+Message-ID: <CAOX761HAY5qEXyjhz4CMHLu6ip87-c7U=9oXS4YFKUmezM8nEw@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000d5e4f705f9a8ba2d"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000d5e4f705f9a8ba2d
+Content-Type: text/plain; charset="UTF-8"
+
+asow00731@gmail.com
+
+--000000000000d5e4f705f9a8ba2d
+Content-Type: text/html; charset="UTF-8"
+
+<p dir="ltr"><a href="mailto:asow00731@gmail.com">asow00731@gmail.com</a> </p>
+
+--000000000000d5e4f705f9a8ba2d--

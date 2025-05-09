@@ -1,0 +1,104 @@
+Return-Path: <>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id sAZ5AmJzyGMF+BgA3R2AvA
+	(envelope-from <>)
+	for <contact@fiidewgal.com>; Wed, 18 Jan 2023 23:32:02 +0100
+Received: by node187-eu.n0c.com (Postfix)
+	id 0647D40049E1; Wed, 18 Jan 2023 17:32:02 -0500 (EST)
+Date: Wed, 18 Jan 2023 17:32:02 -0500 (EST)
+From: MAILER-DAEMON@node187-eu.n0c.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: contact@fiidewgal.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="5BA0040049E0.1674081122/node187-eu.n0c.com"
+Message-Id: <20230118223202.0647D40049E1@node187-eu.n0c.com>
+
+This is a MIME-encapsulated message.
+
+--5BA0040049E0.1674081122/node187-eu.n0c.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host node187-eu.n0c.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<abdouldiallo27@yahoo.com>: host mta5.am0.yahoodns.net[98.136.96.91] said: 554
+    30 Sorry, your message to abdouldiallo27@yahoo.com cannot be delivered.
+    This mailbox is disabled (554.30). (in reply to end of DATA command)
+
+--5BA0040049E0.1674081122/node187-eu.n0c.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; node187-eu.n0c.com
+X-Postfix-Queue-ID: 5BA0040049E0
+X-Postfix-Sender: rfc822; contact@fiidewgal.com
+Arrival-Date: Wed, 18 Jan 2023 17:32:00 -0500 (EST)
+
+Final-Recipient: rfc822; abdouldiallo27@yahoo.com
+Original-Recipient: rfc822;abdouldiallo27@yahoo.com
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; mta5.am0.yahoodns.net
+Diagnostic-Code: smtp; 554 30 Sorry, your message to abdouldiallo27@yahoo.com
+    cannot be delivered. This mailbox is disabled (554.30).
+
+--5BA0040049E0.1674081122/node187-eu.n0c.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <contact@fiidewgal.com>
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Ny0qh1zfZz34SDnK
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="T2dW+kzl"
+X-N0C-MailScanner-eFa-Watermark: 1674685905.81677@M+OnkJu6qVDQd9UUwqAMfw
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 1678240049E0.A32E6
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 1678240049E0
+	for <abdouldiallo27@yahoo.com>; Wed, 18 Jan 2023 23:31:45 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 1678240049E0
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 1678240049E0
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1674081105;
+	bh=Gvp6YEY2CyKhM7UcVjlo64515HW52nwpZDUIHeg9NvM=;
+	h=Date:Subject:From:To:From;
+	b=T2dW+kzlCZmTPAbdDFksNA0DdZhPoC5fc4NuwCni123DuYmwe5VCSFPEabdlptOM2
+	 a/7npbaR6TlN3ti2USch9Hb9+QMwlwFpld6YE8dktMWkzPQLgwGKCU1Dj9Ag2fau19
+	 Tlej0yZGnxqbjK+q5Z5c4K6hUBHeXqKx1imB59H4=
+Message-ID: <22e6925bbb44efff167c24786a4a2465@fiidewgal.com>
+Date: Wed, 18 Jan 2023 23:31:44 +0100
+Subject: =?utf-8?Q?R=C3=A9initialisation?= du mot de passe
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: abdouldiallo27@yahoo.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<p>Bonjour&nbsp;zahra diallo,</p><p>Votre code de v=C3=A9rification pour la=
+ r=C3=A9initialisation du mot de passe est : [[code]]<br></p><p><br></p><p>=
+Merci !<br></p><p>Ne r=C3=A9pondez pas</p>
+
+
+--5BA0040049E0.1674081122/node187-eu.n0c.com--

@@ -1,0 +1,79 @@
+Return-Path: <cellousoyahdiallo@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id IBcpE9rC6mNaFjIA3R2AvA
+	(envelope-from <cellousoyahdiallo@gmail.com>)
+	for <contact@fiidewgal.com>; Tue, 14 Feb 2023 00:08:10 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4PG0PQ1WQRz34SDmj
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="jQi92nci"
+X-N0C-MailScanner-eFa-Watermark: 1676934480.75964@bwGUWfgKAaAvL3JBovmNXQ
+X-N0C-MailScanner-eFa-From: cellousoyahdiallo@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 8A126401AEF6.A9ECF
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-lf1-f47.google.com ([209.85.167.47] [209.85.167.47])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 8A126401AEF6
+	for <contact@fiidewgal.com>; Tue, 14 Feb 2023 00:07:27 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 8A126401AEF6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 8A126401AEF6
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=jQi92nci
+Received: by mail-lf1-f47.google.com with SMTP id br9so21106992lfb.4
+        for <contact@fiidewgal.com>; Mon, 13 Feb 2023 15:07:27 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=cuwpbRIbBD8anFf2gbTTpircnqnxIR1CpplgDZmYrOQ=;
+        b=jQi92ncieCO8YwhJmUKoLzsKfJAyxL2htoYDBLSrVc4+W8Oc/OuDSfp8RSDpy9olmi
+         rE2Q2YZi+6gHxWjADxdd8mVTndw6GsXBInquYk1OhO+bJIMsSvS9awzjzLQrhKlci11c
+         bY6+daqILc70xBX6sesYZg+PNXU79FX1VTBVC8rDp++X3kRJjCyFB3l65hE+qprXKi/5
+         3cOOTS7Ccm07eIcJuUBD40ICg/HBMxmByXVzKuiO9SbDK+PxFTqt77q+Ff+KwWzBW6s0
+         CSLU96pn9YVxJn7JBbMJ6zgvvhtTfB6IAFUaqArt8YTSPOquyyEUBQgLKt6RoZEkT4kF
+         GbxA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=cuwpbRIbBD8anFf2gbTTpircnqnxIR1CpplgDZmYrOQ=;
+        b=H8IvhCo3mSDiVINvhcBNz5TALvXwwxRq104TqWJkP+K+gwtFPkSCvfm1+NZqf5Hgsb
+         YxMzHPfbQzPhhfjon8mTyQ2KAdQ6VokHaqXOD1xjLuOyFjjBAiIG+5bD4frqgQ5q1+Wh
+         Mx7V44T3vB8l674bmsAFNhJcRms7GJlD6P0VWOal3TXZkxQodV/pzYJhKh3cJ3zFhZjq
+         Rw3cqUno29K2q0UZfo8rLEVImV7j9s86sii7s9RXJEI39ZJc9f4dLHzT6d5oPw/lp3XU
+         50k4268MDJBJdTM/VPisNxlfLGmzpld6dQM/pbVWWq2iX5koqDlZFdgDCXx7ECtjJZsC
+         /Krg==
+X-Gm-Message-State: AO0yUKWT42BX1M8/bQAkw8uXgyh8FP+7LSg3gB0Q8mfSOLJQ/jqX9pqD
+	a8P98LSHyJqwPwyfsG1s2691HnSbSQn0oO+y9M/9MdHe
+X-Google-Smtp-Source: AK7set+OFQHlAYfUVl29VHDeMfjxYUKlhLjFzf89dfAMwxVUsHn5msMrqd84K7Zpk43FVJBeE+SdQ8Lh8slh0+Gh410=
+X-Received: by 2002:ac2:5313:0:b0:4db:3169:b0e with SMTP id
+ c19-20020ac25313000000b004db31690b0emr1399033lfh.252.1676329646283; Mon, 13
+ Feb 2023 15:07:26 -0800 (PST)
+MIME-Version: 1.0
+From: Cellou soyah Diallo <cellousoyahdiallo@gmail.com>
+Date: Tue, 14 Feb 2023 00:07:14 +0100
+Message-ID: <CAD0vfR46-yb0qqq5czEc5=V_+=tDQ_q-HS3PU11JOYkuqDvPRQ@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000017df3905f49ce97d"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000017df3905f49ce97d
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour =C3=A0 tous et toutes
+
+--00000000000017df3905f49ce97d
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Bonjour =C3=A0 tous et toutes=C2=A0</div>
+
+--00000000000017df3905f49ce97d--

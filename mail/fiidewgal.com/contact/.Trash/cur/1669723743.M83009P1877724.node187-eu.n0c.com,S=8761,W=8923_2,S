@@ -1,0 +1,162 @@
+Return-Path: <>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id SHHiBF/2hWPcphwA3R2AvA
+	(envelope-from <>)
+	for <contact@fiidewgal.com>; Tue, 29 Nov 2022 13:09:03 +0100
+Received: by node187-eu.n0c.com (Postfix)
+	id 0E60840664D2; Tue, 29 Nov 2022 07:09:03 -0500 (EST)
+Date: Tue, 29 Nov 2022 07:09:03 -0500 (EST)
+From: MAILER-DAEMON@node187-eu.n0c.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: contact@fiidewgal.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="B9F9940664D7.1669723743/node187-eu.n0c.com"
+Message-Id: <20221129120903.0E60840664D2@node187-eu.n0c.com>
+
+This is a MIME-encapsulated message.
+
+--B9F9940664D7.1669723743/node187-eu.n0c.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host node187-eu.n0c.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<mamadousadio1000@gmail.com>: host gmail-smtp-in.l.google.com[64.233.166.26]
+    said: 550-5.1.1 The email account that you tried to reach does not exist.
+    Please try 550-5.1.1 double-checking the recipient's email address for
+    typos or 550-5.1.1 unnecessary spaces. Learn more at 550 5.1.1
+    https://support.google.com/mail/?p=NoSuchUser
+    p14-20020a5d59ae000000b0022f2f571294si11417687wrr.411 - gsmtp (in reply to
+    RCPT TO command)
+
+--B9F9940664D7.1669723743/node187-eu.n0c.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; node187-eu.n0c.com
+X-Postfix-Queue-ID: B9F9940664D7
+X-Postfix-Sender: rfc822; contact@fiidewgal.com
+Arrival-Date: Tue, 29 Nov 2022 07:09:02 -0500 (EST)
+
+Final-Recipient: rfc822; mamadousadio1000@gmail.com
+Original-Recipient: rfc822;mamadousadio1000@gmail.com
+Action: failed
+Status: 5.1.1
+Remote-MTA: dns; gmail-smtp-in.l.google.com
+Diagnostic-Code: smtp; 550-5.1.1 The email account that you tried to reach does
+    not exist. Please try 550-5.1.1 double-checking the recipient's email
+    address for typos or 550-5.1.1 unnecessary spaces. Learn more at 550 5.1.1
+    https://support.google.com/mail/?p=NoSuchUser
+    p14-20020a5d59ae000000b0022f2f571294si11417687wrr.411 - gsmtp
+
+--B9F9940664D7.1669723743/node187-eu.n0c.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <contact@fiidewgal.com>
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NM1My4gPQz34SDnJ
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="YFo1paU1"
+X-N0C-MailScanner-eFa-Watermark: 1670328538.61415@KnaisBogPUy0DpU1aopYcw
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 1967A40664D2.AB3A8
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 1967A40664D2
+	for <mamadousadio1000@gmail.com>; Tue, 29 Nov 2022 13:08:56 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 1967A40664D2
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 1967A40664D2
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1669723736;
+	bh=uU/wxOF7oxTF1PDZNal06enAG1J6MS3UKQTUfFkwpl8=;
+	h=Date:Subject:From:To:From;
+	b=YFo1paU1VH7zPL6P7vql5SOwt9CAXD8be8BqEwItSqsyO+dMP3rFFsup7jcIqpgly
+	 ag0CrptvOODGHW2MHF113JG45vApdXo3hK9/DpZhaxHeSnzqcEATdEpKQl/qmES7yE
+	 5GqEkT/1bTXHxLOYPF+UR5JFXQ8xR+V5hb9M8TP8=
+Message-ID: <31719cca0abba7def5de318a0a75e50e@fiidewgal.com>
+Date: Tue, 29 Nov 2022 13:08:55 +0100
+Subject: Informations
+From: contact@fiidewgal.com
+To: mamadousadio1000@gmail.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<p class=3D"p1" style=3D"margin-right: 0px; margin-bottom: 0px; margin-left=
+: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-=
+stretch: normal; line-height: normal; font-family: &quot;Helvetica Neue&quo=
+t;;">Salam Alaykoum , On djarama Fulbhe',&nbsp;</p><p class=3D"p1" style=3D=
+"margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-nume=
+ric: normal; font-variant-east-asian: normal; font-stretch: normal; line-he=
+ight: normal; font-family: &quot;Helvetica Neue&quot;;">Nous sommes tr=
+=C3=A8s heureux de vous accueillir sur la plateforme Fii Dewgal .</p><p cla=
+ss=3D"p1" style=3D"margin-right: 0px; margin-bottom: 0px; margin-left: 0px;=
+ font-variant-numeric: normal; font-variant-east-asian: normal; font-stretc=
+h: normal; line-height: normal; font-family: &quot;Helvetica Neue&quot;;">N=
+ous vous informons qu'il est n=C3=A9cessaire de mettre un numero de telepho=
+ne pour vous&nbsp;</p><p class=3D"p1" style=3D"margin-right: 0px; margin-bo=
+ttom: 0px; margin-left: 0px; font-variant-numeric: normal; font-variant-eas=
+t-asian: normal; font-stretch: normal; line-height: normal; font-family: &q=
+uot;Helvetica Neue&quot;;">informer si vous avez une demande d'inter=C3=
+=AAt avec rendez-vous ; le numero de telephone</p><p class=3D"p1" style=3D"=
+margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-numer=
+ic: normal; font-variant-east-asian: normal; font-stretch: normal; line-hei=
+ght: normal; font-family: &quot;Helvetica Neue&quot;;">et vos informations =
+restent confidentiel.Pour assurer la bonne gestion de la plateforme</p><p c=
+lass=3D"p1" style=3D"margin-right: 0px; margin-bottom: 0px; margin-left: 0p=
+x; font-variant-numeric: normal; font-variant-east-asian: normal; font-stre=
+tch: normal; line-height: normal; font-family: &quot;Helvetica Neue&quot;;"=
+>un rendez-vous chat est cr=C3=A9=C3=A9 pour savoir d'avantage , cliquez su=
+r le lien de la vid=C3=A9o</p><p class=3D"p1" style=3D"margin-right: 0px; m=
+argin-bottom: 0px; margin-left: 0px; font-variant-numeric: normal; font-var=
+iant-east-asian: normal; font-stretch: normal; line-height: normal; font-fa=
+mily: &quot;Helvetica Neue&quot;;">https://www.youtube.com/watch?v=3D6ItD_U=
+n8oV8&amp;t=3D117s. Nous vous prions =C3=A9galement</p><p class=3D"p1" styl=
+e=3D"margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-=
+numeric: normal; font-variant-east-asian: normal; font-stretch: normal; lin=
+e-height: normal; font-family: &quot;Helvetica Neue&quot;;">de renseigner v=
+os informations personnelles et sur galerie vous pouvez ajouter une photo .=
+</p><p class=3D"p1" style=3D"margin-right: 0px; margin-bottom: 0px; margin-=
+left: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; f=
+ont-stretch: normal; line-height: normal; font-family: &quot;Helvetica Neue=
+&quot;;">Donc , nous&nbsp; vous invitons de mettre =C3=A0 jour votre profil=
+ avec vos vrais informations car</p><p class=3D"p1" style=3D"margin-right: =
+0px; margin-bottom: 0px; margin-left: 0px; font-variant-numeric: normal; fo=
+nt-variant-east-asian: normal; font-stretch: normal; line-height: normal; f=
+ont-family: &quot;Helvetica Neue&quot;;">la plateforme assure la discr=
+=C3=A9tion et la vie priv=C3=A9e de tout un chacun il n'y a que les&nbsp;</=
+p><p class=3D"p1" style=3D"margin-right: 0px; margin-bottom: 0px; margin-le=
+ft: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; fon=
+t-stretch: normal; line-height: normal; font-family: &quot;Helvetica Neue&q=
+uot;;">inscrits de la plateforme qui peuvent voir votre profil.</p><p class=
+=3D"p1" style=3D"margin-right: 0px; margin-bottom: 0px; margin-left: 0px; f=
+ont-variant-numeric: normal; font-variant-east-asian: normal; font-stretch:=
+ normal; line-height: normal; font-family: &quot;Helvetica Neue&quot;;">Mer=
+ci pour la compr=C3=A9hension !</p><p class=3D"p1" style=3D"margin-right: 0=
+px; margin-bottom: 0px; margin-left: 0px; font-variant-numeric: normal; fon=
+t-variant-east-asian: normal; font-stretch: normal; line-height: normal; fo=
+nt-family: &quot;Helvetica Neue&quot;;">L=E2=80=99=C3=A9quipe Fii Dewgal .<=
+/p>
+
+--B9F9940664D7.1669723743/node187-eu.n0c.com--

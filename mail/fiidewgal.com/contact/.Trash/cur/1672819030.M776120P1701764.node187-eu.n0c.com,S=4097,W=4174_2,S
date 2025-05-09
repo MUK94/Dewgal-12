@@ -1,0 +1,77 @@
+Return-Path: <id6377587@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id QfstLlYxtWOE9xkA3R2AvA
+	(envelope-from <id6377587@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 04 Jan 2023 08:57:10 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Nn24k1BmHz3FBC
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="FsroUbo1"
+X-N0C-MailScanner-eFa-Watermark: 1673423827.79075@8qGhkLkfA8e74JTMq+Kd4Q
+X-N0C-MailScanner-eFa-From: id6377587@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 021EB401AEEF.A4E81
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-pj1-f49.google.com ([209.85.216.49] [209.85.216.49])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 021EB401AEEF
+	for <contact@fiidewgal.com>; Wed,  4 Jan 2023 08:56:33 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 021EB401AEEF
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 021EB401AEEF
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=FsroUbo1
+Received: by mail-pj1-f49.google.com with SMTP id o1-20020a17090a678100b00219cf69e5f0so38207041pjj.2
+        for <contact@fiidewgal.com>; Tue, 03 Jan 2023 23:56:32 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=O8R3fFyAJIfx1UnJEgMjG4ehxw02t1dWcMX5vUFLWiA=;
+        b=FsroUbo18UYHs9GzAgJTGJeDoaAPrX8ElwwfXjBGazNj3WHtYa/Lgxi43eP/aURW+q
+         LGgcYx3ZD8NJJGK9+wWir2PEFACvx5k5Ym/HH03j2QexaVkThwfe6uEoyNu+sctS+Fku
+         7e0Rtg+WdnuUQ8aFA3TfBI0b5w8dV3j2M3ec0MJFh/LXZe33JYbFKt9/9FXqwxfF7cYn
+         4mTJrHWKig/7RPAHB47Byh9IHq0KeTPyvaOqw1yVvswociBEo95u/kz8H6KTs2wcp5KJ
+         G78rdAamVz4hKsY0LOWBmuWhhWCXYc6UWU9jqQEPFDf7Vv1eRLCNs/se9uSdnkSTVEuW
+         wp5Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=O8R3fFyAJIfx1UnJEgMjG4ehxw02t1dWcMX5vUFLWiA=;
+        b=e2+XrrXjUv9cRteLaOjDv5KqgsYLqbugUHza16qcBW+Gv4fS/FKOmXEwB611aK5jal
+         D5OAsiCeT39IerKTKPBO7x8spIV/z4W8s6NTUuZf8iTKRcoBMotQvEl8UujQ7q2gr11e
+         O8mlzw000aML63f6DqOcd+lfW8V8Uj6rs0HpyUFbxfCjwyBr0EvGVrsRiZsL9w6wOL50
+         LXYahDq0T0iGuPyA3xsvnJ/4Wja1Fkm6bruMIVOCyFUx//xTyjd1tbPrEmvG2RIEQEu7
+         eKjZ+s6yhoPm77/Lj+jRABy/ZZk6gHYUC6/jRBfuIDc1Afy7PaUegEprn/CYB7b21mOq
+         Dknw==
+X-Gm-Message-State: AFqh2kqtfZgcydqg0CaqjeQsf64AjyQN/avDmCW2ogdiTGLjx8yT9NR9
+	8VBfN+H/f9VRZYdlJ8aAPCd/pJgeQ93Smxg8cXawcEXf
+X-Google-Smtp-Source: AMrXdXuiKbD5nXXbPrGJBki6p5qWFsqz+iYF8OZ0xoNs6+rDrd/NFVCl+j2TJHehMVNiInEiwht1rRE/DpJDflFDMpM=
+X-Received: by 2002:a17:902:7c17:b0:192:94d2:19a7 with SMTP id
+ x23-20020a1709027c1700b0019294d219a7mr1093411pll.54.1672818991018; Tue, 03
+ Jan 2023 23:56:31 -0800 (PST)
+MIME-Version: 1.0
+From: Issaga Diallo <id6377587@gmail.com>
+Date: Wed, 4 Jan 2023 07:56:19 +0000
+Message-ID: <CAO8jspcMecY90QNoNmZrtvvcEF_pavDYicO+iwfDU=k=red_Wg@mail.gmail.com>
+Subject: 
+To: =?UTF-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>
+Content-Type: multipart/alternative; boundary="000000000000bbc0c505f16b855f"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000bbc0c505f16b855f
+Content-Type: text/plain; charset="UTF-8"
+
+Issaga Diallo
+
+--000000000000bbc0c505f16b855f
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto">Issaga Diallo</div>
+
+--000000000000bbc0c505f16b855f--

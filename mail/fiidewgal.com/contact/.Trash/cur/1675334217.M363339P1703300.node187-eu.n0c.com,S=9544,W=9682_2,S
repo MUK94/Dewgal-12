@@ -1,0 +1,138 @@
+Return-Path: <felloyalalbhe@yahoo.fr>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id h2yTFUmS22OE/RkA3R2AvA
+	(envelope-from <felloyalalbhe@yahoo.fr>)
+	for <contact@fiidewgal.com>; Thu, 02 Feb 2023 11:36:57 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4P6wFj1RRmz34nwbn
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=yahoo.fr header.i=@yahoo.fr header.b="nh2e65S7"
+X-N0C-MailScanner-eFa-Watermark: 1675938898.66279@wYVUj9P/ZUCPQ6r1HIeF0A
+X-N0C-MailScanner-eFa-From: felloyalalbhe@yahoo.fr
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 5DA1D40044A0.A2E4F
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from sonic304-21.consmr.mail.ir2.yahoo.com ([77.238.179.146] [77.238.179.146])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 5DA1D40044A0
+	for <contact@fiidewgal.com>; Thu,  2 Feb 2023 11:34:24 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 5DA1D40044A0
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=reject dis=none) header.from=yahoo.fr
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=yahoo.fr
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 5DA1D40044A0
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=yahoo.fr header.i=@yahoo.fr header.a=rsa-sha256 header.s=s2048 header.b=nh2e65S7
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.fr; s=s2048; t=1675334063; bh=dwCPYcYU+sKRYvBqQyZDg55GU6UF1TzL++Aditm1SBw=; h=Date:From:Reply-To:To:In-Reply-To:References:Subject:From:Subject:Reply-To; b=nh2e65S7RKzffq3j7WSeF4eC76E4S42woRdp3UmmY7FrAw4+pDgobpT8e9B2Rfl6U6+Q0uC77Cpqr9+vmZjF5Z56376ItDCCAes/hXjKcTDjHJDJlKH77zjy3jVCyN3EJV8LcPcj2RHLB/4RdGOL9A2KiYCaiTnqBpcGxdTpgbUj4M5KJZaZ3f4kvpBNyGbOqoIcsso8Kbr7MSmnlPGv/WRUxKouZc3csKLwNVfR8h4y1Pkadhx32EXLNvwdNJIp/5yai+yUaObvYSvz3XS0wS3ZFt0mfOgZqDF6LJv/vsi82wxbC1vA3iO+5fqSuNb2VuUlGiYTeIBvOsPRauE4NQ==
+X-SONIC-DKIM-SIGN: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1675334063; bh=aE52AVfSBSedOr9t4xESWY0IS1uDy3LcyrceHXW1aae=; h=X-Sonic-MF:Date:From:To:Subject:From:Subject; b=V02AbUSz60WMi4yy1iFlcILn/WXgoZHUKfqnYKou8mIjrIyHJwdJqHFwQq2D7jRXZ5dhfO7Qhgd+lCDjYkXpLqjWVznd3jMMGRS8UTQGHJ6vlFDw1JTDB6bnYnOWkClwtWIOPVEbKWOixyM1cGLaQwodcMCAV51jyviFLA7RvjafL9VhQgtqEQCOEsnWR4kPM9E9lXry3mXbr0HclOaNEoaaig55zqRHBwR18dVX5lwZego5wIearTlBvCg48d5Xf/DFDVSJ9ej4psDkMprk2vyt0vIxb+sgic2SW4ya8mgl8twJ8sHFb7ChcHcAoZ4o9AofX1FRf6GSk117KC7SRQ==
+X-YMail-OSG: G4gPSWYVM1m5QrX0n9cd5JLnQKGlPlYN5nz_0dozVQDevs.DXIo.YcHSxKfzWp8
+ yuuwxuTYc2BTcjZi1Y9z_7P9.CXXN7H1Oxh6Wbw5VCeR0F1V2nHeZms5o7kWZr6PjkCVJy_7p6_j
+ K7GfaJ6WLMsPUVrkp1nBG.Aq4irxZ77Eszs1mJjz3LMRu0CfKDsvOCuHh.CmgBs2ImMdhlFS2rA8
+ LwMUPDHdqFqcUM7DdpioyNHCHYJHlkL6hGKLzlt7Z0wRc9L1XQ4FrpElNlsiPNicJbBFOx7Vdcrf
+ _7c2NJHheASXqvZ0VQwQMRPnbMytGdf5tsESOjZHFPtg8kkaI55ABi7CFrgZGWzLVqdOKz1QcgDq
+ efSba8AKzwsCHozv2X2ai.K.uaIYfSIH33YghDVSs28hdtwTHfClloyzNdcn7XPEJwnBvCMl2hN0
+ SND15qSdcozyJKSG57O5LyH_wsD.TTHcOa4I4NKOiXq6YGL8nSg4TDXYcRWBuJtBDneGVMJ2QvBL
+ VnPAxcbJHKkcwsRJGgCM5J4C_Aeb2gBEUdT5FUgfnSE9ds2P5auUlUqdvWIea8PtGA.dZRlhhPSb
+ D49WMWIj8lb8WPFcGsgsNuphOezOftbw88UFjjbgas38ZBZuByJkhbY2T53at5lBtnJcUS7JTMRc
+ Qu6iPBrUciq47b5Vib0Y_gtwQ6BJjoDfXlPEyKvKG4XJeICm999Uq0_H9AsX2eW8l7ILixO7V3DE
+ lmGiqUNBgV_plJS10tow5kQkBKM0RmQCdCOCtdwMLqV4fqDarANDNAG1ArXySBDMp_wfxfd9GsBN
+ SRS9Gbl9ChxBMKQPbyrwv8DLtPePbJHZ2rRJikUWRY1tO3WHlShcDzRP7jq3tb3RE7umuaWDBGjs
+ CSwCNNZBENT.0PmiWBtSVvfY0NnbNhnQfufHjK5boMh2NlN8n1fc2tQwD4Ks.L16Y2uSV21QuVQ8
+ oYTjPzpd9KFKlnYRVHcGOHCRhR47affcVALifYsw77HV_uRaFZ78UYfvnXpnyWvS1mNuWcI7fGpu
+ X2dfidlru8LoDNvlVBMYwJKGpu_suItyQfPKFTF2m24dRw8XnVw3e1_eglAGcCvPkTg1Sozlsd8u
+ EJDGCa3pgwW2hESC5hNQiW1aXXEgiN40pn9YMGEXltyjazfEtI6YDB5YkOHU5kG6Bkq06X7nfWh6
+ Gk0kQzgx0pN2qXDWsqkNggFQRvdP.6QN6ONfNaBvSKyBq2nqvYwzyL5HECL6WWt2h5NEnRFB3b6N
+ KL62TyQcClMD8EA9G0JBU68Yx5v69klLVL92_o84BKQRXfcbneeM4NrMagh7O_K250R8Cu4xUhQ1
+ sCz3rpVulYiWoJ9JdR2auuBGaYEAbG.7pNvNjRUNUnIC84M52Tw__NaRbasTsJ7cPAAzldyfMju3
+ nLw5O2jNLsml_8aKHr_m1Acc.B335MnH9t3OJKw8GrnUvedbZ3Lsug0bLFXHZ3P8LFnC2M6eSZvG
+ P7F3mExBxnc9uRfOW15kpCw5Ji3gkpJhCqAg5pRSf8BYBkMmUnu20vS3OOgXrEb_1HzRBRyrETHv
+ CepkPoVj0Mpb2MwBIShVPRG12JuBqlKm.mQH9JU6yW9AubdLv9mZCd82737heufReCYdzl0sseoX
+ vumYyd6gKtFhj4FbpfJ.jATOhzaAM.ZCb7UaZvqkti.xG5b7mj8LNvmNpm6U.dv_k_fipbS8iZog
+ wHYt9bru6hCqsfMG8AUcyDMkZo8jktFPO7WwnG1WtaGSzcmmCLw7zf2u1bOuj_pPrgm_yMl9CsBQ
+ Z41.lRqOjScAaCT7owJFm.uUVY02RYwgP4Wknn98JpK16ncBMLGAhNBb53HwInyjXFRNzPAW8acw
+ uyp5A0gcvXQyyBYqlJJw31fSNvxInwi19lS0VJP0LKhlE.AZuA5Av1B56oi7n78GxDk.h2V.eSi0
+ Cb2G1TBRhK1nZjBSN3YbcqT9i4.DaNHJKTJ4xbHvBniTtyL_YEW1vvHu6Iw88Wkoch_NcCoJxIbM
+ dyxSM.8bkPCI3uTSGRMZY0f_Mc1_Zqe8C6M13wyCWCouKqAOc_WMKdKcyEViKQTcLe3WfnWaVU7i
+ L9TgBVvJSOstXOjCZlLkTgecBj18uO4jQ4iGJJxX_nKXXR77XXE8fZwxzVC0sjcVF7Kbf1evzt7u
+ Vc_pORR2LPOMG.esFVkn3TAZVGDdtXCK4mfl1FtO_O1YBQVEtXBSGr2MOpGCbeJYYnnjNhC0UKVP
+ W6HIvCjtlQ9jg_5QNiE.050A9I8DiciZDcNb9ouMrmjAIWR5ZjVYdolN_P0N17Wyus33l7MrTH.m
+ HSZFv4idgsKRa
+X-Sonic-MF: <felloyalalbhe@yahoo.fr>
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic304.consmr.mail.ir2.yahoo.com with HTTP; Thu, 2 Feb 2023 10:34:23 +0000
+Date: Thu, 2 Feb 2023 10:34:15 +0000 (UTC)
+From: Bah Mamadou <felloyalalbhe@yahoo.fr>
+Reply-To: Bah Mamadou <felloyalalbhe@yahoo.fr>
+To: contact@fiidewgal.com
+Message-ID: <630020837.4633668.1675334055477@mail.yahoo.com>
+In-Reply-To: <ffe07e67fb1ed3c7ab2091d0af541c2b@fiidewgal.com>
+References: <ffe07e67fb1ed3c7ab2091d0af541c2b@fiidewgal.com>
+Subject: =?UTF-8?Q?Re=C2=A0:Rappel_avant_la_suppression_de_votre_compte.?=
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_4633667_1494136012.1675334055474"
+X-Mailer: WebService/1.1.21123 YahooMailAndroidMobile
+X-N0C-Node-IP: 185.221.182.45
+
+------=_Part_4633667_1494136012.1675334055474
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Wa alaikoum salam. Franchement je n'arrive pas a accedes a mon compte
+
+Envoy=C3=A9 depuis Yahoo=C2=A0Mail pour Android=20
+=20
+  Le jeu., f=C3=A9vr. 2, 2023 =C3=A0 8:54, contact@fiidewgal.com<contact@fi=
+idewgal.com> a =C3=A9crit:   Salam Aleykoum ,
+Nous sommes tr=C3=A8s heureux de vous avoir parmi nos
+membres dans la plateforme et nous souhaitons que
+Vous y rester.C=E2=80=99est pourquoi nous vous prions de
+mettre =C3=A0 jour votre profil en mettant correctement
+Votre date de naissance , votre =C3=A9tat civil ;votre photo
+et votre numero de telephone avec l'indicatif
+Si cela est compliqu=C3=A9 pour vous faites nous parvenir
+votre num=C3=A9ro de membre qui est sur votre profil public
+avec vos informations cit=C3=A9es ci dessus .
+Vous pouvez =C3=A9galement nous faire parvenir votre numero
+de membre avec=C2=A0 votre photo et num=C3=A9ro de telephone sur
+notre WhatsApp 001 646 752 9115 ou juste scanner le QR Code ci)
+joint ci-dessous .Sans votre photo , le profil sera d=C3=A9sactiv=C3=A9.
+Si votre compte n'est pas confirmer faites nous parvenir vos
+informations sur whatsApp pour vous inscrire.
+Merci pour votre comprehension! =20
+
+------=_Part_4633667_1494136012.1675334055474
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Wa alaikoum salam. Franchement je n'arrive pas a accedes a mon compte<br><b=
+r><div id=3D"ymail_android_signature"><a id=3D"ymail_android_signature_link=
+" href=3D"https://go.onelink.me/107872968?pid=3DInProduct&amp;c=3DGlobal_In=
+ternal_YGrowth_AndroidEmailSig__AndroidUsers&amp;af_wl=3Dym&amp;af_sub1=3DI=
+nternal&amp;af_sub2=3DGlobal_YGrowth&amp;af_sub3=3DEmailSignature">Envoy=C3=
+=A9 depuis Yahoo&nbsp;Mail pour Android</a></div> <br> <blockquote style=3D=
+"margin: 0 0 20px 0;"> <div style=3D"font-family:Roboto, sans-serif; color:=
+#6D00F6;"> <div>Le jeu., f=C3=A9vr. 2, 2023 =C3=A0 8:54, contact@fiidewgal.=
+com</div><div>&lt;contact@fiidewgal.com&gt; a =C3=A9crit:</div> </div> <div=
+ style=3D"padding: 10px 0 0 20px; margin: 10px 0 0 0; border-left: 1px soli=
+d #6D00F6;"> <div dir=3D"ltr">Salam Aleykoum ,<br></div><div dir=3D"ltr">No=
+us sommes tr=C3=A8s heureux de vous avoir parmi nos<br></div><div dir=3D"lt=
+r">membres dans la plateforme et nous souhaitons que<br></div><div dir=3D"l=
+tr">Vous y rester.C=E2=80=99est pourquoi nous vous prions de<br></div><div =
+dir=3D"ltr">mettre =C3=A0 jour votre profil en mettant correctement<br></di=
+v><div dir=3D"ltr">Votre date de naissance , votre =C3=A9tat civil ;votre p=
+hoto<br></div><div dir=3D"ltr">et votre numero de telephone avec l'indicati=
+f<br></div><div dir=3D"ltr">Si cela est compliqu=C3=A9 pour vous faites nou=
+s parvenir<br></div><div dir=3D"ltr">votre num=C3=A9ro de membre qui est su=
+r votre profil public<br></div><div dir=3D"ltr">avec vos informations cit=
+=C3=A9es ci dessus .<br></div><div dir=3D"ltr">Vous pouvez =C3=A9galement n=
+ous faire parvenir votre numero<br></div><div dir=3D"ltr">de membre avec&nb=
+sp; votre photo et num=C3=A9ro de telephone sur<br></div><div dir=3D"ltr">n=
+otre WhatsApp 001 646 752 9115 ou juste scanner le QR Code ci)<br></div><di=
+v dir=3D"ltr">joint ci-dessous .Sans votre photo , le profil sera d=C3=A9sa=
+ctiv=C3=A9.<br></div><div dir=3D"ltr">Si votre compte n'est pas confirmer f=
+aites nous parvenir vos<br></div><div dir=3D"ltr">informations sur whatsApp=
+ pour vous inscrire.<br></div><div dir=3D"ltr">Merci pour votre comprehensi=
+on!</div> </div> </blockquote>
+------=_Part_4633667_1494136012.1675334055474--

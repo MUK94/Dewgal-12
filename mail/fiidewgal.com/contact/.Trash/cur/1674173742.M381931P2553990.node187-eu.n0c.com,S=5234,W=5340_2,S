@@ -1,0 +1,106 @@
+Return-Path: <hamedamsbalde@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id d7exFi7dyWOG+CYA3R2AvA
+	(envelope-from <hamedamsbalde@gmail.com>)
+	for <contact@fiidewgal.com>; Fri, 20 Jan 2023 01:15:42 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Nyg4s2Ypzz34nwbf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="XIb1YM7M"
+X-N0C-MailScanner-eFa-Watermark: 1674778538.23697@K0+MInTWzIn5NHKJYv7UeQ
+X-N0C-MailScanner-eFa-From: hamedamsbalde@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: E0463401A44D.A7826
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-vk1-f179.google.com ([209.85.221.179] [209.85.221.179])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id E0463401A44D
+	for <contact@fiidewgal.com>; Fri, 20 Jan 2023 01:15:05 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com E0463401A44D
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com E0463401A44D
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=XIb1YM7M
+Received: by mail-vk1-f179.google.com with SMTP id q21so1806898vka.3
+        for <contact@fiidewgal.com>; Thu, 19 Jan 2023 16:15:04 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=rPfifiXAFi1Ot+ARD90htK1q8THFMUlJEQPLpeo3h3w=;
+        b=XIb1YM7MSHBG2h9lIOoAqymeJNzEZJEMl1OELuJwdfwbllUFDOn2viQChybBBsJ0pc
+         90GjVzaNsV1N+XOJsc50DZB+1nH/jQLp6ugXbDqQNh+g6kiZpxGMFaF8uMP31fZUz1mi
+         pJ4UM1bhK30OD7BrHEaVI6RaRcIxXrbZNWzNwRnzCLcRx6SaOESSwxMw2Iqrr6mYTt8a
+         VYB+151+aSIEVw03mV7szlbBn0PCIJRBK3XLI5HUqNnfBlYm2GkmApfsGkITlb/nKKy4
+         5KCdpvzUNuHgPQOR9pxDESEMzR7cpptJZImqVKDmS9yU3rIVMSQqHkD0JeuqH0kG0tsZ
+         RzpQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=rPfifiXAFi1Ot+ARD90htK1q8THFMUlJEQPLpeo3h3w=;
+        b=XOpWAdCMyFhuYvtjrfK7+z52KNZ8fqnuultvJ/Edefqyl2ZUdD5pa+xwjvwEOkxi9N
+         VNWz1nIbvVNZtxZZt4QqiWZerU1RNgelJXm+AzplRuWZt8sed2rYh1VVvolRjxerEWKC
+         0iJu1a0XwMWJAeG7y6V9m26SKifkXrpfrTG6dzzt9xzNb/zrHcZI9HnTGTh56YHh7zbS
+         lshaJED19QoynDSFF2F5W4OjPjISSLGL03dGDn+UReg2eUfWRf4A2EZeYxLn3N4Dbj+f
+         cEETuEKBtwEs8P27CsiVpai6Eo/X6Xn9ATq+b39yZ0geEGOa1nR9vK+wSwMoc3WtAGto
+         I4Mg==
+X-Gm-Message-State: AFqh2kqbT/4SxoA7Ntkv73y9YRp23D1q6B7P9I9OSLTEF+7n7fT/An1D
+	fj1ugUgi47DF1XPyS/0CHo1yr9qZ4MqyhM8fHzigFA5t
+X-Google-Smtp-Source: AMrXdXvsOens4UhRci3fGa8OpgAKU4uCNpXcB/5nC5V69M/bL1/iQMlihuowKdeoNFtScUJbaLvRRLOuZw5E7G/iKnU=
+X-Received: by 2002:a1f:e681:0:b0:3e1:77d6:33bf with SMTP id
+ d123-20020a1fe681000000b003e177d633bfmr1732082vkh.34.1674173703402; Thu, 19
+ Jan 2023 16:15:03 -0800 (PST)
+MIME-Version: 1.0
+References: <ccee7839f2fa4e7e6a840de75c8f223d@fiidewgal.com>
+In-Reply-To: <ccee7839f2fa4e7e6a840de75c8f223d@fiidewgal.com>
+From: Hamed ams Balde <hamedamsbalde@gmail.com>
+Date: Fri, 20 Jan 2023 01:13:55 +0100
+Message-ID: <CAGzCmF2LrbJ3x2V=LawBHw0uU=VQG20qxrSf-AWSnvf3pMwybQ@mail.gmail.com>
+Subject: =?UTF-8?Q?Re=3A_R=C3=A9initialisation_du_mot_de_passe?=
+To: =?UTF-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>
+Content-Type: multipart/alternative; boundary="000000000000e23a6c05f2a6f042"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000e23a6c05f2a6f042
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Envoyer moi le code
+
+Le jeu. 19 janv. 2023 =C3=A0 23:15, Ne r=C3=A9pondez pas <contact@fiidewgal=
+.com> a
+=C3=A9crit :
+
+> Bonjour Amad Oury Balde,
+>
+> Votre code de v=C3=A9rification pour la r=C3=A9initialisation du mot de p=
+asse est :
+> [[code]]
+>
+>
+> Merci !
+>
+> Ne r=C3=A9pondez pas
+>
+
+--000000000000e23a6c05f2a6f042
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Envoyer moi le code=C2=A0</div><br><div class=3D"gmail_qu=
+ote"><div dir=3D"ltr">Le jeu. 19 janv. 2023 =C3=A0 23:15, Ne r=C3=A9pondez =
+pas &lt;<a href=3D"mailto:contact@fiidewgal.com">contact@fiidewgal.com</a>&=
+gt; a =C3=A9crit=C2=A0:<br></div><blockquote class=3D"gmail_quote" style=3D=
+"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><p>Bonjour=
+=C2=A0Amad Oury Balde,</p><p>Votre code de v=C3=A9rification pour la r=C3=
+=A9initialisation du mot de passe est : [[code]]<br></p><p><br></p><p>Merci=
+ !<br></p><p>Ne r=C3=A9pondez pas</p>
+
+</blockquote></div>
+
+--000000000000e23a6c05f2a6f042--

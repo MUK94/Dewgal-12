@@ -1,0 +1,82 @@
+Return-Path: <alphab6881@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id CAN7BoNyr2OAcSAA3R2AvA
+	(envelope-from <alphab6881@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 31 Dec 2022 00:21:39 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NkLqk71s6znqZr
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="FfsbHbEY"
+X-N0C-MailScanner-eFa-Watermark: 1673047293.44928@AdiTIgOWHpnDAJhIyBb3tA
+X-N0C-MailScanner-eFa-From: alphab6881@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: B0ACF40664F7.AD9AD
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-io1-f53.google.com ([209.85.166.53] [209.85.166.53])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id B0ACF40664F7
+	for <contact@fiidewgal.com>; Sat, 31 Dec 2022 00:21:01 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com B0ACF40664F7
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com B0ACF40664F7
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=FfsbHbEY
+Received: by mail-io1-f53.google.com with SMTP id h6so11800811iof.9
+        for <contact@fiidewgal.com>; Fri, 30 Dec 2022 15:21:01 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=uQrSttSAV9du7LcEWmo8WJey9y9QJjgPxfgZOgyodXA=;
+        b=FfsbHbEYigS7Q/o95ymJHbFE8ZswoPQj9RuSV5mKZfhT/+PggvFYgorfxHQWBaSzX6
+         0QThSImUgbXYANtVX4u+ova3hGX0nA2jrgBs0P+K46HcFDqJdH3CD0/lo3xtmnGTlQfN
+         xrZNE0dXIaNmv5K0dH6PT9zw6Z8XphlW55fWKF4HzSh+3Xv3YSChxd6cExDhfQRUvw+X
+         DDLX+rsSt2I5+8Kfioo4Mf39lUgx2fOZXzbFn3FTjyMFReadHqylM2eP34B5Qs4Jzd88
+         hKi6qLF9gqNY0xWDgre2ebaJM33wZ80r2HOtne7vQNzad0mNQl59kQ13BNsKiEEJC/s9
+         eAXQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=uQrSttSAV9du7LcEWmo8WJey9y9QJjgPxfgZOgyodXA=;
+        b=8K30kVyXOqHU7hOfLqt5g4dDREy3YLnUqbozYehURvBvMOC/WeF6OF456jKLwTjM7b
+         9IRL2+7ShNTvpD1ElX1H3L0SrFEBsXQ6WBX/TBj0xSkuAPfFGuWXBsVaG9/RwwFDk3Kq
+         /LqczMaAJ1RL4vWfwkCXaQjlazJHQFfuI9eYrE6cBMDZNnR2bbWfjgyklFEZU0Etm9bS
+         SPpVaQOXMo8SeJQNJwiI4e7pRslWWRkBeSGSoCvYXYahaX5g9aleYvZCyGHR2otakj1T
+         7cjTk1keeVSrKjME2IUZ3G0oydvUw1IY+/w1vvHjZuVkYgtBAKz9BjkgYM9xUoZp5rAi
+         p6RA==
+X-Gm-Message-State: AFqh2ko17D7hXLgltRyTqpDVpfaQ7/uDw87e86mxObL9IpWz6FHVwZep
+	/Z3Fp9SinD8bKDo9+ip3n5C848tPiHz8+vX5VomMSGXS
+X-Google-Smtp-Source: AMrXdXvhW/YaKOEFvS1262B1SDFBcQx2kJqNpQQKVArd5sq2dcgnjiWxMO84F8c4Njv95YM2kIZBnwTI9/4Cya2dLHA=
+X-Received: by 2002:a05:6638:8d:b0:38a:3357:8a4 with SMTP id
+ v13-20020a056638008d00b0038a335708a4mr2648210jao.53.1672442460079; Fri, 30
+ Dec 2022 15:21:00 -0800 (PST)
+MIME-Version: 1.0
+From: Alpha Barry <alphab6881@gmail.com>
+Date: Fri, 30 Dec 2022 23:20:39 +0000
+Message-ID: <CAEhAL9POvtxq0AFzU5m-G+0XgrMtzJzxSYvc82iK4ybbPZy5nw@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000bd895505f113dafe"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000bd895505f113dafe
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Salut fr=C3=A8re moi je essaye plusieurs pour int=C3=A9grer dans ton sites =
+l=C3=A0 mais =C3=A7a
+pas march=C3=A9
+
+--000000000000bd895505f113dafe
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Salut fr=C3=A8re moi je essaye plusieurs pour int=C3=A9gr=
+er dans ton sites l=C3=A0 mais =C3=A7a pas march=C3=A9=C2=A0</div>
+
+--000000000000bd895505f113dafe--

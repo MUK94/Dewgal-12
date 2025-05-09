@@ -1,0 +1,107 @@
+Return-Path: <fatoumatabintabalde305@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 7fQgFOtfj2QqLREA3R2AvA
+	(envelope-from <fatoumatabintabalde305@gmail.com>)
+	for <contact@fiidewgal.com>; Sun, 18 Jun 2023 21:50:03 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Qkk563lLWz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="ZSc4ZFfx"
+X-N0C-MailScanner-eFa-Watermark: 1687722601.09108@6A3M1kD+RKBZ+2R+K6H6AA
+X-N0C-MailScanner-eFa-From: fatoumatabintabalde305@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: sss
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: DBEE640198A0.ACD18
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-il1-f170.google.com ([209.85.166.170] [209.85.166.170])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id DBEE640198A0
+	for <contact@fiidewgal.com>; Sun, 18 Jun 2023 21:49:59 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com DBEE640198A0
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com DBEE640198A0
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=ZSc4ZFfx
+Received: by mail-il1-f170.google.com with SMTP id e9e14a558f8ab-341ed46e5c1so11612985ab.1
+        for <contact@fiidewgal.com>; Sun, 18 Jun 2023 12:49:59 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1687117798; x=1689709798;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=p/cIpAUDRfXn3iSETQqqXkMc+koN1fOispFBac/aaX8=;
+        b=ZSc4ZFfxRX3avbr/MQlyYuhtsm/n2cOhbaUo9d/5rVI/pYSCW+5bLLNXFjgnv4qBFN
+         sbUrIFK2YeJpgb9oytV4ho0aAmCPWqLzkTXqlTIUJHBx0MWGX0Y14ob6Uyn07Th/V/+9
+         wDAefdZ6R49fIY6TsSaaDXpyotqYdfFFzFoVhkgGYlBW7jU+Wz6FyonvhyHJsB1LKcdb
+         JQ/vFk8jhjyFize0LH0Y25cVPl/bpqwn6a+H8RP49WWRjbMQXriIqy5qMCn9r5nZq8Gp
+         csJDPb4fpNp1u1zYw0Q+tVzRl4wwBuPzwpVMKCzlZpijwg8dtXeMLtgXOja7L2FhqJv7
+         og/g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1687117798; x=1689709798;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=p/cIpAUDRfXn3iSETQqqXkMc+koN1fOispFBac/aaX8=;
+        b=lAG5YCIBooNCjx+DxAQ7mjS/MYHNECyd3a8NULJT4NyzQl6RZScLsFD0AKFRqPmQHK
+         wmIj6wUiX8xs35RsO1DWhrmK5uEA77EDSCwQwzVcieZ2RvAkywXz2SaG/haCtrdOImcy
+         Q9eiZofWPSjvrnCj1GQVa5WWlIb351O2rQGxnFuekQSnrA0Hfa9w5PK2rqzIN84qNpAe
+         GHKStw2fW51s52wTvjIWlQy3EBZxSmJCWbYf6bzkohUuh+qBFAcYIAQ6yv++FYD3Bg+G
+         r7mLQeMhd0DACRVrQguxfZ4vYRTKPYxOfG8QDLYP0eWHfW410ue1BN51j5MnUnupH0U0
+         vcmg==
+X-Gm-Message-State: AC+VfDz2V+WdecWGw68p/flJ7bmLQ1V/68SAa/4dwhJpJANpe5AAAQQh
+	vVZ9+bcoAMAy/FFbPW4kW0fyTQ1bfhTcpdyzWGf/YvRH
+X-Google-Smtp-Source: ACHHUZ7yWMfiUntHJx7OXOUri/PynJg2w3LTYb8v3oFZJy7RCVuJMlxZma+Fd34OLUXhIJP3Y5GgwzjsEIun+dWRGyk=
+X-Received: by 2002:a92:d6d2:0:b0:341:c8db:c8d6 with SMTP id
+ z18-20020a92d6d2000000b00341c8dbc8d6mr4734361ilp.22.1687117798238; Sun, 18
+ Jun 2023 12:49:58 -0700 (PDT)
+MIME-Version: 1.0
+References: <f1ba4f1fcba0d379968d3127b0471b82@fiidewgal.com>
+In-Reply-To: <f1ba4f1fcba0d379968d3127b0471b82@fiidewgal.com>
+From: Fatoumata Binta Balde <fatoumatabintabalde305@gmail.com>
+Date: Sun, 18 Jun 2023 19:49:43 +0000
+Message-ID: <CAOoDa2pg0u88dWomLMRKgx86+rrDqbRrmyEQOV56_mAp+bQAJQ@mail.gmail.com>
+Subject: =?UTF-8?Q?Re=3A_Vous_avez_une_nouvelle_demande_d=27int=C3=A9r=C3=AAt?=
+To: =?UTF-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>
+Content-Type: multipart/alternative; boundary="0000000000000eee4305fe6cb984"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000000eee4305fe6cb984
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+OK je suis =C3=A0 l'=C3=A9coute
+
+Le dim. 18 juin 2023, 18:41, Ne r=C3=A9pondez pas <contact@fiidewgal.com> a
+=C3=A9crit :
+
+> Bonjour Fatouma Binta Balde,
+>
+> Mamadou Aliou Bah a manifest=C3=A9 son int=C3=A9r=C3=AAt pour vous.
+>
+> Veuillez contacter l'=C3=A9quipe administrative si vous avez d'autres que=
+stions.
+>
+> Merci,
+>
+> Ne r=C3=A9pondez pas
+>
+
+--0000000000000eee4305fe6cb984
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">OK je suis =C3=A0 l&#39;=C3=A9coute=C2=A0</div><br><div c=
+lass=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr">Le dim. 18 juin =
+2023, 18:41, Ne r=C3=A9pondez pas &lt;<a href=3D"mailto:contact@fiidewgal.c=
+om">contact@fiidewgal.com</a>&gt; a =C3=A9crit=C2=A0:<br></div><blockquote =
+class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid=
+;padding-left:1ex"><p>Bonjour Fatouma Binta Balde,</p><p>Mamadou Aliou Bah =
+a manifest=C3=A9 son int=C3=A9r=C3=AAt pour vous.</p><p>Veuillez contacter =
+l&#39;=C3=A9quipe administrative si vous avez d&#39;autres questions.</p><p=
+>Merci,</p><p>Ne r=C3=A9pondez pas</p>
+
+</blockquote></div>
+
+--0000000000000eee4305fe6cb984--

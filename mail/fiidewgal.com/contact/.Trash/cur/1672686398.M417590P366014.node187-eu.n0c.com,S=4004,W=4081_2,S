@@ -1,0 +1,77 @@
+Return-Path: <mb2098764@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id ae3PGD4rs2O+lQUA3R2AvA
+	(envelope-from <mb2098764@gmail.com>)
+	for <contact@fiidewgal.com>; Mon, 02 Jan 2023 20:06:38 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Nm5256rYWz1wJY
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="X4a63sC9"
+X-N0C-MailScanner-eFa-Watermark: 1673291195.88802@rxdUMUu/c9c8qORhlbL7kw
+X-N0C-MailScanner-eFa-From: mb2098764@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 85750400837A.A3DBB
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-pj1-f54.google.com ([209.85.216.54] [209.85.216.54])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 85750400837A
+	for <contact@fiidewgal.com>; Mon,  2 Jan 2023 20:06:01 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 85750400837A
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 85750400837A
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=X4a63sC9
+Received: by mail-pj1-f54.google.com with SMTP id o2so25241081pjh.4
+        for <contact@fiidewgal.com>; Mon, 02 Jan 2023 11:06:01 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=K66fbKlwzrAdkS2GRlcPYBVYkZ+vHKBoeNHb9LI4Cy4=;
+        b=X4a63sC9CutxXHwL0evfm1rO8A3lR9EQFoiDOSW+ktOEqdCqorzK4nLlaK/yolct/q
+         Eyqd5xLc3Bc+nj4RGIrnq36WzGsoVJpYFtCrUoGV6RYyBXUXyc3vnlLwmQ5u5d4VED4L
+         kl8A/P51QGTYzLzDDFbrZUzxD85onvoPnEOMRrVzK7nfb8ivh97A3E+GMKmTa/2FedDO
+         6Iopha7/JfZMq2zZuTHF7ouw7fsx4OiXcbrjJ/L8Eayom4lvBr4risUCM4doOCWCcplF
+         BQZeVigpnW43AtlE/2YpGdZ3lkwjDgINkTk5Dw66nyIDSvhUe7ya8mP3yXijbmvmGXqJ
+         TzYQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=K66fbKlwzrAdkS2GRlcPYBVYkZ+vHKBoeNHb9LI4Cy4=;
+        b=lkiTGcnBjGYLCtdme1cFg7QOGZJ2me3QOiXq5Gusj3v/qyYtpslqepZudB4c1Jua3p
+         lTV8mJp+gC6ZjIC0wUlT4wg4zKUo7RUgEZNdFpIYmuh+Qy1072Eddj7do45GD2HIdhIL
+         DQTj6qDV3lGYZpzS+X4cz9LkgXyqpEiFLkQq/zcpRdWvXtJtexbnWKkzACPqpS1G5HIP
+         f7O2TlTQLBuufOtJHg3t+W8jJjMksaYlFwoAIGgdzMvjgmJ3UUsObdT6kGkGMy7PGvaE
+         XxcKgRyKWtDsr/iQqLrm4aE+uFewObZ8BhrmohEmVVKDoTmXPep1lWi/vLckawpN8e16
+         EF0g==
+X-Gm-Message-State: AFqh2kp0SxQBjDijuZaKkhYOnPM8CRZ0vTYr1cCJte+L0/WjcSbjT/1E
+	60BdxWRqdrbsuraxtNbTwkAMFOBPVeaYqKVa0Uv7z32G
+X-Google-Smtp-Source: AMrXdXtNnoUx2ENdoJ1VWG1379oPQsSkpx5uOW7TJB9Bnv9b8FPmep+a3gl8ZhOsrBdkXUUdbYjjzuF+foWjqNZ74eQ=
+X-Received: by 2002:a17:90a:4311:b0:214:291f:87b5 with SMTP id
+ q17-20020a17090a431100b00214291f87b5mr3636741pjg.115.1672686359303; Mon, 02
+ Jan 2023 11:05:59 -0800 (PST)
+MIME-Version: 1.0
+From: Mamadou Barry <mb2098764@gmail.com>
+Date: Mon, 2 Jan 2023 19:05:40 +0000
+Message-ID: <CAFjKd0ymZpK9QgBi5ri08PFdcOZtuKqmf1QpjLgjgbLyGtSVRg@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000445bf205f14ca4d1"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000445bf205f14ca4d1
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+--000000000000445bf205f14ca4d1
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"></div>
+
+--000000000000445bf205f14ca4d1--

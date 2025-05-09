@@ -1,0 +1,79 @@
+Return-Path: <amadouj336@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id lIiEBZuhamTV4xAA3R2AvA
+	(envelope-from <amadouj336@gmail.com>)
+	for <contact@fiidewgal.com>; Mon, 22 May 2023 00:56:27 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4QPbY66YkKz34SDmh
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="O/E//tTo"
+X-N0C-MailScanner-eFa-Watermark: 1685314585.29946@ss/kp8kX/FFtP8FTILDTCQ
+X-N0C-MailScanner-eFa-From: amadouj336@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: s
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: C2B39401B23F.A0504
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ed1-f54.google.com ([209.85.208.54] [209.85.208.54])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id C2B39401B23F
+	for <contact@fiidewgal.com>; Mon, 22 May 2023 00:55:51 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com C2B39401B23F
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com C2B39401B23F
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=O/E//tTo
+Received: by mail-ed1-f54.google.com with SMTP id 4fb4d7f45d1cf-510d967249aso8935519a12.1
+        for <contact@fiidewgal.com>; Sun, 21 May 2023 15:55:51 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1684709750; x=1687301750;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=WX5Jinha95I3jYuNdHXQ76yFGxtftcfHHdBrrfXbph0=;
+        b=O/E//tTojRzBy6ZD4O86HUQn6obOFUT7S28F4iVQKVxW6EJ3/FomTDVEvxQj0O3fzY
+         YjYPOiPY95zDrrtumxbTQNFoVr6ikv+qZlA+Lj8PKdYn5sp2JJjnRKr7Mi+kKmFkWOV3
+         mVUUCKZ2qC0pZpBsdlSV+wJRqf63HciIWH71rDzCpxETfy5VUkVX2ODlNaaLRvMZXkak
+         IaRWpofA5qf0TT9Jimsu2wVk8e0R3BZ+RdkqXRMtAYr3T0aAJyCud3zuNE4HwGLekkwu
+         mClJO7yORa48s/u4DXJQjM13qSBGaHvLC7zAmseZr97apZQshR0nuSrwM8sKObceFoXG
+         h1Dg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1684709750; x=1687301750;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=WX5Jinha95I3jYuNdHXQ76yFGxtftcfHHdBrrfXbph0=;
+        b=eKHaa4eSRvMG9sQly1zQmisqAOm4wKLTSLXOUC29XVJfAsQs/J1gX/+PT75Sw8W+R+
+         2ivka1p+GkRJqloEZH2g2UI5mFmE7JMLZnQUCky/OAcfQqlNxzv1I2uT+wrUkBf7kIfx
+         hi/P8feLxnebUe2whuN3o+Slu0SgGvUYyHmQUb4No3oKFBMr4zU068Kra4rle7n0xFWs
+         ubsal/sj2B1l76ss043Fo7VTJX7YZ3NxiNPI3+M2Es8V35UQQeV1rDWdCp5IABAdPDml
+         bwgAr4LJj5+oywCuNfH6tRGACEZINtJPfNUK5MAUQfm/3hHEs8PEltJd94hDvZwKa42k
+         q9lA==
+X-Gm-Message-State: AC+VfDwy5qlRUKj9K13bw+7k7UK9ntoej+aFsV84ScTlDx9SMOF+Oact
+	VC/Njisy/XH9ukJhzlai198Tx5i4lVCfiPCtyovtIZQi
+X-Google-Smtp-Source: ACHHUZ6BAHMZ2ZGCwNd0F+uIUYB+9/wu0BuWV69mtNEx+MWeSwlo/78IoFkgcUfKXeeMETNhuZTO0/lhUn6sPWwuz0Y=
+X-Received: by 2002:aa7:c998:0:b0:510:e8a9:dd30 with SMTP id
+ c24-20020aa7c998000000b00510e8a9dd30mr7445160edt.23.1684709750326; Sun, 21
+ May 2023 15:55:50 -0700 (PDT)
+MIME-Version: 1.0
+From: Amadou Jallow <amadouj336@gmail.com>
+Date: Mon, 22 May 2023 00:55:37 +0200
+Message-ID: <CA+=QSKUv-fCfShOgz6yD7n=Yz0mVg2Jj7-GTUk0C34Ku-g-Bbg@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000037c81b05fc3c0e20"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000037c81b05fc3c0e20
+Content-Type: text/plain; charset="UTF-8"
+
+Hi, I'm Amadou jallow I want to join the WhatsApp group fiidewgal
+Thank you
+
+--00000000000037c81b05fc3c0e20
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto">Hi, I&#39;m Amadou jallow I want to join the WhatsApp group fiidewgal<div dir="auto">Thank you</div></div>
+
+--00000000000037c81b05fc3c0e20--

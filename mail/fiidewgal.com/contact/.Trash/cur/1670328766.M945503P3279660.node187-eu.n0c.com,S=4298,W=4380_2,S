@@ -1,0 +1,82 @@
+Return-Path: <boypeulboy@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 1slHOL4xj2MsCzIA3R2AvA
+	(envelope-from <boypeulboy@gmail.com>)
+	for <contact@fiidewgal.com>; Tue, 06 Dec 2022 13:12:46 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NRK720ZXFz34SDxQ
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="McX2Eq8A"
+X-N0C-MailScanner-eFa-Watermark: 1670933560.0839@oU7ScVK0kJc3Eb7fI2atBw
+X-N0C-MailScanner-eFa-From: boypeulboy@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: AB87F401AEEF.A4807
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-qk1-f172.google.com ([209.85.222.172] [209.85.222.172])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id AB87F401AEEF
+	for <contact@fiidewgal.com>; Tue,  6 Dec 2022 13:12:05 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com AB87F401AEEF
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com AB87F401AEEF
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=McX2Eq8A
+Received: by mail-qk1-f172.google.com with SMTP id k3so858047qki.13
+        for <contact@fiidewgal.com>; Tue, 06 Dec 2022 04:12:05 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=c3e0JswzGo0N+dC537UiJrMdaJG0/O7IcsWvXajcxyY=;
+        b=McX2Eq8AK+CWiarvWiJeuNjubDNKMDjcwrnIN3+YlkEqhSiWHqf6Q7paZUrT9Z456a
+         5DYMPMQINHZl/HL3nAP7T+OA5qDGfYArYhMk42Ds4sC8uQv+Ygskxsie9lvFyhSWNT8d
+         tcGoZr1i6XhA6cJWkP1hOsp/QvKZORDAMNOIRjk6uxBYk2f5Ho1O8LxyFoD+Xd50Oagv
+         qK7kv0z5NhZlrBUzrkU21dpSUGwS6HO0HLwOkyy/5EFASlCQjurWqIHnXMV7vEDRAnKm
+         LBEi8OnzK0Pid+PuAH8fbT47g0niMelV4iGqlmD3ROGnYkRAN8AhPSFy9F/RzEcroX34
+         C7Nw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=c3e0JswzGo0N+dC537UiJrMdaJG0/O7IcsWvXajcxyY=;
+        b=n47Krum+zQUon7yhkB0jvWtGcG3TtkiZcYH/nnxpbcHqCEgLCjHxBXmZg8kW4GqHb9
+         TqClnb5FvyR9SE/om4UsXITHEDLmhD8TccegzedApd+BF0Z5hsN6XhFYjVRKt6IeAobv
+         emKoKt2yeB0xvgXmWX6TQ5LnvQC6nRrZouOliOga1hcSH+aJKnJXMckBY4WgiMQE3nIi
+         nIB3kMusMXGd46+AKA4UfV6wjeb4d38SFwgtAhcfcwwnzqOKA1J6pqnoceubfzFW/TFO
+         tZaTBGpL5jTrKz0G4SjeSX18oP6nYqhCbsIdX9wm5qaEXhnX7utc6hArF7BpgxtLhaxh
+         y0pA==
+X-Gm-Message-State: ANoB5plRtvSE4WbgzCQI+3xorI+BNOoXOfQAiocK6hQgLkV7RfO1uprG
+	56Hhg9a6j/VHNBtANBo5CluoS469P+4C6fYIZI0sAwxF
+X-Google-Smtp-Source: AA0mqf76QPOPvPuSvmNiNF+/EuL65Pt5HYj0a7NlIO+KoXd2uydd8k+eiJ9RDbscSG/lPskJ8CQ4xZfBzBCdJ0nfmxI=
+X-Received: by 2002:a37:b706:0:b0:6e2:2b6d:e319 with SMTP id
+ h6-20020a37b706000000b006e22b6de319mr62469592qkf.298.1670328723826; Tue, 06
+ Dec 2022 04:12:03 -0800 (PST)
+MIME-Version: 1.0
+From: Boypeul Boy <boypeulboy@gmail.com>
+Date: Tue, 6 Dec 2022 12:11:51 +0000
+Message-ID: <CAMbmfFa6MGCN86k3K+0hv=Yzd+K44pqTOGmzmUnwN0sXpE7Usw@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000003deb4d05ef27b663"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000003deb4d05ef27b663
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Salut  je suis S=C3=A9n=C3=A9galais je vous demande comment je  vous retrou=
+ve sur
+WhatsApp
+
+--0000000000003deb4d05ef27b663
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Salut=C2=A0 je suis S=C3=A9n=C3=A9galais je vous demande =
+comment je=C2=A0 vous retrouve sur WhatsApp=C2=A0</div>
+
+--0000000000003deb4d05ef27b663--

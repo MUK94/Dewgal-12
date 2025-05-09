@@ -1,0 +1,79 @@
+Return-Path: <malphabah369@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id g1TNMK7L9GO/0B4A3R2AvA
+	(envelope-from <malphabah369@gmail.com>)
+	for <contact@fiidewgal.com>; Tue, 21 Feb 2023 14:48:30 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4PLgbx55yKz34SDmt
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="S3Qt+hzO"
+X-N0C-MailScanner-eFa-Watermark: 1677592100.11075@zDN6VqzxkSJtesHa1RhlSA
+X-N0C-MailScanner-eFa-From: malphabah369@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: D70B4401AEF7.AFDDC
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ed1-f50.google.com ([209.85.208.50] [209.85.208.50])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id D70B4401AEF7
+	for <contact@fiidewgal.com>; Tue, 21 Feb 2023 14:47:46 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com D70B4401AEF7
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com D70B4401AEF7
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=S3Qt+hzO
+Received: by mail-ed1-f50.google.com with SMTP id h16so17631934edz.10
+        for <contact@fiidewgal.com>; Tue, 21 Feb 2023 05:47:46 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=JrWGajOuwj5k70wxb3Fkk584CzrjPGWqIm42djWtYJQ=;
+        b=S3Qt+hzOP3sxF6q/291FdNvSNXyAd2d1fLH0ZL61FVXzV9ZZJTPdf2x0TcgLpwfH92
+         A7xSyK7IC1OHdsmyxq7HiQXlL1y3+c01LepIGxW4BFFD5InjKsJ13nTu2Z/GIDA8hPJf
+         N2g/snFgdQaImxgyQ3DEh13qsfYtTL+BEk+Zovw3e/K5+3h7WAFYxoFsSXUC5WQ9E4Q1
+         1Pp3+7mR6EmcSMwbUUrNWD2cr0nmjqui9dMTUhBWIuluXi5q2W2UoUcBdV8s6B1Ya0o1
+         4P4pBfu62SelzQItcBt/Ogxe8icqdQaQN9qWG1MLPHJBbw+IZJAV3h5q+PFvpYdIVZVR
+         OxRA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=JrWGajOuwj5k70wxb3Fkk584CzrjPGWqIm42djWtYJQ=;
+        b=PRvSkFA/zkfIsdAUez3cADNRlEUTfZeqVCSu4aSAUZpCEXaYokZjIq7eB1IjxeAeQu
+         QHnENRb6w5iKRjt17EFr/oARBFU3R9LkLyNZ0FxX7PdIA4thVV/9bcZtlbF3tk7uRML5
+         qCfDANwB1djbzfbhDEBgEn7yOmeEWUl4BKpLrJM/354k641Ja8R1x+meRZnXMXpXXq2W
+         oueIOB/ZZ7mhM4Gw0E9eyEJlMGZPOZq3Ggj9uSuM0Kgsc/NkikE1PCDqdpYaqkZNXVgl
+         oYStYj5qu62rquw1GDC7FWwM7eyzxsSpqSyrDp6BSGeZ/Q5iMkTrHXJkEz03UNN7QM4G
+         VGeA==
+X-Gm-Message-State: AO0yUKUhCoJq+x3lfbwm4n/1Sm85yD2ySLhD+yP+22jGJmiS3kHyqf5s
+	niMBHcIMLk2SBS80CFxWGtGCVuxnnzb3XxAPxpyn6M3/fuU=
+X-Google-Smtp-Source: AK7set+Q817a5baksOPRwaaldxFu0YtP91V8q/Gj6rcCd9H/dRnJlbNDYDlgPjGL7Zfc6wMxzB19gvhNICrFBcoW8IE=
+X-Received: by 2002:a17:906:f6c2:b0:8b1:2ebf:386b with SMTP id
+ jo2-20020a170906f6c200b008b12ebf386bmr6216013ejb.12.1676987265923; Tue, 21
+ Feb 2023 05:47:45 -0800 (PST)
+MIME-Version: 1.0
+References: <cea0e52ad40ae7c4e1be31ee9728f6fb@fiidewgal.com>
+In-Reply-To: <cea0e52ad40ae7c4e1be31ee9728f6fb@fiidewgal.com>
+From: Bah Alpha <malphabah369@gmail.com>
+Date: Tue, 21 Feb 2023 14:47:35 +0100
+Message-ID: <CAK9+0Jpk8GvRCNzEh_hTdagBNzrx+VGWJ3O1_VxiJReL7xA+Uw@mail.gmail.com>
+Subject: =?UTF-8?Q?Re=3A_Vous_avez_une_nouvelle_demande_d=27int=C3=A9r=C3=AAt?=
+To: =?UTF-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>
+Content-Type: multipart/alternative; boundary="000000000000473ea605f5360676"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000473ea605f5360676
+Content-Type: text/plain; charset="UTF-8"
+
+Ok
+
+--000000000000473ea605f5360676
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto">Ok</div>
+
+--000000000000473ea605f5360676--

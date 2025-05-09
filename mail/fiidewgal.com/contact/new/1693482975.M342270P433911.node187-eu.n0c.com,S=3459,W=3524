@@ -1,0 +1,65 @@
+Return-Path: <djenaboubah691@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id uK5SFN9/8GT3ngYA3R2AvA
+	(envelope-from <djenaboubah691@gmail.com>)
+	for <contact@fiidewgal.com>; Thu, 31 Aug 2023 13:56:15 +0200
+Received: from mail-vk1-f177.google.com (unknown [209.85.221.177])
+	by node187-eu.n0c.com (Postfix) with ESMTPS id 9A1BB403724C
+	for <contact@fiidewgal.com>; Thu, 31 Aug 2023 07:56:14 -0400 (EDT)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 9A1BB403724C
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 9A1BB403724C
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=avEC9qEC
+Received: by mail-vk1-f177.google.com with SMTP id 71dfb90a1353d-4908d9104b8so29122e0c.1
+        for <contact@fiidewgal.com>; Thu, 31 Aug 2023 04:56:14 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1693482973; x=1694087773; darn=fiidewgal.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=dwvm+JLo9/2ZYMUsqIj53LBBS2SIYQ5tgkRm37FnSak=;
+        b=avEC9qECoHVGqCpbGyv4PKO4C8TKwZEDjYKDqouUDe0ALqXSNM9jg08xETvPD8tAV6
+         PpEy5kHVwQ/YTI7P4d6zV4d6JKhup8UYhxezkG2suRzn1Z/rjGk/4pRAHgu5vqfEnKkJ
+         Bowjk3vBigR0TUpppJ5ALntr4FTo3e3ePP8jST4EFZjEyVpjTWC491jVx2D6uEwmsA01
+         wAOUcKWR3FAfvCtI66Vq6CxpHUvbIezDgjac/7kNkIsi6Ok8FLPmzV/hUGmJgq0OrJwm
+         JBgnwEkpN7QBTrXoNwlT7XQU9CjvJvYFpXIcDAorTxLua56KPCABN2BSG5EdwfvjYcR2
+         xJqA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1693482973; x=1694087773;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=dwvm+JLo9/2ZYMUsqIj53LBBS2SIYQ5tgkRm37FnSak=;
+        b=FRPp/z00/gHyQc0/fYVDVfB4X66EdouTjl+qeExB+MDiFYO4OpFeLUaluMpO3aCukl
+         9AAc/NuEEYHET76Xc+lNuA9yewe41nudkkoj6p0yyLBEVwvaVjGf9b3fzan10AyZnqMQ
+         DkpfPrkZjMZw0dRgcmZw1Yk9i7QJZgzB7Dcr4CeNV3jr4S/1bYZ3roB3SXD9f9tHN8Yp
+         JOpZYGT2szScfnlUT043jcuIUyalVHeyXayVJS0HwwkUaBBX41uvllSRdnFUEprT7Clp
+         TQgi7K6TB07wYCf8v9f+A9O7gtYm6otNj+eyGOSzr9VRccsS6h6CUMrG6j9ghoZK04Y/
+         TRxQ==
+X-Gm-Message-State: AOJu0YwtKSsv86X8bmCwP8Wd3CtmA+sD1OddN3uogGbghX5AJFogAnuq
+	uLRdYEEEcKxKeQ6Cy2l69bFLlsKRd22ZpifZmpRSsi4p
+X-Google-Smtp-Source: AGHT+IFGDcOEFX0nxqp8xiQ6BgzN6f+2tNfLRqsxy0/x6ZTfTwXtXunZ6/NRxPQm1HaggGtLj8T4sXe82xCBHZ5I+S0=
+X-Received: by 2002:a05:6102:548a:b0:443:94f2:234f with SMTP id
+ bk10-20020a056102548a00b0044394f2234fmr4387522vsb.1.1693482972997; Thu, 31
+ Aug 2023 04:56:12 -0700 (PDT)
+MIME-Version: 1.0
+From: Bah Djenabou <djenaboubah691@gmail.com>
+Date: Fri, 14 Apr 2023 23:51:11 +0000
+Message-ID: <CALzU7WifdRye+7xq3RmFw-k4mTfvNEkGM_XfV2exEtKfDkLP+g@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000009ecb9060436bb88"
+
+--00000000000009ecb9060436bb88
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+--00000000000009ecb9060436bb88
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"></div>
+
+--00000000000009ecb9060436bb88--

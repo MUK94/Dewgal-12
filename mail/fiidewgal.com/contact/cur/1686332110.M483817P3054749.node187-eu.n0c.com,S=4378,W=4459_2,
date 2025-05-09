@@ -1,0 +1,81 @@
+Return-Path: <alphaley224@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id gRbGHM5ig2SdnC4A3R2AvA
+	(envelope-from <alphaley224@gmail.com>)
+	for <contact@fiidewgal.com>; Fri, 09 Jun 2023 19:35:10 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Qd7Wd4Ncnz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="PEUB+dl1"
+X-N0C-MailScanner-eFa-Watermark: 1686936844.60244@PCXutoVG8sRT/6Go52C7Aw
+X-N0C-MailScanner-eFa-From: alphaley224@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: s
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 30AED4019760.A3DA1
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-vs1-f54.google.com ([209.85.217.54] [209.85.217.54])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 30AED4019760
+	for <contact@fiidewgal.com>; Fri,  9 Jun 2023 19:33:33 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 30AED4019760
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 30AED4019760
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=PEUB+dl1
+Received: by mail-vs1-f54.google.com with SMTP id ada2fe7eead31-43b1cee7e65so473681137.2
+        for <contact@fiidewgal.com>; Fri, 09 Jun 2023 10:33:33 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1686332012; x=1688924012;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=dtGUlLBlgvPYwoA7beO4VipfHpt00LOgv3CUwCydtww=;
+        b=PEUB+dl1e1gmrasl/laguROGsE8omCkQkTxhoaz8q5ulF74cosZnagx8CpSdJHeJ+e
+         KXGabrA3LbZnToaq6MJTz+/ytB3ljfWiPDbbtbo09VZO4z6RrkKEK8ONgfWitqKszEZ6
+         ySKN9kf5lTQcXwDy0PUEEAoRNrkXVdcd93VxEFwLYIobKi/RCYsE4SvrdVsGHk+MIADg
+         Jm6KDH/cnwF2z1XH49YSGbpkFt6elGimMVRzui2ZmberfyBCIWoAcxEQh+mVql659e8g
+         kTMTFUkhl6qbvM4yk6F+QdbWFZdSXec3c6v4aBamVTJNnL43Qiw2hiHUH7EmeCw0YXr7
+         aAcQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1686332012; x=1688924012;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=dtGUlLBlgvPYwoA7beO4VipfHpt00LOgv3CUwCydtww=;
+        b=ZvlCN2qvw4RtYMA93g0kzQNE2NOAhsHHAjqftxH2QcuXkI481aWeeeXqmF/MnqBfIr
+         qt5v35+RVAiKVkCVHq+2IwDgANo/jSWRT+XYpJVWrUH0V+Cq36i6rRge5EX6KmmnZ7WK
+         7CPN+aqqkV5QF+7VTcURh3GQtZrck3S3O8Ss64/XKt5ymG21KsVsVmqXe1FKNfuAv5LD
+         Pv7nW+KuLLzgRbrKOCypL3umrQt9B1B1Ld7VcD+sqDzD1v8yFCBk0+YUeHeoiTWXyDzR
+         +lYFAxUYzdOX3mkTcJkGLQ1GwNXea1nq0wQdZOh4JmYByvanLKRqg1XYVMCN/6sHsc4v
+         Yj3g==
+X-Gm-Message-State: AC+VfDx1DatEexVw/dJgo0V5Q17V4dCbpAbqDJYZuSjy1okdkxe983v6
+	8twgChVql+KYbi7+u7Mpanp0Fdckz35edE8/6LHS8aj8
+X-Google-Smtp-Source: ACHHUZ4L7rcLKGZa/rJCpRGLpK1TiWWPYvOfSA/ajFz2mLRycNYSldoEt6YhdmCc1rfVJZEsSvNNwoxl46kpGne0geo=
+X-Received: by 2002:a67:ad08:0:b0:43b:3c6e:67f7 with SMTP id
+ t8-20020a67ad08000000b0043b3c6e67f7mr1009405vsl.22.1686332011722; Fri, 09 Jun
+ 2023 10:33:31 -0700 (PDT)
+MIME-Version: 1.0
+From: Alpha Diallo <alphaley224@gmail.com>
+Date: Fri, 9 Jun 2023 17:33:19 +0000
+Message-ID: <CAJnosaZe9C_sMzOE5jz51RraUUAWufOxQZYe_7t4Gp9ayM=xfA@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000883b2905fdb5c4d4"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000883b2905fdb5c4d4
+Content-Type: text/plain; charset="UTF-8"
+
+Salut  je veux  m'inscrire sur votre  plate-forme mais je ne sais comment
+faire
+
+--000000000000883b2905fdb5c4d4
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Salut=C2=A0 je veux=C2=A0 m&#39;inscrire sur votre=C2=A0 =
+plate-forme mais je ne sais comment faire=C2=A0</div>
+
+--000000000000883b2905fdb5c4d4--

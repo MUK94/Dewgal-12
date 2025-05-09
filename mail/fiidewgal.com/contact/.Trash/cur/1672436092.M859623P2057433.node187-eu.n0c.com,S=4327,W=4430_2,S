@@ -1,0 +1,103 @@
+Return-Path: <>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 2PUrM3xZr2PZZB8A3R2AvA
+	(envelope-from <>)
+	for <contact@fiidewgal.com>; Fri, 30 Dec 2022 22:34:52 +0100
+Received: by node187-eu.n0c.com (Postfix)
+	id CC30840664EB; Fri, 30 Dec 2022 16:34:52 -0500 (EST)
+Date: Fri, 30 Dec 2022 16:34:52 -0500 (EST)
+From: MAILER-DAEMON@node187-eu.n0c.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: contact@fiidewgal.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="36D6640664F7.1672436092/node187-eu.n0c.com"
+Message-Id: <20221230213452.CC30840664EB@node187-eu.n0c.com>
+
+This is a MIME-encapsulated message.
+
+--36D6640664F7.1672436092/node187-eu.n0c.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host node187-eu.n0c.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<fantasidibe81@yahoo.fr>: host mx-eu.mail.am0.yahoodns.net[188.125.72.73] said:
+    552 1 Requested mail action aborted, mailbox not found (in reply to end of
+    DATA command)
+
+--36D6640664F7.1672436092/node187-eu.n0c.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; node187-eu.n0c.com
+X-Postfix-Queue-ID: 36D6640664F7
+X-Postfix-Sender: rfc822; contact@fiidewgal.com
+Arrival-Date: Fri, 30 Dec 2022 16:34:52 -0500 (EST)
+
+Final-Recipient: rfc822; fantasidibe81@yahoo.fr
+Original-Recipient: rfc822;fantasidibe81@yahoo.fr
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; mx-eu.mail.am0.yahoodns.net
+Diagnostic-Code: smtp; 552 1 Requested mail action aborted, mailbox not found
+
+--36D6640664F7.1672436092/node187-eu.n0c.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <contact@fiidewgal.com>
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NkJSX0stLznqZg
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="HKg4/LRv"
+X-N0C-MailScanner-eFa-Watermark: 1673040890.00129@6OLV5EpBI0RcIoenwpwOnw
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: DAA1740664EB.A374B
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id DAA1740664EB
+	for <fantasidibe81@yahoo.fr>; Fri, 30 Dec 2022 22:34:48 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com DAA1740664EB
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com DAA1740664EB
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1672436088;
+	bh=HQpsafFx/qCOAYJTgf/Lad4PMqPVzOUY+Xg75YTvOWo=;
+	h=Date:Subject:From:To:From;
+	b=HKg4/LRv1gSb81/BrVuksy/bnZ7aCx2113PReVmhmYmwdsIstOlQUcRhYi2J21+xm
+	 FrRztiT7RWKNXL3V4hKT0eRa5JlSvMuHgPw+HqGqBMMsXL+VX9zhodJrtcbDRgGQRM
+	 sOHVnOj6eh19jMycNB/otmYn4ReipsAEyOKIj8Qc=
+Message-ID: <3654b6270da614fd95ff43915c628b5e@fiidewgal.com>
+Date: Fri, 30 Dec 2022 22:34:48 +0100
+Subject: =?utf-8?Q?R=C3=A9initialisation?= du mot de passe
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: fantasidibe81@yahoo.fr
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<p>Bonjour&nbsp;Mahmoud Diallo,</p><p>Votre code de v=C3=A9rification pour =
+la r=C3=A9initialisation du mot de passe est : [[code]]<br></p><p><br></p><=
+p>Merci !<br></p><p>Ne r=C3=A9pondez pas</p>
+
+
+--36D6640664F7.1672436092/node187-eu.n0c.com--

@@ -1,0 +1,138 @@
+Return-Path: <dembajah1@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id zJX5BS+Kf2T4Vg8A3R2AvA
+	(envelope-from <dembajah1@gmail.com>)
+	for <contact@fiidewgal.com>; Tue, 06 Jun 2023 21:34:07 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4QbLJG6SNYz34SDmj
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="diLkCE4Q"
+X-N0C-MailScanner-eFa-Watermark: 1686684841.81677@TIHcoIlman1PNZo5t0dGdg
+X-N0C-MailScanner-eFa-From: dembajah1@gmail.com
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: A595640198A1.A62DE
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-wm1-f44.google.com ([209.85.128.44] [209.85.128.44])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id A595640198A1
+	for <contact@fiidewgal.com>; Tue,  6 Jun 2023 21:33:29 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com A595640198A1
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com A595640198A1
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=diLkCE4Q
+Received: by mail-wm1-f44.google.com with SMTP id 5b1f17b1804b1-3f6d7abe9a4so56415145e9.2
+        for <contact@fiidewgal.com>; Tue, 06 Jun 2023 12:33:29 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1686080008; x=1688672008;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=RC8O3Br28nGS503attsdBoJSrjccbeRp7BqE/wN7ULw=;
+        b=diLkCE4QrqY7Fu8Cwmi7xjQWYm10Ll1XGf3NNzmELjIwFt2b6LCH5YfyaHLZbZ+GyA
+         jxofRdNkaQSeXdaMN+jG6j7g6bjvbxskq01RPWZ+JjlBkgcMNe680JBcXNM7CaAALsS5
+         /z4ayHXA1T67NcjnbQ7ghu6QcQfKjfCpBGS4fmA/SsvXCvDxOrfD6PVoQp7dfdbBi53p
+         a5LoZKnl06i1Kxxe280Fu4Mzc3pnwDtrHvqjYkBFlw527pPUOIMiq1DuEwnScIORkZgq
+         l1tUWo1xaJwXrz82zcoBtj5soa2Bs7gUsCeSTMYJLc8Cocm5Aojoz7E5W0sCLdGZ4n6H
+         VPfA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1686080008; x=1688672008;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=RC8O3Br28nGS503attsdBoJSrjccbeRp7BqE/wN7ULw=;
+        b=P+m9vqIwIMAg4h+p9J7pRMIrkMQeme6TYtpm2gOVd71bA1pj/oNR7cbTomekRYPg5W
+         +BFs7WH6OQnkh8kTKimG+ZhLIyptj9V0E4KwuQnUxjuQ2DmeEED/mT1JFE9Ul2/N/jVr
+         c9/b08sKXNs+c59qVpKlqXSr/VYFZA/Cqu8qZYZFlHvwMqm432R07CB1RjO7zyyKiX4P
+         +8MkK7d+5Yh4wtHaRiBNuqjKqK8U3PzZu7DJfvo3+C5v0XTRfmIB4kiI8yr9ot2LESY7
+         xD2rViXszF/namnkF5h6Z3E0MR4quVU+HV3NOpLmK/HxhrGYFB4MIM8zQQoNzByjExAG
+         /6iA==
+X-Gm-Message-State: AC+VfDxGeY9ebDhAs5WtRSLQZC58+jpYYndgYIXqyNkee421m8afv479
+	oAuAm9llZnR+R/AEoS0s4ASM8pXVoijaLJ5HWfB+n/vg
+X-Google-Smtp-Source: ACHHUZ7syzbt45qjifRujnVk0yhLrLS8ApN6DMahNb5huuDzbNoqHYg3qsr+qIXRaT6IPR9ctVvgp3/YKc/HAgWz0cY=
+X-Received: by 2002:a05:600c:21d0:b0:3f6:4cfc:79cb with SMTP id
+ x16-20020a05600c21d000b003f64cfc79cbmr2755252wmj.31.1686080008335; Tue, 06
+ Jun 2023 12:33:28 -0700 (PDT)
+MIME-Version: 1.0
+References: <0020e3694422b87fa6500625e0c475ad@fiidewgal.com> <1bssyypqwhy4-ehkot34honco-deizj18n44e6-mbh1fd-d6eqoogb5olm3ubx9y-x74if8l1en0r3yd2elt92s8a-1obrpfxngt37-yltwti-7i14l8-honknaq9l9x0etqqz3-et3ci1ea6djahbj8ua.1675331217082@email.android.com>
+In-Reply-To: <1bssyypqwhy4-ehkot34honco-deizj18n44e6-mbh1fd-d6eqoogb5olm3ubx9y-x74if8l1en0r3yd2elt92s8a-1obrpfxngt37-yltwti-7i14l8-honknaq9l9x0etqqz3-et3ci1ea6djahbj8ua.1675331217082@email.android.com>
+From: Dia Demba <dembajah1@gmail.com>
+Date: Tue, 6 Jun 2023 21:33:16 +0200
+Message-ID: <CAADzuwGu77_UXGSHyCB1avsZHT4+5pcHZhqTRFXOQz4R4eJ=pQ@mail.gmail.com>
+Subject: Re: Re : Rappel avant la suppression de votre compte sans photo .
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000f5b5ad05fd7b1771"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000f5b5ad05fd7b1771
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bonsoir
+
+Le jeu. 2 f=C3=A9vr. 2023, 10:46, =E2=80=AA=E2=80=AADia Demba=E2=80=AC=E2=
+=80=AC <dembajah1@gmail.com> a =C3=A9crit :
+
+> Salam yaawuur cella
+>
+> Envoy=C3=A9 depuis mon t=C3=A9l=C3=A9phone Huawei
+>
+>
+> -------- Message original --------
+> De : contact@fiidewgal.com
+> Date : mer. 1 f=C3=A9vr. 2023 =C3=A0 10:48
+> Objet : Rappel avant la suppression de votre compte sans photo .
+>
+> Salam Aleykoum ,
+> Nous sommes tr=C3=A8s heureux de vous avoir parmi nos
+> membres dans la plateforme et nous souhaitons que
+> Vous y rester.C=E2=80=99est pourquoi nous vous prions de
+> mettre =C3=A0 jour votre profil en mettant correctement
+> Votre date de naissance , votre =C3=A9tat civil ;votre photo
+> et votre numero de telephone avec l'indicatif
+> Si cela est compliqu=C3=A9 pour vous faites nous parvenir
+> votre num=C3=A9ro de membre qui est sur votre profil public
+> avec vos informations cit=C3=A9es ci dessus .
+> Vous pouvez =C3=A9galement nous faire parvenir votre numero
+> de membre avec  votre photo et num=C3=A9ro de telephone sur
+> notre WhatsApp 001 646 752 9115 ou juste scanner le QR Code ci)
+> joint ci-dessous .Sans votre photo , le profil sera d=C3=A9sactiv=C3=A9.
+> Si votre compte n'est pas confirmer faites nous parvenir vos
+> informations sur whatsApp pour vous inscrire.
+> Merci pour votre comprehension!
+>
+>
+
+--000000000000f5b5ad05fd7b1771
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Bonsoir=C2=A0</div><br><div class=3D"gmail_quote"><div di=
+r=3D"ltr" class=3D"gmail_attr">Le jeu. 2 f=C3=A9vr. 2023, 10:46, =E2=80=AA=
+=E2=80=AADia Demba=E2=80=AC=E2=80=AC &lt;<a href=3D"mailto:dembajah1@gmail.=
+com">dembajah1@gmail.com</a>&gt; a =C3=A9crit=C2=A0:<br></div><blockquote c=
+lass=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;=
+padding-left:1ex"><div dir=3D"auto">Salam yaawuur cella=C2=A0<br><br>Envoy=
+=C3=A9 depuis mon t=C3=A9l=C3=A9phone Huawei</div><div style=3D"line-height=
+:1.5"><br><br>-------- Message original --------<br>De=C2=A0: <a href=3D"ma=
+ilto:contact@fiidewgal.com" target=3D"_blank" rel=3D"noreferrer">contact@fi=
+idewgal.com</a><br>Date=C2=A0: mer. 1 f=C3=A9vr. 2023 =C3=A0 10:48<br>Objet=
+=C2=A0: Rappel avant la suppression de votre compte sans photo .<br><blockq=
+uote>Salam Aleykoum ,<br>Nous sommes tr=C3=A8s heureux de vous avoir parmi =
+nos<br>membres dans la plateforme et nous souhaitons que<br>Vous y rester.C=
+=E2=80=99est pourquoi nous vous prions de<br>mettre =C3=A0 jour votre profi=
+l en mettant correctement<br>Votre date de naissance , votre =C3=A9tat civi=
+l ;votre photo<br>et votre numero de telephone avec l&#39;indicatif<br>Si c=
+ela est compliqu=C3=A9 pour vous faites nous parvenir<br>votre num=C3=A9ro =
+de membre qui est sur votre profil public<br>avec vos informations cit=C3=
+=A9es ci dessus .<br>Vous pouvez =C3=A9galement nous faire parvenir votre n=
+umero<br>de membre avec=C2=A0 votre photo et num=C3=A9ro de telephone sur<b=
+r>notre WhatsApp 001 646 752 9115 ou juste scanner le QR Code ci)<br>joint =
+ci-dessous .Sans votre photo , le profil sera d=C3=A9sactiv=C3=A9.<br>Si vo=
+tre compte n&#39;est pas confirmer faites nous parvenir vos<br>informations=
+ sur whatsApp pour vous inscrire.<br>Merci pour votre comprehension!</block=
+quote></div></blockquote></div>
+
+--000000000000f5b5ad05fd7b1771--

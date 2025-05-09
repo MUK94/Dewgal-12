@@ -1,0 +1,77 @@
+Return-Path: <lamadjalolamadjalo833@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id u76JK5LapWNjogUA3R2AvA
+	(envelope-from <lamadjalolamadjalo833@gmail.com>)
+	for <contact@fiidewgal.com>; Fri, 23 Dec 2022 17:42:58 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NdtJy1lWhz34SDnJ
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="XPTd70zn"
+X-N0C-MailScanner-eFa-Watermark: 1672418575.44973@zGdc1f/28K3s5MwKH+moGw
+X-N0C-MailScanner-eFa-From: lamadjalolamadjalo833@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: C78AC401AEF6.A94CD
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-oi1-f174.google.com ([209.85.167.174] [209.85.167.174])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id C78AC401AEF6
+	for <contact@fiidewgal.com>; Fri, 23 Dec 2022 17:42:22 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com C78AC401AEF6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com C78AC401AEF6
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=XPTd70zn
+Received: by mail-oi1-f174.google.com with SMTP id e205so4999150oif.11
+        for <contact@fiidewgal.com>; Fri, 23 Dec 2022 08:42:22 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=GdQiF2CTSfYuL7z+rpAjW3GU+YzSh0xATZBx4KSjfws=;
+        b=XPTd70znrJgJbADagKfmrSacqyU/4aXTzqHBBMbWRu9oBqikPUctzoYeD2t9iQ9jgS
+         FjoaOQRwq98E1B00kpUlyIIoiS6SAaLozF76YU6h2eyr3AftTi1AxVb108JrTkwtcVU3
+         dDgvkmtrqIqxdUsDVreA2JERrTh/EUuWaCjZ/Z0QANMY2QnxM4kXt30C3cdQvuFbcGtt
+         29wl2iq6Px0I1EF7j/qgZit1c4gGzqoy6tlpQT4dKT832SEMI/TgsJB+vwZzjsh5as8+
+         xWSrGx/QTeKZpJWIVyUKvnfd61730SOddKW5UUOaPyfZ2wkzC2aIO41ptUMiPzaDBBO8
+         VniQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=GdQiF2CTSfYuL7z+rpAjW3GU+YzSh0xATZBx4KSjfws=;
+        b=Itw/u51oGqXqcTSMvabcxI3iUQt9Z9SdBky7CEOumebWOB1eKmm6KNTwQYIXHYsO0U
+         irMSgUy5NhZyjK2lP139y6S+16dftQ2UdTv9kHJMta+aHKb9eXp2Xcpnm45wS4AtU4M3
+         uVAqhLgdhQySDCVB8QI+vNxFWW9ZPfehfz7SyKvrAOwh9OyLyFtUgbsnSy9x3ubCoDpC
+         xaUirTBiAr1HhSZzhAsEnyvnakSzNzxPeLr9XMqDVTucE4lKFhkHbvtTUF1sE7HWD5qR
+         388QiY7PXzWTuvoztH6VS1vDjpjM4USAaVikU8hYIivNjF5kV/AOYE98LR783B9cb9hw
+         Opxw==
+X-Gm-Message-State: AFqh2kqAQOGg8tDVoG2IT2Ts/i94bET0NEyzcPdBtVlg6rvTbvtPw3wN
+	3BIon8zeyqDc6p918jctoUqc8WGA94IX6bKFFB5xmTiz
+X-Google-Smtp-Source: AMrXdXskwB2U+FuLlBbrzAOy43qwpwvDLBJxtnoHW76HRJ5RVgTnvyeoaRdYFTV9RoWcQsrOecOagFf4ZMDhsWQTQfw=
+X-Received: by 2002:a54:4393:0:b0:35a:6e4f:166e with SMTP id
+ u19-20020a544393000000b0035a6e4f166emr583185oiv.11.1671813741114; Fri, 23 Dec
+ 2022 08:42:21 -0800 (PST)
+MIME-Version: 1.0
+From: Lama djalo Lama djalo <lamadjalolamadjalo833@gmail.com>
+Date: Fri, 23 Dec 2022 20:41:48 +0400
+Message-ID: <CAJcbzvkQzyyf3-H+Cmt6R3kp8YRk65yyL+UpJf8sp4xSFefOuw@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000002b790605f08178fc"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000002b790605f08178fc
+Content-Type: text/plain; charset="UTF-8"
+
+lamadjalolamadjalo833@gmail.com
+
+--0000000000002b790605f08178fc
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"><a href="mailto:lamadjalolamadjalo833@gmail.com">lamadjalolamadjalo833@gmail.com</a></div>
+
+--0000000000002b790605f08178fc--

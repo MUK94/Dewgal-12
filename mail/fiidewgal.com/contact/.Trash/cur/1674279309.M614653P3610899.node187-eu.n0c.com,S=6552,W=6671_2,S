@@ -1,0 +1,119 @@
+Return-Path: <dialloabdourahmane710@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 2cmJJI15y2MTGTcA3R2AvA
+	(envelope-from <dialloabdourahmane710@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 21 Jan 2023 06:35:09 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NzQ7103tVz34nwbc
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="P5PuOocK"
+X-N0C-MailScanner-eFa-Watermark: 1674884103.06172@W6EefK19B41hoQVf1gNXkA
+X-N0C-MailScanner-eFa-From: dialloabdourahmane710@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 4EB6A401AEEF.A99AD
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-pg1-f176.google.com ([209.85.215.176] [209.85.215.176])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 4EB6A401AEEF
+	for <contact@fiidewgal.com>; Sat, 21 Jan 2023 06:34:29 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 4EB6A401AEEF
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 4EB6A401AEEF
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=P5PuOocK
+Received: by mail-pg1-f176.google.com with SMTP id s67so5623276pgs.3
+        for <contact@fiidewgal.com>; Fri, 20 Jan 2023 21:34:29 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=Y3FH2381fszSZuYtvu/QBvf/gyKM5zR5Gi/A55FnRJ0=;
+        b=P5PuOocKAlbWGnGkBj/yVeVpH0DnID5ZQZfiWEwny6hwH9mF8fDcXPW66fNO/EKTV3
+         RwMDAC/X1ppeN8IZsx6ZKRMVFUVtfQIaUuqx5fGzKRcNfXZBmInaeAodl2HAhV3MvhYD
+         GZYvpLqGZ/9TGAtDD8DfgfnHdt7iiwkG6a2Ra3TTR5G4PnAFNf4D1azaXcPxH8EvDgOp
+         9y60/dLDflaa7+AQ1/zPmyCJxLfKkFqptm3eOXS1+4/wYwxw9/O0w7AxhWikVpm2yMIc
+         JJCCZWl4FSX6XcdIQlrFRxnZWoL9XbrRfgExXTNYilnCCT6syU+Thyw/00zcUilKTWkl
+         krlA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=Y3FH2381fszSZuYtvu/QBvf/gyKM5zR5Gi/A55FnRJ0=;
+        b=fi4IVvAaHSMkjR8wv7WBQDozzFjjrr3Fx3OwHXVk4y2uWI4UxuVnCpMejurN3VeJZY
+         FTSsF7+sE0RHALIahtK6pw6K/oQjtPyrc/YiqrzXIrovUyzhkJ3ngoJBCb28gNNCKVhw
+         rH+ESz9oG8ZW5CEqaw9rAn38xX0xrMXxB1Sljr3NqRg8AxANxiPJaR/i8N1La3xfN+76
+         xd39pdD+A4lobFfd0bYtjjyARkGciP5KyMYlSFhV8aLq2z2uEeK5F4Vi/z3hEZ30HwYv
+         j9KexK03GkYBD+bv09x4jtXiqxJmzBQb23b6mKi3SkLz+jBzwPtTFlYjQcbjydvmsJJB
+         MgBQ==
+X-Gm-Message-State: AFqh2kpCfBGXxIQcXXIHmndNJhHbh+9a07avynk+t/5BoYHKNrG7T1uz
+	Wd6Dak3cLsI7f8zyTNr+E/7qINbaxdxptGlYodVE3O+u
+X-Google-Smtp-Source: AMrXdXvEqh4ZK9pcf4NTsNadQqZTiC4fNilLHwiUooOCGRFYSpv/csrvytNIIWoKeMZlJ0fsyjvbaDmpIYldKBYXwHo=
+X-Received: by 2002:aa7:9aef:0:b0:58b:3158:e03c with SMTP id
+ y15-20020aa79aef000000b0058b3158e03cmr1851565pfp.34.1674279267061; Fri, 20
+ Jan 2023 21:34:27 -0800 (PST)
+MIME-Version: 1.0
+References: <726a1955e68e96f062af9978fe4ea1c7@fiidewgal.com>
+In-Reply-To: <726a1955e68e96f062af9978fe4ea1c7@fiidewgal.com>
+From: Abdourahmane Diallo <dialloabdourahmane710@gmail.com>
+Date: Sat, 21 Jan 2023 05:34:16 +0000
+Message-ID: <CANPi=yoEwWVWK53tQ-FSq1Q22Z_kvq7C0-_dyPjtj9-j1yBHoA@mail.gmail.com>
+Subject: =?UTF-8?Q?Ok_je_veux_vous_=C3=A9crire_sur_watchsapp?=
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000f7d6f405f2bf84cd"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000f7d6f405f2bf84cd
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Le dim. 15 janv. 2023 =C3=A0 22:17, <contact@fiidewgal.com> a =C3=A9crit :
+
+> Salam Aleykoum ,
+> Nous sommes tr=C3=A8s heureux de vous avoir parmi nos
+> membres dans la plateforme et nous souhaitons que
+> Vous y rester.C=E2=80=99est pourquoi nous vous prions de
+> mettre =C3=A0 jour votre profil en mettant correctement
+> Votre date de naissance , votre =C3=A9tat civil ;votre photo
+> et votre numero de telephone avec l'indicatif
+> Si cela est compliqu=C3=A9 pour vous faites nous parvenir
+> votre num=C3=A9ro de membre qui est sur votre profil public
+> avec vos informations cit=C3=A9es ci dessus .
+> Vous pouvez =C3=A9galement nous faire parvenir votre numero
+> de membre avec  votre photo et num=C3=A9ro de telephone sur
+> notre WhatsApp 001 646 752 9115 ou juste scanner le QR Code ci)
+> joint ci-dessous .Sans votre photo , le profil sera d=C3=A9sactiv=C3=A9.
+> Merci pour votre comprehension!
+>
+
+--000000000000f7d6f405f2bf84cd
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div><br></div><div><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=
+=3D"gmail_attr">Le=C2=A0dim. 15 janv. 2023 =C3=A0 22:17, &lt;<a href=3D"mai=
+lto:contact@fiidewgal.com">contact@fiidewgal.com</a>&gt; a =C3=A9crit=C2=A0=
+:<br></div><blockquote class=3D"gmail_quote" style=3D"margin:0px 0px 0px 0.=
+8ex;border-left-width:1px;border-left-style:solid;padding-left:1ex;border-l=
+eft-color:rgb(204,204,204)">Salam Aleykoum ,<br>
+Nous sommes tr=C3=A8s heureux de vous avoir parmi nos<br>
+membres dans la plateforme et nous souhaitons que<br>
+Vous y rester.C=E2=80=99est pourquoi nous vous prions de<br>
+mettre =C3=A0 jour votre profil en mettant correctement<br>
+Votre date de naissance , votre =C3=A9tat civil ;votre photo<br>
+et votre numero de telephone avec l&#39;indicatif<br>
+Si cela est compliqu=C3=A9 pour vous faites nous parvenir<br>
+votre num=C3=A9ro de membre qui est sur votre profil public<br>
+avec vos informations cit=C3=A9es ci dessus .<br>
+Vous pouvez =C3=A9galement nous faire parvenir votre numero<br>
+de membre avec=C2=A0 votre photo et num=C3=A9ro de telephone sur<br>
+notre WhatsApp 001 646 752 9115 ou juste scanner le QR Code ci)<br>
+joint ci-dessous .Sans votre photo , le profil sera d=C3=A9sactiv=C3=A9.<br=
+>
+Merci pour votre comprehension!<br>
+</blockquote></div></div>
+
+--000000000000f7d6f405f2bf84cd--

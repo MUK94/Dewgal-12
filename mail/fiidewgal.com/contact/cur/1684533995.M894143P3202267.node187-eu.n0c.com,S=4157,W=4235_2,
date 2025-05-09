@@ -1,0 +1,78 @@
+Return-Path: <lamidiallo1@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id EJ46NevyZ2Tb3DAA3R2AvA
+	(envelope-from <lamidiallo1@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 20 May 2023 00:06:35 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4QNLXW5KBnz34SDmq
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="IR211o8C"
+X-N0C-MailScanner-eFa-Watermark: 1685138785.46516@jsKJSClX+P4cM4syFMf82Q
+X-N0C-MailScanner-eFa-From: lamidiallo1@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: ssss
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 92A6E40044DD.A7831
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ed1-f43.google.com ([209.85.208.43] [209.85.208.43])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 92A6E40044DD
+	for <contact@fiidewgal.com>; Sat, 20 May 2023 00:05:51 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 92A6E40044DD
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 92A6E40044DD
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=IR211o8C
+Received: by mail-ed1-f43.google.com with SMTP id 4fb4d7f45d1cf-51190fd46c3so1576295a12.1
+        for <contact@fiidewgal.com>; Fri, 19 May 2023 15:05:51 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1684533951; x=1687125951;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=um7hxZRrEAibz/nqA8DfxaHjIRjEwQMugXvaVn2P42s=;
+        b=IR211o8CZaZsr1nbCU1l4RIsGuegPSVNAZewncGiKhXJ1XetNef6K87ITdY7YXof0w
+         uIx7HuFpfT2BiJVE7JcoIo1DG8ojLgr0k2IuN+GSWZag6a/p5QWjtL81dZ1qZbSpVMnb
+         g+dY4cC8n0Zkhjs4E+M+CE/JNyC+C6rC6b5ob9ng2RzNbM22ocPjgiPr9eYtR6BeVaY6
+         1KuoMZXqBslRYplH4IyYPtTm6hNVUzNl296B4yMlT7ZImGnaeC0eW/gCFSEMZ5w/Dwdn
+         8BNc2b0c8DwJYLfb5GhEB5puBD4XxcssMsx0NVd35NWr59eLOGVK5F49xi6SKy3EKNqM
+         Zqnw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1684533951; x=1687125951;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=um7hxZRrEAibz/nqA8DfxaHjIRjEwQMugXvaVn2P42s=;
+        b=LdlY8Rxm4s75p3RLRwjj939WG2X3effnTpBhGJy4JbwWMmsWV0M7vYYxZZID94odja
+         B7oAQcdONAChxI11KY9QARhEoYSUK9Ja7Og2dq6hYwO61wmi8vEQjvJQRJ5964CQjLaD
+         btagXCAq8DeCAibRw2kGBnZUJVftPO7+G9ULibPfn0NYNa9rU52yWuqwgjIkhe8IAkII
+         +PzY4V5KI0dwlhj1djUzZhzgbaZ+efPquV2BT6TwXIbWfEAQNewxK0aBeB0bK0Ougqb+
+         wiuA0hlpCWG0tt/gDuf2fcfSHCxw3hz3ip+DfS/8+IJlas1pyJ2IDOk8LpMJgUTGB+l/
+         gvDA==
+X-Gm-Message-State: AC+VfDwLx4N9ezMde/+gB4RhbMivJN4pZ1RRudVDT5izxAsV+ItdhB+P
+	75yiJop565JpUVCQZi7IPOlEPLAWBXNfJvIADvrsaT5D
+X-Google-Smtp-Source: ACHHUZ7OTqVY3j6MXUe1WjKGbKwYgUI99pSLaSMSkKaOgRfREPPVGi4hbH4RJsjxRZEFky+kac6hErZt2C8jafmxn60=
+X-Received: by 2002:a17:907:1c11:b0:962:ec98:cd75 with SMTP id
+ nc17-20020a1709071c1100b00962ec98cd75mr3386292ejc.67.1684533950560; Fri, 19
+ May 2023 15:05:50 -0700 (PDT)
+MIME-Version: 1.0
+From: Diallo Lamine <lamidiallo1@gmail.com>
+Date: Fri, 19 May 2023 23:05:37 +0100
+Message-ID: <CALFfNrbcBP3SFay+Dxfto3PskU_++5q7CqNH_cnZHWqEBi_Dbw@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000bc3e5905fc131fac"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000bc3e5905fc131fac
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+--000000000000bc3e5905fc131fac
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"></div>
+
+--000000000000bc3e5905fc131fac--

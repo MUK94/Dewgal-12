@@ -1,0 +1,456 @@
+Return-Path: <void-bounce-contact=fiidewgal.com@express.medallia.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id ohPlI9I2SWT6ByYA3R2AvA
+	(envelope-from <void-bounce-contact=fiidewgal.com@express.medallia.com>)
+	for <contact@fiidewgal.com>; Wed, 26 Apr 2023 16:36:02 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Q61dD6k8Hz34SDml
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=paypal-customerfeedback.com header.i=@paypal-customerfeedback.com header.b="zbkZRXfu"
+X-N0C-MailScanner-eFa-Watermark: 1683124462.37712@ddxWJ4y9Ytrd5CNhS/RE7g
+X-N0C-MailScanner-eFa-From: void-bounce-contact=fiidewgal.com@express.medallia.com
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: BD9AD4002FE0.AE189
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mta-176-224.mx.medallia.com ([199.102.178.224] [199.102.178.224])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id BD9AD4002FE0
+	for <contact@fiidewgal.com>; Wed, 26 Apr 2023 16:34:18 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com BD9AD4002FE0
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=reject dis=none) header.from=paypal-customerfeedback.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=express.medallia.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com BD9AD4002FE0
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (1024-bit key; secure) header.d=paypal-customerfeedback.com header.i=@paypal-customerfeedback.com header.a=rsa-sha256 header.s=pp-medallia header.b=zbkZRXfu
+Received: from express.medallia.com (nsmip.medallia.com [10.191.120.51])
+	by mx.medallia.com (SMTP) with ESMTP id 3A19920039C6
+	for <contact@fiidewgal.com>; Wed, 26 Apr 2023 14:34:15 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 mx.medallia.com 3A19920039C6
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=paypal-customerfeedback.com; s=pp-medallia; t=1682519655;
+	bh=E/1MOuakpXaKVFS8ePqyUOF215pImvL/S4nCFG5+DWs=;
+	h=Date:From:To:Subject:List-Unsubscribe:From;
+	b=zbkZRXfuTK8HwbK6GMcvYft5jNig3QrWsCM+lWoXbnwb/Rypul84lkl42f8rZeG6B
+	 8ESXim+JImTGwBG33xIl08mAh6f9fIsX5qAv8jm8Esll38hZ8h9lH5WUSVS0r2fnS+
+	 dPCGwfNWz6ZITXrDaePEB2nEIvFEsPgKzc7DiQf4=
+Date: Wed, 26 Apr 2023 07:34:14 -0700 (PDT)
+From: PayPal <cs_surveys@paypal-customerfeedback.com>
+To: - - <contact@fiidewgal.com>
+Message-ID: <lgxsrenm.uxigqbbln00j@express.medallia.com>
+Subject: How was PayPal? Quick questions, 1-3 minutes
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_411885_840432866.1682519654377"
+Feedback-ID: paypal-d9ab79a5-24bb-45b3-9d04-221bc4deea0c:login3.medallia.com-paypal:MedalliaInc
+List-Unsubscribe: <mailto:opt-out-5.e2cskx9ktkxf7wn373ynht@express.medallia.com?subject=unsubscribe>, <https://survey.medallia.com/?c2w7f9fm996dzp2&reject=yes>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-Medallia-Company-Name: PayPal
+X-Medallia-Company-URL-Name: paypal
+X-Mail-Sequence: 927483
+X-N0C-Node-IP: 185.221.182.45
+
+------=_Part_411885_840432866.1682519654377
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Dear Abdoul Gadiri Diallo,
+
+We want to know how you feel about your phone interaction with PayPal on Ap=
+ril 24, 2023.  Positive, negative or in-between, your insight will help us =
+improve.  Less than three minutes is all we need.
+
+Please take a moment to share your thoughts by clicking on the web address =
+below (or copy and paste the link into your browser):
+
+https://www.paypal-customerfeedback.com/?c2w7f9fm996dzp2&lng=3Den_US
+
+All feedback in addition to other information collected will be used in acc=
+ordance with PayPal=E2=80=99s Privacy Policy. Survey answers may be tied ba=
+ck to respondents.
+
+We appreciate your participation and look forward to hearing from you.
+
+Ellie Diaz
+VP, Global Customer Services
+
+*************************
+
+Please do not =E2=80=9CReply=E2=80=9D to this invitation.
+
+For technical assistance, should you have any problems accessing or complet=
+ing the survey, please e-mail Medallia, our partner in this process, at tec=
+hsupport@express.medallia.com
+
+If you prefer to be excluded from future surveys and survey correspondence,=
+ please go to: https://www.paypal.com/myaccount/settings/marketing-preferen=
+ces?ID=3D7M165040JN4057641&EID=3DABcVADIw.9UXRrZLBbyGtgXqCjBaWLYlCO4d-MrdgG=
+DxYIlrm2WGZ0peQ.J7U-rErZ1P2ps
+
+Please do NOT forward this email to others. You have been given a unique UR=
+L with which to take the survey. The system accepts only one response for e=
+ach unique URL.
+
+=C2=A9 2022 PayPal Inc. All rights reserved.
+------=_Part_411885_840432866.1682519654377
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html>
+<html>
+<head>
+=09<meta http-equiv=3D"content-type" content=3D"text/html; charset=3DUTF-8"=
+>
+=09<title>Paypal - FO</title>
+</head>
+<body bgcolor=3D"#fff" style=3D"margin:0px;">
+=09<table width=3D"680" bgcolor=3D"#eaeaea" border=3D"0" align=3D"center" s=
+tyle=3D"margin:0 auto;" cellpadding=3D"0" cellspacing=3D"0">
+=09=09<tr>
+=09=09=09<td>
+=09=09=09=09<table width=3D"680" bgcolor=3D"#eaeaea" border=3D"0" align=3D"=
+center" cellpadding=3D"0" cellspacing=3D"0">
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td><img width=3D"680" height=3D"81" style=3D"display:blo=
+ck;" src=3D"http://paypal-customerfeedback.com/sfilemanager/a832190d18051c3=
+9752121605ae95fb3.png" /></td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td>&nbsp;</td>
+=09=09=09=09=09</tr>
+=09=09=09=09</table>
+=09=09=09=09<table width=3D"680" bgcolor=3D"#eaeaea" border=3D"0" align=3D"=
+center" cellpadding=3D"0" cellspacing=3D"0">
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td style=3D"font-size:15px; color:#333; font-family: Ari=
+al, Helvetica, sans-serif;line-height:1.5em;padding:0px 20px;">
+=09=09=09=09=09=09=09Dear Abdoul Gadiri Diallo,
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td>&nbsp;</td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td style=3D"font-size:15px; color:#333; font-family: Ari=
+al, Helvetica, sans-serif;line-height:1.5em;padding:0px 20px;">
+=09=09=09=09=09=09=09We want to know how you feel about your phone interact=
+ion with PayPal on April 24, 2023.  Positive, negative or in-between, your =
+insight will help us improve.  Less than three minutes is all we need.
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td>&nbsp;</td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td style=3D"font-size:15px; color:#333; font-family: Ari=
+al, Helvetica, sans-serif;line-height:1.5em;padding:0px 20px;">
+=09=09=09=09=09=09=09Please select one answer, then you=E2=80=99ll be taken=
+ to complete the survey:
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td>&nbsp;</td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<!-- Beginning of quickstart code block (added 7/12/2018 cF_=
+RTW)-->
+          <tr>
+            <td style=3D"font-size:13px; color:#000000; font-family:Arial, =
+Helvetica, sans-serif; font-weight:bold; line-height:1.5em; padding:0px 20p=
+x;">
+=09=09=09=09=09=09=09How likely are you to recommend PayPal to a friend or =
+a colleague?
+            </td>
+          </tr>
+          <tr>
+            <td align=3D"left" valign=3D"top" style=3D"padding:0px 20px"><!=
+-- Set main horizontal and vertical alignment. Horizontal: left, center, ri=
+ght; Vertical: top, middle, bottom -->
+              <br />
+              <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%">
+                <tr>
+                  <td align=3D"left">
+                    <span style=3D"font-family:Arial, Verdana, Helvetica, s=
+ans-serif; font-size:13px; color: #000000">Not at all<br>likely</span>
+                    <br />
+                  </td>
+                  <td align=3D"right">
+                    <span style=3D"font-family:Arial, Verdana, Helvetica, s=
+ans-serif; font-size:13px; color: #000000">Extremely<br>likely</span>
+                    <br />
+                  </td>
+                </tr>
+                <tr>
+                   <td colspan=3D"2" align=3D"center">
+                    <table class=3D"number-scale" width=3D"100%" border=3D"=
+1" cellspacing=3D"0" cellpadding=3D"5" style=3D"border-style:solid;border-c=
+olor:#eaeaea">
+                      <tr>
+                       =20
+                                                  <td align=3D"center" styl=
+e=3D"background-color: #169BD7; text-align:center;" bgcolor=3D"#000000">
+                                                    <a style=3D"display:blo=
+ck; padding:5px; font-family:Arial, Verdana, Helvetica, sans-serif; text-de=
+coration: none; color: #eeeeee; font-weight:bold; font-size: 13px;" href=3D=
+"https://www.paypal-customerfeedback.com/?c2w7f9fm996dzp2&lng=3Den_US&amp;_=
+score=3D0">
+                                                      <span style=3D"font-f=
+amily:Arial, Verdana, Helvetica, sans-serif; text-decoration: none; color: =
+#eeeeee; font-weight:bold; font-size: 13px;">0</span>
+                                                    </a>
+                                                  </td>
+                                               =20
+                                                  <td align=3D"center" styl=
+e=3D"background-color: #169BD7; text-align:center;" bgcolor=3D"#000000">
+                                                    <a style=3D"display:blo=
+ck; padding:5px; font-family:Arial, Verdana, Helvetica, sans-serif; text-de=
+coration: none; color: #eeeeee; font-weight:bold; font-size: 13px;" href=3D=
+"https://www.paypal-customerfeedback.com/?c2w7f9fm996dzp2&lng=3Den_US&amp;_=
+score=3D1">
+                                                      <span style=3D"font-f=
+amily:Arial, Verdana, Helvetica, sans-serif; text-decoration: none; color: =
+#eeeeee; font-weight:bold; font-size: 13px;">1</span>
+                                                    </a>
+                                                  </td>
+                                               =20
+                                                  <td align=3D"center" styl=
+e=3D"background-color: #169BD7; text-align:center;" bgcolor=3D"#000000">
+                                                    <a style=3D"display:blo=
+ck; padding:5px; font-family:Arial, Verdana, Helvetica, sans-serif; text-de=
+coration: none; color: #eeeeee; font-weight:bold; font-size: 13px;" href=3D=
+"https://www.paypal-customerfeedback.com/?c2w7f9fm996dzp2&lng=3Den_US&amp;_=
+score=3D2">
+                                                      <span style=3D"font-f=
+amily:Arial, Verdana, Helvetica, sans-serif; text-decoration: none; color: =
+#eeeeee; font-weight:bold; font-size: 13px;">2</span>
+                                                    </a>
+                                                  </td>
+                                               =20
+                                                  <td align=3D"center" styl=
+e=3D"background-color: #169BD7; text-align:center;" bgcolor=3D"#000000">
+                                                    <a style=3D"display:blo=
+ck; padding:5px; font-family:Arial, Verdana, Helvetica, sans-serif; text-de=
+coration: none; color: #eeeeee; font-weight:bold; font-size: 13px;" href=3D=
+"https://www.paypal-customerfeedback.com/?c2w7f9fm996dzp2&lng=3Den_US&amp;_=
+score=3D3">
+                                                      <span style=3D"font-f=
+amily:Arial, Verdana, Helvetica, sans-serif; text-decoration: none; color: =
+#eeeeee; font-weight:bold; font-size: 13px;">3</span>
+                                                    </a>
+                                                  </td>
+                                               =20
+                                                  <td align=3D"center" styl=
+e=3D"background-color: #169BD7; text-align:center;" bgcolor=3D"#000000">
+                                                    <a style=3D"display:blo=
+ck; padding:5px; font-family:Arial, Verdana, Helvetica, sans-serif; text-de=
+coration: none; color: #eeeeee; font-weight:bold; font-size: 13px;" href=3D=
+"https://www.paypal-customerfeedback.com/?c2w7f9fm996dzp2&lng=3Den_US&amp;_=
+score=3D4">
+                                                      <span style=3D"font-f=
+amily:Arial, Verdana, Helvetica, sans-serif; text-decoration: none; color: =
+#eeeeee; font-weight:bold; font-size: 13px;">4</span>
+                                                    </a>
+                                                  </td>
+                                               =20
+                                                  <td align=3D"center" styl=
+e=3D"background-color: #169BD7; text-align:center;" bgcolor=3D"#000000">
+                                                    <a style=3D"display:blo=
+ck; padding:5px; font-family:Arial, Verdana, Helvetica, sans-serif; text-de=
+coration: none; color: #eeeeee; font-weight:bold; font-size: 13px;" href=3D=
+"https://www.paypal-customerfeedback.com/?c2w7f9fm996dzp2&lng=3Den_US&amp;_=
+score=3D5">
+                                                      <span style=3D"font-f=
+amily:Arial, Verdana, Helvetica, sans-serif; text-decoration: none; color: =
+#eeeeee; font-weight:bold; font-size: 13px;">5</span>
+                                                    </a>
+                                                  </td>
+                                               =20
+                                                  <td align=3D"center" styl=
+e=3D"background-color: #169BD7; text-align:center;" bgcolor=3D"#000000">
+                                                    <a style=3D"display:blo=
+ck; padding:5px; font-family:Arial, Verdana, Helvetica, sans-serif; text-de=
+coration: none; color: #eeeeee; font-weight:bold; font-size: 13px;" href=3D=
+"https://www.paypal-customerfeedback.com/?c2w7f9fm996dzp2&lng=3Den_US&amp;_=
+score=3D6">
+                                                      <span style=3D"font-f=
+amily:Arial, Verdana, Helvetica, sans-serif; text-decoration: none; color: =
+#eeeeee; font-weight:bold; font-size: 13px;">6</span>
+                                                    </a>
+                                                  </td>
+                                               =20
+                                                  <td align=3D"center" styl=
+e=3D"background-color: #169BD7; text-align:center;" bgcolor=3D"#000000">
+                                                    <a style=3D"display:blo=
+ck; padding:5px; font-family:Arial, Verdana, Helvetica, sans-serif; text-de=
+coration: none; color: #eeeeee; font-weight:bold; font-size: 13px;" href=3D=
+"https://www.paypal-customerfeedback.com/?c2w7f9fm996dzp2&lng=3Den_US&amp;_=
+score=3D7">
+                                                      <span style=3D"font-f=
+amily:Arial, Verdana, Helvetica, sans-serif; text-decoration: none; color: =
+#eeeeee; font-weight:bold; font-size: 13px;">7</span>
+                                                    </a>
+                                                  </td>
+                                               =20
+                                                  <td align=3D"center" styl=
+e=3D"background-color: #169BD7; text-align:center;" bgcolor=3D"#000000">
+                                                    <a style=3D"display:blo=
+ck; padding:5px; font-family:Arial, Verdana, Helvetica, sans-serif; text-de=
+coration: none; color: #eeeeee; font-weight:bold; font-size: 13px;" href=3D=
+"https://www.paypal-customerfeedback.com/?c2w7f9fm996dzp2&lng=3Den_US&amp;_=
+score=3D8">
+                                                      <span style=3D"font-f=
+amily:Arial, Verdana, Helvetica, sans-serif; text-decoration: none; color: =
+#eeeeee; font-weight:bold; font-size: 13px;">8</span>
+                                                    </a>
+                                                  </td>
+                                               =20
+                                                  <td align=3D"center" styl=
+e=3D"background-color: #169BD7; text-align:center;" bgcolor=3D"#000000">
+                                                    <a style=3D"display:blo=
+ck; padding:5px; font-family:Arial, Verdana, Helvetica, sans-serif; text-de=
+coration: none; color: #eeeeee; font-weight:bold; font-size: 13px;" href=3D=
+"https://www.paypal-customerfeedback.com/?c2w7f9fm996dzp2&lng=3Den_US&amp;_=
+score=3D9">
+                                                      <span style=3D"font-f=
+amily:Arial, Verdana, Helvetica, sans-serif; text-decoration: none; color: =
+#eeeeee; font-weight:bold; font-size: 13px;">9</span>
+                                                    </a>
+                                                  </td>
+                                               =20
+                        <td align=3D"center" style=3D"background-color: #16=
+9BD7; text-align:center;" bgcolor=3D"#000000">
+                          <a style=3D"display:block; padding:3px; word-brea=
+k:normal; font-family:Arial, Verdana, Helvetica, sans-serif; text-decoratio=
+n: none; color: #eeeeee; font-weight:bold; font-size: 13px;" href=3D"https:=
+//www.paypal-customerfeedback.com/?c2w7f9fm996dzp2&lng=3Den_US&amp;_score=
+=3D10">
+                            <span style=3D"word-break:normal; font-family:A=
+rial, Verdana, Helvetica, sans-serif; text-decoration: none; color: #eeeeee=
+; font-weight:bold; font-size: 13px;">10</span>
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                    </td>
+                    </tr>
+              </table>
+              <br />
+            </td>
+          </tr>
+          <tr>
+          <!-- End of quickstart code block (added 7/12/2018 cF_RTW)-->
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td>&nbsp;</td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td style=3D"font-size:15px; color:#333; font-family: Ari=
+al, Helvetica, sans-serif;line-height:1.5em;padding:0px 20px;">
+=09=09=09=09=09=09=09All feedback in addition to other information collecte=
+d will be used in accordance with PayPal=E2=80=99s Privacy Policy. Survey a=
+nswers may be tied back to respondents.
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<tr>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td>&nbsp;</td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td style=3D"font-size:15px; color:#333; font-family: Ari=
+al, Helvetica, sans-serif;line-height:1.5em;padding:0px 20px;">
+=09=09=09=09=09=09=09We appreciate your participation and look forward to h=
+earing from you.
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td>&nbsp;</td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td style=3D"font-size:15px; color:#333; font-family: Ari=
+al, Helvetica, sans-serif;line-height:1.5em;padding:0px 20px;">
+=09=09=09=09=09=09=09Ellie Diaz<br /> VP, Global Customer Services
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td>&nbsp;</td>
+=09=09=09=09=09</tr>
+=09=09=09=09</table>
+
+=09=09=09=09<table width=3D"680" bgcolor=3D"#eaeaea" border=3D"0" align=3D"=
+center" style=3D"margin:0 auto;" cellpadding=3D"0" cellspacing=3D"0">
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td>&nbsp;</td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td colspan=3D"2" style=3D"font-size:11px; color:#595959;=
+ vertical-align:top; font-family:Geneva, Arial, Helvetica, sans-serif;paddi=
+ng:0px 20px;">
+=09=09=09=09=09=09=09Please do not =E2=80=9CReply=E2=80=9D to this invitati=
+on.
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td>&nbsp;</td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td colspan=3D"2" style=3D"font-size:11px; color:#595959;=
+ vertical-align:top; font-family:Geneva, Arial, Helvetica, sans-serif;paddi=
+ng:0px 20px;">
+=09=09=09=09=09=09=09For technical assistance, should you have any problems=
+ accessing or completing the survey, please e-mail Medallia, our partner in=
+ this process, at <a href=3D"mailto:surveysupport_paypal.c2w7f9fm996dzp2@ex=
+press.medallia.com?subject=3DHelp with Paypal Survey">Technical Support</a>=
+.</td>
+=09=09=09</td>
+=09=09=09</tr>
+=09=09=09<tr>
+=09=09=09=09<td>&nbsp;</td>
+=09=09=09</tr>
+=09=09=09<tr>
+=09=09=09=09<td colspan=3D"2" style=3D"font-size:11px; color:#595959; verti=
+cal-align:top; font-family:Geneva, Arial, Helvetica, sans-serif;padding:0px=
+ 20px;">
+=09=09=09=09=09If you prefer to be excluded from future surveys and survey =
+correspondence, please go to: <a href=3D"https://www.paypal.com/myaccount/s=
+ettings/marketing-preferences?ID=3D7M165040JN4057641&EID=3DABcVADIw.9UXRrZL=
+BbyGtgXqCjBaWLYlCO4d-MrdgGDxYIlrm2WGZ0peQ.J7U-rErZ1P2ps">Opt Out</a>.
+=09=09=09=09</td>
+=09=09=09</tr>
+=09=09=09<tr>
+=09=09=09=09<td>&nbsp;</td>
+=09=09=09</tr>
+=09=09=09<tr>
+=09=09=09=09<td colspan=3D"2" style=3D"font-size:11px; color:#595959; verti=
+cal-align:top; font-family:Geneva, Arial, Helvetica, sans-serif;padding:0px=
+ 20px;">
+=09=09=09=09=09Please do NOT forward this email to others. You have been gi=
+ven a unique URL with which to take the survey. The system accepts only one=
+ response for each unique URL.
+=09=09=09=09</td>
+=09=09=09</tr>
+=09=09=09<tr>
+=09=09=09=09<td>&nbsp;</td>
+=09=09=09</tr>
+=09=09=09<tr>
+=09=09=09=09<td colspan=3D"2" style=3D"font-size:11px; color:#666; vertical=
+-align:top; font-family:Geneva, Arial, Helvetica, sans-serif;padding:0px 20=
+px;">
+=09=09=09=09=09=C2=A9 2022 PayPal Inc. All rights reserved.
+=09=09=09=09</td>
+=09=09=09</tr>
+=09=09=09<tr>
+=09=09=09=09<td>&nbsp;</td>
+=09=09=09</tr>
+=09=09=09<tr>
+=09=09=09=09<td>&nbsp;</td>
+=09=09=09</tr>
+=09=09=09</table>
+
+=09=09=09</td>
+=09=09</tr>
+=09</table>
+</body>
+</html>
+
+------=_Part_411885_840432866.1682519654377--

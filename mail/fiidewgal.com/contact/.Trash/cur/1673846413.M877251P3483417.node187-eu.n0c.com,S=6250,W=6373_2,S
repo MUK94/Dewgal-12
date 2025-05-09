@@ -1,0 +1,123 @@
+Return-Path: <moustaphamohamed6967@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id cLI6NI3exGMZJzUA3R2AvA
+	(envelope-from <moustaphamohamed6967@gmail.com>)
+	for <contact@fiidewgal.com>; Mon, 16 Jan 2023 06:20:13 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NwL255Qxvz34SDnL
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="RnIxB07A"
+X-N0C-MailScanner-eFa-Watermark: 1674451202.84928@v5pHD9rwV6s/cz/WgEaBbg
+X-N0C-MailScanner-eFa-From: moustaphamohamed6967@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: D2594401A44D.AB4E1
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ed1-f45.google.com ([209.85.208.45] [209.85.208.45])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id D2594401A44D
+	for <contact@fiidewgal.com>; Mon, 16 Jan 2023 06:19:28 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com D2594401A44D
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com D2594401A44D
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=RnIxB07A
+Received: by mail-ed1-f45.google.com with SMTP id w14so21898279edi.5
+        for <contact@fiidewgal.com>; Sun, 15 Jan 2023 21:19:28 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=kQ22nwX1N3tByCtsnItjTbF3D1xY6VMO5TspAwWLpRo=;
+        b=RnIxB07AuRlj6opRnevx3ZEU0I8owT/ZsfzBVsn3ZMlt6H9oXmekXqzoreMS7qdJwU
+         5YU8m4hjw46qAP6vbszjTioizenGzKAkx3a55gY20lMmIq9bdbTRtp/NWukirgyvxt+3
+         DrShtRKXlBJoExpS6F7j2kxRpDbTIZfaY5GcK/IFl0eZsKLg8bR711yz8LjGxUwYhZgt
+         URTjtCf45/JbwQ4bWGvVONGBNRMaXQ3oQyjENPMJNyHDdfnME6oTUTgyXApes1V0WpTI
+         T0QjS14By+OxjAEkhY5LF0j11Hcmn1dJF3zZIC/86g4fKaO7pCiVF+Hovp5t3YeDXL7J
+         0UEg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=kQ22nwX1N3tByCtsnItjTbF3D1xY6VMO5TspAwWLpRo=;
+        b=Xd4cAyM+GvpJRbxjA3lVWiPuja8bYWJlpjhWRCc+0N3lVNrTibuY1xy1RCT3MFHNDO
+         /Fm8eW87TzXzD/Mx2I9c7ztepaUtJntxN87usT7nazTILl1k9+sPZ0+NwCdVSqloKdGp
+         8utLlvYIYwW1mG6uq8WBdR2/tNX+Gwmkq8VUkgtG3LmbjddyLye3rYUnqy50o3Hf5f4C
+         DRrS0nKCakaHpcyDWtn8/wmDS+xjNYq/GNCU2gtzXxa0BTl631DzRfkN5tZRJ7c5P9CS
+         YalLSQhlfC8dsy0jagsF9dQwIwpiAjfKfzkyzXtGgAyYmvoNRVKdp/wClBO485lt5d7p
+         Mdeg==
+X-Gm-Message-State: AFqh2kq5KgxiruRkQcNNgyMmUP3+/HiMfQVdIHLlJvs96KC0h5ZhnouJ
+	rE8D85E/TifDnOuu5V8agfYvyXJD8vUiEe7d1qzVUWNB
+X-Google-Smtp-Source: AMrXdXsp4ie5/HJFtHVuHeuvgkOT6w/q9ZxElyQtIM4GI8RvoBHddSbgQtWeOG4Vk0PvTkTZF4oaA5K03REWuiD+GSg=
+X-Received: by 2002:a05:6402:2684:b0:49c:b9a8:5c37 with SMTP id
+ w4-20020a056402268400b0049cb9a85c37mr1096852edd.208.1673846368142; Sun, 15
+ Jan 2023 21:19:28 -0800 (PST)
+MIME-Version: 1.0
+References: <defbfeabcd6fb3cb5b46a6780a5c832f@fiidewgal.com> <CANseis75_NiUDZJYiFoxPF8KJGu8qYfoee81XiKgdz0G0NgTyg@mail.gmail.com>
+In-Reply-To: <CANseis75_NiUDZJYiFoxPF8KJGu8qYfoee81XiKgdz0G0NgTyg@mail.gmail.com>
+From: Moustapha Mohamed <moustaphamohamed6967@gmail.com>
+Date: Mon, 16 Jan 2023 06:19:15 +0100
+Message-ID: <CANseis4ZHe9f=esWq=8qd-nHNMS3unpAZzWmx3RkGUKkaATN0g@mail.gmail.com>
+Subject: =?UTF-8?B?UmU6IEludMOpcsOqdCBhY2NlcHTDqQ==?=
+To: =?UTF-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>
+Content-Type: multipart/alternative; boundary="0000000000002e8b2405f25abaeb"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000002e8b2405f25abaeb
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour comment allez-vous possible de communiquer avec vous
+
+Le lun. 16 janv. 2023, 06:18, Moustapha Mohamed <
+moustaphamohamed6967@gmail.com> a =C3=A9crit :
+
+> MERCI BEAUCOUP !
+>
+> Le lun. 16 janv. 2023, 01:52, Ne r=C3=A9pondez pas <contact@fiidewgal.com=
+> a
+> =C3=A9crit :
+>
+>> Bonjour Moustapha Bah,
+>>
+>> A=C3=AFssatou =F0=9F=A5=B0 Diallo a accept=C3=A9 votre int=C3=A9r=C3=AAt=
+. Vous pouvez maintenant vous
+>> envoyer des messages.
+>>
+>> Veuillez contacter l'=C3=A9quipe administrative si vous avez d'autres
+>> questions.
+>>
+>> Merci,
+>>
+>> Ne r=C3=A9pondez pas
+>>
+>
+
+--0000000000002e8b2405f25abaeb
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Bonjour comment allez-vous possible de communiquer avec v=
+ous=C2=A0</div><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gma=
+il_attr">Le lun. 16 janv. 2023, 06:18, Moustapha Mohamed &lt;<a href=3D"mai=
+lto:moustaphamohamed6967@gmail.com">moustaphamohamed6967@gmail.com</a>&gt; =
+a =C3=A9crit=C2=A0:<br></div><blockquote class=3D"gmail_quote" style=3D"mar=
+gin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><div dir=3D"aut=
+o">MERCI BEAUCOUP !=C2=A0</div><br><div class=3D"gmail_quote"><div dir=3D"l=
+tr" class=3D"gmail_attr">Le lun. 16 janv. 2023, 01:52, Ne r=C3=A9pondez pas=
+ &lt;<a href=3D"mailto:contact@fiidewgal.com" target=3D"_blank" rel=3D"nore=
+ferrer">contact@fiidewgal.com</a>&gt; a =C3=A9crit=C2=A0:<br></div><blockqu=
+ote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc s=
+olid;padding-left:1ex"><p>Bonjour Moustapha Bah,</p><p>A=C3=AFssatou =F0=9F=
+=A5=B0 Diallo a accept=C3=A9 votre int=C3=A9r=C3=AAt. Vous pouvez maintenan=
+t vous envoyer des messages.</p><p>Veuillez contacter l&#39;=C3=A9quipe adm=
+inistrative si vous avez d&#39;autres questions.</p><p>Merci,<br></p><p>Ne =
+r=C3=A9pondez pas</p>
+
+</blockquote></div>
+</blockquote></div>
+
+--0000000000002e8b2405f25abaeb--

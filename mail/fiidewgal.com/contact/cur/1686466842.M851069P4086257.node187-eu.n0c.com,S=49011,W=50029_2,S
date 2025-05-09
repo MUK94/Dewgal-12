@@ -1,0 +1,1018 @@
+Return-Path: <989-gzb-065.0.125489.0.0.14507.9.104743797-1@mkto.taboola.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id XlmmMhpxhWTxWT4A3R2AvA
+	(envelope-from <989-gzb-065.0.125489.0.0.14507.9.104743797-1@mkto.taboola.com>)
+	for <contact@fiidewgal.com>; Sun, 11 Jun 2023 09:00:42 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Qf5Lf36cGz34SDmk
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=taboola.com header.i=@taboola.com header.b="EVwOBEgz";
+	dkim=pass (1024-bit key) header.d=mktdns.com header.i=@mktdns.com header.b="HwfldhK+"
+X-N0C-MailScanner-eFa-Watermark: 1687071624.98011@CL7gLp0g6js9Yw8ovF13SQ
+X-N0C-MailScanner-eFa-From: 989-gzb-065.0.125489.0.0.14507.9.104743797-1@mkto.taboola.com
+X-N0C-MailScanner-eFa-SpamScore: ss
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 80932401A32D.A8278
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mkto.taboola.com ([185.28.196.170] [185.28.196.170])
+	(using TLSv1.2 with cipher ECDHE-ECDSA-AES256-GCM-SHA384 (256/256 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 80932401A32D
+	for <contact@fiidewgal.com>; Sun, 11 Jun 2023 09:00:18 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 80932401A32D
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=reject dis=none) header.from=taboola.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=mkto.taboola.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 80932401A32D
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (1024-bit key; secure) header.d=taboola.com header.i=@taboola.com header.a=rsa-sha256 header.s=m1 header.b=EVwOBEgz;
+	dkim=pass (1024-bit key; unprotected) header.d=mktdns.com header.i=@mktdns.com header.a=rsa-sha256 header.s=m1 header.b=HwfldhK+
+X-MSFBL: KubQrlCxT0EibQ4xiQXbn0NfaMvio/a2n8IZYNZExyM=|eyJyIjoiY29udGFjdEB
+	maWlkZXdnYWwuY29tIiwidSI6Ijk4OS1HWkItMDY1OjA6NjI3NDoyOTMwNzowOjE
+	0NTA3Ojk6MTI1NDg5OjEwNDc0Mzc5Ny0xIiwiYiI6ImR2cC0xODUtMjgtMTk2LTE
+	3MCIsImciOiJiZy1sb25kLTE0NSJ9
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1686466815;
+	s=m1; d=taboola.com; i=@taboola.com;
+	h=Content-Type:MIME-Version:Subject:To:From:Date;
+	bh=Aq7eaXfc5Y4QYPH5d8PQyDrJgjR1M/OSoNlCMt6y6Mo=;
+	b=EVwOBEgzhnY8OI53pc5pPl4H8ox05KMQsr8IAefkaCxwRAgWxMjrTQRPkBEuqkNb
+	E36+pF1mgdC11LtBHynhjRhoaXT4ooLHX03tUBH+Y850IBxjoS2bZ4x2Nz3yfNo1H3s
+	7TQk84B//A3aClTHUgXBaj9X1Cw4Bapny1N2BM4c=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1686466815;
+	s=m1; d=mktdns.com; i=@mktdns.com;
+	h=Content-Type:MIME-Version:Subject:To:From:Date;
+	bh=Aq7eaXfc5Y4QYPH5d8PQyDrJgjR1M/OSoNlCMt6y6Mo=;
+	b=HwfldhK+jzBCEN17Yd4E7MMqkNsHp37k/6BO5EtHGwQWO4gkOsdA7Wxasl/dA00U
+	UTStlQFhrS1T2PqK7nFJcNTv9rBB+tMIGZ3S5AMyHQ3w6oDwYTIH23t/teIth3x9Xp/
+	4MHHwSVdPzuEnm+KvcKMFln2yeffLEQ56K0Lwnhg=
+Date: Sun, 11 Jun 2023 02:00:15 -0500 (CDT)
+From: Taboola <noreply@taboola.com>
+Reply-To: customersuccess@taboola.com
+To: contact@fiidewgal.com
+Message-ID: <1469193786.1078472.1686466815964@lonmktmail-trigger1e.marketo.org>
+Subject: [Action Needed] Enter your campaign settings
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1078470_1756664180.1686466815963"
+X-Binding: bg-lond-145
+X-MarketoID: 989-GZB-065:0:6274:29307:0:14507:9:125489:104743797-1
+X-Mailfrom: 989-GZB-065.0.125489.0.0.14507.9.104743797-1@mkto.taboola.com
+List-Unsubscribe: <mailto:L5MWQYTYI5EFU52OK5HW4NCYJ5UXEVSMJJFHSMBZFV4VA6TWNFSXQSKJKNYTKYKEPBCE2PI=.125489.14507.9@unsub-lon.mktomail.com>
+X-MktArchive: false
+X-MSYS-API: {"options":{"open_tracking":false,"click_tracking":false}}
+X-MktMailDKIM: true
+X-N0C-Node-IP: 185.221.182.45
+
+------=_Part_1078470_1756664180.1686466815963
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hi Abdoul,=20
+
+We saw that you entered campaign content to get started with Taboola but ha=
+ven=E2=80=99t yet finished entering your campaign settings.
+Continue Your Campaign Creation <http://me.taboola.com/OTg5LUdaQi0wNjUAAAGM=
+SDoX1Lyg7ZW-8xgzPxLV1ohfv7lexNU-qG7-suIMsovlUGr0_vB4WkGtjaFyfdGZSqul8cQ=3D>
+This step in the process has a few questions to fill out, so we thought it =
+might be helpful to break them down a bit further and share some of the mos=
+t common FAQs we receive.
+Q: How do I choose a campaign goal? What happens with the goal I select?
+A: We know that with the campaign you=E2=80=99re creating, you likely have =
+many goals. Don=E2=80=99t worry, choosing a campaign goal will not affect y=
+our scale. The reason we ask you to select just one is so that we can give =
+our algorithm something to focus on to ensure that you get the best possibl=
+e results right out of the gate. You can always change your campaign goal i=
+n your account.
+Q: What if my audience is located in multiple countries?
+A: Similar to goals, we know your audience may not just be in one single co=
+untry. We do ask that to get started, you select a primary country, but lat=
+er on in your account, you=E2=80=99ll be able to select additional, more so=
+phisticated targeting options, by even more granular classifications (count=
+ries, states, zip codes, and more).
+Q: Is the daily budget I set the maximum that will be spent each day?
+A: When your campaign has more opportunities to get clicks, you may spend m=
+ore than your daily budget. With that being said, on a monthly level, you=
+=E2=80=99ll never spend more than your daily budget multiplied by the numbe=
+r of days in the month. For example, with a $50 daily budget in August, you=
+ will not spend more than $1550 that month.
+Q: How is Cost per Click (CPC) calculated?=C2=A0
+
+
+A: The CPC is simply the amount you pay each time a user clicks on your cam=
+paign item.
+Setting up your campaign can seem complicated, but it=E2=80=99s easy once y=
+ou get the hang of it. Head back in, and let=E2=80=99s get your campaign in=
+ launching shape.
+Continue Your Setup <http://me.taboola.com/OTg5LUdaQi0wNjUAAAGMSDoX1JPjM48W=
+mS1uhi91WQ0I8vH1GNWeD2Gxfxs890mWUyjH5eelKwxAmxVKWJk-PlqhUKA=3D>
+Thank you,
+
+
+The Taboola Team
+Help <http://me.taboola.com/OTg5LUdaQi0wNjUAAAGMSDoX1IhFNrixRy4af-ltHDpSdr0=
+2p0fdo6JjzfK1ACN2JrPGwxuQR0i3UbgHqhdadK-6e0E=3D>
+Blog <http://me.taboola.com/OTg5LUdaQi0wNjUAAAGMSDoX1Nhh-AjMm3G93cz0-ScdpTn=
+1amDxEG2Ry8D4IC84kPWgU19T6dEmktsnq3j9kFXOOoI=3D>
+=C2=A9 2023 Taboola, Inc.=20
+ 16 Madison Square West, New York, NY, 10010, United States
+
+Click here: https://pages.taboola.com/Subscription-Center.html?mkt_tok=3DOT=
+g5LUdaQi0wNjUAAAGMSDoX1Zzds_YSZWHlzVaf2OkUhT6sTf_kQnxs3qsh8y27MG5Mu-5G7U__n=
+GLTGAiDfNUL-KNnH6JiesTGOlI-GZS0ehpggtYstIU2eBQLDw_eago to manage your subsc=
+riptions and here: https://www.taboola.com/privacy-policy to read our priva=
+cy policy.
+
+------=_Part_1078470_1756664180.1686466815963
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" style=3D"width: 100%;">
+<head>=20
+<!-- Marketo Variable Definitions -->                                      =
+                                                      =20
+<!-- Other Meta Tags -->=20
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8" />=
+=20
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1,=
+ minimum-scale=3D1, maximum-scale=3D1" />=20
+<meta name=3D"robots" content=3D"noindex,nofollow" />=20
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge" />=20
+<meta name=3D"x-apple-disable-message-reformatting" />=20
+<title>Clicktale Newsletter</title>=20
+<style type=3D"text/css">
+=09
+    /* CLIENT-SPECIFIC STYLES */
+    #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" =
+message */
+    .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail =
+to display emails at full width */
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass f=
+ont, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Ho=
+tmail to display normal line spacing */
+    body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:=
+100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+    table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacin=
+g between tables in Outlook 2007 and up */
+    img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of res=
+ized image in Internet Explorer */
+
+=09/* Force Hotmail to display normal line spacing */
+=09/* iOS BLUE LINKS */
+=09.appleBody a {color: .m_000;text-decoration: none;}
+=09.appleFooter a {color: .m_000;text-decoration: none;}
+=09@-ms-viewport {width: device-width}=09
+=09
+    /* RESET STYLES */
+    body{margin:0; padding:0;}
+    p{margin:0!important; padding:0!important; -webkit-margin-before: 0px!i=
+mportant; -webkit-margin-after: 0px!important; -webkit-margin-start: 0px!im=
+portant; -webkit-margin-end: 0px!important}
+    img{border:0; line-height:100%; outline:none; text-decoration:none;}
+    table{border-collapse:collapse !important;}
+    body{height:100% !important; margin:0; padding:0; width:100% !important=
+;}
+=09a{color: #164891!important; cursor: pointer!important; text-decoration: =
+none}
+    a:hover, .gt a:hover{text-decoration:underline!important;text-decoratio=
+n:underline} =20
+    a:hover, .gt a:hover{text-decoration:underline !important;text-decorati=
+on:underline} =20
+    .mobile-td a:hover {text-decoration: underline !important}=20
+
+    /* GENERAL STYLES */
+=09
+    /* MOBILE STYLES */
+    @media only screen and (max-width: 600px) {
+=09=09table[class=3D"m_boxing"]{width: 100% !important;}
+=09=09td[class=3D"outer"] {=09min-width: 0 !important; padding-top: 0px!imp=
+ortant}
+=09=09table[class=3D"m_hide"] { display: none !important}
+=09=09td[class=3D"header-btns"] img{margin: 0px 0px 5px 15px !important;}=
+=09=09
+=09=09td[class=3D"mobile-td"]{padding-left: 20px!important; padding-right: =
+20px!important; font-size: 19px!important; line-height: 23px!important}
+=09=09td[class=3D"mobile-cell-last"]{padding-bottom: 20px!important;font-si=
+ze: 19px!important; line-height: 19px!important}
+=09=09table[class=3D"mobile-column"]{width:100%!important;}
+=09=09img[class=3D"flexible-img"]{width:100% !important; height: auto!impor=
+tant}=09=09
+=09=09table[class=3D"mktoModule spacer-tbl"] img{height: 20px!important; wi=
+dth: 100%!important}
+   =09=09table[class=3D"mktoModule spacer-tbl"] img{height: 20px!important}=
+ =09     =20
+=09=09td[class=3D"vote-01"],td[class=3D"vote-02"]{width:20%!important}
+=09=09td[class=3D"vote-01"] img,td[class=3D"vote-02"] img{width:100%!import=
+ant; height: auto!important}
+=09=09.mob-txt{font-size: 19px!important; line-height: 23px!important}
+=09=09.mob-txt2{font-size: 19px!important; line-height: 19px!important}
+=09}
+=09</style>=20
+<!--[if mso]>
+<style type=3D=E2=80=9Dtext/css=E2=80=9D>
+=09body,td,div,p,a {
+=09font-family: 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+=09}
+</style>
+<![endif]-->=20
+</head>=20
+<body style=3D"background: #f1f1f1; margin-bottom: 0; -webkit-text-size-adj=
+ust: 100%; padding-bottom: 0; min-width: 100%; margin-top: 0; margin-right:=
+ 0; -ms-text-size-adjust: 100%; margin-left: 0; padding-top: 0; padding-rig=
+ht: 0; padding-left: 0; width: 100%;"><style type=3D"text/css">div#emailPre=
+Header{ display: none !important; }</style><div id=3D"emailPreHeader" style=
+=3D"mso-hide:all; visibility:hidden; opacity:0; color:transparent; mso-line=
+-height-rule:exactly; line-height:0; font-size:0px; overflow:hidden; border=
+-width:0; display:none !important;">Create Your First Taboola Campaign_____=
+__________________________________________</div>=20
+<style>
+    p{Margin:0!important; Padding:0!important; -webkit-margin-before: 0px!i=
+mportant; -webkit-margin-after: 0px!important; -webkit-margin-start: 0px!im=
+portant; -webkit-margin-end: 0px!important}
+=09a{cursor: pointer!important;text-decoration: none}  =20
+    a:hover{text-decoration:underline!important;text-decoration:underline} =
+=20
+    a:hover, .gt a:hover{text-decoration:underline !important;text-decorati=
+on:underline}    =20
+ </style>=20
+<!-- Outer table START -->=20
+<table bgcolor=3D"#f1f1f1" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"-webkit-text-size-adjust: 100%; -ms-text-size-adju=
+st: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; =
+border-collapse: collapse;">=20
+<tbody>=20
+<tr>=20
+<td class=3D"outer" valign=3D"top" style=3D"-webkit-text-size-adjust: 100%;=
+-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word=
+-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;m=
+in-width: 600px;border-collapse: collapse">=20
+<table width=3D"600" align=3D"center" id=3D"boxing" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" style=3D"-webkit-text-size-adjust: 100%; -ms-text=
+-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-sp=
+acing: 0; border-collapse: collapse;margin-top: 0; margin-right: auto; marg=
+in-bottom: 0; margin-left: auto;" class=3D"m_boxing">=20
+<tbody>=20
+<tr>=20
+<td class=3D"mktoContainer" id=3D"template-wrapper" style=3D"padding-bottom=
+: 15px; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-tab=
+le-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyph=
+ens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
+<table id=3D"spacer-4a18bf181-3b89-4798-80aa-fabf162e779b" bgcolor=3D"#F1F1=
+F1" class=3D"mktoModule spacer-tbl" style=3D"-webkit-text-size-adjust: 100%=
+; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;=
+ border-spacing: 0; border-collapse: collapse;" align=3D"center" border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td style=3D" -moz-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-l=
+space: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: no=
+ne;-ms-text-size-adjust: 100%;hyphens: none; border-collapse: collapse"> <i=
+mg alt=3D"" src=3D"http://pages.taboola.com/rs/989-GZB-065/images/3112-pixe=
+l%5B1%5D.png" width=3D"300" height=3D"4" style=3D"height: 4px; display:bloc=
+k" /> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table id=3D"top-logo-center20bedbdf-dabc-489e-92b3-70b8c1deeb57" bgcolor=
+=3D"#F1F1F1" class=3D"mktoModule" style=3D"border: 1px solid #F1F1F1; -webk=
+it-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0p=
+t; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" al=
+ign=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"padding: 0px 0px 0px 0px; -moz-hyphens: none;=
+-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;=
+word-break: break-word;-webkit-hyphens: none;-ms-text-size-adjust: 100%;hyp=
+hens: none; border-collapse: collapse">=20
+<div class=3D"mktoImg" id=3D"top-logo-120bedbdf-dabc-489e-92b3-70b8c1deeb57=
+" style=3D"margin: 0px!important; padding: 0px!important" mktolockimgsize=
+=3D"false">
+<a href=3D
+"http://me.taboola.com/OTg5LUdaQi0wNjUAAAGMSDoX1Fheuo6G33SDjFANedZLGS9qE1sH=
+qZSxl2NQ_2rcuGlz6ERg0F9VG_mz4AsB6zYT8Bs=3D" target=3D"_blank"
+><img src=3D"https://pages.taboola.com/rs/989-GZB-065/images/110418_logo.pn=
+g" width=3D"109" height=3D"42" style=3D"" /></a>
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table id=3D"spacer-306eed1a97-b5d2-4d47-9a71-18460f1c65a1d08a4cc0-0648-4a8=
+0-8bdb-6ef352e5bf8a" bgcolor=3D"#FFFFFF" class=3D"mktoModule spacer-tbl" st=
+yle=3D"-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-tabl=
+e-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: c=
+ollapse;" align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td style=3D" -moz-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-l=
+space: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: no=
+ne;-ms-text-size-adjust: 100%;hyphens: none; border-collapse: collapse"> <i=
+mg alt=3D"" src=3D"http://pages.taboola.com/rs/989-GZB-065/images/3112-pixe=
+l%5B1%5D.png" width=3D"300" height=3D"10" style=3D"height: 10px; display:bl=
+ock" /> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table id=3D"banner-img3c69d88d-465b-42ae-90f6-ed42a33132ae" class=3D"mktoM=
+odule" style=3D"-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;=
+ mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-co=
+llapse: collapse;" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td style=3D"padding: 0px 0px 0px 0px; -moz-hyphens: none;-webkit-text-size=
+-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break=
+-word;-webkit-hyphens: none;-ms-text-size-adjust: 100%;hyphens: none; borde=
+r-collapse: collapse">=20
+<div class=3D"mktoImg" id=3D"top-banner3c69d88d-465b-42ae-90f6-ed42a33132ae=
+" style=3D"margin: 0px!important; padding: 0px!important" mktolockimgsize=
+=3D"false">
+<a href=3D
+"http://me.taboola.com/OTg5LUdaQi0wNjUAAAGMSDoX1LGt74hrwHr_YapYuHJQ-gLxprgn=
+l0o3OwcNP-a92XeAHxU-OgarNs96xmql_imtWpo=3D" target=3D"_blank"
+><img src=3D"https://pages.taboola.com/rs/989-GZB-065/images/Campaign-Setti=
+ngs_3 (1).gif" width=3D"600" class=3D"flexible-img" style=3D"display:block"=
+ height=3D"200" /></a>
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table id=3D"spacer-6227b0b4e-0021-4923-a99a-c0971b021bc1" bgcolor=3D"#FFFF=
+FF" class=3D"mktoModule spacer-tbl" style=3D"-webkit-text-size-adjust: 100%=
+; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;=
+ border-spacing: 0; border-collapse: collapse;" align=3D"center" border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td style=3D" -moz-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-l=
+space: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: no=
+ne;-ms-text-size-adjust: 100%;hyphens: none; border-collapse: collapse"> <i=
+mg alt=3D"" src=3D"http://pages.taboola.com/rs/989-GZB-065/images/3112-pixe=
+l%5B1%5D.png" width=3D"300" height=3D"10" style=3D"height: 10px; display:bl=
+ock" /> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table id=3D"simple-text-26cec817d-d668-4298-afb6-57b531217e4b" class=3D"mk=
+toModule" bgcolor=3D"#ffffff" style=3D"-webkit-text-size-adjust: 100%; -ms-=
+text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; borde=
+r-spacing: 0; border-collapse: collapse" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td class=3D"mobile-td" style=3D"padding: 10px 38px 0px 38px; color: #2b2b2=
+b; font-family: Arial, sans-serif; font-size: 14px; line-height: 22px; -moz=
+-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-tab=
+le-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-ms-text-size-a=
+djust: 100%;hyphens: none; border-collapse: collapse">=20
+<div class=3D"mktEditable" id=3D"text-simple-26cec817d-d668-4298-afb6-57b53=
+1217e4b" style=3D"margin: 0px !important; padding: 0px!important">
+<div>
+<strong>Hi Abdoul,</strong>=20
+<br />
+<br />We saw that you entered campaign content to get started with Taboola =
+but haven=E2=80=99t yet finished entering your campaign settings.
+</div>=20
+<div>
+<br />
+</div>
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table id=3D"button-center1bl0e92a426-6c5b-4feb-a125-0f3deda480fb" bgcolor=
+=3D"#FFFFFF" class=3D"mktoModule" style=3D"-webkit-text-size-adjust: 100%; =
+-ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; b=
+order-spacing: 0; border-collapse: collapse" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td class=3D"mobile-td" align=3D"center" style=3D"padding: 10px 38px 0px 38=
+px;-moz-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;=
+mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-ms-text=
+-size-adjust: 100%;hyphens: none; border-collapse: collapse">=20
+<!-- BUTTON -->=20
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-col=
+lapse:separate!important">=20
+<tbody>=20
+<tr>=20
+<td align=3D"right" width=3D"20"><a href=3D"#"><img src=3D"https://pages.ta=
+boola.com/rs/989-GZB-065/images/btn_corner_bl_left.png" width=3D"20" height=
+=3D"42" alt=3D"" style=3D"display: block" /></a></td>=20
+<td align=3D"center" bgcolor=3D"#024b7a" valign=3D"middle" style=3D"padding=
+: 0px 20px 0px 20px; font-family: Arial, sans-serif; font-size:16px; line-h=
+eight:16px; color:#ffffff">=20
+<div style=3D"margin:0px; padding:0px" class=3D"mktEditable" id=3D"button-b=
+l0e92a426-6c5b-4feb-a125-0f3deda480fb">
+<div>
+<a href=3D
+"http://me.taboola.com/OTg5LUdaQi0wNjUAAAGMSDoX1Jo4wHaGpQ6xyuEabX609pAAHVUz=
+EO-9myDMLjZMeZnduffwull2HzIG9OE30wkSuDo=3D" style=3D"color: #ffffff; text-d=
+ecoration: none;" target=3D"_blank"
+><span color=3D"#FFFFFF" style=3D"color: #ffffff;">Continue Your Campaign C=
+reation</span></a>
+</div>
+</div> </td>=20
+<td align=3D"left" width=3D"20"><a href=3D"#"><img src=3D"https://pages.tab=
+oola.com/rs/989-GZB-065/images/btn_corner_bl_right.png" width=3D"20" height=
+=3D"42" alt=3D"" style=3D"display: block" /></a></td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table id=3D"spacer-7933193ea-7702-4e20-8aa8-de644529197e" bgcolor=3D"#FFFF=
+FF" class=3D"mktoModule spacer-tbl" style=3D"-webkit-text-size-adjust: 100%=
+; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;=
+ border-spacing: 0; border-collapse: collapse;" align=3D"center" border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td style=3D" -moz-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-l=
+space: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: no=
+ne;-ms-text-size-adjust: 100%;hyphens: none; border-collapse: collapse"> <i=
+mg alt=3D"" src=3D"http://pages.taboola.com/rs/989-GZB-065/images/3112-pixe=
+l%5B1%5D.png" width=3D"300" height=3D"30" style=3D"height: 30px; display:bl=
+ock" /> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table id=3D"spacer-428f1a657-98fe-4da0-9418-3ea54aa9ab3f4f5d4559-99a1-4e65=
+-8e4d-ec6505a1a970e5d0acc5-9d4e-4b68-acc5-ead441c9c97f" bgcolor=3D"#F1F1F1"=
+ class=3D"mktoModule spacer-tbl" style=3D"-webkit-text-size-adjust: 100%; -=
+ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; bo=
+rder-spacing: 0; border-collapse: collapse;" align=3D"center" border=3D"0" =
+cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td style=3D" -moz-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-l=
+space: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: no=
+ne;-ms-text-size-adjust: 100%;hyphens: none; border-collapse: collapse"> <i=
+mg alt=3D"" src=3D"http://pages.taboola.com/rs/989-GZB-065/images/3112-pixe=
+l%5B1%5D.png" width=3D"300" height=3D"4" style=3D"height: 4px; display:bloc=
+k" /> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table id=3D"spacer-1558d1ec2-c225-4fc9-be5b-a1ad5d988f7c346221f8-4de8-459f=
+-9882-7f4e386a97da5864dd36-7b11-4449-a223-9a5ebb15879f" bgcolor=3D"#FFFFFF"=
+ class=3D"mktoModule spacer-tbl" style=3D"-webkit-text-size-adjust: 100%; -=
+ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; bo=
+rder-spacing: 0; border-collapse: collapse;" align=3D"center" border=3D"0" =
+cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td style=3D" -moz-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-l=
+space: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: no=
+ne;-ms-text-size-adjust: 100%;hyphens: none; border-collapse: collapse"><im=
+g alt=3D"" src=3D"http://pages.taboola.com/rs/989-GZB-065/images/3112-pixel=
+%5B1%5D.png" width=3D"300" height=3D"25" style=3D"height: 25px; display: bl=
+ock" /> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table id=3D"simple-text-2197bbc4f-b006-4a2a-a556-1895c9fe3228" class=3D"mk=
+toModule" bgcolor=3D"#ffffff" style=3D"-webkit-text-size-adjust: 100%; -ms-=
+text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; borde=
+r-spacing: 0; border-collapse: collapse" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td class=3D"mobile-td" style=3D"padding: 10px 38px 0px 38px; color: #2b2b2=
+b; font-family: Arial, sans-serif; font-size: 14px; line-height: 22px; -moz=
+-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-tab=
+le-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-ms-text-size-a=
+djust: 100%;hyphens: none; border-collapse: collapse">=20
+<div class=3D"mktEditable" id=3D"text-simple-2197bbc4f-b006-4a2a-a556-1895c=
+9fe3228" style=3D"margin: 0px !important; padding: 0px!important">
+<div>
+This step in the process has a few questions to fill out, so we thought it =
+might be helpful to break them down a bit further and share some of the mos=
+t common FAQs we receive.
+<br />
+<br />
+</div>
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table id=3D"simple-text-2197bbc4f-b006-4a2a-a556-1895c9fe3228ccda6c6b-0b87=
+-4f90-9ff1-46b3fdd9b3a7" class=3D"mktoModule" bgcolor=3D"#ffffff" style=3D"=
+-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspac=
+e: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td class=3D"mobile-td" style=3D"padding: 10px 38px 0px 38px; color: #2b2b2=
+b; font-family: Arial, sans-serif; font-size: 14px; line-height: 22px; -moz=
+-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-tab=
+le-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-ms-text-size-a=
+djust: 100%;hyphens: none; border-collapse: collapse">=20
+<div class=3D"mktEditable" id=3D"text-simple-2197bbc4f-b006-4a2a-a556-1895c=
+9fe3228ccda6c6b-0b87-4f90-9ff1-46b3fdd9b3a7" style=3D"margin: 0px !importan=
+t; padding: 0px!important">
+<div>
+<strong>Q: How do I choose a campaign goal? What happens with the goal I se=
+lect?</strong>
+<br />A: We know that with the campaign you=E2=80=99re creating, you likely=
+ have many goals. Don=E2=80=99t worry, choosing a campaign goal will not af=
+fect your scale. The reason we ask you to select just one is so that we can=
+ give our algorithm something to focus on to ensure that you get the best p=
+ossible results right out of the gate. You can always change your campaign =
+goal in your account.
+<br />
+<br />
+</div>
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table id=3D"spacera56a8de8-e38b-480f-86a5-9d493d1b0250e67a9238-5a05-4f0c-a=
+5aa-0febc2283bbf" bgcolor=3D"#ffffff" style=3D"-webkit-text-size-adjust: 10=
+0%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0p=
+t; border-spacing: 0; border-collapse: collapse;" align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"mktoModu=
+le spacer-tbl">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"padding: 0px 0px 0px 0px;">=20
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"87%">=20
+<tbody>=20
+<tr>=20
+<td style=3D"border-top: 1px solid #F1F1F1; -moz-hyphens: none;-webkit-text=
+-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: =
+break-word;-webkit-hyphens: none;-ms-text-size-adjust: 100%;hyphens: none; =
+border-collapse: collapse"> <img alt=3D"" src=3D"http://pages.taboola.com/r=
+s/989-GZB-065/images/3112-pixel%5B1%5D.png" width=3D"300" height=3D"4" styl=
+e=3D"height: 4px!important; display:block" align=3D"left" /> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table id=3D"simple-text-2197bbc4f-b006-4a2a-a556-1895c9fe32288d609ee3-f49d=
+-41ff-9954-6cf15bfc22b1" class=3D"mktoModule" bgcolor=3D"#ffffff" style=3D"=
+-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspac=
+e: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td class=3D"mobile-td" style=3D"padding: 10px 38px 0px 38px; color: #2b2b2=
+b; font-family: Arial, sans-serif; font-size: 14px; line-height: 22px; -moz=
+-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-tab=
+le-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-ms-text-size-a=
+djust: 100%;hyphens: none; border-collapse: collapse">=20
+<div class=3D"mktEditable" id=3D"text-simple-2197bbc4f-b006-4a2a-a556-1895c=
+9fe32288d609ee3-f49d-41ff-9954-6cf15bfc22b1" style=3D"margin: 0px !importan=
+t; padding: 0px!important">
+<div>
+<span style=3D"color: #2b2b2b; font-family: Arial, sans-serif; font-size: 1=
+4px; font-style: normal; font-variant-ligatures: normal; font-variant-caps:=
+ normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: =
+start; text-indent: 0px; text-transform: none; white-space: normal; widows:=
+ 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #f=
+fffff; text-decoration-style: initial; text-decoration-color: initial; disp=
+lay: inline !important; float: none;"></span>
+<strong>Q: What if my audience is located in multiple countries?</strong>
+<br />A: Similar to goals, we know your audience may not just be in one sin=
+gle country. We do ask that to get started, you select a primary country, b=
+ut later on in your account, you=E2=80=99ll be able to select additional, m=
+ore sophisticated targeting options, by even more granular classifications =
+(countries, states, zip codes, and more).
+</div>=20
+<div>=20
+<div>
+<br style=3D"color: #2b2b2b; font-family: Arial, sans-serif; font-size: 14p=
+x; font-style: normal; font-variant-ligatures: normal; font-variant-caps: n=
+ormal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: st=
+art; text-indent: 0px; text-transform: none; white-space: normal; widows: 2=
+; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #fff=
+fff; text-decoration-style: initial; text-decoration-color: initial;" />
+</div>=20
+</div>
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table id=3D"spacera56a8de8-e38b-480f-86a5-9d493d1b02501c3f26ef-9ffb-4d0a-b=
+b83-6700e944410d" bgcolor=3D"#ffffff" style=3D"-webkit-text-size-adjust: 10=
+0%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0p=
+t; border-spacing: 0; border-collapse: collapse;" align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"mktoModu=
+le spacer-tbl">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"padding: 0px 0px 0px 0px;">=20
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"87%">=20
+<tbody>=20
+<tr>=20
+<td style=3D"border-top: 1px solid #F1F1F1; -moz-hyphens: none;-webkit-text=
+-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: =
+break-word;-webkit-hyphens: none;-ms-text-size-adjust: 100%;hyphens: none; =
+border-collapse: collapse"> <img alt=3D"" src=3D"http://pages.taboola.com/r=
+s/989-GZB-065/images/3112-pixel%5B1%5D.png" width=3D"300" height=3D"4" styl=
+e=3D"height: 4px!important; display:block" align=3D"left" /> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table id=3D"simple-text-2197bbc4f-b006-4a2a-a556-1895c9fe32288d609ee3-f49d=
+-41ff-9954-6cf15bfc22b10f383c11-83ec-4aa0-a3aa-eb00c147c2ac" class=3D"mktoM=
+odule" bgcolor=3D"#ffffff" style=3D"-webkit-text-size-adjust: 100%; -ms-tex=
+t-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-s=
+pacing: 0; border-collapse: collapse" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td class=3D"mobile-td" style=3D"padding: 10px 38px 0px 38px; color: #2b2b2=
+b; font-family: Arial, sans-serif; font-size: 14px; line-height: 22px; -moz=
+-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-tab=
+le-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-ms-text-size-a=
+djust: 100%;hyphens: none; border-collapse: collapse">=20
+<div class=3D"mktEditable" id=3D"text-simple-2197bbc4f-b006-4a2a-a556-1895c=
+9fe32288d609ee3-f49d-41ff-9954-6cf15bfc22b10f383c11-83ec-4aa0-a3aa-eb00c147=
+c2ac" style=3D"margin: 0px !important; padding: 0px!important">
+<div>
+<span style=3D"color: #2b2b2b; font-family: Arial, sans-serif; font-size: 1=
+4px; font-style: normal; font-variant-ligatures: normal; font-variant-caps:=
+ normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: =
+start; text-indent: 0px; text-transform: none; white-space: normal; widows:=
+ 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #f=
+fffff; text-decoration-style: initial; text-decoration-color: initial; disp=
+lay: inline !important; float: none;"></span>
+<strong>Q: Is the daily budget I set the maximum that will be spent each da=
+y?</strong>
+<br />A: When your campaign has more opportunities to get clicks, you may s=
+pend more than your daily budget. With that being said, on a monthly level,=
+ you=E2=80=99ll never spend more than your daily budget multiplied by the n=
+umber of days in the month. For example, with a $50 daily budget in August,=
+ you will not spend more than $1550 that month.
+</div>=20
+<div>=20
+<div>
+<br style=3D"color: #2b2b2b; font-family: Arial, sans-serif; font-size: 14p=
+x; font-style: normal; font-variant-ligatures: normal; font-variant-caps: n=
+ormal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: st=
+art; text-indent: 0px; text-transform: none; white-space: normal; widows: 2=
+; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #fff=
+fff; text-decoration-style: initial; text-decoration-color: initial;" />
+</div>=20
+</div>
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table id=3D"spacera56a8de8-e38b-480f-86a5-9d493d1b0250ea055ffd-4b6b-4c64-9=
+7c3-6f9739348fd4" bgcolor=3D"#ffffff" style=3D"-webkit-text-size-adjust: 10=
+0%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0p=
+t; border-spacing: 0; border-collapse: collapse;" align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"mktoModu=
+le spacer-tbl">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"padding: 0px 0px 0px 0px;">=20
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"87%">=20
+<tbody>=20
+<tr>=20
+<td style=3D"border-top: 1px solid #F1F1F1; -moz-hyphens: none;-webkit-text=
+-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: =
+break-word;-webkit-hyphens: none;-ms-text-size-adjust: 100%;hyphens: none; =
+border-collapse: collapse"> <img alt=3D"" src=3D"http://pages.taboola.com/r=
+s/989-GZB-065/images/3112-pixel%5B1%5D.png" width=3D"300" height=3D"4" styl=
+e=3D"height: 4px!important; display:block" align=3D"left" /> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table id=3D"simple-text-2197bbc4f-b006-4a2a-a556-1895c9fe32288d609ee3-f49d=
+-41ff-9954-6cf15bfc22b10f383c11-83ec-4aa0-a3aa-eb00c147c2ac5d6d5223-2bc5-4d=
+e9-8e67-c93754958abc" class=3D"mktoModule" bgcolor=3D"#ffffff" style=3D"-we=
+bkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: =
+0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse" b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td class=3D"mobile-td" style=3D"padding: 10px 38px 0px 38px; color: #2b2b2=
+b; font-family: Arial, sans-serif; font-size: 14px; line-height: 22px; -moz=
+-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-tab=
+le-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-ms-text-size-a=
+djust: 100%;hyphens: none; border-collapse: collapse">=20
+<div class=3D"mktEditable" id=3D"text-simple-2197bbc4f-b006-4a2a-a556-1895c=
+9fe32288d609ee3-f49d-41ff-9954-6cf15bfc22b10f383c11-83ec-4aa0-a3aa-eb00c147=
+c2ac5d6d5223-2bc5-4de9-8e67-c93754958abc" style=3D"margin: 0px !important; =
+padding: 0px!important">
+<div>
+<strong>Q: How is Cost per Click (CPC) calculated?&nbsp;</strong>
+<br />
+</div>=20
+<div>=20
+<div>
+A: The CPC is simply the amount you pay each time a user clicks on your cam=
+paign item.&nbsp;
+</div>=20
+</div>
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table id=3D"spacer-1558d1ec2-c225-4fc9-be5b-a1ad5d988f7c" bgcolor=3D"#FFFF=
+FF" class=3D"mktoModule spacer-tbl" style=3D"-webkit-text-size-adjust: 100%=
+; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;=
+ border-spacing: 0; border-collapse: collapse;" align=3D"center" border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td style=3D" -moz-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-l=
+space: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: no=
+ne;-ms-text-size-adjust: 100%;hyphens: none; border-collapse: collapse"><im=
+g alt=3D"" src=3D"http://pages.taboola.com/rs/989-GZB-065/images/3112-pixel=
+%5B1%5D.png" width=3D"300" height=3D"25" style=3D"height: 25px; display: bl=
+ock" /> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table id=3D"spacer-428f1a657-98fe-4da0-9418-3ea54aa9ab3f4f5d4559-99a1-4e65=
+-8e4d-ec6505a1a970" bgcolor=3D"#F1F1F1" class=3D"mktoModule spacer-tbl" sty=
+le=3D"-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table=
+-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: co=
+llapse;" align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td style=3D" -moz-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-l=
+space: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: no=
+ne;-ms-text-size-adjust: 100%;hyphens: none; border-collapse: collapse"> <i=
+mg alt=3D"" src=3D"http://pages.taboola.com/rs/989-GZB-065/images/3112-pixe=
+l%5B1%5D.png" width=3D"300" height=3D"4" style=3D"height: 4px; display:bloc=
+k" /> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table id=3D"simple-text-2197bbc4f-b006-4a2a-a556-1895c9fe32288d609ee3-f49d=
+-41ff-9954-6cf15bfc22b1d6291131-7a6e-4e72-8974-6e2c87d90b29" class=3D"mktoM=
+odule" bgcolor=3D"#ffffff" style=3D"-webkit-text-size-adjust: 100%; -ms-tex=
+t-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-s=
+pacing: 0; border-collapse: collapse" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td class=3D"mobile-td" style=3D"padding: 10px 38px 0px 38px; color: #2b2b2=
+b; font-family: Arial, sans-serif; font-size: 14px; line-height: 22px; -moz=
+-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-tab=
+le-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-ms-text-size-a=
+djust: 100%;hyphens: none; border-collapse: collapse">=20
+<div class=3D"mktEditable" id=3D"text-simple-2197bbc4f-b006-4a2a-a556-1895c=
+9fe32288d609ee3-f49d-41ff-9954-6cf15bfc22b1d6291131-7a6e-4e72-8974-6e2c87d9=
+0b29" style=3D"margin: 0px !important; padding: 0px!important">
+<div>
+<br />
+</div>=20
+<div>
+Setting up your campaign can seem complicated, but it=E2=80=99s easy once y=
+ou get the hang of it. Head back in, and let=E2=80=99s get your campaign in=
+ launching shape.
+<br />
+<br />
+</div>
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table id=3D"button-center1bl0e92a426-6c5b-4feb-a125-0f3deda480fb00f612d1-0=
+6ab-4101-9599-9d1d09001673" bgcolor=3D"#FFFFFF" class=3D"mktoModule" style=
+=3D"-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: coll=
+apse" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td class=3D"mobile-td" align=3D"center" style=3D"padding: 10px 38px 0px 38=
+px;-moz-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;=
+mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-ms-text=
+-size-adjust: 100%;hyphens: none; border-collapse: collapse">=20
+<!-- BUTTON -->=20
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-col=
+lapse:separate!important">=20
+<tbody>=20
+<tr>=20
+<td align=3D"right" width=3D"20"><a href=3D"#"><img src=3D"https://pages.ta=
+boola.com/rs/989-GZB-065/images/btn_corner_bl_left.png" width=3D"20" height=
+=3D"42" alt=3D"" style=3D"display: block" /></a></td>=20
+<td align=3D"center" bgcolor=3D"#024b7a" valign=3D"middle" style=3D"padding=
+: 0px 20px 0px 20px; font-family: Arial, sans-serif; font-size:16px; line-h=
+eight:16px; color:#ffffff">=20
+<div style=3D"margin:0px; padding:0px" class=3D"mktEditable" id=3D"button-b=
+l0e92a426-6c5b-4feb-a125-0f3deda480fb00f612d1-06ab-4101-9599-9d1d09001673">
+<div>
+<a href=3D
+"http://me.taboola.com/OTg5LUdaQi0wNjUAAAGMSDoX1K3z7u3O70kOclp_npiF0iBQ5qR5=
+VxmMPTC4KQMBBxqgxC4aqE0CnWplfm6zCYynGGk=3D" style=3D"color: #ffffff; text-d=
+ecoration: none;" target=3D"_blank"
+><span color=3D"#FFFFFF" style=3D"color: #ffffff;">Continue Your Setup</spa=
+n></a>
+</div>
+</div> </td>=20
+<td align=3D"left" width=3D"20"><a href=3D"#"><img src=3D"https://pages.tab=
+oola.com/rs/989-GZB-065/images/btn_corner_bl_right.png" width=3D"20" height=
+=3D"42" alt=3D"" style=3D"display: block" /></a></td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table id=3D"simple-text-26cec817d-d668-4298-afb6-57b531217e4beb0435c2-3bf5=
+-47fd-9faf-f95d7d8d17d5" class=3D"mktoModule" bgcolor=3D"#ffffff" style=3D"=
+-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspac=
+e: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td class=3D"mobile-td" style=3D"padding: 20px 38px 0px 38px; color: #2b2b2=
+b; font-family: Arial, sans-serif; font-size: 14px; line-height: 22px; -moz=
+-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-tab=
+le-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-ms-text-size-a=
+djust: 100%;hyphens: none; border-collapse: collapse">=20
+<div class=3D"mktEditable" id=3D"text-simple-26cec817d-d668-4298-afb6-57b53=
+1217e4beb0435c2-3bf5-47fd-9faf-f95d7d8d17d5" style=3D"margin: 0px !importan=
+t; padding: 0px!important">
+<div>
+Thank you,
+<br />
+</div>=20
+<div>=20
+<div>
+The Taboola Team
+</div>=20
+</div>
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table id=3D"spacer-1558d1ec2-c225-4fc9-be5b-a1ad5d988f7cbdf264f2-5b88-4345=
+-868f-b2c7ce117fe2" bgcolor=3D"#FFFFFF" class=3D"mktoModule spacer-tbl" sty=
+le=3D"-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table=
+-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: co=
+llapse;" align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td style=3D" -moz-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-l=
+space: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: no=
+ne;-ms-text-size-adjust: 100%;hyphens: none; border-collapse: collapse"><im=
+g alt=3D"" src=3D"http://pages.taboola.com/rs/989-GZB-065/images/3112-pixel=
+%5B1%5D.png" width=3D"300" height=3D"25" style=3D"height: 25px; display: bl=
+ock" /> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+<table id=3D"footer" class=3D"mktoModule" bgcolor=3D"#ffffff" style=3D"-web=
+kit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0=
+pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td style=3D"padding-top: 10px" align=3D"center">=20
+<center>=20
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"320">=20
+<tbody>=20
+<tr>=20
+<td align=3D"right" width=3D"135" nowrap=3D"" style=3D"padding: 0px; font-f=
+amily: Arial, sans-serif; text-decoration: none!important; text-decoration:=
+ none; font-size: 12px">=20
+<div style=3D"margin: 0px; padding: 0px" class=3D"mktEditable" id=3D"symbol=
+SectionLink1">
+<div>
+<span style=3D"text-decoration: underline;"><a href=3D
+"http://me.taboola.com/OTg5LUdaQi0wNjUAAAGMSDoX1KCYgpCl_QTyyaTOtf0E8ZC5UH22=
+BW_2I47TY9sktXk7R2Q21WnNFnkbVEak_3IPqck=3D" style=3D"color: #154892!importa=
+nt; font-family: Arial, sans-serif;" target=3D"_blank"
+><span color=3D"#164891">Help</span></a></span>
+</div>
+</div> </td>=20
+<td width=3D"50" align=3D"center">=20
+<div class=3D"mktoImg" id=3D"footer-logo" style=3D"margin: 0px!important; p=
+adding: 0px!important" mktolockimgsize=3D"false">
+<a href=3D
+"http://me.taboola.com/OTg5LUdaQi0wNjUAAAGMSDoX1Fheuo6G33SDjFANedZLGS9qE1sH=
+qZSxl2NQ_2rcuGlz6ERg0F9VG_mz4AsB6zYT8Bs=3D" target=3D"_blank"
+><img src=3D"http://pages.taboola.com/rs/989-GZB-065/images/3112-footer-log=
+o[1].png" width=3D"30" height=3D"24" alt=3D"Taboola" style=3D"display:block=
+" /></a>
+</div> </td>=20
+<td align=3D"left" width=3D"135" nowrap=3D"" style=3D"padding: 0px; font-fa=
+mily: Arial, sans-serif; text-decoration: none!important; text-decoration: =
+none; font-size: 12px">=20
+<div style=3D"margin: 0px; padding: 0px" class=3D"mktEditable" id=3D"symbol=
+SectionLink2">
+<div>
+<span style=3D"text-decoration: underline;"><a href=3D
+"http://me.taboola.com/OTg5LUdaQi0wNjUAAAGMSDoX1NqY9ONAeVHLpjNNQ2owWanFBs7V=
+gXMzF4lSeB_W_XNoObfG6Vm-nbX38VXxTvYq6qg=3D" style=3D"color: #154892!importa=
+nt; font-family: Arial, sans-serif;" target=3D"_blank"
+><span color=3D"#164891">Blog</span></a></span>
+</div>
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+</center> </td>=20
+</tr>=20
+<tr>=20
+<td align=3D"center" style=3D"padding-top: 10px; font-size: 12px; line-heig=
+ht: 13px; font-family: Arial, sans-serif; color: #555555">=20
+<div style=3D"margin: 0px; padding: 0px" class=3D"mktEditable" id=3D"footer=
+Section1">
+<div>
+ =C2=A9 2023 Taboola, Inc.=20
+<br /> 16 Madison Square West, New York, NY, 10010, United States=20
+</div>
+</div> </td>=20
+</tr>=20
+<tr>=20
+<td align=3D"center" style=3D"padding-top: 10px; padding-bottom: 20px">=20
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0">=20
+<tbody>=20
+<tr>=20
+<td width=3D"34" align=3D"left">=20
+<div class=3D"mktoImg" id=3D"linkedin" style=3D"margin: 0px!important; padd=
+ing: 0px!important" mktolockimgsize=3D"false">
+<a href=3D
+"http://me.taboola.com/OTg5LUdaQi0wNjUAAAGMSDoX1HbRCeJDLSBc8l5N-Si9-bn3oBM4=
+Zc_akH_uLFVAifaY-VBm4VSmWdldoTacLJxLQLw=3D" target=3D"_blank"
+><img src=3D"http://pages.taboola.com/rs/989-GZB-065/images/3112-linkedin%5=
+B1%5D.png" width=3D"31" height=3D"31" alt=3D"Linkedin" style=3D"display:blo=
+ck" /></a>
+</div> </td>=20
+<td width=3D"37" align=3D"center">=20
+<div class=3D"mktoImg" id=3D"twitter" style=3D"margin: 0px!important; paddi=
+ng: 0px!important" mktolockimgsize=3D"false">
+<a href=3D
+"http://me.taboola.com/OTg5LUdaQi0wNjUAAAGMSDoX1JGmIKo1NxChoeWKu9uvtJoQN1TF=
+o0tRpzpLU5pVQE_VxF_5We5O3PwgkRI0xPllqSg=3D" target=3D"_blank"
+><img src=3D"http://pages.taboola.com/rs/989-GZB-065/images/3112-twitter%5B=
+1%5D.png" width=3D"31" height=3D"31" alt=3D"Twitter" style=3D"display:block=
+" /></a>
+</div> </td>=20
+<td width=3D"37" align=3D"center">=20
+<div class=3D"mktoImg" id=3D"facebook" style=3D"margin: 0px!important; padd=
+ing: 0px!important" mktolockimgsize=3D"false">
+<a href=3D
+"http://me.taboola.com/OTg5LUdaQi0wNjUAAAGMSDoX1K8qO6soHt3zEhh_rbJisN394UQh=
+laFlDiqFVRTT7RhVUSW-1m6siZW_QThjIh1kLs4=3D" target=3D"_blank"
+><img src=3D"http://pages.taboola.com/rs/989-GZB-065/images/3112-facebook%5=
+B1%5D.png" width=3D"31" height=3D"31" alt=3D"Facebook" style=3D"display:blo=
+ck" /></a>
+</div> </td>=20
+<td width=3D"34" align=3D"right">=20
+<div class=3D"mktoImg" id=3D"instagram" style=3D"margin: 0px!important; pad=
+ding: 0px!important" mktolockimgsize=3D"false">
+<a href=3D
+"http://me.taboola.com/OTg5LUdaQi0wNjUAAAGMSDoX1Lfisw1fIrNORS_urI5cjYh0A4tQ=
+_lPPoFSpcUMFeRLyC54AkDPpjuh8qz-lbXMvfY4=3D" target=3D"_blank"
+><img src=3D"http://pages.taboola.com/rs/989-GZB-065/images/3112-instagram[=
+1].png" width=3D"31" height=3D"31" alt=3D"Instagram" style=3D"display:block=
+" /></a>
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table></td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<!-- Outer Table END --> </td>=20
+</tr>=20
+</tbody>=20
+</table> =20
+<a href=3D
+"http://me.taboola.com/OTg5LUdaQi0wNjUAAAGMSDoX1Ot7TZZtyD5dI6qFiFZbIT7Inua4=
+BTfTJMmlkL-FtIKlIDE283UhTvmUm-7y2OUaBPs=3D"
+></a>
+<img src=3D"http://me.taboola.com/trk?t=3D1&mid=3DOTg5LUdaQi0wNjU6MDo2Mjc0O=
+jI5MzA3OjA6MTQ1MDc6OToxMjU0ODk6MTA0NzQzNzk3LTE6bnVsbA%3D%3D" width=3D"1" he=
+ight=3D"1" style=3D"display:none !important;" alt=3D"" />
+
+<p><font face=3D"Verdana" size=3D"1"><a href=3D
+"http://me.taboola.com/u/OTg5LUdaQi0wNjUAAAGMSDoX1J27Gcd69AZYNXvW_UqWeD0bAF=
+M2PRn21w1Ra2c-CbvRV2x4ihTFOpsPrx1S0X9dMyo=3D"
+>Click here</a> to manage your subscriptions and <a href=3D
+"http://me.taboola.com/u/OTg5LUdaQi0wNjUAAAGMSDoX1OzTO8fiPGakQYveXKB3WSPj1f=
+lCws7rf_eQK_kZBLIXC6-xfbi2tcd79FLUGaqjTzk=3D"
+>here</a> to read our privacy policy.</font></p>
+</body>
+</html>
+------=_Part_1078470_1756664180.1686466815963--

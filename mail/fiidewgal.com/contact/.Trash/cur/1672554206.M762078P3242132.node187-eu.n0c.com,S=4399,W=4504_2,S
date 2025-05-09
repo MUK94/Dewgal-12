@@ -1,0 +1,105 @@
+Return-Path: <>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id aKhYLd4msWOUeDEA3R2AvA
+	(envelope-from <>)
+	for <contact@fiidewgal.com>; Sun, 01 Jan 2023 07:23:26 +0100
+Received: by node187-eu.n0c.com (Postfix)
+	id B81034010E09; Sun,  1 Jan 2023 01:23:26 -0500 (EST)
+Date: Sun,  1 Jan 2023 01:23:26 -0500 (EST)
+From: MAILER-DAEMON@node187-eu.n0c.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: contact@fiidewgal.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="67FA440044D6.1672554206/node187-eu.n0c.com"
+Message-Id: <20230101062326.B81034010E09@node187-eu.n0c.com>
+
+This is a MIME-encapsulated message.
+
+--67FA440044D6.1672554206/node187-eu.n0c.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host node187-eu.n0c.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<bahboubakar@outlook.com>: host
+    outlook-com.olc.protection.outlook.com[104.47.57.161] said: 550 5.5.0
+    Requested action not taken: mailbox unavailable (S2017062302). (in reply to
+    RCPT TO command)
+
+--67FA440044D6.1672554206/node187-eu.n0c.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; node187-eu.n0c.com
+X-Postfix-Queue-ID: 67FA440044D6
+X-Postfix-Sender: rfc822; contact@fiidewgal.com
+Arrival-Date: Sun,  1 Jan 2023 01:23:25 -0500 (EST)
+
+Final-Recipient: rfc822; bahboubakar@outlook.com
+Original-Recipient: rfc822;bahboubakar@outlook.com
+Action: failed
+Status: 5.5.0
+Remote-MTA: dns; outlook-com.olc.protection.outlook.com
+Diagnostic-Code: smtp; 550 5.5.0 Requested action not taken: mailbox
+    unavailable (S2017062302).
+
+--67FA440044D6.1672554206/node187-eu.n0c.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <contact@fiidewgal.com>
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Nl87x2Ktlz5fCKh
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="X4dHBcDP"
+X-N0C-MailScanner-eFa-Watermark: 1673159000.93223@Ra/8+x8UzM2mVQUqugbnSA
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: C1E1340044D4.AB37D
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id C1E1340044D4
+	for <bahboubakar@outlook.com>; Sun,  1 Jan 2023 07:23:18 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com C1E1340044D4
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com C1E1340044D4
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1672554198;
+	bh=wmQr2Fq73aVD9R26kcqhbasFr2tzhOf2VcFL1aLe7Ds=;
+	h=Date:Subject:From:To:From;
+	b=X4dHBcDPlKmXajf2TbITj9I3x3wUEaiB4z0oFofLeqtRy/nTg/WwkBgXsHKYIzUty
+	 9w9cqA7XdbrqGRrbrN0dUIeFAZY4oyEnxBZVT4HT8LycATEDlaloGj24q08noCk5hK
+	 lcOwcX+SkElnVyGljILvDQ/mz8uyfecQMmlC216Y=
+Message-ID: <1cba4c9061e5e3c93fd14ecacb1a8160@fiidewgal.com>
+Date: Sun, 01 Jan 2023 07:23:18 +0100
+Subject: =?utf-8?Q?R=C3=A9initialisation?= du mot de passe
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: bahboubakar@outlook.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<p>Bonjour&nbsp;Lonam Gomes sapalo,</p><p>Votre code de v=C3=A9rification p=
+our la r=C3=A9initialisation du mot de passe est : [[code]]<br></p><p><br><=
+/p><p>Merci !<br></p><p>Ne r=C3=A9pondez pas</p>
+
+
+--67FA440044D6.1672554206/node187-eu.n0c.com--

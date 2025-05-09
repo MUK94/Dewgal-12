@@ -1,0 +1,102 @@
+Return-Path: <>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id lLCyLdwFt2PKUiwA3R2AvA
+	(envelope-from <>)
+	for <contact@fiidewgal.com>; Thu, 05 Jan 2023 18:16:12 +0100
+Received: by node187-eu.n0c.com (Postfix)
+	id B2DBD4004A03; Thu,  5 Jan 2023 12:16:12 -0500 (EST)
+Date: Thu,  5 Jan 2023 12:16:12 -0500 (EST)
+From: MAILER-DAEMON@node187-eu.n0c.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: contact@fiidewgal.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="989B04002DDC.1672938972/node187-eu.n0c.com"
+Message-Id: <20230105171612.B2DBD4004A03@node187-eu.n0c.com>
+
+This is a MIME-encapsulated message.
+
+--989B04002DDC.1672938972/node187-eu.n0c.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host node187-eu.n0c.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<malalfoulabalde@e-mail.com>: connect to e-mail.com[204.146.168.195]:25:
+    Connection timed out
+
+--989B04002DDC.1672938972/node187-eu.n0c.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; node187-eu.n0c.com
+X-Postfix-Queue-ID: 989B04002DDC
+X-Postfix-Sender: rfc822; contact@fiidewgal.com
+Arrival-Date: Sat, 31 Dec 2022 12:00:17 -0500 (EST)
+
+Final-Recipient: rfc822; malalfoulabalde@e-mail.com
+Original-Recipient: rfc822;malalfoulabalde@e-mail.com
+Action: failed
+Status: 4.4.1
+Diagnostic-Code: X-Postfix; connect to e-mail.com[204.146.168.195]:25:
+    Connection timed out
+
+--989B04002DDC.1672938972/node187-eu.n0c.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <contact@fiidewgal.com>
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NkpKF3khZz34nwbq
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="jyT6OeVk"
+X-N0C-MailScanner-eFa-Watermark: 1673110810.95921@rTfKT77pgTykn6bkilitqw
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 9CA8C4002DDC.A3FA4
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 9CA8C4002DDC
+	for <malalfoulabalde@e-mail.com>; Sat, 31 Dec 2022 18:00:09 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 9CA8C4002DDC
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 9CA8C4002DDC
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1672506009;
+	bh=XBHZsrFH0sXgP04qKLBm2CSOMe+D7BnE5r+UGIHj9Bc=;
+	h=Date:Subject:From:To:From;
+	b=jyT6OeVkqy1XZRdkciIxieALvN1DrMKP34aYkxZly3GHf2Ga8bUn1FDSmxzmxv5eI
+	 +ZZiHdUcw/TNfGR4aEmyBHHvo4vgIRb2HQLOsQRw+TaEMBV2JC24rkG0ExccyxgvFD
+	 AtjG9UpHENwlyihYZwWj8TcUE+Igsop9a4H1ZfrY=
+Message-ID: <a91b7c9f34f79cc08233e3273e348cae@fiidewgal.com>
+Date: Sat, 31 Dec 2022 18:00:09 +0100
+Subject: =?utf-8?Q?R=C3=A9initialisation?= du mot de passe
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: malalfoulabalde@e-mail.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<p>Bonjour&nbsp;Malal foula Balde,</p><p>Votre code de v=C3=A9rification po=
+ur la r=C3=A9initialisation du mot de passe est : [[code]]<br></p><p><br></=
+p><p>Merci !<br></p><p>Ne r=C3=A9pondez pas</p>
+
+
+--989B04002DDC.1672938972/node187-eu.n0c.com--

@@ -1,0 +1,79 @@
+Return-Path: <mabija1996@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id sEi0IDKvsGPp4iwA3R2AvA
+	(envelope-from <mabija1996@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 31 Dec 2022 22:52:50 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Nkwpp37Mwz34nwbq
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="DuxCqvS4"
+X-N0C-MailScanner-eFa-Watermark: 1673128368.32172@rhOj+ZtiN3ROMq/Z75PZUA
+X-N0C-MailScanner-eFa-From: mabija1996@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: C81B140044A6.A2CEF
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-pf1-f180.google.com ([209.85.210.180] [209.85.210.180])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id C81B140044A6
+	for <contact@fiidewgal.com>; Sat, 31 Dec 2022 22:52:15 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com C81B140044A6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com C81B140044A6
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=DuxCqvS4
+Received: by mail-pf1-f180.google.com with SMTP id b145so12422993pfb.2
+        for <contact@fiidewgal.com>; Sat, 31 Dec 2022 13:52:15 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=tC93ujw1qC3/mGjMhufMkKNT4l5vc5bcLBisvW4+9vs=;
+        b=DuxCqvS4njZPr2UZVRXVE2DA2kigrH2PxNSZnY6wU7s1qZtmxz9Pb7QcFEvJOThWxg
+         zGeQszdxaMTSecSik8OUG4ciOxK0QhV/2sZsr7/fGDZO1T+bpYbm1vGhQW/w4HvquOg0
+         BRDZYNwo7mjQQ1p7QhkkYsJsjn1k7pStc/ayL16JiSCDczuCqdfkujtWyUg4cUSquvNI
+         oGDCoTceyvIxcvvdW86YbFBPgMdVONPKCLHs2nXn4/MXZmmD/p02D1aaHmBt/i3qAYDJ
+         RsP0YBuznwZSy3vXeRL9AL7iZgeHbzrXMfwdXdBLas63/cPnohkQXHwubeAz2yE2knuU
+         t1lQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=tC93ujw1qC3/mGjMhufMkKNT4l5vc5bcLBisvW4+9vs=;
+        b=SvMx3M50weLew8QPfktKs8b5KRkIDi6QwN0zb5pEY0sB+D5H/MuLTfpXVeiNam/Jcr
+         2uebNImvweZHDlOQuTs5B/2IYKEhb6SsODxjZN4bU9Pw1427XedsXuOo6zPRqdmhxC+U
+         1izjWTMoSyjwtQK+qlWcdb6mAYTShJ0aUWr5c6jyJAfZ8ksnzICa1TOwwywP0Om7g2Ju
+         8HNx1iTPG1vuOfcGVT/LcS1g6Zl4435Tqa6DoqfQIjbUcpZJ+7sth+svNliRNEkrMvQu
+         5A+y532d44ZNBm0UmCU/+FdJJaxYP05MK36jcAeqt10nsld+J2zPkzkfRHSub1936qrS
+         PU4g==
+X-Gm-Message-State: AFqh2kq7+WSTsIabpdxzy5mj+8yWnNMLI5whJoLT7acJs5gTLM3yuki8
+	1bBbVfUsJcw6U0GJs1ClueYRbnxYHJEHrbTth8n0y/Hh
+X-Google-Smtp-Source: AMrXdXsDtrU1uxVLGY7iMOnkYgrqre/WogVq04Z7PGDRZm1ia3bpMry1DfTCyQ1HyyhplKtOMNk/zsZlx0R3mLwooV4=
+X-Received: by 2002:a65:5783:0:b0:485:3850:9d57 with SMTP id
+ b3-20020a655783000000b0048538509d57mr1498896pgr.338.1672523533846; Sat, 31
+ Dec 2022 13:52:13 -0800 (PST)
+MIME-Version: 1.0
+From: Abdoulaye Diallo <mabija1996@gmail.com>
+Date: Sat, 31 Dec 2022 22:51:01 +0100
+Message-ID: <CAMrNbPtakK5rbyuWvQVTTaXF=jtuwN9M2jtV4i2wrvF+GgeV_A@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000001d0e2f05f126bb1a"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000001d0e2f05f126bb1a
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Je suis inter=C3=A9ss=C3=A9 je vie en belgique
+
+--0000000000001d0e2f05f126bb1a
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Je suis inter=C3=A9ss=C3=A9 je vie en belgique</div>
+
+--0000000000001d0e2f05f126bb1a--

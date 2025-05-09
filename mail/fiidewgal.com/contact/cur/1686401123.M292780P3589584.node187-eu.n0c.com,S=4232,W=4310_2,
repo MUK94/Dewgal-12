@@ -1,0 +1,78 @@
+Return-Path: <bahaliu777@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id IFhhEWNwhGTQxTYA3R2AvA
+	(envelope-from <bahaliu777@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 10 Jun 2023 14:45:23 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Qdd2q0T1mz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="sZ2ydWJF"
+X-N0C-MailScanner-eFa-Watermark: 1687005921.86943@T3R7JF9dohg5zNAbKRGpYw
+X-N0C-MailScanner-eFa-From: bahaliu777@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: ss
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 0C555401A32D.A85B4
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-oi1-f172.google.com ([209.85.167.172] [209.85.167.172])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 0C555401A32D
+	for <contact@fiidewgal.com>; Sat, 10 Jun 2023 14:45:20 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 0C555401A32D
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 0C555401A32D
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=sZ2ydWJF
+Received: by mail-oi1-f172.google.com with SMTP id 5614622812f47-39a3f165ac5so1094855b6e.3
+        for <contact@fiidewgal.com>; Sat, 10 Jun 2023 05:45:19 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1686401118; x=1688993118;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=F5BJOIB4me7eHrUh07vOF7brKDf9bVsucx++bSa4FIg=;
+        b=sZ2ydWJFNCQfREOqnXYf0NivOLqE3TFWn6Ea4YgQCGuP9IfQDS8iiQ1MyZWZjFEU0k
+         udFNg2z9AhspdrplODy43qx4Ua2cm7DP3uhyA2Hn7Ca3SQHowHS9LdVstgfr4K9x2LFg
+         dVwAJt2XMiKE29aGipuAT3MOc/g3Md2MAzUKk16E4sT3KjpcroJpeAVZn6B0CaDcCvuN
+         eoffDFwwySrBg1XW83e7EtMelQRnrts22onCsaa5jimFDaX9iU3KyTiCnNYFF8FEAWT7
+         2rPL7dxrD54q+ui447v595q75xP5+FiqpFNuVtQVo22Cgbb+eCRmPTBiuavGy5VTd7Lx
+         O5xQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1686401118; x=1688993118;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=F5BJOIB4me7eHrUh07vOF7brKDf9bVsucx++bSa4FIg=;
+        b=B2wInr9Bf3YDs6kwNWi0kKjghXtP8MtSPY0LQzLu+/49DRzaT+aQH0yIwCGX+lYO9Y
+         TbvRq4gbWh144TK+X8NiEl25p+mBt/87/lr1xu5+fVPKvOeAk7pmuXU1D4ifEnkuoboN
+         xFf8QmHD0B5gtjeUYMFGa2dRA2yuGY9CFESTumaV2uzNavDEPP42bbzLBTftdLDNUGvp
+         ihoc6WHBFyHcM0O+FgsCt+qK2VU0rU6+aNwLBRlH15AochXW1g3KIRKKRLnBexrLoq1h
+         uTRtAly/zwUGTbtMT7v7bE6Qu8NQ8P3Ms00RqcTlhPC+gQMi892KcRZq+loDGEiEw7QT
+         xXLA==
+X-Gm-Message-State: AC+VfDxwHQkoHvHbMS8xplVYtJdNJje51IGzmErEYsT0VYrOohL5n8+J
+	HOtHkjr69PkfWSmJhmBCuQwyITMeyLmg/ipYBdL38LLn
+X-Google-Smtp-Source: ACHHUZ5GLlEBb3hVYnHAOn5tml1g8u4UTSUj0PMpMaT5ZTTxj2o6pJhA1h3UUrEg1BiNqWx1RzYTKofKcp3DEuEaJoE=
+X-Received: by 2002:a05:6808:10d0:b0:39a:bd1e:e0d2 with SMTP id
+ s16-20020a05680810d000b0039abd1ee0d2mr1001799ois.15.1686401118373; Sat, 10
+ Jun 2023 05:45:18 -0700 (PDT)
+MIME-Version: 1.0
+From: Aliu Bah <bahaliu777@gmail.com>
+Date: Sat, 10 Jun 2023 14:45:05 +0200
+Message-ID: <CAKr22XbOVP+SV-E0UZuXBUQGNpr_Spm4Sc+9va2A5W-M_wn2Uw@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000009c0a6905fdc5dbb8"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000009c0a6905fdc5dbb8
+Content-Type: text/plain; charset="UTF-8"
+
+Bahaliu777@gmail.com
+
+--0000000000009c0a6905fdc5dbb8
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"><a href="mailto:Bahaliu777@gmail.com">Bahaliu777@gmail.com</a></div>
+
+--0000000000009c0a6905fdc5dbb8--

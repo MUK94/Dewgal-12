@@ -1,0 +1,234 @@
+Return-Path: <>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id cK33Jr4PsmPnezoA3R2AvA
+	(envelope-from <>)
+	for <contact@fiidewgal.com>; Sun, 01 Jan 2023 23:57:02 +0100
+Received: by node187-eu.n0c.com (Postfix)
+	id 9D603400834A; Sun,  1 Jan 2023 17:57:02 -0500 (EST)
+Date: Sun,  1 Jan 2023 17:57:02 -0500 (EST)
+From: MAILER-DAEMON@node187-eu.n0c.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: contact@fiidewgal.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="5F9044008347.1672613822/node187-eu.n0c.com"
+Message-Id: <20230101225702.9D603400834A@node187-eu.n0c.com>
+
+This is a MIME-encapsulated message.
+
+--5F9044008347.1672613822/node187-eu.n0c.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host node187-eu.n0c.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<tib00224@gmail.com>: host gmail-smtp-in.l.google.com[74.125.133.27] said:
+    550-5.1.1 The email account that you tried to reach does not exist. Please
+    try 550-5.1.1 double-checking the recipient's email address for typos or
+    550-5.1.1 unnecessary spaces. Learn more at 550 5.1.1
+    https://support.google.com/mail/?p=NoSuchUser
+    bo13-20020a056000068d00b002852105c1b9si9092098wrb.472 - gsmtp (in reply to
+    RCPT TO command)
+
+--5F9044008347.1672613822/node187-eu.n0c.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; node187-eu.n0c.com
+X-Postfix-Queue-ID: 5F9044008347
+X-Postfix-Sender: rfc822; contact@fiidewgal.com
+Arrival-Date: Sun,  1 Jan 2023 17:57:02 -0500 (EST)
+
+Final-Recipient: rfc822; tib00224@gmail.com
+Original-Recipient: rfc822;tib00224@gmail.com
+Action: failed
+Status: 5.1.1
+Remote-MTA: dns; gmail-smtp-in.l.google.com
+Diagnostic-Code: smtp; 550-5.1.1 The email account that you tried to reach does
+    not exist. Please try 550-5.1.1 double-checking the recipient's email
+    address for typos or 550-5.1.1 unnecessary spaces. Learn more at 550 5.1.1
+    https://support.google.com/mail/?p=NoSuchUser
+    bo13-20020a056000068d00b002852105c1b9si9092098wrb.472 - gsmtp
+
+--5F9044008347.1672613822/node187-eu.n0c.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <contact@fiidewgal.com>
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NlZBQ1x8bzQSV4Y
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="mWZNptDD"
+X-N0C-MailScanner-eFa-Watermark: 1673218619.87945@84m1hmptypQRscfQEvGTKg
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 1655C4008347.A3AF7
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 1655C4008347
+	for <tib00224@gmail.com>; Sun,  1 Jan 2023 23:56:59 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 1655C4008347
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 1655C4008347
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1672613819;
+	bh=pS/PY5NRYKCoZUqYuypHFUW0qP0LAI560ZY72ws8Ppw=;
+	h=Date:Subject:From:To:From;
+	b=mWZNptDDZFa2DHnokhxiJg9AM5KdPtnC0LaxvwY3RJb6MjJbpMY5DpgZZXjKASUi6
+	 +PRdQpPzNheRK75x3manhBHfWZCIIjPcyKiEtvzISIIQBb/eLP7t1a9dCANy6/jqCE
+	 ZWFvIJEpkWraTOk6tNFzbydi8s3AKnMieIHRs5w8=
+Message-ID: <027d21e03f63f781303884c09769ec9c@fiidewgal.com>
+Date: Sun, 01 Jan 2023 23:56:58 +0100
+Subject: Email Verification - Fii Dewgal
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: tib00224@gmail.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" bgco=
+lor=3D"#e8ebef">
+=09<tr>
+=09=09<td align=3D"center" valign=3D"top" class=3D"container" style=3D"padd=
+ing:50px 10px;">
+=09=09=09<!-- Container -->
+=09=09=09<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0">
+=09=09=09=09<tr>
+=09=09=09=09=09<td align=3D"center">
+=09=09=09=09=09=09<table width=3D"650" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" class=3D"mobile-shell">
+=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09<td class=3D"td" bgcolor=3D"#ffffff" style=3D"width=
+:650px; min-width:650px; font-size:0pt; line-height:0pt; padding:0; margin:=
+0; font-weight:normal;">
+=09=09=09=09=09=09=09=09=09<!-- Header -->
+=09=09=09=09=09=09=09=09=09<table width=3D"100%" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff">
+=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09<td class=3D"p30-15-0" style=3D"padding: 4=
+0px 30px 0px 30px;">
+=09=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<th class=3D"column" style=3D"fon=
+t-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"img m-cente=
+r" style=3D"font-size:0pt; line-height:0pt; text-align:left;"><img src=3D"h=
+ttps://fiidewgal.com/public/uploads/all/3ePHoiM5cMGmckWJJkq03HVSXUcK8mKuITM=
+5NqBG.png" width=3D"191" height=3D"24" border=3D"0" alt=3D"" /></td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</th>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<th class=3D"column-empty" width=
+=3D"1" style=3D"font-size:0pt; line-height:0pt; padding:0; margin:0; font-w=
+eight:normal;"></th>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<th class=3D"column" width=3D"120=
+" style=3D"font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight=
+:normal;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"text-header=
+ right" style=3D"color:#000000; font-family:'Fira Mono', Arial,sans-serif; =
+font-size:12px; line-height:16px; text-align:right;"><a href=3D"https://fii=
+dewgal.com" target=3D"_blank" class=3D"link" style=3D"color:#000001; text-d=
+ecoration:none;"><span class=3D"link" style=3D"color:#000001; text-decorati=
+on:none;">Fii Dewgal</span></a></td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</th>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"separator" style=3D"=
+padding-top: 40px; border-bottom:4px solid #000000; font-size:0pt; line-hei=
+ght:0pt;">&nbsp;</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09<!-- END Header -->
+
+=09=09=09=09=09=09=09=09=09<!-- Intro -->
+=09=09=09=09=09=09=09=09=09<table width=3D"100%" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff">
+=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09<td class=3D"p30-15" style=3D"padding: 70p=
+x 30px 70px 30px;">
+=09=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"h2 center pb10" styl=
+e=3D"color:#000000; font-family:'Ubuntu', Arial,sans-serif; font-size:50px;=
+ line-height:60px; text-align:center; padding-bottom:10px;">v=C3=A9rificati=
+on de l&#039;E-mail</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"h5 center blue pb30"=
+ style=3D"font-family:'Ubuntu', Arial,sans-serif; font-size:20px; line-heig=
+ht:26px; text-align:center; color:#2e57ae; padding-bottom:30px;">Please cli=
+ck the button below to verify your email address. </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+                                                                           =
+                                 <tr>
+                                                            <td class=3D"h5=
+ center blue pb30" style=3D"font-family:'Ubuntu', Arial,sans-serif; font-si=
+ze:20px; line-height:26px; text-align:center; color:#2e57ae; padding-bottom=
+:30px;">
+                                                                <a href=3D"=
+https://fiidewgal.com/verification-confirmation/eyJpdiI6Im1mMFJXRkF1Wll3d3l=
+DVEkyT1Q0Unc9PSIsInZhbHVlIjoiWks0UGVpZ3FCK1N3eVhSb0g5VDRjUT09IiwibWFjIjoiMj=
+E2OGE4YWI0ZjgwMWFjMDE5NWZmOWU5YzczMjMxYTI5ZDQwOGVhNmY0NjI5YzBmYmJkYmY0MDgyZ=
+GFiMTVlZSIsInRhZyI6IiJ9" style=3D"background: #007bff;padding: 0.9rem 2rem;=
+font-size: 0.875rem;color:#fff;border-radius: .2rem;" target=3D"_blank">Cli=
+ck Here</a>
+                                                            </td>
+                                                        </tr>
+                                                    =09=09=09=09=09=09=09=
+=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09<!-- END Intro -->
+=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09<td class=3D"text-footer" style=3D"padding-top: 30p=
+x; color:#1f2125; font-family:'Fira Mono', Arial,sans-serif; font-size:12px=
+; line-height:22px; text-align:center;">
+=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09</table>
+=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09=09<!-- END Container -->
+=09=09</td>
+=09</tr>
+</table>
+
+--5F9044008347.1672613822/node187-eu.n0c.com--

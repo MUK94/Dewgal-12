@@ -1,0 +1,86 @@
+Return-Path: <boypeulboy@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id Mhr0L2n5nGPTIDMA3R2AvA
+	(envelope-from <boypeulboy@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 17 Dec 2022 00:04:09 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NYl606mwFz35ww
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="DOACW+5N"
+X-N0C-MailScanner-eFa-Watermark: 1671836642.15065@HXP/mU5jCLZ7eeP46f4dSQ
+X-N0C-MailScanner-eFa-From: boypeulboy@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 1062B401AEF6.AF4D5
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-qv1-f54.google.com ([209.85.219.54] [209.85.219.54])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 1062B401AEF6
+	for <contact@fiidewgal.com>; Sat, 17 Dec 2022 00:03:30 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 1062B401AEF6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 1062B401AEF6
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=DOACW+5N
+Received: by mail-qv1-f54.google.com with SMTP id pp21so2592309qvb.5
+        for <contact@fiidewgal.com>; Fri, 16 Dec 2022 15:03:29 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=+SMAJefT2JxTAhKNqvTwKoNNpmsL2t7jkU8TSmHLJMU=;
+        b=DOACW+5NvaDbqZWzEHZg27WdlvGwBI9tA8xBt32qU7EZ7HSrYO/rkm69VBtJx8E05b
+         G1yAMMJDaYWl3ZhQ83MxvZpoTOEiis2FqlZqlAFPYCpBERIGLyho94CcjZfIt9ltaXZV
+         9Fet5fuBCAgWN8WKmwadnLfglsV+8VpTh4PFMSho6mZ7XPNxYoOtxz2eRz2/nlHNfAra
+         d/2TJnLjVg2CyNVsZQZFUlzY3OD3VGbg/Bl04NXLpT0qFIiMmeISmcbGqUtAiFQtP4D5
+         Cd8QaJPWNNv+/maC95TXxcM0ri4tf+cg6FtsbLFhTumeOcvrnRRtvPBpy91UEVBOFNsJ
+         g/4g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=+SMAJefT2JxTAhKNqvTwKoNNpmsL2t7jkU8TSmHLJMU=;
+        b=sXHVr6xqFS7NDg4/R8RRyXPkTpsWsiFEHPFtZ2BsLAqmtxhhRssYYF3rWrxCJ397EH
+         FiIcuTKDflrLuQ1lkEFNYQXxuSOYNqOEGCrfo29sHGrAqtIHTkheHlAsVReOVkgaOvJw
+         DP0Hc2TnUNaoEb6LDIrI9di7GzckNtmNEVZB5p76rb0TKQqJMtCOKl+8AQxiFNRefH3A
+         R8mcet23b+9X8TaIz7D1xySVqDoRvglttr8prSE9Suz7Awl0mcWyfgz0coKiGWLy9asr
+         u28dSb1nUnzb3O/RT5l0F2Cv5XxxBFB56qPjYg3i/Ke5EOnC59z9i8ee9Lai6HsviTzu
+         ixhQ==
+X-Gm-Message-State: ANoB5pnUqAUNPBwgugCdjy15Wa+xmSxOI9N5R0+HUYBOl8AaSrnPcuGE
+	OcLvPO8VFNrj2x2EkXgc94Zc4ppmlzeYm/O65e4SxMek
+X-Google-Smtp-Source: AA0mqf6ErE5kQcwOlqWGQzJ+lznj0PRz09Y/xM1iRAUjdXX+V5fqNtADck4XnEfweLbuKuHRvmPwZD+CX8GmAbzwrTE=
+X-Received: by 2002:a0c:a982:0:b0:4c7:95b6:eced with SMTP id
+ a2-20020a0ca982000000b004c795b6ecedmr5684639qvb.14.1671231808233; Fri, 16 Dec
+ 2022 15:03:28 -0800 (PST)
+MIME-Version: 1.0
+From: Boypeul Boy <boypeulboy@gmail.com>
+Date: Fri, 16 Dec 2022 23:03:15 +0000
+Message-ID: <CAMbmfFbh1Vz0Lk8NTwG=dr1tQ5+CXyVS3KDU2x64s6dY_Cd6qw@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000044651905eff9faba"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000044651905eff9faba
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Salut ces Mamadou Adama ba n=C3=A9s le 7 aut   1993  au S=C3=A9n=C3=A9gal T=
+ambacounda
+vendeur de charbon situation matrimoniale c=C3=A9libataire sans enfant num=
+=C3=A9ro de
+t=C3=A9l=C3=A9phone 774918441
+
+--00000000000044651905eff9faba
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Salut ces Mamadou Adama ba n=C3=A9s le 7 aut=C2=A0 =C2=A0=
+1993=C2=A0 au S=C3=A9n=C3=A9gal Tambacounda vendeur de charbon situation ma=
+trimoniale c=C3=A9libataire sans enfant num=C3=A9ro de t=C3=A9l=C3=A9phone =
+774918441</div>
+
+--00000000000044651905eff9faba--

@@ -1,0 +1,102 @@
+Return-Path: <>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id rCIFHe2a3WN1MS4A3R2AvA
+	(envelope-from <>)
+	for <contact@fiidewgal.com>; Sat, 04 Feb 2023 00:38:21 +0100
+Received: by node187-eu.n0c.com (Postfix)
+	id 72649401B23F; Fri,  3 Feb 2023 18:38:21 -0500 (EST)
+Date: Fri,  3 Feb 2023 18:38:21 -0500 (EST)
+From: MAILER-DAEMON@node187-eu.n0c.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: contact@fiidewgal.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="B92C0401AEEF.1675467501/node187-eu.n0c.com"
+Message-Id: <20230203233821.72649401B23F@node187-eu.n0c.com>
+
+This is a MIME-encapsulated message.
+
+--B92C0401AEEF.1675467501/node187-eu.n0c.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host node187-eu.n0c.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<6souleymanediallo@gimai.com>: connect to gimai.com[3.64.163.50]:25: Connection
+    timed out
+
+--B92C0401AEEF.1675467501/node187-eu.n0c.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; node187-eu.n0c.com
+X-Postfix-Queue-ID: B92C0401AEEF
+X-Postfix-Sender: rfc822; contact@fiidewgal.com
+Arrival-Date: Sun, 29 Jan 2023 17:49:23 -0500 (EST)
+
+Final-Recipient: rfc822; 6souleymanediallo@gimai.com
+Original-Recipient: rfc822;6souleymanediallo@gimai.com
+Action: failed
+Status: 4.4.1
+Diagnostic-Code: X-Postfix; connect to gimai.com[3.64.163.50]:25: Connection
+    timed out
+
+--B92C0401AEEF.1675467501/node187-eu.n0c.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <contact@fiidewgal.com>
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4P4mhf6Nmsz34SDnG
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="KaJsEmrO"
+X-N0C-MailScanner-eFa-Watermark: 1675637359.29911@Yzqla6YOfFb/EWR77QGpcw
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 535A0401AEEF.A7F51
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 535A0401AEEF
+	for <6souleymanediallo@gimai.com>; Sun, 29 Jan 2023 23:49:18 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 535A0401AEEF
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 535A0401AEEF
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1675032558;
+	bh=qRY/mFuu1MABBz8HLuk/14fIOOqppO2L/ZhGYNbcfmc=;
+	h=Date:Subject:From:To:From;
+	b=KaJsEmrObgBl8U2HP2/x6RxOuwK8GQ6nv2mioOUSP5ogbdJ6+eiEZ5wX9MWRyhS1t
+	 hHMdMeuJvGbLeKqOvQnGm9jr5sM6P41jY9TYPWnSdMgQlPgBfuoeaiH1W8+NAM7DIY
+	 SY70Gtzf79A32A7kmKvyb+OgRUVFSesylDVCwnBI=
+Message-ID: <5ddcdeb56562de41bbbc74c6cbd2a606@fiidewgal.com>
+Date: Sun, 29 Jan 2023 23:49:18 +0100
+Subject: =?utf-8?Q?R=C3=A9initialisation?= du mot de passe
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: 6souleymanediallo@gimai.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<p>Bonjour&nbsp;Souleymane Diallo,</p><p>Votre code de v=C3=A9rification po=
+ur la r=C3=A9initialisation du mot de passe est : [[code]]<br></p><p><br></=
+p><p>Merci !<br></p><p>Ne r=C3=A9pondez pas</p>
+
+
+--B92C0401AEEF.1675467501/node187-eu.n0c.com--

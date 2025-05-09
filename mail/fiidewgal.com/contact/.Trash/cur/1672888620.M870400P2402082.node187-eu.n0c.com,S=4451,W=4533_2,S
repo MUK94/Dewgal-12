@@ -1,0 +1,82 @@
+Return-Path: <bubacarrj535@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 53fDMyxBtmMipyQA3R2AvA
+	(envelope-from <bubacarrj535@gmail.com>)
+	for <contact@fiidewgal.com>; Thu, 05 Jan 2023 04:17:00 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NnWq004zhz1wKN
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="ALkxUqx4"
+X-N0C-MailScanner-eFa-Watermark: 1673493417.20226@8qPhdDz1KT4n34nDHtP8jg
+X-N0C-MailScanner-eFa-From: bubacarrj535@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 3AEC84020D50.A067B
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ed1-f50.google.com ([209.85.208.50] [209.85.208.50])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 3AEC84020D50
+	for <contact@fiidewgal.com>; Thu,  5 Jan 2023 04:16:25 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 3AEC84020D50
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 3AEC84020D50
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=ALkxUqx4
+Received: by mail-ed1-f50.google.com with SMTP id s5so51250684edc.12
+        for <contact@fiidewgal.com>; Wed, 04 Jan 2023 19:16:25 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=eGjL7kbzUQtCluo7SstTUhM0zGrqzZiuKT3NAdjDvVA=;
+        b=ALkxUqx4JohECZJrRg+alY3TjCfDs+g4Z6pVWn7xHP/CUeyvw3UlhU1/zix8nKHN/i
+         ekFLvMeU3N8C3Q9yVAfzKMwAqJhHy4AwN9H3w3o+fkJr/eotW5vGLaoWo2EehguKVvyV
+         cuV5YbGCrCZXYsJ5AphSwWJsJhrsIMhk6O39Ek1tiOYvQvGUt8tovYtLITOPMUUfO80E
+         s8gRL6cELCCpO0gmuzZe4U7RlZ4Ibdf4aLSeJjRXxLZWnQXnZeAoFJOV0n9cRiibBOM6
+         aOfx0AZ35GOeSw3NQUjnkl1CzWFeQa1RUhZh9hoqOcFqea5VOGsDGY1XOFhGGC1nGCqP
+         t7Iw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=eGjL7kbzUQtCluo7SstTUhM0zGrqzZiuKT3NAdjDvVA=;
+        b=UtTdI22fSEvxn+I0wdkKlBJWyFEFcf+ntn9geO6QijYnmu9fqrSWQgdKQ5CS9tQ4nN
+         AWRcBXpoSA0guxpgy3Tm8Ch9SSAP//hxyfWRsvTrC2SpGIxzzfgQusToSXCxOcKK3ZMX
+         vC97XRV86MOkJqtXbYA+nPrjkv5JGVHpz2NT0GXMKj1HHK0uNQictxnA3b/CNOe4a2lO
+         Dk4vNLBW1rMwjpwpUAdkHX0/OjV5B5cZGYJKZeV+eUXjORDJCdp8/oCBXMaEB3HFTt9J
+         dUx/rq6eFlBwD223DAeY/qKJwzxdUiv7ihYahPpFiPvFpx1PQF2106cwJkSMSZYOYnSu
+         p3gg==
+X-Gm-Message-State: AFqh2kq/sISypPWm/szcNM9j0xAlpVXKuLjdMK5ebVSO40mBXF0kEpgn
+	q/Xmshk0LfZHTxE+VAbFwNH7E4ViKX0NN1yBp3WW8MM=
+X-Google-Smtp-Source: AMrXdXtEZy2m/EsM2yulESgT3T3/1cnfJAO2FzOdVarBAGcOmeTnSwTofUE1lLVr0ExQCX+me986F6gBY+Wi1F9/W+U=
+X-Received: by 2002:a05:6402:d5c:b0:47d:2804:2a31 with SMTP id
+ ec28-20020a0564020d5c00b0047d28042a31mr3990165edb.277.1672888584616; Wed, 04
+ Jan 2023 19:16:24 -0800 (PST)
+MIME-Version: 1.0
+From: Bubacarr Jallow <bubacarrj535@gmail.com>
+Date: Thu, 5 Jan 2023 03:12:20 +0000
+Message-ID: <CA+4LYJ1h=KXn9pH6yRMEcFyfq2qxUwQZNgaF1cf3yT-w6vgsZg@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000d5bebb05f17bb9f3"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000d5bebb05f17bb9f3
+Content-Type: text/plain; charset="UTF-8"
+
+Hello, how are you i hope you are very well, ok i think i just open my
+email address then if you see my  this massage there, I'm seeking your
+explanation hope you will see it thanks.?
+
+--000000000000d5bebb05f17bb9f3
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Hello, how are you i hope you are very well, ok i think i=
+ just open my email address then if you see my=C2=A0 this massage there, I&=
+#39;m seeking your explanation hope you will see it thanks.?=C2=A0</div>
+
+--000000000000d5bebb05f17bb9f3--

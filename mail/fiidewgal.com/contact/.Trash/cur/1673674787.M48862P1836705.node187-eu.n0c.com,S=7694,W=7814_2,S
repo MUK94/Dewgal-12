@@ -1,0 +1,120 @@
+Return-Path: <amadousadjodiallo015@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id opHWAiNAwmOhBhwA3R2AvA
+	(envelope-from <amadousadjodiallo015@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 14 Jan 2023 06:39:47 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Nv6YY5rHPz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="SlI6Y2GZ"
+X-N0C-MailScanner-eFa-Watermark: 1674279583.09962@Mn2nvQSm0aw2V6MFcP1rRw
+X-N0C-MailScanner-eFa-From: amadousadjodiallo015@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 02AAE40044D9.AD9A6
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-pj1-f49.google.com ([209.85.216.49] [209.85.216.49])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 02AAE40044D9
+	for <contact@fiidewgal.com>; Sat, 14 Jan 2023 06:39:09 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 02AAE40044D9
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 02AAE40044D9
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=SlI6Y2GZ
+Received: by mail-pj1-f49.google.com with SMTP id m7-20020a17090a730700b00225ebb9cd01so28958851pjk.3
+        for <contact@fiidewgal.com>; Fri, 13 Jan 2023 21:39:08 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=references:mime-version:subject:message-id:to:reply-to:from:date
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=v1h5XOP0GO8LSrTRxvekVUNEaPeQYDAK5Rmphuvp8gQ=;
+        b=SlI6Y2GZP7fV0nQbAQGNHdKGUIg2bIgpW8yfINoPWbcvzrjZSXBPwbcqpSSrqRrSyQ
+         iJHXJ3jDUYU5q4Y9QSHCY6Lr3cJOx7FNyHMsWF/767NPJV3kB+WwiGLn18O9emSSHhdD
+         vswim5WJwOVr+mZhTzRgauwUMPCDxq5wnHWeZNihB+RE+mmNHCVsFh/Eo0w5J461LRiz
+         qD6PhqFKIKiWxYV2vbV6bpmIutmRXHzol1qhPXpKDFnLubJ9BIQOVzSO027197a4HtQo
+         h/FnbLpzZyrmbZHPNincOsUjk1wcn77BWtbiUMySjZ6I3Sv0BI8DoZ1aa+sq3C0I7mSA
+         cHSw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=references:mime-version:subject:message-id:to:reply-to:from:date
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=v1h5XOP0GO8LSrTRxvekVUNEaPeQYDAK5Rmphuvp8gQ=;
+        b=a1KjvLY5J7CiGs6KlKsR/GSQKSkdF/f201Tqpe5xgE1LHmhuwWSwXQAvBa+Oh2ywaK
+         3dtbD0tTZLtIDBxOj4uzA97ORzxKTGicoMJP6DNjIRY1XIXhMwYBg+7cgHdS1StFmCPw
+         TZRtljBwYNGY3lC0EA0GZSO16dW6oubH8G1Pttyq9zeFI/9nhbBr1UiZOJDUiitxcXSZ
+         y2vd71IY4UkSh7CWA8jEdogg4G2qzO91OzcWAhX3E5BxKJj1AGjGqQoMpyKH2QUOF93A
+         oxZixr7FsT4a963oxBAN1E/ClsTv/XKQZFm00eAUYpgVip83V8Ot1ISRr0/1T0oyQIIb
+         icAw==
+X-Gm-Message-State: AFqh2koZnoj1UpAhDk1B7xtbzm5HAwLIT2wJyXw9uPZ8nvF9Xp40YWnX
+	IuuZ6XnbBuNVv6lxd0fonSyjQo2fPGg=
+X-Google-Smtp-Source: AMrXdXuMTF/Q6rkMXKlqhLWryKGsWIGvVhOQUdCJPYqsgKqOl28TDufmqG7aFDjw1tvvNtEXQ0mexw==
+X-Received: by 2002:a17:902:9687:b0:189:ed86:178b with SMTP id n7-20020a170902968700b00189ed86178bmr13523906plp.64.1673674747028;
+        Fri, 13 Jan 2023 21:39:07 -0800 (PST)
+Received: from sonic315-8.consmr.mail.gq1.yahoo.com (sonic315-8.consmr.mail.gq1.yahoo.com. [98.137.65.32])
+        by smtp.gmail.com with ESMTPSA id l15-20020a170903244f00b001888cadf8f6sm15113946pls.49.2023.01.13.21.39.06
+        for <contact@fiidewgal.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Fri, 13 Jan 2023 21:39:06 -0800 (PST)
+X-YMail-OSG: R4b6FR0VM1lZQxuEsHzBWGoU3fiw5wEPlncrgXG42cHm4mT7e4d1D7CDtEVi8IX
+ POBxv3__HJJkl2s_jdvPJdHKY26ATsW5ViHVnHArKVzguajkmXRSN_Fa4o14POT6CVZciVHx4pcV
+ 6A6bEmAn3XrizWiMc6r3D53K_yNQd92goVAUHyJU.Rou8eUggzt8yBwJkl15fcp4Wm.0fVdXKHNA
+ hWlTREqX9nQPCF.OBQahTtEcJeWdhQLPhXUdQsN15sx4FSAsIDPh0j2v6InQp632TMv0bt.KG.Xj
+ sY2aW0Ah2lTNU74kAbUcCwHlYUP69Z4pCNalJnHoP7aDZm9GhIwtfQfU93nl8Y.9ShDSseA1zuH5
+ NaLDQwGcDhFzG_5m7s1ai1OrX0KOmaJv7_6pvRyPcMec6uXpgqWwoXlAlN1xtWwxd3XhJ6Txpcrp
+ Z09tuZMhszbu3WowhHeYbpnrRiwpsICXGFBRQJzHUNeG1Kr3XATfYBWXkNnk5l7ivy.5NsZep.Wk
+ bOHLVf6NAvSTlDZRzHItJfshbWNui0BeM_f6f4JeKmwgAG0dSBM2ogB8qe3lYMCsIghd2qoQ49NH
+ 3c7cLl_3ZLe3soaurrn0mJlXSwsCTKeMQhfOHKsonOzsdoSk.vzG71TYwGm8ugjZvkOE3m.P_B9s
+ UxKmW6yVp69n1noUYtW95F9zzNYcu8W2W10gf.6MKNblewxY48wIA_YR87ZSQz.WdShBb0CPXU0c
+ 8MLXysX4kGwbODBM7XIPrRe59QQIu6Ykdr1NhLKA1gGrSiahLvVulOZLZyaPemw8NcwGVQmV9DX.
+ Mjj1UZdxpXHhPAqbnMuQsuLONhKMmMvmxlDkbzBEx7TX_ZsydC9ChgDa4c5NdjUe9EyuZtbrABiM
+ XG___3DTuhSDtCHpRjkKyDmuofOsDpNvADXk1oVo9LnTFlKnZTEgNkm7NA4H4gP6XjHQeqMhePcI
+ CBBwhLfy40CNXfq0D0mGEol2FWrOwS.fm9AyTYCWQXWQwIb2nf44hcBETUvNIYfBF8ulCcj1b97p
+ .GjtT48Q8G59ooaFsod1qCQU1gjI.HAIVmJIlYkw36PIDBP9HJt8q5U_cNm5_S2GzzRzfNVXMFsi
+ kB3_Vr8EB1XECl_PRhxx3_st3SkcQ4FhH2irE5GY_ubSnpL40ZghkRVOc0GnkSYhe_gyuwgrk3P5
+ Hv64tUeS57EsqxNxrz9yMgg4tkUMW42zueWunruPApnV4U7r2AiZZdrBfwIC3FU5Kx0RapDE0uOy
+ xDpcHpydt92BfPdV0ZljUy1QtsUkXOkgM7Ajtz6EwipP3703MgEW_ihfKo0SR3uAjZttjoo..GGk
+ tKsCMaF86fkI7lxV0vK8Tt2BZ3dD29SuLs7ZdJiVm6l1VzscPdJpv6kheyc8HSVpZnL4cm_I190B
+ iM9PlyM5AtoTFt6RrWKAOOY6Oir_QPgaBotHveFAKNSDm5TahIr6M6TG0B0br8xQVfV_OE2zJ6xj
+ I2q2SeQ3JLLGa5VwWnsG3RWnFQA68J6LTqroLc2yCP3qSeWdsdcOQoXKeoPAH4t5OqLSoCLK3DMe
+ 7Q9qHWWVF5E_abYU_5Mfz8gR_VYMJnS4NUB5PCkYuEHa16YTEzizKsJqkaFwFe2G7n1JAl_j.Z49
+ kpTK0epNvVaoibJ9eC5JJ2.RgxMaVvjqR6vYSctHYAICYTBJFkEkGexABDbTVt6yOmxAo2e1Javi
+ 1PPoEDMYwIfldIIpo5iI0VkhDHZx48LHcFnESxfjM6heoYbxEWHySgW4rfr5kazRgiKB2kYCJFIY
+ s0ZHvprrram6XXUrDHYJi37jfqRea_UILk..rCSOIZDwRxynGzPA8WIusuuX3W3LShX6lfdLcf4b
+ a7jcCO.AxQYaec3agxKxwkhq8LLe2ZfCvkWiq8J6OWHrNx_hLXr4lnx58hmhv9SDnz9.0HAVyihz
+ xR0H5mVbMGS2ws3Fu3GeMXh.G1MZngLNBaLEIa.8SIFxn114_I0KULOygwqP.D2vYklyH3XDF0W.
+ Tuvjv_sHjxMrXRjUvbCXkngC1I3eyDKoDN_N8LVzMuNpm34R2Byp_ik8cIhZYO8MG7FFCPztqQvG
+ 3MyDQlXdCzSFe.Ld75IbugW7D9tzpHi57zEHOeUDp9SraiLvC7.skSR4nSiE9YLzM3.IUnoqNvh_
+ T4Ov5VE9.ELZEZqgs25Uzd_qMaU6OFjlplZy5oI_iAtzEKQU6OLUzRKq47nDMyjoH3opyx7AlJ1A
+ fVqPZlimh8nNzIwZfh8Mv_a6SR2sKDka9rnd6a9y3CV90V9FsWjpBm75f3WyXvKxfp1kvoEdZ8vg
+ qLdUscAAUzyUrtHTEPRxzYGpSDO_TDMzoGF_kVw--
+X-Sonic-MF: <amadousadjodiallo015@gmail.com>
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic315.consmr.mail.gq1.yahoo.com with HTTP; Sat, 14 Jan 2023 05:39:06 +0000
+Date: Sat, 14 Jan 2023 05:38:57 +0000 (UTC)
+From: "amadousadjodiallo015@gmail.com" <amadousadjodiallo015@gmail.com>
+Reply-To: "amadousadjodiallo015@gmail.com" <amadousadjodiallo015@gmail.com>
+To: "contact@fiidewgal.com" <contact@fiidewgal.com>
+Message-ID: <504712216.1094708.1673674737629@mail.yahoo.com>
+Subject: Message
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1094707_1763208391.1673674737628"
+References: <504712216.1094708.1673674737629.ref@mail.yahoo.com>
+X-Mailer: WebService/1.1.21062 YahooMailAndroidMobile
+X-N0C-Node-IP: 185.221.182.45
+
+------=_Part_1094707_1763208391.1673674737628
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour, je voulai savoir coman on peu envoyer un message,?par ce moi je ne=
+ voi pas l'option dans mon conte ,Merci=C2=A0
+------=_Part_1094707_1763208391.1673674737628
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour, je voulai savoir coman on peu envoyer un message,?par ce moi je ne voi pas l'option dans mon conte ,Merci&nbsp;
+------=_Part_1094707_1763208391.1673674737628--

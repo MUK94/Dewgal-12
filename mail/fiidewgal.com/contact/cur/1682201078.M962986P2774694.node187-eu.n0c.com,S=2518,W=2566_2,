@@ -1,0 +1,48 @@
+Return-Path: <contact@fiidewgal.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id ZMpUOfZZRGSmVioA3R2AvA
+	(envelope-from <contact@fiidewgal.com>)
+	for <contact@fiidewgal.com>; Sun, 23 Apr 2023 00:04:38 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Q3lmk5sSsz34SDmk
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="pnEVyQ7/"
+X-N0C-MailScanner-eFa-Watermark: 1682805811.08342@W+JbYqqtQZ0Vt28CircVOg
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 8EF824037547.A9485
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 8EF824037547
+	for <contact@fiidewgal.com>; Sun, 23 Apr 2023 00:03:25 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 8EF824037547
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 8EF824037547
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1682201005;
+	bh=fXSu9bbgJjl86nNSBvh1dq5lAxj2mbmOdtSuftpx6/4=;
+	h=Date:Subject:From:To:From;
+	b=pnEVyQ7/EC0uXP9ujqsVxPynZ3hp5XgokDjlZwn3WL+WPWmARJl5sBkGCWwsCLkqv
+	 21GhWl+rn0fyBm0Cv67XLzZhteSeuggiLi2u8ueLdupRDtjYr2oAu1HzASWlttfZs4
+	 We73lhibzgNeLZC9Ufb2QJLujipt+u4ThSF97oKw=
+Message-ID: <ad31b29322f3017718c9c353a08ad6a7@fiidewgal.com>
+Date: Sun, 23 Apr 2023 00:03:25 +0200
+Subject: Inscription des membres
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: contact@fiidewgal.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<p>F=C3=A9licitations !<br></p><p>Vous avez un nouveau membre enregistr=
+=C3=A9 dans votre syst=C3=A8me.</p><p>Nom du membre : Thierno souleymane Di=
+allo</p><p>L'e-mail est : Souleymanetaka87@gmail.com</p><p>Profil de membre=
+ : https://fiidewgal.com/admin/members/2938</p><p>Merci,</p><p>Ne r=C3=
+=A9pondez pas</p>
+

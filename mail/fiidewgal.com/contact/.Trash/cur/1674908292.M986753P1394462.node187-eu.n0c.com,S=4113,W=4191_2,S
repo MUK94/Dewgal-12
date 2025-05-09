@@ -1,0 +1,78 @@
+Return-Path: <wurrybailocbah@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id JeK8OoQS1WMeRxUA3R2AvA
+	(envelope-from <wurrybailocbah@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 28 Jan 2023 13:18:12 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4P3tkr5tm9z34SDnG
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="bq5e25AI"
+X-N0C-MailScanner-eFa-Watermark: 1675513088.90649@vyVVgFQA1LXxkEUb0efszg
+X-N0C-MailScanner-eFa-From: wurrybailocbah@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: A87DC401AEEF.AE652
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-io1-f41.google.com ([209.85.166.41] [209.85.166.41])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id A87DC401AEEF
+	for <contact@fiidewgal.com>; Sat, 28 Jan 2023 13:17:35 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com A87DC401AEEF
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com A87DC401AEEF
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=bq5e25AI
+Received: by mail-io1-f41.google.com with SMTP id b127so2886358iof.8
+        for <contact@fiidewgal.com>; Sat, 28 Jan 2023 04:17:35 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=rW+7qZDwK2D2GzmHCg44nDvUGh4xPlcy1IMzrouTHu0=;
+        b=bq5e25AI5+GGwFp01XJIvEcaPjDw+7ritc607fo1ylsYy8NdEMyOiQ4ne+4NAvNhw2
+         rXoMEQ5DoPBXlNpOayPE5+Hcm0vlB3GUnHQeY1yAAPzLMFDxQt2A+r5chNrKubJ9lPgE
+         wohGeke+67+y91SFKtTcCUxwcId+g5qpNrqZTeJ4+CshVa7kqN025yBPJXNYDZ8u7E37
+         NhPvjtrvGOjA3I4d9ZHeigDvPSooYiHBk7t+PRVv6KWe/1VQ3zaPqnUgSTUKT4igxKQ+
+         r9INMwxwKf4qekDsYt3b+NgCIQ8bU+AAMvaQ7h5vBAmz8gYF528a3BkF2OEnaRmcIu/9
+         /QsQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=rW+7qZDwK2D2GzmHCg44nDvUGh4xPlcy1IMzrouTHu0=;
+        b=xjWyurUCoxIEJ+27Borq7Q1ucmHH/+ZjhYwmm7YVFhNtcj5zV7jkSoSvtqhVpXDtgh
+         BHC8ttl593T8GsqfMU2TGEz4GOf3uVlsT3JdeI/c5u1CZJMrVwFUdCXCPdpDhnRUiFSB
+         DleyIp6QQFNCetknXn54Rk1/q7t20OyJYZ88U1ZWQjPUaAxdh/bTT4yi3JC3zp+B4Yvr
+         JbQWH7UPL5VsiflP2wPZAacipz8AHoiGcbhuIRxGMVZiU91WygQvLKH8hRjuN1NjDVH+
+         rUZsQqa3Fkkcx3QVxcVv82A9yQ3Q2Y6f7LYwXzD8Tr+fxUKtPD3Y4p+G28MCT53MPNrs
+         iQlQ==
+X-Gm-Message-State: AFqh2koItaVFaAp+39sAKAL+xNzfkSR6YiuHptRHCzzEI9yN/TyH5l5/
+	30Q+0SxcII4oB/oSOtbT3CZEytdL6hIy4tiFK9WI7V9K3A0=
+X-Google-Smtp-Source: AMrXdXsO6FNzOw6zeOa/3YGhq3ag2k+m2nlKLziSVLnU38xL83J1thg/lEnSUCLqv0vJIL8sy8iY05d4z9GamlL6gSc=
+X-Received: by 2002:a02:cbc6:0:b0:39d:c9e4:98ba with SMTP id
+ u6-20020a02cbc6000000b0039dc9e498bamr6217000jaq.131.1674908253985; Sat, 28
+ Jan 2023 04:17:33 -0800 (PST)
+MIME-Version: 1.0
+From: Wurry Bailo <wurrybailocbah@gmail.com>
+Date: Sat, 28 Jan 2023 13:17:21 +0100
+Message-ID: <CAJ_kcYS=4pj+2g+0pk5PgNJMk9NZGN9O3zEK8v5Xen7cCJXyQQ@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000829e8a05f351f72d"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000829e8a05f351f72d
+Content-Type: text/plain; charset="UTF-8"
+
+Hello how are you
+
+--000000000000829e8a05f351f72d
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Hello how are you=C2=A0</div>
+
+--000000000000829e8a05f351f72d--

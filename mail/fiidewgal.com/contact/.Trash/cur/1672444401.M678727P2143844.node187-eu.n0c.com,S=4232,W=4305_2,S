@@ -1,0 +1,73 @@
+Return-Path: <kankalabe82@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id cHhiKPF5r2NktiAA3R2AvA
+	(envelope-from <kankalabe82@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 31 Dec 2022 00:53:21 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NkMXK40H2z1tVq
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="NbxD+3wp"
+X-N0C-MailScanner-eFa-Watermark: 1673049195.78206@u336NqKbJ88aHDYvxZFDhA
+X-N0C-MailScanner-eFa-From: kankalabe82@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 9AAED40664E8.A2ED0
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-oa1-f50.google.com ([209.85.160.50] [209.85.160.50])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 9AAED40664E8
+	for <contact@fiidewgal.com>; Sat, 31 Dec 2022 00:52:42 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 9AAED40664E8
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 9AAED40664E8
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=NbxD+3wp
+Received: by mail-oa1-f50.google.com with SMTP id 586e51a60fabf-12c8312131fso26288169fac.4
+        for <contact@fiidewgal.com>; Fri, 30 Dec 2022 15:52:42 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=auto-submitted:precedence:content-disposition
+         :content-transfer-encoding:mime-version:subject:message-id:date:from
+         :to:from:to:cc:subject:date:message-id:reply-to;
+        bh=a3nbnBGibacbHtj7MtQofa2WZEgzzQt+pjE/56/zK1c=;
+        b=NbxD+3wptId7UkzrxbRmrqZpmGy3CnKdXt5scVNXwB1ZD1/EOCe/IH7V0Uxp/1MUgQ
+         xx5rGONNSN1xLRdfDPgaxTffSmbnkF9MDvmiqVInKOI2jBQS7qeDSVUToG/tHjWzfhNo
+         vaQCwkI+2E7apFveGYyzUO2Mk+YsBQJszMewy4Zm+Bvb64LY9gBsyvAahQ4F75f7ZupM
+         OMw5zJ9123QCg7cWS/HTCFM5jzSF95sCeXGzTJCFg5rFMKtazmO6Dkojk43cx0I6DFWh
+         zrlYI+z6ha80UuaSwEDU5MUr8OG5mx4/NWXchYOS/mfedMrpmwKWWsyzr0BwUcakQIBC
+         83SQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=auto-submitted:precedence:content-disposition
+         :content-transfer-encoding:mime-version:subject:message-id:date:from
+         :to:x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=a3nbnBGibacbHtj7MtQofa2WZEgzzQt+pjE/56/zK1c=;
+        b=O47mYhpYx4v2ZRquTosMAGKzIVgdMp7GugkJf7Nkf59/OwScHtFf6VOqmRzsgn7z5j
+         p7ZXFR91Fz5TLP1qzAeaViX1pgg7u4lIgGoowCtjgZH6U5KrEDVJdcbSwB968H87kY5O
+         6pKord4ZSPj/YzHAMmQvbnYUyKUgmU24IaEBt/jUmBu8AQprhgeHlMMqjhllED/XwC6c
+         UymiqYcEcQWc7Cq7av0BQuXCWgutWbNsjDkAZlrYVffMISpr2y0m1vXKqeU/IOiPFq6a
+         Vl06FLuSVFaDau66Hs3Z4k8T8RjX5DYV07vapLR3ozyMpWKksY+BWQ4c+YGLycJ+ngwU
+         GPPQ==
+X-Gm-Message-State: AFqh2krPh7AgExB7mJdttF/rM0+7o9CMT4Hh37jB55N1unPHC41dS3iG
+	K0zfsvPnwpp/mA+Zvkz1dzQcWMo6qWIyIugj6tFhTq9E+iFm5hvplcsaXsLx6A==
+X-Google-Smtp-Source: AMrXdXuaEWQ+j4DlNkfimBklORiUExWhFkkhhY+UaGb4Ztee/6vi+uHslfRKdBfvyR1bD0jPUaxwbjMv/iLWo+PuLll+co2llKjTWln7Z6vH
+X-Received: by 2002:a05:6870:cb81:b0:143:653:a546 with SMTP id ov1-20020a056870cb8100b001430653a546mr2186819oab.109.1672444361152;
+        Fri, 30 Dec 2022 15:52:41 -0800 (PST)
+To: contact@fiidewgal.com
+From: "Alhassane Diallo" <kankalabe82@gmail.com>
+Date: Fri, 30 Dec 2022 15:52:41 -0800
+Message-ID: <CA+ySBeivY4=LXZ07bbDf3KtD0beVSSD0ic-PAL_cTWZOrggsfQ@mail.gmail.com>
+Subject: =?UTF-8?Q?R=C3=A9ponse_Re:_R=C3=A9initialisation_du_mot_de_passe?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: base64
+Content-Disposition: inline
+Precedence: bulk
+X-Autoreply: yes
+Auto-Submitted: auto-replied
+X-N0C-Node-IP: 185.221.182.45
+
+TWVyY2kgbWVzc2FnZSBiaWVuIHJlw6d1Lg0K

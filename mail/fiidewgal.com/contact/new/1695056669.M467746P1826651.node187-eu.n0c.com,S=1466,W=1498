@@ -1,0 +1,32 @@
+Return-Path: <contact@fiidewgal.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id KHbMGx2DCGVb3xsA3R2AvA
+	(envelope-from <contact@fiidewgal.com>)
+	for <contact@fiidewgal.com>; Mon, 18 Sep 2023 19:04:29 +0200
+Received: from [127.0.0.1] (unknown [185.221.182.45])
+	by node187-eu.n0c.com (Postfix) with ESMTPSA id 09C6C401AEEF
+	for <contact@fiidewgal.com>; Mon, 18 Sep 2023 13:04:29 -0400 (EDT)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 09C6C401AEEF
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 09C6C401AEEF
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1695056669;
+	bh=i4secfH33DKyPYpgEOpydoaQaW0ZXBVx4u6qhS9yosc=;
+	h=From:To:Subject:Date:From;
+	b=GukTocYEGUVyynoD10X8FQlHel5VXEx6Y5eM3lMGXHejcpYuZSpj8Z52Ajsvx5Fy6
+	 1DhaYDhRLjOA0zR2C+1dCxKoTbQWB7oFNR0ntYEtCQ8IY2nMIb0BeXAztMTKUveYkp
+	 LfzuiVPIKg89uDWo7WROAjLWD8rVFJ4Yc3mW3XCc=
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: contact@fiidewgal.com
+Subject: Test, just a test
+Message-ID: <3bd1090adea112f47827e0509faf8ad3@fiidewgal.com>
+MIME-Version: 1.0
+Date: Mon, 18 Sep 2023 19:04:29 +0200
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello. And Bye.
+

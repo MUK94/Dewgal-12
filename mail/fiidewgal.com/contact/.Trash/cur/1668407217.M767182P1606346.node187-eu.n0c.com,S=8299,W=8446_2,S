@@ -1,0 +1,147 @@
+Return-Path: <sophie@sellyourvision.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 2iypLbHfcWPKghgA3R2AvA
+	(envelope-from <sophie@sellyourvision.com>)
+	for <contact@fiidewgal.com>; Mon, 14 Nov 2022 07:26:57 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4N9fV85mfgz1sth
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=fail reason="signature verification failed" (2048-bit key) header.d=sellyourvision-com.20210112.gappssmtp.com header.i=@sellyourvision-com.20210112.gappssmtp.com header.b="oGSvck1k"
+X-N0C-MailScanner-eFa-Watermark: 1669012007.17445@Nopm3YDOc/dq901b20DH6g
+X-N0C-MailScanner-eFa-From: sophie@sellyourvision.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: AC08C4003245.A5D92
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-qv1-f50.google.com ([209.85.219.50] [209.85.219.50])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id AC08C4003245
+	for <contact@fiidewgal.com>; Mon, 14 Nov 2022 07:26:14 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com AC08C4003245
+Authentication-Results: node187-eu.n0c.com; dmarc=none (p=none dis=none) header.from=sellyourvision.com
+Authentication-Results: node187-eu.n0c.com; spf=none smtp.mailfrom=sellyourvision.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com AC08C4003245
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=sellyourvision-com.20210112.gappssmtp.com header.i=@sellyourvision-com.20210112.gappssmtp.com header.a=rsa-sha256 header.s=20210112 header.b=oGSvck1k
+Received: by mail-qv1-f50.google.com with SMTP id c8so7249435qvn.10
+        for <contact@fiidewgal.com>; Sun, 13 Nov 2022 22:26:13 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=sellyourvision-com.20210112.gappssmtp.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=oOZHraritPB0KglimeB+LkOPwBeGOhB6oXuOCQmCuuA=;
+        b=oGSvck1kZfVzoselOaUqC1z/qGb+VA7erFoSiGiu4NMI1LtKWsm8UX5h3GvYqvpAEE
+         m869EKIC3Bx4jb0uzOVM/OWtd3oG+C7stWgIjJkzhgo/oDJAKS6EIFeTPx3BPqsmtUFr
+         79OQ7e7hWzooRY7TNbEapDwZ395vhvchWOYQNGfewSGk3OxfFIhly5H4/ZuOEihbzspP
+         K7umvW8aaP6QhpJ6oeOITuvMgoZmW+iO7KSpsD/rlidpVrGwSdDByFrjDNoSQtfzaxMM
+         8k8EOyRNgQzTcKSX0FsdeSIxK4x/56Y2hwBinW8q3EoEtV0X/ukOdngPWY29lol1otTD
+         GL4Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=oOZHraritPB0KglimeB+LkOPwBeGOhB6oXuOCQmCuuA=;
+        b=UNmYmlUS62hS+juPqzVgEtIlIVykCvD/xUXfpaIiZioXHu+nxnWFfiYK7s4xMWPo9g
+         9CZmNRcsnCNA9X1pHp7B+Z1MlGiZpKiawYhXaBFUm38tGM+1lUknV0bvQiECkTV4gwoh
+         22nEW7HT1WSp8vIql4hkhcDAbQQ+K9bvpWtORLEsaRmEt5jCUtQ/Cosd5azyZvwrTCvb
+         DoewEt/o2GDjdplMcZSnmIOq9XyWy+FVkAUlNX+9bmi8np3Q8aTUUuEA0QGa8DcP3d+b
+         0Xv3b/gYybYxV3ZoFakj4OPl50xUD27d72Ox3bOOnCAmcun6LeFrrd1sm94F3P8LGAzB
+         pJ4w==
+X-Gm-Message-State: ANoB5pkf3uRZFrEBlYcrDX3ePET7VqFWe8SqcvrWhyVtJg4qvmo2I6Ep
+	Whz6rHVYTM5pdHziIOiawwlqORTzjEAWRE2R2hlb7eSgTG4=
+X-Google-Smtp-Source: AA0mqf5jn30rBJLni6XlvIH1GhD+K21YvrvpJ19jwGBscvsw13pnqGAZE80X7Z61xTCYyrkMFrJNoHA6jMKA9An+4Hs=
+X-Received: by 2002:a05:6214:3c08:b0:4bb:7bc0:30bb with SMTP id
+ nt8-20020a0562143c0800b004bb7bc030bbmr11144034qvb.58.1668407172065; Sun, 13
+ Nov 2022 22:26:12 -0800 (PST)
+Received: from 963290025925 named unknown by gmailapi.google.com with
+ HTTPREST; Mon, 14 Nov 2022 01:26:11 -0500
+MIME-Version: 1.0
+From: sophie <sophie@sellyourvision.com>
+Date: Mon, 14 Nov 2022 01:26:11 -0500
+Message-ID: <CAOz391P6vFffPNM4XAA1fQLXOryWtbTc3kRNtJeuFwgaBdP9qw@mail.gmail.com>
+Subject: Error Found fiidewgal.com
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000d4f2e605ed685024"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000d4f2e605ed685024
+Content-Type: text/plain; charset="UTF-8"
+
+*Dear Business Owner* *fiidewgal.com <http://fiidewgal.com>*,
+
+
+How is it possible that your website is having so many Technical errors and
+not well optimized for Google?
+
+Now, I will show you the gray areas in your website and the best possible
+solution.
+
+If this is something you are interested in, then send me an email asking *"Send
+me a Proposal".*
+
+If yes, please allow me to send you a *no-obligation audit report and *
+*quote*.
+
+Thank you in advance.
+
+Kind Regards,
+
+*Sophie Smith**Digital Marketing Consultant *
+
+
+*************************************************************
+
+If you no longer interested in receiving emails from us, you can Unsubscribe
+<https://forms.gle/Bfm3FQCrH4c4dFbJ6> here :
+[image: beacon]
+
+--000000000000d4f2e605ed685024
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><p class=3D"MsoNormal" style=3D"margin:0in 0in 10pt;line-h=
+eight:16.8667px;font-size:11pt;font-family:Calibri,&quot;sans-serif&quot;">=
+<span style=3D"font-family:Georgia,&quot;serif&quot;"><b>Dear Business Owne=
+r</b>=C2=A0</span><u style=3D"font-size:small;color:rgb(0,0,255);font-famil=
+y:verdana,sans-serif;box-sizing:border-box"><span style=3D"box-sizing:borde=
+r-box;font-weight:bolder"><a href=3D"http://fiidewgal.com">fiidewgal.com</a=
+></span></u><span style=3D"font-family:Georgia,&quot;serif&quot;;font-size:=
+11pt">,</span></p><p class=3D"MsoNormal" style=3D"margin:0in 0in 10pt;line-=
+height:16.8667px;font-size:11pt;font-family:Calibri,&quot;sans-serif&quot;"=
+><span style=3D"font-family:Georgia,&quot;serif&quot;"><br>How is it possib=
+le that your website</span><span style=3D"font-family:Georgia,&quot;serif&q=
+uot;">=C2=A0is having so many Technical errors and not well optimized for G=
+oogle?<br><br>Now, I will show you the gray areas in your website and the b=
+est possible solution.<br><br>If this is something you are interested in, t=
+hen send me an email asking=C2=A0<b><span style=3D"background:aqua">&quot;S=
+end me a Proposal&quot;.</span></b><br><br>If yes, please allow me to send =
+you a<b>=C2=A0</b></span><b><span style=3D"font-family:Georgia,&quot;serif&=
+quot;;color:black;background:yellow">no-obligation=C2=A0audit report=C2=A0a=
+nd=C2=A0</span></b><b><span style=3D"font-family:Georgia,&quot;serif&quot;;=
+color:black;background:aqua">quote</span></b><span style=3D"font-family:Geo=
+rgia,&quot;serif&quot;;color:black;background:aqua">.<br><br></span></p><p =
+class=3D"MsoNormal" style=3D"margin:0in 0in 10pt;line-height:16.8667px;font=
+-size:11pt;font-family:Calibri,&quot;sans-serif&quot;"><span style=3D"font-=
+family:Georgia,&quot;serif&quot;;color:black">Thank you in advance.</span><=
+/p><p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;line-height:norm=
+al;font-size:11pt"><font face=3D"georgia, serif"><span style=3D"font-size:s=
+mall">Kind Regards,</span><b style=3D"font-size:small"><br></b><font color=
+=3D"#0000ff"><b style=3D"font-size:small">Sophie Smith<br></b><b>Digital Ma=
+rketing Consultant=C2=A0</b></font></font></p><p class=3D"MsoNormal" style=
+=3D"margin:0in 0in 0.0001pt;line-height:normal;font-size:11pt"><font color=
+=3D"#0000ff" face=3D"georgia, serif"><b><br></b></font></p><p class=3D"MsoN=
+ormal" style=3D"margin:0in 0in 0.0001pt;line-height:normal"><font color=3D"=
+#000000" face=3D"georgia, serif"><b>***************************************=
+********************</b></font></p><p class=3D"MsoNormal" style=3D"margin:0=
+in 0in 0.0001pt;line-height:normal"><font face=3D"georgia, serif">If you no=
+ longer interested in receiving emails from us, you can=C2=A0<a href=3D"htt=
+ps://forms.gle/Bfm3FQCrH4c4dFbJ6" target=3D"_blank">Unsubscribe</a>=C2=A0he=
+re :=C2=A0</font></p></div><img src=3D"https://dl.efa-project.org/static/1x=
+1spacer.gif" width=3D"1" height=3D"1" alt=3D"Web Bug from https://script.go=
+ogle.com/macros/s/AKfycbzQOo1qSoVvr88xpaG_n8rmT99BX8SFX9fkGnVhig-Zil9bp_4Wy=
+T8iMcFoBPmtS64/exec?u=3D1JGhtyLm59sNgI2MZHbfEFX3iJ-Bp2eRV06nePIyMm7U0&t=3Da=
+57bb5d8&ct=3De" />
+
+--000000000000d4f2e605ed685024--

@@ -1,0 +1,77 @@
+Return-Path: <maimomoba@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 6+8FBqwgl2OwNQIA3R2AvA
+	(envelope-from <maimomoba@gmail.com>)
+	for <contact@fiidewgal.com>; Mon, 12 Dec 2022 13:38:04 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NW1PQ66qlz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="o1pel1cK"
+X-N0C-MailScanner-eFa-Watermark: 1671453477.62105@DgUvUC6+BUUzCio/XJrwrQ
+X-N0C-MailScanner-eFa-From: maimomoba@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 55142400370B.A9CC2
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ej1-f42.google.com ([209.85.218.42] [209.85.218.42])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 55142400370B
+	for <contact@fiidewgal.com>; Mon, 12 Dec 2022 13:37:26 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 55142400370B
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 55142400370B
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=o1pel1cK
+Received: by mail-ej1-f42.google.com with SMTP id u19so9087614ejm.8
+        for <contact@fiidewgal.com>; Mon, 12 Dec 2022 04:37:26 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=PcVt/pqyR0Qg3FZe7e8l6xfpWmVL1iplCQPYJTjF7II=;
+        b=o1pel1cKcX+b2U+Xmr1JRY7Tyvnj8hmVvH/byWgppz/Fn6x80owUJFrolKE+WB7dq4
+         XwC4Vx5ql6L8hGk6jjJ9g8GZVujAZ5gyK2QA7Fj4U7f8BC+JhSPJbTkkZB/jzniBMNgB
+         ZQCtaOVewnDxQuImz0PxM+TnxlYkUF9KJWLRReiAXCBsaPBc9c1qSxxJHALJ4zdlBAmT
+         HqNmpbvabZ0tBBEtghUM/omlPgDdSXBH2gbK8DD01uBgokiTKmj3EDXTwDDa8BAJBmug
+         W7LICmmd6OKCLxAf+/IwDglYdWLYnCUbODbU/xbIap7f6Gm+81EcWBycfmzlDgm17+NU
+         iPLA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=PcVt/pqyR0Qg3FZe7e8l6xfpWmVL1iplCQPYJTjF7II=;
+        b=olY7glxuCiiBaH3OvkusKnK1OyLHXT1oXz4F29HsCryNuXKHBxE0fmA/zhhKP0/F0b
+         pOILp+DCcGtje0IqbiQWhlINVwFblTzIK14+ikhV4jS5X8W4WOs9HddO402vMt+e0Myf
+         ywaAgGebID3H29lUO+tTBL9l/k720VPXAzSPEuVK+koQIgja2oSzBrtnQbLMufwEOVlq
+         baCuhsIslGgHAfKhSMIlYhFK2bPmtp+lsrIr4iHe8bf9yqO2q7T7ew4e73rk01JDgQJC
+         e0pB3Txm4oUaCcx5WcRPXZKZj0Wl8t8ksfE0vr6743DbuKqBZirAj/gzwq/sbhFDjHL0
+         eOqQ==
+X-Gm-Message-State: ANoB5pn9jEXRUwsmq6Cha99+mxM2JzofxeUnqq0dGqbRL7ZkDQIcQO5w
+	+FX8BYoAYzVPd++VD1KNQC5fedKjUTBSwZCpYZP9fsZZ
+X-Google-Smtp-Source: AA0mqf79sJ51fcwfmsEhmtKXDrqtt8Ls09Avzrk2R4fWxEvB2PhmNLiI9M3/cxFG196U9IvblEYoES6NI6VK7WwfCH4=
+X-Received: by 2002:a17:906:7d13:b0:7bc:addd:2c54 with SMTP id
+ u19-20020a1709067d1300b007bcaddd2c54mr41010888ejo.24.1670848645622; Mon, 12
+ Dec 2022 04:37:25 -0800 (PST)
+MIME-Version: 1.0
+From: Maimomo Ba <maimomoba@gmail.com>
+Date: Mon, 12 Dec 2022 12:34:30 +0000
+Message-ID: <CAKjMTFt6=giKa12LoxzYzFc8+bV4e_Rr=tsYdAoJVN4S2ffu1A@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000fef13005efa0c3be"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000fef13005efa0c3be
+Content-Type: text/plain; charset="UTF-8"
+
+00220 7104440
+
+--000000000000fef13005efa0c3be
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto">00220 7104440</div>
+
+--000000000000fef13005efa0c3be--

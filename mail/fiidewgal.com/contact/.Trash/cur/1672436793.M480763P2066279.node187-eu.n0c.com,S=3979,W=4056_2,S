@@ -1,0 +1,77 @@
+Return-Path: <idia1000@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id ODuTHDlcr2Nnhx8A3R2AvA
+	(envelope-from <idia1000@gmail.com>)
+	for <contact@fiidewgal.com>; Fri, 30 Dec 2022 22:46:33 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NkJk12YqtznqZg
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="Qum4bAyO"
+X-N0C-MailScanner-eFa-Watermark: 1673041588.77788@RXrjoGnLs7ATRKsJKJfF/A
+X-N0C-MailScanner-eFa-From: idia1000@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: B25B640664E4.AB82D
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-vs1-f50.google.com ([209.85.217.50] [209.85.217.50])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id B25B640664E4
+	for <contact@fiidewgal.com>; Fri, 30 Dec 2022 22:45:55 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com B25B640664E4
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com B25B640664E4
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=Qum4bAyO
+Received: by mail-vs1-f50.google.com with SMTP id i10so776129vsr.12
+        for <contact@fiidewgal.com>; Fri, 30 Dec 2022 13:45:55 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=H9s8r+b8L9mdN54G8ifhErk3exrhgO4XD43DF4zTllA=;
+        b=Qum4bAyO3w3eYG+hRdtr4f42NFMpTPoBEz0JJq9cjJwaJJS6fnlgnlLwdoDkSZC3pp
+         mDeFhEPEq3y9NeL0HQ7JlIy5jfmK8pB7XZrXlfEryUsBH4cZuhXe7T0ky6mh7/IfyI3p
+         2Dr2vy/J3agetM6XTT4uS7NN1oLGP3cEdKf5OHb4uIlVUHNZS0OsHMD7gLG5EwXYe4xA
+         AnQufFgL4xo1b1Le+pCcNiFp5w+/nJSHYOhvA9QMWYjBh9QUrRNc5BAxsdJlZl/4KHxn
+         xoa+aY4Y0niiAbg0UuYJGVdf2TqwnRTc1nK3jxzvxSXJ9oJbs7g7oNIoXjiWu7N0bypP
+         C0pQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=H9s8r+b8L9mdN54G8ifhErk3exrhgO4XD43DF4zTllA=;
+        b=0js00aEdpybMlYOO1hjkLgKh7rZkmEPebmtHpDxs4uMPODiFe7haT0ZaEROxO+5gZy
+         80Iap9La+7vyiLSeM8f1ruzLRZh84H2Qevx04ofeVc/vADJ+234hzQ0Wskf5YA7hcn8p
+         F1tEk97Ilt59yUtMAyDScwBgFFh5DxU5hLDWcQHHPPItXPyf9Tik8O9sSmdEcr7yXj3F
+         GYueK1vki97zNE/jZFESe/oCqzxGNMCWvvduknpI9qlP42krImLToDAabhAuXqUz3ckV
+         VcdNYpCFVmTDYBF0Yw+ztXDkQTCLrDOZNogQzid1TM47JZOgvMfKSO9hoOouiAOzR+5z
+         xKbA==
+X-Gm-Message-State: AFqh2kpfgxy9oTeojGZRX9be4udgEVKL8rODlLlU1J8Axtc85yIg+Ova
+	8Eqasz6Gj6jMoHDgH0/MjqmYMiDGb557h8NBaDmGK48O
+X-Google-Smtp-Source: AMrXdXsF+m8O7opXS5xh+lPMn/toTWYudSh5kdHDRjfL1hL5Unp81wdblnLaks07mi7kGSSYmfLq86YPMOZJkYPTlVg=
+X-Received: by 2002:a67:f103:0:b0:3c5:7806:b2e1 with SMTP id
+ n3-20020a67f103000000b003c57806b2e1mr2887237vsk.15.1672436754121; Fri, 30 Dec
+ 2022 13:45:54 -0800 (PST)
+MIME-Version: 1.0
+From: Idiatou Diallo <idia1000@gmail.com>
+Date: Fri, 30 Dec 2022 22:45:43 +0100
+Message-ID: <CABA-LG8FWP8B25s2_mi_JJJ3JsY831obwjJSCcRXV8_eg146rA@mail.gmail.com>
+Subject: Oui
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000a389c105f1128688"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000a389c105f1128688
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+--000000000000a389c105f1128688
+Content-Type: text/html; charset="UTF-8"
+
+
+
+--000000000000a389c105f1128688--

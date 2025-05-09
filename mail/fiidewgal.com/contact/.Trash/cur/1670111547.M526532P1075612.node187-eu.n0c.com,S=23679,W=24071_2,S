@@ -1,0 +1,392 @@
+Return-Path: <friends@facebookmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id DqFPHzvhi2OcaRAA3R2AvA
+	(envelope-from <friends@facebookmail.com>)
+	for <contact@fiidewgal.com>; Sun, 04 Dec 2022 00:52:27 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NPmnk3yhzz34nwbc
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=facebookmail.com header.i=@facebookmail.com header.b="lh/fd0oV"
+X-N0C-MailScanner-eFa-Watermark: 1670716343.26516@pu4MScpf6HzqCFHt5UaKeg
+X-N0C-MailScanner-eFa-From: friends@facebookmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: A602C401AEF3.A6D7D
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from 69-171-232-137.mail-mail.facebook.com ([69.171.232.137] [69.171.232.137])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id A602C401AEF3
+	for <contact@fiidewgal.com>; Sun,  4 Dec 2022 00:52:17 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com A602C401AEF3
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=reject dis=none) header.from=facebookmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=facebookmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com A602C401AEF3
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (1024-bit key; unprotected) header.d=facebookmail.com header.i=@facebookmail.com header.a=rsa-sha256 header.s=s1024-2013-q3 header.b=lh/fd0oV
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=facebookmail.com;
+	s=s1024-2013-q3; t=1670111525;
+	bh=DHO5z6DvY54Z/4Je6O/jGDACVpVR5GJYrkRS0r995QI=;
+	h=Date:To:Subject:From:MIME-Version:Content-Type;
+	b=lh/fd0oVsYNAXxBQCC5EEq9Ost6q6gtdSK6zleHFcEJE5hcfHIDAgAx5ws2VmhyQV
+	 pYNlggr1dYJu62nM77SRmWx1MDM3Z4Na7/tYwfzqY4/gLJ/bMhosWqd4aqd42YHAlp
+	 uWpaMDJBepR+JCym3VjPpJncgazPiQ913nE0zxhE=
+X-Facebook: from 2401:db00:3110:a272:face:0:22:0 ([MTI3LjAuMC4x]) 
+	by www.facebook.com with HTTPS (ZuckMail);
+Date: Sat, 3 Dec 2022 15:52:04 -0800
+To: Fii Dewgal <contact@fiidewgal.com>
+Subject: =?UTF-8?B?QmFsZGUgTWFtYWRvdSBz?=
+ =?UTF-8?B?b3VoYWl0ZSB2b3VzIGlu?=
+ =?UTF-8?B?dml0ZXIgw6AgcmVqb2luZA==?=
+ =?UTF-8?B?cmUgc29uIGdyb3VwZSBk?=
+ =?UTF-8?B?4oCZYW1pcyBzdXIgRmFjZWI=?=
+ =?UTF-8?B?b29rLg==?=
+X-Priority: 3
+X-Mailer: ZuckMail [version 1.00]
+From: "Facebook" <friends@facebookmail.com>
+Reply-to: noreply <noreply@facebookmail.com>
+Errors-To: friends@facebookmail.com
+X-Facebook-Notify: friend; mailid=U1U5eef4da6b09aeG5b07a2a3ca95G5eef524010c80G2
+List-Unsubscribe: <https://www.facebook.com/o.php?k=AS3B4wUMnqspEgnD9yg&u=100088351541909&mid=5eef4da6b09aeG5b07a2a3ca95G5eef524201a23G2&ee=AY17S8T_kgbNEtkFWlC2xTCTQCr5nceWKln40v69JazwDuVTBUJRwhTMxqGQNHlCWFemhqmNlLt-NqlqulXM>
+Feedback-ID: 0:friend:Facebook
+X-FACEBOOK-PRIORITY: 0
+X-Auto-Response-Suppress: All
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_54f9777903cacd06091fe497e304aaf1"
+Message-ID: <7d5ce230-7365-11ed-86c8-33ff9e48dcf9@facebookmail.com>
+X-N0C-Node-IP: 185.221.182.45
+
+
+--b1_54f9777903cacd06091fe497e304aaf1
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+Afficher toutes les invitations
+https://www.facebook.com/nd/?friends%2Fnotif%2F&action=3Dconfirm_request&s=
+ource=3Dnotif_friend_request_email&ext=3D1670370724&hash=3DAeTYRNDFlJifkX-=
+Joag&aref=3D1670111524035107&medium=3Demail&mid=3D5eef4da6b09aeG5b07a2a3ca=
+95G5eef524201a23G2&bcode=3D2.1670111524.AbxLwYj_UnIqp38n0wM&n_m=3Dcontact%=
+40fiidewgal.com&lloc=3D2nd_cta_text&rms=3Dv2&irms=3Dtrue
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+Bonjour Fii,
+
+Balde Mamadou souhaite vous inviter =C3=A0 rejoindre sa liste =
+d=E2=80=99amis sur Facebook.
+
+Accepter l=E2=80=99invitation
+https://www.facebook.com/nd/?friends%2Fnotif%2F&action=3Dconfirm_request&f=
+riend_id=3D100084075403877&source=3Dnotif_friend_request_email&nonce=3DGK4=
+kVYmwTv&ext=3D1670370724&hash=3DAeRFWXB7yo0kK0HLPfA&aref=3D167011152403510=
+7&medium=3Demail&mid=3D5eef4da6b09aeG5b07a2a3ca95G5eef524201a23G2&bcode=3D=
+2.1670111524.AbxLwYj_UnIqp38n0wM&n_m=3Dcontact%40fiidewgal.com&lloc=3D1st_=
+cta_text&rms=3Dv2&irms=3Dtrue
+
+
+Merci,
+L=E2=80=99=C3=A9quipe Facebook
+
+
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+Ce message a =C3=A9t=C3=A9 envoy=C3=A9 =C3=A0 contact@fiidewgal.com. Si =
+vous ne souhaitez plus recevoir ces e-mails de la part de Meta, veuillez =
+suivre le lien ci-dessous pour annuler votre suivi.
+https://www.facebook.com/o.php?k=3DAS3B4wUMnqspEgnD9yg&u=3D100088351541909=
+&mid=3D5eef4da6b09aeG5b07a2a3ca95G5eef524201a23G2&ee=3DAY2YQUcw0ln7If_63pB=
+23oThkTZ7w72g80dmgnNhELRn76zoFkUPdxFoIgVsSxVleQJ0cG_igqRjrAPoIVZD
+Meta Platforms, Inc., Attention: Community Support, 1 Facebook Way, Menlo =
+Park, CA 94025
+Pour contribuer =C3=A0 la protection de votre compte, veuillez ne pas =
+transf=C3=A9rer cet e-mail. Suivez le lien ci-dessous pour en savoir plus.
+https://www.facebook.com/email_forward_notice/?mid=3D5eef4da6b09aeG5b07a2a=
+3ca95G5eef524201a23G2
+
+
+--b1_54f9777903cacd06091fe497e304aaf1
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional =
+//EN"><html><head><title>Facebook</title><meta http-equiv=3D"Content-Type" =
+content=3D"text/html; charset=3Dutf-8" /><style nonce=3D"XYTAccJl">@media =
+all and (max-width: 480px){*[class].ib_t{min-width:100% =
+!important}*[class].ib_row{display:block =
+!important}*[class].ib_ext{display:block !important;padding:10px 0 5px =
+0;vertical-align:top !important;width:100% =
+!important}*[class].ib_img,*[class].ib_mid{vertical-align:top =
+!important}*[class].mb_blk{display:block =
+!important;padding-bottom:10px;width:100% =
+!important}*[class].mb_hide{display:none =
+!important}*[class].mb_inl{display:inline =
+!important}*[class].d_mb_flex{display:block =
+!important}}.d_mb_show{display:none}.d_mb_flex{display:flex}@media only =
+screen and (max-device-width: 480px){.d_mb_hide{display:none =
+!important}.d_mb_show{display:block !important}.d_mb_flex{display:block =
+!important}}.mb_text h1,.mb_text h2,.mb_text h3,.mb_text h4,.mb_text =
+h5,.mb_text h6{line-height:normal}.mb_work_text =
+h1{font-size:18px;line-height:normal;margin-top:4px}.mb_work_text =
+h2,.mb_work_text =
+h3{font-size:16px;line-height:normal;margin-top:4px}.mb_work_text =
+h4,.mb_work_text h5,.mb_work_text =
+h6{font-size:14px;line-height:normal}.mb_work_text =
+a{color:#1270e9}.mb_work_text p{margin-top:4px}</style></head><table =
+border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td width=3D"100%" =
+align=3D"center" style=3D""><table border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" align=3D"center" =
+style=3D"border-collapse:collapse;"><tr><td width=3D"1280" =
+align=3D"center" style=3D""><body style=3D"max-width:640px;margin:0 auto;" =
+dir=3D"ltr" bgcolor=3D"#ffffff"><table border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" align=3D"center" id=3D"email_table" =
+style=3D"border-collapse:collapse;max-width:640px;margin:0 auto;"><tr><td =
+id=3D"email_content" style=3D"font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;background:#ffffff;"><table =
+border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr style=3D""><td height=3D"20" =
+style=3D"line-height:20px;" colspan=3D"3">&nbsp;</td></tr><tr><td =
+height=3D"1" colspan=3D"3" style=3D"line-height:1px;"><span =
+style=3D"color:#FFFFFF;font-size:1px;opacity:0;">=C2=A0 Balde Mamadou =
+souhaite vous inviter =C3=A0 rejoindre sa liste d=E2=80=99amis sur =
+Facebook. =C2=A0 =C2=A0 Balde Mamadou =C2=A0 Guin=C3=A9e =C3=A9quatoriale =
+=C2=A0 Accepter=C2=A0l=E2=80=99invitation =C2=A0</span></td></tr><tr><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr style=3D""><td =
+height=3D"15" style=3D"line-height:15px;" =
+colspan=3D"3">&nbsp;</td></tr><tr><td width=3D"32" align=3D"left" =
+valign=3D"middle" style=3D"height:32;line-height:0px;"><a =
+href=3D"https://www.facebook.com/nd/?friends%2Fnotif%2F&amp;action=3Dconfi=
+rm_request&amp;friend_id=3D100084075403877&amp;source=3Dnotif_friend_reque=
+st_email&amp;ext=3D1670370724&amp;hash=3DAeTg89z38Hje9PvSkgQ&amp;aref=3D16=
+70111524035107&amp;medium=3Demail&amp;mid=3D5eef4da6b09aeG5b07a2a3ca95G5ee=
+f524201a23G2&amp;bcode=3D2.1670111524.AbxLwYj_UnIqp38n0wM&amp;n_m=3Dcontac=
+t%40fiidewgal.com&amp;lloc=3Dlogo&amp;rms=3Dv2&amp;irms=3Dtrue" =
+style=3D"color:#1b74e4;text-decoration:none;"><img width=3D"32" =
+src=3D"https://static.xx.fbcdn.net/rsrc.php/v3/yc/r/I92GqZOkKcu.png" =
+height=3D"32" style=3D"border:0;" /></a></td><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+width=3D"100%" style=3D""><a href=3D"https://www.facebook.com/nd/?friends%=
+2Fnotif%2F&amp;action=3Dconfirm_request&amp;friend_id=3D100084075403877&am=
+p;source=3Dnotif_friend_request_email&amp;ext=3D1670370724&amp;hash=3DAeTg=
+89z38Hje9PvSkgQ&amp;aref=3D1670111524035107&amp;medium=3Demail&amp;mid=3D5=
+eef4da6b09aeG5b07a2a3ca95G5eef524201a23G2&amp;bcode=3D2.1670111524.AbxLwYj=
+_UnIqp38n0wM&amp;n_m=3Dcontact%40fiidewgal.com&amp;lloc=3Dlogo&amp;rms=3Dv=
+2&amp;irms=3Dtrue" =
+style=3D"color:#1877f2;text-decoration:none;font-family:Helvetica =
+Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:19p=
+x;line-height:32px;"></a></td></tr><tr style=3D"border-bottom:solid 1px =
+#e5e5e5;"><td height=3D"15" style=3D"line-height:15px;" =
+colspan=3D"3">&nbsp;</td></tr></table></td><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr style=3D""><td =
+height=3D"28" style=3D"line-height:28px;">&nbsp;</td></tr><tr><td =
+style=3D""><table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;word-break:break-word;"><tr><td =
+style=3D""><span class=3D"mb_text" style=3D"font-family:Helvetica =
+Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:16p=
+x;line-height:21px;color:#141823;"><a =
+href=3D"https://www.facebook.com/profile.php?id=3D100084075403877" =
+style=3D"color:#050505;text-decoration:none;font-family:Roboto-Medium,Robo=
+to,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;font-size:17px;line-height:21px;fon=
+t-weight:500;">Balde Mamadou</a> souhaite vous inviter =C3=A0 rejoindre sa =
+liste d=E2=80=99amis sur Facebook.</span></td></tr><tr><td =
+style=3D""></td></tr></table></td></tr><tr style=3D""><td height=3D"28" =
+style=3D"line-height:28px;">&nbsp;</td></tr><tr><td style=3D""><table =
+border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td style=3D"font-size:11px;font-f=
+amily:LucidaGrande,tahoma,verdana,arial,sans-serif;background:#FFFFFF;bord=
+er:solid 1px #E4E6EB;border-radius:6px;padding:15px;display:block;"><table =
+border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" =
+align=3D"center" style=3D"border-collapse:collapse;max-width:300px;word-br=
+eak:break-word;"><tr><td width=3D"80" align=3D"center" style=3D""><a =
+href=3D"https://www.facebook.com/nd/?profile.php&amp;id=3D100084075403877&=
+amp;aref=3D1670111524035107&amp;medium=3Demail&amp;mid=3D5eef4da6b09aeG5b0=
+7a2a3ca95G5eef524201a23G2&amp;bcode=3D2.1670111524.AbxLwYj_UnIqp38n0wM&amp=
+;n_m=3Dcontact%40fiidewgal.com&amp;lloc=3Dprofile_pic&amp;rms=3Dv2&amp;irm=
+s=3Dtrue" style=3D"color:#1b74e4;text-decoration:none;"><img width=3D"80" =
+src=3D"https://scontent.xx.fbcdn.net/v/t39.30808-1/296960630_1053665589425=
+24_7876086955034220638_n.jpg?stp=3Dc0.0.80.80a_cp0_dst-jpg_p80x80&amp;_nc_=
+cat=3D108&amp;ccb=3D1-7&amp;_nc_sid=3De54e58&amp;_nc_ohc=3DmyvC-PnvOj8AX9r=
+lbg4&amp;_nc_ad=3Dz-m&amp;_nc_cid=3D0&amp;_nc_ht=3Dscontent.xx&amp;oh=3D00=
+_AfCNHSheZnlTYaryGHqC-tfkVYIh3WHOvhfel4Bx50Tkgg&amp;oe=3D6391ADE9" =
+height=3D"80" style=3D"border:solid 1px rgba(0, 0, 0, =
+.15);background-color:#ebe9e7;border-radius:50%;" /></a></td></tr><tr =
+style=3D""><td height=3D"7" =
+style=3D"line-height:7px;">&nbsp;</td></tr><tr><td width=3D"100%" =
+align=3D"center" style=3D""><a href=3D"https://www.facebook.com/nd/?friend=
+s%2Fnotif%2F&amp;action=3Dconfirm_request&amp;friend_id=3D100084075403877&=
+amp;source=3Dnotif_friend_request_email&amp;ext=3D1670370724&amp;hash=3DAe=
+Tg89z38Hje9PvSLXM&amp;aref=3D1670111524035107&amp;medium=3Demail&amp;mid=
+=3D5eef4da6b09aeG5b07a2a3ca95G5eef524201a23G2&amp;bcode=3D2.1670111524.Abx=
+LwYj_UnIqp38n0wM&amp;n_m=3Dcontact%40fiidewgal.com&amp;lloc=3Dprofile_pic&=
+amp;rms=3Dv2&amp;irms=3Dtrue" =
+style=3D"color:#141823;text-decoration:none;font-family:Helvetica =
+Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:18p=
+x;line-height:21px;font-weight:bold;">Balde Mamadou</a></td></tr><tr =
+style=3D""><td height=3D"7" =
+style=3D"line-height:7px;">&nbsp;</td></tr><tr><td width=3D"100%" =
+align=3D"center" style=3D""><table border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr><td =
+style=3D""><span class=3D"mb_text" style=3D"font-family:Helvetica =
+Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:14p=
+x;line-height:19px;color:#141823;">Guin=C3=A9e =
+=C3=A9quatoriale</span></td></tr></table></td></tr><tr style=3D""><td =
+height=3D"10" style=3D"line-height:10px;">&nbsp;</td></tr><tr><td =
+width=3D"100%" align=3D"center" style=3D""><table border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td style=3D""><a =
+href=3D"https://www.facebook.com/nd/?friends%2Fnotif%2F&amp;action=3Dconfi=
+rm_request&amp;friend_id=3D100084075403877&amp;source=3Dnotif_friend_reque=
+st_email&amp;nonce=3DGK4kVYmwTv&amp;ext=3D1670370724&amp;hash=3DAeRFWXB7yo=
+0kK0HLBqg&amp;aref=3D1670111524035107&amp;medium=3Demail&amp;mid=3D5eef4da=
+6b09aeG5b07a2a3ca95G5eef524201a23G2&amp;bcode=3D2.1670111524.AbxLwYj_UnIqp=
+38n0wM&amp;n_m=3Dcontact%40fiidewgal.com&amp;lloc=3D1st_cta&amp;rms=3Dv2&a=
+mp;irms=3Dtrue" style=3D"color:#1b74e4;text-decoration:none;"><table =
+border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td style=3D"border-collapse:colla=
+pse;border-radius:6px;text-align:center;display:block;background:#1877f2;p=
+adding:8px 16px 10px 16px;"><a href=3D"https://www.facebook.com/nd/?friend=
+s%2Fnotif%2F&amp;action=3Dconfirm_request&amp;friend_id=3D100084075403877&=
+amp;source=3Dnotif_friend_request_email&amp;nonce=3DGK4kVYmwTv&amp;ext=3D1=
+670370724&amp;hash=3DAeRFWXB7yo0kK0HLBqg&amp;aref=3D1670111524035107&amp;m=
+edium=3Demail&amp;mid=3D5eef4da6b09aeG5b07a2a3ca95G5eef524201a23G2&amp;bco=
+de=3D2.1670111524.AbxLwYj_UnIqp38n0wM&amp;n_m=3Dcontact%40fiidewgal.com&am=
+p;lloc=3D1st_cta&amp;rms=3Dv2&amp;irms=3Dtrue" =
+style=3D"color:#1b74e4;text-decoration:none;display:block;"><center><font =
+size=3D"3"><span style=3D"font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;white-space:nowrap;font-weight:bold=
+;vertical-align:middle;color:#FFFFFF;text-shadow:none;font-weight:500;font=
+-family:Roboto-Medium,Roboto,-apple-system,BlinkMacSystemFont,Helvetica =
+Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:14p=
+x;line-height:14px;">Accepter&nbsp;l=E2=80=99invitation</span></font></cen=
+ter></a></td></tr></table></a></td></tr></table></td></tr></table></td></t=
+r></table></td></tr><tr style=3D""><td height=3D"28" =
+style=3D"line-height:28px;">&nbsp;</td></tr></table></td><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr style=3D""><td =
+height=3D"2" style=3D"line-height:2px;" =
+colspan=3D"3">&nbsp;</td></tr><tr><td class=3D"mb_blk" style=3D""><a =
+href=3D"https://www.facebook.com/nd/?friends%2Fnotif%2F&amp;action=3Dconfi=
+rm_request&amp;source=3Dnotif_friend_request_email&amp;ext=3D1670370724&am=
+p;hash=3DAeTYRNDFlJifkX-Jglw&amp;aref=3D1670111524035107&amp;medium=3Demai=
+l&amp;mid=3D5eef4da6b09aeG5b07a2a3ca95G5eef524201a23G2&amp;bcode=3D2.16701=
+11524.AbxLwYj_UnIqp38n0wM&amp;n_m=3Dcontact%40fiidewgal.com&amp;lloc=3D2nd=
+_cta&amp;rms=3Dv2&amp;irms=3Dtrue" =
+style=3D"color:#1b74e4;text-decoration:none;"><table border=3D"0" =
+width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td style=3D"border-collapse:colla=
+pse;border-radius:6px;text-align:center;display:block;background:#e4e6eb;p=
+adding:8px 16px 10px 16px;"><a href=3D"https://www.facebook.com/nd/?friend=
+s%2Fnotif%2F&amp;action=3Dconfirm_request&amp;source=3Dnotif_friend_reques=
+t_email&amp;ext=3D1670370724&amp;hash=3DAeTYRNDFlJifkX-Jglw&amp;aref=3D167=
+0111524035107&amp;medium=3Demail&amp;mid=3D5eef4da6b09aeG5b07a2a3ca95G5eef=
+524201a23G2&amp;bcode=3D2.1670111524.AbxLwYj_UnIqp38n0wM&amp;n_m=3Dcontact=
+%40fiidewgal.com&amp;lloc=3D2nd_cta&amp;rms=3Dv2&amp;irms=3Dtrue" =
+style=3D"color:#1b74e4;text-decoration:none;display:block;"><center><font =
+size=3D"3"><span style=3D"font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;white-space:nowrap;font-weight:bold=
+;vertical-align:middle;color:#050505;font-size:17px;text-shadow:none;font-=
+weight:500;font-family:Roboto-Medium,Roboto,-apple-system,BlinkMacSystemFo=
+nt,Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;=
+font-size:14px;line-height:14px;">Afficher&nbsp;toutes&nbsp;les&nbsp;invit=
+ations</span></font></center></a></td></tr></table></a></td><td =
+width=3D"100%" class=3D"mb_hide" style=3D""></td></tr><tr style=3D""><td =
+height=3D"32" style=3D"line-height:32px;" =
+colspan=3D"3">&nbsp;</td></tr></table></td><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" align=3D"left" =
+style=3D"border-collapse:collapse;"><tr><td =
+style=3D"font-size:14px;color:#65676B;"><span =
+style=3D"padding-right:12px;font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;">Cet e-mail a-t-il =
+=C3=A9t=C3=A9=C2=A0:</span><span style=3D"color:#141823;font-size:14px;fon=
+t-weight:normal;line-height:24px;font-family:Helvetica =
+Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;"><a =
+style=3D"color:#1b74e4;text-decoration:none;" href=3D"https://www.facebook=
+.com/email_notification_feedback/?is_useful=3D1&amp;next_href=3Dhttps%3A%2=
+F%2Fwww.facebook.com%2Fnd%2F%3Ffriends%252Frequests%252F%26aref%3D16701115=
+24035107%26medium%3Demail%26mid%3D5eef4da6b09aeG5b07a2a3ca95G5eef524201a23=
+G2%26bcode%3D2.1670111524.AbxLwYj_UnIqp38n0wM%26n_m%3Dcontact%2540fiidewga=
+l.com&amp;ndid=3D5eef4da6b09aeG5b07a2a3ca95G5eef524201a23G2">Utile</a></sp=
+an><span style=3D"padding:0 12px;color:#C9CCD1;font-family:Helvetica =
+Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;"> | =
+</span><span style=3D"color:#141823;font-size:14px;font-weight:normal;line=
+-height:24px;font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;"><a =
+style=3D"color:#1b74e4;text-decoration:none;" href=3D"https://www.facebook=
+.com/email_notification_feedback/?is_useful=3D0&amp;next_href=3Dhttps%3A%2=
+F%2Fwww.facebook.com%2Fnd%2F%3Fhome.php%26aref%3D1670111524035107%26medium=
+%3Demail%26mid%3D5eef4da6b09aeG5b07a2a3ca95G5eef524201a23G2%26bcode%3D2.16=
+70111524.AbxLwYj_UnIqp38n0wM%26n_m%3Dcontact%2540fiidewgal.com%26lloc%3D2n=
+d_cta%26rms%3Dv2%26irms%3Dtrue&amp;ndid=3D5eef4da6b09aeG5b07a2a3ca95G5eef5=
+24201a23G2">Inutile</a></span></td></tr><tr style=3D""><td height=3D"15" =
+style=3D"line-height:15px;">&nbsp;</td></tr></table></td><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" align=3D"left" style=3D"border-collapse:collapse;"><tr =
+style=3D"border-top:solid 1px #e5e5e5;"><td height=3D"19" =
+style=3D"line-height:19px;">&nbsp;</td></tr><tr><td style=3D"font-family:R=
+oboto-Regular,Roboto,-apple-system,BlinkMacSystemFont,Helvetica =
+Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:11p=
+x;color:#8A8D91;line-height:16px;font-weight:400;">Ce message a =
+=C3=A9t=C3=A9 envoy=C3=A9 =C3=A0 <a =
+href=3D"mailto:contact&#064;fiidewgal.com" style=3D"color:#1b74e4;text-dec=
+oration:none;">contact&#064;fiidewgal.com</a>. Si vous ne souhaitez plus =
+recevoir ces e-mails de la part de Meta, veuillez <a href=3D"https://www.f=
+acebook.com/o.php?k=3DAS3B4wUMnqspEgnD9yg&amp;u=3D100088351541909&amp;mid=
+=3D5eef4da6b09aeG5b07a2a3ca95G5eef524201a23G2&amp;ee=3DAY0GwH5vYrNStJ25bBj=
+vbkZQ_nh4Vf6sPyzuiKJkhe7sgaGKb5ScJGASOAzDICVzelFqtPiGhUV7vb3Wx0Gx" =
+style=3D"color:#1b74e4;text-decoration:none;">vous d=C3=A9sabonner</a>.<br =
+/>Meta Platforms, Inc., Attention: Community Support, 1 Facebook Way, =
+Menlo Park, CA 94025</td></tr></table></td><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr><td =
+style=3D"font-family:Roboto-Regular,Roboto,-apple-system,BlinkMacSystemFon=
+t,Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;f=
+ont-size:11px;color:#8A8D91;line-height:16px;font-weight:400;"><span =
+class=3D"mb_text" style=3D"font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;font-size:16px;line-height:21px;col=
+or:#141823;;font-family:Roboto-Regular,Roboto,-apple-system,BlinkMacSystem=
+Font,Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-seri=
+f;font-size:11px;color:#8A8D91;line-height:16px;font-weight:400;">Pour =
+contribuer =C3=A0 la protection de votre compte, veuillez ne pas =
+transf=C3=A9rer cet e-mail. <a =
+style=3D"color:#1b74e4;text-decoration:none;" href=3D"https://www.facebook=
+.com/email_forward_notice/?mid=3D5eef4da6b09aeG5b07a2a3ca95G5eef524201a23G=
+2">En savoir plus</a></span></td></tr></table></td><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr =
+style=3D""><td height=3D"20" style=3D"line-height:20px;" =
+colspan=3D"3">&nbsp;</td></tr></table><span style=3D""><img =
+src=3D"https://www.facebook.com/email_open_log_pic.php?mid=3D5eef4da6b09ae=
+G5b07a2a3ca95G5eef524201a23G2" style=3D"border:0;width:1px;height:1px;" =
+/></span></td></tr></table></body></td></tr></table></td></tr></table></ht=
+ml>
+
+
+
+--b1_54f9777903cacd06091fe497e304aaf1--
+

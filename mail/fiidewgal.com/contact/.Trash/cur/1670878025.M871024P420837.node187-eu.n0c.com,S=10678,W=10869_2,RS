@@ -1,0 +1,191 @@
+Return-Path: <boypeulboy@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id UDnZM0mTl2PlawYA3R2AvA
+	(envelope-from <boypeulboy@gmail.com>)
+	for <contact@fiidewgal.com>; Mon, 12 Dec 2022 21:47:05 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NWDFj5PPRz34nwbf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="Ca+OIyEH"
+X-N0C-MailScanner-eFa-Watermark: 1671482822.65398@KGvybmFXxt1Amkal4Zxq5g
+X-N0C-MailScanner-eFa-From: boypeulboy@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 39893401A44B.A5186
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-qk1-f193.google.com ([209.85.222.193] [209.85.222.193])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 39893401A44B
+	for <contact@fiidewgal.com>; Mon, 12 Dec 2022 21:46:30 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 39893401A44B
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 39893401A44B
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=Ca+OIyEH
+Received: by mail-qk1-f193.google.com with SMTP id pa22so3497971qkn.9
+        for <contact@fiidewgal.com>; Mon, 12 Dec 2022 12:46:30 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:references:mime-version:from:to:cc
+         :subject:date:message-id:reply-to;
+        bh=XboBx/J++8JQnl5GH/3GTqY+eij9Fr5tkQI6k1jSvhM=;
+        b=Ca+OIyEHq9OZftKwp5H79CShMHYsncN3Iq1pH59X6GYKM1znGQsvRtAa43IQaIJ/r/
+         v3wVYEt5ClvVNgdjUklkih+JM2nGAjeVYpWjpagW7rPkRwRFcrVYe/wFyNXlMLWW9yAb
+         5mf2Yg19Gjk0eTd8txwqTI2WZ7l+VGGGRkMw7TpuBGfDggKgwfhyB7wH3sAIgdIA0sBe
+         GkVr75IUAGcsOyTL1II3IHE4QJzn68hEwOFqT7vSQcT9bshwzSHh4sW4vci2WyfAR8xE
+         t/NYROu1TFHfaMdZiKQG51XtOKUxj1ry6KfjTazq8Z887yRkG5yPNH1EhHCs7NVv6ZIh
+         G5kw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=XboBx/J++8JQnl5GH/3GTqY+eij9Fr5tkQI6k1jSvhM=;
+        b=wf1orIfSF6xF0mMbprk7AuT9AupLUYqkbMkEha45d0X9Ca1KnM69+2gbhvBfxBSi1U
+         9Y+P2LZjXLUX0jYVlsPdUpEr3QoPjwlbMbjKOIe4cpbMZauHsx0BpFLdqUCRv3T3jRXm
+         vHnLQP1p9Z4MEKkXdLo0iWsNS4PRGsLDBDuwNMdVEJm6NoMcl5p0gGwOqOiSc5Ig7gmy
+         gUrFtPpGS/UxmKCsd0id6gD2E5DfPtpKHTxqoemdBxbVK46pj7aG/ToSq7ANDVoQlqlO
+         0yRE6oo/ia+ZGdqFR6DkpvZuzRttbFDFMIW4gEbKXPhMXE2gwOXM+/AYFlufw1WiW26Y
+         tgDw==
+X-Gm-Message-State: ANoB5pmsg0AKKXcD73XVSJ84UMgNh0jqz8ZNu5JdgrsjRX3i9bLqznM9
+	u6UXowLhfFvs90fRjIbxllT4ZP0t68mK0wJCmm0pfC/r
+X-Google-Smtp-Source: AA0mqf4SFwHK8tsktQuEZDCA9vsh+iy7NfmuMN3793R1sYSIdTG/ObkOHWi8hjykysx0546UgAEpTvUxzNcRf7L45BI=
+X-Received: by 2002:a37:84a:0:b0:6fe:c37a:e8d6 with SMTP id
+ 71-20020a37084a000000b006fec37ae8d6mr13028388qki.40.1670877987920; Mon, 12
+ Dec 2022 12:46:27 -0800 (PST)
+MIME-Version: 1.0
+References: <05bd7569ed84f4c251a641246e78673a@fiidewgal.com> <CAMbmfFa-urK63RDOXLNwTpVSCX30wpSC6rJqhibGJyjhOgYhhQ@mail.gmail.com>
+From: Boypeul Boy <boypeulboy@gmail.com>
+Date: Mon, 12 Dec 2022 20:46:06 +0000
+Message-ID: <CAMbmfFaS47CAL02dz3c-24LwD0buk2tXDC59=PaENeKqxN+Dgw@mail.gmail.com>
+Subject: Re: Informations et Rappel
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000eedd9405efa79898"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000eedd9405efa79898
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Vous =C3=AAtes o=C3=B9 actuellement
+
+Le lun. 12 d=C3=A9c. 2022 =C3=A0 20:45, Boypeul Boy <boypeulboy@gmail.com> =
+a =C3=A9crit :
+
+> Vraiment je besoin de votre adresse directe
+>
+> Le dim. 11 d=C3=A9c. 2022 =C3=A0 21:54, <contact@fiidewgal.com> a =C3=A9c=
+rit :
+>
+>> Salam Aleykoum ,
+>>
+>> Nous sommes tr=C3=A8s heureux de vous avoir parmi nos
+>>
+>> membres dans la plateforme et nous souhaitons que
+>>
+>> Vous y rester.C=E2=80=99est pourquoi nous vous prions de
+>>
+>> mettre =C3=A0 jour votre profil en mettant correctement
+>>
+>> Votre date de naissance , votre =C3=A9tat civil , votre photo
+>>
+>> et votre numero de telephone avec l'indicatif
+>>
+>> Si cela est compliqu=C3=A9 pour vous faites nous parvenir
+>>
+>> votre num=C3=A9ro de membre qui est sur votre profil public
+>>
+>> avec vos informations cit=C3=A9es ci dessus .
+>>
+>> Vous pouvez =C3=A9galement nous faire parvenir votre numero
+>>
+>> de membre avec votre photo et num=C3=A9ro de telephone sur
+>>
+>> notre WhatsApp ; juste scanner le QR Code ci-dessous.
+>>
+>> Merci pour votre comprehension!
+>>
+>>
+>> https://www.facebook.com/messenger_media/?attachment_id=3D68146254669028=
+5&message_id=3Dmid.%24cAAAAByb93tmLEoHGhGE4Tx4ScJMo&thread_id=3D10000507939=
+8330
+>>
+>
+
+--000000000000eedd9405efa79898
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Vous =C3=AAtes o=C3=B9 actuellement=C2=A0</div><br><div c=
+lass=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr">Le lun. 12 d=C3=
+=A9c. 2022 =C3=A0 20:45, Boypeul Boy &lt;<a href=3D"mailto:boypeulboy@gmail=
+.com">boypeulboy@gmail.com</a>&gt; a =C3=A9crit=C2=A0:<br></div><blockquote=
+ class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc soli=
+d;padding-left:1ex"><div dir=3D"auto">Vraiment je besoin de votre adresse d=
+irecte</div><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_=
+attr">Le dim. 11 d=C3=A9c. 2022 =C3=A0 21:54,  &lt;<a href=3D"mailto:contac=
+t@fiidewgal.com">contact@fiidewgal.com</a>&gt; a =C3=A9crit=C2=A0:<br></div=
+><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1=
+px #ccc solid;padding-left:1ex"><p style=3D"margin-right:0px;margin-bottom:=
+0px;margin-left:0px;font-variant-numeric:normal;font-variant-east-asian:nor=
+mal;font-stretch:normal;line-height:normal;font-family:&quot;Helvetica Neue=
+&quot;">Salam Aleykoum ,</p><p style=3D"margin-right:0px;margin-bottom:0px;=
+margin-left:0px;font-variant-numeric:normal;font-variant-east-asian:normal;=
+font-stretch:normal;line-height:normal;font-family:&quot;Helvetica Neue&quo=
+t;">Nous sommes tr=C3=A8s heureux de vous avoir parmi nos</p><p style=3D"ma=
+rgin-right:0px;margin-bottom:0px;margin-left:0px;font-variant-numeric:norma=
+l;font-variant-east-asian:normal;font-stretch:normal;line-height:normal;fon=
+t-family:&quot;Helvetica Neue&quot;">membres dans la plateforme et nous sou=
+haitons que<span>=C2=A0</span></p><p style=3D"margin-right:0px;margin-botto=
+m:0px;margin-left:0px;font-variant-numeric:normal;font-variant-east-asian:n=
+ormal;font-stretch:normal;line-height:normal;font-family:&quot;Helvetica Ne=
+ue&quot;">Vous y rester.C=E2=80=99est pourquoi nous vous prions de<span>=C2=
+=A0</span></p><p style=3D"margin-right:0px;margin-bottom:0px;margin-left:0p=
+x;font-variant-numeric:normal;font-variant-east-asian:normal;font-stretch:n=
+ormal;line-height:normal;font-family:&quot;Helvetica Neue&quot;">mettre =C3=
+=A0 jour votre profil en mettant correctement<span>=C2=A0</span></p><p styl=
+e=3D"margin-right:0px;margin-bottom:0px;margin-left:0px;font-variant-numeri=
+c:normal;font-variant-east-asian:normal;font-stretch:normal;line-height:nor=
+mal;font-family:&quot;Helvetica Neue&quot;">Votre date de naissance , votre=
+ =C3=A9tat civil , votre photo</p><p style=3D"margin-right:0px;margin-botto=
+m:0px;margin-left:0px;font-variant-numeric:normal;font-variant-east-asian:n=
+ormal;font-stretch:normal;line-height:normal;font-family:&quot;Helvetica Ne=
+ue&quot;">et votre numero de telephone avec l&#39;indicatif</p><p style=3D"=
+margin-right:0px;margin-bottom:0px;margin-left:0px;font-variant-numeric:nor=
+mal;font-variant-east-asian:normal;font-stretch:normal;line-height:normal;f=
+ont-family:&quot;Helvetica Neue&quot;">Si cela est compliqu=C3=A9 pour vous=
+ faites nous parvenir<span>=C2=A0</span></p><p style=3D"margin-right:0px;ma=
+rgin-bottom:0px;margin-left:0px;font-variant-numeric:normal;font-variant-ea=
+st-asian:normal;font-stretch:normal;line-height:normal;font-family:&quot;He=
+lvetica Neue&quot;">votre num=C3=A9ro de membre qui est sur votre profil pu=
+blic</p><p style=3D"margin-right:0px;margin-bottom:0px;margin-left:0px;font=
+-variant-numeric:normal;font-variant-east-asian:normal;font-stretch:normal;=
+line-height:normal;font-family:&quot;Helvetica Neue&quot;">avec vos informa=
+tions cit=C3=A9es ci dessus .</p><p style=3D"margin-right:0px;margin-bottom=
+:0px;margin-left:0px;font-variant-numeric:normal;font-variant-east-asian:no=
+rmal;font-stretch:normal;line-height:normal;font-family:&quot;Helvetica Neu=
+e&quot;">Vous pouvez =C3=A9galement nous faire parvenir votre numero </p><p=
+ style=3D"margin-right:0px;margin-bottom:0px;margin-left:0px;font-variant-n=
+umeric:normal;font-variant-east-asian:normal;font-stretch:normal;line-heigh=
+t:normal;font-family:&quot;Helvetica Neue&quot;">de membre avec<span>=C2=A0=
+</span>votre photo et num=C3=A9ro de telephone sur</p><p style=3D"margin-ri=
+ght:0px;margin-bottom:0px;margin-left:0px;font-variant-numeric:normal;font-=
+variant-east-asian:normal;font-stretch:normal;line-height:normal;font-famil=
+y:&quot;Helvetica Neue&quot;"> notre WhatsApp ; juste scanner le QR Code ci=
+-dessous.</p><p style=3D"margin-right:0px;margin-bottom:0px;margin-left:0px=
+;font-variant-numeric:normal;font-variant-east-asian:normal;font-stretch:no=
+rmal;line-height:normal;font-family:&quot;Helvetica Neue&quot;">Merci pour =
+votre comprehension!</p><p style=3D"margin-right:0px;margin-bottom:0px;marg=
+in-left:0px;font-variant-numeric:normal;font-variant-east-asian:normal;font=
+-stretch:normal;line-height:normal"><font face=3D"Helvetica Neue"><a href=
+=3D"https://www.facebook.com/messenger_media/?attachment_id=3D6814625466902=
+85&amp;message_id=3Dmid.%24cAAAAByb93tmLEoHGhGE4Tx4ScJMo&amp;thread_id=3D10=
+0005079398330" target=3D"_blank" rel=3D"noreferrer">https://www.facebook.co=
+m/messenger_media/?attachment_id=3D681462546690285&amp;message_id=3Dmid.%24=
+cAAAAByb93tmLEoHGhGE4Tx4ScJMo&amp;thread_id=3D100005079398330</a></font><br=
+></p>
+</blockquote></div></blockquote></div>
+
+--000000000000eedd9405efa79898--

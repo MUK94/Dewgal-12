@@ -1,0 +1,96 @@
+Return-Path: <bubacarrjallow667@yahoo.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id xv2vAeLV0mMN2T4A3R2AvA
+	(envelope-from <bubacarrjallow667@yahoo.com>)
+	for <contact@fiidewgal.com>; Thu, 26 Jan 2023 20:34:58 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4P2rWh3LWrz34nwbc
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=yahoo.com header.i=@yahoo.com header.b="OgYFteT9"
+X-N0C-MailScanner-eFa-Watermark: 1675366491.96993@sunjjM4pFuhxfiY9ir9b8g
+X-N0C-MailScanner-eFa-From: bubacarrjallow667@yahoo.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 47782401AEEF.AE7D9
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from sonic317-32.consmr.mail.ne1.yahoo.com ([66.163.184.43] [66.163.184.43])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 47782401AEEF
+	for <contact@fiidewgal.com>; Thu, 26 Jan 2023 20:34:49 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 47782401AEEF
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=reject dis=none) header.from=yahoo.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=yahoo.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 47782401AEEF
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=yahoo.com header.i=@yahoo.com header.a=rsa-sha256 header.s=s2048 header.b=OgYFteT9
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1674761687; bh=GZRwyP76gA/5+lMpXckYYR9bbhyAY9P7ZiE8v5gL8MU=; h=Date:Subject:In-Reply-To:From:To:References:From:Subject:Reply-To; b=OgYFteT9zA7Y0lEzGRrjGTldlzZ+fyzdzhTKieUpI3L/r/aazSk+N6hdoYN6vV0mDmZj8Q1lFj5LLEW0p7dL3h+TPJ9UVqxFH1Lm/Bjoq8Zh57O5xjTUWOS1J+nuWsSByKax5wbIs7zbJxs8nj/96mO3sIMrQ35dDaljkZRlzt27Uu35QuZ9kTtdsJ0OUGI+FHMw/9c/Brh7RrXl+Yh4F6KKjeJf3FInn+PWnqzpA2QjeHenHeKvcRmRl9r9mua+DEApvsnk2w42lrdhvmCx4hAocEiFscq2XhHCjCnA7nWB6ZJoD4a18HcLC7NvsRw7pUrhFQOaBLFuxTHl865JzQ==
+X-SONIC-DKIM-SIGN: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1674761687; bh=InUc5h33TCwL7HLgz8aOUtlWEYblITNb86UjEn4VHm2=; h=X-Sonic-MF:Date:Subject:From:To:From:Subject; b=hWIwCWt/ws2P6wf/v9GFsD8/AQd/Y5qDZosZk7nZvuMxoSAJgiy5j32JiErjJxKa9FbaJYcSgK7l5z6yDYzcuAAtfI9t2Ngl+t9cvWUbvgfvyhvQCe+X+VaV+MuuWRijsdtU+YySjT06zHhpvlJzgv924HS8H54PsJJkc7ZdBKzOHfSC2KMVFYx2Z3pcjLDkQNhV86AX0VdzhlCxRGwM0nkFBN5/Cm9/KCpO6Mo2oBhE50oV5kV9NAksofBQeyjZ2xylkhiNAZpUDsQdoXxtWBX4MpRwyX4W/8mlYxHoFqhdwP+zjyPi3WsIJUfSv1EJJ3ne9N2UGQxezRZfTyNZ8A==
+X-YMail-OSG: fZIlbDYVM1ntfqTI.3f7q0BJP_7CUuRVwNV1E6ztnOF9ZwplhZFShut8y2rfOLt
+ fh6npgkIBXQ_BI1nTm4nK8b.cGrSKxwmAUPxFKF.FcTMl2smF91wLAbYWmEUdkAw._CoCyYxtlTh
+ tf9.EU0dijkuQCWQEXdQbFB16LIn_cYS60aLa.m8wigF.UTZRXBOBw86jJv3IjR2PpwrnBg4kgw.
+ P6_VGRBPoAz.O2e1RPsri1ZC4u4a4tepe1CjIzcvP18lVxneOtmr_TsTBOYm2naPKJvUPXK_47sg
+ GXpGxw18eA5GTG.ZVWAcRWmO9PDsLWLT2vE4mA0glm04v.42_WGYoqOcGQTrdyb.RhAvESmOpcYz
+ IsOGrqw6_3.jiCGmytdho8ADImN1W9pxa69f_2QHJwgnuutZUM4pQjmfSBTuZA5.RlbiyjeNJBGv
+ 1dimyVN7DHtqvouQ4SDmcIRpTx2Red3euxNdQd6rriCatJb9isyERoKJS.4IB.ssCG1WtwV83Hlh
+ w3VymtQEA0.ibLbIMFbb1yOaxNWp42_4raFVXZa1TOhWIlNwXI5DiNASqw_pT5PTtHB6K8ODKDIz
+ 444Sox4UWEOzjvpC7DAT_0PvYqfv4PhEmNz2H2tNZQt6kFAEwW8CtB1AUT_b_IWTVEzDaAPIuiEA
+ dSZvYiETUlcKtdhKnlSR28Lw09BdB6QID1tmYWzmF1nR6IEjRgVt7o0kbCdrREsNfggUF6uDyahv
+ 7Nac0Tz.hFngklAiJurTMGNxpnxUSZcdeUZZYFhYjS7WBs3QcgRg5QbNgu2Cf.1cvRUbFfExDS77
+ Sjh.PpyM8eZki9M7GkHAFM6JDtTs6N_8bg6QLf5mYW.PAalurFR5nk3i9E7uvqTC6Km8GBMML4i9
+ aP5be0kfUY8Z0Ay5xEfcMQWRtKJy5Ke2_Z6y4LiNawXR2HME8HJVuukU3o1BPsFdTvXLjtuFIM3B
+ FZDXf.b6C7mlEAMqhiQyIe9ycVBH.J_aREYK4WPRnpoXARU4hOQE56XHf6s6xQyGwD5XbIGxgIIT
+ HRzSpb6gPejGKptkD56Fr0JoSmOUdGT9W82bUVijLociN4_glKvgyaIIpKyw8Fu9yDbBZYI4iY3p
+ Q9SzwIFrcrHe4ORN1sUdSoYapnkjtD_CReVCumSRGQmxfHp7kgMeNmshPi0IX4X5b2r6AfBBuC9L
+ tEbrh0WSHIippHtQk6QI5Xe4JW0P9.BWU88YbDzXxlUPWjdiT1n5bPBGemf610SkC6zdFjdK7hE2
+ hBsTG92z8GExreZxN8tJ9qxSdFNmiZWBb9vMbHT4BlkRLGnVBhcSPRLsUEQoG47kmRqv3nOTYfnj
+ m9au2TNUIsoJhEyMsRkUkTYpGaiNPdA4YpdOoL7srPVnnJg4o5WchOed08kpGflZ31QazoV._bLP
+ Ea6iI0knlt3ik0bZUFkLN9wzYE7AqFFfcXLlgdiuYpeFLNM8ts_lt3IV6bOeuAwAK390pcBZkD_K
+ YBRys_mlxZybAaTk.jB0Lw3_mlYOCckY4vTt.YnxnZElQP8u7eP2vHNDCWFonSWG3CVQSyW8BBjb
+ g4aiCNeTeFxoeOchJJ5okeJpCma85IbiBEGYCeOqKk2UCwn26RDB1364UQTSkwbsY3k7tsEZFUya
+ 2VhlIIaROGyYtcIJ5MDLwCkV0jd99fG2jzLMbCST2zEQEn8zKDc9C5rDKLPpEn3a_bzkUKpOySnJ
+ SDWBz958isRPL2qhRQtQmBioOwMw7DTMkHulSmU2HzaIw3H0oUGNdr4HsXY6p89ZmQJeFfkUgt_S
+ tOTTY_6mXNdsgdTP4AjGh0evjH9CNakCq5HyXVF.0mAcl95DInB8OYC8UI5BBl1O9G5oVtw85Y6F
+ 1TDBC7qYrp6.N7HI_GwDRRfySl_ngT8XeBxAAveUh.KRUTTVaR7Q77kKzl6dC_OSG9NkFV0EfN63
+ 2aAbWxE8Sr0Xv0Ds0m2NR1YqSdy_Q2vO_yJhhVKzf4.kVZomK.GDYWOoEBqR0q.OFlbZLCIzejdk
+ oBBXrTog6CUx1SvGevJnbWYn2THbttYXjTKkNh87Qeh7GgTXHzUldQL3Me49GLT.HgvLvn3zkaoU
+ Rtvn57xZ7vshW5.YhcAELjp_hK0aHhgJ9OeDtx_UEkhmsOTtwkcyE
+X-Sonic-MF: <bubacarrjallow667@yahoo.com>
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic317.consmr.mail.ne1.yahoo.com with HTTP; Thu, 26 Jan 2023 19:34:47 +0000
+Received: by hermes--production-ir2-65c64dfd66-lx9xq (Yahoo Inc. Hermes SMTP Server) with ESMTPA ID abf577b9dd3276ee20da7f16c733cfa6;
+          Thu, 26 Jan 2023 19:34:45 +0000 (UTC)
+Date: Thu, 26 Jan 2023 19:30:30 +0000
+Subject: =?ISO-8859-1?Q?Re:_Succ=E8s_de_l'achat_du_forfait?=
+Message-ID: <c17b9a05-d518-4bf8-8568-77ddd72351b4@email.android.com>
+X-Android-Message-ID: <c17b9a05-d518-4bf8-8568-77ddd72351b4@email.android.com>
+In-Reply-To: <1d9c4a24c3566be97218b41f0b0b72b8@fiidewgal.com>
+From: Bubacarr Jallow <bubacarrjallow667@yahoo.com>
+To: =?ISO-8859-1?Q?Ne_r=E9pondez_pas?= <contact@fiidewgal.com>
+Importance: Normal
+X-Priority: 3
+X-MSMail-Priority: Normal
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: base64
+References: <c17b9a05-d518-4bf8-8568-77ddd72351b4.ref@email.android.com>
+X-Mailer: WebService/1.1.21123 mail.backend.jedi.jws.acl:role.jedi.acl.token.atz.jws.hermes.yahoo
+X-N0C-Node-IP: 185.221.182.45
+
+PGRpdiBkaXI9J2F1dG8nPm9rIHRoaXMmbmJzcDsgcGxhdGZvcm0gaXMgbm90IGZvciBmcmVlJm5i
+c3A7PC9kaXY+PGRpdiBjbGFzcz0iZ21haWxfZXh0cmEiPjxicj48ZGl2IGNsYXNzPSJnbWFpbF9x
+dW90ZSI+T24gMjYgSmFuIDIwMjMgMTk6MjgsIE5lIHLDqXBvbmRleiBwYXMgJmx0O2NvbnRhY3RA
+ZmlpZGV3Z2FsLmNvbSZndDsgd3JvdGU6PGJyIHR5cGU9ImF0dHJpYnV0aW9uIiAvPjxibG9ja3F1
+b3RlIGNsYXNzPSJxdW90ZSIgc3R5bGU9Im1hcmdpbjowIDAgMCAuOGV4O2JvcmRlci1sZWZ0OjFw
+eCAjY2NjIHNvbGlkO3BhZGRpbmctbGVmdDoxZXgiPjxwPkJvbmpvdXIgQnViYWNhcnIgSmFsbG93
+LDwvcD48cD5NZXJjaSBkJiMzOTthdm9pciBhY2hldMOpIGRlcyBmb3JmYWl0cyBwcmVtaXVtIHN1
+ciBub3RyZSBzaXRlwqBGaWkgRGV3Z2FsLjwvcD48cD5Wb3RyZSB0eXBlIGRlIGNvbXB0ZSBlc3Qg
+OiBQcmVtaW51bTwvcD48cD5MZSBjb2RlIGRlIHBhaWVtZW50IGVzdCA6IDIzMDEyNi0yMDI4NDY8
+L3A+PHA+TGUgZm9yZmFpdCBhY2hldMOpIGVzdCA6IExhbmNlbWVudCBPZmZpY2llbDwvcD48cD5M
+ZSBtb250YW50IGVzdCBkZSA6wqA8c3BhbiBzdHlsZT0iY29sb3I6cmdiKCA3NyAsIDgxICwgODYg
+KTtmb250LWZhbWlseTomIzM5O2FyaWFsJiMzOTsgLCBzYW5zLXNlcmlmO2ZvbnQtc2l6ZToxNHB4
+Ij7igqzCoDwvc3Bhbj4wLjAwPC9wPjxwPlZldWlsbGV6IGNvbnRhY3RlciBsJiMzOTvDqXF1aXBl
+IGFkbWluaXN0cmF0aXZlIHNpIHZvdXMgYXZleiBkJiMzOTthdXRyZXMgcXVlc3Rpb25zLiBOb3Vz
+IHZvdXMgc291aGFpdG9ucyBib25uZSBjaGFuY2UuPC9wPjxwPk1lcmNpLDwvcD48cD5OZSByw6lw
+b25kZXogcGFzPC9wPg0KDQo8L2Jsb2NrcXVvdGU+PC9kaXY+PGJyPjwvZGl2Pg==
+

@@ -1,0 +1,103 @@
+Return-Path: <mouhamadouhabibbah@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 1gYrFbQlkWPzvwUA3R2AvA
+	(envelope-from <mouhamadouhabibbah@gmail.com>)
+	for <contact@fiidewgal.com>; Thu, 08 Dec 2022 00:45:56 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NSDSM1q6BzYTmpb
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="eS1u8fGB"
+X-N0C-MailScanner-eFa-Watermark: 1671061552.49655@LeySTqqIxqUWT6DgSZKX2Q
+X-N0C-MailScanner-eFa-From: mouhamadouhabibbah@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 3F99B401AEEF.AFD08
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-pl1-f177.google.com ([209.85.214.177] [209.85.214.177])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 3F99B401AEEF
+	for <contact@fiidewgal.com>; Thu,  8 Dec 2022 00:45:18 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 3F99B401AEEF
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 3F99B401AEEF
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=eS1u8fGB
+Received: by mail-pl1-f177.google.com with SMTP id jn7so18541816plb.13
+        for <contact@fiidewgal.com>; Wed, 07 Dec 2022 15:45:18 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=DcxvK5ibiOlAkY47aj29AIZayrdQ8cVIjAzfZavtWqU=;
+        b=eS1u8fGBiXrdr14eU71Ij1xqj5ZEmwmfaZjrkCEitnttYZV/DzMxj00mHFu6Hm4ssq
+         Y6AcMWrqrd6161QHbzLh84jLOLVO2dqATbpDeCZU0igWAkPF3yA1hAFDGEVsaZPMfAkv
+         f/mZH/bMkgz4SjqFWd0NzJNkxgZHWIazOGtsd3g65eWvsWkVUNGelNZatyp2s7w6rCtp
+         iOpkxUADnVY62hZcGvKwJWfhv65rPU46aUiximwSB/HJP3kQdE8NenhaPeU13W+jBVEi
+         haYWgCbA8TUDM38Fr4a18GjzEPwzq35R9tr+0x2ge8VX0LHXWakZ1Ah7DsmcbdKGYB4G
+         kfpg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=DcxvK5ibiOlAkY47aj29AIZayrdQ8cVIjAzfZavtWqU=;
+        b=AxWYSsqOqVmvVsrw1nFrPOfAy/mzmfNmMy32QWhySgCFPIZiu4d/e3blK+bPIi9bkI
+         UArktW8R7tenwMoMo5CSGakibZi1+D4Jz6nD/0yS2dr49YgAO52yHAgP+9IxTWlI/NvM
+         ndNQJJ1f/bHsi390oT4z8KE/HPM+9zeIhNuW4ZYg67AcqF0jqKuf5+orPear5UjQ1MQA
+         0D03dp+Tkz9rilOwpNiQNwUsFMSwdgMnsC4WB1G77eLu20A5k0htZK6E4BOD+y1xTdl4
+         8oZEEEk2ReC4biIz+0X8nkEVagTL70l3s/ZLN7VWCtFfOKC9FFFCLJCaywKux9LVWFjQ
+         30tg==
+X-Gm-Message-State: ANoB5pnYjwyxdASlyHdk7aZNJdAJm2eVYBLK/Vhrg+ILvtV0ZZHpMCjs
+	TXUe48UnoCbWP0mk9gbVdRNC6vlAaM41Q9VyHFXeDkmv
+X-Google-Smtp-Source: AA0mqf4lp4O4CG1PirS7YfmkvWFS0OCiR9JRP86E3LWGb2DOCh+U3HDf2tezyAcgfPt3o8QE1DAcj2urzyb/BHoOOr8=
+X-Received: by 2002:a17:902:db09:b0:188:7dca:6f4d with SMTP id
+ m9-20020a170902db0900b001887dca6f4dmr91355818plx.68.1670456716095; Wed, 07
+ Dec 2022 15:45:16 -0800 (PST)
+MIME-Version: 1.0
+References: <ede1c13c4c057b3b60503b2246ef7e2d@fiidewgal.com>
+In-Reply-To: <ede1c13c4c057b3b60503b2246ef7e2d@fiidewgal.com>
+From: Mouhamadou habib bah <mouhamadouhabibbah@gmail.com>
+Date: Wed, 7 Dec 2022 23:45:04 +0000
+Message-ID: <CAAGJRzjnJ6e-m_AYQkMUwW=PAStVAS-8+Y1owgutjEfRMLmd+A@mail.gmail.com>
+Subject: Re: Rappel
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000002cf68305ef45831e"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000002cf68305ef45831e
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Merci pour le rappel.
+
+Le sam. 3 d=C3=A9c. 2022 =C3=A0 20:53, <contact@fiidewgal.com> a =C3=A9crit=
+ :
+
+> Bonjour,
+> Nous avons constat=C3=A9 que votre numero de telephone represente
+> votre prenom .Nous vous invitons =C3=A0 mettre votre nom propre
+> et vous rappelons qu'il est interdit de mettre son numero
+> de telephone au vu de tout le monde .
+> Merci pour votre comprehension!
+>
+
+--0000000000002cf68305ef45831e
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Merci pour le rappel.=C2=A0</div><br><div class=3D"gmail_=
+quote"><div dir=3D"ltr" class=3D"gmail_attr">Le sam. 3 d=C3=A9c. 2022 =C3=
+=A0 20:53,  &lt;<a href=3D"mailto:contact@fiidewgal.com">contact@fiidewgal.=
+com</a>&gt; a =C3=A9crit=C2=A0:<br></div><blockquote class=3D"gmail_quote" =
+style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">Bon=
+jour,<br>
+Nous avons constat=C3=A9 que votre numero de telephone represente<br>
+votre prenom .Nous vous invitons =C3=A0 mettre votre nom propre<br>
+et vous rappelons qu&#39;il est interdit de mettre son numero<br>
+de telephone au vu de tout le monde .<br>
+Merci pour votre comprehension!<br>
+</blockquote></div>
+
+--0000000000002cf68305ef45831e--

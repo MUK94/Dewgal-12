@@ -1,0 +1,78 @@
+Return-Path: <sallibrahima500@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id DoksOdvIpmNNTg4A3R2AvA
+	(envelope-from <sallibrahima500@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 24 Dec 2022 10:39:39 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NfJt301F2z34SDnJ
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="IUu8IKQp"
+X-N0C-MailScanner-eFa-Watermark: 1672479576.41653@c2SwsrJ3ktRJDHH2n43nNQ
+X-N0C-MailScanner-eFa-From: sallibrahima500@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 3ED12401AEF6.A1360
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-qk1-f170.google.com ([209.85.222.170] [209.85.222.170])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 3ED12401AEF6
+	for <contact@fiidewgal.com>; Sat, 24 Dec 2022 10:39:04 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 3ED12401AEF6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 3ED12401AEF6
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=IUu8IKQp
+Received: by mail-qk1-f170.google.com with SMTP id g8so3379009qkl.2
+        for <contact@fiidewgal.com>; Sat, 24 Dec 2022 01:39:04 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=a6vaFt11Fx+Gt2tilMFsFzQSduCv7F/Nw560Am9OpPE=;
+        b=IUu8IKQphj1Egv76mGQW/jn4hlSn5qs04IGYNgt9ia6pDfNsIKCPrGdLqqJKOgmNt8
+         tg4pR4fHylJb7bdFstTAiQCBYQqPoLTeM7cSrR6MxUHCD1RV0j2uQPMuXGpvphpf+XLP
+         1GP9sAzdVkVfh0RYE1FL8MII0Kz7BvTFYxBT0q8bNOrGRdkTeYuqhIvoqAVFF3bWdQfA
+         JFvPXVA2DpWBybbu0VFCtc2kueEMx3kZ+bmxVyORjAWyPiZhjub/P2IE1/F8oDlTWWIP
+         oCITSs23d94Y8sMElclfZx/+dFdwq/58zL8Rg1rDOAdkbw26daQKkLp9ZbquZObSvkTp
+         EpYg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=a6vaFt11Fx+Gt2tilMFsFzQSduCv7F/Nw560Am9OpPE=;
+        b=T7K5sl5+35sYBfVnm5FkB/tMk3/F1l/EvzSH6WS9kLgMlfapCJV20zJtrbSMygHJ9b
+         iigYk6u+ny64p5Pr7u3noV3MdR/5HVsE8mET2TSZIrbqeR1eDOPV8xyNMHkkqvRpG8o+
+         NASdH7HU5LfNtejZZyMEgZYwGx93kQAb02VXNKobJCApKcNB5X8+Y3qlT8Ts5H0DPIbv
+         Rkl7NhjBHtb228cfmUwF+9Mx3RAtoRx+47vgV2FnbknzxvXKgUSHQZZeH9welEF80rzd
+         fqIm0X1/vEWVM/F4dkJ/40s0iIH4e02JVfNOTFp4VgR0NS4voXzIq+1vPzagm4gbNegw
+         8DTw==
+X-Gm-Message-State: AFqh2kqWtQzlTFwnubHIXYdvF2JZoP1YNVb9pgXGhg4v+/xxLHqHaX8A
+	i5g5Y9KoLczEty3J+NrdIv0fZIp9nqqDK4kyrX0Aph6u
+X-Google-Smtp-Source: AMrXdXvbqKmxB3Hp9u3z6597/tIiLxSRGWusuTUj1n+2IY21TcX4OfsAtADRxk9VrpkekEKFzbJNqXi+JBVeWFx+0rw=
+X-Received: by 2002:a05:620a:490a:b0:6fc:405e:9161 with SMTP id
+ ed10-20020a05620a490a00b006fc405e9161mr644274qkb.483.1671874742823; Sat, 24
+ Dec 2022 01:39:02 -0800 (PST)
+MIME-Version: 1.0
+From: sall ibs <sallibrahima500@gmail.com>
+Date: Sat, 24 Dec 2022 09:38:50 +0000
+Message-ID: <CAB=FbEvSJR=fhKeOBZsLtv_K09gRqLetu=SUK3RokFpSCFgC1w@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000027af1905f08fac60"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000027af1905f08fac60
+Content-Type: text/plain; charset="UTF-8"
+
+Xlt
+
+--00000000000027af1905f08fac60
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Xlt=C2=A0</div>
+
+--00000000000027af1905f08fac60--

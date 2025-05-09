@@ -1,0 +1,78 @@
+Return-Path: <abdourahmanebalde1220@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 5k4MJJYvO2QWAj0A3R2AvA
+	(envelope-from <abdourahmanebalde1220@gmail.com>)
+	for <contact@fiidewgal.com>; Sun, 16 Apr 2023 01:13:26 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4PzTdJ4plMz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="Xir5ujt8"
+X-N0C-MailScanner-eFa-Watermark: 1682205203.11021@9cyObXnTh9UdHauf4gLTyg
+X-N0C-MailScanner-eFa-From: abdourahmanebalde1220@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: sss
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 56CDC4063566.A4F5D
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-lj1-f177.google.com ([209.85.208.177] [209.85.208.177])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 56CDC4063566
+	for <contact@fiidewgal.com>; Sun, 16 Apr 2023 01:12:49 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 56CDC4063566
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 56CDC4063566
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=Xir5ujt8
+Received: by mail-lj1-f177.google.com with SMTP id k15so4779623ljq.4
+        for <contact@fiidewgal.com>; Sat, 15 Apr 2023 16:12:49 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1681600368; x=1684192368;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=w+IJTz9fg5WWtOoimj4O4GKdwAj7OhNBXiCPem3F/O4=;
+        b=Xir5ujt8YMBdpsntvDdHKpSkDAQXAjN93BVSoe9I/DeFYDQ5sHgkDv0eI0ZwIQJbT2
+         2CqHbgg0c/Q4VDbJhFRkgq1ZZWkFG3rkG11CWTxxERW3K/XqfyauMN+c+SgcGqKXliwI
+         4oimAE88EkWhvpxyWYi72oHyaMdS/6kR0gCo+RYrPzq+P0ot47KGzbz3ygkeS6PrWIMU
+         Thc1mIbuG0kYNtN7DzvIcMvVzotQVR7btJ+yi5inMPhtCd9BpV0k0ZT5c7DI8ygRHiaW
+         5shj4aEjv/lSmBiTsV0mmo1uf+X5VaiDxEIN/wFovJ2ANgb6NxLv0oi5SuPyecwa1K18
+         skAQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1681600368; x=1684192368;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=w+IJTz9fg5WWtOoimj4O4GKdwAj7OhNBXiCPem3F/O4=;
+        b=W9g0W6aPmwse/fVuq3lE24qgcaTFJFQlM5cBLeupUX3I1kTkYkgiutuhqCi+xkbx7/
+         qxHQJICC+vvSr6GmgZa4tJnsZqEkY6RU25Dcb4+hZ8LCbIBiOEqVsHpqQpysu0cJ8uaq
+         77nCsQQbqymT24mB8wCDzymD3domx+YEx8O+zQ4aKcWd9+1UKzQlYFcG8ltOBoEFKKtT
+         WwqPRLc3xbLhkYoqYskC8brx7pqADrsOuZWOhNtKNGlbE7FlLU/FOWE4OHCKFhfFu3uz
+         pZ/E+30kKpcYpMwtsmTa1eONrD5Kqs215P9u6gbYkRhdrvdCD8TEE2xK7CoQzH+oZxW6
+         ub/A==
+X-Gm-Message-State: AAQBX9faf6Ivh4Yl9IMgmaTo30jVC3T56MKArc/9yeb0Qfk7ahK1Sb0G
+	WATIUK1SQJO3MgPUZ6urtFSaaaWtuYpyQWjShaDefmpt
+X-Google-Smtp-Source: AKy350aHdVnyx+rQEvSyZmHDj3h7T+X7EbcDAIQw5TyCBZyt6DD+k/sGK8AZPgUZMn14uY5Ka3dJisIgw+WBCAxvkSQ=
+X-Received: by 2002:a2e:b16e:0:b0:2a6:16b5:2fba with SMTP id
+ a14-20020a2eb16e000000b002a616b52fbamr3220466ljm.1.1681600368153; Sat, 15 Apr
+ 2023 16:12:48 -0700 (PDT)
+MIME-Version: 1.0
+From: abdourahmane Balde <abdourahmanebalde1220@gmail.com>
+Date: Sat, 15 Apr 2023 23:12:35 +0000
+Message-ID: <CA+pT6Xr+SCymPFVdNLPvSJgzFxwUArBGGXCF8u3_AkyknmZo6g@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000009916c705f96818a8"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000009916c705f96818a8
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+--0000000000009916c705f96818a8
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"></div>
+
+--0000000000009916c705f96818a8--

@@ -1,0 +1,77 @@
+Return-Path: <ahmadbalde1995@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id GLIEHX012mO6HAwA3R2AvA
+	(envelope-from <ahmadbalde1995@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 01 Feb 2023 10:48:45 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4P6HDY2LJxz34nwbr
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="k/1ThPfc"
+X-N0C-MailScanner-eFa-Watermark: 1675849722.02696@Wyt6o9P60/AdqMPG9LJ66w
+X-N0C-MailScanner-eFa-From: ahmadbalde1995@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 771114004021.AF5C9
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-qv1-f48.google.com ([209.85.219.48] [209.85.219.48])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 771114004021
+	for <contact@fiidewgal.com>; Wed,  1 Feb 2023 10:48:30 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 771114004021
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 771114004021
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=k/1ThPfc
+Received: by mail-qv1-f48.google.com with SMTP id k2so12875863qvd.12
+        for <contact@fiidewgal.com>; Wed, 01 Feb 2023 01:48:30 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=auto-submitted:precedence:content-disposition
+         :content-transfer-encoding:mime-version:subject:references
+         :in-reply-to:message-id:date:from:to:from:to:cc:subject:date
+         :message-id:reply-to;
+        bh=bX3LPxqPmIEqlgtYkOXUwfu89eAbca7pn072R6bCL1g=;
+        b=k/1ThPfcSa2Y1cjxE/lKDbl6bPiN+1IK9p6rVhuoo9jFi2DfbIZ0SGPOomrE70owKk
+         YAv8Qj/XXddusjWPVpXtU+GiLODdtM7e+XL8Z5o71WdZEZA8SSiNbPrxs0hqZW4Dk+A6
+         F+Vx7zyETH5oMos2VLfNz5SiNjsGFQXWW35XoyJfk+jyZG/UGOrCVso36IfLimdLAyM/
+         +GpikFgNi/SsX2PjhoBB69Et+NzEA1M1BmXUecnvefENpSHWUxSY+gQKMqgyTaYGP2NS
+         8qfCnm2tuw3FbvCMkFSzOYGP5vgbBSzM3wWCKeSuNlwnTAwx9kTKfPjrC6Mtd7s95EWN
+         CBiA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=auto-submitted:precedence:content-disposition
+         :content-transfer-encoding:mime-version:subject:references
+         :in-reply-to:message-id:date:from:to:x-gm-message-state:from:to:cc
+         :subject:date:message-id:reply-to;
+        bh=bX3LPxqPmIEqlgtYkOXUwfu89eAbca7pn072R6bCL1g=;
+        b=taMa2499d75KSZVFyvJF9VOj8wJJ4uqkqITED8dmO+Q+c/MDen9P9kI2GvAyMEzgho
+         /DhSwM6yUgSacBO5WqpTMWbg3Pw9L46hty+C6Pii3/NIKdco99UyhLKTnLh05mO3KUSm
+         ZpXqJeS3KCKfrUgmbvV5k76Xx+w0Cc37bikoaUc63gZFgScyfIhNRGhRAAw8XC9w9aa7
+         ak5fZaWM+nI8Y9dhpvd5bXThFoo5DQUXRcNjcgMrWcRmt9ndUNqHdl/YCaPC/ou3FeND
+         ZzxQ7OmXN0Bp/LYQjCeCkZE2pIC9BSxO+hsphf53kbl87q8MN9JFlC/6MkZukaIYRYMN
+         XxLw==
+X-Gm-Message-State: AO0yUKVya8i9Tk3R56ULE23AbXX5n844nLshTJCQBB/y9y2gMMXZ3Nky
+	qPnmyLen4pEgqyyiW/mkcd3DN/VN7EAD4BUmvDmydCwzqWr9rEF4qA5pH050BA==
+X-Google-Smtp-Source: AK7set9gg6AEm4b5ot6RBVrNvWrd+xRxAZ5zL1sDw8S33Zzf9+BzuUOnS/UV+LYebbDeyAu0ehdy2soby6/Eje/MMlW5/CMANpqwEujtjwKw
+X-Received: by 2002:ad4:5509:0:b0:537:702d:4db8 with SMTP id pz9-20020ad45509000000b00537702d4db8mr135217qvb.47.1675244909179;
+        Wed, 01 Feb 2023 01:48:29 -0800 (PST)
+To: contact@fiidewgal.com
+From: "Saikhou Ahmad Balde" <ahmadbalde1995@gmail.com>
+Date: Wed, 1 Feb 2023 01:48:29 -0800
+Message-ID: <CAD6wbLEGuHcLv1wPFqEds8dPy+spwOtApsMnAmidBJ4ynUf6=A@mail.gmail.com>
+In-Reply-To: <0020e3694422b87fa6500625e0c475ad@fiidewgal.com>
+References: <0020e3694422b87fa6500625e0c475ad@fiidewgal.com>
+Subject: Re: Rappel avant la suppression de votre compte sans photo .
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+Precedence: bulk
+X-Autoreply: yes
+Auto-Submitted: auto-replied
+X-N0C-Node-IP: 185.221.182.45
+
+Saikou Amadou vous souhaite le bienvenue

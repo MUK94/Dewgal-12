@@ -1,0 +1,78 @@
+Return-Path: <mamadousalious757@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id RFb3HxI0R2TnFg0A3R2AvA
+	(envelope-from <mamadousalious757@gmail.com>)
+	for <contact@fiidewgal.com>; Tue, 25 Apr 2023 03:59:46 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Q54v40FxBz34SDmk
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="FbsTGXCq"
+X-N0C-MailScanner-eFa-Watermark: 1682992768.95444@cWCelvPDy7TIN2Ryl3qQrQ
+X-N0C-MailScanner-eFa-From: mamadousalious757@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: s
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 4C4D8401AEEF.AE626
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-oa1-f41.google.com ([209.85.160.41] [209.85.160.41])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 4C4D8401AEEF
+	for <contact@fiidewgal.com>; Tue, 25 Apr 2023 03:58:53 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 4C4D8401AEEF
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 4C4D8401AEEF
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=FbsTGXCq
+Received: by mail-oa1-f41.google.com with SMTP id 586e51a60fabf-1878560f69cso3709944fac.1
+        for <contact@fiidewgal.com>; Mon, 24 Apr 2023 18:58:53 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1682387932; x=1684979932;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=Jf8Gzj3yve0PP1Y8NKqpzEVS0X3FVNzBrP2uC3+TE6U=;
+        b=FbsTGXCqZ+JhujK4EvLXN2cfOeyrcFUMOD3xnijKJsE0P2nnM9JYtkyITFb0XU4ka0
+         iuhW0DERP81YOGwPm4HOySBpdNKC3Ue5rXSvPIfuKPCgtqieam8EYAX1HbaWcibQDS//
+         F48BD+qduT+TGoCmLNhrm4qdsr4eM5VpsBKzG5upUh83wEBn2abgknyHOVRBpXwCJcXL
+         LRTNKK3LpPu6Q+0co45FhXgIK2IJ8AGU1q+9HZc1KrPI2DD4+Hhi2zqRvkzdKbnSCNIz
+         nSjp5jMUJLsPTLA8IiKjzHlrRPXaUcFbhcdjCERWQr9wDIVO9l9c+cA4q5gOXfRiTfmt
+         1YXQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1682387932; x=1684979932;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=Jf8Gzj3yve0PP1Y8NKqpzEVS0X3FVNzBrP2uC3+TE6U=;
+        b=eRjx5miK8vNsLlGteH9BHQRyUsqi+lkgN0hD+nhVBu32OIOoBd1oPme7xtbtIILz1G
+         R0Fzw7LCBPhtTb6wGOSFWCyC8vWbUx9hM5nbsE9hlKTNzl1Im+ganbMB73s1jXNHyZ12
+         QdkEtDv407Ll2Pba0BNBREmCGPwv1vPK45jcQLevP8qzRJo6A5qvN1NMcc/TtiXZ6kaX
+         GMzO14SOCY6ra4vSXevtZ6uYTaTM4op3/YuGpRF0UedRie1c+e+fL+59A16VA6L6pzVL
+         qnEzfc802XKJUgVJwCx/GSEu6WTcm6gfskKD+J2Whcp77ndAT0UQc7xowlIHA6YfwzN4
+         LT7A==
+X-Gm-Message-State: AAQBX9dwB0JoBjEXryOaV4HNKh4SZIBH7s101YMgY8E1ie2KVG109UN6
+	1uF7cLU9/Mtct+54PtU6Q5viZmhUSASPXlmMVS6vOvpOsyU=
+X-Google-Smtp-Source: AKy350ZcUij7XuFs4XkIeJfm1sM/WYQXOEcQx8yEhjtk20wzgiP0c2+RLdzOGHWvctgNO1M+yxavR7iNHABSSm2z24c=
+X-Received: by 2002:a05:6870:4591:b0:186:f449:7752 with SMTP id
+ y17-20020a056870459100b00186f4497752mr10489924oao.44.1682387931690; Mon, 24
+ Apr 2023 18:58:51 -0700 (PDT)
+MIME-Version: 1.0
+From: =?UTF-8?Q?Mamadou_Saliou_Sidib=C3=A9?= <mamadousalious757@gmail.com>
+Date: Tue, 25 Apr 2023 01:58:37 +0000
+Message-ID: <CAMR8bXF9OPERooujNR50zeu3ZCcbbxG+0-XhHOhNxqxo+3k2dg@mail.gmail.com>
+Subject: Inscription
+To: =?UTF-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>
+Content-Type: multipart/alternative; boundary="0000000000000afb9605fa1f7783"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000000afb9605fa1f7783
+Content-Type: text/plain; charset="UTF-8"
+
+Inscription
+
+--0000000000000afb9605fa1f7783
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto">Inscription</div>
+
+--0000000000000afb9605fa1f7783--

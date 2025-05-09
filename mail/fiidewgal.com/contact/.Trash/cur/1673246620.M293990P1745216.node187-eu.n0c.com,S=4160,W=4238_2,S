@@ -1,0 +1,78 @@
+Return-Path: <sadiosow27081990@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id xGdyEZy3u2NAoRoA3R2AvA
+	(envelope-from <sadiosow27081990@gmail.com>)
+	for <contact@fiidewgal.com>; Mon, 09 Jan 2023 07:43:40 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Nr4Cb1Vk4z34hB39
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="hS8yJfbc"
+X-N0C-MailScanner-eFa-Watermark: 1673851411.5128@aB8Fv0vhsz5+6fCNKX73FQ
+X-N0C-MailScanner-eFa-From: sadiosow27081990@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 7AB02400836A.A95A0
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-oa1-f44.google.com ([209.85.160.44] [209.85.160.44])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 7AB02400836A
+	for <contact@fiidewgal.com>; Mon,  9 Jan 2023 07:42:57 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 7AB02400836A
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 7AB02400836A
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=hS8yJfbc
+Received: by mail-oa1-f44.google.com with SMTP id 586e51a60fabf-12c8312131fso7763249fac.4
+        for <contact@fiidewgal.com>; Sun, 08 Jan 2023 22:42:57 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=xwjNPSHREIhhOo9xy9plNedkwZSfTdaXJlUhVgFLaEw=;
+        b=hS8yJfbcNdSFchbMJLIHDUMr83qDNKfRDMuoZeMsyjFf1+6CGM/oV1VvnflUXo7TKX
+         q7scFkkvu8udEq8nFWfVkRUZNwjyKJyxtGlWbfbCbBm+SVfkB+JX+yQWZY/PKb/WBG67
+         w2FCL6uTf7G0gCH+SsMWDf+bfn9SehbFzGYTx199iwu6KR3cSVX9Fmtz8KbLiDnbRf42
+         xa1kSYDySdrkcBaSMk4wrx0WepLc3h9GDtTU6CmNCAsNPnmmaWe2rIpDSoAkzknJ+PwZ
+         hAj+Rw/jWjGYUVaaeGwokDy9R9LEo8hSq2PqC7AHUFHDlgsVBA/5eaU0dLkUluLwpuaK
+         jplg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=xwjNPSHREIhhOo9xy9plNedkwZSfTdaXJlUhVgFLaEw=;
+        b=NgWgAwvj//7xBqI7YvumpNqijGAfMhhkteawizIRBzIVP7GmBfH9jW/Y9gmiVjecHc
+         ziPraTKXtWK5T+JNpUAZl1C0BmTRDV0fMD8qDoCAKSI3pq0z5Hpy1pkuOToR7We4jjZR
+         w95RXnp+xAjp8vXaCzlpsGZdWKXzHrCkC8N9aTxjcxGlHEfrMRBcBJfNkUUIVQ/3ta/N
+         s5zlGGl3e9HwO8OTKm+2on94FhZOjePThyw5i6X/uqd3W2sHs+VyYKMXLfbqprTcHuuV
+         UnUUWYeHgylMgCiMNXLK8AUXFRMMjRCoB3k+62ntcaoL/XjoT1tZmSCbWSxO8bcGXpb8
+         eDvg==
+X-Gm-Message-State: AFqh2kourtuNhKgsY+BisuDqsgTt5v5gpTtioFLUhso9/hjiR2aexyPY
+	WEyw87oxnz2Xt632G9OcoxnffOCFBZ50jxcS2Jq2rBsm
+X-Google-Smtp-Source: AMrXdXvX4X7zowjkSyUlok+G3s5XOKRg5HA3s2GKiHd7i5euxiL/jQHxoqWibju8esZjKqowZXinNHbM09Vi7dF2FXI=
+X-Received: by 2002:a05:6871:42cf:b0:150:80ed:843a with SMTP id
+ lt15-20020a05687142cf00b0015080ed843amr2963505oab.100.1673246575726; Sun, 08
+ Jan 2023 22:42:55 -0800 (PST)
+MIME-Version: 1.0
+From: Sadio Sow <sadiosow27081990@gmail.com>
+Date: Mon, 9 Jan 2023 07:42:44 +0100
+Message-ID: <CAKb2vgbFXfCZPpBQk3qBXFBR18ygxeQa+BpOn=8hzKyRKNVOjw@mail.gmail.com>
+Subject: 
+To: =?UTF-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>
+Content-Type: multipart/alternative; boundary="000000000000c494f605f1cf13d2"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000c494f605f1cf13d2
+Content-Type: text/plain; charset="UTF-8"
+
+Buongiorno
+
+--000000000000c494f605f1cf13d2
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Buongiorno=C2=A0</div>
+
+--000000000000c494f605f1cf13d2--

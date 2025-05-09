@@ -1,0 +1,82 @@
+Return-Path: <oj6023135@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id FS4rAVH0iGReIh0A3R2AvA
+	(envelope-from <oj6023135@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 14 Jun 2023 00:57:21 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4QgkTW4Z2Rz34SDmm
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="Fl1Gk7l3"
+X-N0C-MailScanner-eFa-Watermark: 1687301705.7018@2j9WoQTGjSXGTOgGvZEAKw
+X-N0C-MailScanner-eFa-From: oj6023135@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: ss
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 2E09740034FA.A3C67
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-vs1-f41.google.com ([209.85.217.41] [209.85.217.41])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 2E09740034FA
+	for <contact@fiidewgal.com>; Wed, 14 Jun 2023 00:55:04 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 2E09740034FA
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 2E09740034FA
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=Fl1Gk7l3
+Received: by mail-vs1-f41.google.com with SMTP id ada2fe7eead31-43dc4d6fa2fso644354137.0
+        for <contact@fiidewgal.com>; Tue, 13 Jun 2023 15:55:04 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1686696903; x=1689288903;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=y4GqAzYpDqlTKNYnxfH1qFZz7UhZNs7q6ZhoMZBlaSg=;
+        b=Fl1Gk7l35w0RzjNu4V9ww7Wc1DXfL1vKHDoufZDFhyh9KzulbLYJ898VEN/lr8/Hso
+         m6aUTMxI00Vh4uTCct/a2sQ6wu++C5PVsBpXnfFdIEfe5/ty+Qw2uLlpVj5J11z7//9x
+         Iuqml7AW88DPst4MaVvARerbSFUfrSuqczdEXZAYgHAQFH6XmPZqWxTLDrIPCaxnv8ZZ
+         otaSH5OvKuOVzoZuhJ45o77rabE6p1RkOu9aHPq3Qa+Sp9W7hWB1fWqJg47VnVN2kinf
+         Y4OAaBqesDwZQtXkwufkkiRGgVBrVccyrjUKK0lOIQaR2Qdyd+RadMYgmvFopWDxsr7O
+         TdKQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1686696903; x=1689288903;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=y4GqAzYpDqlTKNYnxfH1qFZz7UhZNs7q6ZhoMZBlaSg=;
+        b=FOYLus3Gh0wi+Fs5I4//JS2ics+nofOJVcVkEBtwPG5jiY/OzIcOmRO7hk/8U58bff
+         NscSxSZgvNtvbmRtAF7dJ31Md7wnQc77Yl0PrcG6ge55AU/4tOGn8p22yCrGOT1ksMV/
+         QdVhA5OJaPtdl1VV6kfHq0fHOVwNMHTcQ+ogtFK9Sto0Tv/uOOO+dn7U5CGx7daOkYuq
+         CUBVJmLCyEW07Uxe3mcTsXbSo2+y7DbrnqDhn09CnEwHRm7PisVwf0Tg0d8ONpo1Pnur
+         CeEHtIdP9uRFlDINqzIVsVOxYryoGQ0pc0SG4Bx5/OkdRb0+n6TL2CpWoIGogol/viWv
+         0OXw==
+X-Gm-Message-State: AC+VfDzxjWKZJ1mzawd4Hx8qf+KAJgjDHUxzDs8pBdaumzjtqepgeVm7
+	vQOmXoIbPbdKCorvTTe4u55eMc64MHxkgKLURjzZoluB
+X-Google-Smtp-Source: ACHHUZ5wr1qCN3iD2lIiTGkyOX6WJuP6ovV4bYufTqYdazgYlZ9fvLWYxqWwo7hDxH01+c+iv0/FXd0h/ApmikC7Qv4=
+X-Received: by 2002:a67:cd02:0:b0:43b:382c:56b5 with SMTP id
+ u2-20020a67cd02000000b0043b382c56b5mr5768385vsl.0.1686696902780; Tue, 13 Jun
+ 2023 15:55:02 -0700 (PDT)
+MIME-Version: 1.0
+From: Omar Jallow <oj6023135@gmail.com>
+Date: Tue, 13 Jun 2023 22:54:26 +0000
+Message-ID: <CAJPdsrv43m3nxGjwFs=srXAy=6GzBesBa6BA4bgza5P4SXur2w@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000bbeaae05fe0ab913"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000bbeaae05fe0ab913
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Je voulais que vous m'ajoute sur votre group
+Je le veux vraiment =C2=B12203052385
+
+--000000000000bbeaae05fe0ab913
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Je voulais que vous m&#39;ajoute sur votre group=C2=A0<di=
+v dir=3D"auto">Je le veux vraiment =C2=B12203052385</div></div>
+
+--000000000000bbeaae05fe0ab913--

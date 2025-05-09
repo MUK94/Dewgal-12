@@ -1,0 +1,132 @@
+Return-Path: <bahhadiatou5@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id cD2kMNN4o2MnIC8A3R2AvA
+	(envelope-from <bahhadiatou5@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 21 Dec 2022 22:21:23 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Ncmb74yD7z34SDmh
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="SjHjudln"
+X-N0C-MailScanner-eFa-Watermark: 1672262480.97777@/vUyv9l9t9+u1RiesGjY6w
+X-N0C-MailScanner-eFa-From: bahhadiatou5@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 1A875401AEF7.A7EB9
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ot1-f43.google.com ([209.85.210.43] [209.85.210.43])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 1A875401AEF7
+	for <contact@fiidewgal.com>; Wed, 21 Dec 2022 22:20:47 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 1A875401AEF7
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 1A875401AEF7
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=SjHjudln
+Received: by mail-ot1-f43.google.com with SMTP id j16-20020a056830271000b0067202045ee9so9804341otu.7
+        for <contact@fiidewgal.com>; Wed, 21 Dec 2022 13:20:47 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=Cq8czUHvdIp+JqNVXpsUEECoQVo9Gmr597vlxG4fnEA=;
+        b=SjHjudlnU/Oy2JYz6UBC1rvhGe17QhiM/gp6EsCSKduvr2S899Rm4SCFqTc1L7OLTf
+         JFxxAAohflJRadKsUCEcyK3jaaepyWNNzncnOtdlXccYJ7z71dl0lK+TTgodH9AcPDK7
+         CBV7eSLgaxuJhsPiKLpQ7LTl6Bw9VZoMIAQNE3WbFvecDXWU4Xrrvv/Nx51XbSVUm8l9
+         BtSUqu9SIbW1bvPpOFF/RhsLG5+SfXzwUXgy7VoqGrt4THLvtpZV/bexfg3PyS+HUK2M
+         +EumGyMNR5gAhDrrUVhi/CTfm+825NfqTS7kH9DZP7E+hEmFy2PZI6ifz8RGItUA8WHB
+         L41Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=Cq8czUHvdIp+JqNVXpsUEECoQVo9Gmr597vlxG4fnEA=;
+        b=wGvyEvlkGsTGUMmJ2+3cM1lvTbY+hwbxnnf8XAAWjpWAn/e+VV+NAcGFBEemTJpPW5
+         vVtgPr1rd/O/t0r/Eg6duAi08/oEoHrV6QBbki7e555J5KjqmwXDDXIlytWO0NWi7vRv
+         aBm5qoJL4RwY1vdGLjRZ0WcPyQSHNNxVOtsV9ianpmyJ2DovxB9HsgU7YDPRmxOwSfkR
+         nD1604T37dXqDZQ6J9lcZj/eaCaHkfT++uc3VLgvLohHVkjow8Rc+6D8c2ELmj1e3epb
+         Ap7f+WbcrMYvxVe3MCN0yUYqt5UisYojPB4oxlAxkxFSQyxh0vw+Cu6pQXlKIAWu7j9u
+         jm1g==
+X-Gm-Message-State: AFqh2ko1qzLRo9UQ1r7T/ydiQuEAhN0+a7Ve9jjVCMYe26EgFB9xesnE
+	dvBZrYIHqbkyI+qW620XRf6gk5psNo9K338t0QtfjCL3
+X-Google-Smtp-Source: AMrXdXtpylnpp/XjDF0YNS6cpj3yv3t/Wcc00cAAYH1utNQjIJpzwJjhBgaewkgyv33dbvzfPakFqWhotWJdRLy0wUo=
+X-Received: by 2002:a05:6830:2786:b0:670:5952:6cf4 with SMTP id
+ x6-20020a056830278600b0067059526cf4mr194003otu.383.1671657645453; Wed, 21 Dec
+ 2022 13:20:45 -0800 (PST)
+MIME-Version: 1.0
+References: <1fa86f958e910daf4791a755a764b3cf@fiidewgal.com>
+ <CAD2ViSahVqD7tr6t_7kqawFbXi5TX=zAabzHKBcw4BjO8HMvFA@mail.gmail.com> <956db7dfd7d96a494ac93335eb9ad181@fiidewgal.com>
+In-Reply-To: <956db7dfd7d96a494ac93335eb9ad181@fiidewgal.com>
+From: =?UTF-8?Q?Hadya_Pr=C3=A9sie?= <bahhadiatou5@gmail.com>
+Date: Wed, 21 Dec 2022 22:20:33 +0100
+Message-ID: <CAD2ViSbG+mat792Ch4+Y=A=epv+DEMEamD37JcbzSm8fUMBoJQ@mail.gmail.com>
+Subject: =?UTF-8?Q?Re=3A_Demande_d=27information_pour_une_publicit=C3=A9?=
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000024b61405f05d2038"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000024b61405f05d2038
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Laissez moi watchap je vais lui envoyer alors svp merci
+
+Le lun. 19 d=C3=A9c. 2022 =C3=A0 21:00, <contact@fiidewgal.com> a =C3=A9cri=
+t :
+
+> Le 2022-12-14 05:45, Hadya Pr=C3=A9sie a =C3=A9crit :
+> > Bonjour,
+> > Oui je fais de la publicit=C3=A9 sur mes r=C3=A9seaux sociaux, je vais
+> > transmettre ce mail =C3=A0 mon agent il vous contactera merci bonne
+> > journ=C3=A9e
+> >
+> > Le mar. 13 d=C3=A9c. 2022 =C3=A0 23:41, <contact@fiidewgal.com> a =C3=
+=A9crit :
+> >
+> >> Bonjour ,
+> >> Je viens vers vous pour vous demander si vous
+> >> faites de la publicit=C3=A9 sur les reseaux sociaux comme
+> >> facebook .
+> >> Si vous voyez ce message , j'attends votre reponse.
+> >> Merci d'avance pour votre comprehension!
+> Bonjour ,
+> J'ai toujours pas re=C3=A7u un message de votre agent .
+> Merci d'avance !
+>
+
+--00000000000024b61405f05d2038
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Laissez moi watchap je vais lui envoyer alors svp merci=
+=C2=A0</div><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_=
+attr">Le lun. 19 d=C3=A9c. 2022 =C3=A0 21:00,  &lt;<a href=3D"mailto:contac=
+t@fiidewgal.com">contact@fiidewgal.com</a>&gt; a =C3=A9crit=C2=A0:<br></div=
+><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1=
+px #ccc solid;padding-left:1ex">Le 2022-12-14 05:45, Hadya Pr=C3=A9sie a =
+=C3=A9crit=C2=A0:<br>
+&gt; Bonjour,<br>
+&gt; Oui je fais de la publicit=C3=A9 sur mes r=C3=A9seaux sociaux, je vais=
+<br>
+&gt; transmettre ce mail =C3=A0 mon agent il vous contactera merci bonne<br=
+>
+&gt; journ=C3=A9e<br>
+&gt; <br>
+&gt; Le mar. 13 d=C3=A9c. 2022 =C3=A0 23:41, &lt;<a href=3D"mailto:contact@=
+fiidewgal.com" target=3D"_blank" rel=3D"noreferrer">contact@fiidewgal.com</=
+a>&gt; a =C3=A9crit :<br>
+&gt; <br>
+&gt;&gt; Bonjour ,<br>
+&gt;&gt; Je viens vers vous pour vous demander si vous<br>
+&gt;&gt; faites de la publicit=C3=A9 sur les reseaux sociaux comme<br>
+&gt;&gt; facebook .<br>
+&gt;&gt; Si vous voyez ce message , j&#39;attends votre reponse.<br>
+&gt;&gt; Merci d&#39;avance pour votre comprehension!<br>
+Bonjour ,<br>
+J&#39;ai toujours pas re=C3=A7u un message de votre agent .<br>
+Merci d&#39;avance !<br>
+</blockquote></div>
+
+--00000000000024b61405f05d2038--

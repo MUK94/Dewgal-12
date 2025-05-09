@@ -1,0 +1,78 @@
+Return-Path: <mamadymaladho@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 0FxrEr9itGPDtREA3R2AvA
+	(envelope-from <mamadymaladho@gmail.com>)
+	for <contact@fiidewgal.com>; Tue, 03 Jan 2023 18:15:43 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NmfWf3YnXz3F9n
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="hs/Ly5Ft"
+X-N0C-MailScanner-eFa-Watermark: 1673370937.6415@cQELf9E2FkvIyYuonA4uaQ
+X-N0C-MailScanner-eFa-From: mamadymaladho@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: BCE2B40049EB.ABA9D
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-lf1-f52.google.com ([209.85.167.52] [209.85.167.52])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id BCE2B40049EB
+	for <contact@fiidewgal.com>; Tue,  3 Jan 2023 18:15:05 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com BCE2B40049EB
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com BCE2B40049EB
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=hs/Ly5Ft
+Received: by mail-lf1-f52.google.com with SMTP id f34so46490910lfv.10
+        for <contact@fiidewgal.com>; Tue, 03 Jan 2023 09:15:05 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=oFK+x4p1t/ufQx5Fzm608vKZztpgBWSTSeZGy6kOXe8=;
+        b=hs/Ly5FtzUnb1AefrjCyZx7ptE50EzLwgl4T2rSv7Wt4SmjXWJWJ80n0XX59Mu7EEf
+         qRdRgpzlApZAPV7eBmeR0Bqecpv77zaEbZ5DoVq3RBWqOxPbL9UWufQuBGTL2vWqx/Qb
+         iIHECrJFQr5boB1A+IxAqBzyR+AGNnbk4SAq4FYuBlRG9nQiezLbw3P8I/F4R2xjNRLb
+         c1sIZDE9VVuNNxPrZpJqZXeTtX9N+dlEwYkJBdmIqiAuUhmnkdJEKOPU4wdizTORzS7m
+         NT2CqBEGJOLbplYpp4VQFhi2O0GUF9B6pbWKSqGUrWhaETrdPe5liLCqG498wLabixC+
+         1G1Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=oFK+x4p1t/ufQx5Fzm608vKZztpgBWSTSeZGy6kOXe8=;
+        b=ebM3EJg5TK1w8K0eknk891mGa5JC3oqhNf1JNjlGpHk7VoP+34RAOsCeIl4/H/8zEJ
+         mUTDGTfLxy/vy7wcrD5OuBV0lVsDbz6qb9yELfa6l9gn908PEcndnjRc7cYjlf6x3r76
+         N/9TLJU7fUAOtm7qhzfACyNF7atO/y/4ZCokZF7MLJdM3sPRO4u16FPuOtQX9vbKTxHW
+         JQ+DBuCtqLZgFS4hJGEQEAF663yTSnRHZORZwNj+KSCqxoxwl2nclWqqoPcb3+OXBjf4
+         xNUNJruaP2h3xv+em9MtC1W/I/fAABN2O6c/2cgijTCc3eS7zojyExPHXsZMRUS/cZRj
+         5ZlQ==
+X-Gm-Message-State: AFqh2kpopBr+GvlGoZaLbmxJtOD74VHGlskhRTa4MILxiQw5mdOt3xWt
+	D+c8gwaVBTBQjQvNIK+zqChM5swNw3W4nk8vHDrgpDYb
+X-Google-Smtp-Source: AMrXdXtsmDAB+yEdLDDoZnoqGmRjIxJccfUr5CVptNjRVHeSPVixHPMZcLBk6gkWvRkGRjqGxT8mNlTSTMe+hohuV3Y=
+X-Received: by 2002:a05:6512:614:b0:4b0:65b0:7f30 with SMTP id
+ b20-20020a056512061400b004b065b07f30mr2021103lfe.385.1672766104942; Tue, 03
+ Jan 2023 09:15:04 -0800 (PST)
+MIME-Version: 1.0
+From: Mamady Camara <mamadymaladho@gmail.com>
+Date: Tue, 3 Jan 2023 18:14:54 +0100
+Message-ID: <CAK135t4GWs8_Scv+xVdXKbJnBZbiXVLkJBu_JzPBuZmBOk+0ug@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000007a3a9b05f15f35d3"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000007a3a9b05f15f35d3
+Content-Type: text/plain; charset="UTF-8"
+
+Mon nom : Camara mamoudou
+
+--0000000000007a3a9b05f15f35d3
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Mon nom : Camara mamoudou=C2=A0</div>
+
+--0000000000007a3a9b05f15f35d3--

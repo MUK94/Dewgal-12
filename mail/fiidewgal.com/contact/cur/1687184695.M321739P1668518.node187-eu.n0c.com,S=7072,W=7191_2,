@@ -1,0 +1,119 @@
+Return-Path: <saifoulayehansagherediallo1991@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 8IkaEzdlkGSmdRkA3R2AvA
+	(envelope-from <saifoulayehansagherediallo1991@gmail.com>)
+	for <contact@fiidewgal.com>; Mon, 19 Jun 2023 16:24:55 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4QlBqV6dgQz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="Jq4HwkB5"
+X-N0C-MailScanner-eFa-Watermark: 1687789373.32052@Y3vYehn8cJ+om3ZtspUyyA
+X-N0C-MailScanner-eFa-From: saifoulayehansagherediallo1991@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: ss
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 437F440049E6.A9B94
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-lf1-f48.google.com ([209.85.167.48] [209.85.167.48])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 437F440049E6
+	for <contact@fiidewgal.com>; Mon, 19 Jun 2023 16:22:22 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 437F440049E6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 437F440049E6
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=Jq4HwkB5
+Received: by mail-lf1-f48.google.com with SMTP id 2adb3069b0e04-4f875b267d9so718516e87.1
+        for <contact@fiidewgal.com>; Mon, 19 Jun 2023 07:22:22 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1687184541; x=1689776541;
+        h=mime-version:to:from:importance:in-reply-to:subject:date
+         :savedfromemail:message-id:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=yPNxaIF/wceCRhtYKGg6SNXNG9XIxAWMdjMAD3Fy3DU=;
+        b=Jq4HwkB5amM7wrukhR004jJ3XWWFu9f9wsQdPWwTchJVtqm9seEzB0+fdE62Ed3KZ8
+         XHxRNrBbWiORQkYhxlnIRRjPbMk6qKgn7w7bZVzqhf2kziHZsKJhmZ7fk3IVi0WVKWvG
+         V30kyzsxwaczIB1FvE+051sOIsnJMlWIFLg/JLsWpcsuEfx5beReXV/jeGOG/o20Pw6w
+         wt2m62PIfrio5XT6zU4qpV4Oe73rEEFpFT2r+TYqGvNbLYcBP87TtBt6w2+VTHcLgbU8
+         nch+L+Y2b+WVfqd6heRHlD5EztRUys+I+t8VB4jJ1BKprrTFyiZ61bWTyOda2Cd8vRyy
+         lyWg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1687184541; x=1689776541;
+        h=mime-version:to:from:importance:in-reply-to:subject:date
+         :savedfromemail:message-id:x-gm-message-state:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=yPNxaIF/wceCRhtYKGg6SNXNG9XIxAWMdjMAD3Fy3DU=;
+        b=GzeSsc+RmED3mzEOZ5TckphcZnHvtACd9gc5bYL0B510XC6zTIZZpNMiarLtk4TN/y
+         BqBm94X0JlyH21XnMZ9FA+p6hNgmI8kU5nVbztwJLGphkSQD7EkZXDEaii2TcfCMjVUS
+         HQluow4WMN0X9agUT3wWboWYk6TAz32Nz1u1b4AFh0dUQOPTAJXnygtJ3yFAcUnzFghN
+         1aVBrFgiGI0EqaOOK/9Q6B2ZAmYLAOpHf9G/qHR7LBb1yuXNKy0MHqAoUqWXT39xU44v
+         bVgRZKNyPOprpOm7zhRQP9iTYB6ROIpNfbmyLJyTcQtZ7MhU2CyWdOH48zXuNRWp8d0C
+         MsLQ==
+X-Gm-Message-State: AC+VfDxY6zD07YwZ/oNwQbmGQv5JVRgKrCjXOHeGiwTJKQ/jkOYW6h2Q
+	3VSbYCGw1Qr5KRg1elsePfvt5CpuAMo=
+X-Google-Smtp-Source: ACHHUZ6mWtvWZAS+kv3YJxf3oM7GNTa6LHTj9v1Jzsyj4jWofU56MPKK1kJ7j+y70bTrOy/V5ceoWQ==
+X-Received: by 2002:a19:7712:0:b0:4f8:752f:371f with SMTP id s18-20020a197712000000b004f8752f371fmr959620lfc.51.1687184540744;
+        Mon, 19 Jun 2023 07:22:20 -0700 (PDT)
+Received: from [10.234.182.43] ([197.148.73.139])
+        by smtp.gmail.com with ESMTPSA id u9-20020a05600c00c900b003f9b0cfbe30sm3300000wmm.36.2023.06.19.07.22.19
+        for <contact@fiidewgal.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Mon, 19 Jun 2023 07:22:20 -0700 (PDT)
+Message-ID: <6490649c.050a0220.1a1b0.5bae@mx.google.com>
+SavedFromEmail: saifoulayehansagherediallo1991@gmail.com
+Date: Mon, 19 Jun 2023 14:23:11 +0000
+Subject: Re:
+In-Reply-To: <87c665a508ce32c3af03349962e00ad5@fiidewgal.com>
+Importance: normal
+From: saifoulayehansagherediallo1991
+ <saifoulayehansagherediallo1991@gmail.com>
+To: contact@fiidewgal.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="--_com.samsung.android.email_738014079378670"
+X-N0C-Node-IP: 185.221.182.45
+
+----_com.samsung.android.email_738014079378670
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: base64
+
+Vm90cmUgV2hhdHNBcHAgY2UgcXVlbCBudW3DqXJvwqBFbnZvecOpIGRlcHVpcyBtb24gYXBwYXJl
+aWwgR2FsYXh5Ci0tLS0tLS0tIE1lc3NhZ2UgZCdvcmlnaW5lIC0tLS0tLS0tRGUgOiBjb250YWN0
+QGZpaWRld2dhbC5jb20gRGF0ZSA6IDE4LzA2LzIwMjMgIDIyOjM2ICAoR01UKzAwOjAwKSDDgCA6
+IFNhaWZvdWxheWUgRGlhbGxvIDxzYWlmb3VsYXllaGFuc2FnaGVyZWRpYWxsbzE5OTFAZ21haWwu
+Y29tPiBPYmpldCA6IFJlOiBMZSAyMDIzLTA2LTE4IDA4OjA1LCBTYWlmb3VsYXllIERpYWxsbyBh
+IMOpY3JpdMKgOj4gQXNhbGFtb3UgYWxleWtvdW0gd2EgcmFtYXRvdWxheWUgR3VpbMOgIG1pIHdp
+bmRpIGthIGRlbnRhbCBmaWkgZGV3Z2FsPiBoYcOgIGRqb25pIG1pIGZhw6Btw6BsaSBoYXkgZm91
+eSBrYSBkZW50YWwgaGlsYcKgIGZhw6Bsw6AgaG91bXBpdMOgZMOpPiBrbyBmZXdkaSBnaMOgU2Fs
+YW0gYWxleWtvdW0gLCBjb250YWN0ZXogbW9pIHN1ciB3aGF0c2FwcCBvdSBzdXIgbGEgcGFnZSBm
+YWNlYm9vayB2b3VzIHNhdXJlei5NZXJjaSE=
+
+----_com.samsung.android.email_738014079378670
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: base64
+
+PGh0bWw+PGhlYWQ+PG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0
+L2h0bWw7IGNoYXJzZXQ9VVRGLTgiPjwvaGVhZD48Ym9keSBkaXI9ImF1dG8iPjxkaXYgZGlyPSJh
+dXRvIj5Wb3RyZSBXaGF0c0FwcCBjZSBxdWVsIG51bcOpcm8mbmJzcDs8L2Rpdj48ZGl2IGRpcj0i
+YXV0byI+PGJyPjwvZGl2PjxkaXYgZGlyPSJhdXRvIj48YnI+PC9kaXY+PGRpdiBkaXI9ImF1dG8i
+Pjxicj48L2Rpdj48ZGl2IGlkPSJjb21wb3Nlcl9zaWduYXR1cmUiIGRpcj0iYXV0byI+PGRpdiBz
+dHlsZT0iZm9udC1zaXplOjEycHg7Y29sb3I6IzU3NTc1NyIgZGlyPSJhdXRvIj5FbnZvecOpIGRl
+cHVpcyBtb24gYXBwYXJlaWwgR2FsYXh5PC9kaXY+PC9kaXY+PGRpdiBkaXI9ImF1dG8iPjxicj48
+L2Rpdj48ZGl2Pjxicj48L2Rpdj48ZGl2IGFsaWduPSJsZWZ0IiBkaXI9ImF1dG8iIHN0eWxlPSJm
+b250LXNpemU6MTAwJTtjb2xvcjojMDAwMDAwIj48ZGl2Pi0tLS0tLS0tIE1lc3NhZ2UgZCdvcmln
+aW5lIC0tLS0tLS0tPC9kaXY+PGRpdj5EZSA6IGNvbnRhY3RAZmlpZGV3Z2FsLmNvbSA8L2Rpdj48
+ZGl2PkRhdGUgOiAxOC8wNi8yMDIzICAyMjozNiAgKEdNVCswMDowMCkgPC9kaXY+PGRpdj7DgCA6
+IFNhaWZvdWxheWUgRGlhbGxvICZsdDtzYWlmb3VsYXllaGFuc2FnaGVyZWRpYWxsbzE5OTFAZ21h
+aWwuY29tJmd0OyA8L2Rpdj48ZGl2Pk9iamV0IDogUmU6IDwvZGl2PjxkaXY+PGJyPjwvZGl2Pjwv
+ZGl2PkxlIDIwMjMtMDYtMTggMDg6MDUsIFNhaWZvdWxheWUgRGlhbGxvIGEgw6ljcml0Jm5ic3A7
+Ojxicj4mZ3Q7IEFzYWxhbW91IGFsZXlrb3VtIHdhIHJhbWF0b3VsYXllIEd1aWzDoCBtaSB3aW5k
+aSBrYSBkZW50YWwgZmlpIGRld2dhbDxicj4mZ3Q7IGhhw6AgZGpvbmkgbWkgZmHDoG3DoGxpIGhh
+eSBmb3V5IGthIGRlbnRhbCBoaWxhJm5ic3A7IGZhw6Bsw6AgaG91bXBpdMOgZMOpPGJyPiZndDsg
+a28gZmV3ZGkgZ2jDoDxicj5TYWxhbSBhbGV5a291bSAsIGNvbnRhY3RleiBtb2kgc3VyIHdoYXRz
+YXBwIG91IHN1ciBsYSBwYWdlIGZhY2Vib29rIHZvdXMgPGJyPnNhdXJlei48YnI+TWVyY2khPGJy
+PjwvYm9keT48L2h0bWw+
+
+----_com.samsung.android.email_738014079378670--
+

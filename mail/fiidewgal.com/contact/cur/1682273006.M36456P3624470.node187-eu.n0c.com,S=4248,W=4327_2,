@@ -1,0 +1,79 @@
+Return-Path: <mamadoudiandian581@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id loMZAu5yRWQWTjcA3R2AvA
+	(envelope-from <mamadoudiandian581@gmail.com>)
+	for <contact@fiidewgal.com>; Sun, 23 Apr 2023 20:03:26 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Q4GMx6R7Sz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="rxPGQMbU"
+X-N0C-MailScanner-eFa-Watermark: 1682877795.78667@CIbJR0UfsNLOAyzg2vvAQQ
+X-N0C-MailScanner-eFa-From: mamadoudiandian581@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: sss
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 230EA404921B.AAB65
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ed1-f41.google.com ([209.85.208.41] [209.85.208.41])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 230EA404921B
+	for <contact@fiidewgal.com>; Sun, 23 Apr 2023 20:02:44 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 230EA404921B
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 230EA404921B
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=rxPGQMbU
+Received: by mail-ed1-f41.google.com with SMTP id 4fb4d7f45d1cf-5067716f9e7so885189a12.0
+        for <contact@fiidewgal.com>; Sun, 23 Apr 2023 11:02:44 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1682272963; x=1684864963;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=skEx8U2UjBfZJjvB+9uMV0lY1ezLMd6KX0l4ZOGvpxA=;
+        b=rxPGQMbUg0dAEBKRROAWGnhhQh1yv/6CAL+hWfzHVGjvO4wg5EEnqaYeaAzV5vFqPS
+         pef6hr6vU9PQHJ3/0NiMnvjY3k31/f6fx+8mM3QlvPhybJ0ky2m2MqrVEUuxr/Y6dLzT
+         C35BZvDg0MjPdMDd2AfgcQD/fwKw06iw6r60fVuCXWt8ytqWw9gHguqXIhVLRPfq1ROa
+         jH47th/LSWqiGmd5WQSobVXwAaffP1ShfDoj47pHALMjMqMH/hn+1bregtFxcMQQmps1
+         R6zHwROZjBg6BtLEQmEXgC+HmLmaTYR8omyhO1QoEXqT1YLlZrovpOOiA/SUjUwIxABm
+         eWSQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1682272963; x=1684864963;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=skEx8U2UjBfZJjvB+9uMV0lY1ezLMd6KX0l4ZOGvpxA=;
+        b=V/my2PnlVZ9MYYXxx3jMl/lKOuw/QWMrPs2zoYZyJIPtyKG6x2aQhOlsS8Xw7nKVBY
+         Vz+f9dr18unbMGV1gnxcknQa8/Bm2tq+wGE85rr8F+bBzLfki0WjeOLes8g2Rmle6yE1
+         fLdxEXJ7y9znbjlioiMfGyri4h8nRCXA9apzcrhVyLHhZK00iP/IfsAEGZWZB0nYpqQs
+         GFSie6RMUnI4RFHA5ApPZRh9eTkewsqDG6xKKLgaGedD919FnK2LgP1QO9l5KZp3zI9P
+         yGjCcVWIPCBcnukqVyItVaDrCTUgOABLrn96uSaXby+n4vdqS7TJ+Ty2kNtqakOGjVnC
+         bIUw==
+X-Gm-Message-State: AAQBX9fQEkC+7bykZSpG4jNherTRE1qD+dOmIOq20I5EWrnNkyXcmbsY
+	iqmb0xST5ZZxD+nY1TnfglbSfnT6bMvBpex0kgJtJvfb
+X-Google-Smtp-Source: AKy350ZBuv75uqTgBLRUnldMn4lgN5SuD5YpnLcyynBd2+EmSDNJKR0Xy0zOtE5JoPfRl7udBJ3hLpN9Xl1TfCOHurg=
+X-Received: by 2002:a05:6402:3494:b0:4bb:afe3:e0a with SMTP id
+ v20-20020a056402349400b004bbafe30e0amr11691573edc.3.1682272963064; Sun, 23
+ Apr 2023 11:02:43 -0700 (PDT)
+MIME-Version: 1.0
+From: Mamadou Dian Dian <mamadoudiandian581@gmail.com>
+Date: Sun, 23 Apr 2023 13:13:39 +0100
+Message-ID: <CAEfbsCVdomf8z+2UQHk+nvNSJvSD3a6L=oxNob_hXg7h2v7-Bg@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000060f82905fa04b2d7"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000060f82905fa04b2d7
+Content-Type: text/plain; charset="UTF-8"
+
+Salut
+
+--00000000000060f82905fa04b2d7
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Salut=C2=A0</div>
+
+--00000000000060f82905fa04b2d7--

@@ -1,0 +1,30 @@
+Return-Path: <contact@fiidewgal.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id RoBiDeBWY2GvGzcA3R2AvA
+	(envelope-from <contact@fiidewgal.com>)
+	for <contact@fiidewgal.com>; Sun, 10 Oct 2021 23:10:56 +0200
+Received: by node187-eu.n0c.com (Postfix, from userid 1028)
+	id 30983401C059; Sun, 10 Oct 2021 17:10:56 -0400 (EDT)
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 30983401C059
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1633900256;
+	bh=8e0Ri+xVwoZMQpSYQ4CtUpQ0Vq23xLa5Nh5K7a7sGgQ=;
+	h=Date:Subject:From:To:From;
+	b=c7y0Q1vf1Y2ZVnA8igBBGWst16qy8t77Msvzeij828nbGxUjQcKWlbFScOBoZdJKr
+	 qJRIp8PcFtHKQztv7hk/x24bL4HkOwINfJIjZmG/aJRwGKy75cx6MCJqSx00Cl4mEk
+	 XOuulptYqhhp2tjelsFbC6RglptV/HYEgKCSeL30=
+Received: from fiidewgal.com (localhost [127.0.0.1])
+	by node187-eu.n0c.com (Postfix) with SMTP id 2DEB0483790D
+	for <contact@fiidewgal.com>; Sun, 10 Oct 2021 23:10:56 +0200 (CEST)
+Message-ID: <3ee84cb5a8e39a433cac164cdf8dab83@fiidewgal.com>
+Date: Sun, 10 Oct 2021 23:10:56 +0200
+Subject: SMTP Test
+From: contact@fiidewgal.com
+To: contact@fiidewgal.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+This is a test email.

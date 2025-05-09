@@ -1,0 +1,78 @@
+Return-Path: <ibret0969@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id l9JQHQpqo2NPmy4A3R2AvA
+	(envelope-from <ibret0969@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 21 Dec 2022 21:18:18 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NclBL2Zmsz34SDmh
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="Yian8TXK"
+X-N0C-MailScanner-eFa-Watermark: 1672258695.84607@s+/8hHoZi3QciFP8JFJ5rQ
+X-N0C-MailScanner-eFa-From: ibret0969@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 51ADE401AEF7.AF12C
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-pj1-f48.google.com ([209.85.216.48] [209.85.216.48])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 51ADE401AEF7
+	for <contact@fiidewgal.com>; Wed, 21 Dec 2022 21:17:42 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 51ADE401AEF7
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 51ADE401AEF7
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=Yian8TXK
+Received: by mail-pj1-f48.google.com with SMTP id u15-20020a17090a3fcf00b002191825cf02so3199317pjm.2
+        for <contact@fiidewgal.com>; Wed, 21 Dec 2022 12:17:42 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=48FcXMdH/kda0VQ1+KN0rQog0qCrYzGYG/SOlE4F5U0=;
+        b=Yian8TXKCAp7hZpNvwKsWQ+7jWBh5dI1T6ojtF8hWnSR6TvY8TrN5L8rcnns9I60Yd
+         YWbKFazpZGGPKI6WD5l+UjpvKHnDhRT3zKnrMvfAl7UCLQM2oC7UF1JCr+54yuRL29j3
+         l4w+GNLn500Dm0ynwYnj5uFJY5i/asdIdaZkN8VJni1Wzdj38a9Dz+p32R6GU68BTN7F
+         cXquDPsRHpnjc4blTqLdmEQvsqPXSRd1c/Dl6CktE8Sz/wn2dAhEQdBKlezSaz9YhxR4
+         AlSj3FkJ/AHu/iAc/rC/aDWJUDE+M9hQqo4uJQs3VjYfO5tPKv9hRewUi8SVLhZofEhR
+         ALzQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=48FcXMdH/kda0VQ1+KN0rQog0qCrYzGYG/SOlE4F5U0=;
+        b=xFSQUU0axIiL//8sMZzKUBJk5lZMX1QnjFYqLbcdBp4AHYd3uPqapjHzeB5V4ox+lI
+         jrLf+6ZBtIMyxPkJWI2VpOv6eLBRktaFKBcUXoWYGKG4yxfdLkcZL/IDoSFBuMSZtUPj
+         eMwCt1WCk7Rn8Yw61pUZDeSLDbLYdOfHe/IFnL0p5d7OnSEUtkvWxppkUKdZb+6yCWCA
+         iWCwSW/AYK6XfPOTgVmMPh1ZNm241wA42+UF64wFUYOr6dEK6ENuGsXrdAKgzAqwCbe/
+         4bIVr7iSYR+hzgHryl9N8/2A5PaxePGyNHhQwtc2kofWTR8TDqUM8BKMHT2BdFOnA86B
+         rdXg==
+X-Gm-Message-State: AFqh2kpQ7p3gE3mR0/N2tQNUrFOGc3s2tyEegs1OwLA3uVRfcinXOmcy
+	KkX27GJIee3UM4svXm8nfhpbq1AQiaShq2JRUnCYcgsK
+X-Google-Smtp-Source: AMrXdXvTiOHwp9nkPquUeyK/Ofdsy/wWBJhbUqCO15PJ9VMY1Octv0ZAU7eryV4lNiu9WsK6BZ97dMUctBrvKe319xQ=
+X-Received: by 2002:a17:902:ef46:b0:179:f88b:f288 with SMTP id
+ e6-20020a170902ef4600b00179f88bf288mr255631plx.44.1671653859927; Wed, 21 Dec
+ 2022 12:17:39 -0800 (PST)
+MIME-Version: 1.0
+From: Bongo kandia <ibret0969@gmail.com>
+Date: Wed, 21 Dec 2022 21:17:25 +0100
+Message-ID: <CAEpWa84sYb3JcyPfmDnLe5ZvXbVfAnW6Jkn+PnydRwRy5aLyFQ@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000822ada05f05c3ed7"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000822ada05f05c3ed7
+Content-Type: text/plain; charset="UTF-8"
+
+Bonsoir j'ai m'appele Ibrahima Diallo
+
+--000000000000822ada05f05c3ed7
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Bonsoir j&#39;ai m&#39;appele Ibrahima Diallo=C2=A0</div>
+
+--000000000000822ada05f05c3ed7--

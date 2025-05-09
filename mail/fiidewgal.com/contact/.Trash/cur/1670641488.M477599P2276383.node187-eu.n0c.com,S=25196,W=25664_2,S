@@ -1,0 +1,468 @@
+Return-Path: <>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 4FFhHFD3k2MfvCIA3R2AvA
+	(envelope-from <>)
+	for <contact@fiidewgal.com>; Sat, 10 Dec 2022 04:04:48 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NTXmw2c5Pz34SDn1
+X-N0C-MailScanner-eFa-Watermark: 1671246279.21151@NbLTgl4SE59Jw4dKYXnyRw
+X-N0C-MailScanner-eFa-From: 
+X-N0C-MailScanner-eFa-SpamScore: s
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: F28F2401AEF6.AB4A6
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from EUR05-AM6-obe.outbound.protection.outlook.com ([40.92.91.92] [40.92.91.92])
+	(using TLSv1.2 with cipher ECDHE-ECDSA-AES256-GCM-SHA384 (256/256 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id F28F2401AEF6
+	for <contact@fiidewgal.com>; Sat, 10 Dec 2022 04:04:37 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com F28F2401AEF6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=outlook.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.helo=EUR05-AM6-obe.outbound.protection.outlook.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com F28F2401AEF6
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=bZoQzbpV7utCTpuGfttjNx8iB//ju+cT//LbapUAXjBVtaFX7MBrK5nTCj6NTxbe4FbBbfGRQXmE3I5osM4lyERA1X8iD1FGCuf8dtqm3O4CXw2lsx0RZNnuSyUgf98hk7PElQV9J7tk9eUQj8mRrvDMgPA5jc6VTvyVJXmnTUzr/EB6iHVWthaK10Nvh6hMfd5rl7sPIrhPYMsHKFm3Lw82u05Hg8LPe3/Ub4ZquAysQdLHabPWtO1jXO6jJsDGjmOB9bNoAs5AGL/wZI9H02DJLpLqDuN4W+RBZ7T4qgkpkA2yz3WeiBG2QzREXzp5XAyXYAgpy/u7MoOBzKmW4Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=0rplaE0hst6arZoqco6WZ6YCmmj/Qe/oytM4+TA8LNI=;
+ b=lLbHN+OX8beTxfXdOVpnKg3l5jrec4ioM7pYdDMD/Bo2eHnn4oe1/Dp8fVuZTEX+pM0F1/iPCijycWWFzf5PNMlonR16bVEZI1o6agVkHEdyz/GRfiNNcZFUzmx8HrWfIwa+S1vFInG8gcBug+SpKIn4iwBszBn5INs6UqhZnt+e14/ovhTXiRMNHZpd8eCIuopMh1cLKTRbmUkgSDuYg2MCtLgBupmLyPc53nysHGRKBA75lpouDitFw05WD+56R1+Mtnj1fzzKd5JwBoU5Symw23Q10n/F7zodZ/eqdWTvfrI9kgjGbqSXBUrmySZEEzgL/9ltbb/9qAzwzC55Bg==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+MIME-Version: 1.0
+From: <postmaster@outlook.com>
+To: <contact@fiidewgal.com>
+Date: Sat, 10 Dec 2022 03:04:33 +0000
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="a43ea87e-8298-479a-8df6-47d8a57db96c"
+X-MS-Exchange-Message-Is-Ndr: 
+Content-Language: en-US
+Message-ID: 
+ <c52bae8d-8206-4f7f-b6b2-e6c761542513@AS8PR08MB7696.eurprd08.prod.outlook.com>
+In-Reply-To: <e6731056a99ff4ba03351d3cc380afb1@www.fiidewgal.com>
+References: <e6731056a99ff4ba03351d3cc380afb1@www.fiidewgal.com>
+Subject: Undeliverable: Informations
+Auto-Submitted: auto-replied
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: AS8PR08MB7696:EE_
+X-Microsoft-Antispam: BCL:0;
+X-Microsoft-Antispam-Message-Info: 
+	Q7G0j3tE2E8xAc9ryx2DCusqYLct/w5K7nbyBVFmCo/y4ZxlJ4ifgcR7PtQjvBxYbR1kVd+xXb1NeSpISHtKWTXhRf4wQczokBhw2e/Lzc96XDh/7ky/TRjuddyCe/fUw2axdBOSWOKYHrMhY2kG9jI2OAU5HHNdIVeOPv21VS7kpiBVjU6G6Z8EScUYCrF+b6pEBxUoDWoQ5CyTK1PE06gcLKc5eEcBYAaeaZluWHmw1BW/ZB1WjTjtYr98ieLrT8IaXd6rGB+6RJNstq59iEEjPryusb5eddvSruZderEiU/eHmCkPza82kzZIjZTXykdhHp7i0/l7GVNbFfkFibFzmoTctS91EWxdnK29kAVFhJ30MxeuAFaZG5fBux4Gu4ub7xmP1rdRju1r7sWFj01yIkMG/TYOS3FFDjoMSikiQpePfh1PgcQohUMXsOFaXVR1gfWP1s+yMzejnJhl6Vm7YEFTgDw8XqGJhRPWct8vMekJRR7U8k3adPtqCiesbMYUo7Mcd/38rkZcPtp6p5NCneIu0vwYX5IQOKA0rOFRvLzloyelD/vKHccq/PQACpTrFGuISrDJKwVGf52rBl02IHD2td34eDcZ/OuuN+Oys2txeksGtZjgG0qFlaXf5MFFqnLwOQA8OxsuoKMcn9msy4LhrJzNoMoZHqKdBjrwcAJ8FFWSbCfTWuJs2gGG
+X-MS-Exchange-AntiSpam-MessageData-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-0: 
+	VyW0FH3OOSRsF4iPgSvZEZidPnmI8k1IuwAF//knnBCJQaYh0K5C+CeeV4tt0OGs3PWIOdF6HBikryDMZ9dBsyXyzncQ6Ovvw7EsBtrFXxtNtWZOr99dytvMQsPuDyuDWxytYvfOKNgfiR8VNKHd4wgrcHFJ5X4Y1qH12Q9wrdFKBhiy5D77LAed59iw59NH
+X-OriginatorOrg: outlook.com
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 10 Dec 2022 03:04:33.9999
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-AuthSource: AS8PR08MB7696.eurprd08.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+	6c334843-1726-4f20-cba0-08dada5b43c1
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AS8PR08MB7696
+X-N0C-Node-IP: 185.221.182.45
+
+--a43ea87e-8298-479a-8df6-47d8a57db96c
+Content-Type: multipart/alternative; differences=Content-Type;
+	boundary="2a9b4cce-cd6d-4530-a08c-b12d2e99ee7c"
+
+--2a9b4cce-cd6d-4530-a08c-b12d2e99ee7c
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Delivery has failed to these recipients or groups:
+
+bou.sdt@hotmail.fr<mailto:bou.sdt@hotmail.fr>
+A communication failure occurred during the delivery of this message. Pleas=
+e try to resend the message later. If the problem continues, contact your e=
+mail admin.
+
+
+
+
+
+
+
+
+Diagnostic information for administrators:
+
+Generating server: AS8PR08MB7696.eurprd08.prod.outlook.com
+
+bou.sdt@hotmail.fr
+Remote Server returned '550 5.5.0 Requested action not taken: mailbox unava=
+ilable.'
+
+Original message headers:
+
+Received: from DB6PR0801CA0049.eurprd08.prod.outlook.com (2603:10a6:4:2b::1=
+7)
+ by AS8PR08MB7696.eurprd08.prod.outlook.com (2603:10a6:20b:523::11) with
+ Microsoft SMTP Server (version=3DTLS1_2,
+ cipher=3DTLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5924.6; Sat, 10 D=
+ec
+ 2022 03:04:33 +0000
+Received: from DB8EUR06FT047.eop-eur06.prod.protection.outlook.com
+ (2603:10a6:4:2b:cafe::f5) by DB6PR0801CA0049.outlook.office365.com
+ (2603:10a6:4:2b::17) with Microsoft SMTP Server (version=3DTLS1_2,
+ cipher=3DTLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5880.14 via Front=
+end
+ Transport; Sat, 10 Dec 2022 03:04:33 +0000
+Authentication-Results: spf=3Dpass (sender IP is 185.221.182.45)
+ smtp.mailfrom=3Dfiidewgal.com; dkim=3Dpass (signature was verified)
+ header.d=3Dfiidewgal.com;dmarc=3Dpass action=3Dnone header.from=3Dfiidewga=
+l.com;
+Received-SPF: Pass (protection.outlook.com: domain of fiidewgal.com designa=
+tes
+ 185.221.182.45 as permitted sender) receiver=3Dprotection.outlook.com;
+ client-ip=3D185.221.182.45; helo=3Dnode187-eu.n0c.com; pr=3DC
+Received: from node187-eu.n0c.com (185.221.182.45) by
+ DB8EUR06FT047.mail.protection.outlook.com (10.233.252.77) with Microsoft S=
+MTP
+ Server (version=3DTLS1_2, cipher=3DTLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) =
+id
+ 15.20.5901.17 via Frontend Transport; Sat, 10 Dec 2022 03:04:33 +0000
+X-IncomingTopHeaderMarker: OriginalChecksum:2F3B44B18A341419EE109DE69B28A13=
+81FDE4BEF58C8C58870D5913DD6285512;UpperCasedChecksum:0079CBF508319F45BE785B=
+9CEEF0ACDCC57EA4AC351BE95E6D7825795437A099;SizeAsReceived:1895;Count:23
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NTXmc6W96z34SDn=
+2
+Authentication-Results-Original: mailfilter-eu.n0c.com; dkim=3Dpass (1024-b=
+it
+ key) header.d=3Dfiidewgal.com header.i=3D@fiidewgal.com header.b=3D"JGK8AH=
+OB"
+X-N0C-MailScanner-eFa-Watermark: 1671246242.55494@6pb17Ld7XxmaDYNjH6AMXw
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: C2F3F401AEEF.A7450
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from www.fiidewgal.com ([185.221.182.45] [185.221.182.45])
+        (using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+        (no client certificate requested)       (Authenticated sender: cont=
+act@fiidewgal.com)
+        by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id C2F3F401=
+AEEF
+        for <bou.sdt@hotmail.fr>; Sat, 10 Dec 2022 04:03:55 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com C2F3F401AEEF
+Authentication-Results-Original: node187-eu.n0c.com; dmarc=3Dpass (p=3Dnone
+ dis=3Dnone) header.from=3Dfiidewgal.com
+Authentication-Results-Original: node187-eu.n0c.com; spf=3Dpass
+ smtp.mailfrom=3Dfiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com C2F3F401AEEF
+DKIM-Signature: v=3D1; a=3Drsa-sha256; c=3Drelaxed/relaxed; d=3Dfiidewgal.c=
+om;
+        s=3Ddefault; t=3D1670641435;
+        bh=3Dsx6oEeu1AvQz0zwDdMW9CkdXMBjwTClcyqzWzonBDxs=3D;
+        h=3DDate:Subject:From:To:From;
+        b=3DJGK8AHOBS5a/5HkmsmQh6QqBW/Co7RUS7jltAEkKnD6RAfJTAO2yqka+D+aKuuJ=
+G/
+         RB224b5xkMgnFOVEpvU3fjro3+tPR2qrc41RFYU8njwRUITqj4DTfn2VyQOLuHG/cs
+         5Ao9dhei0p8jtzXrAnlcSWcs+Dy/RZ5lRLuzG9ck=3D
+Message-ID: <e6731056a99ff4ba03351d3cc380afb1@www.fiidewgal.com>
+Date: Sat, 10 Dec 2022 04:03:55 +0100
+Subject: Informations
+From: contact@fiidewgal.com
+To: bou.sdt@hotmail.fr
+MIME-Version: 1.0
+Content-Type: text/html; charset=3Dutf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+X-IncomingHeaderCount: 23
+Return-Path: contact@fiidewgal.com
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: DB8EUR06FT047:EE_|AS8PR08MB7696:EE_
+X-MS-Office365-Filtering-Correlation-Id: 326dd114-7fa7-4f3e-9462-08dada5b43=
+5e
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 185.221.182.45
+X-SID-PRA: CONTACT@FIIDEWGAL.COM
+X-SID-Result: PASS
+X-Microsoft-Antispam: BCL:0;
+X-Microsoft-Antispam-Message-Info:
+        E+aiGRVuom92+Z4atdJvg6eYA6iROptLKpptbk6DZVPC+UqJRzlTRtZ+bk0xJsXCHof=
+7oPeYHJ8vT6ytjrZjNDlBDQSbV+2aqZIVjEvPNgs+rFXLS0D2lvN1z2nqpi8myYNk7W19yafIYS=
+JbVSOEYCIe3Nyq+vq9zXt8XFy5wvRyjFz3Jpq/QFxNtutQdxhFOewVQS4fmzEWo23H5jO62FFN2=
+7z83WpvM5Ctww4bqz8QnIkNlEsANMjWkQjvR8o7c6bj3nx5L7QQxFVXkpUg65zgyZ0nZ1xp194k=
+9Vu9RNNqeAW5wW1jZWzbQ8dyXTr9t2VCy8YKU7sFtgq0KqILJddkTt1qFK/nIRbf2IfTjjjVPET=
+akgOYeAR9jOyZW73NvXFFikT1XNLg52lN9C4XU5grFwp/0+4sLIAr6Ga2bt9ZgOT8oW0z8ThUkn=
+Gull4hrrKPWZ3GNT7n8g1bNOvrmng8muMoWliRgZz6ONZJ2jwn+7QV5gbkMIC4zmpPr83rXM8Bg=
+pRRf999ZNaJSRgZHRmk39ce46f1QJ8KNGKgXxecM6AxoHROF/VxSD6A/+fz4SWTtprQIGr91xMG=
+3t4lPdbr6bfc7fahOzDjMzgzWtGx96Vm7z7EOzO4gKLJJwhQV53NJqJ0v5F63D1lD+6zCNwE1b+=
+Q8MzxNChY3up4zNBgQSOk5o8ZCKvkz9X3/9aBsxOZsOA9opaO+r11Tvuhcb1qA6MouZOPU5BJod=
+rSG1+JLpMinTwUOyeA3RKhDMO40EB6pyqpgZzhbZA6Pw5+y4sX3kZR/jYDxYFZcEU3bqJLfEkc2=
+iUuLcspTnq7Ghjs
+
+
+--2a9b4cce-cd6d-4530-a08c-b12d2e99ee7c
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<Head></head><body>
+<p><b><font color=3D"#000066" size=3D"3" face=3D"Arial">Delivery has failed=
+ to these recipients or groups:</font></b></p>
+<font color=3D"#000000" size=3D"2" face=3D"Tahoma"><p><a href=3D"mailto:bou=
+.sdt@hotmail.fr">bou.sdt@hotmail.fr</a><br>
+</font>
+<font color=3D"#000000" size=3D"3" face=3D"Arial">A communication failure o=
+ccurred during the delivery of this message. Please try to resend the messa=
+ge later. If the problem continues, contact your email admin.<br>
+</font>
+<font color=3D"#000000" size=3D"2" face=3D"Tahoma"><br>
+</p>
+</font>
+<br><br><br><br><br><br>
+<font color=3D"#808080" size=3D"2" face=3D"Tahoma"><p><b>Diagnostic informa=
+tion for administrators:</b></p>
+<p>Generating server: AS8PR08MB7696.eurprd08.prod.outlook.com<br>
+</p>
+<p>bou.sdt@hotmail.fr<br>
+Remote Server  returned '550 5.5.0 Requested action not taken: mailbox unav=
+ailable.'<br>
+</p>
+<p>Original message headers:</p>
+<pre>Received: from DB6PR0801CA0049.eurprd08.prod.outlook.com (2603:10a6:4:=
+2b::17)
+ by AS8PR08MB7696.eurprd08.prod.outlook.com (2603:10a6:20b:523::11) with
+ Microsoft SMTP Server (version=3DTLS1_2,
+ cipher=3DTLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5924.6; Sat, 10 D=
+ec
+ 2022 03:04:33 +0000
+Received: from DB8EUR06FT047.eop-eur06.prod.protection.outlook.com
+ (2603:10a6:4:2b:cafe::f5) by DB6PR0801CA0049.outlook.office365.com
+ (2603:10a6:4:2b::17) with Microsoft SMTP Server (version=3DTLS1_2,
+ cipher=3DTLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5880.14 via Front=
+end
+ Transport; Sat, 10 Dec 2022 03:04:33 +0000
+Authentication-Results: spf=3Dpass (sender IP is 185.221.182.45)
+ smtp.mailfrom=3Dfiidewgal.com; dkim=3Dpass (signature was verified)
+ header.d=3Dfiidewgal.com;dmarc=3Dpass action=3Dnone header.from=3Dfiidewga=
+l.com;
+Received-SPF: Pass (protection.outlook.com: domain of fiidewgal.com designa=
+tes
+ 185.221.182.45 as permitted sender) receiver=3Dprotection.outlook.com;
+ client-ip=3D185.221.182.45; helo=3Dnode187-eu.n0c.com; pr=3DC
+Received: from node187-eu.n0c.com (185.221.182.45) by
+ DB8EUR06FT047.mail.protection.outlook.com (10.233.252.77) with Microsoft S=
+MTP
+ Server (version=3DTLS1_2, cipher=3DTLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) =
+id
+ 15.20.5901.17 via Frontend Transport; Sat, 10 Dec 2022 03:04:33 +0000
+X-IncomingTopHeaderMarker: OriginalChecksum:2F3B44B18A341419EE109DE69B28A13=
+81FDE4BEF58C8C58870D5913DD6285512;UpperCasedChecksum:0079CBF508319F45BE785B=
+9CEEF0ACDCC57EA4AC351BE95E6D7825795437A099;SizeAsReceived:1895;Count:23
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NTXmc6W96z34SDn=
+2
+Authentication-Results-Original: mailfilter-eu.n0c.com;	dkim=3Dpass (1024-b=
+it
+ key) header.d=3Dfiidewgal.com header.i=3D@fiidewgal.com header.b=3D&quot;J=
+GK8AHOB&quot;
+X-N0C-MailScanner-eFa-Watermark: 1671246242.55494@6pb17Ld7XxmaDYNjH6AMXw
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: C2F3F401AEEF.A7450
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from www.fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal=
+.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id C2F3F401AEEF
+	for &lt;bou.sdt@hotmail.fr&gt;; Sat, 10 Dec 2022 04:03:55 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com C2F3F401AEEF
+Authentication-Results-Original: node187-eu.n0c.com; dmarc=3Dpass (p=3Dnone
+ dis=3Dnone) header.from=3Dfiidewgal.com
+Authentication-Results-Original: node187-eu.n0c.com; spf=3Dpass
+ smtp.mailfrom=3Dfiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com C2F3F401AEEF
+DKIM-Signature: v=3D1; a=3Drsa-sha256; c=3Drelaxed/relaxed; d=3Dfiidewgal.c=
+om;
+	s=3Ddefault; t=3D1670641435;
+	bh=3Dsx6oEeu1AvQz0zwDdMW9CkdXMBjwTClcyqzWzonBDxs=3D;
+	h=3DDate:Subject:From:To:From;
+	b=3DJGK8AHOBS5a/5HkmsmQh6QqBW/Co7RUS7jltAEkKnD6RAfJTAO2yqka+D+aKuuJG/
+	 RB224b5xkMgnFOVEpvU3fjro3+tPR2qrc41RFYU8njwRUITqj4DTfn2VyQOLuHG/cs
+	 5Ao9dhei0p8jtzXrAnlcSWcs+Dy/RZ5lRLuzG9ck=3D
+Message-ID: &lt;e6731056a99ff4ba03351d3cc380afb1@www.fiidewgal.com&gt;
+Date: Sat, 10 Dec 2022 04:03:55 +0100
+Subject: Informations
+From: contact@fiidewgal.com
+To: bou.sdt@hotmail.fr
+MIME-Version: 1.0
+Content-Type: text/html; charset=3Dutf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+X-IncomingHeaderCount: 23
+Return-Path: contact@fiidewgal.com
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: DB8EUR06FT047:EE_|AS8PR08MB7696:EE_
+X-MS-Office365-Filtering-Correlation-Id: 326dd114-7fa7-4f3e-9462-08dada5b43=
+5e
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 185.221.182.45
+X-SID-PRA: CONTACT@FIIDEWGAL.COM
+X-SID-Result: PASS
+X-Microsoft-Antispam: BCL:0;
+X-Microsoft-Antispam-Message-Info:
+	E+aiGRVuom92+Z4atdJvg6eYA6iROptLKpptbk6DZVPC+UqJRzlTRtZ+bk0xJsXCHof7oPeYHJ=
+8vT6ytjrZjNDlBDQSbV+2aqZIVjEvPNgs+rFXLS0D2lvN1z2nqpi8myYNk7W19yafIYSJbVSOEY=
+CIe3Nyq+vq9zXt8XFy5wvRyjFz3Jpq/QFxNtutQdxhFOewVQS4fmzEWo23H5jO62FFN27z83Wpv=
+M5Ctww4bqz8QnIkNlEsANMjWkQjvR8o7c6bj3nx5L7QQxFVXkpUg65zgyZ0nZ1xp194k9Vu9RNN=
+qeAW5wW1jZWzbQ8dyXTr9t2VCy8YKU7sFtgq0KqILJddkTt1qFK/nIRbf2IfTjjjVPETakgOYeA=
+R9jOyZW73NvXFFikT1XNLg52lN9C4XU5grFwp/0+4sLIAr6Ga2bt9ZgOT8oW0z8ThUknGull4hr=
+rKPWZ3GNT7n8g1bNOvrmng8muMoWliRgZz6ONZJ2jwn+7QV5gbkMIC4zmpPr83rXM8BgpRRf999=
+ZNaJSRgZHRmk39ce46f1QJ8KNGKgXxecM6AxoHROF/VxSD6A/+fz4SWTtprQIGr91xMG3t4lPdb=
+r6bfc7fahOzDjMzgzWtGx96Vm7z7EOzO4gKLJJwhQV53NJqJ0v5F63D1lD+6zCNwE1b+Q8MzxNC=
+hY3up4zNBgQSOk5o8ZCKvkz9X3/9aBsxOZsOA9opaO+r11Tvuhcb1qA6MouZOPU5BJodrSG1+JL=
+pMinTwUOyeA3RKhDMO40EB6pyqpgZzhbZA6Pw5+y4sX3kZR/jYDxYFZcEU3bqJLfEkc2iUuLcsp=
+Tnq7Ghjs
+</pre>
+</font>
+</body>
+</html>=
+
+--2a9b4cce-cd6d-4530-a08c-b12d2e99ee7c--
+
+--a43ea87e-8298-479a-8df6-47d8a57db96c
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns;AS8PR08MB7696.eurprd08.prod.outlook.com
+Received-From-MTA: dns;node187-eu.n0c.com
+Arrival-Date: Sat, 10 Dec 2022 03:04:33 +0000
+
+Original-Recipient: rfc822;bou.sdt@hotmail.fr
+Final-Recipient: rfc822;bou.sdt@hotmail.fr
+Action: failed
+Status: 5.5.0
+Diagnostic-Code: smtp;550 5.5.0 Requested action not taken: mailbox unavailable.
+
+
+--a43ea87e-8298-479a-8df6-47d8a57db96c
+Content-Type: message/rfc822
+
+Received: from DB6PR0801CA0049.eurprd08.prod.outlook.com (2603:10a6:4:2b::17)
+ by AS8PR08MB7696.eurprd08.prod.outlook.com (2603:10a6:20b:523::11) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5924.6; Sat, 10 Dec
+ 2022 03:04:33 +0000
+Received: from DB8EUR06FT047.eop-eur06.prod.protection.outlook.com
+ (2603:10a6:4:2b:cafe::f5) by DB6PR0801CA0049.outlook.office365.com
+ (2603:10a6:4:2b::17) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5880.14 via Frontend
+ Transport; Sat, 10 Dec 2022 03:04:33 +0000
+Authentication-Results: spf=pass (sender IP is 185.221.182.45)
+ smtp.mailfrom=fiidewgal.com; dkim=pass (signature was verified)
+ header.d=fiidewgal.com;dmarc=pass action=none header.from=fiidewgal.com;
+Received-SPF: Pass (protection.outlook.com: domain of fiidewgal.com designates
+ 185.221.182.45 as permitted sender) receiver=protection.outlook.com;
+ client-ip=185.221.182.45; helo=node187-eu.n0c.com; pr=C
+Received: from node187-eu.n0c.com (185.221.182.45) by
+ DB8EUR06FT047.mail.protection.outlook.com (10.233.252.77) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.5901.17 via Frontend Transport; Sat, 10 Dec 2022 03:04:33 +0000
+X-IncomingTopHeaderMarker: OriginalChecksum:2F3B44B18A341419EE109DE69B28A1381FDE4BEF58C8C58870D5913DD6285512;UpperCasedChecksum:0079CBF508319F45BE785B9CEEF0ACDCC57EA4AC351BE95E6D7825795437A099;SizeAsReceived:1895;Count:23
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NTXmc6W96z34SDn2
+Authentication-Results-Original: mailfilter-eu.n0c.com;	dkim=pass (1024-bit
+ key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="JGK8AHOB"
+X-N0C-MailScanner-eFa-Watermark: 1671246242.55494@6pb17Ld7XxmaDYNjH6AMXw
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: C2F3F401AEEF.A7450
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from www.fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id C2F3F401AEEF
+	for <bou.sdt@hotmail.fr>; Sat, 10 Dec 2022 04:03:55 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com C2F3F401AEEF
+Authentication-Results-Original: node187-eu.n0c.com; dmarc=pass (p=none
+ dis=none) header.from=fiidewgal.com
+Authentication-Results-Original: node187-eu.n0c.com; spf=pass
+ smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com C2F3F401AEEF
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1670641435;
+	bh=sx6oEeu1AvQz0zwDdMW9CkdXMBjwTClcyqzWzonBDxs=;
+	h=Date:Subject:From:To:From;
+	b=JGK8AHOBS5a/5HkmsmQh6QqBW/Co7RUS7jltAEkKnD6RAfJTAO2yqka+D+aKuuJG/
+	 RB224b5xkMgnFOVEpvU3fjro3+tPR2qrc41RFYU8njwRUITqj4DTfn2VyQOLuHG/cs
+	 5Ao9dhei0p8jtzXrAnlcSWcs+Dy/RZ5lRLuzG9ck=
+Message-ID: <e6731056a99ff4ba03351d3cc380afb1@www.fiidewgal.com>
+Date: Sat, 10 Dec 2022 04:03:55 +0100
+Subject: Informations
+From: contact@fiidewgal.com
+To: bou.sdt@hotmail.fr
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+X-IncomingHeaderCount: 23
+Return-Path: contact@fiidewgal.com
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: DB8EUR06FT047:EE_|AS8PR08MB7696:EE_
+X-MS-Office365-Filtering-Correlation-Id: 326dd114-7fa7-4f3e-9462-08dada5b435e
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 185.221.182.45
+X-SID-PRA: CONTACT@FIIDEWGAL.COM
+X-SID-Result: PASS
+X-Microsoft-Antispam: BCL:0;
+X-Microsoft-Antispam-Message-Info:
+ E+aiGRVuom92+Z4atdJvg6eYA6iROptLKpptbk6DZVPC+UqJRzlTRtZ+bk0xJsXCHof7oPeYHJ8vT6ytjrZjNDlBDQSbV+2aqZIVjEvPNgs+rFXLS0D2lvN1z2nqpi8myYNk7W19yafIYSJbVSOEYCIe3Nyq+vq9zXt8XFy5wvRyjFz3Jpq/QFxNtutQdxhFOewVQS4fmzEWo23H5jO62FFN27z83WpvM5Ctww4bqz8QnIkNlEsANMjWkQjvR8o7c6bj3nx5L7QQxFVXkpUg65zgyZ0nZ1xp194k9Vu9RNNqeAW5wW1jZWzbQ8dyXTr9t2VCy8YKU7sFtgq0KqILJddkTt1qFK/nIRbf2IfTjjjVPETakgOYeAR9jOyZW73NvXFFikT1XNLg52lN9C4XU5grFwp/0+4sLIAr6Ga2bt9ZgOT8oW0z8ThUknGull4hrrKPWZ3GNT7n8g1bNOvrmng8muMoWliRgZz6ONZJ2jwn+7QV5gbkMIC4zmpPr83rXM8BgpRRf999ZNaJSRgZHRmk39ce46f1QJ8KNGKgXxecM6AxoHROF/VxSD6A/+fz4SWTtprQIGr91xMG3t4lPdbr6bfc7fahOzDjMzgzWtGx96Vm7z7EOzO4gKLJJwhQV53NJqJ0v5F63D1lD+6zCNwE1b+Q8MzxNChY3up4zNBgQSOk5o8ZCKvkz9X3/9aBsxOZsOA9opaO+r11Tvuhcb1qA6MouZOPU5BJodrSG1+JLpMinTwUOyeA3RKhDMO40EB6pyqpgZzhbZA6Pw5+y4sX3kZR/jYDxYFZcEU3bqJLfEkc2iUuLcspTnq7Ghjs
+
+<p><span style=3D"color: rgb(255, 255, 255); font-family: Poppins, sans-ser=
+if; font-size: 12px;">FD20221</span></p><p class=3D"p1" style=3D"margin-rig=
+ht: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-numeric: normal=
+; font-variant-east-asian: normal; font-stretch: normal; line-height: norma=
+l; font-family: &quot;Helvetica Neue&quot;;">Salam Aleykoum ,</p><p class=
+=3D"p1" style=3D"margin-right: 0px; margin-bottom: 0px; margin-left: 0px; f=
+ont-variant-numeric: normal; font-variant-east-asian: normal; font-stretch:=
+ normal; line-height: normal; font-family: &quot;Helvetica Neue&quot;;">Nou=
+s sommes tr=C3=A8s heureux de vous avoir parmi nos </p><p class=3D"p1" styl=
+e=3D"margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-=
+numeric: normal; font-variant-east-asian: normal; font-stretch: normal; lin=
+e-height: normal; font-family: &quot;Helvetica Neue&quot;;">membres dans la=
+ plateforme et nous souhaitons que<span class=3D"Apple-converted-space">&nb=
+sp;</span></p><p class=3D"p1" style=3D"margin-right: 0px; margin-bottom: 0p=
+x; margin-left: 0px; font-variant-numeric: normal; font-variant-east-asian:=
+ normal; font-stretch: normal; line-height: normal; font-family: &quot;Helv=
+etica Neue&quot;;">Vous y rester.C=E2=80=99est pourquoi nous vous prions de=
+<span class=3D"Apple-converted-space">&nbsp;</span></p><p class=3D"p1" styl=
+e=3D"margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-=
+numeric: normal; font-variant-east-asian: normal; font-stretch: normal; lin=
+e-height: normal; font-family: &quot;Helvetica Neue&quot;;">mettre =C3=
+=A0 jour votre profil en mettant correctement<span class=3D"Apple-converted=
+-space">&nbsp;</span></p><p class=3D"p1" style=3D"margin-right: 0px; margin=
+-bottom: 0px; margin-left: 0px; font-variant-numeric: normal; font-variant-=
+east-asian: normal; font-stretch: normal; line-height: normal; font-family:=
+ &quot;Helvetica Neue&quot;;">Votre date de naissance , votre =C3=A9tat civ=
+il ;votre photo </p><p class=3D"p1" style=3D"margin-right: 0px; margin-bott=
+om: 0px; margin-left: 0px; font-variant-numeric: normal; font-variant-east-=
+asian: normal; font-stretch: normal; line-height: normal; font-family: &quo=
+t;Helvetica Neue&quot;;">et votre numero de telephone avec l'indicatif</p><=
+p class=3D"p1" style=3D"margin-right: 0px; margin-bottom: 0px; margin-left:=
+ 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-s=
+tretch: normal; line-height: normal; font-family: &quot;Helvetica Neue&quot=
+;;">Si cela est compliqu=C3=A9 pour vous faites nous parvenir </p><p class=
+=3D"p1" style=3D"margin-right: 0px; margin-bottom: 0px; margin-left: 0px; f=
+ont-variant-numeric: normal; font-variant-east-asian: normal; font-stretch:=
+ normal; line-height: normal; font-family: &quot;Helvetica Neue&quot;;">vot=
+re num=C3=A9ro de membre qui est sur votre profil public </p><p class=3D"p1=
+" style=3D"margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-va=
+riant-numeric: normal; font-variant-east-asian: normal; font-stretch: norma=
+l; line-height: normal; font-family: &quot;Helvetica Neue&quot;;">avec vos =
+informations cit=C3=A9es ci dessus .</p><p class=3D"p1" style=3D"margin-rig=
+ht: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-numeric: normal=
+; font-variant-east-asian: normal; font-stretch: normal; line-height: norma=
+l; font-family: &quot;Helvetica Neue&quot;;">Merci pour votre comprehension=
+!</p>
+
+--a43ea87e-8298-479a-8df6-47d8a57db96c--

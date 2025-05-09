@@ -1,0 +1,84 @@
+Return-Path: <diallohafidjiou224@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 3/YpBLgAsGOmHiYA3R2AvA
+	(envelope-from <diallohafidjiou224@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 31 Dec 2022 10:28:24 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NkcHp6J5pz34nwbq
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="SP4cPjdE"
+X-N0C-MailScanner-eFa-Watermark: 1673083700.62812@RiHmR5RkzhiasxkvfjcxTQ
+X-N0C-MailScanner-eFa-From: diallohafidjiou224@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 8B72440666EF.A61EC
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-oi1-f170.google.com ([209.85.167.170] [209.85.167.170])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 8B72440666EF
+	for <contact@fiidewgal.com>; Sat, 31 Dec 2022 10:27:47 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 8B72440666EF
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 8B72440666EF
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=SP4cPjdE
+Received: by mail-oi1-f170.google.com with SMTP id d127so19759657oif.12
+        for <contact@fiidewgal.com>; Sat, 31 Dec 2022 01:27:47 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=OlDnAMvH+Z8rNgEhWo0mpwIH7LQO1XKmMTrif5ChixI=;
+        b=SP4cPjdEARUscMpEVLSRwSmn44w3z0Fug1zFf9NBCAtt88qhHLk7bczeXk000pmM0p
+         hhu2axSGThfFmgmks3pQs1vYffJ2S9N9cUVgCpLoE/5xH3gpMb9FqdjRyAEP7K4XVWEy
+         XlXWwxliaZaBns4Qct/nCQefI0IufKxugS3Fz81ap3TVeSGoE9tmOuNz6yZuQ01FgUhY
+         rbGS/NuH4fdA5kbdj0wS3TrcDoCym1KS1GFWk+ZY9vpXc0p6rVSkhM5rDz9bt/RSIIC8
+         Q39AQG+5cAGtnU4+8rM8NPawbumvGHVGyrphG4Z7WZQAw1xgcB2Zp70PhGN5nKdyBMlX
+         yYFA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=OlDnAMvH+Z8rNgEhWo0mpwIH7LQO1XKmMTrif5ChixI=;
+        b=yDm7e0GhqW00MMBrWZ6vMhllJM0mXOQaGxaqbjB7zSTo3itgFBXXkxwQLJrAPjFmSi
+         5q3n3B+tcLqGZ1Qx+l5+kAXxyfCYyvXPoQ8dv35t9OYkGp1uUhFuUGGiIv8tidnKnzqS
+         PL7BbC7V6m5eD6P5yNttvhh5iVEnVyOBjIIuhSsXV3GnR0hXOI7lKsUUFQFh0vpHMIoG
+         DdC/4KxKrpNcWUMGDqZvUmoiVH/HmRPEpRVrYT3hvmE8J8ZRy8YN7f2ok+jkw0tyqoBl
+         2+SWrj9HKFigx8ki+1yjms51Tw8/i1yajRPsVftOpGmUu495P6foi9Z/lO9G2jW+cxSs
+         /lVQ==
+X-Gm-Message-State: AFqh2kqQW+jxwvOPc1sRXF8EjBF2Aq22c+BZjVaYClnQDvfhvDXezqi/
+	r2Y3cYcTkgKtDunq/MGlQrZQ4eNjbVPEpBenoyj3yYme
+X-Google-Smtp-Source: AMrXdXuxFcUAu8M53oLkTYpD96VA2WS2sFhyPpChE8UFSm2dQo7WPYfcNHiNssvXpfh+EXhjmlFGjxVYn255LAomtC4=
+X-Received: by 2002:a05:6808:2b04:b0:354:ab7f:37cc with SMTP id
+ fe4-20020a0568082b0400b00354ab7f37ccmr2000560oib.287.1672478865860; Sat, 31
+ Dec 2022 01:27:45 -0800 (PST)
+MIME-Version: 1.0
+From: Hafiziou Diallo <diallohafidjiou224@gmail.com>
+Date: Sat, 31 Dec 2022 10:27:34 +0100
+Message-ID: <CAPUKGcrFt3KS_NepzTmhbR9Srbpz-XvYOTrWywWXcN4pu+P9fQ@mail.gmail.com>
+Subject: Renseignements
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000b1ad8905f11c5499"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000b1ad8905f11c5499
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+INin2YTYs9mE2KfZhSDYudmE2YrZg9mFINmI2LHYrdmF2Kkg2KfZhNmE2Ycg2Ygg2KjYsdmD2KfY
+qtmHICBqJ2FpIG0nYXBwZWxsZSBEaWFsbG8gSGFmaXppb3UgaidhaSB2aWUNCmVuIEZyYW5jZSAg
+IMOnYSBtJ2ludMOpcmVzc2UgIGplIHZvdWRyYWlzIHBsdXMgZGUgaW5mb3JtYXRpb25zICAgc2kg
+Y2UNCnBvc3NpYmxlIHMnaWwgdm91cyBwbGHDrnQgTWVyY2kNCg==
+--000000000000b1ad8905f11c5499
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+PGRpdiBkaXI9ImF1dG8iPsKg2KfZhNiz2YTYp9mFINi52YTZitmD2YUg2YjYsdit2YXYqSDYp9mE
+2YTZhyDZiCDYqNix2YPYp9iq2YfCoCBqJiMzOTthaSBtJiMzOTthcHBlbGxlIERpYWxsbyBIYWZp
+emlvdSBqJiMzOTthaSB2aWUgZW4gRnJhbmNlwqAgwqDDp2EgbSYjMzk7aW50w6lyZXNzZcKgIGpl
+IHZvdWRyYWlzIHBsdXMgZGUgaW5mb3JtYXRpb25zwqAgwqBzaSBjZSBwb3NzaWJsZSBzJiMzOTtp
+bCB2b3VzIHBsYcOudCBNZXJjaTwvZGl2Pg0K
+--000000000000b1ad8905f11c5499--

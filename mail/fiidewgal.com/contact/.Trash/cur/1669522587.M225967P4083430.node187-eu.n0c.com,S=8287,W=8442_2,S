@@ -1,0 +1,155 @@
+Return-Path: <>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id iMlkDZvkgmPmTj4A3R2AvA
+	(envelope-from <>)
+	for <contact@fiidewgal.com>; Sun, 27 Nov 2022 05:16:27 +0100
+Received: by node187-eu.n0c.com (Postfix)
+	id 2CACF4048DAD; Sat, 26 Nov 2022 23:16:27 -0500 (EST)
+Date: Sat, 26 Nov 2022 23:16:27 -0500 (EST)
+From: MAILER-DAEMON@node187-eu.n0c.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: contact@fiidewgal.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="575024042DB7.1669522587/node187-eu.n0c.com"
+Message-Id: <20221127041627.2CACF4048DAD@node187-eu.n0c.com>
+
+This is a MIME-encapsulated message.
+
+--575024042DB7.1669522587/node187-eu.n0c.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host node187-eu.n0c.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<adra1992@yahoo.fr>: host mx-eu.mail.am0.yahoodns.net[188.125.72.73] said: 552
+    1 Requested mail action aborted, mailbox not found (in reply to end of DATA
+    command)
+
+--575024042DB7.1669522587/node187-eu.n0c.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; node187-eu.n0c.com
+X-Postfix-Queue-ID: 575024042DB7
+X-Postfix-Sender: rfc822; contact@fiidewgal.com
+Arrival-Date: Sat, 26 Nov 2022 23:16:26 -0500 (EST)
+
+Final-Recipient: rfc822; adra1992@yahoo.fr
+Original-Recipient: rfc822;adra1992@yahoo.fr
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; mx-eu.mail.am0.yahoodns.net
+Diagnostic-Code: smtp; 552 1 Requested mail action aborted, mailbox not found
+
+--575024042DB7.1669522587/node187-eu.n0c.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <contact@fiidewgal.com>
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NKZzZ0fsTz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="ye2f12sD"
+X-N0C-MailScanner-eFa-Watermark: 1670127385.99271@QmAW3YLtBbcKhUzpcnFigw
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 9EF35400325F.A8E66
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 9EF35400325F
+	for <adra1992@yahoo.fr>; Sun, 27 Nov 2022 05:16:24 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 9EF35400325F
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 9EF35400325F
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1669522584;
+	bh=U24hQKQ3/65nVUTg/cQza/AuWrhPmGyv5FmjcmTiFpQ=;
+	h=Date:Subject:From:To:From;
+	b=ye2f12sDouLExpbUCP/FOWwr4ZtXrpgKaql1SKw+DR12oj0zMs+XBLTo1r69jnaLI
+	 GJgAfah2fpXRGrW7uGS19tJJARM3L5xWh2YFE1YscWpR/vAB+3OKLMugwRiU3uo/Ub
+	 1tXPvM6vIBPzSEL7Z7nE+XJI1N1asPBjz09+PUiY=
+Message-ID: <b40ff8df7c027ccaf5171b46bb1b7827@fiidewgal.com>
+Date: Sun, 27 Nov 2022 05:16:24 +0100
+Subject: Rappel
+From: contact@fiidewgal.com
+To: adra1992@yahoo.fr
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<p class=3D"p1" style=3D"margin-right: 0px; margin-bottom: 0px; margin-left=
+: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-=
+stretch: normal; line-height: normal; font-family: &quot;Helvetica Neue&quo=
+t;;">Salam Aleykoum , bienvenue sur la plateforme Fii Dewgal , alors si vou=
+s =C3=AAtes ici c=E2=80=99est pour une bonne raison , trouver votre </p><p =
+class=3D"p1" style=3D"margin-right: 0px; margin-bottom: 0px; margin-left: 0=
+px; font-variant-numeric: normal; font-variant-east-asian: normal; font-str=
+etch: normal; line-height: normal; font-family: &quot;Helvetica Neue&quot;;=
+">futur =C3=A9poux ou =C3=A9pouse que Dieu vous en facilite.Il faut savoir =
+que Le mariage est tr=C3=A8s important il compl=C3=A8te notre Din , la vale=
+ur</p><p class=3D"p1" style=3D"margin-right: 0px; margin-bottom: 0px; margi=
+n-left: 0px; font-variant-numeric: normal; font-variant-east-asian: normal;=
+ font-stretch: normal; line-height: normal; font-family: &quot;Helvetica Ne=
+ue&quot;;"> d=E2=80=99un musulman c=E2=80=99est dans le mariage c=E2=80=
+=99est un acte d=E2=80=99adoration et il faut savoir qu=E2=80=99en islam on=
+ ne peut se conna=C3=AEtre r=C3=A9ellement </p><p class=3D"p1" style=3D"mar=
+gin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-numeric:=
+ normal; font-variant-east-asian: normal; font-stretch: normal; line-height=
+: normal; font-family: &quot;Helvetica Neue&quot;;">qu=E2=80=99apr=C3=A8s e=
+t dans le mariage et si chacun connaissait les bienfaits de rapprocher deux=
+ personnes qui souhaitent se marier dans </p><p class=3D"p1" style=3D"margi=
+n-right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-numeric: n=
+ormal; font-variant-east-asian: normal; font-stretch: normal; line-height: =
+normal; font-family: &quot;Helvetica Neue&quot;;">le halal personne n'aimer=
+ait voir un c=C3=A9libataire. Donc nous vous invitons de rester poli , cour=
+tois , respecter les conditions g=C3=A9n=C3=A9rales </p><p class=3D"p1" sty=
+le=3D"margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant=
+-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; li=
+ne-height: normal; font-family: &quot;Helvetica Neue&quot;;">d=E2=80=99util=
+isation, pour vous en rappeler il est interdit<span class=3D"Apple-converte=
+d-space">&nbsp;</span>d=E2=80=99=C3=A9changer des mots cru ,des injures, de=
+s moqueries, d=E2=80=99=C3=A9changer des num=C3=A9ros </p><p class=3D"p1" s=
+tyle=3D"margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-varia=
+nt-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; =
+line-height: normal; font-family: &quot;Helvetica Neue&quot;;">de t=C3=
+=A9l=C3=A9phone<span class=3D"Apple-converted-space">&nbsp;</span>, d=
+=E2=80=99adresse e-email , de r=C3=A9seaux sociaux comme(&nbsp; Facebook, I=
+nstagram, tik tok ,Twitter, Snapchat etc... ) dans </p><p class=3D"p1" styl=
+e=3D"margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-=
+numeric: normal; font-variant-east-asian: normal; font-stretch: normal; lin=
+e-height: normal; font-family: &quot;Helvetica Neue&quot;;">l=E2=80=99objec=
+tif de discuter en dehors de la plateforme =C3=A0 d=C3=A9faut de cela si vo=
+us ne respecter pas ces r=C3=A8gles, votre profil sera supprim=C3=A9</p><p =
+class=3D"p1" style=3D"margin-right: 0px; margin-bottom: 0px; margin-left: 0=
+px; font-variant-numeric: normal; font-variant-east-asian: normal; font-str=
+etch: normal; line-height: normal; font-family: &quot;Helvetica Neue&quot;;=
+">sans avertissement. Nous vous souhaitons bonne chance dans votre recherch=
+e et nous sommes l=C3=A0 pour vous accompagn=C3=A9.<span class=3D"Apple-con=
+verted-space">&nbsp;</span></p><p class=3D"p1" style=3D"margin-right: 0px; =
+margin-bottom: 0px; margin-left: 0px; font-variant-numeric: normal; font-va=
+riant-east-asian: normal; font-stretch: normal; line-height: normal; font-f=
+amily: &quot;Helvetica Neue&quot;;">Je vous remercie pour votre compr=C3=
+=A9hension.</p><p class=3D"p1" style=3D"margin-right: 0px; margin-bottom: 0=
+px; margin-left: 0px; font-variant-numeric: normal; font-variant-east-asian=
+: normal; font-stretch: normal; line-height: normal; font-family: &quot;Hel=
+vetica Neue&quot;;">L'Equie Fii Dewgal.</p>
+
+--575024042DB7.1669522587/node187-eu.n0c.com--

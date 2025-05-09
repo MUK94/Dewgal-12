@@ -1,0 +1,234 @@
+Return-Path: <contact@k-loumo.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id fYZ/A/Vkg2TAqy4A3R2AvA
+	(envelope-from <contact@k-loumo.com>)
+	for <contact@fiidewgal.com>; Fri, 09 Jun 2023 19:44:21 +0200
+X-N0C-MailScanner-eFa-Watermark: 1686937458.75055@7hLsApRtirXeZErplFrwIg
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Qd7kD5rBRz34SDmj
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=k-loumo.com header.i=@k-loumo.com header.b="UAi5Inj9"
+X-N0C-MailScanner-eFa-From: contact@k-loumo.com
+X-N0C-MailScanner-eFa-ID: 3D15B4019760.A09C4
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from nodels40-eu.n0c.com ([185.221.181.168] [185.221.181.168])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 3D15B4019760
+	for <contact@fiidewgal.com>; Fri,  9 Jun 2023 19:44:17 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 3D15B4019760
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=k-loumo.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=k-loumo.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 3D15B4019760
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (1024-bit key; unprotected) header.d=k-loumo.com header.i=@k-loumo.com header.a=rsa-sha256 header.s=default header.b=UAi5Inj9
+X-Spam-Status: No, No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Qd7k82z2nz34SDmf
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details, Please contact report@N0C.info for details
+Received: from [127.0.0.1] ([185.221.181.168] [185.221.181.168])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@k-loumo.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 24E5B4054165
+	for <contact@fiidewgal.com>; Fri,  9 Jun 2023 19:44:06 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 nodels40-eu.n0c.com 24E5B4054165
+Authentication-Results: nodels40-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=k-loumo.com
+Authentication-Results: nodels40-eu.n0c.com; spf=pass smtp.mailfrom=k-loumo.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 nodels40-eu.n0c.com 24E5B4054165
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=k-loumo.com;
+	s=default; t=1686332646;
+	bh=Thbt/IHAgKJuck20yh28t3U9PjVJRTB5pBJ2Ck/oR40=;
+	h=From:To:Subject:Date:From;
+	b=UAi5Inj9V+NcY/thHe5S0NVtX7r2QkjLcaAYEuC2PqiRYaeye5CiI5Yj7QeqAScAW
+	 kG1YNVPY1I0GcGDxLdtCYXQGWV1BsTxYTTaXzlE+13GcgtBgQC1WFixYkj7xtTCUmU
+	 h9X3uJMXRPpG2gyNmTMocGhNPhETxmGm6dMYg0D4=
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@k-loumo.com>
+To: contact@fiidewgal.com
+Subject: Your order has been placed - 20230609-17440598
+Message-ID: <5b7d3c3d96c96f33c39bb50007ee49f3@k-loumo.com>
+MIME-Version: 1.0
+Date: Fri, 09 Jun 2023 17:44:06 +0000
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.181.168
+X-N0C-Node-IP: 185.221.182.45
+
+<html>
+<head>
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1">
+    <title>Laravel</title>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html;"/>
+    <meta charset=3D"UTF-8">
+=09<style media=3D"all">
+=09=09@font-face {
+            font-family: 'Roboto';
+            src: url("https://k-loumo.com/public/fonts/Roboto-Regular.ttf")=
+ format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            line-height: 1.3;
+            font-family: 'Roboto';
+            color: #333542;
+        }
+=09=09body{
+=09=09=09font-size: .875rem;
+=09=09}
+=09=09.gry-color *,
+=09=09.gry-color{
+=09=09=09color:#878f9c;
+=09=09}
+=09=09table{
+=09=09=09width: 100%;
+=09=09}
+=09=09table th{
+=09=09=09font-weight: normal;
+=09=09}
+=09=09table.padding th{
+=09=09=09padding: .5rem .7rem;
+=09=09}
+=09=09table.padding td{
+=09=09=09padding: .7rem;
+=09=09}
+=09=09table.sm-padding td{
+=09=09=09padding: .2rem .7rem;
+=09=09}
+=09=09.border-bottom td,
+=09=09.border-bottom th{
+=09=09=09border-bottom:1px solid #eceff4;
+=09=09}
+=09=09.text-left{
+=09=09=09text-align:left;
+=09=09}
+=09=09.text-right{
+=09=09=09text-align:right;
+=09=09}
+=09=09.small{
+=09=09=09font-size: .85rem;
+=09=09}
+=09=09.currency{
+
+=09=09}
+=09</style>
+</head>
+<body>
+=09<div>
+=09=09=09=09<div style=3D"background: #eceff4;padding: 1.5rem;">
+=09=09=09<table>
+=09=09=09=09<tr>
+=09=09=09=09=09<td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<img loading=3D"lazy"  src=3D"https:=
+//k-loumo.com/public/uploads/all/kke0rqIdBupGFAzbZL15uuLuPfu3AwjEadNrQXe0.p=
+ng" height=3D"40" style=3D"display:inline-block;">
+=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09</tr>
+=09=09=09</table>
+=09=09=09<table>
+=09=09=09=09<tr>
+=09=09=09=09=09<td style=3D"font-size: 1.2rem;" class=3D"strong">K-loumo</t=
+d>
+=09=09=09=09=09<td class=3D"text-right"></td>
+=09=09=09=09</tr>
+=09=09=09=09<tr>
+=09=09=09=09=09<td class=3D"gry-color small">Toulouse France SIREN 897 934 =
+634</td>
+=09=09=09=09=09<td class=3D"text-right"></td>
+=09=09=09=09</tr>
+=09=09=09=09<tr>
+=09=09=09=09=09<td class=3D"gry-color small">E-mail: contact@k-loumo.com</t=
+d>
+=09=09=09=09=09<td class=3D"text-right small"><span class=3D"gry-color smal=
+l">Num=C3=A9ro de commande:</span> <span class=3D"strong">20230609-17440598=
+</span></td>
+=09=09=09=09</tr>
+=09=09=09=09<tr>
+=09=09=09=09=09<td class=3D"gry-color small">T=C3=A9l=C3=A9phone: +33 628 1=
+3 56 61</td>
+=09=09=09=09=09<td class=3D"text-right small"><span class=3D"gry-color smal=
+l">Date de commande:</span> <span class=3D" strong">09-06-2023</span></td>
+=09=09=09=09</tr>
+=09=09=09</table>
+
+=09=09</div>
+
+=09=09<div style=3D"padding: 1.5rem;padding-bottom: 0">
+            <table>
+=09=09=09=09=09=09=09=09<tr><td class=3D"strong small gry-color">Facture po=
+ur Monsieur/Madame ::</td></tr>
+=09=09=09=09<tr><td class=3D"strong">Diallo Abdoul Gadiri</td></tr>
+=09=09=09=09<tr><td class=3D"gry-color small">1916 Grand Concourse, Bronx, =
+United States</td></tr>
+=09=09=09=09<tr><td class=3D"gry-color small">E-mail: contact@fiidewgal.com=
+</td></tr>
+=09=09=09=09<tr><td class=3D"gry-color small">T=C3=A9l=C3=A9phone: 64675291=
+15</td></tr>
+=09=09=09</table>
+=09=09</div>
+
+=09    <div style=3D"padding: 1.5rem;">
+=09=09=09<table class=3D"padding text-left small border-bottom">
+=09=09=09=09<thead>
+=09                <tr class=3D"gry-color" style=3D"background: #eceff4;">
+=09                    <th width=3D"35%">Nom du produit</th>
+=09=09=09=09=09=09<th width=3D"15%">Type de livraison</th>
+=09                    <th width=3D"10%">Qt=C3=A9</th>
+=09                    <th width=3D"15%">Prix =E2=80=8B=E2=80=8Bunitaire</t=
+h>
+=09                    <th width=3D"10%">Imp=C3=B4t</th>
+=09                    <th width=3D"15%" class=3D"text-right">Total</th>
+=09                </tr>
+=09=09=09=09</thead>
+=09=09=09=09<tbody class=3D"strong">
+=09                =09=09                =09=09=09=09=09=09=09<tr class=3D"=
+">
+=09=09=09=09=09=09=09=09<td>Contrat de maintenance mensuel pour le site Fii=
+dewgal </td>
+=09=09=09=09=09=09=09=09<td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09<td class=3D"gry-color">4</td>
+=09=09=09=09=09=09=09=09<td class=3D"gry-color currency">95 =E2=82=AC</td>
+=09=09=09=09=09=09=09=09<td class=3D"gry-color currency">0 =E2=82=AC</td>
+=09=09=09                    <td class=3D"text-right currency">380 =
+=E2=82=AC</td>
+=09=09=09=09=09=09=09</tr>
+=09=09                =09=09=09=09=09=09            </tbody>
+=09=09=09</table>
+=09=09</div>
+
+=09    <div style=3D"padding:0 1.5rem;">
+=09        <table style=3D"width: 40%;margin-left:auto;" class=3D"text-righ=
+t sm-padding small strong">
+=09=09        <tbody>
+=09=09=09        <tr>
+=09=09=09            <th class=3D"gry-color text-left">Sous-total</th>
+=09=09=09            <td class=3D"currency">380 =E2=82=AC</td>
+=09=09=09        </tr>
+=09=09=09        <tr>
+=09=09=09            <th class=3D"gry-color text-left">Frais de port</th>
+=09=09=09            <td class=3D"currency">20 =E2=82=AC</td>
+=09=09=09        </tr>
+=09=09=09        <tr class=3D"border-bottom">
+=09=09=09            <th class=3D"gry-color text-left">Total Tax</th>
+=09=09=09            <td class=3D"currency">0 =E2=82=AC</td>
+=09=09=09        </tr>
+                    <tr class=3D"border-bottom">
+=09=09=09            <th class=3D"gry-color text-left">Coupons</th>
+=09=09=09            <td class=3D"currency">0 =E2=82=AC</td>
+=09=09=09        </tr>
+=09=09=09        <tr>
+=09=09=09            <th class=3D"text-left strong">Total =C3=A0 payer :</t=
+h>
+=09=09=09            <td class=3D"currency">400 =E2=82=AC</td>
+=09=09=09        </tr>
+=09=09        </tbody>
+=09=09    </table>
+=09    </div>
+
+=09</div>
+</body>
+</html>
+

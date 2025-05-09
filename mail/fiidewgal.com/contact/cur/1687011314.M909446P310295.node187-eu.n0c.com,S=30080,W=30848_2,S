@@ -1,0 +1,768 @@
+Return-Path: <support=taboola.com__0-2e9cpei3nlhqgu.36dfg7lfc20a8j1l@b287qxonvmmkpqq3.fhey443.d-ehcxea2.usa226.bnc.salesforce.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id +AElNvK/jWQXvAQA3R2AvA
+	(envelope-from <support=taboola.com__0-2e9cpei3nlhqgu.36dfg7lfc20a8j1l@b287qxonvmmkpqq3.fhey443.d-ehcxea2.usa226.bnc.salesforce.com>)
+	for <contact@fiidewgal.com>; Sat, 17 Jun 2023 16:15:14 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4QjyjG5YZtz34SDmh
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=taboola.com header.i=@taboola.com header.b="GY4ViDd6"
+X-N0C-MailScanner-eFa-Watermark: 1687616098.68772@WUvbr3Plm9oWdO1ACRXqLQ
+X-N0C-MailScanner-eFa-From: support=taboola.com__0-2e9cpei3nlhqgu.36dfg7lfc20a8j1l@b287qxonvmmkpqq3.fhey443.d-ehcxea2.usa226.bnc.salesforce.com
+X-N0C-MailScanner-eFa-SpamScore: sss
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 3ECFA4019B0A.AA977
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from smtp-0dc5a3c6a83bd50e3.core1.sfdc-lywfpd.mta.salesforce.com ([44.241.52.29] [44.241.52.29])
+	(using TLSv1.2 with cipher ECDHE-ECDSA-AES256-GCM-SHA384 (256/256 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 3ECFA4019B0A
+	for <contact@fiidewgal.com>; Sat, 17 Jun 2023 16:14:52 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 3ECFA4019B0A
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=reject dis=none) header.from=taboola.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=b287qxonvmmkpqq3.fhey443.d-ehcxea2.usa226.bnc.salesforce.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 3ECFA4019B0A
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (1024-bit key; secure) header.d=taboola.com header.i=@taboola.com header.a=rsa-sha256 header.s=sfdc header.b=GY4ViDd6
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=taboola.com; s=sfdc;
+	t=1687011289; bh=blkb3m0Qd71VFcNcQdKFM3t9+3w/Fn9WF2p/UKUc5L4=;
+	h=Date:From:To:Subject:MIME-Version:Content-Type;
+	b=GY4ViDd6f6GHF1bH24ZHioZGJ9c7FmOBQm5sjdOVAZAUuBpK1nyAsSYZtFzM998Fl
+	 wPcK/d7kL7kb+mRc5IB4ro3vd8PaT1wTs/UbwsnW3XxZ/rNJNeEXau6tyrh5LNnVyG
+	 Zda5pdzFkz8H39NEuJy75dXoqkRVBlBTQsZ1L1eo=
+Received: from [127.0.0.1] ([127.0.0.1:36934] helo=eaas-3.eaas.emailinfra.svc.cluster.local)
+	by mx1.core1.sfdc-lywfpd.mta.salesforce.com (envelope-from <support=taboola.com__0-2e9cpei3nlhqgu.36dfg7lfc20a8j1l@b287qxonvmmkpqq3.fhey443.d-ehcxea2.usa226.bnc.salesforce.com>)
+	(ecelerity 4.4.0.19839 r(msys-ecelerity:tags/4.4.0.0^0)) with ESMTP
+	id 2D/4F-00434-9DFBD846; Sat, 17 Jun 2023 14:14:49 +0000
+Received: from 127.0.0.1 (localhost. [127.0.0.1]) by eaas-3 (EaaS) id
+  <HDJIh000000000000000000000000000000000000000000000RWEI8K000M-HMJhTQOOJnREPyPgsow@sfdc.net>
+  for <"contact@fiidewgal.com" <contact@fiidewgal.com>> Sat, 17 Jun 2023
+  14:14:49 GMT (GMT)
+Date: Sat, 17 Jun 2023 14:14:49 +0000 (GMT)
+From: Taboola Support <support@taboola.com>
+To: "contact@fiidewgal.com" <contact@fiidewgal.com>
+Message-ID: <HDJIh000000000000000000000000000000000000000000000RWEI8K000M-HMJhTQOOJnREPyPgsow@sfdc.net>
+References: <500Nr000000r9Wc.DLRS-aNyQ6W2kVuPfJPUeg.YVLDv49hGk8h2ZD6SBu5fh9z2yrDIY2adxXhR6j5yps=.3o000000HQ9o@sfdc.net>
+ <a7383b3b92113a830bfead21d25a719a@fiidewgal.com>
+Subject: Monetize my dating website
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1523_1754074139.1687011289414"
+X-Priority: 3
+X-SFDC-LK: 00Dd0000000eHCX
+X-SFDC-User: 0053o00000ALFV2
+X-Sender: postmaster@salesforce.com
+X-mail_abuse_inquiries: http://www.salesforce.com/company/abuse.jsp
+X-SFDC-TLS-NoRelay: 1
+X-SFDC-Binding: 1WrIRBV94myi25uB
+X-SFDC-App: coreapp
+X-SFDC-EmailCategory: apiSingleMailViaApex
+X-SFDC-EntityId: 500Nr000000r9Wc
+X-SFDC-Interface: internal
+X-N0C-Node-IP: 185.221.182.45
+
+------=_Part_1523_1754074139.1687011289414
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1522_968681807.1687011289414"
+
+------=_Part_1522_968681807.1687011289414
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Hi there,
+
+I hope you're doing well!
+
+Please provide me the screenshot of your 30 day (May 2023) Google Analytics=
+ page views.
+
+Thanks in advance.
+
+Best,
+
+Melchie Fernandez
+
+
+---------------------------------------------------------------=20
+06/17/2023 10:14:39 AM EDT [Melchie Fernandez]=20
+---------------------------------------------------------------
+
+To: Abdoul Gadiri <contact@fiidewgal.com>
+
+Hi there,
+
+I hope you're doing well!
+
+Please provide me the screenshot of your 30 day (May 2023) Google Analytics=
+ page views.
+
+Thanks in advance.
+
+Best,
+
+---------------------------------------------------------------=20
+06/16/2023 07:34:01 PM EDT [Abdoul Gadiri]=20
+---------------------------------------------------------------
+
+
+Le 2023-06-16 00:26, Taboola Support a =E9crit=A0:
+> Hi there,
+>=20
+> Thanks for sending me some of the information that we need.
+>=20
+> Please provide me the screenshot of your 30 day Google Analytics page
+> views.
+>=20
+> Thanks in advance.
+>=20
+> Best,
+>=20
+> Christine Mae Joy Gauna
+> PS Engineer - External
+> Taboola Professional Services
+>=20
+> This notification is related to Case #00600697
+>=20
+> Advertiser Help Center: https://help.taboola.com/hc/en-us
+> Publisher Help Center: https://pubhelp.taboola.com/hc/en-us
+> Find out what's new at Taboola: http://blog.taboola.com/
+>=20
+> [ ref:_00Dd0eHCX._500Nrr9Wc:ref ]
+>=20
+> ---------------------------------------------------------------
+> 06/16/2023 01:25:52 AM EDT [Christine Mae Joy Gauna]
+> ---------------------------------------------------------------
+>=20
+> To: Abdoul Gadiri <contact@fiidewgal.com>
+>=20
+> Hi there,
+>=20
+> Thanks for sending me some of the information that we need.
+>=20
+> Please provide me the screenshot of your 30 day Google Analytics page
+> views.
+>=20
+> Thanks in advance.
+>=20
+> Best,
+>=20
+> ---------------------------------------------------------------
+> 06/15/2023 05:08:55 AM EDT [Abdoul Gadiri]
+> ---------------------------------------------------------------
+>=20
+> Le 2023-06-15 01:00, Taboola Support a =E9crit :
+>> Hi there,
+>>=20
+>> I appreciate your enthusiasm in becoming a Taboola publisher. I'm
+> Kei
+>> from the Customer Success Team.
+>>=20
+>> To ensure your request reaches the right team member, kindly respond
+>=20
+>> to this message with the following details:
+>>=20
+>> Contact Email:
+>> Company Name:
+>> URL:
+>> Company Geo Location:
+>> Screenshot of 30-day Google Analytics data
+>>=20
+>> I eagerly await your response.
+>>=20
+>> Best regards,
+>>=20
+>> Christine Mae Joy Gauna
+>> PS Engineer - External
+>> Taboola Professional Services
+>>=20
+>> This notification is related to Case #00600697
+>>=20
+>> Advertiser Help Center: https://help.taboola.com/hc/en-us
+>> Publisher Help Center: https://pubhelp.taboola.com/hc/en-us
+>> Find out what's new at Taboola: http://blog.taboola.com/
+>>=20
+>> [ ref:_00Dd0eHCX._500Nrr9Wc:ref ]
+>>=20
+>> ---------------------------------------------------------------
+>> 06/15/2023 01:59:56 AM EDT [Christine Mae Joy Gauna]
+>> ---------------------------------------------------------------
+>>=20
+>> To: Abdoul Gadiri <contact@fiidewgal.com>
+>>=20
+>> Hi there,
+>>=20
+>> I appreciate your enthusiasm in becoming a Taboola publisher. I'm
+> Kei
+>> from the Customer Success Team.
+>>=20
+>> To ensure your request reaches the right team member, kindly respond
+>=20
+>> to this message with the following details:
+>>=20
+>> Contact Email:
+>> Company Name:
+>> URL:
+>> Company Geo Location:
+>> Screenshot of 30-day Google Analytics data
+>>=20
+>> I eagerly await your response.
+>>=20
+>> Best regards,
+>> ***************************
+>>=20
+>> [ ref:_00Dd0eHCX._500Nrr9Wc:ref ]
+> Hi ,
+> Thank you to reply .
+> Contact Email: contact@fiidewgal.com
+>> Company Name: Fii Dewgal
+>> URL: https://fiidewgal.com/
+>> Company Geo Location: New York
+>=20
+> Case #00600697
+> [ ref:_00Dd0eHCX._500Nrr9Wc:ref ]
+> Thank you in advance !
+>=20
+> ---------------------------------------------------------------
+> 06/15/2023 01:59:56 AM EDT [Christine Mae Joy Gauna]
+> ---------------------------------------------------------------
+>=20
+> To: Abdoul Gadiri <contact@fiidewgal.com>
+>=20
+> Hi there,
+>=20
+> I appreciate your enthusiasm in becoming a Taboola publisher. I'm Kei
+> from the Customer Success Team.
+>=20
+> To ensure your request reaches the right team member, kindly respond
+> to this message with the following details:
+>=20
+> Contact Email:
+> Company Name:
+> URL:
+> Company Geo Location:
+> Screenshot of 30-day Google Analytics data
+>=20
+> I eagerly await your response.
+>=20
+> Best regards,
+> ***************************
+>=20
+> [ ref:_00Dd0eHCX._500Nrr... (truncated, see original email for full text)
+
+---------------------------------------------------------------=20
+06/16/2023 01:25:52 AM EDT [Christine Mae Joy Gauna]=20
+---------------------------------------------------------------
+
+To: Abdoul Gadiri <contact@fiidewgal.com>
+
+Hi there,=20
+
+Thanks for sending me some of the information that we need.
+
+Please provide me the screenshot of your 30 day Google Analytics page views=
+.=20
+
+Thanks in advance.
+
+Best,
+
+---------------------------------------------------------------=20
+06/15/2023 05:08:55 AM EDT [Abdoul Gadiri]=20
+---------------------------------------------------------------
+
+
+Le 2023-06-15 01:00, Taboola Support a =E9crit=A0:
+> Hi there,
+>=20
+> I appreciate your enthusiasm in becoming a Taboola publisher. I'm Kei
+> from the Customer Success Team.
+>=20
+> To ensure your request reaches the right team member, kindly respond
+> to this message with the following details:
+>=20
+> Contact Email:
+> Company Name:
+> URL:
+> Company Geo Location:
+> Screenshot of 30-day Google Analytics data
+>=20
+> I eagerly await your response.
+>=20
+> Best regards,
+>=20
+> Christine Mae Joy Gauna
+> PS Engineer - External
+> Taboola Professional Services
+>=20
+> This notification is related to Case #00600697
+>=20
+> Advertiser Help Center: https://help.taboola.com/hc/en-us
+> Publisher Help Center: https://pubhelp.taboola.com/hc/en-us
+> Find out what's new at Taboola: http://blog.taboola.com/
+>=20
+> [ ref:_00Dd0eHCX._500Nrr9Wc:ref ]
+>=20
+> ---------------------------------------------------------------
+> 06/15/2023 01:59:56 AM EDT [Christine Mae Joy Gauna]
+> ---------------------------------------------------------------
+>=20
+> To: Abdoul Gadiri <contact@fiidewgal.com>
+>=20
+> Hi there,
+>=20
+> I appreciate your enthusiasm in becoming a Taboola publisher. I'm Kei
+> from the Customer Success Team.
+>=20
+> To ensure your request reaches the right team member, kindly respond
+> to this message with the following details:
+>=20
+> Contact Email:
+> Company Name:
+> URL:
+> Company Geo Location:
+> Screenshot of 30-day Google Analytics data
+>=20
+> I eagerly await your response.
+>=20
+> Best regards,
+> ***************************
+>=20
+> [ ref:_00Dd0eHCX._500Nrr9Wc:ref ]
+Hi ,
+Thank you to reply .
+Contact Email: contact@fiidewgal.com
+> Company Name: Fii Dewgal
+> URL: https://fiidewgal.com/
+> Company Geo Location: New York
+
+Case #00600697
+[ ref:_00Dd0eHCX._500Nrr9Wc:ref ]
+Thank you in advance !
+
+---------------------------------------------------------------=20
+06/15/2023 01:59:56 AM EDT [Christine Mae Joy Gauna]=20
+---------------------------------------------------------------
+
+To: Abdoul Gadiri <contact@fiidewgal.com>
+
+Hi there,
+
+I appreciate your enthusiasm in becoming a Taboola publisher. I'm Kei from =
+the Customer Success Team.
+
+To ensure your request reaches the right team member, kindly respond to thi=
+s message with the following details:
+
+Contact Email:
+Company Name:
+URL:
+Company Geo Location:
+Screenshot of 30-day Google Analytics data
+
+I eagerly await your response.
+
+Best regards,
+
+***************************
+Case: 00600697
+Status: Pending Business/GA
+Priority Level: Medium
+
+
+[ ref:_00Dd0eHCX._500Nrr9Wc:ref ]
+------=_Part_1522_968681807.1687011289414
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<html><script> if(!window.sfdcPage) { window.sfdcPage =3D new ApexDetailPag=
+e(); }UserContext.initialize({"ampm":["AM","PM"],"isAccessibleMode":false,"=
+salesforceURL":"https://taboola.my.salesforce.com","dateFormat":"M/d/yyyy",=
+"language":"en_US","locale":"en_US","dateTimeFormat":"M/d/yyyy h:mm a","lab=
+elLastModified":"1686895266000","today":"6/17/2023 10:14 PM","userPreferenc=
+es":[{"index":112,"name":"HideInlineEditSplash","value":false},{"index":114=
+,"name":"OverrideTaskSendNotification","value":false},{"index":115,"name":"=
+DefaultTaskSendNotification","value":false},{"index":119,"name":"HideUserLa=
+youtStdFieldInfo","value":false},{"index":116,"name":"HideRPPWarning","valu=
+e":false},{"index":87,"name":"HideInlineSchedulingSplash","value":false},{"=
+index":88,"name":"HideCRUCNotification","value":false},{"index":89,"name":"=
+HideNewPLESplash","value":false},{"index":90,"name":"HideNewPLEWarnIE6","va=
+lue":false},{"index":122,"name":"HideOverrideSharingMessage","value":false}=
+,{"index":91,"name":"HideProfileILEWarn","value":false},{"index":93,"name":=
+"HideProfileElvVideo","value":false},{"index":97,"name":"ShowPicklistEditSp=
+lash","value":false},{"index":92,"name":"HideDataCategorySplash","value":fa=
+lse},{"index":128,"name":"ShowDealView","value":false},{"index":129,"name":=
+"HideDealViewGuidedTour","value":false},{"index":132,"name":"HideKnowledgeF=
+irstTimeSetupMsg","value":false},{"index":104,"name":"DefaultOffEntityPerms=
+Msg","value":false},{"index":135,"name":"HideNewCsnSplash","value":false},{=
+"index":101,"name":"HideBrowserWarning","value":false},{"index":139,"name":=
+"HideDashboardBuilderGuidedTour","value":false},{"index":140,"name":"HideSc=
+hedulingGuidedTour","value":false},{"index":180,"name":"HideReportBuilderGu=
+idedTour","value":false},{"index":183,"name":"HideAssociationQueueCallout",=
+"value":false},{"index":194,"name":"HideQTEBanner","value":false},{"index":=
+270,"name":"HideIDEGuidedTour","value":false},{"index":282,"name":"HideQuer=
+yToolGuidedTour","value":false},{"index":196,"name":"HideCSIGuidedTour","va=
+lue":false},{"index":271,"name":"HideFewmetGuidedTour","value":false},{"ind=
+ex":272,"name":"HideEditorGuidedTour","value":false},{"index":205,"name":"H=
+ideApexTestGuidedTour","value":false},{"index":206,"name":"HideSetupProfile=
+HeaderTour","value":false},{"index":207,"name":"HideSetupProfileObjectsAndT=
+absTour","value":false},{"index":213,"name":"DefaultOffArticleTypeEntityPer=
+mMsg","value":false},{"index":214,"name":"HideSelfInfluenceGetStarted","val=
+ue":false},{"index":215,"name":"HideOtherInfluenceGetStarted","value":false=
+},{"index":216,"name":"HideFeedToggleGuidedTour","value":false},{"index":26=
+8,"name":"ShowChatterTab178GuidedTour","value":false},{"index":275,"name":"=
+HidePeopleTabDeprecationMsg","value":false},{"index":276,"name":"HideGroupT=
+abDeprecationMsg","value":false},{"index":224,"name":"HideUnifiedSearchGuid=
+edTour","value":false},{"index":226,"name":"ShowDevContextMenu","value":fal=
+se},{"index":227,"name":"HideWhatRecommenderForActivityQueues","value":fals=
+e},{"index":228,"name":"HideLiveAgentFirstTimeSetupMsg","value":false},{"in=
+dex":232,"name":"HideGroupAllowsGuestsMsgOnMemberWidget","value":false},{"i=
+ndex":233,"name":"HideGroupAllowsGuestsMsg","value":false},{"index":234,"na=
+me":"HideWhatAreGuestsMsg","value":false},{"index":235,"name":"HideNowAllow=
+GuestsMsg","value":false},{"index":236,"name":"HideSocialAccountsAndContact=
+sGuidedTour","value":false},{"index":237,"name":"HideAnalyticsHomeGuidedTou=
+r","value":false},{"index":238,"name":"ShowQuickCreateGuidedTour","value":f=
+alse},{"index":245,"name":"HideFilePageGuidedTour","value":false},{"index":=
+250,"name":"HideForecastingGuidedTour","value":false},{"index":251,"name":"=
+HideBucketFieldGuide","value":false},{"index":263,"name":"HideSmartSearchCa=
+llOut","value":false},{"index":273,"name":"ShowForecastingQuotaAttainment",=
+"value":false},{"index":280,"name":"HideForecastingQuotaColumn","value":fal=
+se},{"index":301,"name":"HideManyWhoGuidedTour","value":false},{"index":298=
+,"name":"HideFileSyncBannerMsg","value":false},{"index":299,"name":"HideTes=
+tConsoleGuidedTour","value":false},{"index":302,"name":"HideManyWhoInlineEd=
+itTip","value":false},{"index":303,"name":"HideSetupV2WelcomeMessage","valu=
+e":false},{"index":312,"name":"ForecastingShowQuantity","value":false},{"in=
+dex":313,"name":"HideDataImporterIntroMsg","value":false},{"index":314,"nam=
+e":"HideEnvironmentHubLightbox","value":false},{"index":316,"name":"HideSet=
+upV2GuidedTour","value":false},{"index":317,"name":"HideFileSyncMobileDownl=
+oadDialog","value":false},{"index":322,"name":"HideEnhancedProfileHelpBubbl=
+e","value":false},{"index":328,"name":"ForecastingHideZeroRows","value":fal=
+se},{"index":330,"name":"HideEmbeddedComponentsFeatureCallout","value":fals=
+e},{"index":341,"name":"HideDedupeMatchResultCallout","value":false},{"inde=
+x":340,"name":"HideS1BrowserUI","value":false},{"index":346,"name":"HideS1B=
+anner","value":false},{"index":358,"name":"HideEmailVerificationAlert","val=
+ue":false},{"index":354,"name":"HideLearningPathModal","value":false},{"ind=
+ex":359,"name":"HideAtMentionsHelpBubble","value":false},{"index":368,"name=
+":"LightningExperiencePreferred","value":false},{"index":373,"name":"Previe=
+wLightning","value":false}],"networkId":"","uiTheme":"Theme4d","uiSkin":"Th=
+eme3","userName":"melchie.fernandez@taboola.com","userId":"0053o00000ALFV2"=
+,"isCurrentlySysAdminSU":false,"renderMode":"RETRO","startOfWeek":"1","vfDo=
+mainPattern":"taboola--(?:[^.]+).vf.force.com","auraDomain":"taboola.lightn=
+ing.force.com","useNativeAlertConfirmPrompt":false,"orgPreferences":[{"inde=
+x":257,"name":"TabOrganizer","value":true},{"index":113,"name":"GroupTasks"=
+,"value":true}],"siteUrlPrefix":"","isDefaultNetwork":true,"timeFormat":"h:=
+mm a"});
+</script><span id=3D"j_id0:emailTemplate:j_id7:j_id8:j_id10"><table  class=
+=3D"htmlDetailElementTable" border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+"><tr><td><div class=3D"sfdc_richtext" id=3D"j_id0:emailTemplate:j_id7:j_id=
+8:j_id10j_id0:emailTemplate:j_id7:j_id8:j_id10_00N0V000009Kijy_div"><div>
+<div>Hi there,</div>
+<div>=A0</div>
+<div>I hope you&#39;re doing well!</div>
+<div>=A0</div>
+<div>Please provide me the screenshot of your 30 day (May 2023) Google Anal=
+ytics page views.</div>
+<div>=A0</div>
+<div>Thanks in advance.</div>
+<div>=A0</div>
+<div>Best,</div>
+</div></div></td></tr>
+</table><script>j_id0__emailTemplate__j_id7__j_id8__j_id10 =3D window.onloa=
+d; window.onload=3Dfunction() { if (j_id0__emailTemplate__j_id7__j_id8__j_i=
+d10!=3D null) j_id0__emailTemplate__j_id7__j_id8__j_id10();};</script></spa=
+n>
+
+
+<br />Melchie Fernandez
+<br />PS Engineer - External
+<br />Taboola Professional Services
+<br />
+<br />This notification is related to Case #00600697
+<br />
+<br />Advertiser Help Center: https://help.taboola.com/hc/en-us
+<br />Publisher Help Center: https://pubhelp.taboola.com/hc/en-us
+<br />Find out what's new at Taboola: http://blog.taboola.com/
+<br />
+<br />[ ref:_00Dd0eHCX._500Nrr9Wc:ref ]
+<br />
+
+<br /><span id=3D"j_id0:emailTemplate:j_id7:j_id8:j_id12">-----------------=
+---------------------------------------------- <br>06/17/2023 10:14:39 AM E=
+DT [Melchie Fernandez] <br>------------------------------------------------=
+---------------<br><br>To: Abdoul Gadiri &lt;<A HREF=3D"mailto:contact@fiid=
+ewgal.com">contact@fiidewgal.com</A>&gt;<br><br>Hi there,<br><br>I hope you=
+'re doing well!<br><br>Please provide me the screenshot of your 30 day (May=
+ 2023) Google Analytics page views.<br><br>Thanks in advance.<br><br>Best,<=
+br><br>--------------------------------------------------------------- <br>=
+06/16/2023 07:34:01 PM EDT [Abdoul Gadiri] <br>----------------------------=
+-----------------------------------<br><br><br>Le 2023-06-16 00:26, Taboola=
+ Support a =E9crit=A0:
+<br>&gt; Hi there,
+<br>&gt;=20
+<br>&gt; Thanks for sending me some of the information that we need.
+<br>&gt;=20
+<br>&gt; Please provide me the screenshot of your 30 day Google Analytics p=
+age
+<br>&gt; views.
+<br>&gt;=20
+<br>&gt; Thanks in advance.
+<br>&gt;=20
+<br>&gt; Best,
+<br>&gt;=20
+<br>&gt; Christine Mae Joy Gauna
+<br>&gt; PS Engineer - External
+<br>&gt; Taboola Professional Services
+<br>&gt;=20
+<br>&gt; This notification is related to Case #00600697
+<br>&gt;=20
+<br>&gt; Advertiser Help Center: <A HREF=3D"https://help.taboola.com/hc/en-=
+us" TARGET=3D"_blank">https://help.taboola.com/hc/en-us</A>
+<br>&gt; Publisher Help Center: <A HREF=3D"https://pubhelp.taboola.com/hc/e=
+n-us" TARGET=3D"_blank">https://pubhelp.taboola.com/hc/en-us</A>
+<br>&gt; Find out what's new at Taboola: <A HREF=3D"http://blog.taboola.com=
+/" TARGET=3D"_blank">http://blog.taboola.com/</A>
+<br>&gt;=20
+<br>&gt; [ ref:_00Dd0eHCX._500Nrr9Wc:ref ]
+<br>&gt;=20
+<br>&gt; ---------------------------------------------------------------
+<br>&gt; 06/16/2023 01:25:52 AM EDT [Christine Mae Joy Gauna]
+<br>&gt; ---------------------------------------------------------------
+<br>&gt;=20
+<br>&gt; To: Abdoul Gadiri &lt;<A HREF=3D"mailto:contact@fiidewgal.com">con=
+tact@fiidewgal.com</A>&gt;
+<br>&gt;=20
+<br>&gt; Hi there,
+<br>&gt;=20
+<br>&gt; Thanks for sending me some of the information that we need.
+<br>&gt;=20
+<br>&gt; Please provide me the screenshot of your 30 day Google Analytics p=
+age
+<br>&gt; views.
+<br>&gt;=20
+<br>&gt; Thanks in advance.
+<br>&gt;=20
+<br>&gt; Best,
+<br>&gt;=20
+<br>&gt; ---------------------------------------------------------------
+<br>&gt; 06/15/2023 05:08:55 AM EDT [Abdoul Gadiri]
+<br>&gt; ---------------------------------------------------------------
+<br>&gt;=20
+<br>&gt; Le 2023-06-15 01:00, Taboola Support a =E9crit :
+<br>&gt;&gt; Hi there,
+<br>&gt;&gt;=20
+<br>&gt;&gt; I appreciate your enthusiasm in becoming a Taboola publisher. =
+I'm
+<br>&gt; Kei
+<br>&gt;&gt; from the Customer Success Team.
+<br>&gt;&gt;=20
+<br>&gt;&gt; To ensure your request reaches the right team member, kindly r=
+espond
+<br>&gt;=20
+<br>&gt;&gt; to this message with the following details:
+<br>&gt;&gt;=20
+<br>&gt;&gt; Contact Email:
+<br>&gt;&gt; Company Name:
+<br>&gt;&gt; URL:
+<br>&gt;&gt; Company Geo Location:
+<br>&gt;&gt; Screenshot of 30-day Google Analytics data
+<br>&gt;&gt;=20
+<br>&gt;&gt; I eagerly await your response.
+<br>&gt;&gt;=20
+<br>&gt;&gt; Best regards,
+<br>&gt;&gt;=20
+<br>&gt;&gt; Christine Mae Joy Gauna
+<br>&gt;&gt; PS Engineer - External
+<br>&gt;&gt; Taboola Professional Services
+<br>&gt;&gt;=20
+<br>&gt;&gt; This notification is related to Case #00600697
+<br>&gt;&gt;=20
+<br>&gt;&gt; Advertiser Help Center: <A HREF=3D"https://help.taboola.com/hc=
+/en-us" TARGET=3D"_blank">https://help.taboola.com/hc/en-us</A>
+<br>&gt;&gt; Publisher Help Center: <A HREF=3D"https://pubhelp.taboola.com/=
+hc/en-us" TARGET=3D"_blank">https://pubhelp.taboola.com/hc/en-us</A>
+<br>&gt;&gt; Find out what's new at Taboola: <A HREF=3D"http://blog.taboola=
+.com/" TARGET=3D"_blank">http://blog.taboola.com/</A>
+<br>&gt;&gt;=20
+<br>&gt;&gt; [ ref:_00Dd0eHCX._500Nrr9Wc:ref ]
+<br>&gt;&gt;=20
+<br>&gt;&gt; --------------------------------------------------------------=
+-
+<br>&gt;&gt; 06/15/2023 01:59:56 AM EDT [Christine Mae Joy Gauna]
+<br>&gt;&gt; --------------------------------------------------------------=
+-
+<br>&gt;&gt;=20
+<br>&gt;&gt; To: Abdoul Gadiri &lt;<A HREF=3D"mailto:contact@fiidewgal.com"=
+>contact@fiidewgal.com</A>&gt;
+<br>&gt;&gt;=20
+<br>&gt;&gt; Hi there,
+<br>&gt;&gt;=20
+<br>&gt;&gt; I appreciate your enthusiasm in becoming a Taboola publisher. =
+I'm
+<br>&gt; Kei
+<br>&gt;&gt; from the Customer Success Team.
+<br>&gt;&gt;=20
+<br>&gt;&gt; To ensure your request reaches the right team member, kindly r=
+espond
+<br>&gt;=20
+<br>&gt;&gt; to this message with the following details:
+<br>&gt;&gt;=20
+<br>&gt;&gt; Contact Email:
+<br>&gt;&gt; Company Name:
+<br>&gt;&gt; URL:
+<br>&gt;&gt; Company Geo Location:
+<br>&gt;&gt; Screenshot of 30-day Google Analytics data
+<br>&gt;&gt;=20
+<br>&gt;&gt; I eagerly await your response.
+<br>&gt;&gt;=20
+<br>&gt;&gt; Best regards,
+<br>&gt;&gt; ***************************
+<br>&gt;&gt;=20
+<br>&gt;&gt; [ ref:_00Dd0eHCX._500Nrr9Wc:ref ]
+<br>&gt; Hi ,
+<br>&gt; Thank you to reply .
+<br>&gt; Contact Email: <A HREF=3D"mailto:contact@fiidewgal.com">contact@fi=
+idewgal.com</A>
+<br>&gt;&gt; Company Name: Fii Dewgal
+<br>&gt;&gt; URL: <A HREF=3D"https://fiidewgal.com/" TARGET=3D"_blank">http=
+s://fiidewgal.com/</A>
+<br>&gt;&gt; Company Geo Location: New York
+<br>&gt;=20
+<br>&gt; Case #00600697
+<br>&gt; [ ref:_00Dd0eHCX._500Nrr9Wc:ref ]
+<br>&gt; Thank you in advance !
+<br>&gt;=20
+<br>&gt; ---------------------------------------------------------------
+<br>&gt; 06/15/2023 01:59:56 AM EDT [Christine Mae Joy Gauna]
+<br>&gt; ---------------------------------------------------------------
+<br>&gt;=20
+<br>&gt; To: Abdoul Gadiri &lt;<A HREF=3D"mailto:contact@fiidewgal.com">con=
+tact@fiidewgal.com</A>&gt;
+<br>&gt;=20
+<br>&gt; Hi there,
+<br>&gt;=20
+<br>&gt; I appreciate your enthusiasm in becoming a Taboola publisher. I'm =
+Kei
+<br>&gt; from the Customer Success Team.
+<br>&gt;=20
+<br>&gt; To ensure your request reaches the right team member, kindly respo=
+nd
+<br>&gt; to this message with the following details:
+<br>&gt;=20
+<br>&gt; Contact Email:
+<br>&gt; Company Name:
+<br>&gt; URL:
+<br>&gt; Company Geo Location:
+<br>&gt; Screenshot of 30-day Google Analytics data
+<br>&gt;=20
+<br>&gt; I eagerly await your response.
+<br>&gt;=20
+<br>&gt; Best regards,
+<br>&gt; ***************************
+<br>&gt;=20
+<br>&gt; [ ref:_00Dd0eHCX._500Nrr... (truncated, see original email for ful=
+l text)<br><br>------------------------------------------------------------=
+--- <br>06/16/2023 01:25:52 AM EDT [Christine Mae Joy Gauna] <br>----------=
+-----------------------------------------------------<br><br>To: Abdoul Gad=
+iri &lt;<A HREF=3D"mailto:contact@fiidewgal.com">contact@fiidewgal.com</A>&=
+gt;<br><br>Hi there, <br><br>Thanks for sending me some of the information =
+that we need.<br><br>Please provide me the screenshot of your 30 day Google=
+ Analytics page views. <br><br>Thanks in advance.<br><br>Best,<br><br>-----=
+---------------------------------------------------------- <br>06/15/2023 0=
+5:08:55 AM EDT [Abdoul Gadiri] <br>----------------------------------------=
+-----------------------<br><br><br>Le 2023-06-15 01:00, Taboola Support a =
+=E9crit=A0:
+<br>&gt; Hi there,
+<br>&gt;=20
+<br>&gt; I appreciate your enthusiasm in becoming a Taboola publisher. I'm =
+Kei
+<br>&gt; from the Customer Success Team.
+<br>&gt;=20
+<br>&gt; To ensure your request reaches the right team member, kindly respo=
+nd
+<br>&gt; to this message with the following details:
+<br>&gt;=20
+<br>&gt; Contact Email:
+<br>&gt; Company Name:
+<br>&gt; URL:
+<br>&gt; Company Geo Location:
+<br>&gt; Screenshot of 30-day Google Analytics data
+<br>&gt;=20
+<br>&gt; I eagerly await your response.
+<br>&gt;=20
+<br>&gt; Best regards,
+<br>&gt;=20
+<br>&gt; Christine Mae Joy Gauna
+<br>&gt; PS Engineer - External
+<br>&gt; Taboola Professional Services
+<br>&gt;=20
+<br>&gt; This notification is related to Case #00600697
+<br>&gt;=20
+<br>&gt; Advertiser Help Center: <A HREF=3D"https://help.taboola.com/hc/en-=
+us" TARGET=3D"_blank">https://help.taboola.com/hc/en-us</A>
+<br>&gt; Publisher Help Center: <A HREF=3D"https://pubhelp.taboola.com/hc/e=
+n-us" TARGET=3D"_blank">https://pubhelp.taboola.com/hc/en-us</A>
+<br>&gt; Find out what's new at Taboola: <A HREF=3D"http://blog.taboola.com=
+/" TARGET=3D"_blank">http://blog.taboola.com/</A>
+<br>&gt;=20
+<br>&gt; [ ref:_00Dd0eHCX._500Nrr9Wc:ref ]
+<br>&gt;=20
+<br>&gt; ---------------------------------------------------------------
+<br>&gt; 06/15/2023 01:59:56 AM EDT [Christine Mae Joy Gauna]
+<br>&gt; ---------------------------------------------------------------
+<br>&gt;=20
+<br>&gt; To: Abdoul Gadiri &lt;<A HREF=3D"mailto:contact@fiidewgal.com">con=
+tact@fiidewgal.com</A>&gt;
+<br>&gt;=20
+<br>&gt; Hi there,
+<br>&gt;=20
+<br>&gt; I appreciate your enthusiasm in becoming a Taboola publisher. I'm =
+Kei
+<br>&gt; from the Customer Success Team.
+<br>&gt;=20
+<br>&gt; To ensure your request reaches the right team member, kindly respo=
+nd
+<br>&gt; to this message with the following details:
+<br>&gt;=20
+<br>&gt; Contact Email:
+<br>&gt; Company Name:
+<br>&gt; URL:
+<br>&gt; Company Geo Location:
+<br>&gt; Screenshot of 30-day Google Analytics data
+<br>&gt;=20
+<br>&gt; I eagerly await your response.
+<br>&gt;=20
+<br>&gt; Best regards,
+<br>&gt; ***************************
+<br>&gt;=20
+<br>&gt; [ ref:_00Dd0eHCX._500Nrr9Wc:ref ]
+<br>Hi ,
+<br>Thank you to reply .
+<br>Contact Email: <A HREF=3D"mailto:contact@fiidewgal.com">contact@fiidewg=
+al.com</A>
+<br>&gt; Company Name: Fii Dewgal
+<br>&gt; URL: <A HREF=3D"https://fiidewgal.com/" TARGET=3D"_blank">https://=
+fiidewgal.com/</A>
+<br>&gt; Company Geo Location: New York
+<br>
+<br>Case #00600697
+<br>[ ref:_00Dd0eHCX._500Nrr9Wc:ref ]
+<br>Thank you in advance !<br><br>-----------------------------------------=
+---------------------- <br>06/15/2023 01:59:56 AM EDT [Christine Mae Joy Ga=
+una] <br>---------------------------------------------------------------<br=
+><br>To: Abdoul Gadiri &lt;<A HREF=3D"mailto:contact@fiidewgal.com">contact=
+@fiidewgal.com</A>&gt;<br><br>Hi there,<br><br>I appreciate your enthusiasm=
+ in becoming a Taboola publisher. I'm Kei from the Customer Success Team.<b=
+r><br>To ensure your request reaches the right team member, kindly respond =
+to this message with the following details:<br><br>Contact Email:<br>Compan=
+y Name:<br>URL:<br>Company Geo Location:<br>Screenshot of 30-day Google Ana=
+lytics data<br><br>I eagerly await your response.<br><br>Best regards,</spa=
+n>
+
+<br />***************************
+<br />
+<br />
+<br />[ ref:_00Dd0eHCX._500Nrr9Wc:ref ]</html>
+------=_Part_1522_968681807.1687011289414--
+
+------=_Part_1523_1754074139.1687011289414--

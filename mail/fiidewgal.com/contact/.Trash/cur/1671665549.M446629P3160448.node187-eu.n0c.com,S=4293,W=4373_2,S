@@ -1,0 +1,80 @@
+Return-Path: <dmamadouhabib60@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id Yw2KGo2Xo2OAOTAA3R2AvA
+	(envelope-from <dmamadouhabib60@gmail.com>)
+	for <contact@fiidewgal.com>; Thu, 22 Dec 2022 00:32:29 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NcqVM6mSbz34SDnG
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="mIbG41a3"
+X-N0C-MailScanner-eFa-Watermark: 1672270345.64561@cswCiyNKA8qtUbB4lwSlIw
+X-N0C-MailScanner-eFa-From: dmamadouhabib60@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 08696401AEF7.A4E97
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-oa1-f42.google.com ([209.85.160.42] [209.85.160.42])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 08696401AEF7
+	for <contact@fiidewgal.com>; Thu, 22 Dec 2022 00:31:53 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 08696401AEF7
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 08696401AEF7
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=mIbG41a3
+Received: by mail-oa1-f42.google.com with SMTP id 586e51a60fabf-1443a16b71cso607746fac.13
+        for <contact@fiidewgal.com>; Wed, 21 Dec 2022 15:31:52 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=BVdnL9nxjIoou0Aztp/tuqaiYDAS4fzaqYdvhUkkk4U=;
+        b=mIbG41a3sJOUun2FmviyCaQwP7oU6ObWdGXeWGqvYvmi/Ca6V2Zvz/Wk6laID6xb2g
+         rZml8yIMHc7Nttye85xMEOGXshU1rDbZnsv7jA9MrJS2/dNFsqCLujFGF4FbR1sMpE8j
+         oo2JHJy/PthWAQ5Jq75uLVGeu826gh5sW3piUdLYoSXsBazyetKvmSJoAVZRu1uMRSJg
+         K+4/Rf8Q/DBqzSxNdi1YEN+Or1lj/uYjjq31j3jig7qmX5ntUoTAMyoPLKxq/00ein9a
+         Q1JbHl3tcf9hbMxSLmbUfVSsLSuFJ+ZMlOw7PWKRC7VC3efgyW7qe67iJr7pAZmT2XuI
+         wH5g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=BVdnL9nxjIoou0Aztp/tuqaiYDAS4fzaqYdvhUkkk4U=;
+        b=KmHkiSG5JI1OT7Ugrd7/vHZEzwfyLT0xiIyl3NFMtLCv1jNFm9Lv/mrGDqgHQtDnIq
+         6Lo+tnu1STXOs5eiuLD9gyfJwbm54ZRltVay2IbTlwSa66/bM7/CaYBDdjU+ILtqcgMw
+         K8ElBl3o21fJHRWEKp6W3DoJGzlMxdom9DePiHgehSopuqF2N4B9oSLMi5gHdmAcSK2P
+         JCZxLYloFdD/BNDsj1TW++vSYvZt6MQEJBVa/eK+hxIInnvbKx3+FaqgScmQ8bmLN7uv
+         nTYVpYgIECrJm0OxTr3pQyBhY6JEV7Yh3+vkdQIml7Epl5R1604dwwS+Yzk1j7UQz91K
+         d9+g==
+X-Gm-Message-State: AFqh2kqH5ZkBPdJTmGcfI5L1kmWMRZ6nOpH73Gm/vWzHfqXXYIea/mAV
+	jYnExa6O8v5PmyZGtriUFXf8l2ZkFPr6K4wgBNZPEq2k
+X-Google-Smtp-Source: AMrXdXtiHJKMMyjkfhRwCPdwvUSHrG2lwq79LVPM3eqnDYETR7GJSCpDju0F9iDa6P0FhhSXYGh9eWImCfQvNuqs4rg=
+X-Received: by 2002:a05:6870:4e0a:b0:143:e3af:7b93 with SMTP id
+ pl10-20020a0568704e0a00b00143e3af7b93mr235435oab.118.1671665511484; Wed, 21
+ Dec 2022 15:31:51 -0800 (PST)
+MIME-Version: 1.0
+From: Mamadou habib Diallo <dmamadouhabib60@gmail.com>
+Date: Wed, 21 Dec 2022 23:31:39 +0000
+Message-ID: <CA+72h-UAJWuLoXUQrCJ-3r-nqxALUAVGnrcXctQU=9i_D7_Uyg@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000fed19205f05ef4b7"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000fed19205f05ef4b7
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Salut vous allez bien Diallo Mamadou habib depuis S=C3=A9n=C3=A9gal
+
+--000000000000fed19205f05ef4b7
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Salut vous allez bien Diallo Mamadou habib depuis S=C3=A9=
+n=C3=A9gal=C2=A0</div>
+
+--000000000000fed19205f05ef4b7--

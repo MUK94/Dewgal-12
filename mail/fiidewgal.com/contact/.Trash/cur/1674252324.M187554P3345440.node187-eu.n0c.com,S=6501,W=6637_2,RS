@@ -1,0 +1,136 @@
+Return-Path: <safiatoubarry7@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id GCcfCyQQy2MgDDMA3R2AvA
+	(envelope-from <safiatoubarry7@gmail.com>)
+	for <contact@fiidewgal.com>; Fri, 20 Jan 2023 23:05:24 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NzD840VSLz34nwbc
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="TZMlB7OG"
+X-N0C-MailScanner-eFa-Watermark: 1674857119.84316@qPwvKKxfloAb1wrkzbRJMQ
+X-N0C-MailScanner-eFa-From: safiatoubarry7@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 3D1A34017F86.ACC19
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-wm1-f53.google.com ([209.85.128.53] [209.85.128.53])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 3D1A34017F86
+	for <contact@fiidewgal.com>; Fri, 20 Jan 2023 23:04:47 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 3D1A34017F86
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 3D1A34017F86
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=TZMlB7OG
+Received: by mail-wm1-f53.google.com with SMTP id f12-20020a7bc8cc000000b003daf6b2f9b9so6750205wml.3
+        for <contact@fiidewgal.com>; Fri, 20 Jan 2023 14:04:47 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=PNgbVQPYY+S2plmWYpEE5MstcQTMKHJ02J/ZKOZP12E=;
+        b=TZMlB7OGuJ/j7r1ExXy2IzMfQs2sOTYcR/mUwcgZp9UNEDzlk1573MBsdMCcjqLjDs
+         twbaxEB6ZG4fTCVpVOsp+l6B8UQCddHbQ/kdq2/L2e6SNQgK8oMVoqcR9dtQCRybmlnX
+         eJZQyLluRV+t4rwjf5RtOuDVy6IbYhugN13kYTHZ7fMrr4GDQo/5E3edw4EJl/94YMYn
+         jPfNuYkdsF5qzgSGqq4xBIwgZCAu9hW/gF4Jl8isb0cswjFLNy/DdrOqHY8sPEIKwpvO
+         Jfm6hhL747ak/M0tw+joZ2ZbApTWI1kl5M5snW9GTEoyKQkMNJPtwe127FrxsbHPmeFU
+         6xhQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=PNgbVQPYY+S2plmWYpEE5MstcQTMKHJ02J/ZKOZP12E=;
+        b=jstvFHzxoKcwVXA7G6LYvVTxh2yz0zS7DHQeCN5P+0OIEYg/1B7kiNH/x/owajd/9+
+         hojs3PPQ5C2hhpTgwwNXXw0acqc3px/6GMf4RwHeoKFjODESxu7tHqwvFRrt/0NqV7b+
+         UjzdtyoAbYxpbuAnT3zN7V85zyPqoMUjPQsqoo+gviZlwm5hlkq3wXsje7i9LkIE+ZF4
+         7M0HqurufvK1MFy9z7lQldCQ5IWQlDEicDvHI9EEvtTgSjpCQ9WZ1IWuIq6BSeUxd8Zn
+         gHiPhnuwRTIod5KB+ali5xs34RAODmE/x/PkwavDZBvQeGkXu3+xhxi8O+OAuS1FGGmS
+         wJNg==
+X-Gm-Message-State: AFqh2koT2Ne1jgq7jQ3GuIgtpg8MF2/ViOIoG1qECTbkz96ufZDevDrm
+	7rIs+zwKwznj9S2KgoYrnLw3sCZpDT2iivjGoGphPhDP
+X-Google-Smtp-Source: AMrXdXvIR6d3GMyC45BdpMe9h9FSCFZR8vkwxUAb4PQYiBzWjTWDtlRKLzPdoyvkdGipxfQfuTKX6kvVhCTrYBzzBo0=
+X-Received: by 2002:a05:600c:16c6:b0:3cf:d08d:3eb2 with SMTP id
+ l6-20020a05600c16c600b003cfd08d3eb2mr1252323wmn.129.1674252286233; Fri, 20
+ Jan 2023 14:04:46 -0800 (PST)
+MIME-Version: 1.0
+References: <8b653f5fe81a397b86590400964cd4f4@www.fiidewgal.com>
+ <CA+-8omY39tegeuscbcxijXkq1eKH_YX05Mc30GtAwSTjtzpToQ@mail.gmail.com> <b200d3b4f8a0a1386ee2d8b54eadb1a9@fiidewgal.com>
+In-Reply-To: <b200d3b4f8a0a1386ee2d8b54eadb1a9@fiidewgal.com>
+From: Safiatou Barry <safiatoubarry7@gmail.com>
+Date: Fri, 20 Jan 2023 22:04:33 +0000
+Message-ID: <CA+-8omb5bS-UWSkybz43xSo5kdr6jE4dPbv=pwB3YLStE_4stw@mail.gmail.com>
+Subject: =?UTF-8?Q?Re=3A_Vous_avez_une_nouvelle_demande_d=27int=C3=A9r=C3=AAt?=
+To: =?UTF-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>
+Content-Type: multipart/alternative; boundary="000000000000c9101505f2b93ce6"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000c9101505f2b93ce6
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bonsoir j'ai re=C3=A7u le mail et le num=C3=A9ro je vous ai contact=C3=A9 m=
+ais h=C3=A9las.
+
+Le ven. 20 janv. 2023, 09:52, <contact@fiidewgal.com> a =C3=A9crit :
+
+> Le 2023-01-19 09:02, Safiatou Barry a =C3=A9crit :
+> > Je ne sais pas comment cela fonctionne chez vous pour communiquer avec
+> > tous ces gens.
+> >
+> > Le jeu. 19 janv. 2023, 12:40, Ne r=C3=A9pondez pas <contact@fiidewgal.c=
+om>
+> > a =C3=A9crit :
+> >
+> >> Bonjour Safiatou Barry,
+> >>
+> >> Alpha Diallo a manifest=C3=A9 son int=C3=A9r=C3=AAt pour vous.
+> >>
+> >> Veuillez contacter l'=C3=A9quipe administrative si vous avez d'autres
+> >> questions.
+> >>
+> >> Merci,
+> >>
+> >> Ne r=C3=A9pondez pas
+> Bonjour , voici mon whatsApp 001 646752 9115.
+> Merci !
+>
+
+--000000000000c9101505f2b93ce6
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Bonsoir j&#39;ai re=C3=A7u le mail et le num=C3=A9ro je v=
+ous ai contact=C3=A9 mais h=C3=A9las.=C2=A0</div><br><div class=3D"gmail_qu=
+ote"><div dir=3D"ltr" class=3D"gmail_attr">Le ven. 20 janv. 2023, 09:52,  &=
+lt;<a href=3D"mailto:contact@fiidewgal.com">contact@fiidewgal.com</a>&gt; a=
+ =C3=A9crit=C2=A0:<br></div><blockquote class=3D"gmail_quote" style=3D"marg=
+in:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">Le 2023-01-19 09=
+:02, Safiatou Barry a =C3=A9crit=C2=A0:<br>
+&gt; Je ne sais pas comment cela fonctionne chez vous pour communiquer avec=
+<br>
+&gt; tous ces gens.<br>
+&gt; <br>
+&gt; Le jeu. 19 janv. 2023, 12:40, Ne r=C3=A9pondez pas &lt;<a href=3D"mail=
+to:contact@fiidewgal.com" target=3D"_blank" rel=3D"noreferrer">contact@fiid=
+ewgal.com</a>&gt;<br>
+&gt; a =C3=A9crit :<br>
+&gt; <br>
+&gt;&gt; Bonjour Safiatou Barry,<br>
+&gt;&gt; <br>
+&gt;&gt; Alpha Diallo a manifest=C3=A9 son int=C3=A9r=C3=AAt pour vous.<br>
+&gt;&gt; <br>
+&gt;&gt; Veuillez contacter l&#39;=C3=A9quipe administrative si vous avez d=
+&#39;autres<br>
+&gt;&gt; questions.<br>
+&gt;&gt; <br>
+&gt;&gt; Merci,<br>
+&gt;&gt; <br>
+&gt;&gt; Ne r=C3=A9pondez pas<br>
+Bonjour , voici mon whatsApp 001 646752 9115.<br>
+Merci !<br>
+</blockquote></div>
+
+--000000000000c9101505f2b93ce6--

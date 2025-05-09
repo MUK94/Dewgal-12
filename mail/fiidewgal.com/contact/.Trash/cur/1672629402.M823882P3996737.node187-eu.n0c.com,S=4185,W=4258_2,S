@@ -1,0 +1,73 @@
+Return-Path: <amadoubitaou@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id QF4IMZpMsmNB/DwA3R2AvA
+	(envelope-from <amadoubitaou@gmail.com>)
+	for <contact@fiidewgal.com>; Mon, 02 Jan 2023 04:16:42 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Nlgy253xTz5PNYn
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="BOrEkdcc"
+X-N0C-MailScanner-eFa-Watermark: 1673234200.39714@3mOC5liJXOfuSwDmTlhqwg
+X-N0C-MailScanner-eFa-From: amadoubitaou@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: A91524020D5E.A5AA2
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-oi1-f173.google.com ([209.85.167.173] [209.85.167.173])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id A91524020D5E
+	for <contact@fiidewgal.com>; Mon,  2 Jan 2023 04:16:06 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com A91524020D5E
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com A91524020D5E
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=BOrEkdcc
+Received: by mail-oi1-f173.google.com with SMTP id s187so24066261oie.10
+        for <contact@fiidewgal.com>; Sun, 01 Jan 2023 19:16:06 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=auto-submitted:precedence:content-disposition
+         :content-transfer-encoding:mime-version:subject:message-id:date:from
+         :to:from:to:cc:subject:date:message-id:reply-to;
+        bh=Zb56laOltolSxu59bXQpJw6LJPYyZWuivxYYhdzb9rM=;
+        b=BOrEkdccz08J6c3fPmWH1vaJQvaMlI8Z+Auobsx4nnbGNr/hq+YmbsjhmwLXdJbx6c
+         akapgpNoogqeyA7Rm9QQI8WRokwwsgo4iFiVFzmX1GKW3TMyr1IKVgzPxEWiAGmzTCji
+         8Ble5Z5G6WsgKL9Bw3f7rCARt4yvl2Gz1QVT0nVQJ1+kEccjAmIGlm6+BcZQ85q79MPQ
+         RlzGSB5rwccSu2b2yHKQuZyqqlUzkIse0HfmQ1lgfuIrtgoykwAf3M39f8hDRVsxhzOH
+         SLCjMa+EsvI33AoyJLpfSlq6MvaUpy/r3hSZzCjn7oz47mJx3NO8Gn/qEPz+vuZAk49R
+         xTkQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=auto-submitted:precedence:content-disposition
+         :content-transfer-encoding:mime-version:subject:message-id:date:from
+         :to:x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=Zb56laOltolSxu59bXQpJw6LJPYyZWuivxYYhdzb9rM=;
+        b=ptdXXK42UZRyDp5ADTaG4eKniZ8xkujysdKUhfbBm5ryrtoWH8vKNYbvHAddmXHueS
+         zqXvQRK4Txo53wmFZTmeqoo/zRzu28nno2ySTtvmEwbWzdPD9AvJEzFti+lkBT5q75p/
+         HDKoIynqb5By9fGUVFZZog6HhWaYu73tx0j9qrNt55njCwyZP6l6iinvewiVrdwu9Pvx
+         SUWOGQX8yr7WhQVXYf1s0+X9tkFtcZj00jEDHGCnmOyqeDCJAOwAaADTib7XTUIH9ewU
+         sxcpnomoMPeRXWAGIEjX9WBJkt11pTdDRdWRPu0uD1mtVqnX/KlpDnvUxxO2YwQypmZa
+         StLw==
+X-Gm-Message-State: AFqh2kpSfKGguWtgqpQYaNBXpFNoy1yDaKoopz6FRwXiGhk9O15nPCxw
+	/KvQ+1A/q/a/8ByJ89Il8YIddjXagGY+Ev88lTbBIcKvRbhU2e95/uR4D2E5JA==
+X-Google-Smtp-Source: AMrXdXtYba0dJ289KAGG0I18+54C7RuGUUZq5VXyUtC3AwcaXTTZDcOEe5lV6BFvXQp/Brp4Cy+A6VLr2C3V7UZx/HHUprWXACsDCqXNfDBQ
+X-Received: by 2002:a05:6808:3c6:b0:35e:2397:2223 with SMTP id o6-20020a05680803c600b0035e23972223mr1722090oie.163.1672629365196;
+        Sun, 01 Jan 2023 19:16:05 -0800 (PST)
+To: contact@fiidewgal.com
+From: "Diallo Amadoubitaou" <amadoubitaou@gmail.com>
+Date: Sun, 1 Jan 2023 19:16:05 -0800
+Message-ID: <CAK026iq31Fw_+sqkmydc+_XrqzFvtdiYMzGkXKafZu5wNY5bNQ@mail.gmail.com>
+Subject: =?UTF-8?Q?Amadoubitaou_Re:_R=C3=A9initialisation_du_mot_de_passe?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+Precedence: bulk
+X-Autoreply: yes
+Auto-Submitted: auto-replied
+X-N0C-Node-IP: 185.221.182.45
+
+B

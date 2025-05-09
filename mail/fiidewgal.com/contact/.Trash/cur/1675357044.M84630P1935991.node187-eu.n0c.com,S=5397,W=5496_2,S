@@ -1,0 +1,99 @@
+Return-Path: <kadiatouniakat@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id lfjrBHTr22N3ih0A3R2AvA
+	(envelope-from <kadiatouniakat@gmail.com>)
+	for <contact@fiidewgal.com>; Thu, 02 Feb 2023 17:57:24 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4P74hf5cqBz34SDmh
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="IOXwyh7n"
+X-N0C-MailScanner-eFa-Watermark: 1675961838.95864@bN31FTnsE0UrtXNHLRktpA
+X-N0C-MailScanner-eFa-From: kadiatouniakat@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 568F1401A44D.AE039
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-wm1-f52.google.com ([209.85.128.52] [209.85.128.52])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 568F1401A44D
+	for <contact@fiidewgal.com>; Thu,  2 Feb 2023 17:56:45 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 568F1401A44D
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 568F1401A44D
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=IOXwyh7n
+Received: by mail-wm1-f52.google.com with SMTP id q10-20020a1cf30a000000b003db0edfdb74so4338374wmq.1
+        for <contact@fiidewgal.com>; Thu, 02 Feb 2023 08:56:45 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:in-reply-to:references:message-id:date:subject:mime-version:from
+         :content-transfer-encoding:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=IOlseTCV6V+7n5MRJXxMC6+cOVcEfHWl18PdVrp89M8=;
+        b=IOXwyh7nM5VapjcZqbR1VXxd+DeSXR5uVW/b/v2uqOdpNV3dWQL32nYg8JWKBs8Oyp
+         vGTawTZW8OM0dGH9VdJkWy2NXWKh3twBKuCkSMCQCt2c4TaLZHqVcY3ipsG5x8rU5i1D
+         6BTQV/vISi4UlUCM+Z0o2OcvaWCA5hj6v2VQt94b1r0ZFqyXROotJMiFtVvby4GXQ8Vv
+         dQACJPBWD8yIAa8QId3d2Ez4MSWU/lrg73fKyPwKjNylu8bXLASH+Pfn+JJE0gN3iedF
+         m9LkcIyQa5hhDqHZYxBrLDCOfq+mnJ/jMQVdqO72mD3RI9OzOJdw8WsHX6LAaSh3DlbC
+         DRwg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:in-reply-to:references:message-id:date:subject:mime-version:from
+         :content-transfer-encoding:x-gm-message-state:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=IOlseTCV6V+7n5MRJXxMC6+cOVcEfHWl18PdVrp89M8=;
+        b=Qt3j152LadNL+SqzYRlLxH2kOEus23EiWSU8P660K/ooSUVpVgw0o/DLP0VoQ8Ciol
+         +zjE3cSe0N40scqrmItgzHG1d5PXRKGn33OxIdKN+FudeKxLPfA4sS3LipXvmboejGHU
+         IKxamJWZY7reY0q0CvhextvnvzhzAb3G/wouHEP/c46pL/7nzu6TnX9upxdjY07UYf1D
+         nVLLY7tkkUPmz6u2d2F0KNHdlzEoCqvm+OO9peHtEqxQrWE80CReHWHzzce1PGlgXosp
+         IBRxJ83peVZsfGH7GaAf3Sk684n8/b/aHEoqAPOGlLeWJg0ajQGlT/ZaYG0MMEKH7+gj
+         4xHA==
+X-Gm-Message-State: AO0yUKUA3aRMo73tNPXWNWmfxQXwRNXhNc2RizD1jcXKMgFvQ8De1fYI
+	yyWmQj8M4MjpozkiIJGzOnLf/yHG1eBvTw==
+X-Google-Smtp-Source: AK7set/mXX0Jmm66QkOnPbyGcw/sWP1rJ3TI76GgED4ni81b7nj6sbu2GV526njOCJIyrw6B2uEVZQ==
+X-Received: by 2002:a05:600c:4f8d:b0:3dc:e66:4cb9 with SMTP id n13-20020a05600c4f8d00b003dc0e664cb9mr6740203wmq.13.1675357004589;
+        Thu, 02 Feb 2023 08:56:44 -0800 (PST)
+Received: from smtpclient.apple ([197.149.242.216])
+        by smtp.gmail.com with ESMTPSA id z4-20020a05600c0a0400b003dfdeb57027sm2461561wmp.38.2023.02.02.08.56.44
+        for <contact@fiidewgal.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Thu, 02 Feb 2023 08:56:44 -0800 (PST)
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+From: =?utf-8?Q?Kadiatou_Niakat=C3=A9?= <kadiatouniakat@gmail.com>
+Mime-Version: 1.0 (1.0)
+Subject: Re: Rappel avant la suppression de votre compte sans photo .
+Date: Thu, 2 Feb 2023 16:56:30 +0000
+Message-Id: <A86CF056-F1C3-4C5E-ACFA-1C018743AB31@gmail.com>
+References: <5ad2ce342dea3b480a622d2b6de8aada@fiidewgal.com>
+In-Reply-To: <5ad2ce342dea3b480a622d2b6de8aada@fiidewgal.com>
+To: contact@fiidewgal.com
+X-Mailer: iPhone Mail (20C65)
+X-N0C-Node-IP: 185.221.182.45
+
+Aleykou salam je vous ai =C3=A9crit sur WhatsApp=20
+
+Envoy=C3=A9 de mon iPhone
+
+> Le 2 f=C3=A9vr. 2023 =C3=A0 10:27, contact@fiidewgal.com a =C3=A9crit :
+>=20
+> =EF=BB=BFSalam Aleykou,
+> Vous =C3=AAtes inscrites sur la plateforme Fii DEWGAL mais vous n'avez pas=
+ ajouter de photo
+> de profil ni ajouter vos informations sur votre formulaire ; dans le souci=
+s d'ameliorer
+> le bon fonctionnement de la plateforme nous vous prions de bien vouloir re=
+mplir vos
+> informations et d'ajouter votre photo de profil =C3=A0 defaut votre compte=
+ sera supprimer.
+> Si vous n'avez pas acces =C3=A0 votre compte veillez forunir votre nom , p=
+renom ,
+> date de naissance ,e-mail adresse ,photo sur notre whatsApp au 001 646 752=
+ 9115
+> ou scanner le QR code on vous aidera =C3=A0 ajouter vos informations et ph=
+oto.
+> Merci pour votre comprehension!
+> <318090110_681462550023618_1622813815272714109_n.jpg>

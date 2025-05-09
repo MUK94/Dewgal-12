@@ -1,0 +1,77 @@
+Return-Path: <lsow51755@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id WB/HOR6ztWMRKR8A3R2AvA
+	(envelope-from <lsow51755@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 04 Jan 2023 18:10:54 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NnGMf61njz1wKN
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="Uu2ZvEEO"
+X-N0C-MailScanner-eFa-Watermark: 1673457046.24881@d3I3NOLLblyK7zwCU7UVig
+X-N0C-MailScanner-eFa-From: lsow51755@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: D7CF7401AEF6.AC8EF
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ej1-f48.google.com ([209.85.218.48] [209.85.218.48])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id D7CF7401AEF6
+	for <contact@fiidewgal.com>; Wed,  4 Jan 2023 18:10:12 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com D7CF7401AEF6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com D7CF7401AEF6
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=Uu2ZvEEO
+Received: by mail-ej1-f48.google.com with SMTP id fy8so20189894ejc.13
+        for <contact@fiidewgal.com>; Wed, 04 Jan 2023 09:10:12 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=ydBC8av+7OxzUcxKXoaqSMy4YmcDrrB2/G7CQoqT+K4=;
+        b=Uu2ZvEEOMWI6F1P7LSmVKkeHbpfu1NbP6mcLJseA5qy9kpz0OijhdLlr0AWeh5hJCr
+         WSAQouG0SAhtW20iiZl6xW/xT4fbRI/eQxqtRQ+1wf/hMSqrTzzCYvrbviB/DI5UpcQp
+         CCBfot//3aIJ+P3TTAbH3QZuNhZzUd2TdDYj8RyaSvnHnAkUHO8MhsAkHJl48A7XMHxu
+         +8YngsCVldCCmlNSpxcbu925U133zKB8LgL+9CG8VY+hlkCQMmm5gxEM3eI4dtSdVuOQ
+         q3iErJEgp3A67TKcB9ukhn+NqcBxZ6UFkY8VRdwiS/NdbFXqH+rDF6sIlRXANMeFWY5x
+         VlxQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=ydBC8av+7OxzUcxKXoaqSMy4YmcDrrB2/G7CQoqT+K4=;
+        b=vv/l/ksNtC/6/xjIIKNwnftFmPLqKYxARYAGBUsbe/jRlYCSb5Lk9/oc8SzY1aBCT6
+         vZJdbORnlni+kMHWBuNazPgFPGoKWAXE77d/s6Dpb14ZYTKBnWdA7Gbvg3I31vE7eOW8
+         Ju6NxNKdFEcUlslxd4LfUzlEirO0Ng5g9cu6MvVtoLmL3fd5seRenbs7y2OIgHDPnmRS
+         oiX8fdK++OXvWvJE2q43S0GYq3+at6ZIs830qEXt+EmMuXUs5ea576keRId2RPx1h0xm
+         OhT6NC6L9s9aYo1NiMQMm+Pfz0IoxnpMUQToeGMpH3ullfqm9JwrpC+kIGl52A72WhtH
+         6pUQ==
+X-Gm-Message-State: AFqh2koLKYHt0RQM/zq0WGvvt13Gl+ZF0CAHFoDzUUzvcxj2zCBp0vGT
+	reZS2Q53sklHvaFPxuQKTJhYRFIayzXKZ0udY6OKHObP
+X-Google-Smtp-Source: AMrXdXvV673lzhD2UoC6G0ITlc70WG/4dlhTlB6CMpk8BAntlOOIUiSiK2Uu4gS30brXq7cNDCzYYd+bTW7WerxzaKY=
+X-Received: by 2002:a17:906:8a68:b0:7c1:ac8:73a4 with SMTP id
+ hy8-20020a1709068a6800b007c10ac873a4mr4874132ejc.446.1672852212148; Wed, 04
+ Jan 2023 09:10:12 -0800 (PST)
+MIME-Version: 1.0
+From: Sow lama <lsow51755@gmail.com>
+Date: Wed, 4 Jan 2023 17:09:36 +0000
+Message-ID: <CALzzJWAOe1DcPnxjTGfU1y35O6x6tJDAsrSf0sz67J30CFVfSw@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000ddeea305f17341db"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000ddeea305f17341db
+Content-Type: text/plain; charset="UTF-8"
+
+Isow51755@gmail.com
+
+--000000000000ddeea305f17341db
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"><a href="mailto:Isow51755@gmail.com">Isow51755@gmail.com</a><div dir="auto"><br></div></div>
+
+--000000000000ddeea305f17341db--

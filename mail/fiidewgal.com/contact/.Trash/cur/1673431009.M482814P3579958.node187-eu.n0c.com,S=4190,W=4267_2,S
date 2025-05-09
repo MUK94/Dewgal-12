@@ -1,0 +1,77 @@
+Return-Path: <bahalphamahmoud45@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id gG+yHOGHvmM2oDYA3R2AvA
+	(envelope-from <bahalphamahmoud45@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 11 Jan 2023 10:56:49 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NsNPY2RrTz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="Hmdmezgt"
+X-N0C-MailScanner-eFa-Watermark: 1674035806.68966@MRfn5w/fkcAXjaU8ZyR7rg
+X-N0C-MailScanner-eFa-From: bahalphamahmoud45@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: A99C24020D5E.A5CD0
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-yb1-f182.google.com ([209.85.219.182] [209.85.219.182])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id A99C24020D5E
+	for <contact@fiidewgal.com>; Wed, 11 Jan 2023 10:56:12 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com A99C24020D5E
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com A99C24020D5E
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=Hmdmezgt
+Received: by mail-yb1-f182.google.com with SMTP id e76so14451426ybh.11
+        for <contact@fiidewgal.com>; Wed, 11 Jan 2023 01:56:12 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=RQprMKkzwyR3pDVIqHdHqKYTi+Xi87Dg8KxjxIaqaQU=;
+        b=HmdmezgtqBCVaM/kNzu3dNMsJEVbPulG3SFE7WEtiynzGYq+YYMNFMgrJSjeuU+CJD
+         DYlLGvi8UFgYVip1gF4L+jyODBYvYQt6nnXff3Yiz6t/Sei9bDuT3y8AO73MaDMXpgYg
+         ef7/mHA3FlfcgiVHdVkphoyWVw+Ra7A5dvZ6DsTr7Ol6JYnn06OCd/ABHndVrmNnGIII
+         lQfJ6/R6FrDAHMCFk7wqonSchmes8JnMSiJFWAEmK0KiuYpHTyz3uDN/NNTz/yzs/0/5
+         FLPFSjJJ8uKsLZt431TF5ZhW0SYOn4jIWZ9yhNjkDaw1aDSFJQ90ehHa/YnfxTDPGfZl
+         nN6A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=RQprMKkzwyR3pDVIqHdHqKYTi+Xi87Dg8KxjxIaqaQU=;
+        b=EJn5Tl1Vq9r7NR1svUH4RdKrpoxOnQEu9J7h+4f2NVe1n5yjjW50/RmHs6cjShJM33
+         9y9C9belBIcMmJBi2jTG0AbV/DjJZU5owgv6aKxPugUPJvz12YzFsUi10Uls81KXHT2C
+         75BnHeCkj7k6fuhPmJRnnwiXHQAInfHuULHvZT6Sa0+AxHmJRBT2o7lX0AsH1/YC35vw
+         SzBCvr6bg0U4uBx0PeYf8XdI/lrQ2sNgH620rszRZU6UmcE5izm70/WI/hEhM2oT5zTO
+         hPmVSmook7lbjurLtSqjesaCNkp08fYRVrMdGZ1r/Snnkx9VAea4Bux4M9vsmsB3FXau
+         0JLg==
+X-Gm-Message-State: AFqh2krjEfquN4L4C6uuw9yWTiCJF8engaMsQJZbCZwDQSjK0BurBkOb
+	Ak/iHWN79Qy11B25Nvp7fW6EFHkzVchTsMLwpRuu4FdA
+X-Google-Smtp-Source: AMrXdXv60HjGfeO0b5kWoHLr9+Br8obwpleRd1TYkHIjWtv1zsCimhJ8TtTxVCaJwlAWYGEPVup9ucC1l9Fz//cZIxo=
+X-Received: by 2002:a5b:58f:0:b0:727:6671:ff85 with SMTP id
+ l15-20020a5b058f000000b007276671ff85mr6587594ybp.585.1673430971224; Wed, 11
+ Jan 2023 01:56:11 -0800 (PST)
+MIME-Version: 1.0
+From: Alpha Mahmoud Bah <bahalphamahmoud45@gmail.com>
+Date: Wed, 11 Jan 2023 09:55:57 +0000
+Message-ID: <CADaJtju4rJswjHwZTHLQpQLk60RHyWxxavhKVuRr-wLiK9MmRQ@mail.gmail.com>
+Subject: Good morning i don't understand this
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000098977105f1fa026f"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000098977105f1fa026f
+Content-Type: text/plain; charset="UTF-8"
+
+bahalphamahmoud45@gmail.come
+
+--00000000000098977105f1fa026f
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto">bahalphamahmoud45@gmail.come<div dir="auto"><br></div><div dir="auto"><br></div></div>
+
+--00000000000098977105f1fa026f--

@@ -1,0 +1,79 @@
+Return-Path: <sowmamadoudian672@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id yBrjERdis2OCxgcA3R2AvA
+	(envelope-from <sowmamadoudian672@gmail.com>)
+	for <contact@fiidewgal.com>; Tue, 03 Jan 2023 00:00:39 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NmBD618Vrz1wJP
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="H0bfEa7T"
+X-N0C-MailScanner-eFa-Watermark: 1673305231.92179@+HRP4LRvtEtMoBqDp7SyYQ
+X-N0C-MailScanner-eFa-From: sowmamadoudian672@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 8012D4020D56.A49CD
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-yb1-f180.google.com ([209.85.219.180] [209.85.219.180])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 8012D4020D56
+	for <contact@fiidewgal.com>; Mon,  2 Jan 2023 23:59:58 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 8012D4020D56
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 8012D4020D56
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=H0bfEa7T
+Received: by mail-yb1-f180.google.com with SMTP id 83so30548417yba.11
+        for <contact@fiidewgal.com>; Mon, 02 Jan 2023 14:59:58 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=GLKirB/7YiIdGhsjXFGAr9rHYs/jDOxqtjWvWFQuwpQ=;
+        b=H0bfEa7TCmQcsEx9Tm6yhQG1BO82CHxt02/QulOeeHcpoZJZT4rKN81gAFVWATu8pj
+         e8O/0Q/MsqWC8rjthYG9Qcmnd4xynOtCr7G2MlFqUkNfevSdJr8NB/BjekYyiXnzOTYr
+         f2hQ7JB0o1c3BhDE4bhwarwti/e7pm6Y0MN0/vZGN1RBkFHDSFAzXCptyn1szXLwrbuB
+         eh67SNutHgbzTFfnHTTkm+zCwFockB6Ma1hZUAWb1rX23aTr8imW9O3tvOCJw31EtmTJ
+         H02L884HyNflcE00BbKDb/GRQDCDFxIRC6Yu0DuRPelxIvHKSlH3qHAV5c+R1Rl/v6O+
+         R7rQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=GLKirB/7YiIdGhsjXFGAr9rHYs/jDOxqtjWvWFQuwpQ=;
+        b=Kl24wYU4SrlyXyWTPLtUn58QcKfXjbiupGJE2NJOKdDNx93VH2aoFL3NV5iZUNC0Lc
+         vEU/7FCTmM+Bm9AK/eK4atJJP28fjt3uWo/df//WHvykF6HQwLRpWadyxI1EFVLLU96x
+         QnZNA65MvFvp4T0+PL7gVtMsH6EY9X3Shj7s8aYx56j+6BMQT0oyeQt9vYMCKP7/W06e
+         659xP483STl+HVfX8B5cSLEO3Es74G+pnZtxZo1hwwyrwUJ+jgbEDNHlFFJ22lS05kEo
+         xOstMMVxNOdocfWw2TlxdSczQjWruSnPNP5CW2EFbOkVOByObqVjxK9iuXHvVfTZoSx9
+         1efA==
+X-Gm-Message-State: AFqh2koAI6KbLWhsQ/Ew05WR0XHVhvbfMusaHw7EUn6pRYsLdPUkSmok
+	m4H3PgrF+qnMWNS5p4+/f5fdr6BxLyDuFYqDgEJc1O/0
+X-Google-Smtp-Source: AMrXdXtIt3U/S2uvitonCaoGm9RyED+5MNG9+dE/fIC3TfYLP7hVcFUgWFQwM9C2lqUQgRdDJuu49cTvJ4ewlpZXvMQ=
+X-Received: by 2002:a25:234e:0:b0:714:4823:eacc with SMTP id
+ j75-20020a25234e000000b007144823eaccmr4771512ybj.4.1672700397112; Mon, 02 Jan
+ 2023 14:59:57 -0800 (PST)
+MIME-Version: 1.0
+From: Mamadoudian Sow <sowmamadoudian672@gmail.com>
+Date: Mon, 2 Jan 2023 22:59:42 +0000
+Message-ID: <CAM3P0U5AkOAxUs2jSRdjDDUM+yDycf=vN0fELa_=72rO9t3MDQ@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000fc53a305f14fe8d3"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000fc53a305f14fe8d3
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+2KfZhNiz2YTYp9mFINi52YTZitmD2YUg2YjYsdit2YXYqSDYp9mE2YTZhyDYqti52KfZhNmJINmI
+2KjYsdmD2KfYqtmHDQo=
+--000000000000fc53a305f14fe8d3
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+PGRpdiBkaXI9ImF1dG8iPtin2YTYs9mE2KfZhSDYudmE2YrZg9mFINmI2LHYrdmF2Kkg2KfZhNmE
+2Ycg2KrYudin2YTZiSDZiNio2LHZg9in2KrZh8KgPC9kaXY+DQo=
+--000000000000fc53a305f14fe8d3--

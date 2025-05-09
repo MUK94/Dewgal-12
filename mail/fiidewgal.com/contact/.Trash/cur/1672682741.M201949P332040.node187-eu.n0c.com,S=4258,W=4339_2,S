@@ -1,0 +1,81 @@
+Return-Path: <ad7358720@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id MH71C/Ucs2MIEQUA3R2AvA
+	(envelope-from <ad7358720@gmail.com>)
+	for <contact@fiidewgal.com>; Mon, 02 Jan 2023 19:05:41 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Nm3gn0Ptqz1wJV
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="BBXm/7ID"
+X-N0C-MailScanner-eFa-Watermark: 1673287532.35574@i9NYhUp0L4tSpt7HRymQoA
+X-N0C-MailScanner-eFa-From: ad7358720@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: s
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 3CE92400837A.A155B
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-oa1-f50.google.com ([209.85.160.50] [209.85.160.50])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 3CE92400837A
+	for <contact@fiidewgal.com>; Mon,  2 Jan 2023 19:05:00 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 3CE92400837A
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 3CE92400837A
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=BBXm/7ID
+Received: by mail-oa1-f50.google.com with SMTP id 586e51a60fabf-142b72a728fso34327069fac.9
+        for <contact@fiidewgal.com>; Mon, 02 Jan 2023 10:05:00 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=uY6zB857bPgT8ouUzEghIC0GUy96LkVZzVLSkDMGpWE=;
+        b=BBXm/7IDg4OTrSeocelnnMwfHAlqSUSedZbiz1LqQJBWX8QPvaM62fsXYOm6Xd4RbY
+         63nhZbC3Cv3hnUajPo4TKkQLJrz+r82XVy9WrP4W7z80NQAMz+6v+Gbd/u2gYXyP0Lp5
+         YZnOrNf5wg6y/Nc7PeGN6Uk2N/kHitZ473D+ihHGLdN9Q255QDR9e0AxrZtkGbp4IVMJ
+         pAtGlELP7PrEJFPcM8jcafWrae699l4Ow+KKw7XPz91LTdzVE+RwOv1SyoC9hXxFjyPY
+         f5JzFKR8u6oXKBPz+jMu2MBsVure88FEVLWfFeNcH5ldtPjgCIcI8LV3locTSK0cyUWT
+         xRDA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=uY6zB857bPgT8ouUzEghIC0GUy96LkVZzVLSkDMGpWE=;
+        b=V+sH2w2wFlZmfkH/7aLi2om/7Iqkj3uqxVpKU9ThaHsYzCsbdf7UDH/3ZP3Nd47i+M
+         H9BPU1VXfrrhWg+xXUnbsBGhjuQ+92kX9pqmMwWX7gQ5mvChe1qgP65WI6k0C3rZ7Wv4
+         AJVd25qJqbWcfCaM0HPddDKDTux40TOLZNg9uUIDitc1bR+ecsDj/ZmhwBUvuqj5jjxB
+         Dn4gO66lPD3MQ17uRGHooMex2p2Jg401GRf2zEPDm4wM7pjj7+W9WejLsoGS7dusThr4
+         bOefO8j6Z7lAfWwGSTJM9RjfI82YZW/Z5GDx7XIB4e4QOtrMvbPx3sKp8UIQLlfzHEsh
+         /13w==
+X-Gm-Message-State: AFqh2krENo4RFvrQ9zWzMWuUm4m3Yd6aQAuL3ymKGaIbgetUV9dL3Mxl
+	w+A8Juwnav/Iz1SDLjhVSPA6PmN8+WzkSeb7G7isBudf
+X-Google-Smtp-Source: AMrXdXsycTjmVQTasU8OiG5zt1KgIGfwndWy2SpZKzjdY3sWikFpNMnE1FICoPeCZz1kF0A2xMFcE1R26GfJFZ8Ugis=
+X-Received: by 2002:a05:6870:3c0c:b0:144:5394:f6f0 with SMTP id
+ gk12-20020a0568703c0c00b001445394f6f0mr2221980oab.59.1672682698491; Mon, 02
+ Jan 2023 10:04:58 -0800 (PST)
+MIME-Version: 1.0
+From: Tosskere Pellal <ad7358720@gmail.com>
+Date: Fri, 23 Dec 2022 17:19:37 +0000
+Message-ID: <CAHFfJga3Jb5qHxEPhz6EkwJV-cA8qwMnmRpqwLJrKjOGLz_=-w@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000010cce005f14bcaf0"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000010cce005f14bcaf0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Savoir comment vivre avec ma femme =F0=9F=91=A9
+
+--00000000000010cce005f14bcaf0
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Savoir comment vivre avec ma femme =F0=9F=91=A9=C2=A0</di=
+v>
+
+--00000000000010cce005f14bcaf0--

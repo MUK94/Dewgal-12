@@ -1,0 +1,64 @@
+Return-Path: <abdoussalam168@icloud.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id Uy8DMOEYxGOCiy0A3R2AvA
+	(envelope-from <abdoussalam168@icloud.com>)
+	for <contact@fiidewgal.com>; Sun, 15 Jan 2023 16:16:49 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NvzJw0lSCz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=icloud.com header.i=@icloud.com header.b="jTSgYUM+"
+X-N0C-MailScanner-eFa-Watermark: 1674400608.01415@no+ZAdPk10YBAEkICxrjAA
+X-N0C-MailScanner-eFa-From: abdoussalam168@icloud.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 9E025401AEEF.A4413
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from ci74p00im-qukt09081702.me.com ([17.57.156.7] [17.57.156.7])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 9E025401AEEF
+	for <contact@fiidewgal.com>; Sun, 15 Jan 2023 16:16:46 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 9E025401AEEF
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=quarantine dis=none) header.from=icloud.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=icloud.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 9E025401AEEF
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=icloud.com header.i=@icloud.com header.a=rsa-sha256 header.s=1a1hai header.b=jTSgYUM+
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=icloud.com;
+	s=1a1hai; t=1673795805;
+	bh=gClo6vlDdYQ1sN0E2KGu+GSZmBYGO44MwDTsjWG+eoQ=;
+	h=Content-Type:From:Mime-Version:Date:Subject:Message-Id:To;
+	b=jTSgYUM+9DVet9pjJygfOrtAzh9hoJ9aZtQOo4gDgfmnfmlXX5rNIqSDgKquAknlA
+	 nFanlJlJJFM5z8zdeaJmekSwtCelVTuO94cdCsfTxKigN0zD5y5x9KIWs1Z6Vo5uyU
+	 vRi+V+U6icXWhvnOrBuvLIB/2Pue6Ba6INQrCIQIsWtLvX+PBBZxuNDvVd9AyY6Ofd
+	 3kShJ24nczhdHau6LWxP+X0wauJnfolq/TLCqYcwFN1ulztmR/rn1Z3zo5yYs0v33a
+	 xtBaUvHWMKYVgUf/owmGoqwaKedapA5r2FXTggjEy9wHEDrAxJk2hUu94WpMrwadsa
+	 QwoHNEwGvkefg==
+Received: from smtpclient.apple (ci77p00im-dlb-asmtp-mailmevip.me.com [17.57.156.26])
+	by ci74p00im-qukt09081702.me.com (Postfix) with ESMTPSA id 3A4CD3BC070E
+	for <contact@fiidewgal.com>; Sun, 15 Jan 2023 15:16:44 +0000 (UTC)
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+From: Abdou salam Diallo <abdoussalam168@icloud.com>
+Mime-Version: 1.0 (1.0)
+Date: Sun, 15 Jan 2023 15:16:39 +0000
+Subject: Salut 
+Message-Id: <3F26BAA3-0BCE-4BE1-A39F-7443A4371EC6@icloud.com>
+To: contact@fiidewgal.com
+X-Mailer: iPhone Mail (19E258)
+X-Proofpoint-GUID: xvgTfU1cZIKGjCrC-VAxblhea-ZpToqK
+X-Proofpoint-ORIG-GUID: xvgTfU1cZIKGjCrC-VAxblhea-ZpToqK
+X-Proofpoint-Virus-Version: =?UTF-8?Q?vendor=3Dfsecure_engine=3D1.1.170-22c6f66c430a71ce266a39bfe25bc?=
+ =?UTF-8?Q?2903e8d5c8f:6.0.425,18.0.572,17.11.62.513.0000000_definitions?=
+ =?UTF-8?Q?=3D2022-01-11=5F01:2022-01-11=5F01,2020-02-14=5F11,2021-12-02?=
+ =?UTF-8?Q?=5F01_signatures=3D0?=
+X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 clxscore=1011 phishscore=0 mlxscore=0
+ spamscore=0 adultscore=0 suspectscore=0 malwarescore=0 mlxlogscore=492
+ bulkscore=0 classifier=spam adjust=0 reason=mlx scancount=1
+ engine=8.12.0-2209130000 definitions=main-2301150118
+X-N0C-Node-IP: 185.221.182.45
+
+
+
+Envoy=C3=A9 de mon iPhone=

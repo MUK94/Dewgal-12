@@ -1,0 +1,98 @@
+Return-Path: <dembajah1@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id sG6KH7mG22NnhhkA3R2AvA
+	(envelope-from <dembajah1@gmail.com>)
+	for <contact@fiidewgal.com>; Thu, 02 Feb 2023 10:47:37 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4P6v8m6qp7z34nwbm
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="lBNPHez9"
+X-N0C-MailScanner-eFa-Watermark: 1675936052.18254@5TSmZc4xTdchcGiBk488Yg
+X-N0C-MailScanner-eFa-From: dembajah1@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 5D6A2401B23D.A712A
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-wm1-f49.google.com ([209.85.128.49] [209.85.128.49])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 5D6A2401B23D
+	for <contact@fiidewgal.com>; Thu,  2 Feb 2023 10:47:00 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 5D6A2401B23D
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 5D6A2401B23D
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=lBNPHez9
+Received: by mail-wm1-f49.google.com with SMTP id q8so903412wmo.5
+        for <contact@fiidewgal.com>; Thu, 02 Feb 2023 01:47:00 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=content-transfer-encoding:mime-version:to:from:references
+         :message-id:subject:date:from:to:cc:subject:date:message-id:reply-to;
+        bh=ZP0Tmydcly495gY6P1BMpf4GD1+EgVkrmszzQgd7fV4=;
+        b=lBNPHez9ALdXHv4MWYgmRy4AfiQzIuUJAZqCkMZdRuuR/0pDex7CnJN/5OY+RDzr7y
+         RRzXH065NMaT1atLKsa1O8uKj8rKD3o0aRY73ldr0Mi4MhFFmwCeUqrNKtG/BRi+St30
+         CZfwOixrVaXImO4OhBZAckRTsOV2+nIzS5x25W0MFgAhK3v5sBkU52xZPuWQOu30HocR
+         wuYHyMUJMfchktvUa+2DaXNvjzNapILSGTwLAXHvh6+tlGw9Ai++pCvXRgIVKaYoH9ks
+         K5J3uVTvNDeS9SfeODI9+BhLJN8FhNUdQL4VHYG1M9aGf3FlrwNfTJFDeEhOhykeMtx9
+         PIOA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=content-transfer-encoding:mime-version:to:from:references
+         :message-id:subject:date:x-gm-message-state:from:to:cc:subject:date
+         :message-id:reply-to;
+        bh=ZP0Tmydcly495gY6P1BMpf4GD1+EgVkrmszzQgd7fV4=;
+        b=vIolsnYF5zW6RfLN7K1t35bdICXqNkO/MCLv5/uht0Wa94fV5ODTGjZ/v/hxwvdnjA
+         OFriZynBEeJ/jmtzeL6fOxBkSLjMFCjOaJ14MKY1nGaZGWi35o0YkN+fOlhU6iD5NpI1
+         pFFMcRZJ8G4I9EhAOguFMUyXr6JelIYiaUOiSXf/P7EVghW692733kacvco3n1PDiOxr
+         2JCT8iNr5Bq2OzcRoK4mMIk637WgQB4vkfI4Ntu4YcWzrEcYP9XCJjiDi/mOtOzI7iu4
+         +iVM8CA1s2YLFZr72yWcK/+t8DoF3nepnvmYWBZQKiRAZLF9M43JqUeYRkQyKqkku4Z3
+         Squg==
+X-Gm-Message-State: AO0yUKXNoiLx8uoi797BDqHmSXg5Jtys0kUg+DlSIHa9WkUY75WeZk8l
+	6PlQnVEdfTniswjtMWEb+zikB4hnhmA=
+X-Google-Smtp-Source: AK7set+4HTjK0gyufdxta87EZOX6Nvf1a3ewYLKmm0qNMJLJaZ0LLC6Qz8eLQbFlCY5CPqnqM2nG8A==
+X-Received: by 2002:a05:600c:1906:b0:3dc:50dd:361b with SMTP id j6-20020a05600c190600b003dc50dd361bmr5159694wmq.5.1675331219515;
+        Thu, 02 Feb 2023 01:46:59 -0800 (PST)
+Received: from ?IPv6:2a02:8440:2404:9c38:5180:7f01:9589:23a5? (2a02-8440-2404-9c38-5180-7f01-9589-23a5.rev.sfr.net. [2a02:8440:2404:9c38:5180:7f01:9589:23a5])
+        by smtp.gmail.com with ESMTPSA id i10-20020a05600c354a00b003dd1c15e7fcsm4884339wmq.15.2023.02.02.01.46.58
+        for <contact@fiidewgal.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Thu, 02 Feb 2023 01:46:58 -0800 (PST)
+Date: Thu, 02 Feb 2023 10:46:57 +0100
+Subject: =?ISO-8859-1?Q?Re=A0:_Rappel_avant_la_suppress?=
+ =?ISO-8859-1?Q?ion_de_votre_compte_sans_photo_.?=
+X-Priority: 3
+Message-ID: <1bssyypqwhy4-ehkot34honco-deizj18n44e6-mbh1fd-d6eqoogb5olm3ubx9y-x74if8l1en0r3yd2elt92s8a-1obrpfxngt37-yltwti-7i14l8-honknaq9l9x0etqqz3-et3ci1ea6djahbj8ua.1675331217082@email.android.com>
+References: <0020e3694422b87fa6500625e0c475ad@fiidewgal.com>
+From: =?UTF-8?B?4oCq4oCqRGlhIERlbWJh4oCs4oCs?= <dembajah1@gmail.com>
+To: "contact@fiidewgal.com" <contact@fiidewgal.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: base64
+X-N0C-Node-IP: 185.221.182.45
+
+PGRpdiBkaXI9ImF1dG8iPlNhbGFtIHlhYXd1dXIgY2VsbGEmbmJzcDs8YnI+PGJyPkVudm95w6kg
+ZGVwdWlzIG1vbiB0w6lsw6lwaG9uZSBIdWF3ZWk8L2Rpdj48ZGl2IHN0eWxlPSJsaW5lLWhlaWdo
+dDoxLjUiPjxicj48YnI+LS0tLS0tLS0gTWVzc2FnZSBvcmlnaW5hbCAtLS0tLS0tLTxicj5EZcKg
+OiBjb250YWN0QGZpaWRld2dhbC5jb208YnI+RGF0ZcKgOiBtZXIuIDEgZsOpdnIuIDIwMjMgw6Ag
+MTA6NDg8YnI+T2JqZXTCoDogUmFwcGVsIGF2YW50IGxhIHN1cHByZXNzaW9uIGRlIHZvdHJlIGNv
+bXB0ZSBzYW5zIHBob3RvIC48YnI+PGJsb2NrcXVvdGU+U2FsYW0gQWxleWtvdW0gLDxicj5Ob3Vz
+IHNvbW1lcyB0csOocyBoZXVyZXV4IGRlIHZvdXMgYXZvaXIgcGFybWkgbm9zPGJyPm1lbWJyZXMg
+ZGFucyBsYSBwbGF0ZWZvcm1lIGV0IG5vdXMgc291aGFpdG9ucyBxdWU8YnI+Vm91cyB5IHJlc3Rl
+ci5D4oCZZXN0IHBvdXJxdW9pIG5vdXMgdm91cyBwcmlvbnMgZGU8YnI+bWV0dHJlIMOgIGpvdXIg
+dm90cmUgcHJvZmlsIGVuIG1ldHRhbnQgY29ycmVjdGVtZW50PGJyPlZvdHJlIGRhdGUgZGUgbmFp
+c3NhbmNlICwgdm90cmUgw6l0YXQgY2l2aWwgO3ZvdHJlIHBob3RvPGJyPmV0IHZvdHJlIG51bWVy
+byBkZSB0ZWxlcGhvbmUgYXZlYyBsJ2luZGljYXRpZjxicj5TaSBjZWxhIGVzdCBjb21wbGlxdcOp
+IHBvdXIgdm91cyBmYWl0ZXMgbm91cyBwYXJ2ZW5pcjxicj52b3RyZSBudW3DqXJvIGRlIG1lbWJy
+ZSBxdWkgZXN0IHN1ciB2b3RyZSBwcm9maWwgcHVibGljPGJyPmF2ZWMgdm9zIGluZm9ybWF0aW9u
+cyBjaXTDqWVzIGNpIGRlc3N1cyAuPGJyPlZvdXMgcG91dmV6IMOpZ2FsZW1lbnQgbm91cyBmYWly
+ZSBwYXJ2ZW5pciB2b3RyZSBudW1lcm88YnI+ZGUgbWVtYnJlIGF2ZWMmbmJzcDsgdm90cmUgcGhv
+dG8gZXQgbnVtw6lybyBkZSB0ZWxlcGhvbmUgc3VyPGJyPm5vdHJlIFdoYXRzQXBwIDAwMSA2NDYg
+NzUyIDkxMTUgb3UganVzdGUgc2Nhbm5lciBsZSBRUiBDb2RlIGNpKTxicj5qb2ludCBjaS1kZXNz
+b3VzIC5TYW5zIHZvdHJlIHBob3RvICwgbGUgcHJvZmlsIHNlcmEgZMOpc2FjdGl2w6kuPGJyPlNp
+IHZvdHJlIGNvbXB0ZSBuJ2VzdCBwYXMgY29uZmlybWVyIGZhaXRlcyBub3VzIHBhcnZlbmlyIHZv
+czxicj5pbmZvcm1hdGlvbnMgc3VyIHdoYXRzQXBwIHBvdXIgdm91cyBpbnNjcmlyZS48YnI+TWVy
+Y2kgcG91ciB2b3RyZSBjb21wcmVoZW5zaW9uITwvYmxvY2txdW90ZT48L2Rpdj4=
+

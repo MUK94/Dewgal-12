@@ -1,0 +1,77 @@
+Return-Path: <anssoumane96@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id cN0mCfecGWRiWSEA3R2AvA
+	(envelope-from <anssoumane96@gmail.com>)
+	for <contact@fiidewgal.com>; Tue, 21 Mar 2023 13:03:03 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4PgqxM0Cvmz34SDn2
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="aGaZVFxM"
+X-N0C-MailScanner-eFa-Watermark: 1680004981.75107@SXXKldIUHDsGuJbKDtLf5w
+X-N0C-MailScanner-eFa-From: anssoumane96@gmail.com
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 2D0F140049E6.A0DC8
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-qt1-f175.google.com ([209.85.160.175] [209.85.160.175])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 2D0F140049E6
+	for <contact@fiidewgal.com>; Tue, 21 Mar 2023 13:02:29 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 2D0F140049E6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 2D0F140049E6
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=aGaZVFxM
+Received: by mail-qt1-f175.google.com with SMTP id fg19so843254qtb.6
+        for <contact@fiidewgal.com>; Tue, 21 Mar 2023 05:02:29 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112; t=1679400148;
+        h=auto-submitted:precedence:content-disposition
+         :content-transfer-encoding:mime-version:subject:references
+         :in-reply-to:message-id:date:from:to:from:to:cc:subject:date
+         :message-id:reply-to;
+        bh=5BUx1Tu23D9H7fyFNLsa67lR2sUwvbGxSafb440AzAI=;
+        b=aGaZVFxMQCrhHPog5JbVzN7bPReFLO8uxP158wu7/lO0uI9UBICmEObTbxmeqfvUvl
+         JpDHkvKeF7uGX+dXNYUcMRipY31aMT6J7BWxRKDDmUAyxwQBANQ3OiH7xIIr74ouiOUX
+         Ek2SvVpu8zmTDKxUJ8jYA9NiQrTCJgvuJ/2GgMC1iGqmIx6hQI12LWg9LpxsdCpX9AD4
+         daTu8cVVZxQT+QGuLqlcFE1DQzSQHVcc8TGy0sShs1mKxgWdXP89ooQzBKEr1xbx9uhE
+         3z5Ro4saSQOg7FOKPTTLpyz/Ep2YlcS3szqxjbZPqPQ+QnhlrKXRueId2tC5+x7Y7p/a
+         Tt3Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112; t=1679400148;
+        h=auto-submitted:precedence:content-disposition
+         :content-transfer-encoding:mime-version:subject:references
+         :in-reply-to:message-id:date:from:to:x-gm-message-state:from:to:cc
+         :subject:date:message-id:reply-to;
+        bh=5BUx1Tu23D9H7fyFNLsa67lR2sUwvbGxSafb440AzAI=;
+        b=137U+pwhglePdIO2ChF1YoWKuDq2HlZgmbuza2PcHA8t3/V+jUCeqE5GP93wLbuQrf
+         doRqXCh2sdlnD3+Dk7gWn7EYKCYjJ6oP1BkmJW+uB2D64AqBXx3z16Oj6KV5zDuoEynS
+         LZYxr85pn2dYmuIHKdJlcYfK6e8ubAxSBo0e+X5ml2eQtmzUnXQoaX+qkDu/V767ZHCV
+         tLKzr6stiFmQVQIf9uHgwq0jqqlikxobd9HI1QebuKa/fBdlJXDjPA64VEjBmdqX6Y7F
+         LL/uOpyFv41RhAV9th8C3l7KWqgx73mw/fJDJD6DKawk19/0jb3KQeNH5KNqbBTRI+r6
+         2VwQ==
+X-Gm-Message-State: AO0yUKVZNcjqoOZVqpIBM6RaKlclKDMPHgWbOASlVst2c34m4oaMGsJm
+	OhRz/H4Hg2Ib7x1PhYURNxGgrTAqxe2slvTQcZ39PDZAXZgJ/8SMqH6RPIqrkw==
+X-Google-Smtp-Source: AK7set/DnM3syOT2ba6tG/Z/zxfkJqWKFDBgHGv+tm9ma6mxwcsB3OhGl8upTIZh9pVh3w9JMXlbUae9fWCZIEeXRVCLVIlhopA5S8pjP65U
+X-Received: by 2002:a05:622a:1809:b0:3df:4392:1aff with SMTP id t9-20020a05622a180900b003df43921affmr955935qtc.6.1679400147847;
+        Tue, 21 Mar 2023 05:02:27 -0700 (PDT)
+To: contact@fiidewgal.com
+From: "Oumar Ousman" <anssoumane96@gmail.com>
+Date: Tue, 21 Mar 2023 05:02:27 -0700
+Message-ID: <CAM79OQ35oLxe66fY-COpBxm9Qr1nY3JYMocwoh-OS+k889RZJw@mail.gmail.com>
+In-Reply-To: <b0a9a3203bc38325602cd098f181faba@fiidewgal.com>
+References: <b0a9a3203bc38325602cd098f181faba@fiidewgal.com>
+Subject: Re: Ouverture de compte
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+Precedence: bulk
+X-Autoreply: yes
+Auto-Submitted: auto-replied
+X-N0C-Node-IP: 185.221.182.45
+
+camara

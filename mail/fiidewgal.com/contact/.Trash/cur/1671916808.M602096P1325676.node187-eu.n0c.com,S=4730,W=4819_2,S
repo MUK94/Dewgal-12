@@ -1,0 +1,89 @@
+Return-Path: <dialloabdoulayehorekoubi@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id ixDMIwhtp2NsOhQA3R2AvA
+	(envelope-from <dialloabdoulayehorekoubi@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 24 Dec 2022 22:20:08 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NfcQH37f3z1wy1
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="pVRIUu5Z"
+X-N0C-MailScanner-eFa-Watermark: 1672521604.8572@3L+uTY1rict1jlBkU3YEIw
+X-N0C-MailScanner-eFa-From: dialloabdoulayehorekoubi@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 13A47401AEF6.A15A8
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-vs1-f47.google.com ([209.85.217.47] [209.85.217.47])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 13A47401AEF6
+	for <contact@fiidewgal.com>; Sat, 24 Dec 2022 22:19:32 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 13A47401AEF6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 13A47401AEF6
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=pVRIUu5Z
+Received: by mail-vs1-f47.google.com with SMTP id a66so7405414vsa.6
+        for <contact@fiidewgal.com>; Sat, 24 Dec 2022 13:19:31 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=WLGhSUSu719QI1Y8PSU8CPmSFd8m4ML0iausf2rRB8Q=;
+        b=pVRIUu5ZYS6x2ALBbZWrNBJK+DGRxWG94karisTrhQwm/bF44Ftzl9f0DhI+QwlBvI
+         rjfFWU0xPj3fi2tBTiyP6BdPaK1MQ84qpRVKy45SzJ/4rFxTV0pu4onaJ+I3wPq5+pDU
+         a8tzuHq95456+yXw3ymqAk+ZOFgRhcee/8UGxuVPx4NChUi+nCQC0wOQwjGh/VCBRFxX
+         KnTTReUXoMrmddVBnKi0emoXyn9n52z7bnUaQqnFbabSW+PjhWif9xikknuHGDK35W17
+         5896I2d6T2MxzYOtJNzq08K2pTBuWskQ8JvdZtdwWJvozhKKbMHVccwbjPidgz7uP3vn
+         0DEg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=WLGhSUSu719QI1Y8PSU8CPmSFd8m4ML0iausf2rRB8Q=;
+        b=x37yKiyEOejPku31CWJa4ybvtv9dOOEA7xf7n/audmk0WXts8W4AKmhseZZwLRGrfs
+         zRrggiA0+Le6bWqCBVdAycu+ljerkFOHAvZkxDcHHP+hPPuGi9dALC5CN34DdMdy2ECH
+         4+Yf0Fq9fuohQY7V2IAog60VhP3FQJdX6Zg9SiqEeTpx+9z3XQ5LLZW8xBNz6lojDiJZ
+         fwywZxiSBiuReKxigyLVzk1zd3UHHX+Fzzn7Jf6Qpsh09eD1iqzWxE9tr3TU63UgPlYH
+         X7uiTppsAUDP/rq/LOJcHf2yS8jg+y2dV9unP4NQCJazn+N2FiQSTgbZTRW3ZQmEp3gG
+         83DQ==
+X-Gm-Message-State: AFqh2kpUa/8KMPwlD/f0kLuaq5mmXZAJ6dZ+pF8iRaJCCS7GBvMvDr35
+	FWNufxkwMlrBP63yrDvRkDzZMyl9Bzl9i9gFJAakz61eA4s=
+X-Google-Smtp-Source: AMrXdXsA+lM8cnuNvpXDTAhkJWUhJtCXk3a9yyxzyQEa4HICHDMhGakCCBuXH2a2xGdpkI7f7ojvFyb+PSdWIPexSKA=
+X-Received: by 2002:a67:ec8a:0:b0:3b7:c371:fa0b with SMTP id
+ h10-20020a67ec8a000000b003b7c371fa0bmr1561527vsp.58.1671916769794; Sat, 24
+ Dec 2022 13:19:29 -0800 (PST)
+MIME-Version: 1.0
+From: Abdoulaye Diallo <dialloabdoulayehorekoubi@gmail.com>
+Date: Sat, 24 Dec 2022 21:19:15 +0000
+Message-ID: <CACa5PV_e77YWep7yjmZwpVQhv6SVNT_zaBE6p3O4YNNLhbhZ0w@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000285d6505f0997548"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000285d6505f0997548
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Abdoulaye Diallo
+N=C3=A9 en 1982
+Mari=C3=A9 =C3=A0 deux femmes
+Je suis de dinguiraye et vie actuelle ment a Lero dans siguiri o=C3=B9 je v=
+end
+des des livres coranique.
+Je cherche une troisi=C3=A8me femmes en mariage merci
+
+--000000000000285d6505f0997548
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Abdoulaye Diallo<div dir=3D"auto">N=C3=A9 en 1982</div><d=
+iv dir=3D"auto">Mari=C3=A9 =C3=A0 deux femmes</div><div dir=3D"auto">Je sui=
+s de dinguiraye et vie actuelle ment a Lero dans siguiri o=C3=B9 je vend de=
+s des livres coranique.</div><div dir=3D"auto">Je cherche une troisi=C3=A8m=
+e femmes en mariage merci</div><div dir=3D"auto"><br></div></div>
+
+--000000000000285d6505f0997548--

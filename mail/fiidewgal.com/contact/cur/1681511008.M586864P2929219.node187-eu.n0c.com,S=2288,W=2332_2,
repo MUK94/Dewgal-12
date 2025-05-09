@@ -1,0 +1,44 @@
+Return-Path: <contact@fiidewgal.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id KCDqImDSOWRDsiwA3R2AvA
+	(envelope-from <contact@fiidewgal.com>)
+	for <contact@fiidewgal.com>; Sat, 15 Apr 2023 00:23:28 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4PyrZ83C7kz34SDmm
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="w5Je3xWz"
+X-N0C-MailScanner-eFa-Watermark: 1682115808.11884@OAhSc3czVJFsXAcDhiCP7w
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 5074C406355D.A9485
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 5074C406355D
+	for <contact@fiidewgal.com>; Sat, 15 Apr 2023 00:23:27 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 5074C406355D
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 5074C406355D
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1681511007;
+	bh=xBpLJtl4iMzGiMACBBwga/ZTt22f5QY+xl/7i9DlB7k=;
+	h=Date:Subject:From:To:From;
+	b=w5Je3xWzJGzyMKoYwKjrK01JYysxgohB+Qix341V1I7Eo9dyAGnNBJ7iFoMqiKMlL
+	 NVBKmMTZcBdlZLnog2cQOoAp6GmtC4b+e/wUPVmL22dsWx4R9fyzg4KBvBN+BLJFNn
+	 RyWKsrJoIX743pp4nWRafKH0xn9pIdkAzWLKAHnE=
+Message-ID: <ff354dc79b1318f28d5fff476182784d@fiidewgal.com>
+Date: Sat, 15 Apr 2023 00:23:27 +0200
+Subject: J'arrive pas a modifier mon compte
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: contact@fiidewgal.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+J'arrive pas a mettre tous les informations n=C3=A9cessaires sur mon compte
+

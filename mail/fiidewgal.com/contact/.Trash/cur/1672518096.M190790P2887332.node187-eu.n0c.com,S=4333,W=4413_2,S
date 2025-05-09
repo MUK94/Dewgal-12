@@ -1,0 +1,80 @@
+Return-Path: <diallomamadoutorodo6@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 4C1QC9CZsGOkDiwA3R2AvA
+	(envelope-from <diallomamadoutorodo6@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 31 Dec 2022 21:21:36 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NktnX0V2bz34nwbq
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="N72eOa3Q"
+X-N0C-MailScanner-eFa-Watermark: 1673122891.23135@bmw81+6W1caBYq8ioHY8RA
+X-N0C-MailScanner-eFa-From: diallomamadoutorodo6@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 4D0E940044A6.A4CFA
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-yw1-f172.google.com ([209.85.128.172] [209.85.128.172])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 4D0E940044A6
+	for <contact@fiidewgal.com>; Sat, 31 Dec 2022 21:20:57 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 4D0E940044A6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 4D0E940044A6
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=N72eOa3Q
+Received: by mail-yw1-f172.google.com with SMTP id 00721157ae682-45ef306bd74so341358697b3.2
+        for <contact@fiidewgal.com>; Sat, 31 Dec 2022 12:20:57 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=HVnS52dJqyr7DpWVYue3TtgbFDrNKVv7ycOtqzXMW4A=;
+        b=N72eOa3QGeEwzSJIy1oWC8IYWBL+xF5Ll6hFvxaiJ7sjKC8cK215oc5MHbxfL17Bs+
+         htah5YLviEvVi49P6ptQtMCP53e3GrHKzqEeup9YvXyGqylxt/yAY5WV/OhUqtZHiQ0B
+         ulqjElaq51sqT8NbUFTSal6x6HV94tan7A1IEmq6Mv26hQNrZAjsqpFAlEM9oHi2h/SS
+         RvlGQKXw5OXoys2pzQz0Zi5Gp0h5EP5qMwSoLunghW3QdpMNDE49zDUohs/gfIJ7t7I+
+         koo5LCGxr0C3ZTAe3+cNwBd5cAJB5c6YQ+U3bT9BO5YYYALYNFKOPMqKIYl1tEpOIbKr
+         Qs9A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=HVnS52dJqyr7DpWVYue3TtgbFDrNKVv7ycOtqzXMW4A=;
+        b=CuirHN7CqDSTZmtO7IPd07WI+hda9Of5DnQyI5v5k0dm3KtXjdXmBFsJKOgUNb3zcE
+         vxKsMKe1cA7iNrli0EUZZLDkilug6q8HETz7rYZCjod7gvYXcPbO1TYbEbpWVrqjL/PQ
+         wXKnQT7qfCCFGgtoaIizL31rQ5MheeWQ7pGvae04nGt2j9khLeWMn9hDnBDrylIAE9Y9
+         4RxCwSQu1nJacJ7jqW77Ym19oqABVW0P3vIESvwpImlwKO5hYucxuwRCFPQwepauDP/t
+         ZlCdVuljw3IFh9hIPpUJBcHi7ePUFWM813qUgMApIEzpRBX5X08u3694a6i+f/2LOBDR
+         stQw==
+X-Gm-Message-State: AFqh2koGF2QsTTFxCzhv/pwOoKDt6U4NGD+7l+aiVmdg34eep+7NS4xL
+	i5ByX+HqzHE2aCY3/1xiv/tfHATeW6+nmuIpsV5tCYL/
+X-Google-Smtp-Source: AMrXdXu/xEUubfbSg1bCw1/xBz+y+r24JoCtG6kFYqbmvPBIbckRgi0xl+RycGdne+x22R5J+P+x8ZjIeism8qQ4ACk=
+X-Received: by 2002:a81:7044:0:b0:3d6:233b:7292 with SMTP id
+ l65-20020a817044000000b003d6233b7292mr4270878ywc.476.1672518055865; Sat, 31
+ Dec 2022 12:20:55 -0800 (PST)
+MIME-Version: 1.0
+From: MMamadou torodo Diallo <diallomamadoutorodo6@gmail.com>
+Date: Sat, 31 Dec 2022 20:15:45 +0000
+Message-ID: <CAAUa0OFTHDZZsBY1pDvPJQhHF8+LuzyhDM3ecTdCxwmAd_0NfA@mail.gmail.com>
+Subject: Mariage
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000099b33405f12574ee"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000099b33405f12574ee
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bonsoir,  je cherche une femme respectueuse pour mariage =F0=9F=92=92
+
+--00000000000099b33405f12574ee
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Bonsoir,=C2=A0 je cherche une femme respectueuse pour mar=
+iage =F0=9F=92=92=C2=A0</div>
+
+--00000000000099b33405f12574ee--

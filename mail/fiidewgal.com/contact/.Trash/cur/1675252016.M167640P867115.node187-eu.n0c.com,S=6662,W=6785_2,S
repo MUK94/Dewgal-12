@@ -1,0 +1,123 @@
+Return-Path: <sowm66946@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id qA/qCTBR2mMrOw0A3R2AvA
+	(envelope-from <sowm66946@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 01 Feb 2023 12:46:56 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4P6Krv1jMyz34SDmh
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="ix3asrp5"
+X-N0C-MailScanner-eFa-Watermark: 1675856810.85797@jlZnDL+DhEXUo61ducIqlA
+X-N0C-MailScanner-eFa-From: sowm66946@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: BFB7C401AEF3.A41B3
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-qt1-f170.google.com ([209.85.160.170] [209.85.160.170])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id BFB7C401AEF3
+	for <contact@fiidewgal.com>; Wed,  1 Feb 2023 12:46:18 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com BFB7C401AEF3
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com BFB7C401AEF3
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=ix3asrp5
+Received: by mail-qt1-f170.google.com with SMTP id bb40so9027186qtb.2
+        for <contact@fiidewgal.com>; Wed, 01 Feb 2023 03:46:18 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=Nj0+rwb+dN/NngQymPv9c/Nc1+Gmm67S5rvX64kaStc=;
+        b=ix3asrp5Nhgdci4cIQyLDyzx8K2DXHu5vmtrSN+t1xhzQvLtQieksFxYKB1KOaVpRa
+         a8cODnAvn//81ZVeE8/pBDIXOlrZSMhvv/EVjyy7zqu0I4+zfOykoESckjjbfT3Rv7Qy
+         FDyXh0PctqoSTbcdpUV22aObXgTI8CDcNngMeneMZaW877BUzVqcv0eZTfZcdp9bJ4us
+         MS1f6HQRpLvmsQ4gDqMt6Ui86B2AXuEkxtswgA8NrhMMQz0NkVPR8FKNq9cOPm2B0RVX
+         uOq8r+uHPgFtQxFUghNbk+cCb05zh5SX8Cf5OmJdmb17bY5CnZIuoOGyvp3Gtr3yso8O
+         Za4A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=Nj0+rwb+dN/NngQymPv9c/Nc1+Gmm67S5rvX64kaStc=;
+        b=a0E1em31MxmUJRnfGF1o1rQJ5RioM3w8EVuMulmhmNfP9HpA/iDi0xH+QlHsWCW4yu
+         46vNHxq/5Q8eb1q09+Q3gLGT2Q0tVKPgxzbSnE2FuAZFWEoyoRAkKabo8LzXdiM50MMZ
+         x/zEA8EBFj7jPSrg6fQkowrusAGL8QSlAbS7q75WCLUKz1teRluSGFPYg/zeqgbB4PM3
+         PTM4h6Sb/nkrZmxpAshisYK0eWTGk1iE5Uuz5Aqf8xyDhKKRfzHuGlTarziFuLsaUdHi
+         MWymELQgnaL6pTHZjiZnqvCPxWTk9u1fbQC6R/mBSU4CjvhyBvliJnUGsKkebc9dCSom
+         U+eg==
+X-Gm-Message-State: AO0yUKVCtCYF06ly5bvPdzoGELOANxgxZqUcrQR6qoTHjn1WIry96oAu
+	bmfRPblnnztetvxy6b9I9snWGozUKwncmtIgy3CpWZ34
+X-Google-Smtp-Source: AK7set9lesijExtUhq3BU1/arGDCdmOM0OcO+2Mcy6WlM7LNs6KxTiGjNwEAiNI/zcxIHmxLNQuKpwmXtMlAQK4MUWo=
+X-Received: by 2002:ac8:7d84:0:b0:3b6:2c52:3054 with SMTP id
+ c4-20020ac87d84000000b003b62c523054mr246936qtd.309.1675251977313; Wed, 01 Feb
+ 2023 03:46:17 -0800 (PST)
+MIME-Version: 1.0
+References: <0020e3694422b87fa6500625e0c475ad@fiidewgal.com>
+In-Reply-To: <0020e3694422b87fa6500625e0c475ad@fiidewgal.com>
+From: Moussa Sow <sowm66946@gmail.com>
+Date: Wed, 1 Feb 2023 11:46:04 +0000
+Message-ID: <CAKxuNv-h=scHN=OfkQDM-tvLYDZk2UAoEd6Q+svVr++sZLjqEw@mail.gmail.com>
+Subject: Re: Rappel avant la suppression de votre compte sans photo .
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000004609605f3a1ff16"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000004609605f3a1ff16
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+OK merci
+
+Le mer. 1 f=C3=A9vr. 2023 =C3=A0 09:48, <contact@fiidewgal.com> a =C3=A9cri=
+t :
+
+> Salam Aleykoum ,
+> Nous sommes tr=C3=A8s heureux de vous avoir parmi nos
+> membres dans la plateforme et nous souhaitons que
+> Vous y rester.C=E2=80=99est pourquoi nous vous prions de
+> mettre =C3=A0 jour votre profil en mettant correctement
+> Votre date de naissance , votre =C3=A9tat civil ;votre photo
+> et votre numero de telephone avec l'indicatif
+> Si cela est compliqu=C3=A9 pour vous faites nous parvenir
+> votre num=C3=A9ro de membre qui est sur votre profil public
+> avec vos informations cit=C3=A9es ci dessus .
+> Vous pouvez =C3=A9galement nous faire parvenir votre numero
+> de membre avec  votre photo et num=C3=A9ro de telephone sur
+> notre WhatsApp 001 646 752 9115 ou juste scanner le QR Code ci)
+> joint ci-dessous .Sans votre photo , le profil sera d=C3=A9sactiv=C3=A9.
+> Si votre compte n'est pas confirmer faites nous parvenir vos
+> informations sur whatsApp pour vous inscrire.
+> Merci pour votre comprehension!
+
+--00000000000004609605f3a1ff16
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">OK merci</div><br><div class=3D"gmail_quote"><div dir=3D"=
+ltr">Le mer. 1 f=C3=A9vr. 2023 =C3=A0 09:48,  &lt;<a href=3D"mailto:contact=
+@fiidewgal.com">contact@fiidewgal.com</a>&gt; a =C3=A9crit=C2=A0:<br></div>=
+<blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1p=
+x #ccc solid;padding-left:1ex">Salam Aleykoum ,<br>
+Nous sommes tr=C3=A8s heureux de vous avoir parmi nos<br>
+membres dans la plateforme et nous souhaitons que<br>
+Vous y rester.C=E2=80=99est pourquoi nous vous prions de<br>
+mettre =C3=A0 jour votre profil en mettant correctement<br>
+Votre date de naissance , votre =C3=A9tat civil ;votre photo<br>
+et votre numero de telephone avec l&#39;indicatif<br>
+Si cela est compliqu=C3=A9 pour vous faites nous parvenir<br>
+votre num=C3=A9ro de membre qui est sur votre profil public<br>
+avec vos informations cit=C3=A9es ci dessus .<br>
+Vous pouvez =C3=A9galement nous faire parvenir votre numero<br>
+de membre avec=C2=A0 votre photo et num=C3=A9ro de telephone sur<br>
+notre WhatsApp 001 646 752 9115 ou juste scanner le QR Code ci)<br>
+joint ci-dessous .Sans votre photo , le profil sera d=C3=A9sactiv=C3=A9.<br=
+>
+Si votre compte n&#39;est pas confirmer faites nous parvenir vos<br>
+informations sur whatsApp pour vous inscrire.<br>
+Merci pour votre comprehension!</blockquote></div>
+
+--00000000000004609605f3a1ff16--

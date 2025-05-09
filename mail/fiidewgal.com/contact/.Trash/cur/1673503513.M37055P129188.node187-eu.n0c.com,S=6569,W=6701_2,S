@@ -1,0 +1,132 @@
+Return-Path: <adamasadjobah79@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id CK8jAhmjv2Ok+AEA3R2AvA
+	(envelope-from <adamasadjobah79@gmail.com>)
+	for <contact@fiidewgal.com>; Thu, 12 Jan 2023 07:05:13 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NsvCq3Fkyz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="lLTgULaK"
+X-N0C-MailScanner-eFa-Watermark: 1674108308.78119@UquJf6lOiPrlkrhFW+wtrQ
+X-N0C-MailScanner-eFa-From: adamasadjobah79@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: A4EDA401AEF6.A2C10
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-pf1-f180.google.com ([209.85.210.180] [209.85.210.180])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id A4EDA401AEF6
+	for <contact@fiidewgal.com>; Thu, 12 Jan 2023 07:04:35 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com A4EDA401AEF6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com A4EDA401AEF6
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=lLTgULaK
+Received: by mail-pf1-f180.google.com with SMTP id x4so8918766pfj.1
+        for <contact@fiidewgal.com>; Wed, 11 Jan 2023 22:04:35 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=pZvzI5ivObXYZp+QllwXL8yfVfx9MCTW0R1tMc7/lbI=;
+        b=lLTgULaKWraJluibyNQmVYfgZgPiUF8L87/f7tVFVlAW1ZPM0nrHY0/ZG999jCMdrK
+         99yPGNGOQn154AjdpCFok94Fn/ojyrShxkkRWDgGc78U7J0N3GCQW3xIwTAZPpnpDw9h
+         3fJylU0dhWkFScOF/WLq5dUG9RY340nr3wHOkMqBeE0tvRDSTZ8JgGo14yEedVOfRl+D
+         sIocsxN+SEdQAcstcLfnrB3Rob1kZByYTu+05e+lV2kfxWEiRx651np3BN3NFsFu9AOV
+         oLzaTSIYfsdZgsacJp3FR4cJNikiS4DFfFN7yvDEOdBf6k3ywQZwyLjf534GPzfTtUNO
+         KuXg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=pZvzI5ivObXYZp+QllwXL8yfVfx9MCTW0R1tMc7/lbI=;
+        b=UsiBLPAhdwdMd95gOuhW6Pu5hkmVX03Nj0O8+FfGNG05EIUTZ9JRKCtZYkm0vecyOS
+         z9Nqb86LKDpp2R8Z8FdYQWElQHFLzKussqFw8WMJArzwkqEE+CCMFWev9LDALMGfhNUh
+         sNahxSGzQT90t06dRK1gR2abFUE+kPnyG2LVNQUUwl3OkMh1mxLBhYyTjRlxhXPNdho4
+         3rZKTFNFHYyqf8kqVt8KHhTGa1pXPL6P5c81NKpQdBHHp8rmrAahU6Y7+3Izs1bW5xMS
+         rfSZ2pfmLT+Ui+J/hDpNDEi3f+UByq8FKW30RH25yxoVJ5ncQZZB9asraB+mMCFkpiNl
+         KuHA==
+X-Gm-Message-State: AFqh2kpYTDFIEOQW881us2bTFeoyuziDSl1S2d/joI9W/rShqclPQdHA
+	qug4eB/ojuHvdm5KraA9m6SnYKcFn00mOcCQKrSWnmoO
+X-Google-Smtp-Source: AMrXdXtLjxE4UQqSo77yvFvKaCRPo+cFp81hEjPHRocPGLUfv8RIb2DQoZHdUwKpBE0XpgD8pYMeOd9XFvmF0dxgkik=
+X-Received: by 2002:a05:6a00:4189:b0:580:f805:8899 with SMTP id
+ ca9-20020a056a00418900b00580f8058899mr4717937pfb.76.1673503473704; Wed, 11
+ Jan 2023 22:04:33 -0800 (PST)
+MIME-Version: 1.0
+References: <3111857e816e0c47435ba53f649ddbbe@fiidewgal.com> <63bfa2bd.df0a0220.709c3.a483@mx.google.com>
+In-Reply-To: <63bfa2bd.df0a0220.709c3.a483@mx.google.com>
+From: Adama sadjo Bah <adamasadjobah79@gmail.com>
+Date: Thu, 12 Jan 2023 06:04:20 +0000
+Message-ID: <CABc5BrYdhHud9eCiCRjHif6UrUSgoof-pEVvL6Wz1Ff_C07DYw@mail.gmail.com>
+Subject: =?UTF-8?Q?Re=3A_Vous_avez_une_nouvelle_demande_d=27int=C3=A9r=C3=AAt?=
+To: =?UTF-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>, 
+	Adama sadjo Bah <adamasadjobah79@gmail.com>
+Content-Type: multipart/alternative; boundary="00000000000014a30505f20ae4c5"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000014a30505f20ae4c5
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Salut
+
+Le jeu. 12 janv. 2023 =C3=A0 6:03 AM, adamasadjobah79 <adamasadjobah79@gmai=
+l.com>
+a =C3=A9crit :
+
+>
+>
+>
+>
+> Envoy=C3=A9 depuis mon appareil Galaxy
+>
+>
+> -------- Message d'origine --------
+> De : Ne r=C3=A9pondez pas <contact@fiidewgal.com>
+> Date : 12/01/2023 12:23 AM (GMT+00:00)
+> =C3=80 : adamasadjobah79@gmail.com
+> Objet : Vous avez une nouvelle demande d'int=C3=A9r=C3=AAt
+>
+> Bonjour Adama Sadjo Bah,
+>
+> Ibrahima Bary a manifest=C3=A9 son int=C3=A9r=C3=AAt pour vous.
+>
+> Veuillez contacter l'=C3=A9quipe administrative si vous avez d'autres que=
+stions.
+>
+> Merci,
+>
+> Ne r=C3=A9pondez pas
+>
+
+--00000000000014a30505f20ae4c5
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Salut=C2=A0</div><br><div class=3D"gmail_quote"><div dir=
+=3D"ltr" class=3D"gmail_attr">Le jeu. 12 janv. 2023 =C3=A0 6:03 AM, adamasa=
+djobah79 &lt;<a href=3D"mailto:adamasadjobah79@gmail.com">adamasadjobah79@g=
+mail.com</a>&gt; a =C3=A9crit=C2=A0:<br></div><blockquote class=3D"gmail_qu=
+ote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex=
+"><div dir=3D"auto"><div><br></div><div><br></div><div><br></div><div><br><=
+/div><div id=3D"m_-1577997448032108979composer_signature"><div style=3D"fon=
+t-size:12px;color:#575757" dir=3D"auto">Envoy=C3=A9 depuis mon appareil Gal=
+axy</div></div><div><br></div><div><br></div><div align=3D"left" dir=3D"aut=
+o" style=3D"font-size:100%;color:#000000"><div>-------- Message d&#39;origi=
+ne --------</div><div>De : Ne r=C3=A9pondez pas &lt;<a href=3D"mailto:conta=
+ct@fiidewgal.com" target=3D"_blank" rel=3D"noreferrer">contact@fiidewgal.co=
+m</a>&gt; </div><div>Date : 12/01/2023  12:23 AM  (GMT+00:00) </div><div>=
+=C3=80 : <a href=3D"mailto:adamasadjobah79@gmail.com" target=3D"_blank" rel=
+=3D"noreferrer">adamasadjobah79@gmail.com</a> </div><div>Objet : Vous avez =
+une nouvelle demande d&#39;int=C3=A9r=C3=AAt </div><div><br></div></div><p>=
+Bonjour Adama Sadjo Bah,</p><p>Ibrahima Bary a manifest=C3=A9 son int=C3=A9=
+r=C3=AAt pour vous.</p><p>Veuillez contacter l&#39;=C3=A9quipe administrati=
+ve si vous avez d&#39;autres questions.</p><p>Merci,</p><p>Ne r=C3=A9pondez=
+ pas</p>
+
+</div></blockquote></div>
+
+--00000000000014a30505f20ae4c5--

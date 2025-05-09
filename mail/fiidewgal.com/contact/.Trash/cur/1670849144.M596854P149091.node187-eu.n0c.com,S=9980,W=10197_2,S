@@ -1,0 +1,217 @@
+Return-Path: <modsmf93@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 0P18I3gil2NjRgIA3R2AvA
+	(envelope-from <modsmf93@gmail.com>)
+	for <contact@fiidewgal.com>; Mon, 12 Dec 2022 13:45:44 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NW1ZJ3Jy7z34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="j8MC0LfT"
+X-N0C-MailScanner-eFa-Watermark: 1671453941.37544@0lYkS0fI5uvPRJwIPc+voA
+X-N0C-MailScanner-eFa-From: modsmf93@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: B48DE4003222.AC7F9
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-lj1-f181.google.com ([209.85.208.181] [209.85.208.181])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id B48DE4003222
+	for <contact@fiidewgal.com>; Mon, 12 Dec 2022 13:45:08 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com B48DE4003222
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com B48DE4003222
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=j8MC0LfT
+Received: by mail-lj1-f181.google.com with SMTP id v11so2697444ljk.12
+        for <contact@fiidewgal.com>; Mon, 12 Dec 2022 04:45:08 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=p0Wz9URWkGQDcILXYgZJm6/ghWhityFCXCr83tc8X+M=;
+        b=j8MC0LfTBa7JbFmvK9x9UI3By2UcYrZf7anJ89ptJ87UxHycnmUS+RveebMl+8/pdS
+         DyEDbvnMCSP61pB0OJNK3SSY1H3V6OkqAsyQNVw6PJkHuoIHdztgQarP35otDrSV7u1K
+         L0qbHYs1ci5R4/gZ29nHgw8RmYtMyXMAYEtcRMwuMKX49OKtjjA3dzg7Q3OpYWaqRFs8
+         4Q2KcDXHoJJdCKrWc8o5r+adAIJsGeBquJysmxhEzhybk2geWP/GrLTHx05fUL053Wkb
+         YCeVrGA8NtL9W8o65tMSSdCVrIumHx7lU/vi4MgOry8Q1gVz5zgv5y3bsNqS7HqZKR5H
+         nIfQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=p0Wz9URWkGQDcILXYgZJm6/ghWhityFCXCr83tc8X+M=;
+        b=LaWLQ/o3TW8sYdqy0dHSOCZ0KNHux86RUPTyRoPsPTy2sDn3pZZtDQ55LkY5kG1/6l
+         Frn8OAAjfhJxgP4vxer35SwVySfRsS3wHDp4GrbpV9+Ue4/u8ES3dYpI+p6Zlzwz4fl/
+         k9Dc1IIck49lG19pEN37s6X+Ykd4otbgpsaAFMykK6yvrEtbralfsqYTjSXWo3O0HTY8
+         wTNUnBVs3OOPbTMETzW5kV0u4PXc/OuQy1xc5qclybwHUda4BgMUcJRSKGKcjgJj8Rjz
+         HfNE7Mam8AsVoF9SH0JCL/Kbiy+JtK5NW3z3t78nGZxjqKm3pyvbrryu5OU1yxX4UFqG
+         iNUA==
+X-Gm-Message-State: ANoB5pkDcZ/gCDI/TanqjCfx4IE6fsUztwGUxQYL08amMRBkucjw/+Vt
+	GsoWnyWny4LFt7mWIb2AOaQ/tQroIoG66QRg73saPByZ
+X-Google-Smtp-Source: AA0mqf5gYOG33ef1IzOB5Svlgn/vzAwJr+7bfpRM74HA19bgq4sNibIKqZ2WprEyw+4/CRlIoUjVOusYjzvyTBnEnaY=
+X-Received: by 2002:a2e:bd05:0:b0:277:6ad:b2fa with SMTP id
+ n5-20020a2ebd05000000b0027706adb2famr7259759ljq.24.1670849107440; Mon, 12 Dec
+ 2022 04:45:07 -0800 (PST)
+MIME-Version: 1.0
+References: <07eb8d010bbb6f250da36776af25b6d7@fiidewgal.com>
+In-Reply-To: <07eb8d010bbb6f250da36776af25b6d7@fiidewgal.com>
+From: Mamadou ousmane Diallo <modsmf93@gmail.com>
+Date: Mon, 12 Dec 2022 12:44:52 +0000
+Message-ID: <CAMfTWeD_9ch7VtfkfX1tbHjDOD64jtYYjGVNTuwem7vO1NWXkw@mail.gmail.com>
+Subject: Re: Email Verification - Fii Dewgal
+To: =?UTF-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>
+Content-Type: multipart/alternative; boundary="00000000000085b82505efa0df96"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000085b82505efa0df96
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+J'arrive pas =C3=A0 me connecter ont me demande la v=C3=A9rification de mon=
+ mail
+
+Le lun. 12 d=C3=A9c. 2022 =C3=A0 12:41, Ne r=C3=A9pondez pas <contact@fiide=
+wgal.com> a
+=C3=A9crit :
+
+> Fii Dewgal <https://fiidewgal.com>
+>
+> v=C3=A9rification de l'E-mail
+> Please click the button below to verify your email address.
+> Click Here
+> <https://fiidewgal.com/verification-confirmation/eyJpdiI6IkpuTk1ZYTZqNHZW=
+YSt0b2dtZGwxbGc9PSIsInZhbHVlIjoiTGEzckJtK2dQUkFydGJzTnIrc21DUT09IiwibWFjIjo=
+iODQxYTEyZjY4ODMxZjgwNzVhZmQ2ZWI3ZjI1MGY0NmRlNTc2YTU5YjMwOWIwZTI3NjM2ODM1M2=
+Y5Yzk3MjE1NyIsInRhZyI6IiJ9>
+>
+
+--00000000000085b82505efa0df96
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">J&#39;arrive pas =C3=A0 me connecter ont me demande la v=
+=C3=A9rification de mon mail=C2=A0</div><br><div class=3D"gmail_quote"><div=
+ dir=3D"ltr" class=3D"gmail_attr">Le lun. 12 d=C3=A9c. 2022 =C3=A0 12:41, N=
+e r=C3=A9pondez pas &lt;<a href=3D"mailto:contact@fiidewgal.com">contact@fi=
+idewgal.com</a>&gt; a =C3=A9crit=C2=A0:<br></div><blockquote class=3D"gmail=
+_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:=
+1ex"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+ bgcolor=3D"#e8ebef">
+	<tr>
+		<td align=3D"center" valign=3D"top" style=3D"padding:50px 10px">
+		=09
+			<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+				<tr>
+					<td align=3D"center">
+						<table width=3D"650" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+>
+							<tr>
+								<td bgcolor=3D"#ffffff" style=3D"width:650px;min-width:650px;font-s=
+ize:0pt;line-height:0pt;padding:0;margin:0;font-weight:normal">
+								=09
+									<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" bgcolor=3D"#ffffff">
+										<tr>
+											<td style=3D"padding:40px 30px 0px 30px">
+												<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0">
+													<tr>
+														<th style=3D"font-size:0pt;line-height:0pt;padding:0;margin:0=
+;font-weight:normal">
+															<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"0">
+																<tr>
+																	<td style=3D"font-size:0pt;line-height:0pt;text-align:left=
+"><img src=3D"https://fiidewgal.com/public/uploads/all/3ePHoiM5cMGmckWJJkq0=
+3HVSXUcK8mKuITM5NqBG.png" width=3D"191" height=3D"24" border=3D"0" alt=3D""=
+></td>
+																</tr>
+															</table>
+														</th>
+														<th width=3D"1" style=3D"font-size:0pt;line-height:0pt;paddin=
+g:0;margin:0;font-weight:normal"></th>
+														<th width=3D"120" style=3D"font-size:0pt;line-height:0pt;padd=
+ing:0;margin:0;font-weight:normal">
+															<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"0">
+																<tr>
+																	<td style=3D"color:#000000;font-family:&#39;Fira Mono&#39;=
+,Arial,sans-serif;font-size:12px;line-height:16px;text-align:right"><a href=
+=3D"https://fiidewgal.com" style=3D"color:#000001;text-decoration:none" tar=
+get=3D"_blank" rel=3D"noreferrer"><span style=3D"color:#000001;text-decorat=
+ion:none">Fii Dewgal</span></a></td>
+																</tr>
+															</table>
+														</th>
+													</tr>
+												</table>
+												<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0">
+													<tr>
+														<td style=3D"padding-top:40px;border-bottom:4px solid #000000=
+;font-size:0pt;line-height:0pt">=C2=A0</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								=09
+
+								=09
+									<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" bgcolor=3D"#ffffff">
+										<tr>
+											<td style=3D"padding:70px 30px 70px 30px">
+												<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0">
+													<tr>
+														<td style=3D"color:#000000;font-family:&#39;Ubuntu&#39;,Arial=
+,sans-serif;font-size:50px;line-height:60px;text-align:center;padding-botto=
+m:10px">v=C3=A9rification de l&#39;E-mail</td>
+													</tr>
+													<tr>
+														<td style=3D"font-family:&#39;Ubuntu&#39;,Arial,sans-serif;fo=
+nt-size:20px;line-height:26px;text-align:center;color:#2e57ae;padding-botto=
+m:30px">Please click the button below to verify your email address. </td>
+													</tr>
+                                                                           =
+                                 <tr>
+                                                            <td style=3D"fo=
+nt-family:&#39;Ubuntu&#39;,Arial,sans-serif;font-size:20px;line-height:26px=
+;text-align:center;color:#2e57ae;padding-bottom:30px">
+                                                                <a href=3D"=
+https://fiidewgal.com/verification-confirmation/eyJpdiI6IkpuTk1ZYTZqNHZWYSt=
+0b2dtZGwxbGc9PSIsInZhbHVlIjoiTGEzckJtK2dQUkFydGJzTnIrc21DUT09IiwibWFjIjoiOD=
+QxYTEyZjY4ODMxZjgwNzVhZmQ2ZWI3ZjI1MGY0NmRlNTc2YTU5YjMwOWIwZTI3NjM2ODM1M2Y5Y=
+zk3MjE1NyIsInRhZyI6IiJ9" style=3D"background:#007bff;padding:0.9rem 2rem;fo=
+nt-size:0.875rem;color:#fff;border-radius:.2rem" target=3D"_blank" rel=3D"n=
+oreferrer">Click Here</a>
+                                                            </td>
+                                                        </tr>
+                                                    												</table>
+											</td>
+										</tr>
+									</table>
+								=09
+								</td>
+							</tr>
+							<tr>
+								<td style=3D"padding-top:30px;color:#1f2125;font-family:&#39;Fira M=
+ono&#39;,Arial,sans-serif;font-size:12px;line-height:22px;text-align:center=
+">
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		=09
+		</td>
+	</tr>
+</table>
+</blockquote></div>
+
+--00000000000085b82505efa0df96--

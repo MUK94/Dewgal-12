@@ -1,0 +1,77 @@
+Return-Path: <houleydionfod@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id u50OOOwapGPMzzQA3R2AvA
+	(envelope-from <houleydionfod@gmail.com>)
+	for <contact@fiidewgal.com>; Thu, 22 Dec 2022 09:53:00 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Nd3x74Mz6z34SDnJ
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="T6YSLKwN"
+X-N0C-MailScanner-eFa-Watermark: 1672303964.95949@6GcfsObK46l4I5Rl0BPLLg
+X-N0C-MailScanner-eFa-From: houleydionfod@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 2AE69401AEF7.AE44F
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ej1-f46.google.com ([209.85.218.46] [209.85.218.46])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 2AE69401AEF7
+	for <contact@fiidewgal.com>; Thu, 22 Dec 2022 09:52:11 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 2AE69401AEF7
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 2AE69401AEF7
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=T6YSLKwN
+Received: by mail-ej1-f46.google.com with SMTP id gh17so3316274ejb.6
+        for <contact@fiidewgal.com>; Thu, 22 Dec 2022 00:52:11 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=JdOCEAGeZ8rlONOuja+1rsuqVVS4zpnHpDpjsQ7Xd8I=;
+        b=T6YSLKwNJ6O5LW91suxlua9GfsY73k76IQ/fIBNj03TIQRXGNqYOIUpe5mr1ZW5+Qg
+         PkLaKJguCw98KPvchGgEcYIv0vv54BUaAWljV9P1rEnrY9ZoD56M4R3Vx/LNfvnUEack
+         blV04xt4eCbiO6pPQwunhcynASDuvuxUiwft612MASlufjk0sFW7dQOO5OCYIXZu3yW3
+         JsXq41uchUerE4lWTWkpXVrB0KJKrT2kpDn3n7UIhJ+ucJZpUcqiU2I4zRjkJO4Zuj76
+         BsmbkAUWw0d5Burhu63cst3KApUgy/zEHXyRfvuPnH01MO9GTd+/vCDrk6+tfkYNhiPP
+         ZM1w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=JdOCEAGeZ8rlONOuja+1rsuqVVS4zpnHpDpjsQ7Xd8I=;
+        b=fbxqGtuv8GmAYvnxQi1XpchaysvX9uHZutXTwy23CWuUX312kExs2vkyqkXbqY23wj
+         jog7Zz3IFtriEkP4rhSiKjpSDxvdp5YFJJiTstJC8d3FV2MiIqy/So6cuzIaWfdOQ1Ky
+         Mh1elzbyUCw6hcpjfp5Q+UOkwR6BLySaMAlmM1ho9tfeIga3PATggGmqE2ZkoSohZEtm
+         Wya9RVIt2lbLwjMimmOX7wgrzSZ3qt66/CDfFARIaTNTrVr9i1rv/UBuRZjt1edRxbdZ
+         QycR8fTHmG8XDvD8F0oHJjFAGnMxusMBECHE+2FFuQF+pvItL8UxGJc27rRx035dtxgS
+         8hWw==
+X-Gm-Message-State: AFqh2kod8/usavlGH0AsC0rVsMvTfadSMaBsuYEwHm91Hv3DM5FatJ6r
+	WgcliNp7V/JEnIwZ/dJ8x7lt+5jkAVNndssZtvTdWtdH
+X-Google-Smtp-Source: AMrXdXs2OayO7xUYByVaQBLmFwY8XwFAYfxlk+0Mjxy2A9wC8iSvzIesJ34kpotIti4qS3ptql6DKn2yNQslqIgpO1g=
+X-Received: by 2002:a17:906:c57:b0:7c0:9cb9:bac8 with SMTP id
+ t23-20020a1709060c5700b007c09cb9bac8mr615847ejf.25.1671699130465; Thu, 22 Dec
+ 2022 00:52:10 -0800 (PST)
+MIME-Version: 1.0
+From: =?UTF-8?B?SMO1w7lsw6t5IETDr8O1bmbDtSBEw6/Do2xsw7U=?= <houleydionfod@gmail.com>
+Date: Thu, 22 Dec 2022 08:51:56 +0000
+Message-ID: <CALdLyBBJ3Xp+nxBk7GUDNzo=MgUsdVVqU1R-3A8XyLMMpS16KQ@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000d7c41705f066c8a7"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000d7c41705f066c8a7
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+--000000000000d7c41705f066c8a7
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"></div>
+
+--000000000000d7c41705f066c8a7--

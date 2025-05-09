@@ -1,0 +1,80 @@
+Return-Path: <sd6517407@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id xTfYKAtmQGQ6izsA3R2AvA
+	(envelope-from <sd6517407@gmail.com>)
+	for <contact@fiidewgal.com>; Thu, 20 Apr 2023 00:07:07 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Q1vyx6zcLz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="gfjt2ICi"
+X-N0C-MailScanner-eFa-Watermark: 1682546824.54375@38eGHmfOWpPODfC2W8h5nw
+X-N0C-MailScanner-eFa-From: sd6517407@gmail.com
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 644EA4020D4E.A351A
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ej1-f44.google.com ([209.85.218.44] [209.85.218.44])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 644EA4020D4E
+	for <contact@fiidewgal.com>; Thu, 20 Apr 2023 00:06:30 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 644EA4020D4E
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 644EA4020D4E
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=gfjt2ICi
+Received: by mail-ej1-f44.google.com with SMTP id a640c23a62f3a-94a35b0d130so21657366b.3
+        for <contact@fiidewgal.com>; Wed, 19 Apr 2023 15:06:29 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1681941988; x=1684533988;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=KRScD12+Iq4l10xPFKF/U5yBBsVO3aDGPzWmfcL+rBg=;
+        b=gfjt2ICie8hwL/UK9P6+L94Fs4Cn9nEcp+CiVFc1ZjwJfxTCwisKLudEg3K6PPqmYJ
+         F6Q5gmawk1CcZCQEDSMOmVm9SJrrvlAUJCfd9+3GYm0wQ8RGWIbPko0Ev5doH0hFCwj6
+         +Jyw3fovwNkYftMofc71SwhkjJrULC+di5+DYC1ekUI7cG/lGPsjJZBp50pQmRlw2p/Z
+         pQxlWTNqURsgTcjwcqiblqf3ZX/oeZ3/ywwiiDetkttdpZf10vniZ2UZEyEugYbrEUAb
+         FLEGP0yb76vwfK/akaQDGy1bwPvrxpxiSBRX78dB90PtAqnikNBqqJDoYQHR7LG6o1md
+         f7qA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1681941988; x=1684533988;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=KRScD12+Iq4l10xPFKF/U5yBBsVO3aDGPzWmfcL+rBg=;
+        b=BPqANtd3x29bldRNXzvgh0EoO+6r8QPbcv1jztULAO+2i03JrtQraYOHPPEB0tBgBV
+         pSxOdm//Is3jt1B920fMm0ETbVdzRItS2dYecL5mJ9pB4MmKWab/Tx6CwiiuVBDdnzLX
+         Org9hrzMtRT8lpDoDFC8LikzR1ZJnIzG5ChS+22O/5E1F7quMpiU2ZlQ1/8+ky/p0zRV
+         A4QtMla13mCSxsYJ87lu0k+T2ZKYDn9TKA2ERUC6Sei5Avgs5bWkghuKDmGayAWBhMai
+         gjjE9SoDjeBFlRWLrrWa5xjKk5ARLjKVrz2OHsHEijjqNd9jliP4icXkql4REw2lxTJ2
+         WQRw==
+X-Gm-Message-State: AAQBX9euZzF/3MHj3LzrKNzINb4dR5+Z+2vLoufmvZ2Ko21cA1jRejIS
+	SAYA/TdU8KSpECTC5K2mZCVURmmksdD40Df7uILThmVL
+X-Google-Smtp-Source: AKy350aWbippxCquG/6LsqNdgnQ8FW2uprnMA12kRZ4TEX6DXChxC9q0/LdcEit5bjQ0EonbPDIjtoBTOqVOamH+aeI=
+X-Received: by 2002:aa7:d996:0:b0:504:8173:6240 with SMTP id
+ u22-20020aa7d996000000b0050481736240mr6813376eds.37.1681941988559; Wed, 19
+ Apr 2023 15:06:28 -0700 (PDT)
+MIME-Version: 1.0
+From: Souleymane Diallo <sd6517407@gmail.com>
+Date: Wed, 19 Apr 2023 22:06:17 +0000
+Message-ID: <CAHq7tvqOVNMu8UB4yt3E3X2bfDpA8EtLXju-zXwsZiMH1p7kpQ@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000c2d17305f9b7a2c9"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000c2d17305f9b7a2c9
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Souleymana diallo madone maliynmeren je in=C3=A9gale unenefen
+
+--000000000000c2d17305f9b7a2c9
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Souleymana diallo madone maliynmeren je in=C3=A9gale unen=
+efen</div>
+
+--000000000000c2d17305f9b7a2c9--

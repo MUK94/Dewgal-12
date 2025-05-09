@@ -1,0 +1,153 @@
+Return-Path: <>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 395cGdH2k2MfvCIA3R2AvA
+	(envelope-from <>)
+	for <contact@fiidewgal.com>; Sat, 10 Dec 2022 04:02:41 +0100
+Received: by node187-eu.n0c.com (Postfix)
+	id 6211D401AEEF; Fri,  9 Dec 2022 22:02:41 -0500 (EST)
+Date: Fri,  9 Dec 2022 22:02:41 -0500 (EST)
+From: MAILER-DAEMON@node187-eu.n0c.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: contact@fiidewgal.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="2C0B5401A44B.1670641361/node187-eu.n0c.com"
+Message-Id: <20221210030241.6211D401AEEF@node187-eu.n0c.com>
+
+This is a MIME-encapsulated message.
+
+--2C0B5401A44B.1670641361/node187-eu.n0c.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host node187-eu.n0c.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<djenabdiallo2742@gmail.com>: host gmail-smtp-in.l.google.com[142.251.5.26]
+    said: 550-5.1.1 The email account that you tried to reach does not exist.
+    Please try 550-5.1.1 double-checking the recipient's email address for
+    typos or 550-5.1.1 unnecessary spaces. Learn more at 550 5.1.1
+    https://support.google.com/mail/?p=NoSuchUser
+    i17-20020adfe491000000b0022e5b0647dasi1849923wrm.493 - gsmtp (in reply to
+    RCPT TO command)
+
+--2C0B5401A44B.1670641361/node187-eu.n0c.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; node187-eu.n0c.com
+X-Postfix-Queue-ID: 2C0B5401A44B
+X-Postfix-Sender: rfc822; contact@fiidewgal.com
+Arrival-Date: Fri,  9 Dec 2022 22:02:41 -0500 (EST)
+
+Final-Recipient: rfc822; djenabdiallo2742@gmail.com
+Original-Recipient: rfc822;djenabdiallo2742@gmail.com
+Action: failed
+Status: 5.1.1
+Remote-MTA: dns; gmail-smtp-in.l.google.com
+Diagnostic-Code: smtp; 550-5.1.1 The email account that you tried to reach does
+    not exist. Please try 550-5.1.1 double-checking the recipient's email
+    address for typos or 550-5.1.1 unnecessary spaces. Learn more at 550 5.1.1
+    https://support.google.com/mail/?p=NoSuchUser
+    i17-20020adfe491000000b0022e5b0647dasi1849923wrm.493 - gsmtp
+
+--2C0B5401A44B.1670641361/node187-eu.n0c.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <contact@fiidewgal.com>
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NTXkT0TXjz34SDn2
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="KyLXiM4H"
+X-N0C-MailScanner-eFa-Watermark: 1671246160.96182@K5NyGcWdT9JaFMtkSa2qrg
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: B8361401AEEF.AC1BE
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from www.fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id B8361401AEEF
+	for <djenabdiallo2742@gmail.com>; Sat, 10 Dec 2022 04:02:39 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com B8361401AEEF
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com B8361401AEEF
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1670641359;
+	bh=sx6oEeu1AvQz0zwDdMW9CkdXMBjwTClcyqzWzonBDxs=;
+	h=Date:Subject:From:To:From;
+	b=KyLXiM4H3ETgQv5vNWpHc9He+DqvMPCoSj0nIZsoEkNyoly4vW+SbDS6sr2hYnXqQ
+	 ZNJ4gtr2ojsGrIQ1h2gejO8qaFnJzU/lfTj9APMcD/Wi4aaWmbhfjYRkLpyxCZGDYj
+	 CEgWt7mBSSuTEBG/K1hrtsgDAYqNGmCdw9Y2XBtE=
+Message-ID: <84245a746660baebe7902c6228f0cd70@www.fiidewgal.com>
+Date: Sat, 10 Dec 2022 04:02:39 +0100
+Subject: Informations
+From: contact@fiidewgal.com
+To: djenabdiallo2742@gmail.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<p><span style=3D"color: rgb(255, 255, 255); font-family: Poppins, sans-ser=
+if; font-size: 12px;">FD20221</span></p><p class=3D"p1" style=3D"margin-rig=
+ht: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-numeric: normal=
+; font-variant-east-asian: normal; font-stretch: normal; line-height: norma=
+l; font-family: &quot;Helvetica Neue&quot;;">Salam Aleykoum ,</p><p class=
+=3D"p1" style=3D"margin-right: 0px; margin-bottom: 0px; margin-left: 0px; f=
+ont-variant-numeric: normal; font-variant-east-asian: normal; font-stretch:=
+ normal; line-height: normal; font-family: &quot;Helvetica Neue&quot;;">Nou=
+s sommes tr=C3=A8s heureux de vous avoir parmi nos </p><p class=3D"p1" styl=
+e=3D"margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-=
+numeric: normal; font-variant-east-asian: normal; font-stretch: normal; lin=
+e-height: normal; font-family: &quot;Helvetica Neue&quot;;">membres dans la=
+ plateforme et nous souhaitons que<span class=3D"Apple-converted-space">&nb=
+sp;</span></p><p class=3D"p1" style=3D"margin-right: 0px; margin-bottom: 0p=
+x; margin-left: 0px; font-variant-numeric: normal; font-variant-east-asian:=
+ normal; font-stretch: normal; line-height: normal; font-family: &quot;Helv=
+etica Neue&quot;;">Vous y rester.C=E2=80=99est pourquoi nous vous prions de=
+<span class=3D"Apple-converted-space">&nbsp;</span></p><p class=3D"p1" styl=
+e=3D"margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-=
+numeric: normal; font-variant-east-asian: normal; font-stretch: normal; lin=
+e-height: normal; font-family: &quot;Helvetica Neue&quot;;">mettre =C3=
+=A0 jour votre profil en mettant correctement<span class=3D"Apple-converted=
+-space">&nbsp;</span></p><p class=3D"p1" style=3D"margin-right: 0px; margin=
+-bottom: 0px; margin-left: 0px; font-variant-numeric: normal; font-variant-=
+east-asian: normal; font-stretch: normal; line-height: normal; font-family:=
+ &quot;Helvetica Neue&quot;;">Votre date de naissance , votre =C3=A9tat civ=
+il ;votre photo </p><p class=3D"p1" style=3D"margin-right: 0px; margin-bott=
+om: 0px; margin-left: 0px; font-variant-numeric: normal; font-variant-east-=
+asian: normal; font-stretch: normal; line-height: normal; font-family: &quo=
+t;Helvetica Neue&quot;;">et votre numero de telephone avec l'indicatif</p><=
+p class=3D"p1" style=3D"margin-right: 0px; margin-bottom: 0px; margin-left:=
+ 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-s=
+tretch: normal; line-height: normal; font-family: &quot;Helvetica Neue&quot=
+;;">Si cela est compliqu=C3=A9 pour vous faites nous parvenir </p><p class=
+=3D"p1" style=3D"margin-right: 0px; margin-bottom: 0px; margin-left: 0px; f=
+ont-variant-numeric: normal; font-variant-east-asian: normal; font-stretch:=
+ normal; line-height: normal; font-family: &quot;Helvetica Neue&quot;;">vot=
+re num=C3=A9ro de membre qui est sur votre profil public </p><p class=3D"p1=
+" style=3D"margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-va=
+riant-numeric: normal; font-variant-east-asian: normal; font-stretch: norma=
+l; line-height: normal; font-family: &quot;Helvetica Neue&quot;;">avec vos =
+informations cit=C3=A9es ci dessus .</p><p class=3D"p1" style=3D"margin-rig=
+ht: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-numeric: normal=
+; font-variant-east-asian: normal; font-stretch: normal; line-height: norma=
+l; font-family: &quot;Helvetica Neue&quot;;">Merci pour votre comprehension=
+!</p>
+
+--2C0B5401A44B.1670641361/node187-eu.n0c.com--

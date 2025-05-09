@@ -1,0 +1,106 @@
+Return-Path: <safiatoubarry7@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id kI0bK83isWOGwzgA3R2AvA
+	(envelope-from <safiatoubarry7@gmail.com>)
+	for <contact@fiidewgal.com>; Sun, 01 Jan 2023 20:45:17 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NlTx94769zQLqN4
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="jVTQafGR"
+X-N0C-MailScanner-eFa-Watermark: 1673207115.49362@fgy1erj6MWm4mw5TFpEA3g
+X-N0C-MailScanner-eFa-From: safiatoubarry7@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 00A324008348.AD57D
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-wm1-f47.google.com ([209.85.128.47] [209.85.128.47])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 00A324008348
+	for <contact@fiidewgal.com>; Sun,  1 Jan 2023 20:44:41 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 00A324008348
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 00A324008348
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=jVTQafGR
+Received: by mail-wm1-f47.google.com with SMTP id ay40so18893549wmb.2
+        for <contact@fiidewgal.com>; Sun, 01 Jan 2023 11:44:40 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=Z6zSHA1n92DMeu5fIpxU4ADumNefjZVH7YW/T9ZYinY=;
+        b=jVTQafGRI5AUrjHiKVU7vdPvfXSroodHYwuIi+FHoTtchKrQNh5UlEaaGz3FEPBZgM
+         aHdVpVILSOrazqRNFU0Wm4V+vhG48vzABPpB+1QaZY5zGsdS3juuvXyJedRz8htsqX/+
+         pRfdB7tjosiPqypqJjYRelRtYMjL75UW0F+oDeC4+FtMsqmd86g6L+Iau+CEmjCnVje7
+         fDB3BsvzflRHYyd+bhdeVVh9i3V5klQO9ESNHAGTLRIOcGo8tuMaNhEvx8/XE2fcDlEH
+         R+DOAt6xwlnSULq5KFAGpVj+rYRXiwIdZ6eiPaHHqXRyTJx8514Lmz9ZzJk5mvo7Qq2v
+         RiYQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=Z6zSHA1n92DMeu5fIpxU4ADumNefjZVH7YW/T9ZYinY=;
+        b=G2pLkrRqX+VbBxYZMJOnjp5ncTnK6yfb0bsuE1Ee914mO3AiVFvJj0wT39zu0pii5g
+         Tj5DGloT66bWh3/pjg766KAAFHHBrVEmdt99eUdXgWEmgC1odVVWgjA9Yc6CItuGT09r
+         KAZloMpY+aW8fG9SpVaXRwgln1Z9wtl6YoQtJFBeC3HyRjrrswUHfVSNYyd+vwG5CIjz
+         8OcDNlvMzUkTh88fWtvlPT0bTwThdL8pQi+rqZzsR9iamqQvTjsiLvFmq03YhQIst4KO
+         yjUCwFiNxpW3UGOWzChDAN2Z9B428HLJLUgpbFeIgSDuf1qFXLFCG9ugpkz8SAwq728i
+         HC3g==
+X-Gm-Message-State: AFqh2komL7ZID+qkYbqMkrz8kNPqN5KZPKWlIsZDrIIG51d0XcQa+PUJ
+	0FAXkdFF42wAefFPuSRV8YYw3FnR5Px0v0eZnUGSSrNf
+X-Google-Smtp-Source: AMrXdXu9FEC1R7onVLSi7rYCru4aO6EyIj0Ps9GsMgbecddJWRE3LT7FkzY1Mg0x4utfsjCupmdQJq3tWdm+Z6jCcSk=
+X-Received: by 2002:a05:600c:3baa:b0:3cf:d08d:3eb2 with SMTP id
+ n42-20020a05600c3baa00b003cfd08d3eb2mr2455722wms.129.1672602280322; Sun, 01
+ Jan 2023 11:44:40 -0800 (PST)
+MIME-Version: 1.0
+References: <53493c430f2740498b2e4909187534b3@fiidewgal.com>
+In-Reply-To: <53493c430f2740498b2e4909187534b3@fiidewgal.com>
+From: Safiatou Barry <safiatoubarry7@gmail.com>
+Date: Sun, 1 Jan 2023 19:44:28 +0000
+Message-ID: <CA+-8omYQEBfv664nTb8btE0EZSZkqFsT_edO_6xP33UWA9+hqw@mail.gmail.com>
+Subject: =?UTF-8?Q?Re=3A_Vous_avez_une_nouvelle_demande_d=27int=C3=A9r=C3=AAt?=
+To: =?UTF-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>
+Content-Type: multipart/alternative; boundary="000000000000c4e94905f139105d"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000c4e94905f139105d
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour ok
+
+Le dim. 1 janv. 2023, 19:43, Ne r=C3=A9pondez pas <contact@fiidewgal.com> a
+=C3=A9crit :
+
+> Bonjour Safiatou Barry,
+>
+> Daouda Diallo a manifest=C3=A9 son int=C3=A9r=C3=AAt pour vous.
+>
+> Veuillez contacter l'=C3=A9quipe administrative si vous avez d'autres que=
+stions.
+>
+> Merci,
+>
+> Ne r=C3=A9pondez pas
+>
+
+--000000000000c4e94905f139105d
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Bonjour ok</div><br><div class=3D"gmail_quote"><div dir=
+=3D"ltr" class=3D"gmail_attr">Le dim. 1 janv. 2023, 19:43, Ne r=C3=A9pondez=
+ pas &lt;<a href=3D"mailto:contact@fiidewgal.com">contact@fiidewgal.com</a>=
+&gt; a =C3=A9crit=C2=A0:<br></div><blockquote class=3D"gmail_quote" style=
+=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><p>Bonjo=
+ur Safiatou Barry,</p><p>Daouda Diallo a manifest=C3=A9 son int=C3=A9r=C3=
+=AAt pour vous.</p><p>Veuillez contacter l&#39;=C3=A9quipe administrative s=
+i vous avez d&#39;autres questions.</p><p>Merci,</p><p>Ne r=C3=A9pondez pas=
+</p>
+
+</blockquote></div>
+
+--000000000000c4e94905f139105d--

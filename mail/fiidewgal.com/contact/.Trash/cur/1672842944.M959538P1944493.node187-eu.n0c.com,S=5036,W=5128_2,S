@@ -1,0 +1,92 @@
+Return-Path: <bailothiathiasow@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 8HMcOcCOtWOtqx0A3R2AvA
+	(envelope-from <bailothiathiasow@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 04 Jan 2023 15:35:44 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NnBwc5qtFz1wKQ
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="ALGmpBZP"
+X-N0C-MailScanner-eFa-Watermark: 1673447738.73741@TGlHBmmtQeYcg+hSb6LW5g
+X-N0C-MailScanner-eFa-From: bailothiathiasow@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 6F7E5401AEF6.A3E96
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ej1-f54.google.com ([209.85.218.54] [209.85.218.54])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 6F7E5401AEF6
+	for <contact@fiidewgal.com>; Wed,  4 Jan 2023 15:35:03 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 6F7E5401AEF6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 6F7E5401AEF6
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=ALGmpBZP
+Received: by mail-ej1-f54.google.com with SMTP id m18so82863627eji.5
+        for <contact@fiidewgal.com>; Wed, 04 Jan 2023 06:35:03 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:to:from:importance:subject:date:savedfromemail
+         :message-id:from:to:cc:subject:date:message-id:reply-to;
+        bh=MHjQMaoN+3YRFia78W2qgrmDJ2/l9NjvUKlxHsWgSKU=;
+        b=ALGmpBZPNM87fR0VlTnzgDzVTFObFwiIirGDUnDXXWcM5xXkdhXCu/XlXEYXp1BihL
+         Ee4ckx1CAwQVzX0cnPpTMW45ZIo2NpIxCfSu+Q0viNcGFKMdfx76SGg17qlK0BlxcOZz
+         LiCdJJRnEGSV0fXO8gY+SctB8mLitXd+BKcLzCETAXICQ3PLscft2LZJj3zba/Y665Gd
+         ZOLNhk6oZMzHaUyVcxsmasijFSPEZ0ugONrj3MoHJI4FPmfFomP9w3RHov3zfmknFky+
+         BaJShYpe/BIujCLRZVcCqQXX8Ad8U3oL3KX0nRAtUUX4DRjSCcH/ZA8xP6NuKM+zCFUg
+         V5HA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=mime-version:to:from:importance:subject:date:savedfromemail
+         :message-id:x-gm-message-state:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=MHjQMaoN+3YRFia78W2qgrmDJ2/l9NjvUKlxHsWgSKU=;
+        b=di4+Wu1/6dykOXo0Q+hw2BKZtD+QMz4N34sriY3f+gGgXZC5xwFDKXRwEcuDZr4r9N
+         Nkfr2YOnxZMOXGwglPc6GG1OEM3Ve4P0hfw0VUFJSKZrXAGJ1Jr1nRk5lwYnQsAzfK+R
+         J7TNccl+es+5NRomDWRZqeYXK0HjGHivtRaGyh8A0Nz1cROYZBV9URftBnORJ1AWo3LD
+         BT1ux3JmbJlOya+2C7uJhXNrZORXowaNvrWtiuvvvDDd1kSQdmkQwXp/9Gq3C6Dhor4m
+         Gh8V6ImAI1nMzZF0iILhI+Tz21RmKQIjmaKzgJFx5o4UFk0AbwmsIGMpT+ziGCQjTB6Y
+         6lLQ==
+X-Gm-Message-State: AFqh2kpJAO+Lulir5AWfL6rGWMPPTBcjA3s8tKBj4zSs9/4a3IHUZyBJ
+	YdCn6VyY42Tsee42ZEQHPp8vFOV8pWQ=
+X-Google-Smtp-Source: AMrXdXv+zcbeTolPWZCl1VAxEzEbyC93Kj02+guPoIhhdG5zy/C56rDpYNXqYznppiVNhbJJs8uLTw==
+X-Received: by 2002:a17:906:3707:b0:828:76a3:e6bf with SMTP id d7-20020a170906370700b0082876a3e6bfmr51730887ejc.50.1672842902651;
+        Wed, 04 Jan 2023 06:35:02 -0800 (PST)
+Received: from [10.106.151.35] ([41.191.107.139])
+        by smtp.gmail.com with ESMTPSA id la3-20020a170907780300b007c16e083b01sm15383788ejc.9.2023.01.04.06.34.59
+        for <contact@fiidewgal.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Wed, 04 Jan 2023 06:35:01 -0800 (PST)
+Message-ID: <63b58e95.170a0220.1aa9a.2523@mx.google.com>
+SavedFromEmail: bailothiathiasow@gmail.com
+Date: Wed, 04 Jan 2023 14:34:57 +0000
+Subject: Bonjour
+Importance: normal
+From: bailothiathiasow <bailothiathiasow@gmail.com>
+To: contact@fiidewgal.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="--_com.samsung.android.email_1306208769955530"
+X-N0C-Node-IP: 185.221.182.45
+
+----_com.samsung.android.email_1306208769955530
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: base64
+
+RW52b3nDqSBkZXB1aXMgbW9uIHNtYXJ0cGhvbmUgU2Ftc3VuZyBHYWxheHku
+
+----_com.samsung.android.email_1306208769955530
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: base64
+
+PGh0bWw+PGhlYWQ+PG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0
+L2h0bWw7IGNoYXJzZXQ9VVRGLTgiPjwvaGVhZD48Ym9keSBkaXI9ImF1dG8iPjxkaXY+PGJyPjwv
+ZGl2PjxkaXY+PGJyPjwvZGl2PjxkaXY+PGJyPjwvZGl2PjxkaXY+PGJyPjwvZGl2PjxkaXYgaWQ9
+ImNvbXBvc2VyX3NpZ25hdHVyZSI+PGRpdiBzdHlsZT0iZm9udC1zaXplOjg1JTtjb2xvcjojNTc1
+NzU3IiBkaXI9ImF1dG8iPkVudm95w6kgZGVwdWlzIG1vbiBzbWFydHBob25lIFNhbXN1bmcgR2Fs
+YXh5LjwvZGl2PjwvZGl2PjwvYm9keT48L2h0bWw+
+
+----_com.samsung.android.email_1306208769955530--
+

@@ -1,0 +1,48 @@
+Return-Path: <contact@fiidewgal.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id fbQ8IGiqhmP5+yMA3R2AvA
+	(envelope-from <contact@fiidewgal.com>)
+	for <contact@fiidewgal.com>; Wed, 30 Nov 2022 01:57:12 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NMLQJ2nSSz34SDnG
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="e1yQbCcP"
+X-N0C-MailScanner-eFa-Watermark: 1670374629.57356@jf/Gq2b3us2cuDi9S8LzMw
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 9FB4A4002B92.A9485
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 9FB4A4002B92
+	for <contact@fiidewgal.com>; Wed, 30 Nov 2022 01:57:08 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 9FB4A4002B92
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 9FB4A4002B92
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1669769828;
+	bh=ZOiWZXoXCapB0Km6lDfUEgxxESRVSIcqydwwssUtMaY=;
+	h=Date:Subject:From:To:From;
+	b=e1yQbCcPGtw565SFscQM+dYoPtEoGUGrrou2NlPTeQYIGFj2fCCTPwf9JNXVTNESY
+	 PstTiYy7uaxi1H3RJj90ovtjStpGS08sXWPnuCfvcjlql+WzJ1aeFpJ9o9eOYeP6vU
+	 4HwZg1hd2hBbnj06langT/qvz3Xo26Z7wvM/oC+E=
+Message-ID: <5211ebfcd2ad761e66df39e5eaf7a644@fiidewgal.com>
+Date: Wed, 30 Nov 2022 01:57:08 +0100
+Subject: Inscription des membres
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: contact@fiidewgal.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<p>F=C3=A9licitations !<br></p><p>Vous avez un nouveau membre enregistr=
+=C3=A9 dans votre syst=C3=A8me.</p><p>Nom du membre : Tchierno diallo</p><p=
+>L'e-mail est : tcherninhodjalo95@gmail.com</p><p>Profil de membre : https:=
+//fiidewgal.com/admin/members/433</p><p>Merci,</p><p>Ne r=C3=A9pondez pas</=
+p>
+

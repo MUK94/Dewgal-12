@@ -1,0 +1,189 @@
+Return-Path: <denkad07@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id QLvFI3iPhmNS5SIA3R2AvA
+	(envelope-from <denkad07@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 30 Nov 2022 00:02:16 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NMHsg3r73z34SDnG
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="oJaXMQQK"
+X-N0C-MailScanner-eFa-Watermark: 1670367732.00306@kHzuVbll+IhWC/xmPwyJVg
+X-N0C-MailScanner-eFa-From: denkad07@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: F383F4002B8E.A14C8
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ed1-f52.google.com ([209.85.208.52] [209.85.208.52])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id F383F4002B8E
+	for <contact@fiidewgal.com>; Wed, 30 Nov 2022 00:01:37 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com F383F4002B8E
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com F383F4002B8E
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=oJaXMQQK
+Received: by mail-ed1-f52.google.com with SMTP id b8so21778804edf.11
+        for <contact@fiidewgal.com>; Tue, 29 Nov 2022 15:01:36 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=yVjpwe/e8MkRWG5tjwrBrvddS2H4ILW5L81SgebYDoU=;
+        b=oJaXMQQKNkZXA4ganK68+VjdTLvFPTXhCPQgnIRF2K/ANd+TkHapRiOzKJgzyeGPdd
+         6zphTMCyRYCYtUxeMo/4vQuTkXrVfbAdf1FGA4rRpNtcGL3XJDtXaSHT4TCfMLM+XUrc
+         5+EqNeXprKnNsYjssXcSEX7aldwgH0QGpxIgPQB5ELCfFurJZ7/JJ0BejOymgx7iLxx9
+         4DPJayH0UgKnpMg27pVlcfQqbye2evggRqCsK2TcmCeFMl0nQibDmpr2S4cr3/Rs39eM
+         259ze7QUku6gVMnNOwcQnn71WSvsCJakXt5HqjT5kvSnvkbPOoGNtV3CcxnEpGGvryTZ
+         DHMQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=yVjpwe/e8MkRWG5tjwrBrvddS2H4ILW5L81SgebYDoU=;
+        b=ZPtVNqzanoAIVGE05Acyvd+LPEp5jeBXcBEELkMpCn7glT8e5FYjsDicG/LGK3rGvU
+         VbFpW1ZpGF8TSPMQjHaRf20EoezgYHtrxiAQ+plG7NakuAOLCh2FHRDyYLmEyvsqWown
+         ysgYAYRpRI+dN8GtWaPeCz/Uw12EyOD9rbIivXyuYWmtam1c6gKNJh8A1qutvlF3adXr
+         TTVeDKl4Vav1B2OH7FIhnl4puarEXepLtkR+VxcJg+Epe3Z7YyzNx3NyxpeqIDQ2sb+U
+         i3ImXkhk8TJiDJyG1AOfoQaZzGD/3LM1T7YpmAh8S9jANEd4Y5d71pihLL2PELP93d0C
+         OIyA==
+X-Gm-Message-State: ANoB5pkYH1ewN/jWQtWzVOg1pGWi3YRZh6ip5/GQJO5TI9//MArL77I9
+	N/rpTwuHHhyH1q8L4gHs7+M1WtAl3EeSIYK/TthjcboK
+X-Google-Smtp-Source: AA0mqf7QdM/WReK7/z7Dg3E3Ck76isOlGkvxsFovwtaYFIDWGCBBy2FC0QnonggG0MrBwFmPH+i9blL4Rc99PpbSEQA=
+X-Received: by 2002:a50:aa8f:0:b0:469:c5cc:855e with SMTP id
+ q15-20020a50aa8f000000b00469c5cc855emr40270293edc.307.1669762895890; Tue, 29
+ Nov 2022 15:01:35 -0800 (PST)
+MIME-Version: 1.0
+References: <c6120fad3af8f5aa26302a91a90709b8@fiidewgal.com>
+In-Reply-To: <c6120fad3af8f5aa26302a91a90709b8@fiidewgal.com>
+From: "'" <denkad07@gmail.com>
+Date: Tue, 29 Nov 2022 23:01:22 +0000
+Message-ID: <CAO5u8MVOwvNucvhzPjj5wzgCDen=E4T4htifp70=cJABWJD5_g@mail.gmail.com>
+Subject: Re: Informations
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000044cf3f05eea3f8ea"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000044cf3f05eea3f8ea
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+8J6kg/CepK0g8J6ksfCepKvwnqSk8J6kvPCepK7wnqSq8J6krfCepYUg8J6ks/CepLXwnqSl8J6k
+qPCepK3wnqS88J6kovCepKQg8J6ksvCepLrwnqSi8J6kpCDwnqS48J6ktfCepKXwnqSo8J6ktfCe
+pLzwnqS1IPCepK/wnqSu8J6ksg0K8J6kpPCepKLwnqSy4rmBIPCepLPwnqSuIPCepLHwnqSu8J6k
+svCepK0g8J6kvPCepLXwnqSyIPCepLbwnqSu8J6kpPCepLPwnqS1IPCepLLwnqS68J6ktfCepLIg
+8J6kpPCepKLwnqWE8J6ksfCepK7wnqSq8J6krfCepYUg8J6kpPCepKLwnqSy4rmBDQrwnqS08J6k
+ovCepKTwnqWG8J6krSDwnqSl8J6krSDwnqSu8J6ksiDwnqSx8J6kovCepKTwnqWG8J6krfCepLzw
+nqSu8J6kvPCepK4g8J6kpPCepKLwnqSyIPCepLLwnqSuIPCepKXwnqStIPCepLjwnqSr8J6kqfCe
+pLzwnqSt8J6kqvCepKINCvCepLLwnqS68J6ktdifDQoNCvCepJHwnqSuIPCepLzwnqSu8J6ksvCe
+pLrwnqStIPCepLTwnqSuIPCepKXwnqStIPCepLzwnqSi8J6ksfCepKPwnqSrIPCepKXwnqSu8J6k
+siDwnqSz8J6kriDwnqS48J6kq/CepLLwnqSj8J6kovCepLrwnqSu8J6kpCDwnqSk8J6kovCepLIN
+CvCepLbwnqSu8J6kpPCepLPwnqS1IPCepLLwnqS68J6ktfCepLIuDQoNCkxlIG1hci4gMjkgbm92
+LiAyMDIyLCAxMjowOCwgPGNvbnRhY3RAZmlpZGV3Z2FsLmNvbT4gYSDDqWNyaXQgOg0KDQo+IFNh
+bGFtIEFsYXlrb3VtICwgT24gZGphcmFtYSBGdWxiaGUnLA0KPg0KPiBOb3VzIHNvbW1lcyB0csOo
+cyBoZXVyZXV4IGRlIHZvdXMgYWNjdWVpbGxpciBzdXIgbGEgcGxhdGVmb3JtZSBGaWkgRGV3Z2Fs
+IC4NCj4NCj4gTm91cyB2b3VzIGluZm9ybW9ucyBxdSdpbCBlc3QgbsOpY2Vzc2FpcmUgZGUgbWV0
+dHJlIHVuIG51bWVybyBkZSB0ZWxlcGhvbmUNCj4gcG91ciB2b3VzDQo+DQo+IGluZm9ybWVyIHNp
+IHZvdXMgYXZleiB1bmUgZGVtYW5kZSBkJ2ludGVyw6p0IGF2ZWMgcmVuZGV6LXZvdXMgOyBsZSBu
+dW1lcm8NCj4gZGUgdGVsZXBob25lDQo+DQo+IGV0IHZvcyBpbmZvcm1hdGlvbnMgcmVzdGVudCBj
+b25maWRlbnRpZWwuUG91ciBhc3N1cmVyIGxhIGJvbm5lIGdlc3Rpb24gZGUNCj4gbGEgcGxhdGVm
+b3JtZQ0KPg0KPiB1biByZW5kZXotdm91cyBjaGF0IGVzdCBjcsOpw6kgcG91ciBzYXZvaXIgZCdh
+dmFudGFnZSAsIGNsaXF1ZXogc3VyIGxlIGxpZW4NCj4gZGUgbGEgdmlkw6lvDQo+DQo+IGh0dHBz
+Oi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9Nkl0RF9VbjhvVjgmdD0xMTdzLiBOb3VzIHZvdXMg
+cHJpb25zDQo+IMOpZ2FsZW1lbnQNCj4NCj4gZGUgcmVuc2VpZ25lciB2b3MgaW5mb3JtYXRpb25z
+IHBlcnNvbm5lbGxlcyBldCBzdXIgZ2FsZXJpZSB2b3VzIHBvdXZleg0KPiBham91dGVyIHVuZSBw
+aG90byAuDQo+DQo+IERvbmMgLCBub3VzICB2b3VzIGludml0b25zIGRlIG1ldHRyZSDDoCBqb3Vy
+IHZvdHJlIHByb2ZpbCBhdmVjIHZvcyB2cmFpcw0KPiBpbmZvcm1hdGlvbnMgY2FyDQo+DQo+IGxh
+IHBsYXRlZm9ybWUgYXNzdXJlIGxhIGRpc2Nyw6l0aW9uIGV0IGxhIHZpZSBwcml2w6llIGRlIHRv
+dXQgdW4gY2hhY3VuIGlsDQo+IG4neSBhIHF1ZSBsZXMNCj4NCj4gaW5zY3JpdHMgZGUgbGEgcGxh
+dGVmb3JtZSBxdWkgcGV1dmVudCB2b2lyIHZvdHJlIHByb2ZpbC4NCj4NCj4gTWVyY2kgcG91ciBs
+YSBjb21wcsOpaGVuc2lvbiAhDQo+DQo+IEzigJnDqXF1aXBlIEZpaSBEZXdnYWwgLg0KPg0K
+--00000000000044cf3f05eea3f8ea
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">=F0=9E=A4=83=F0=9E=A4=AD =F0=9E=A4=B1=F0=9E=A4=AB=F0=9E=
+=A4=A4=F0=9E=A4=BC=F0=9E=A4=AE=F0=9E=A4=AA=F0=9E=A4=AD=F0=9E=A5=85 =F0=9E=
+=A4=B3=F0=9E=A4=B5=F0=9E=A4=A5=F0=9E=A4=A8=F0=9E=A4=AD=F0=9E=A4=BC=F0=9E=A4=
+=A2=F0=9E=A4=A4 =F0=9E=A4=B2=F0=9E=A4=BA=F0=9E=A4=A2=F0=9E=A4=A4 =F0=9E=A4=
+=B8=F0=9E=A4=B5=F0=9E=A4=A5=F0=9E=A4=A8=F0=9E=A4=B5=F0=9E=A4=BC=F0=9E=A4=B5=
+ =F0=9E=A4=AF=F0=9E=A4=AE=F0=9E=A4=B2 =F0=9E=A4=A4=F0=9E=A4=A2=F0=9E=A4=B2=
+=E2=B9=81 =F0=9E=A4=B3=F0=9E=A4=AE =F0=9E=A4=B1=F0=9E=A4=AE=F0=9E=A4=B2=F0=
+=9E=A4=AD =F0=9E=A4=BC=F0=9E=A4=B5=F0=9E=A4=B2 =F0=9E=A4=B6=F0=9E=A4=AE=F0=
+=9E=A4=A4=F0=9E=A4=B3=F0=9E=A4=B5 =F0=9E=A4=B2=F0=9E=A4=BA=F0=9E=A4=B5=F0=
+=9E=A4=B2 =F0=9E=A4=A4=F0=9E=A4=A2=F0=9E=A5=84=F0=9E=A4=B1=F0=9E=A4=AE=F0=
+=9E=A4=AA=F0=9E=A4=AD=F0=9E=A5=85 =F0=9E=A4=A4=F0=9E=A4=A2=F0=9E=A4=B2=E2=
+=B9=81 =F0=9E=A4=B4=F0=9E=A4=A2=F0=9E=A4=A4=F0=9E=A5=86=F0=9E=A4=AD =F0=9E=
+=A4=A5=F0=9E=A4=AD =F0=9E=A4=AE=F0=9E=A4=B2 =F0=9E=A4=B1=F0=9E=A4=A2=F0=9E=
+=A4=A4=F0=9E=A5=86=F0=9E=A4=AD=F0=9E=A4=BC=F0=9E=A4=AE=F0=9E=A4=BC=F0=9E=A4=
+=AE =F0=9E=A4=A4=F0=9E=A4=A2=F0=9E=A4=B2 =F0=9E=A4=B2=F0=9E=A4=AE =F0=9E=A4=
+=A5=F0=9E=A4=AD =F0=9E=A4=B8=F0=9E=A4=AB=F0=9E=A4=A9=F0=9E=A4=BC=F0=9E=A4=
+=AD=F0=9E=A4=AA=F0=9E=A4=A2 =F0=9E=A4=B2=F0=9E=A4=BA=F0=9E=A4=B5=D8=9F=C2=
+=A0<div dir=3D"auto"><br></div><div dir=3D"auto">=F0=9E=A4=91=F0=9E=A4=AE =
+=F0=9E=A4=BC=F0=9E=A4=AE=F0=9E=A4=B2=F0=9E=A4=BA=F0=9E=A4=AD =F0=9E=A4=B4=
+=F0=9E=A4=AE =F0=9E=A4=A5=F0=9E=A4=AD =F0=9E=A4=BC=F0=9E=A4=A2=F0=9E=A4=B1=
+=F0=9E=A4=A3=F0=9E=A4=AB =F0=9E=A4=A5=F0=9E=A4=AE=F0=9E=A4=B2 =F0=9E=A4=B3=
+=F0=9E=A4=AE =F0=9E=A4=B8=F0=9E=A4=AB=F0=9E=A4=B2=F0=9E=A4=A3=F0=9E=A4=A2=
+=F0=9E=A4=BA=F0=9E=A4=AE=F0=9E=A4=A4 =F0=9E=A4=A4=F0=9E=A4=A2=F0=9E=A4=B2 =
+=F0=9E=A4=B6=F0=9E=A4=AE=F0=9E=A4=A4=F0=9E=A4=B3=F0=9E=A4=B5 =F0=9E=A4=B2=
+=F0=9E=A4=BA=F0=9E=A4=B5=F0=9E=A4=B2.</div></div><br><div class=3D"gmail_qu=
+ote"><div dir=3D"ltr" class=3D"gmail_attr">Le mar. 29 nov. 2022, 12:08,  &l=
+t;<a href=3D"mailto:contact@fiidewgal.com">contact@fiidewgal.com</a>&gt; a =
+=C3=A9crit=C2=A0:<br></div><blockquote class=3D"gmail_quote" style=3D"margi=
+n:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><p style=3D"margi=
+n-right:0px;margin-bottom:0px;margin-left:0px;font-variant-numeric:normal;f=
+ont-variant-east-asian:normal;font-stretch:normal;line-height:normal;font-f=
+amily:&quot;Helvetica Neue&quot;">Salam Alaykoum , On djarama Fulbhe&#39;,=
+=C2=A0</p><p style=3D"margin-right:0px;margin-bottom:0px;margin-left:0px;fo=
+nt-variant-numeric:normal;font-variant-east-asian:normal;font-stretch:norma=
+l;line-height:normal;font-family:&quot;Helvetica Neue&quot;">Nous sommes tr=
+=C3=A8s heureux de vous accueillir sur la plateforme Fii Dewgal .</p><p sty=
+le=3D"margin-right:0px;margin-bottom:0px;margin-left:0px;font-variant-numer=
+ic:normal;font-variant-east-asian:normal;font-stretch:normal;line-height:no=
+rmal;font-family:&quot;Helvetica Neue&quot;">Nous vous informons qu&#39;il =
+est n=C3=A9cessaire de mettre un numero de telephone pour vous=C2=A0</p><p =
+style=3D"margin-right:0px;margin-bottom:0px;margin-left:0px;font-variant-nu=
+meric:normal;font-variant-east-asian:normal;font-stretch:normal;line-height=
+:normal;font-family:&quot;Helvetica Neue&quot;">informer si vous avez une d=
+emande d&#39;inter=C3=AAt avec rendez-vous ; le numero de telephone</p><p s=
+tyle=3D"margin-right:0px;margin-bottom:0px;margin-left:0px;font-variant-num=
+eric:normal;font-variant-east-asian:normal;font-stretch:normal;line-height:=
+normal;font-family:&quot;Helvetica Neue&quot;">et vos informations restent =
+confidentiel.Pour assurer la bonne gestion de la plateforme</p><p style=3D"=
+margin-right:0px;margin-bottom:0px;margin-left:0px;font-variant-numeric:nor=
+mal;font-variant-east-asian:normal;font-stretch:normal;line-height:normal;f=
+ont-family:&quot;Helvetica Neue&quot;">un rendez-vous chat est cr=C3=A9=C3=
+=A9 pour savoir d&#39;avantage , cliquez sur le lien de la vid=C3=A9o</p><p=
+ style=3D"margin-right:0px;margin-bottom:0px;margin-left:0px;font-variant-n=
+umeric:normal;font-variant-east-asian:normal;font-stretch:normal;line-heigh=
+t:normal;font-family:&quot;Helvetica Neue&quot;"><a href=3D"https://www.you=
+tube.com/watch?v=3D6ItD_Un8oV8&amp;t=3D117s" target=3D"_blank" rel=3D"noref=
+errer">https://www.youtube.com/watch?v=3D6ItD_Un8oV8&amp;t=3D117s</a>. Nous=
+ vous prions =C3=A9galement</p><p style=3D"margin-right:0px;margin-bottom:0=
+px;margin-left:0px;font-variant-numeric:normal;font-variant-east-asian:norm=
+al;font-stretch:normal;line-height:normal;font-family:&quot;Helvetica Neue&=
+quot;">de renseigner vos informations personnelles et sur galerie vous pouv=
+ez ajouter une photo .</p><p style=3D"margin-right:0px;margin-bottom:0px;ma=
+rgin-left:0px;font-variant-numeric:normal;font-variant-east-asian:normal;fo=
+nt-stretch:normal;line-height:normal;font-family:&quot;Helvetica Neue&quot;=
+">Donc , nous=C2=A0 vous invitons de mettre =C3=A0 jour votre profil avec v=
+os vrais informations car</p><p style=3D"margin-right:0px;margin-bottom:0px=
+;margin-left:0px;font-variant-numeric:normal;font-variant-east-asian:normal=
+;font-stretch:normal;line-height:normal;font-family:&quot;Helvetica Neue&qu=
+ot;">la plateforme assure la discr=C3=A9tion et la vie priv=C3=A9e de tout =
+un chacun il n&#39;y a que les=C2=A0</p><p style=3D"margin-right:0px;margin=
+-bottom:0px;margin-left:0px;font-variant-numeric:normal;font-variant-east-a=
+sian:normal;font-stretch:normal;line-height:normal;font-family:&quot;Helvet=
+ica Neue&quot;">inscrits de la plateforme qui peuvent voir votre profil.</p=
+><p style=3D"margin-right:0px;margin-bottom:0px;margin-left:0px;font-varian=
+t-numeric:normal;font-variant-east-asian:normal;font-stretch:normal;line-he=
+ight:normal;font-family:&quot;Helvetica Neue&quot;">Merci pour la compr=C3=
+=A9hension !</p><p style=3D"margin-right:0px;margin-bottom:0px;margin-left:=
+0px;font-variant-numeric:normal;font-variant-east-asian:normal;font-stretch=
+:normal;line-height:normal;font-family:&quot;Helvetica Neue&quot;">L=E2=80=
+=99=C3=A9quipe Fii Dewgal .</p>
+</blockquote></div>
+
+--00000000000044cf3f05eea3f8ea--

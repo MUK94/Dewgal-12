@@ -1,0 +1,47 @@
+Return-Path: <contact@fiidewgal.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id T/BQOe5p1mPGECYA3R2AvA
+	(envelope-from <contact@fiidewgal.com>)
+	for <contact@fiidewgal.com>; Sun, 29 Jan 2023 13:43:26 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4P4WFT6wnjz34SDnG
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="Hd2SCzOw"
+X-N0C-MailScanner-eFa-Watermark: 1675600999.42352@aIc69eDH54kg6I7hd/67xA
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 5B19C401AEEF.A9485
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 5B19C401AEEF
+	for <contact@fiidewgal.com>; Sun, 29 Jan 2023 13:43:17 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 5B19C401AEEF
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 5B19C401AEEF
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1674996197;
+	bh=y6wZTkvn0FaP+dObRgZ0h8xUcbkYsi1YJls3DOPKj84=;
+	h=Date:Subject:From:To:From;
+	b=Hd2SCzOwuLiQ8MstIc/OXkANWnMExrN5058/nsdnZMae9R6lu9MhvcdBZnPj4zQHA
+	 jq+fTof3q9R/6ksvSeCHpNaShp85VuJPsY0E4Zt8ozSU5DfbDebC9P6lYxvIGVKuBp
+	 geymELdFCxmPyy4X9mNoODRhZYBMsge2XPnz7s3g=
+Message-ID: <62ababfc2795523ff04b7e0f824c12a7@fiidewgal.com>
+Date: Sun, 29 Jan 2023 13:43:17 +0100
+Subject: Profil
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: contact@fiidewgal.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+Bonjour,
+=C3=87a serait sympa de rappeler aux gens de remplir leur profil. Autrement=
+ =C3=A7a sera difficile de trouver un match avec des profils presque vides.
+Merci d'avance de votre compr=C3=A9hension.
+

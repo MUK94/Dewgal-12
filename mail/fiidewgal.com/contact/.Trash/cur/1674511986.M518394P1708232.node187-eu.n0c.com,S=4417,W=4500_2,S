@@ -1,0 +1,83 @@
+Return-Path: <saoudinebarry2468@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id XNnQHnIGz2PIEBoA3R2AvA
+	(envelope-from <saoudinebarry2468@gmail.com>)
+	for <contact@fiidewgal.com>; Mon, 23 Jan 2023 23:13:06 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4P149Z2mFVz34SDn1
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="ajoQeKq6"
+X-N0C-MailScanner-eFa-Watermark: 1675116782.68829@h3ypid3RSxZEQhe1E+XCPw
+X-N0C-MailScanner-eFa-From: saoudinebarry2468@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 1CB47401AEF6.AE48E
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-qv1-f49.google.com ([209.85.219.49] [209.85.219.49])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 1CB47401AEF6
+	for <contact@fiidewgal.com>; Mon, 23 Jan 2023 23:12:30 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 1CB47401AEF6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 1CB47401AEF6
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=ajoQeKq6
+Received: by mail-qv1-f49.google.com with SMTP id q10so10320231qvt.10
+        for <contact@fiidewgal.com>; Mon, 23 Jan 2023 14:12:30 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=DTufLh+OICbAQsxFmG+JHdzo9TsrilyuSs5k38clCSE=;
+        b=ajoQeKq6A3jiqYPf5CxRy/TxksNq4LuxMlkPHUJc5AvL0CLr7mEPKR7HmaUP+aeRzR
+         LsuDY1NgXBxyukqDhL8AzNzY403jzvUka3fXAGiyRJryjRJQF6wZVh1yX7H02p0k0uVf
+         6Zciom2p7KL0O6ENNoc/SkXxrwvT0D2Yexl3ZE4OpeMNtme5pY/TwG9hfwi1UaED8esI
+         JzCisTvtAhNbXmd5KsnlWVMClAH9vOz0M6OoLiW3DKfrF+p6jXCJHowd5xIaBPiFiz3H
+         jEH0EHDyPfhkWrr80y2zWtdUfRBks3c9Udw5WYMdUJdCgx7uLdIcddkrZj93/rECkNGy
+         gpFg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=DTufLh+OICbAQsxFmG+JHdzo9TsrilyuSs5k38clCSE=;
+        b=iqLQXU8zYovvPBGSXFjUy0d1aPvwt3xZ0US1bt+sDBPqtxLJtQk40RiQmZhPe8RDQx
+         Tz30g4bh2Lr0CVxRoGOs+69m3ShFhc4+mb21wHRlm7ChYtIBn8J/WzhIObIrw7ICoZL/
+         8msgMa8Ij/ZkJ1iVoNfOugPOVj83BktMdIlN0f1KjSlKBWvIA4GGceH0CJXqbVu9b+sk
+         U3CmK5PpGXnOblIhlZyFmId0++X6Y1W1409ujuYpDv57D/zjJZuJHPystVSfpYeihVk6
+         K8qgTRZvJJUXose8bmZV9+nqXv9E6Z0csWE87emBUeiz/Wt4bObXyI+qzkTZYmQtsIc/
+         tpxw==
+X-Gm-Message-State: AFqh2koxrqSalHU3caNe5wAcgV7msB+KkXmmEp/SeOjSNXybW0ZkB6mn
+	VtjrfcWcjwoCqQsC2VFLW+Yz0GJXgdTThly9DiUMiYco
+X-Google-Smtp-Source: AMrXdXtm0f9FAiFGSVmnUYiqXSctmdItDWjXZCcBvsLGb4ZvuGTOfPrDg8XJkMi7079ZG9EC2KFMMy/EP1TLl77CRUs=
+X-Received: by 2002:a05:6214:4c1d:b0:532:2e21:8c0a with SMTP id
+ qh29-20020a0562144c1d00b005322e218c0amr1175221qvb.78.1674511948693; Mon, 23
+ Jan 2023 14:12:28 -0800 (PST)
+MIME-Version: 1.0
+From: Saoudine Barry <saoudinebarry2468@gmail.com>
+Date: Mon, 23 Jan 2023 22:12:17 +0000
+Message-ID: <CAJOV=CN4wig3uYcGx2ZuueuPc2=9k0Z1XD_gcMgu4WYN0LVXeQ@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000dfc50e05f2f5b106"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000dfc50e05f2f5b106
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+AsSalam allekoum wa ramatoulaye wa barakatou j'ai re=C3=A7u un int=C3=A9r=
+=C3=AAt de
+discussion mais j'arrive pas =C3=A0 le connecter
+
+--000000000000dfc50e05f2f5b106
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">AsSalam allekoum wa ramatoulaye wa barakatou j&#39;ai re=
+=C3=A7u un int=C3=A9r=C3=AAt de discussion mais j&#39;arrive pas =C3=A0 le =
+connecter=C2=A0</div>
+
+--000000000000dfc50e05f2f5b106--

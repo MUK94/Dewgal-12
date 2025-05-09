@@ -1,0 +1,77 @@
+Return-Path: <abdulb781983@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id V/rhFlgYwWNzYBAA3R2AvA
+	(envelope-from <abdulb781983@gmail.com>)
+	for <contact@fiidewgal.com>; Fri, 13 Jan 2023 09:37:44 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NtZYN1pLVz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="NlT2fnIn"
+X-N0C-MailScanner-eFa-Watermark: 1674203861.36199@n8Z66stHsErnrxh5ZJU4EA
+X-N0C-MailScanner-eFa-From: abdulb781983@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: EDB0C4008359.A8869
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-lf1-f54.google.com ([209.85.167.54] [209.85.167.54])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id EDB0C4008359
+	for <contact@fiidewgal.com>; Fri, 13 Jan 2023 09:37:09 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com EDB0C4008359
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com EDB0C4008359
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=NlT2fnIn
+Received: by mail-lf1-f54.google.com with SMTP id b3so32112150lfv.2
+        for <contact@fiidewgal.com>; Fri, 13 Jan 2023 00:37:08 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=wsgsDskK+XoEL4BHAXskeLtZ5QsOIVQrV/dfnyULu80=;
+        b=NlT2fnInxV6R/9HG9mLG1HOEq9e7jDfHIOm7EikrsxLg/iKHQdGxRwmr6towrV/HII
+         fO5F5J/d7aD3wptRWfgI/rSZrP8SP4Y2df9JzQqPKMKjUexmVBByg1Z2oHurC/7JTwQH
+         fLNNLSplUcStOhPEeFL2IvI1FrxWeax5jKjyD/mNd/nd4MGNN/qM80fGIcRxt5z3kEEZ
+         h0Kv8R4mZvLKsQkwgq4nUM38zpoUX/nNHkHnN97zAOhM9lg16i3Z0cdR/bKy/rzJeod9
+         S925lBvqWtAKfiM6lA0uxv0bxVfkbWztgrkl8+/3B5QufLQoxKEK2ZwM+9wzUBT2GC/D
+         FX/A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=wsgsDskK+XoEL4BHAXskeLtZ5QsOIVQrV/dfnyULu80=;
+        b=gDo+4xkg6wT/OeTNORHa6+CSv9p5bD3kK76cqzpfu8nXAwqsT5ocaoGL39YJQUOfwA
+         BFamnLwJtOKLFxdbGnwO0fotYepeuVezqAXZasOU9oTl9u35LLk3tyJu8g9t+fuOdMpc
+         gN3rKlIKRhu8VN9BSrVZmXwaN4Vk294H2JkWZ61yqOpColhxWJoF5ccU28d5O0tWmN2a
+         zL3fcDKr4bZ97awPhx0/VuE4JgpoLkFxaNa0UbJqzJE30BgN3MAljG4CBECUl8EI1rZp
+         TqlKH7b8xgJgmz8DTJXGwgv2tF2/JZOn5pY+txCSbwNTfZI0cJwFgE+wAc5pC6ZB92Hp
+         IXbg==
+X-Gm-Message-State: AFqh2kq7Usq4wMzuC79CHuUWnfenhAAKvhCp/RqkKQCZs+3cKimRMkI4
+	MgXa/VuV0+BZWniPZ7V9YyqMB2GSkkUMP0QU2GbHd+Fw
+X-Google-Smtp-Source: AMrXdXuay8lZpfyOzF90ym2T3Kwpf8MOhxg+R3VNnXFFASasTODVD5U8+yFyV5NN5tc7/T/KobqtyTkcwZFC0BLG1Z4=
+X-Received: by 2002:a05:6512:36c1:b0:4cb:1d3e:685b with SMTP id
+ e1-20020a05651236c100b004cb1d3e685bmr2747714lfs.126.1673599027764; Fri, 13
+ Jan 2023 00:37:07 -0800 (PST)
+MIME-Version: 1.0
+From: ABDUL BARRIE <abdulb781983@gmail.com>
+Date: Fri, 13 Jan 2023 08:36:54 +0000
+Message-ID: <CAM5F6D_EMsCdkPFmvtpdeNfNC5j0kjoAZEeP+2+-Qo+oM1PQRA@mail.gmail.com>
+Subject: Hello I try to join but I don't able
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000008be43405f2212397"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000008be43405f2212397
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+--0000000000008be43405f2212397
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"></div>
+
+--0000000000008be43405f2212397--

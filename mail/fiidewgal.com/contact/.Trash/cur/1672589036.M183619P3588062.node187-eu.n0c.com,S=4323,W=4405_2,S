@@ -1,0 +1,82 @@
+Return-Path: <bsadoubaillo@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id IIjeCuyusWPevzYA3R2AvA
+	(envelope-from <bsadoubaillo@gmail.com>)
+	for <contact@fiidewgal.com>; Sun, 01 Jan 2023 17:03:56 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NlP1l1y2RzQBr0G
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="HZLGPUv5"
+X-N0C-MailScanner-eFa-Watermark: 1673193832.9826@VU0m7lfhw1yo+sOJG8vcvA
+X-N0C-MailScanner-eFa-From: bsadoubaillo@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: B60A340049FA.ACD30
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-wr1-f44.google.com ([209.85.221.44] [209.85.221.44])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id B60A340049FA
+	for <contact@fiidewgal.com>; Sun,  1 Jan 2023 17:03:19 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com B60A340049FA
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com B60A340049FA
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=HZLGPUv5
+Received: by mail-wr1-f44.google.com with SMTP id z16so7736143wrw.1
+        for <contact@fiidewgal.com>; Sun, 01 Jan 2023 08:03:19 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=Ttoctp2ejCaBvRO3jSOTrf2IXBJyD0SNHJA8m0RdTRQ=;
+        b=HZLGPUv5ZMWXs7yuh3H/MBLzklzFmnvMYpioFf0QdNEsnSjLpBbAVazgCcvhgRIU8z
+         oUpnG59axZaDvrpxFnelwJYdT+6FQBKTt4KAvA7oB0Mr40k/NkDHMS8rnpayNUPF8Wms
+         JekmYc8rjO67/J/3j5mkxyK2D5o9+Cdn1AK8PfccnHgVjPPGpPrwbDgAD39Tvm2RaFil
+         9vCLZUwi+J0jhtPknmfdDomoQNBNgATuKB/WMVBcjlv9u0aFn7Xjh/0gdBgYApouHfDF
+         M+rv04hb7vFkQ51D2wTI3q+0WivkawuyOm9nsnPbW5rLVSrt79TwQlC+XO3tZtetrCZ1
+         Qwfg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=Ttoctp2ejCaBvRO3jSOTrf2IXBJyD0SNHJA8m0RdTRQ=;
+        b=U1fzyCgR7DrSPonPoMgO6IVkZ4gteyBUc1NEz02bqDjFEnSWgG5Q8CBP2LoL7zjRG6
+         ofReN2184bF/g5a9euAPXFw+VfiEFDYR6CKzNld7nQpv2Yn1Ndn3wmAKJ89Shr07oM9i
+         SsITeXd8ztb3O7wHF9JqTyo6b25kZ/rMRdTm/PLDHnwV/QNpSRpqwdyg5+AxKUTPj+q1
+         WJpJFIg8X4trfpwEff5yp1i1JGuC+NOnuK9cZkuohT+7tNMbIyRm0n0RNTd8mB/kpoRS
+         AnC/6h285fBQO7x4z+6U8besjyMO0ZuURk7qxFhmJklKDjGsfT+2Rijb1IhqyLynAeH5
+         iswQ==
+X-Gm-Message-State: AFqh2krpLp6QPPfm9b9X7/x6ErgWnd87xsZwWC9Yz9ySUrlcSgaLhUgM
+	S0i+EhcdFTlWDZ3vjB+hVsa74G6NMV9nTD/eq2LDSCY9
+X-Google-Smtp-Source: AMrXdXvOP7sJaVFUzZEqI0Md36LvcFf/KqGKKKsGS36gNUj7/plRLcOS0ZN89B1FTIDZ30Z+QOmjdexIzzz0osWAHAs=
+X-Received: by 2002:a5d:5e81:0:b0:242:398a:d131 with SMTP id
+ ck1-20020a5d5e81000000b00242398ad131mr1529681wrb.73.1672588998834; Sun, 01
+ Jan 2023 08:03:18 -0800 (PST)
+MIME-Version: 1.0
+From: Sadou baillo Balde <bsadoubaillo@gmail.com>
+Date: Sun, 1 Jan 2023 16:03:04 +0000
+Message-ID: <CAD=Vx3m_CkNPEZMhoejzv4ik8VyP5fQgDPC1J-+nNbLW7xZc=w@mail.gmail.com>
+Subject: =?UTF-8?Q?Fii_dewgal_je_pr=C3=A9tends_me_mari=C3=A9_inchallah?=
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000217c4805f135f918"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000217c4805f135f918
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Sadou baillo balde angola
+Num=C3=A9ro
+00244923430388
+
+--000000000000217c4805f135f918
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Sadou baillo balde angola<div dir=3D"auto">Num=C3=A9ro</d=
+iv><div dir=3D"auto">00244923430388</div></div>
+
+--000000000000217c4805f135f918--

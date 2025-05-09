@@ -1,0 +1,73 @@
+Return-Path: <diallobrahim96@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id UO5gFdZsr2OmOiAA3R2AvA
+	(envelope-from <diallobrahim96@gmail.com>)
+	for <contact@fiidewgal.com>; Fri, 30 Dec 2022 23:57:26 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NkLHp1jQYznqZr
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="pR8N0Qpr"
+X-N0C-MailScanner-eFa-Watermark: 1673045843.93854@i02vcZBCHdfwinoHNiUQMw
+X-N0C-MailScanner-eFa-From: diallobrahim96@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 8D3E640664F7.A63A6
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-wr1-f42.google.com ([209.85.221.42] [209.85.221.42])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 8D3E640664F7
+	for <contact@fiidewgal.com>; Fri, 30 Dec 2022 23:56:49 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 8D3E640664F7
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 8D3E640664F7
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=pR8N0Qpr
+Received: by mail-wr1-f42.google.com with SMTP id bs20so18893774wrb.3
+        for <contact@fiidewgal.com>; Fri, 30 Dec 2022 14:56:49 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=auto-submitted:precedence:content-disposition
+         :content-transfer-encoding:mime-version:subject:message-id:date:from
+         :to:from:to:cc:subject:date:message-id:reply-to;
+        bh=47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=;
+        b=pR8N0QprDu/cAoi7Uqavw8Hx6BdokPxQHuqO/XLfFDTJRBMBTWzPuNA1OlptSdBwFU
+         xLpKSrffAvrIcmX7ryZcomwu3mzoLZ3vpSVDm5WYjaczRe5xus8n07vAI5gkGeKfWvk5
+         VEd30HopXBNecahObFIjNho4irv59dGXV0Ctjy3Q+jPz7XzLj2dhagconcxP++pmlcrk
+         Bf1w679rEwowsCRKXkBfzSgLILzHK7Aq4AWDLm4jLcNoenSWJwJ1KMZz5PPnelHfMKIM
+         2RKcXsPLSWSgxUr54blxd0hHsqzB7TAuRy0vZJtJ92XmJG3nV3O33P3Xd6Ln6VhKA0RC
+         Z4jA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=auto-submitted:precedence:content-disposition
+         :content-transfer-encoding:mime-version:subject:message-id:date:from
+         :to:x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=;
+        b=C3QypzXv2talWefktzhvZk/YU2CPjDeXsEYTPfCCW9oTMwJriraPeYzXJwsJHvcc+V
+         XGuxCHkjy4KgcausXSvorjlS8/kQQnRiB2cqYdhW0Xu7X7K1q4bmpEFaGFb613QIR2Wa
+         HSBCoobfmrKGyqKWhMOUB6vimGsAX7jpvumD8OINpGU1QWLBNmXzNSxtXYh/gzUc5N8E
+         aOiPe3Wis6EGfKgI7UOz0ZgM/omAlgSV7y3nSyYv1HkwnTsnT0OePa1zvruXWfhuUV1B
+         C+nADhktAFICGsKs8IUhsAwYIcd/+IhG9di/8Ra/0WGcmqt7cpWWqmVULMb8McHppDf4
+         yL6A==
+X-Gm-Message-State: AFqh2kp3mXWu+RXsKUEJ2bU+xACoT3GD/hRR6UXj4F8sUrob/NZ/NbUc
+	bXz74uQ1tKETbWslwdWGdBGZ5cow+k8hDN3cJ+FXW3JPI2WFbdkfzMgjvRWo5A==
+X-Google-Smtp-Source: AMrXdXuN/tU2Xkuz/OlGe2wpBw1F5ABFiVgIHyP41zue1hz9uUln0WkOHEnVJ+XZ/FudZ7e5+jBifTaEviyI/wtPqu6KkKuEY8ZenbSHoBwB
+X-Received: by 2002:a5d:4103:0:b0:28d:8277:c2e4 with SMTP id l3-20020a5d4103000000b0028d8277c2e4mr223818wrp.110.1672441009081;
+        Fri, 30 Dec 2022 14:56:49 -0800 (PST)
+To: contact@fiidewgal.com
+From: "kourakala Diallo" <diallobrahim96@gmail.com>
+Date: Fri, 30 Dec 2022 14:56:48 -0800
+Message-ID: <CANa3ncgZX-pnf6A8N8xvAXs5CsFvapFO-x+6jNTKJWgsT6kxoQ@mail.gmail.com>
+Subject: =?UTF-8?Q?salut_Re:_R=C3=A9initialisation_du_mot_de_passe?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+Precedence: bulk
+X-Autoreply: yes
+Auto-Submitted: auto-replied
+X-N0C-Node-IP: 185.221.182.45
+
+

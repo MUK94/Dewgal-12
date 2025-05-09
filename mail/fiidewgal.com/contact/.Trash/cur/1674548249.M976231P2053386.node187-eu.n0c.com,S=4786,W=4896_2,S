@@ -1,0 +1,110 @@
+Return-Path: <>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id ULcdOhmUz2MKVR8A3R2AvA
+	(envelope-from <>)
+	for <contact@fiidewgal.com>; Tue, 24 Jan 2023 09:17:29 +0100
+Received: by node187-eu.n0c.com (Postfix)
+	id EBF45401AEF6; Tue, 24 Jan 2023 03:17:29 -0500 (EST)
+Date: Tue, 24 Jan 2023 03:17:29 -0500 (EST)
+From: MAILER-DAEMON@node187-eu.n0c.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: contact@fiidewgal.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="529F3401A44B.1674548249/node187-eu.n0c.com"
+Message-Id: <20230124081729.EBF45401AEF6@node187-eu.n0c.com>
+
+This is a MIME-encapsulated message.
+
+--529F3401A44B.1674548249/node187-eu.n0c.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host node187-eu.n0c.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<molamdja2013@gmail.com>: host alt1.gmail-smtp-in.l.google.com[142.250.153.26]
+    said: 452-4.2.2 The email account that you tried to reach is over quota.
+    Please direct 452-4.2.2 the recipient to 452 4.2.2
+    https://support.google.com/mail/?p=OverQuotaTemp
+    13-20020a170906018d00b008722dfb9f4bsi1659588ejb.726 - gsmtp (in reply to
+    RCPT TO command)
+
+--529F3401A44B.1674548249/node187-eu.n0c.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; node187-eu.n0c.com
+X-Postfix-Queue-ID: 529F3401A44B
+X-Postfix-Sender: rfc822; contact@fiidewgal.com
+Arrival-Date: Thu, 19 Jan 2023 02:58:27 -0500 (EST)
+
+Final-Recipient: rfc822; molamdja2013@gmail.com
+Original-Recipient: rfc822;molamdja2013@gmail.com
+Action: failed
+Status: 4.2.2
+Remote-MTA: dns; alt1.gmail-smtp-in.l.google.com
+Diagnostic-Code: smtp; 452-4.2.2 The email account that you tried to reach is
+    over quota. Please direct 452-4.2.2 the recipient to 452 4.2.2
+    https://support.google.com/mail/?p=OverQuotaTemp
+    13-20020a170906018d00b008722dfb9f4bsi1659588ejb.726 - gsmtp
+
+--529F3401A44B.1674548249/node187-eu.n0c.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <contact@fiidewgal.com>
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NyFPF60sRz34SDn2
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="2U6OuebZ"
+X-N0C-MailScanner-eFa-Watermark: 1674719898.5653@QbhrGpUmKcywF2jJZ84z1A
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: EC0FF401A44B.AB0DF
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id EC0FF401A44B
+	for <molamdja2013@gmail.com>; Thu, 19 Jan 2023 08:58:17 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com EC0FF401A44B
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com EC0FF401A44B
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1674115097;
+	bh=bhU8jWIu3aEpwADulEfCKO6B78VWKF7YvGAIBp/xjLM=;
+	h=Date:Subject:From:To:From;
+	b=2U6OuebZptIliA+PHffSCafCwpksaTB2glUVqLYjRkCpTzA53vR2CrvVWcvksz1WF
+	 oPCq+6das2U6o042oWpgLtQK7bwjsZVc14mCU/yfuJLxlTQqKjd5werSJyZb3Yl3XW
+	 ibyWF1s7v4QJU3/40dem3IIVxbyZP9PtKxzHqY5U=
+Message-ID: <62cca623845fc7254089937da61343e7@fiidewgal.com>
+Date: Thu, 19 Jan 2023 08:58:16 +0100
+Subject: =?utf-8?Q?Int=C3=A9r=C3=AAt_accept=C3=A9?=
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: molamdja2013@gmail.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<p>Bonjour Diallo Mohamed lamine,</p><p>Aissatou Bald=C3=A9 a accept=C3=
+=A9 votre int=C3=A9r=C3=AAt. Vous pouvez maintenant vous envoyer des messag=
+es.</p><p>Veuillez contacter l'=C3=A9quipe administrative si vous avez d'au=
+tres questions.</p><p>Merci,<br></p><p>Ne r=C3=A9pondez pas</p>
+
+
+--529F3401A44B.1674548249/node187-eu.n0c.com--

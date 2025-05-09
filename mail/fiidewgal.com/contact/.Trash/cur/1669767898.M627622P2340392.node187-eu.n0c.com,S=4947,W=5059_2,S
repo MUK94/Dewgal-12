@@ -1,0 +1,112 @@
+Return-Path: <>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id ZlJTJdqihmMotiMA3R2AvA
+	(envelope-from <>)
+	for <contact@fiidewgal.com>; Wed, 30 Nov 2022 01:24:58 +0100
+Received: by node187-eu.n0c.com (Postfix)
+	id 9338B4002BA4; Tue, 29 Nov 2022 19:24:58 -0500 (EST)
+Date: Tue, 29 Nov 2022 19:24:58 -0500 (EST)
+From: MAILER-DAEMON@node187-eu.n0c.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: contact@fiidewgal.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="55C364002B90.1669767898/node187-eu.n0c.com"
+Message-Id: <20221130002458.9338B4002BA4@node187-eu.n0c.com>
+
+This is a MIME-encapsulated message.
+
+--55C364002B90.1669767898/node187-eu.n0c.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host node187-eu.n0c.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<Ayeshaaissatou2119@gmail.com>: host gmail-smtp-in.l.google.com[64.233.166.27]
+    said: 550-5.1.1 The email account that you tried to reach does not exist.
+    Please try 550-5.1.1 double-checking the recipient's email address for
+    typos or 550-5.1.1 unnecessary spaces. Learn more at 550 5.1.1
+    https://support.google.com/mail/?p=NoSuchUser
+    n9-20020a5d5889000000b0023663245364si11972286wrf.555 - gsmtp (in reply to
+    RCPT TO command)
+
+--55C364002B90.1669767898/node187-eu.n0c.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; node187-eu.n0c.com
+X-Postfix-Queue-ID: 55C364002B90
+X-Postfix-Sender: rfc822; contact@fiidewgal.com
+Arrival-Date: Tue, 29 Nov 2022 19:24:58 -0500 (EST)
+
+Final-Recipient: rfc822; Ayeshaaissatou2119@gmail.com
+Original-Recipient: rfc822;Ayeshaaissatou2119@gmail.com
+Action: failed
+Status: 5.1.1
+Remote-MTA: dns; gmail-smtp-in.l.google.com
+Diagnostic-Code: smtp; 550-5.1.1 The email account that you tried to reach does
+    not exist. Please try 550-5.1.1 double-checking the recipient's email
+    address for typos or 550-5.1.1 unnecessary spaces. Learn more at 550 5.1.1
+    https://support.google.com/mail/?p=NoSuchUser
+    n9-20020a5d5889000000b0023663245364si11972286wrf.555 - gsmtp
+
+--55C364002B90.1669767898/node187-eu.n0c.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <contact@fiidewgal.com>
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NMKj51ZNgz34SDnL
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="XQEDlvpr"
+X-N0C-MailScanner-eFa-Watermark: 1670372687.25313@Kf+veoT+zKhxGSHsSn5zGw
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: BB8534002B90.ABDBE
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id BB8534002B90
+	for <Ayeshaaissatou2119@gmail.com>; Wed, 30 Nov 2022 01:24:45 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com BB8534002B90
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com BB8534002B90
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1669767885;
+	bh=Glc+yHEzkCdaccFOftJSmzPILPUkeyGRtN/Nc59Evr4=;
+	h=Date:Subject:From:To:From;
+	b=XQEDlvprjVzxsHqduXamdJzb8sSNRAukBPo6UfHOsXVPXwRV3VD3oexBnzRHiTyp0
+	 gsmmlBD+4cL9qcCXHS1hOjFL2A3CmyVktwrcWRJbtCoviupxVletrELjEs/d9D7xR3
+	 VJ0brekubNSNKIl6UNPhY2WOTY0j8x/9hLJv1uZM=
+Message-ID: <bb9dfeb4741b97eac70ddd764db6da20@fiidewgal.com>
+Date: Wed, 30 Nov 2022 01:24:45 +0100
+Subject: Vous avez une nouvelle demande =?utf-8?Q?d=27int=C3=A9r=C3=AAt?=
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: Ayeshaaissatou2119@gmail.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<p>Bonjour Ayesha Diallo,</p><p>Alhousseyni Diallo a manifest=C3=A9 son int=
+=C3=A9r=C3=AAt pour vous.</p><p>Veuillez contacter l'=C3=A9quipe administra=
+tive si vous avez d'autres questions.</p><p>Merci,</p><p>Ne r=C3=A9pondez p=
+as</p>
+
+
+--55C364002B90.1669767898/node187-eu.n0c.com--

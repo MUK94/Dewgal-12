@@ -1,0 +1,104 @@
+Return-Path: <>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id oFqQGtwh4GMG6gYA3R2AvA
+	(envelope-from <>)
+	for <contact@fiidewgal.com>; Sun, 05 Feb 2023 22:38:36 +0100
+Received: by node187-eu.n0c.com (Postfix)
+	id 6B16D401A44D; Sun,  5 Feb 2023 16:38:36 -0500 (EST)
+Date: Sun,  5 Feb 2023 16:38:36 -0500 (EST)
+From: MAILER-DAEMON@node187-eu.n0c.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: contact@fiidewgal.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="69B2C401AEEF.1675633116/node187-eu.n0c.com"
+Message-Id: <20230205213836.6B16D401A44D@node187-eu.n0c.com>
+
+This is a MIME-encapsulated message.
+
+--69B2C401AEEF.1675633116/node187-eu.n0c.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host node187-eu.n0c.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<woulein.diallo@gamil.com>: host mail.gamil.com[192.252.154.117] said: 511
+    sorry, no mailbox here by that name (#5.1.1 - chkuser) (in reply to RCPT TO
+    command)
+
+--69B2C401AEEF.1675633116/node187-eu.n0c.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; node187-eu.n0c.com
+X-Postfix-Queue-ID: 69B2C401AEEF
+X-Postfix-Sender: rfc822; contact@fiidewgal.com
+Arrival-Date: Sun,  5 Feb 2023 16:38:33 -0500 (EST)
+
+Final-Recipient: rfc822; woulein.diallo@gamil.com
+Original-Recipient: rfc822;woulein.diallo@gamil.com
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; mail.gamil.com
+Diagnostic-Code: smtp; 511 sorry, no mailbox here by that name (#5.1.1 -
+    chkuser)
+
+--69B2C401AEEF.1675633116/node187-eu.n0c.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <contact@fiidewgal.com>
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4P92nh2ggmz34SDmh
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="YRctp4nR"
+X-N0C-MailScanner-eFa-Watermark: 1676237909.12446@6cycSp0/Zlyp2wfmX9iQ4w
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: DF606401AEEF.A6D5A
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id DF606401AEEF
+	for <woulein.diallo@gamil.com>; Sun,  5 Feb 2023 22:38:28 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com DF606401AEEF
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com DF606401AEEF
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1675633107;
+	bh=QmiK9matslRKxMjTGgskHjngHQ2vgh5Fj8Nqk/XELfE=;
+	h=Date:Subject:From:To:From;
+	b=YRctp4nR11qmWONKAAGB5HEyEy8ZLdnTiMfB3gT410+m8/vkiKI/AFCSWT4+fOF2q
+	 L4GIt3sU0o2oYUiwTDCBWV8JqddQnuf6KsubXdYsp8w+ESRWatvGNC3fNUJ9vzT4sm
+	 bfDR3+0cpoAu1LGc4qbJ+dJ9kTy7DnLBup9+rqzQ=
+Message-ID: <cbf01139ebff19ee717f0bd62b12422b@fiidewgal.com>
+Date: Sun, 05 Feb 2023 22:38:27 +0100
+Subject: =?utf-8?Q?R=C3=A9initialisation?= du mot de passe
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: woulein.diallo@gamil.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<p>Bonjour&nbsp;Woulein Diallo,</p><p>Votre code de v=C3=A9rification pour =
+la r=C3=A9initialisation du mot de passe est : [[code]]<br></p><p><br></p><=
+p>Merci !<br></p><p>Ne r=C3=A9pondez pas</p>
+
+
+--69B2C401AEEF.1675633116/node187-eu.n0c.com--

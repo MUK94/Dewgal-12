@@ -1,0 +1,138 @@
+Return-Path: <tsddiallo2@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id UqE4NJMOjGKwLjYA3R2AvA
+	(envelope-from <tsddiallo2@gmail.com>)
+	for <contact@fiidewgal.com>; Tue, 24 May 2022 00:45:39 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4L6XVC0NCdz34SDmq
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="Zi0q0Ex8"
+X-N0C-MailScanner-eFa-Watermark: 1653950733.72684@9i7o/x666kIGCqC1o4/SHw
+X-N0C-MailScanner-eFa-From: tsddiallo2@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: DB6DB4034CEE.A3138
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-oi1-f179.google.com ([209.85.167.179] [209.85.167.179])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id DB6DB4034CEE
+	for <contact@fiidewgal.com>; Tue, 24 May 2022 00:45:01 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com DB6DB4034CEE
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com DB6DB4034CEE
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="Zi0q0Ex8"
+Received: by mail-oi1-f179.google.com with SMTP id e189so19520462oia.8
+        for <contact@fiidewgal.com>; Mon, 23 May 2022 15:45:00 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=Ie4yP1szGQWg8vW4DXwzdPpQbP1PUX+hC7JsyIALC7Y=;
+        b=Zi0q0Ex8ft7RfQUWK1Zf+IkBIskLgL1eUZL9iwxGur1ylAOGWdr9uR11M8GlUI/Ws0
+         zsM6GhndzuBACEdHpCUZM9R+Z+HEF1nw6lpjhSuxIyOcBJZXYfrVN7F3lL+sviNuIbCN
+         dGJ6hdgygQHmPTqNIgDL+9tGk/haD3Uxuw2FLop5HIn0AEivzI7/mVPWqvjcFplx83Uw
+         UnJ/cwAKHjBGYRoqFecGJnc8lMVHEtTug3RU5o4SdFds3HIzDrmA/vM2Rl52tGSzFYSF
+         hiZF3n/v2ymDPrfBTcJGdde0O/k5oT6HgB/NFs91DjuDpeDUXhmJYi7bw0g/XdkEWSdg
+         hfcA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=Ie4yP1szGQWg8vW4DXwzdPpQbP1PUX+hC7JsyIALC7Y=;
+        b=cbO3HcL4Pe1G82TA4swMtOhi9jcm2sUfn6wrzb0Qliu1QjpH1baq1bloIaQsYJHATK
+         NFhjpQCG5Krk5qQhf4g8TkJeyfZ9FpPvrgKFulL28OrNNIot/bpXoBQVRHY+MveKrrAj
+         k/Kl3Ehp8p0Zl0WYjFMjBEcGe8TqtJeSg/1weuRJeTE/cClir58B772Cd/9l1Y+rJzr8
+         CPwJ8GuxLxgej6aAMx8yDX7BU5gplhAejeKYhU7ogPb/xLcquDNNdYJwnfNbpStMVyMz
+         MSujPMf8hrICV5JLwlrpHckLX0kGt+ewkcfmiLDq4gAGxdCsCXfhm2F675pcrjqj61q/
+         FFTQ==
+X-Gm-Message-State: AOAM533EImBaZkQ5XXiNHh7pzYFUOQKQ5BlhEJkPDkDO0CtcECSrSxqw
+	0TIr/DdnbBwlWVwUQ+LS3UnMLL90eA1RN3w0XajxC4tH
+X-Google-Smtp-Source: ABdhPJx/aBEftb/zH8y0yuW1SWzVVSSA3rDG13OQvwKoHnwAPpp4a5d4CwaxSHMOEVqBmJG88YnN05LfE2wOYbyVOqs=
+X-Received: by 2002:a05:6808:1154:b0:326:494b:f372 with SMTP id
+ u20-20020a056808115400b00326494bf372mr760368oiu.124.1653345899148; Mon, 23
+ May 2022 15:44:59 -0700 (PDT)
+MIME-Version: 1.0
+References: <15dafc00026423f0bb2717e8f80a0be0@fiidewgal.com>
+ <CAJ7gb7aPbVNqXY_sf6QrFY7TAwuGsBCVrO7qunby5EXsxCq7PA@mail.gmail.com> <9e6283e38365bdd91fc9bdcfa3fc2542@fiidewgal.com>
+In-Reply-To: <9e6283e38365bdd91fc9bdcfa3fc2542@fiidewgal.com>
+From: Gmed immo <tsddiallo2@gmail.com>
+Date: Mon, 23 May 2022 22:44:47 +0000
+Message-ID: <CAJ7gb7ZpMz7q=HJcEVnctaKxmuzm5bbrgdU5ZDaFfXM=Lxg5AA@mail.gmail.com>
+Subject: =?UTF-8?Q?Re=3A_Vous_avez_une_nouvelle_demande_d=27int=C3=A9r=C3=AAt?=
+To: =?UTF-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>
+Content-Type: multipart/alternative; boundary="000000000000027b4d05dfb59702"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000027b4d05dfb59702
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Ok
+
+Le lun. 23 mai 2022 =C3=A0 22:36, <contact@fiidewgal.com> a =C3=A9crit :
+
+> Le 2022-05-20 14:37, Gmed immo a =C3=A9crit :
+> > Jai pas compris
+> >
+> > Le ven. 20 mai 2022 =C3=A0 17:38, Ne r=C3=A9pondez pas <contact@fiidewg=
+al.com>
+> > a =C3=A9crit :
+> >
+> >> Bonjour Souleymane Diallo,
+> >>
+> >> Aissatou Diallo a manifest=C3=A9 son int=C3=A9r=C3=AAt pour vous.
+> >>
+> >> Veuillez contacter l'=C3=A9quipe administrative si vous avez d'autres
+> >> questions.
+> >>
+> >> Merci,
+> >>
+> >> Ne r=C3=A9pondez pasBonjour ,
+> Bienvenue , c'est simple .Vous trouverez le lien ci-dessous qui explique
+> commment s'inscrire.
+> https://www.youtube.com/watch?v=3DzJQ_CS1pGZY
+> Merci!
+>
+
+--000000000000027b4d05dfb59702
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Ok</div><br><div class=3D"gmail_quote"><div dir=3D"ltr" c=
+lass=3D"gmail_attr">Le lun. 23 mai 2022 =C3=A0 22:36,  &lt;<a href=3D"mailt=
+o:contact@fiidewgal.com">contact@fiidewgal.com</a>&gt; a =C3=A9crit=C2=A0:<=
+br></div><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;borde=
+r-left:1px #ccc solid;padding-left:1ex">Le 2022-05-20 14:37, Gmed immo a =
+=C3=A9crit=C2=A0:<br>
+&gt; Jai pas compris<br>
+&gt; <br>
+&gt; Le ven. 20 mai 2022 =C3=A0 17:38, Ne r=C3=A9pondez pas &lt;<a href=3D"=
+mailto:contact@fiidewgal.com" target=3D"_blank" rel=3D"noreferrer">contact@=
+fiidewgal.com</a>&gt;<br>
+&gt; a =C3=A9crit :<br>
+&gt; <br>
+&gt;&gt; Bonjour Souleymane Diallo,<br>
+&gt;&gt; <br>
+&gt;&gt; Aissatou Diallo a manifest=C3=A9 son int=C3=A9r=C3=AAt pour vous.<=
+br>
+&gt;&gt; <br>
+&gt;&gt; Veuillez contacter l&#39;=C3=A9quipe administrative si vous avez d=
+&#39;autres<br>
+&gt;&gt; questions.<br>
+&gt;&gt; <br>
+&gt;&gt; Merci,<br>
+&gt;&gt; <br>
+&gt;&gt; Ne r=C3=A9pondez pasBonjour ,<br>
+Bienvenue , c&#39;est simple .Vous trouverez le lien ci-dessous qui expliqu=
+e <br>
+commment s&#39;inscrire.<br>
+<a href=3D"https://www.youtube.com/watch?v=3DzJQ_CS1pGZY" rel=3D"noreferrer=
+ noreferrer" target=3D"_blank">https://www.youtube.com/watch?v=3DzJQ_CS1pGZ=
+Y</a><br>
+Merci!<br>
+</blockquote></div>
+
+--000000000000027b4d05dfb59702--

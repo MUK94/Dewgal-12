@@ -1,0 +1,112 @@
+Return-Path: <telimeleourydjan@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id mPQWDARgs2MQrQcA3R2AvA
+	(envelope-from <telimeleourydjan@gmail.com>)
+	for <contact@fiidewgal.com>; Mon, 02 Jan 2023 23:51:48 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NmB1w0b1gz1wJP
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="hNDnXXig"
+X-N0C-MailScanner-eFa-Watermark: 1673304705.57507@YU1rMF++q+kK/tNS+q672g
+X-N0C-MailScanner-eFa-From: telimeleourydjan@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: CC75A4020D56.A440E
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ed1-f44.google.com ([209.85.208.44] [209.85.208.44])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id CC75A4020D56
+	for <contact@fiidewgal.com>; Mon,  2 Jan 2023 23:51:11 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com CC75A4020D56
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com CC75A4020D56
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=hNDnXXig
+Received: by mail-ed1-f44.google.com with SMTP id s5so41596549edc.12
+        for <contact@fiidewgal.com>; Mon, 02 Jan 2023 14:51:11 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=TOpP47w+FeAcsG5x62yiuxBIYK6hwDkdgEP6iEmB2wM=;
+        b=hNDnXXig4oQRG5l0i5QrYMZl/a8sN435z5huBS4RZikQ/1Dy5yoJOKK3u1tvIs+nVM
+         m8khs5RgHeNCwrGCYCHWkofBtNlYTkepChiKkTUKbJD7LIyuqXTBbiDRkW84REfrcb48
+         xKGtxA7VgL4sCcCvH4bcd+Blvu4daZao7E8FE0N1KXgJH8zOZe4DQiJ9io3b6sXYuPV2
+         bJFKbPRDMU3TXhYn5VANEPKMIkAw9xiGcPshcaCR+pC4olE44DA50pqUodmo6ZfN+oGs
+         ul5PyAMLseX5APp4eUhs9PadX7dy5THOpEQcWSs5CgN0wJJosrjkMjTcham++JKCzzRC
+         ujig==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=TOpP47w+FeAcsG5x62yiuxBIYK6hwDkdgEP6iEmB2wM=;
+        b=CHDixpJcaWF515MMNU+LoUrsATe6t+tl66Sr9dEnEI1mFRl7ztRnnkt2dMRaA+pIQg
+         g0cYEyfm1lGo1HddvyExcMZ7SvFnlXsXItJ2Ws+7dPFDoNLruHqFW6mIxMPYq0rV3q8b
+         L8AjpLKVlWvX8EwfdRLb+TK5e4y/jjobX2agEo60+TPwJw/v3lN72MmSL4PLhRRtdNRO
+         qU+iA+9g/SHsN7UIZLKWiOarxqFjQj+xU8/ypFOQL+wuYfs/fIudB/DkKcYh2AWy0JLQ
+         JkDXTQZ9/GVP3kC3j9pdSNmuC4fVLYLRaGykfU5ngpuaeIDcye4GQoIw9O8u9CFCxVF7
+         Srvg==
+X-Gm-Message-State: AFqh2kogcLoB7OgZbES7FqV43+ENqXAYWfGXGMZIYpiBVtX0JVOgyhrZ
+	kz0w0DGrGB59XAF2cA7CW+AKbhg372NrzS7EpXHkh56P
+X-Google-Smtp-Source: AMrXdXuAN7uPg1d27hHB2448G07XkYyFd6JQLGYuhrIIzLaUQ5I2FOjTK9TGWRNiVlzjpN9e/BSZM2Kls5uI1pWmZB4=
+X-Received: by 2002:a50:cc42:0:b0:477:8a2e:ae51 with SMTP id
+ n2-20020a50cc42000000b004778a2eae51mr4765262edi.170.1672699871160; Mon, 02
+ Jan 2023 14:51:11 -0800 (PST)
+MIME-Version: 1.0
+From: SOW DJAN OURY <telimeleourydjan@gmail.com>
+Date: Mon, 2 Jan 2023 23:50:59 +0100
+Message-ID: <CAEWYd5Vv6zKLHTw72xyBswj=NRC4Spb-juJ3=v+kcS9W-syrKQ@mail.gmail.com>
+Subject: Partant pour le mariage.
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000a2ec0105f14fc97a"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000a2ec0105f14fc97a
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour Madame, Monsieur,
+
+Suite =C3=A0 votre publication concernant le mariage, je suis partant.
+
+  Je vie en Belgique pr=C3=A9cis=C3=A9ment =C3=A0 Bruxelles.
+
+  Au cas o=C3=B9 certaines personnes vous contactent par ce m=C3=AAme mail =
+vous
+pouvez me faire contacte avec elles.
+
+  Tous renseignements que vous auriez besoin demandez moi.
+
+   Je me suis d=C3=A9j=C3=A0 inscrit dans votre site .
+J'ajoute que je suis sans papiers qui suis la proc=C3=A9dure pour les papie=
+rs
+actuellement =C3=A0 Bruxelles.
+
+Merci pour votre initiative Qu'Allah fasse sa mis=C3=A9ricorde et sa b=C3=
+=A9n=C3=A9diction
+sur vous cordialement.
+
+--000000000000a2ec0105f14fc97a
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Bonjour Madame, Monsieur,=C2=A0<div dir=3D"auto"><br></di=
+v><div dir=3D"auto">Suite =C3=A0 votre publication concernant le mariage, j=
+e suis partant.</div><div dir=3D"auto"><br></div><div dir=3D"auto">=C2=A0 J=
+e vie en Belgique pr=C3=A9cis=C3=A9ment =C3=A0 Bruxelles.=C2=A0</div><div d=
+ir=3D"auto"><br></div><div dir=3D"auto">=C2=A0 Au cas o=C3=B9 certaines per=
+sonnes vous contactent par ce m=C3=AAme mail vous pouvez me faire contacte =
+avec elles.</div><div dir=3D"auto"><br></div><div dir=3D"auto">=C2=A0 Tous =
+renseignements que vous auriez besoin demandez moi.</div><div dir=3D"auto">=
+<br></div><div dir=3D"auto">=C2=A0 =C2=A0Je me suis d=C3=A9j=C3=A0 inscrit =
+dans votre site .</div><div dir=3D"auto">J&#39;ajoute que je suis sans papi=
+ers qui suis la proc=C3=A9dure pour les papiers actuellement =C3=A0 Bruxell=
+es.=C2=A0</div><div dir=3D"auto"><br></div><div dir=3D"auto">Merci pour vot=
+re initiative Qu&#39;Allah fasse sa mis=C3=A9ricorde et sa b=C3=A9n=C3=A9di=
+ction sur vous cordialement.=C2=A0</div><div dir=3D"auto"><br></div><div di=
+r=3D"auto">=C2=A0=C2=A0</div></div>
+
+--000000000000a2ec0105f14fc97a--

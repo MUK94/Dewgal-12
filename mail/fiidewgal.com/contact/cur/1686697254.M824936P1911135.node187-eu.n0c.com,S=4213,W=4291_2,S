@@ -1,0 +1,78 @@
+Return-Path: <oj6023135@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id R1kZMSb1iGRfKR0A3R2AvA
+	(envelope-from <oj6023135@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 14 Jun 2023 01:00:54 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4QgkYd5Wsqz34SDmj
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="g9EaAoyZ"
+X-N0C-MailScanner-eFa-Watermark: 1687302047.44177@3KcqrRntW+UqmOW2cYJm8w
+X-N0C-MailScanner-eFa-From: oj6023135@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: ssss
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: EE0FD4019B0B.A4AB4
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-qv1-f45.google.com ([209.85.219.45] [209.85.219.45])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id EE0FD4019B0B
+	for <contact@fiidewgal.com>; Wed, 14 Jun 2023 01:00:46 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com EE0FD4019B0B
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com EE0FD4019B0B
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=g9EaAoyZ
+Received: by mail-qv1-f45.google.com with SMTP id 6a1803df08f44-62de5392c7bso11197676d6.2
+        for <contact@fiidewgal.com>; Tue, 13 Jun 2023 16:00:45 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1686697244; x=1689289244;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=APlffofo13jCthu3TnHh0lHe/cAs9LAa5z0CH9euTtg=;
+        b=g9EaAoyZ9OFt3/hCaiZMd/owu65PltebwUbgORcD48PR4S5/Jws8XBjf4LO1JmRt4G
+         6SRrimMh7OA5kjC/BTRde9D/tKaLBlsMwcAqH/Yh5ngGoGry6DVmpI6O5E+MTIqalOda
+         qbXNAjTj/9ednzTgTG6gELrSGRWz3eIVGucbKzS4vxQkDO8E/DrAe368BdxcK/3iD03l
+         KYMBmDqn1NhABR/CxZe+zziTyL9kKxfh9dbf90RCDRbbjmGMBoh5JblD/PtRlc+CTVF1
+         DEeCaUybzBblX8Obcr++Zlh0GOetDXxsP6wkNMant+WS4Jf2Ojb4UjiNDHN7hGrzyD/2
+         pyKg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1686697244; x=1689289244;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=APlffofo13jCthu3TnHh0lHe/cAs9LAa5z0CH9euTtg=;
+        b=H9V6MnTw077vcSChAHbXHYVbrfJO7f07xXirmf0CHUAnL0uj09CiJQJW4UV6wD0pS/
+         8VLVBgNXfl9AP5L6B/C1Mt5UVVReDfO+KhlZ/PjrbxMEei9aigbDR045tsqGGTKH7eTE
+         HrFZAfGmR4jShHxN1KIUGnXZXqO6v2zcrar/qS8dlYtQKU6m/WzarkrfemORUjypQXYi
+         v1Hc8XYzjQhYBMKGV/5RzKtDiCUHXqFES1C80gD8cFjt4BdE4kSWh0h42uRXDK8F8pAD
+         8OMmqK7db0AkbuFcAvwp0ToshAU33Ba+y85ACrW09v5OTSEZK/oHwgCVdOijr+5eSS4q
+         yLhA==
+X-Gm-Message-State: AC+VfDx4kDHSiDlNBnyB/M9fUMp+ojcguw43M2I5OSzaD0GrmGgSBMXi
+	br+2Fw9yGPDfKZi7UzTGxUfSk/B0EA2lBbyly+lM++v9
+X-Google-Smtp-Source: ACHHUZ7lfaw9U9wUVV6Ry9f+OGaWvSm/SgoMz2CeXVtEjqxbs8zPnVNtUPg3ukEhqEkNsNJGkukX+X9JU8pEXCVpVKg=
+X-Received: by 2002:a05:6214:2261:b0:628:42e1:f373 with SMTP id
+ gs1-20020a056214226100b0062842e1f373mr14495089qvb.59.1686697244514; Tue, 13
+ Jun 2023 16:00:44 -0700 (PDT)
+MIME-Version: 1.0
+From: Omar Jallow <oj6023135@gmail.com>
+Date: Tue, 13 Jun 2023 23:00:34 +0000
+Message-ID: <CAJPdsrs0uHw+kzGvZk89wTJ4m13EiSB_XunX-JGfNk3mYheGeA@mail.gmail.com>
+Subject: S'il vous plait ajouter mon numero sur votre groupe : +2203052385
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000001a5dbb05fe0ace71"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000001a5dbb05fe0ace71
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+--0000000000001a5dbb05fe0ace71
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"></div>
+
+--0000000000001a5dbb05fe0ace71--

@@ -1,0 +1,80 @@
+Return-Path: <barrybarcki@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id SEBcNJRn2mOqGg4A3R2AvA
+	(envelope-from <barrybarcki@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 01 Feb 2023 14:22:28 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4P6Mz85bGPz34nwbm
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="iVw9RN++"
+X-N0C-MailScanner-eFa-Watermark: 1675862542.62378@TBzkJP+Do0W98PU0seyvXQ
+X-N0C-MailScanner-eFa-From: barrybarcki@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 299D8401AEF3.AC35F
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ej1-f52.google.com ([209.85.218.52] [209.85.218.52])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 299D8401AEF3
+	for <contact@fiidewgal.com>; Wed,  1 Feb 2023 14:21:49 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 299D8401AEF3
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 299D8401AEF3
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=iVw9RN++
+Received: by mail-ej1-f52.google.com with SMTP id mf7so32627131ejc.6
+        for <contact@fiidewgal.com>; Wed, 01 Feb 2023 05:21:49 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=Hlp/LPJOB+d+NMMHrhMyZKHCbgGdqxkE4SV2jGilPfE=;
+        b=iVw9RN++qPXvdWguCAFDAg+pFgQ3g+eP9O8yPl7PzrkMWvYWoOufC665G4LdHUunEM
+         V3CmbEzmfh0W2ym4JF2vC0NLTB40wLY9U0zU9Aty+kDin7WRuFuJXLBESwXwvzTJNfFT
+         K+qdnMfzGxhq56yPiDJoXVwIYQqLIQxrRDeON0f1OMKNQ9e1QEMQLI+iCWCWXr2rxctj
+         v3EDO0pISvS0PlyYn5MHpPNwT4kSsUOeW2R7BOdn5rFegIFyfNCruBEJNXAMAVYooOBa
+         YTL9ioFOGpSyXmIb6Ot9EPuQmaBYFQ8YCCxhMLVu3qld0q9QolbRH/U+/mTepl4QgyqZ
+         OGHw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=Hlp/LPJOB+d+NMMHrhMyZKHCbgGdqxkE4SV2jGilPfE=;
+        b=A2CIc1XSXEKnpJzF7M5h+qe1MdVeV15pIN0sJcHVlf0wdOEVnqBHpfGOFnKNZ6Wjqs
+         hiw/KuClFtNMo8IRU00MtKmjWKdzvKA84a2g90b7eUoIhGv155Mtg/2FSgzUbNr56DtE
+         IcxG5zB1IrYVb6z4qpaKS1AtASHTMFux9raM9lse09YOnwHfiOYA/GBcq7q3zn9ZtFec
+         B4ncksGLFdlbiYc8cWmIVaJaK0+E/vuFfG5FAovoNXaQEhcMTc4CiPli5zM6R0mPSZa0
+         uRXqjZG+Cwduz7HRsbMByvY9TDGlKajLTB2Rx1hmLpppGx9ewCudK9mRxqp7d9rZe/B/
+         Lduw==
+X-Gm-Message-State: AO0yUKWaWvQEPeQZCMfDc0pZg1RN9tGYmCgRvey2PyGDozUqLaPC7NuR
+	lJHz9Olp3Sg96wR4rLAVZuMUC1TdBfdzMqsqi1IkLjZ8HxA=
+X-Google-Smtp-Source: AK7set8q/DZH5m2sKBEkuOqbw/yIKdLE1Q95u34Cbgn9KbHk7UYGkxfa+nx6a31GB4WpCdMFv8D92JD+YvPdksZRBUY=
+X-Received: by 2002:a17:907:2154:b0:88e:16e2:3b7f with SMTP id
+ rk20-20020a170907215400b0088e16e23b7fmr414117ejb.300.1675257708228; Wed, 01
+ Feb 2023 05:21:48 -0800 (PST)
+MIME-Version: 1.0
+From: Alsko Alasko <barrybarcki@gmail.com>
+Date: Wed, 1 Feb 2023 14:21:38 +0100
+Message-ID: <CAKHxg2=u8XuG2ozSLbj-rBGdC_vTXVOijFgoDXvkK0Ust1t0oQ@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000009b33dd05f3a35423"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000009b33dd05f3a35423
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour je vous passe mon num=C3=A9ro whatssap +33 7 58 47 67 47
+
+--0000000000009b33dd05f3a35423
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Bonjour je vous passe mon num=C3=A9ro whatssap +33 7 58 4=
+7 67 47=C2=A0</div>
+
+--0000000000009b33dd05f3a35423--

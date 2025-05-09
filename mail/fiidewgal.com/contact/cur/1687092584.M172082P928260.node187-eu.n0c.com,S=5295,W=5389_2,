@@ -1,0 +1,94 @@
+Return-Path: <saifoulayehansagherediallo1991@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id LZwsCmj9jmQEKg4A3R2AvA
+	(envelope-from <saifoulayehansagherediallo1991@gmail.com>)
+	for <contact@fiidewgal.com>; Sun, 18 Jun 2023 14:49:44 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4QkXm76RRDz34SDmh
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="ido0PDSC"
+X-N0C-MailScanner-eFa-Watermark: 1687697382.79529@Jgk9S1LUDxcLvS/I/hDDEg
+X-N0C-MailScanner-eFa-From: saifoulayehansagherediallo1991@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: s
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 436CC4019B0A.A92F5
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-wm1-f50.google.com ([209.85.128.50] [209.85.128.50])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 436CC4019B0A
+	for <contact@fiidewgal.com>; Sun, 18 Jun 2023 14:49:41 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 436CC4019B0A
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 436CC4019B0A
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=ido0PDSC
+Received: by mail-wm1-f50.google.com with SMTP id 5b1f17b1804b1-3f8d258f203so18323625e9.1
+        for <contact@fiidewgal.com>; Sun, 18 Jun 2023 05:49:41 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1687092580; x=1689684580;
+        h=mime-version:to:from:importance:subject:date:savedfromemail
+         :message-id:from:to:cc:subject:date:message-id:reply-to;
+        bh=aQ88zjkYj15daQzXaBBOeYC7emFbkxO5fbGCYMBVRnI=;
+        b=ido0PDSCyZptkMChecMvlzPFg9r23GbXN+MHkN4nektQkQTmmW1wZazm/F7mIhhpCw
+         ASDIZ9wJt0XSLm3nAL/0FX4DrrSc+E7D+omy3QgRZz+3rWgzvY3tl+tKZB6vADGjflYB
+         P1nbD9ZWA1ii8hljU1Vh3TUrbpa7qzBPx6o9dgtfwu1THAwgFeqyGC3+bay6yPywOIXT
+         kJawkUd4cN2NB6rG5tmewltB3pQzHx1elLBdNIDnWCDs4LjXG9qb/zxlWPy1AZOSuGV+
+         1hAASLiyZML+fq9AdJ9iw4Z3MK0UQVvIkNEcKxQPhTktr0wBExqSn+EUZGC2CgvO/kom
+         6koQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1687092580; x=1689684580;
+        h=mime-version:to:from:importance:subject:date:savedfromemail
+         :message-id:x-gm-message-state:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=aQ88zjkYj15daQzXaBBOeYC7emFbkxO5fbGCYMBVRnI=;
+        b=RSBR2v+79XPEdJjADqhOx3mupMQY9lau3eHQS5mkxueEW4G/K4YlPs6nub9gwHBmlx
+         fGMnXbTFJV6WlLYPsYNDF4vPFDGCwmqyZMuOm1Ae4ftXgvR42FmMCByKLt6sCHIRIhP5
+         +fSL2yPmbtDSwP+P5rBXrATV13C77XMlWmM+guxhPxQ4iSYe4yezqkZLMkDiNXOp3k1f
+         PLEaVCHg8ZWyDn8jCRm8Uo1IipWuJd6m/Zb1vxXVi9d6IBhOUwzCmGGonnVyyHBQ65eS
+         8VsS3sDmzrD4BBs0nYLts6kK4vZCgTtfa4KdYY2jkhOFpQcLz4xnI0ZKCyQ40EPmKrOG
+         qd9A==
+X-Gm-Message-State: AC+VfDwPv/WF+iPW7UOCmRGP2MYWvdIa5BvLBTX1qZ53lbwn2VVWW/Hw
+	S2/2bEcZViU5ZVjhferypTQeDjULn84=
+X-Google-Smtp-Source: ACHHUZ5rgI3WqOwpiWaWs2ik0fj5az18PGDg4Rwx62s2bA//js97KvGrHXsWu5HDBJ4y1jtG/2CjRQ==
+X-Received: by 2002:a5d:6348:0:b0:311:1763:8607 with SMTP id b8-20020a5d6348000000b0031117638607mr4256313wrw.29.1687092580136;
+        Sun, 18 Jun 2023 05:49:40 -0700 (PDT)
+Received: from [10.234.47.24] ([197.148.78.24])
+        by smtp.gmail.com with ESMTPSA id k18-20020adfe8d2000000b00311334c7fabsm2734319wrn.16.2023.06.18.05.49.38
+        for <contact@fiidewgal.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Sun, 18 Jun 2023 05:49:39 -0700 (PDT)
+Message-ID: <648efd63.df0a0220.f014e.2200@mx.google.com>
+SavedFromEmail: saifoulayehansagherediallo1991@gmail.com
+Date: Sun, 18 Jun 2023 12:50:16 +0000
+Subject: Asalamou aleykoum wa ramatoulaye fii dewgal on djarama
+Importance: normal
+From: saifoulayehansagherediallo1991
+ <saifoulayehansagherediallo1991@gmail.com>
+To: contact@fiidewgal.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="--_com.samsung.android.email_463944231113930"
+X-N0C-Node-IP: 185.221.182.45
+
+----_com.samsung.android.email_463944231113930
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: base64
+
+RW52b3nDqSBkZXB1aXMgbW9uIGFwcGFyZWlsIEdhbGF4eQ==
+
+----_com.samsung.android.email_463944231113930
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: base64
+
+PGh0bWw+PGhlYWQ+PG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0
+L2h0bWw7IGNoYXJzZXQ9VVRGLTgiPjwvaGVhZD48Ym9keSBkaXI9ImF1dG8iPjxkaXY+PGJyPjwv
+ZGl2PjxkaXY+PGJyPjwvZGl2PjxkaXY+PGJyPjwvZGl2PjxkaXY+PGJyPjwvZGl2PjxkaXYgaWQ9
+ImNvbXBvc2VyX3NpZ25hdHVyZSI+PGRpdiBzdHlsZT0iZm9udC1zaXplOjEycHg7Y29sb3I6IzU3
+NTc1NyIgZGlyPSJhdXRvIj5FbnZvecOpIGRlcHVpcyBtb24gYXBwYXJlaWwgR2FsYXh5PC9kaXY+
+PC9kaXY+PGRpdj48YnI+PC9kaXY+PC9ib2R5PjwvaHRtbD4=
+
+----_com.samsung.android.email_463944231113930--
+

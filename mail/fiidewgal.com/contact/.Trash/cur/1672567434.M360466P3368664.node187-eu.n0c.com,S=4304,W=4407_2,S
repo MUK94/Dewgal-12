@@ -1,0 +1,103 @@
+Return-Path: <>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id tBFnFYpasWPYZjMA3R2AvA
+	(envelope-from <>)
+	for <contact@fiidewgal.com>; Sun, 01 Jan 2023 11:03:54 +0100
+Received: by node187-eu.n0c.com (Postfix)
+	id 532CA4063674; Sun,  1 Jan 2023 05:03:54 -0500 (EST)
+Date: Sun,  1 Jan 2023 05:03:54 -0500 (EST)
+From: MAILER-DAEMON@node187-eu.n0c.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: contact@fiidewgal.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="2591F4062992.1672567434/node187-eu.n0c.com"
+Message-Id: <20230101100354.532CA4063674@node187-eu.n0c.com>
+
+This is a MIME-encapsulated message.
+
+--2591F4062992.1672567434/node187-eu.n0c.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host node187-eu.n0c.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<ramabahk@ymail.com>: host mta7.am0.yahoodns.net[67.195.228.94] said: 552 1
+    Requested mail action aborted, mailbox not found (in reply to end of DATA
+    command)
+
+--2591F4062992.1672567434/node187-eu.n0c.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; node187-eu.n0c.com
+X-Postfix-Queue-ID: 2591F4062992
+X-Postfix-Sender: rfc822; contact@fiidewgal.com
+Arrival-Date: Sun,  1 Jan 2023 05:03:52 -0500 (EST)
+
+Final-Recipient: rfc822; ramabahk@ymail.com
+Original-Recipient: rfc822;ramabahk@ymail.com
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; mta7.am0.yahoodns.net
+Diagnostic-Code: smtp; 552 1 Requested mail action aborted, mailbox not found
+
+--2591F4062992.1672567434/node187-eu.n0c.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <contact@fiidewgal.com>
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NlF2J0LYYz5qC8G
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="HvdONapI"
+X-N0C-MailScanner-eFa-Watermark: 1673172224.09277@ZE55WKfhU8ntu4O9djLv4w
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 47B714062992.A4C18
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 47B714062992
+	for <ramabahk@ymail.com>; Sun,  1 Jan 2023 11:03:43 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 47B714062992
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 47B714062992
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1672567423;
+	bh=1p5eGlt9vWk3PNtw99TQ/smg/t7TJ6joZImn4B3eqCg=;
+	h=Date:Subject:From:To:From;
+	b=HvdONapIWte/U9To0BcYIxy7wyt8Aaft3sjX6ehNrdGbMvaRIVC2RMTOW5WyVz1CV
+	 0uwMR9ZOoj0HF8eVE6nI+XypGguurLflNLvjl4qNfq0wFiNzCt1uHZnf+7utPa0ssM
+	 JQ6iE5pLn0dQshYcBKwz0n8+Yalo0GDr2WM5BXoI=
+Message-ID: <394bfc6389ee7acfb1304f77327345fc@fiidewgal.com>
+Date: Sun, 01 Jan 2023 11:03:43 +0100
+Subject: =?utf-8?Q?R=C3=A9initialisation?= du mot de passe
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: ramabahk@ymail.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<p>Bonjour&nbsp;Ramatoulaye Bald=C3=A9,</p><p>Votre code de v=C3=A9rificati=
+on pour la r=C3=A9initialisation du mot de passe est : [[code]]<br></p><p><=
+br></p><p>Merci !<br></p><p>Ne r=C3=A9pondez pas</p>
+
+
+--2591F4062992.1672567434/node187-eu.n0c.com--

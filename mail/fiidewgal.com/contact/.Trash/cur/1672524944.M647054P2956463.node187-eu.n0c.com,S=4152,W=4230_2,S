@@ -1,0 +1,78 @@
+Return-Path: <ahmadbah206@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id bpV5JpC0sGOvHC0A3R2AvA
+	(envelope-from <ahmadbah206@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 31 Dec 2022 23:15:44 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NkxKC1HbNz34nwbq
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="Zqz2krv+"
+X-N0C-MailScanner-eFa-Watermark: 1673129740.8604@HdCyyJVNvvkwlFubaAcldw
+X-N0C-MailScanner-eFa-From: ahmadbah206@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: DFC8340044A6.A52A3
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-pf1-f182.google.com ([209.85.210.182] [209.85.210.182])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id DFC8340044A6
+	for <contact@fiidewgal.com>; Sat, 31 Dec 2022 23:15:07 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com DFC8340044A6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com DFC8340044A6
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=Zqz2krv+
+Received: by mail-pf1-f182.google.com with SMTP id a184so5749960pfa.9
+        for <contact@fiidewgal.com>; Sat, 31 Dec 2022 14:15:06 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=wURLxwFNYAf3xVFHToHSk+sHHVstwgBh//CbemFwmTg=;
+        b=Zqz2krv+BsYAVx+6uRumQ0B426BVe7pTpf72Dy05Q7YMsLXrH8dX2dy5fVHDdi4tha
+         JIll6yqEioLUOfvdyuy65qytI2nq4N2fpNgdy5mtJ9oqWHL8/0/88lPqK8fD03GUd9Fs
+         BXqRO/dZuM/QZoCxNcSwgEQp7letH+26UMXGY56QsIR4+/RHJBUIAIE07lXoPJFD4nKP
+         FlTUCvNXdj94htsLuLy1N52Ytu+rXOIiMkxwTiU0Ltp1Fe/YiAwafJDLl5g28pB/05Jp
+         tte3Cazb6PBLT3m1Mzl4mbqMKk3eQ0jnxe+zs+Auhd2xhR4hEXGoLoYzvtTJ+eb2l6d6
+         gTwg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=wURLxwFNYAf3xVFHToHSk+sHHVstwgBh//CbemFwmTg=;
+        b=tMmaxk1/RxhzTtYEZtdIFciZuKuvoQ/aXa8E9kcEbqh3co+pNjsMHDI4rmNYwFLTn2
+         GRdCD7ZDyZIgRbJjUHJSRYoJmuXAjD9FATY9xB30LB9TZaPfZ+zC1DANY2jniLplRn+V
+         m605y7odl1uOhmNKTzXc22VGnPFS6WsyXpyn2os/y8vV85ilRB64S1qDDXbRBSQzHgD0
+         lQ1hFuRcrnpLEMsGzrDveG6t9TZCul0LoLRUfbM4N/5A3iMSbkygtW+69AiefIcVvZMr
+         4w8itINn+z1uJPlElEMsu3dbqZbS15l8cFFji6BXa1wuyogq7pJOjA8SFsD8mnCNoL2r
+         hdqw==
+X-Gm-Message-State: AFqh2krPINK7/3wM3KzjSzuTdklw6CBRMNqY/FNcvUIQxUJd7sU3WTJT
+	uNWIgp9EBhW1ACrh5HUmf6jvVRR5qlsYyeqQthbcBlC5
+X-Google-Smtp-Source: AMrXdXuM0tx8fGm+5QvEP4dojMijoFBfmyIEyovujeglUWnpMRPnnJWVJ1gCiC1/8gqKEyDhmh3MPQNT44ncU1W/YIY=
+X-Received: by 2002:a05:6a00:16c2:b0:580:f2b8:213c with SMTP id
+ l2-20020a056a0016c200b00580f2b8213cmr1588079pfc.8.1672524905082; Sat, 31 Dec
+ 2022 14:15:05 -0800 (PST)
+MIME-Version: 1.0
+From: Ahmad Bah <ahmadbah206@gmail.com>
+Date: Sun, 1 Jan 2023 02:14:54 +0400
+Message-ID: <CAOqFjCXveLotRZ0VMw6isrQF=kNcUSL-f8LaMoc5iznyEgc6Bg@mail.gmail.com>
+Subject: Demande d'inscription
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000d8748a05f1270ca9"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000d8748a05f1270ca9
+Content-Type: text/plain; charset="UTF-8"
+
+Bonjour comment  puis je minscrire
+
+--000000000000d8748a05f1270ca9
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Bonjour comment=C2=A0 puis je minscrire</div>
+
+--000000000000d8748a05f1270ca9--

@@ -1,0 +1,79 @@
+Return-Path: <contact@kloumo.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id Uw+RI3lXfGLLMx8A3R2AvA
+	(envelope-from <contact@kloumo.com>)
+	for <contact@fiidewgal.com>; Thu, 12 May 2022 02:40:25 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4KzCc85MGTz34SF5q
+X-N0C-MailScanner-eFa-Watermark: 1652920821.68406@azOQKpPFYmdhXhRlw3kwyQ
+X-N0C-MailScanner-eFa-From: contact@kloumo.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 9A5D1406292C.ACAFF
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from azure.yew.relay.mailchannels.net ([23.83.220.7] [23.83.220.7])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 9A5D1406292C
+	for <contact@fiidewgal.com>; Thu, 12 May 2022 02:40:20 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 9A5D1406292C
+Authentication-Results: node187-eu.n0c.com; dmarc=none (p=none dis=none) header.from=kloumo.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=kloumo.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 9A5D1406292C
+X-Sender-Id: _forwarded-from|34.90.59.119
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id E2C6C5A077E
+	for <contact@fiidewgal.com>; Thu, 12 May 2022 00:40:14 +0000 (UTC)
+Received: from gcp-europe-west4-a-smtpout4.hostinger.io (unknown [127.0.0.6])
+	(Authenticated sender: hostingeremail)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 17A7A5A1092
+	for <contact@fiidewgal.com>; Thu, 12 May 2022 00:40:13 +0000 (UTC)
+ARC-Seal: i=1; s=arc-2022; d=mailchannels.net; t=1652316014; a=rsa-sha256;
+	cv=none;
+	b=V8Un7+tZt3A41zIe5iWJgF90JSNAtFH8HhyfgOwtmolXK/LbFXSXyZY5a9RUWwC5lMkgr3
+	jDAIplgXs1kVhRSsXEpxAgWsaW+WskiHIhAWTAV6hhqkVzXvNgnL+6kObDX2fQC0+5Ok5r
+	nY6cn2hDhjpI7UVNK6QpoRRHr85sAu8mw2fPQU58Z9EdgMjNSjCLIlseqgooet3zYO5fWp
+	aaF/lmvAg+3FyK4oLT5WBPdyaNDcO1M68AVpdwRFjH5mgwC4pBGoqpb7WE0T8LNCaJ+/QN
+	sIWzoQhwPP9iHBqiYvWwR8Xk8uQsKjger3VID9GgHHrTnjofJXx/Os2oQgqa3A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1652316014;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type;
+	bh=NAJtCGWEymnVNGMIYRCB7/7MDUjv8TIfFpJNqrhBDSo=;
+	b=Bg5yrJJ/J7Xil/+KvnmQ3Nji8RgzAP1whv4QZMJbFHx9nicJotktl/RQiCJNQ04y2pDwUs
+	oIWaqoivIUl22evS/Y69IOATaf90LfhExKrsRUIqha5y1yTCiEuXGS22Xd6u5auLgPgGwq
+	pAQLjknG6cU6YXwoWGuKdGvhTTsIT2BIsYJ1HZi91aGmcBTTbuQ4AWvscXq7+/QQyWBfSI
+	FzYd9yBfxle0bSL00FVul0gKGIx7rdRN4lGGqK12AbHvVdnWaEdPBIbeVDUE9SuVvin6tz
+	4h8SpKiCkaQASboqEUZ4sepSYAH93TjCWfRGc913HB+wmGaES1cgugtS+SFz2Q==
+ARC-Authentication-Results: i=1;
+	rspamd-554c8f6c56-zfz4x;
+	auth=pass smtp.auth=hostingeremail smtp.mailfrom=contact@kloumo.com
+X-Sender-Id: _forwarded-from|34.90.59.119
+X-MC-Relay: Forwarding
+X-MailChannels-SenderId: _forwarded-from|34.90.59.119
+X-MailChannels-Auth-Id: hostingeremail
+X-Broad-Absorbed: 3a835a5c09962a6e_1652316014619_879324697
+X-MC-Loop-Signature: 1652316014619:946692417
+X-MC-Ingress-Time: 1652316014619
+Received: from gcp-europe-west4-a-smtpout4.hostinger.io
+ (gcp-europe-west4-a-smtpout4.hostinger.io [34.141.192.112])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256)
+	by 100.116.106.76 (trex/6.7.1);
+	Thu, 12 May 2022 00:40:14 +0000
+Received: from gcp-europe-west4-b-smtpin5.hostinger.io (gcp-europe-west4-b-smtpin5.hostinger.io [34.90.59.119])
+	by smtp.hostinger.com (smtp.hostinger.com) with ESMTP id 4KzCbw3bQ9z9xtct
+	for <contact@fiidewgal.com>; Thu, 12 May 2022 00:40:12 +0000 (UTC)
+To: contact@fiidewgal.com
+From:  <contact@kloumo.com>
+Subject: =?UTF-8?Q?R=C3=A9ponse?= automatique
+Date: Thu, 12 May 2022 00:40:12 +0000
+Message-ID: <20220512_004012_049338.contact@kloumo.com>
+X-Loop: Hostinger Mail Virtual Vacation
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+X-N0C-Node-IP: 185.221.182.45
+
+<p>Il fut un temps où on parcourais des kilomètres et des kilomètres pour aller faires des courses toutes les semaines aux marché hebdomadaires ( K-LOUMO en Peulh ). Où on effectuait des courses pour toute la semaine. Aujourd'hui nous avons <a href="https://k-loumo.com/">k-loumo.</a></p><p>Non seulement vous pouvez effectuez vos achat tous les jours, mais vous pouvez également vous faire livrer tranquillement à la maison.&nbsp;</p><blockquote><p>K-loumo toujours plus près.</p></blockquote>
+

@@ -1,0 +1,107 @@
+Return-Path: <a625562784@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id XStuM8L4kGNBDgQA3R2AvA
+	(envelope-from <a625562784@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 07 Dec 2022 21:34:10 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NS8C54xmTzYJR7h
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="JeRZ6aqV"
+X-N0C-MailScanner-eFa-Watermark: 1671050040.51741@6bu5oaK7wkHl/VP8rJhzFA
+X-N0C-MailScanner-eFa-From: a625562784@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 0E486401AEEF.AD6DB
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-wr1-f43.google.com ([209.85.221.43] [209.85.221.43])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 0E486401AEEF
+	for <contact@fiidewgal.com>; Wed,  7 Dec 2022 21:33:28 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 0E486401AEEF
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 0E486401AEEF
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=JeRZ6aqV
+Received: by mail-wr1-f43.google.com with SMTP id h12so29799993wrv.10
+        for <contact@fiidewgal.com>; Wed, 07 Dec 2022 12:33:27 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:subject:message-id:cc:to:from:date:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=dkpYvwiU4VmLUb9HlYgZ9M/AGcfC4BrA8OBpJovVWDU=;
+        b=JeRZ6aqVaV9IYeMts2oI1+etovLEJNJx6wMKFqDCBCs9mkHc3j4Z/DjqKiPxH6N55+
+         ICl/8Q4tKTsST1fV/KJKGmBd+Z3cVMYtaRepuOa49ehOkQw4mvUfWfI1jD5/ECmyP/s/
+         tOc18ko/KhRHtUagSIzArEaX0+0T/GvsVYlPjjLFUyscb1rifKHaVuZ7XRBLcmnymx2D
+         CHPAg5wuuHyf9FH3aEjCFUGihxBXmH+zNCJjIv3bEWdcHk8qcYNsNshl6XEHp2UZHJDu
+         CrvN7kj44IW85dA8HCNTcH+y4mK+9K6iFw6NJqHTicGZo8Zx+U+SvrImID7aCs28Xa+6
+         ZxpQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=mime-version:subject:message-id:cc:to:from:date:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=dkpYvwiU4VmLUb9HlYgZ9M/AGcfC4BrA8OBpJovVWDU=;
+        b=nQkd4cNuRLd0aK2p8cGIpf4dcs9VP10WKob2MBtrsHXsmCyJOGEydfm5e6jrFng/bF
+         BQ5PEvzstzUuJ1BkK/89wh0K/IqVyk8jKHQJZVmVO00kAEXAxlnWyM8/JJmA4WUpxg+/
+         YRZ1pa99u5OAgtbB8z1Ljtmjs28O2wPjiTkrfaXaDKDQaFgUdZjSfREvZfgVouTSMxEx
+         egzoMgBeNPAo5cR4vxMDT8FIbPRLGDueqvCsfXdQoIqw6He9e4NfBm5H/LgaWE/ks0yk
+         dbrX8Gd7qC5iAU1Vfvp6jxR80ZiuAHkwsD1LcK2l6zLDbXruVSdQwU0OxicBzfT3dpBM
+         IR8w==
+X-Gm-Message-State: ANoB5pkur9TAv8M9IY73sEG8nMB+wksdkAYN4wv4LwyWpUncL7PSDfYi
+	bvPVhndlIjNGPZPtFTwdL+xrOGwlIPFktQ==
+X-Google-Smtp-Source: AA0mqf4j4CDKLzAK5+/ylg+ol9q49tbMg5hTwdm2bAB3Z5181eQ7PXfh3DypfxDHYoz5fHS7G9bu9A==
+X-Received: by 2002:adf:ed52:0:b0:242:112b:421a with SMTP id u18-20020adfed52000000b00242112b421amr29478757wro.641.1670445207469;
+        Wed, 07 Dec 2022 12:33:27 -0800 (PST)
+Received: from localhost ([197.149.241.37])
+        by smtp.gmail.com with ESMTPSA id f26-20020a7bc8da000000b003cfd4e6400csm2835237wml.19.2022.12.07.12.33.23
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Wed, 07 Dec 2022 12:33:26 -0800 (PST)
+Date: Wed, 7 Dec 2022 20:33:17 +0000 (GMT)
+From: a625562784@gmail.com
+To: "a625562784@gmail.com" <a625562784@gmail.com>
+Cc: contact@fiidewgal.com, A625562784@gmail.com
+Message-ID: <171253188.7.1670445197919@localhost>
+Subject: =?UTF-8?Q?Re[3]:_Succ=C3=A8s_de_l'achat_du_forfait?=
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_6_96692094.1670445197907"
+X-N0C-Node-IP: 185.221.182.45
+
+------=_Part_6_96692094.1670445197907
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<p dir=3D"ltr">--<br>
+Envoy=C3=A9 depuis l'application <a href=3Dhttps://play.google.com/store/ap=
+ps/details?id=3Dcom.fastsigninemail.securemail.bestemail>AmobearStudio</a> =
+pour Android</p>
+<br/>
+20:06 De a625562784@gmail.com:<br/><div style=3D"border-left: 1px solid #4b=
+89dc;padding-left: 8px;margin-left:6px;margin-right: 5px;">
+<p dir=3D"ltr">--<br>
+Envoy=C3=A9 depuis l'application <a href=3Dhttps://play.google.com/store/ap=
+ps/details?id=3Dcom.fastsigninemail.securemail.bestemail>AmobearStudio</a> =
+pour Android</p>
+<br/>
+13:04 De a625562784@gmail.com:<br/><div style=3D"border-left: 1px solid #4b=
+89dc;padding-left: 8px;margin-left:6px;margin-right: 5px;">
+<p dir=3D"ltr">--<br>
+Envoy=C3=A9 depuis l'application <a href=3Dhttps://play.google.com/store/ap=
+ps/details?id=3Dcom.fastsigninemail.securemail.bestemail>AmobearStudio</a> =
+pour Android</p>
+<br/>
+11:14 De contact@fiidewgal.com:<br/><div style=3D"border-left: 1px solid #4=
+b89dc;padding-left: 8px;margin-left:6px;margin-right: 5px;">
+<p>Bonjour Abdoulaye Diallo,</p><p>Merci d'avoir achet=C3=A9 des forfaits p=
+remium sur notre site&nbsp;Fii Dewgal.</p><p>Votre type de compte est : Pre=
+minum</p><p>Le code de paiement est : 221207-121410</p><p>Le forfait achet=
+=C3=A9 est : Lancement Officiel</p><p>Le montant est de :&nbsp;<span style=
+=3D"color: rgb(77, 81, 86); font-family: arial, sans-serif; font-size: 14px=
+;">=E2=82=AC&nbsp;</span>0.00</p><p>Veuillez contacter l'=C3=A9quipe admini=
+strative si vous avez d'autres questions. Nous vous souhaitons bonne chance=
+.</p><p>Merci,</p><p>Ne r=C3=A9pondez pas</p>
+
+</div></div></div>
+------=_Part_6_96692094.1670445197907--

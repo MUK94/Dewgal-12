@@ -1,0 +1,83 @@
+Return-Path: <barry.mariam2003@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id ZprDCwhVv2Og8j4A3R2AvA
+	(envelope-from <barry.mariam2003@gmail.com>)
+	for <contact@fiidewgal.com>; Thu, 12 Jan 2023 01:32:08 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NslqW2HYVz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="ph6NvIFB"
+X-N0C-MailScanner-eFa-Watermark: 1674088324.44018@LrUaX0YLWqZ0HcYJ0ulsZA
+X-N0C-MailScanner-eFa-From: barry.mariam2003@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: E4694401AEF6.A2FFA
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-pj1-f49.google.com ([209.85.216.49] [209.85.216.49])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id E4694401AEF6
+	for <contact@fiidewgal.com>; Thu, 12 Jan 2023 01:31:31 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com E4694401AEF6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com E4694401AEF6
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=ph6NvIFB
+Received: by mail-pj1-f49.google.com with SMTP id o13so14019768pjg.2
+        for <contact@fiidewgal.com>; Wed, 11 Jan 2023 16:31:30 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=VU9XWTQ/zRZY4FxhrnYDBX3Js0FFTsB/VW++Q6dgdxw=;
+        b=ph6NvIFB2mAj0D6ZBbk4uZHEF7hcExq5D3JcHa0YzsRy+YZsoiXihqpZKTYEG3Cvwz
+         pe/320UoLSiUqReNlibsl3mmJ2PAUVXwVeog26A0djGOi1cSSTw9jmqAmXA8Gpm9kWN2
+         HhFK6tuUbBR/KSEeQgAbK2eFNwebi0kfFg0qSQ4pbil1oUnegk4dDDp+ZzPxpjs6RCm/
+         eeqn3Euc90tUG3BImJTjI7pUl5Q2RbyK7N6DN2i4gNw/kKqHJiDJMz4VwDPW1Q/OxMyg
+         VU0pGaUOFCwQ8Cisuw0GGR5K2Jm/0U0vOUH62RuJ8tOXWOyKOU7nHmEp+zWLT1sQY49H
+         2i9A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=VU9XWTQ/zRZY4FxhrnYDBX3Js0FFTsB/VW++Q6dgdxw=;
+        b=rUltJm3cCW3IxhbnVKho02hObRnqFaynRhs/O4qHo7aslzLxujb0JbdRR1EwzT5z0H
+         8WrzdsGAhuxKk6q0hcavctQDqVDc/ZPyEXL+n9GrRwbQR4Ezz0fCFbZJM5mePpAZ4rKj
+         MPmI3Mn/BNSV5h0sdVS8E16VQycC+0Wwvn1axngyHzAveoqpfPpLt0l15s4BDP6tR86D
+         xIhmyVgRXPtRFfZDfdIoX74DoFFaIkR1o+Fln8NqyZJBUicpWtjMSkw/xKK6jukuwl0d
+         yzyHrYZsFDb11m4vWxCGu34FT2hixaDX4h/YyPVIrH3UdqOmhYJ9/s1i5cVSnd8AJfUR
+         tpWw==
+X-Gm-Message-State: AFqh2kpewFMWfWABS1EfS7P48raEddCle4fxTc+3cnoD9HUlAxt16sbq
+	3WmuwKsPYNol9bLAp+WEakn+fwVkw0BUoacvDJIyx8Zi
+X-Google-Smtp-Source: AMrXdXv7iYzNQGTXh/enufsTtQM7xamZeB5VEc6uBw0R8bVHZwjAC5dJLJVgCTq9ngLHXIdVSaduPRd9T9hcg6ROs6I=
+X-Received: by 2002:a17:90b:28c:b0:226:f49d:8286 with SMTP id
+ az12-20020a17090b028c00b00226f49d8286mr1477527pjb.211.1673483488855; Wed, 11
+ Jan 2023 16:31:28 -0800 (PST)
+MIME-Version: 1.0
+From: BARRY MARIAMA <barry.mariam2003@gmail.com>
+Date: Thu, 12 Jan 2023 00:31:17 +0000
+Message-ID: <CAJr3v+2r_=U1gh=aPEmdrUyz_cocbb8qbVHy2yTm_M4pQyTeSQ@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000e409c405f2063c37"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000e409c405f2063c37
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Salam alaykoum, y'a deux fr=C3=A8res qui ont manifest=C3=A9 leur int=C3=A9r=
+=C3=AAt pour moi
+comment faire pour la suite
+
+--000000000000e409c405f2063c37
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Salam alaykoum, y&#39;a deux fr=C3=A8res qui ont manifest=
+=C3=A9 leur int=C3=A9r=C3=AAt pour moi comment faire pour la suite=C2=A0</d=
+iv>
+
+--000000000000e409c405f2063c37--

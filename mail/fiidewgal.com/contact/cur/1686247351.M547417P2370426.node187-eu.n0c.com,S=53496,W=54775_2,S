@@ -1,0 +1,1279 @@
+Return-Path: <wwwrun@reply.spreadshirt.net>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id AHOPILcXgmR6KyQA3R2AvA
+	(envelope-from <wwwrun@reply.spreadshirt.net>)
+	for <contact@fiidewgal.com>; Thu, 08 Jun 2023 20:02:31 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4QcX9g2rWqz34SDmh
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=reply.spreadshirt.net header.i=partner-news@reply.spreadshirt.net header.b="WydHWXLb";
+	dkim=pass (1024-bit key) header.d=emarsys.net header.i=@emarsys.net header.b="jtzJ8VAs"
+X-N0C-MailScanner-eFa-Watermark: 1686852129.20701@lyE88gu+sh1yeFJmH9Gdjg
+X-N0C-MailScanner-eFa-From: wwwrun@reply.spreadshirt.net
+X-N0C-MailScanner-eFa-SpamScore: ss
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: E8D8D4019763.AEA06
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from uspmta172082.emarsys.net ([195.54.172.82] [195.54.172.82])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id E8D8D4019763
+	for <contact@fiidewgal.com>; Thu,  8 Jun 2023 20:02:07 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com E8D8D4019763
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=reject dis=none) header.from=reply.spreadshirt.net
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=reply.spreadshirt.net
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com E8D8D4019763
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (1024-bit key; secure) header.d=reply.spreadshirt.net header.i=partner-news@reply.spreadshirt.net header.a=rsa-sha256 header.s=key2 header.b=WydHWXLb;
+	dkim=pass (1024-bit key; unprotected) header.d=emarsys.net header.i=@emarsys.net header.a=rsa-sha256 header.s=key2 header.b=jtzJ8VAs
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=key2; d=reply.spreadshirt.net;
+ h=To:Subject:From:MIME-Version:List-Id:X-CSA-Complaints:List-Unsubscribe:
+ List-Unsubscribe-Post:Content-Type:Message-ID:Date;
+ i=partner-news@reply.spreadshirt.net;
+ bh=2ILtp+aVr6/YXT/u5jG+0F39Ohe1hS90MVKQNE0MsdI=;
+ b=WydHWXLbG7Y8164ZcWQjWwwnP3+DZgCmJimCbAtF1Uh/UOfGI+9EZSWe4DevXRUrMTwrZf9kRZgp
+   f6HTdatWiOrlQZAw71gW+IfajhmKQUwLSp6+7tsXqurxuzBEW+elT7fBqE6PBqDlV7ulUhwtVPOF
+   sHARPoMRoCNK66+r7UI=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=key2; d=emarsys.net;
+ h=To:Subject:From:MIME-Version:List-Id:X-CSA-Complaints:List-Unsubscribe:
+ List-Unsubscribe-Post:Content-Type:Message-ID:Date;
+ bh=2ILtp+aVr6/YXT/u5jG+0F39Ohe1hS90MVKQNE0MsdI=;
+ b=jtzJ8VAsorkAfvIFNkNmUGy2L1oLcDJrX12fUC4Ki5D1Z6/6xeK276TXheCPt+LITreYC5skAybz
+   pid3tkkGBljHNcu/UYjJYUJWlFkvp/BQbEc65nK5mvvmt8Nfj80r2qOqU6yjUiEV7CUhJPxCBkv/
+   bj+2n6o8DGLd/f8SPu4=
+To: contact@fiidewgal.com
+Subject: Celebrating International T-Shirt Day =?UTF-8?Q?with=E2=80=A6=20a=20T-Shi?=
+ =?UTF-8?Q?rt?=
+X-Mailer: class SMTPMail
+From: "The Spreadshop-Team" <partner-news@reply.spreadshirt.net>
+MIME-Version: 1.0
+List-Id: 120331169 <The Spreadshop-Team>
+X-EMarSys-Identify: 120331169_3964577_277040
+X-EMarSys-Environment: xpress_us
+X-Report-Abuse: Please report abuse here: abuse-report@emarsys.com
+X-CSA-Complaints: csa-complaints@eco.de
+List-Unsubscribe: <mailto:list-unsubscribe+120331169_3964577_277040_WYWoo440FR@emarsys.net>, <https://list-unsubscribe.eservice.emarsys.net/api/unsubscribe/120331169_3964577_277040_WYWoo440FR>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Content-Type: multipart/alternative;
+ boundary="--=_---NextPart--=_-2tCRCdbeHZ"
+Message-ID: <0.0.19.D25.1D99A3355697622.0@uspmta172082.emarsys.net>
+Date: Thu, 8 Jun 2023 20:02:05 +0200
+X-N0C-Node-IP: 185.221.182.45
+
+
+----=_---NextPart--=_-2tCRCdbeHZ
+Content-Type: text/plain; charset=utf-8
+Content-transfer-encoding: quoted-printable
+
+NEW: The Gildan Ultra Cotton Adult T-Shirt
+
+
+To view the graphic version (HTML) of this e-mail, click on the
+following link or copy it into your browser:
+https://newslink.spreadshirt.net/u/gm.php?prm=3DWYWoo440FR_120331169_396457=
+7_277040&_esuh=3D_11_8ff2518178869b3f77271a01d18f3b49f68ffeafdbc6eea0fc3f65=
+a9d51edb1b
+
+
+ 1. This is the header
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+The section content goes here.
+
+ 2. This is the header
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+The section content goes here.
+
+ 3. A Sustainable Icon
+   =20
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+With recycled and sustainably produced materials, Stanley/Stella=E2=80=99s
+Bucket Hat is the greener alternative to the "standard" bucket hat. The
+outer material is made from a combination of 80% recycled cotton and 20%
+recycled polyester. This makes the Bucket Hat nice to the touch and very
+durable. For a comfortable and soft feel, the inner material is made of
+100% sustainable cotton.
+
+
+Fit Every Head
+https://newslink.spreadshirt.net/u/nrd.php?p=3DWYWoo440FR_277040_3964577_58=
+_3621&ems_l=3D4252804&i=3D1&_esuh=3D_11_6bc73feb0068b326444e698099d5a369cab=
+cee3a06266f0bd3724beb884af7a3
+
+ 4. This is the header
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+The section content goes here.
+
+ 5. Go back to basics with an Ultra twist!
+   =20
+   =20
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+Your Spreadshop-Team
+
+Facebook:
+https://newslink.spreadshirt.net/u/nrd.php?p=3DWYWoo440FR_277040_3964577_3_=
+3743&ems_l=3D4252804&_esuh=3D_11_225952b5f2f76adb225681e65b7b6e95fb34367c2a=
+5d36328a71db548c293103
+
+YouTube:
+https://newslink.spreadshirt.net/u/nrd.php?p=3DWYWoo440FR_277040_3964577_3_=
+3727&ems_l=3D4252804&_esuh=3D_11_36bcf08703dd43916713cbecf7eb1e575673e5e93f=
+1d9d25fb3a89204e937e54
+
+Twitter:
+https://newslink.spreadshirt.net/u/nrd.php?p=3DWYWoo440FR_277040_3964577_3_=
+3728&ems_l=3D4252804&_esuh=3D_11_d8e927f23bde4bc3c53213617d3e421cd286a28b83=
+bd49ff4d21e5fccc19657e
+
+Instagram:
+https://newslink.spreadshirt.net/u/nrd.php?p=3DWYWoo440FR_277040_3964577_3_=
+3729&ems_l=3D4252804&_esuh=3D_11_4ace89bd776fd7cde1e5f8da0663fdbb7148812b2e=
+d804c7327a8f264ee7f81c
+
+TikTok:
+https://newslink.spreadshirt.net/u/nrd.php?p=3DWYWoo440FR_277040_3964577_3_=
+3730&ems_l=3D4252804&_esuh=3D_11_8ba0f9bf15a69be2b6cddfbc8c8457535b69eeb217=
+59fd6a26b000d4b12229ba
+
+Blog:=20
+https://newslink.spreadshirt.net/u/nrd.php?p=3DWYWoo440FR_277040_3964577_3_=
+3731&ems_l=3D4252804&_esuh=3D_11_9df7ebe0ae5f62851a702fc5e6eb5703ee8f979e6e=
+6644507105a9b9a80fd2fa
+Forum:
+https://newslink.spreadshirt.net/u/nrd.php?p=3DWYWoo440FR_277040_3964577_3_=
+3732&ems_l=3D4252804&_esuh=3D_11_31b08263cf45a6286e877fab77b5dd54519c7b1c05=
+f98bec935c6c086c540e46
+Help:=20
+https://newslink.spreadshirt.net/u/nrd.php?p=3DWYWoo440FR_277040_3964577_3_=
+3744&ems_l=3D4252804&_esuh=3D_11_f7714c9c189b9279e3e511ee1a8ad67d73d50b11a3=
+2a344fb09359949aac938b
+
+Spreadshirt Seller App:
+
+Seller App iTunes:    =20
+https://newslink.spreadshirt.net/u/nrd.php?p=3DWYWoo440FR_277040_3964577_30=
+_3734&ems_l=3D4252804&_esuh=3D_11_3ad940b888172f5e544d484b544a28faf52789d7b=
+380fc185db8ebefa4822b67
+Seller App Google Play:
+https://newslink.spreadshirt.net/u/nrd.php?p=3DWYWoo440FR_277040_3964577_30=
+_3735&ems_l=3D4252804&_esuh=3D_11_5aff8b326b65d688874a2dc6688f6056289711e0a=
+d522dabd7a63d3f0f574d69
+
+You receive this regular newsletter because you have registered with
+Spreadshirt as a Partner. If you do not want to receive this newsletter
+in the future, you can unsubscribe here. -->
+https://newslink.spreadshirt.net/u/nrd.php?p=3DWYWoo440FR_277040_3964577_20=
+_3745&ems_l=3D4252804&_esuh=3D_11_2825ed717d7b8110f1a262865b24a0b8920e0842e=
+44b6a2ea432a2041ee45beb
+
+You will continue to receive important general and legal information. If
+you do not want to receive any more notices, you will have to cancel
+your Spreadshirt shop. Your account can be cancelled here
+https://newslink.spreadshirt.net/u/nrd.php?p=3DWYWoo440FR_277040_3964577_20=
+_3746&ems_l=3D4252804&_esuh=3D_11_d64b5016f69549b6a32625724cc93d3d8778d852c=
+ebd583170fe2a658247b625
+.
+
+To make sure that the newsletter always reaches your inbox, please add
+partner-news@reply.spreadshirt.com to your contacts.
+
+Spreadshirt, Inc. | a Delaware Corporation | 1572 Roseytown Road |
+Greensburg | PA 15601 | E-Mail verify@spreadshirt.com  |  DMCA=09DMCA
+Notice
+https://newslink.spreadshirt.net/u/nrd.php?p=3DWYWoo440FR_277040_3964577_20=
+_3747&ems_l=3D4252804&_esuh=3D_11_a7dd0b9f8a0fddca467777298c3816d8e99cabc4c=
+b12de522ab849fa3b2ce4b2
+ | Privacy Policy
+
+----=_---NextPart--=_-2tCRCdbeHZ
+Content-Type: text/html; charset=utf-8
+Content-transfer-encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microso=
+ft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office">
+<head>
+<title>Spreadshirt</title>
+<meta name=3D"viewport" content=3D"initial-scale=3D1, user-scalable=3Dyes">
+<link href=3D"https://fonts.googleapis.com/css?family=3DRoboto" rel=3D"styl=
+esheet" type=3D"text/css">
+<link href=3D"https://fonts.googleapis.com/css?family=3DMontserrat:400,700"=
+ rel=3D"stylesheet">
+<!--[if !mso]><!--><meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedg=
+e" /><!--<![endif]-->
+<style type=3D"text/css">
+
+@media only screen and (max-width:400px) {
+.fl { display:block !important; width:100% !important; }
+.fw { width:100% !important; min-width:0 !important; }
+.sec { width:100% !important; float:none !important; }
+.mh, .mobile_hidden { display:none !important; }
+.image { width:100% !important; height:auto !important; }
+.comt { margin:0 auto !important; }
+.com { text-align:center; }
+.lom { text-align:left; }
+.AAA_font { font-size:17px !important; font-size:5.3125vw !important; }
+.AAA_h1, .AAA_h1 font { font-size:24px !important; font-size:7.5vw !importa=
+nt; }
+.AAA_h2, .AAA_h2 font { font-size:20px !important; font-size:6.25vw !import=
+ant; }
+.AAA_small, .AAA_small font { font-size:15px !important; font-size:4.6875vw=
+ !important; }
+.AAA_xsmall, .AAA_xsmall font { font-size:13px !important; font-size:4.0625=
+vw !important; }
+.cta, .cta td { background:none !important; -moz-border-radius:0 !important=
+; -webkit-border-radius:0 !important; border-radius:0 !important; padding:0=
+ !important; }
+.cta a { -moz-border-radius:15px; -webkit-border-radius:15px; border-radius=
+:15px; padding:5px 10px; -moz-border-radius:4.6875vw; -webkit-border-radius=
+:4.6875vw; border-radius:4.6875vw; padding:1.5625vw 3.125vw; }
+.cta4a, .cta4a td { background:none !important; -moz-border-radius:0 !impor=
+tant; -webkit-border-radius:0 !important; border-radius:0 !important; paddi=
+ng:0 !important; }
+.cta4a a { -moz-border-radius:2px; -webkit-border-radius:2px; border-radius=
+:2px; padding:10px 43px; }
+.rwom { width:auto !important; }
+.rhom { height:auto !important; }
+.rw10, .rw10 img { width:10px !important; }
+.rw45 { width:45px !important; }
+.rw55 { width:55px !important; }
+.rw150 { width:150px !important; }
+.rh10, .rh10 img { height:10px !important; height:3.125vw !important; }
+.rh15, .rh15 img { height:15px !important; height:4.6875vw !important; }
+.rh20, .rh20 img { height:20px !important; height:6.25vw !important; }
+.mtop10 { margin-top:10px; }
+.plr10 { padding:0 10px; }
+.plr15 { padding:0 15px; }
+.ptb10 { padding:10px 0; }
+.s1, .s1 img { height:10px !important; height:3.125vw !important; }
+.s1a, .s1a img { height:20px !important; height:6.25vw !important; }
+.s2, .s2 img { height:5px !important; height:1.5625vw !important; }
+.s3, .s3 img { height:10px !important; height:3.125vw !important; }
+.s3a, .s3a img { height:20px !important; height:6.25vw !important; }
+.s4, .s4 img { height:40px !important; height:12.5vw !important; }
+.sm1 { margin-bottom:10px !important; margin-bottom:3.125vw !important; }
+.swimg:after { content:url('https://newslink.spreadshirt.net/templates/spre=
+adshirt5us/i/new_mobile_image.jpg'); }
+.swbgimg { background-image:url('https://newslink.spreadshirt.net/templates=
+/spreadshirt5us/i/new_mobile_image.jpg'); }
+.break { display:block !important; }
+.nobg { background:none !important; }
+.nav { background-color:#cccccc; height:40px; height:12.5vw !important; }
+.nav td:first-child font:after { content:'Navigation'; padding:0px 0px 0px =
+10px; font-weight:bold; color:#000000; }
+.nav td:last-child font:after { content:'=E2=89=A1'; font-size:30px; paddin=
+g:0px 10px 0px 0px; font-weight:normal; color:#000000; }
+.content th:first-child { border-top:none; }
+.content th a { border:1px solid #6d6e70; border-top:none; padding:5px; dis=
+play:block; padding:1.5625vw; }
+input[type=3Dcheckbox]:checked + .content { max-height:500px !important; ma=
+x-height:156.25vw !important; }
+.content { max-height:0px; overflow:hidden; -moz-transition:all 750ms ease;=
+ -ms-transition:all 750ms ease; -o-transition:all 750ms ease; -webkit-trans=
+ition:all 750ms ease; transition:all 750ms ease; }
+.m2c { display:block; width:50%; float:left; }
+.pl { padding-left:5px; }
+.pr { padding-right:5px; }
+u + .body .gmh { display:none !important; }
+u + .body .gwfw { width:100% !important; width:100vw !important; }
+
+}
+
+@media only screen and (width:375px) {
+.iph { padding:0 8px 0 7px !important; }
+}
+@media yahoo {
+.yh { display:none !important; }
+.mby20 { margin-bottom:20px; }
+}
+<!--
+body { margin:0; padding:0; background:#f2f2f2; -webkit-text-size-adjust:no=
+ne; -ms-text-size-adjust:none; }
+a, a:active, a:visited, .yshortcuts, .yshortcuts a span { color:#000000; te=
+xt-decoration:none; font-weight:normal; }
+a[x-apple-data-detectors] { color: inherit !important; text-decoration: non=
+e !important; font-size: inherit !important; font-family: inherit !importan=
+t; font-weight: inherit !important; line-height: inherit !important; }
+td div, button { display:block !important; }
+.ReadMsgBody { width:100%; }
+.ExternalClass *, .b-message-body { line-height:100%; }
+.ExternalClass { width:100%; }
+input { display:none !important; max-height:0px; overflow:hidden; }
+table th { padding:0; Margin:0; border:0; font-weight:normal; vertical-alig=
+n:top; }
+*[lang=3D"uri"] a { color:inherit !important; text-decoration:none !importa=
+nt; font-size:inherit !important; font-family:inherit !important; font-weig=
+ht:inherit !important; line-height:inherit !important; }
+-->
+</style>
+<!--[if gte mso 9]>
+<style type=3D"text/css">
+font { font-family: Arial, sans-serif; }
+table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0p=
+t; border:0; }
+table td, table th { border-collapse:collapse; font-size:1px; line-height:1=
+px; }
+.lh { line-height:normal !important; }
+.olcta5 { border:none !important; }
+.olctatd { padding:0 !important; }
+.olcta4td { padding:8px 43px !important; }
+<xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml>
+</style>
+<![endif]-->
+</head>
+<body class=3D"body">
+<div class=3D"yfix">
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" heig=
+ht=3D"100%" bgcolor=3D"#f2f2f2" class=3D"gwfw">
+<tr>
+<td>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr>
+<td height=3D"50" valign=3D"middle" style=3D"vertical-align:middle;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr>
+<td align=3D"center"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+" class=3D"sectiongroup_892971066 is_mobile_hideable fw">
+<tr>
+<td><table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" class=3D"fw">
+<tr>
+<td align=3D"left" class=3D"lh xsmall com"><font face=3D"Roboto, sans-serif=
+" style=3D"font-size:10px; color:#999999;">NEW: The Gildan Ultra Cotton Adu=
+lt T-Shirt<br> </font></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td align=3D"center" class=3D"lh mh"><font face=3D"Roboto, sans-serif" styl=
+e=3D"font-size:10px; color:#999999;">Click <a href=3D"https://newslink.spre=
+adshirt.net/u/gm.php?prm=3DWYWoo440FR_120331169_3964577_277040&_esuh=3D_11_=
+8ff2518178869b3f77271a01d18f3b49f68ffeafdbc6eea0fc3f65a9d51edb1b" target=3D=
+"_blank" style=3D"color:#ff7c37; font-weight:normal; text-decoration:none;"=
+><font face=3D"Roboto, Aria, Helvetica, sans-serif" style=3D"font-size:10px=
+; color:#ff7c37;">here</font></a> for desktop version.</font></td>
+</tr>
+<tr>
+<td height=3D"1"><img src=3D"https://newslink.spreadshirt.net/mo/WYWoo440FR=
+_120331169_3964577_277040_4252804.gif" width=3D"1" height=3D"1" style=3D"di=
+splay:block;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td width=3D"100%" align=3D"center" valign=3D"top">
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"610" class=
+=3D"fw">
+<tr>
+<td class=3D"iph plr15">
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"600" class=
+=3D"fw">
+<tr>
+<td>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr class=3D"sectiongroup_892971067 is_mobile_hideable">
+<td align=3D"center"><table border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+" width=3D"100%" class=3D"is_image_mobile_hideable">
+<tr>
+<td bgcolor=3D"#ffffff" style=3D"box-shadow: rgb(220, 220, 220) 5px 3px 5px=
+;">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%">
+<tr>
+<td colspan=3D"3" height=3D"15" class=3D"rh10"></td>
+</tr>
+<tr>
+<td width=3D"95" class=3D"rw55"><br /></td>
+<td align=3D"center" valign=3D"top"><a href=3D"https://newslink.spreadshirt=
+.net/u/nrd.php?p=3DWYWoo440FR_277040_3964577_74_3752&ems_l=3D4252804&i=3D1&=
+_esuh=3D_11_9d9437caa05a5e038f9d6008d53211c69f160bdf540c334d4c59a8d18feba02=
+b" target=3D"_blank"><img src=3D"https://newslink.spreadshirt.net/templates=
+/spreadshirt5eu/i/spreadshop.png" width=3D"270" border=3D"0" style=3D"displ=
+ay: block;" class=3D"rw150" /></a></td>
+<td width=3D"95" align=3D"left" valign=3D"middle" style=3D"vertical-align: =
+middle;" class=3D"rw55"><a href=3D"https://newslink.spreadshirt.net/u/nrd.p=
+hp?p=3DWYWoo440FR_277040_3964577_74_3753&ems_l=3D4252804&i=3D1&_esuh=3D_11_=
+d0d4536ba4b0fb8ba2caf5dd158e2a44ab38ac0d8ebbe0b59101638d016a06fc" target=3D=
+"_blank"><img src=3D"https://newslink.spreadshirt.net/templates/spreadshirt=
+5eu/i/l.png" width=3D"67" border=3D"0" style=3D"display: block;" class=3D"r=
+w45" /></a></td>
+</tr>
+<tr>
+<td colspan=3D"3" height=3D"15" class=3D"rh10"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table></td>
+</tr>
+<tr class=3D"sectiongroup_892971068 is_mobile_hideable">
+<td align=3D"center"><table border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+" width=3D"100%" class=3D"is_image_mobile_hideable">
+<tr>
+<td align=3D"center"><img width=3D"600" id=3D"section_image_68" src=3D"http=
+s://newslink.spreadshirt.net/custloads/120331169/md_1550065.jpg" border=3D"=
+0" style=3D"display:block;" class=3D"image"></td>
+</tr>
+<tr>
+<td height=3D"40" class=3D"s4"><img src=3D"https://newslink.spreadshirt.net=
+/img/trans.gif" width=3D"1" height=3D"40" style=3D"display:block;"></td>
+</tr>
+</table></td>
+</tr><tr class=3D"sectiongroup_892971070 is_mobile_hideable">
+<td align=3D"center"><table border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+" class=3D"fw" style=3D"box-shadow: rgb(220, 220, 220) 5px 3px 5px; backgro=
+und-color: rgb(255, 255, 255);" bgcolor=3D"#ffffff">
+<tbody><tr>
+<th align=3D"left" valign=3D"top" class=3D"fl"><table width=3D"290" cellpad=
+ding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"js-section-c13 template_=
+2colsection fw">
+<tbody><tr>
+<td>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tbody><tr>
+<td height=3D"20"><img src=3D"/img/trans.gif" width=3D"1" height=3D"20" /><=
+/td>
+</tr>
+<tr>
+<td>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tbody><tr>
+<td width=3D"15"><img src=3D"/img/trans.gif" width=3D"15" height=3D"1" /></=
+td>
+<td>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tbody><tr>
+<td style=3D"text-align: left;" align=3D"left" class=3D"lh h2"><font size=
+=3D"5" face=3D"'Montserrat', sans-serif" style=3D"color: rgb(25, 25, 25); t=
+ext-decoration: none; font-weight: normal;"><b><a><b>All Hail the Humble T-=
+Shirt</b></a></b></font></td><td align=3D"center" class=3D"lh h2"><font fac=
+e=3D"'Montserrat', sans-serif" style=3D"font-size: 20px; color: rgb(25, 25,=
+ 25); text-decoration: none; font-weight: normal;"><b><a><b><span style=3D"=
+font-size: 24px;"></span></b></a><br /></b></font></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td align=3D"left" class=3D"lh"><font face=3D"Roboto, Arial, Helvetica, san=
+s-serif" style=3D"font-size: 16px; line-height: 24px; color: rgb(51, 51, 51=
+);"><div style=3D"text-align: left;"><div style=3D"text-align: justify;"><s=
+pan style=3D"text-align: left;"></span></div><div style=3D"text-align: just=
+ify;"><br /></div><div style=3D"text-align: left;"><span style=3D"text-alig=
+n: left;">The T-Shirt has a history of counterculture and rebellious self-e=
+xpression. This T-Shirt Day, we are celebrating with the Gildan Ultra Cotto=
+n Adult T-Shirt, new to our assortment.</span></div><div style=3D"text-alig=
+n: left;"><span style=3D"text-align: left;"></span></div></div></font></td>=
+</tr>
+</tbody></table>
+</td>
+<td width=3D"15"><img src=3D"/img/trans.gif" width=3D"15" height=3D"1" styl=
+e=3D"display: block;" /></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+</tr>
+</tbody></table></th><th align=3D"center" valign=3D"top" class=3D"fl"><tabl=
+e width=3D"290" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"j=
+s-section-c14 template_2colsection_rf fw">
+<tbody><tr>
+<td bgcolor=3D"#ffffff" style=3D"box-shadow: rgb(220, 220, 220) 5px 3px 5px=
+;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tbody><tr class=3D"is_image_mobile_hideable">
+<td>
+<img src=3D"https://newslink.spreadshirt.net/custloads/120331169/md_1557399=
+.png" width=3D"300" border=3D"0" class=3D"image" style=3D"display: block;" =
+/>
+</td>
+</tr>
+<tr class=3D"is_image_mobile_hideable">
+</tr>
+<tr>
+<td>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+</tr>
+</tbody></table></th>
+</tr>
+</tbody></table>
+<table> <tbody><tr><td height=3D"40"><br /></td></tr> </tbody></table></td>
+</tr><tr class=3D"sectiongroup_892971074 is_mobile_hideable">
+<td align=3D"center"><table border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+" width=3D"100%" class=3D"is_image_mobile_hideable">
+<tr>
+<td align=3D"center"><img width=3D"600" id=3D"section_image_60" src=3D"http=
+s://newslink.spreadshirt.net/custloads/120331169/md_1557396.png" border=3D"=
+0" style=3D"display:block;" class=3D"image"></td>
+</tr>
+<tr>
+<td height=3D"40" class=3D"s4"><img src=3D"https://newslink.spreadshirt.net=
+/img/trans.gif" width=3D"1" height=3D"40" style=3D"display:block;"></td>
+</tr>
+</table></td>
+</tr><tr class=3D"sectiongroup_892971075 is_mobile_hideable">
+<td align=3D"center"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+" width=3D"100%">
+<tr bgcolor=3D"#ffffff" style=3D"box-shadow: rgb(220, 220, 220) 5px 3px 5px=
+;"> <td valign=3D"top">
+<table width=3D"290" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=
+=3D"fw">
+<tr>
+<td>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr class=3D"is_image_mobile_hideable">
+<td><img width=3D"300" id=3D"section_image_56" src=3D"https://newslink.spre=
+adshirt.net/custloads/120331169/md_1557400.png" border=3D"0" class=3D"image=
+" style=3D"display: block;" /></td>
+</tr>
+<tr class=3D"is_image_mobile_hideable">
+<td height=3D"28" class=3D"s1a"><img src=3D"https://newslink.spreadshirt.ne=
+t/img/trans.gif" width=3D"1" height=3D"28" style=3D"display: block;" /></td=
+>
+</tr>
+<tr>
+<td>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr>
+<td width=3D"15"><img src=3D"https://newslink.spreadshirt.net/img/trans.gif=
+" width=3D"15" height=3D"1" style=3D"display: block;" /></td>
+<td>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr>
+<td style=3D"text-align: left;" align=3D"center" class=3D"lh h2"><font face=
+=3D"'Montserrat', sans-serif" style=3D"font-size: 20px; color: rgb(25, 25, =
+25); text-decoration: none; font-weight: normal;"><b><b>What=E2=80=99s it a=
+ll about?</b></b></font></td>
+</tr>
+<tr>
+<td height=3D"2"><img src=3D"https://newslink.spreadshirt.net/img/trans.gif=
+" width=3D"1" height=3D"2" style=3D"display: block;" /></td>
+</tr>
+<tr>
+<td align=3D"center" class=3D"lh"><font face=3D"Roboto, Arial, Helvetica, s=
+ans-serif" style=3D"font-size: 16px; line-height: 24px; color: rgb(51, 51, =
+51);"><div style=3D"text-align: left;">This T-Shirt builds on our range of =
+sustainable products in unisex fits. Available in sizes S to 5XL, it comes =
+in the full range of colors: forest green, turquoise, military green, purpl=
+e, deep heather, light pink, heather gray, gold, navy, white, black, red, r=
+oyal blue, and charcoal.</div></font></td>
+</tr>
+<tr>
+<td height=3D"32" class=3D"s4"><br /></td>
+</tr>
+</table>
+</td>
+<td width=3D"15"><img src=3D"https://newslink.spreadshirt.net/img/trans.gif=
+" width=3D"15" height=3D"1" style=3D"display: block;" /></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+</tr>
+</table> </td>
+<td valign=3D"top">
+<table width=3D"290" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=
+=3D"fw">
+<tr>
+<td valign=3D"top">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr class=3D"is_image_mobile_hideable">
+<td><img width=3D"300" id=3D"section_image_59" src=3D"https://newslink.spre=
+adshirt.net/custloads/120331169/md_1557402.png" border=3D"0" class=3D"image=
+" style=3D"display: block;" /></td>
+</tr>
+<tr class=3D"is_image_mobile_hideable">
+<td height=3D"28" class=3D"s1a"><img src=3D"https://newslink.spreadshirt.ne=
+t/img/trans.gif" width=3D"1" height=3D"28" style=3D"display: block;" /></td=
+>
+</tr>
+<tr>
+<td valign=3D"top">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr>
+<td width=3D"15"><img src=3D"https://newslink.spreadshirt.net/img/trans.gif=
+" width=3D"15" height=3D"1" style=3D"display: block;" /></td>
+<td>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr>
+<td style=3D"text-align: left;" align=3D"center" class=3D"lh h2"><font face=
+=3D"'Montserrat', sans-serif" style=3D"font-size: 20px; color: rgb(25, 25, =
+25); text-decoration: none; font-weight: normal;"><b><b>How do I design it?=
+</b></b></font></td>
+</tr>
+<tr>
+<td height=3D"2"><img src=3D"https://newslink.spreadshirt.net/img/trans.gif=
+" width=3D"1" height=3D"2" style=3D"display: block;" /></td>
+</tr>
+<tr>
+<td align=3D"center" class=3D"lh"><font face=3D"Roboto, Arial, Helvetica, s=
+ans-serif" style=3D"font-size: 16px; line-height: 24px; color: rgb(51, 51, =
+51);"><div style=3D"text-align: left;">The perfect canvas for creative desi=
+gns is blank and open to interpretation. This tee will take whatever you th=
+row at it, with generous print areas on both the front and back. Need some =
+inspo? Check out these examples from <a style=3D"font-weight: normal; text-=
+decoration: none; color: rgb(255, 124, 55);" target=3D"_blank" href=3D"http=
+s://newslink.spreadshirt.net/u/nrd.php?p=3DWYWoo440FR_277040_3964577_75_374=
+8&ems_l=3D4252804&i=3D1&_esuh=3D_11_04512506d4babc1aaac872800f30fea531f3dc4=
+a1a58e3ad149ae9b345236faf"><font style=3D"color: rgb(255, 124, 55);" face=
+=3D"Arial, Helvetica, sans-serif"><u>Pittsburgh Clothing Co.</u></font></a>=
+ and <a style=3D"font-weight: normal; text-decoration: none; color: rgb(255=
+, 124, 55);" target=3D"_blank" href=3D"https://newslink.spreadshirt.net/u/n=
+rd.php?p=3DWYWoo440FR_277040_3964577_75_3749&ems_l=3D4252804&i=3D1&_esuh=3D=
+_11_2af86213127f1ba7028a2a4fdbb58bc6964b0208c06c66a7d7685a0201bcf933"><font=
+ style=3D"color: rgb(255, 124, 55);" face=3D"Arial, Helvetica, sans-serif">=
+<u>Light Up Autism with Lucas</u></font></a>.</div></font></td>
+</tr>
+<tr>
+<td height=3D"32" class=3D"s4"><br /></td>
+</tr>
+</table>
+</td>
+<td width=3D"15"><img src=3D"https://newslink.spreadshirt.net/img/trans.gif=
+" width=3D"15" height=3D"1" style=3D"display: block;" /></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table> </td>
+</tr> <tr>
+<td height=3D"44"><br /></td>
+</tr>
+</table></td>
+</tr><tr class=3D"sectiongroup_892971078 is_mobile_hideable">
+<td align=3D"left">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"fw">
+<tr>
+<th align=3D"left" valign=3D"top" class=3D"fl"><table border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0" width=3D"100%" class=3D"is_image_mobile_hideabl=
+e">
+<tbody><tr>
+<td align=3D"center"><img width=3D"600" id=3D"section_image_64" src=3D"http=
+s://newslink.spreadshirt.net/custloads/120331169/md_1557403.gif" border=3D"=
+0" style=3D"display: block;" class=3D"image" /></td>
+</tr>
+</tbody></table></th>
+</tr>
+</table>
+</td>
+</tr>
+<tr class=3D"sectiongroup_892971078 is_mobile_hideable">
+<td height=3D"40" class=3D"s4"><img src=3D"https://newslink.spreadshirt.net=
+/img/trans.gif" width=3D"1" height=3D"40" style=3D"display:block;"></td>
+</tr><tr class=3D"sectiongroup_892971080 is_mobile_hideable">
+<td align=3D"center"><table width=3D"100%" border=3D"0" cellspacing=3D"0" c=
+ellpadding=3D"0">
+<tr>
+<td style=3D"box-shadow: rgb(220, 220, 220) 5px 3px 5px;" bgcolor=3D"#fffff=
+f">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"> <tr=
+>
+<td>
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tr>
+<td width=3D"15"><img style=3D"display: block;" height=3D"1" width=3D"15" s=
+rc=3D"https://newslink.spreadshirt.net/img/trans.gif" /></td>
+<td>
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tr>
+<td class=3D"s4" height=3D"25"><br /></td>
+</tr>
+<tr>
+<td class=3D"lh h2" align=3D"center" style=3D"text-align: left;"><a e:secti=
+on-id=3D"58" target=3D"_blank" href=3D"https://newslink.spreadshirt.net/u/n=
+rd.php?p=3DWYWoo440FR_277040_3964577_58_3750&ems_l=3D4252804&i=3D1&_esuh=3D=
+_11_70619b9faa19172ad827c69f059b5097c81feaf038ceb5caa832339185f5690a" style=
+=3D"font-size: 20px; color: rgb(25, 25, 25); text-decoration: none; font-we=
+ight: normal;"><font style=3D"font-size: 20px; color: rgb(25, 25, 25); text=
+-decoration: none; font-weight: normal;" face=3D"'Montserrat', sans-serif">=
+<b><b><b>What makes this tee special?</b><br /></b></b></font></a></td>
+</tr>=09<tr>
+<td height=3D"6"><img style=3D"display: block;" height=3D"6" width=3D"1" sr=
+c=3D"https://newslink.spreadshirt.net/img/trans.gif" /></td>
+</tr>
+<tr>
+<td class=3D"lh" align=3D"center"><font style=3D"font-size: 16px; line-heig=
+ht: 24px; color: rgb(51, 51, 51);" face=3D"Roboto, Arial, Helvetica, sans-s=
+erif"><div style=3D"text-align: left;">The Gildan Ultra Cotton Adult T-Shir=
+t is a proud part of our Sustainable range. The durable, heavyweight cotton=
+ is 100% sustainable and fairly grown in the USA, meeting our high standard=
+s for both environmental and social responsibility. Design and sell with co=
+nfidence with our ever-expanding range of unisex fits, knowing that your pr=
+oducts will look good on everyone.<br /></div></font></td>
+</tr>
+<tr>
+<td class=3D"s3a" height=3D"28"><img style=3D"display: block;" height=3D"28=
+" width=3D"1" src=3D"https://newslink.spreadshirt.net/img/trans.gif" /></td=
+>
+</tr>
+<tr>
+<td align=3D"center">
+<table class=3D"cta4a" style=3D"border-radius: 2px;" bgcolor=3D"#ff9343" bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<!--[if gte mso 9]>
+<tr style=3D"display:none;" class=3D"mh">
+<td>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr>
+<td width=3D"2" height=3D"2"><img src=3D"https://newslink.spreadshirt.net/t=
+emplates/spreadshirt5eu/i/lt.png" width=3D"2" height=3D"2" style=3D"display=
+:block;"></td>
+<td><img src=3D"https://newslink.spreadshirt.net/img/trans.gif" width=3D"1"=
+ height=3D"2" style=3D"display:block;"></td>
+<td width=3D"2"><img src=3D"https://newslink.spreadshirt.net/templates/spre=
+adshirt5eu/i/rt.png" width=3D"2" height=3D"2" style=3D"display:block;"></td=
+>
+</tr>
+</table>
+</td>
+</tr>
+<![endif]-->
+<tr>
+<td class=3D"olcta4td lh" style=3D"padding: 10px 43px;" align=3D"center"><a=
+ style=3D"color: rgb(255, 255, 255); font-weight: normal; text-decoration: =
+none; background: rgb(255, 147, 67); display: block;" target=3D"_blank" e:s=
+ection-id=3D"58" href=3D"https://newslink.spreadshirt.net/u/nrd.php?p=3DWYW=
+oo440FR_277040_3964577_58_3751&ems_l=3D4252804&i=3D1&_esuh=3D_11_86dfee1be2=
+567e39943290bf970d5818421fc80e82d379fd4bb233af103998cb"><font style=3D"font=
+-size: 16px; color: rgb(255, 255, 255);" face=3D"Roboto, Aria, Helvetica, s=
+ans-serif"><b>Show Me More</b></font></a></td>
+</tr>
+<!--[if gte mso 9]>
+<tr style=3D"display:none;" class=3D"mh">
+<td>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr>
+<td width=3D"2" height=3D"2"><img src=3D"https://newslink.spreadshirt.net/t=
+emplates/spreadshirt5eu/i/lb.png" width=3D"2" height=3D"2" style=3D"display=
+:block;"></td>
+<td><img src=3D"https://newslink.spreadshirt.net/img/trans.gif" width=3D"1"=
+ height=3D"2" style=3D"display:block;"></td>
+<td width=3D"2"><img src=3D"https://newslink.spreadshirt.net/templates/spre=
+adshirt5eu/i/rb.png" width=3D"2" height=3D"2" style=3D"display:block;"></td=
+>
+</tr>
+</table>
+</td>
+</tr>
+<![endif]-->
+</table>
+</td>
+</tr>=09<tr>
+<td class=3D"s4" height=3D"32"><br /></td>
+</tr>
+</table>
+</td>
+<td width=3D"15"><img style=3D"display: block;" height=3D"1" width=3D"15" s=
+rc=3D"https://newslink.spreadshirt.net/img/trans.gif" /></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td height=3D"44"><br /></td>
+</tr>
+</table></td>
+</tr><tr class=3D"sectiongroup_892971085 is_mobile_hideable">
+<td align=3D"center"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+">
+<tbody><tr style=3D"box-shadow: rgb(220, 220, 220) 5px 3px 5px;" bgcolor=3D=
+"#ffffff">
+<td valign=3D"top">
+<table class=3D"fw" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=
+=3D"290">
+<tbody><tr>
+<td>
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody><tr class=3D"is_image_mobile_hideable">
+<td><img style=3D"display: block;" class=3D"image" border=3D"0" src=3D"http=
+s://newslink.spreadshirt.net/custloads/120331169/md_1557401.png" id=3D"sect=
+ion_image_65" width=3D"300" /></td>
+</tr>
+<tr class=3D"is_image_mobile_hideable">
+<td class=3D"s1a" height=3D"28"><img style=3D"display: block;" height=3D"28=
+" width=3D"1" src=3D"https://newslink.spreadshirt.net/img/trans.gif" /></td=
+>
+</tr>
+<tr>
+<td>
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody><tr>
+<td width=3D"15"><img style=3D"display: block;" height=3D"1" width=3D"15" s=
+rc=3D"https://newslink.spreadshirt.net/img/trans.gif" /></td>
+<td>
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody><tr>
+<td class=3D"lh h2" align=3D"center" style=3D"text-align: left;"><font styl=
+e=3D"font-size: 20px; color: rgb(25, 25, 25); text-decoration: none; font-w=
+eight: normal;" face=3D"'Montserrat', sans-serif"><b><b>How do I wear it?</=
+b></b></font></td><td class=3D"lh h2" align=3D"center" style=3D"text-align:=
+ left;"><br /></td><td class=3D"lh h2" align=3D"center" style=3D"text-align=
+: left;"><font style=3D"font-size: 20px; color: rgb(25, 25, 25); text-decor=
+ation: none; font-weight: normal;" face=3D"'Montserrat', sans-serif"><b><b>=
+</b></b></font></td>
+</tr>
+<tr>
+<td height=3D"2"><img style=3D"display: block;" height=3D"2" width=3D"1" sr=
+c=3D"https://newslink.spreadshirt.net/img/trans.gif" /></td>
+</tr>
+<tr>
+<td class=3D"lh" align=3D"center"><font style=3D"font-size: 16px; line-heig=
+ht: 24px; color: rgb(51, 51, 51);" face=3D"Roboto, Arial, Helvetica, sans-s=
+erif"><div style=3D"text-align: left;">The Gildan Ultra Cotton tee is flexi=
+ble and easy to style whatever your look. Keep it classic with a white tee,=
+ blue denim and sneakers; dress it up and mix and match your T-Shirt with a=
+ suit for a casual office look; or size up for an oversized urban fit.</div=
+></font></td>
+</tr>
+<tr>
+<td class=3D"s4" height=3D"32"><br /></td>
+</tr>
+</tbody></table>
+</td>
+<td width=3D"15"><img style=3D"display: block;" height=3D"1" width=3D"15" s=
+rc=3D"https://newslink.spreadshirt.net/img/trans.gif" /></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+<td valign=3D"top">
+<table class=3D"fw" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=
+=3D"290">
+<tbody><tr>
+<td>
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody><tr class=3D"is_image_mobile_hideable">
+<td><img style=3D"display: block;" class=3D"image" border=3D"0" src=3D"http=
+s://newslink.spreadshirt.net/custloads/120331169/md_1557421.png" id=3D"sect=
+ion_image_66" width=3D"300" /></td>
+</tr>
+<tr class=3D"is_image_mobile_hideable">
+<td class=3D"s1a" height=3D"28"><img style=3D"display: block;" height=3D"28=
+" width=3D"1" src=3D"https://newslink.spreadshirt.net/img/trans.gif" /></td=
+>
+</tr>
+<tr>
+<td>
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody><tr>
+<td width=3D"15"><img style=3D"display: block;" height=3D"1" width=3D"15" s=
+rc=3D"https://newslink.spreadshirt.net/img/trans.gif" /></td>
+<td>
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody><tr>
+<td style=3D"text-align: left;" class=3D"lh h2" align=3D"center"><font colo=
+r=3D"#191919" face=3D"Montserrat, sans-serif"><span style=3D"font-size: 20p=
+x;"><b>How do I sell it?</b></span></font></td>
+</tr>
+<tr>
+<td height=3D"2"><img style=3D"display: block;" height=3D"2" width=3D"1" sr=
+c=3D"https://newslink.spreadshirt.net/img/trans.gif" /></td>
+</tr>
+<tr>
+<td class=3D"lh" align=3D"center"><font style=3D"font-size: 16px; line-heig=
+ht: 24px; color: rgb(51, 51, 51);" face=3D"Roboto, Arial, Helvetica, sans-s=
+erif"><div style=3D"text-align: left;">Everyone loves a T-Shirt, and this i=
+s no exception. Your customers can have confidence in the durable, heavywei=
+ght fabric. But most importantly it is sustainably sourced and produced, an=
+d with younger generations supporting ethical brands this can really make y=
+ou stand out.</div></font></td>
+</tr>
+<tr>
+<td class=3D"s4" height=3D"32"><br /></td>
+</tr>
+</tbody></table>
+</td>
+<td width=3D"15"><img style=3D"display: block;" height=3D"1" width=3D"15" s=
+rc=3D"https://newslink.spreadshirt.net/img/trans.gif" /></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table> </td>
+</tr><tr>
+<td height=3D"44"><br /></td>
+</tr>
+</tbody></table></td>
+</tr><tr class=3D"sectiongroup_892971093 is_mobile_hideable">
+<td align=3D"center"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+" width=3D"100%">
+<tr>
+<td align=3D"center" class=3D"h2"><font face=3D"Roboto, sans-serif" style=
+=3D"font-size:20px; color:#191919; text-decoration:none; font-weight:normal=
+;"><b>Go back to basics with an Ultra twist!<br><br></b></font></td>
+</tr>
+<tr>
+<td height=3D"4" class=3D"s2"><img src=3D"https://newslink.spreadshirt.net/=
+img/trans.gif" width=3D"1" height=3D"4" style=3D"display:block;"></td>
+</tr>
+<tr>
+<td align=3D"center"><font face=3D"Roboto, sans-serif" style=3D"font-size:1=
+6px; color:#333333;">Your Spreadshop-Team</font> </td>
+</tr>
+<tr>
+<td height=3D"31"><br></td>
+</tr>
+</table></td>
+</tr><tr class=3D"sectiongroup_892971097 is_mobile_hideable">
+<td align=3D"center"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+" width=3D"100%">
+<tr>
+<td height=3D"1" bgcolor=3D"#e5e5e5"><img src=3D"https://newslink.spreadshi=
+rt.net/img/trans.gif" width=3D"1" height=3D"1" style=3D"display:block;"></t=
+d>
+</tr>
+<tr>
+<td height=3D"20"><img src=3D"https://newslink.spreadshirt.net/img/trans.gi=
+f" width=3D"1" height=3D"20" style=3D"display:block;"></td>
+</tr>
+<tr>
+<td align=3D"center">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tr>
+<th align=3D"left" valign=3D"top" class=3D"fl">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"comt">
+<tr>
+<td align=3D"center" valign=3D"top">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tr>
+<td align=3D"center"><a href=3D"https://newslink.spreadshirt.net/u/nrd.php?=
+p=3DWYWoo440FR_277040_3964577_3_3707&ems_l=3D4252804&_esuh=3D_11_73e1be07da=
+91a3328cd33a4d7c24e2b326d330374edc04c61b54b911c8f9981b" target=3D"_blank"><=
+img src=3D"https://newslink.spreadshirt.net/templates/spreadshirt5us/i/f3.p=
+ng" height=3D"25" border=3D"0" style=3D"display:block;"></a></td>
+</tr>
+<tr>
+<td height=3D"10"><img src=3D"https://newslink.spreadshirt.net/img/trans.gi=
+f" width=3D"1" height=3D"10" style=3D"display:block;"></td>
+</tr>
+<tr>
+<td align=3D"center"><a href=3D"https://newslink.spreadshirt.net/u/nrd.php?=
+p=3DWYWoo440FR_277040_3964577_3_3708&ems_l=3D4252804&_esuh=3D_11_b03bfc43fc=
+02c9138d0d192c3d0594b929c05661b8b5e292967fecf96ad1bc79" target=3D"_blank"><=
+font face=3D"Roboto, sans-serif" style=3D"font-size:12px; color:#333333;">F=
+acebook</font></a></td>
+</tr>
+</table>
+</td>
+<td width=3D"26"><br></td>
+<td align=3D"center" valign=3D"top">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tr>
+<td align=3D"center"><a href=3D"https://newslink.spreadshirt.net/u/nrd.php?=
+p=3DWYWoo440FR_277040_3964577_3_3709&ems_l=3D4252804&_esuh=3D_11_1ad6a58fda=
+fade934b6099913a1f08ae445d64466d2897e0c297ccc606ff4d1f" target=3D"_blank"><=
+img src=3D"https://newslink.spreadshirt.net/templates/spreadshirt5us/i/yt2.=
+png" height=3D"25" border=3D"0" style=3D"display:block;"></a></td>
+</tr>
+<tr>
+<td height=3D"10"><img src=3D"https://newslink.spreadshirt.net/img/trans.gi=
+f" width=3D"1" height=3D"10" style=3D"display:block;"></td>
+</tr>
+<tr>
+<td align=3D"center"><a href=3D"https://newslink.spreadshirt.net/u/nrd.php?=
+p=3DWYWoo440FR_277040_3964577_3_3710&ems_l=3D4252804&_esuh=3D_11_38912db5d9=
+f7500305a111f0690308e5c3b760eef19153a2dbd35a3dfa9fca31" target=3D"_blank"><=
+font face=3D"Roboto, sans-serif" style=3D"font-size:12px; color:#333333;">Y=
+ouTube</font></a></td>
+</tr>
+</table>
+</td>
+<td width=3D"26"><br></td>
+<td align=3D"center" valign=3D"top">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tr>
+<td align=3D"center"><a href=3D"https://newslink.spreadshirt.net/u/nrd.php?=
+p=3DWYWoo440FR_277040_3964577_3_3711&ems_l=3D4252804&_esuh=3D_11_41d4a4842b=
+6e40228fdc39797edea513ccc237dc4406d7609b3534af3fdc85b8" target=3D"_blank"><=
+img src=3D"https://newslink.spreadshirt.net/templates/spreadshirt5us/i/t3.p=
+ng" height=3D"25" border=3D"0" style=3D"display:block;"></a></td>
+</tr>
+<tr>
+<td height=3D"10"><img src=3D"https://newslink.spreadshirt.net/img/trans.gi=
+f" width=3D"1" height=3D"10" style=3D"display:block;"></td>
+</tr>
+<tr>
+<td align=3D"center"><a href=3D"https://newslink.spreadshirt.net/u/nrd.php?=
+p=3DWYWoo440FR_277040_3964577_3_3712&ems_l=3D4252804&_esuh=3D_11_aeb62bc05f=
+1ad7ec34a52f3c90dd276de26bbdd7dc26a2788fd80c296bfb5050" target=3D"_blank"><=
+font face=3D"Roboto, sans-serif" style=3D"font-size:12px; color:#333333;">T=
+witter</font></a></td>
+</tr>
+</table>
+</td>
+<td width=3D"26"><br></td>
+<td align=3D"center" valign=3D"top">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tr>
+<td align=3D"center"><a href=3D"https://newslink.spreadshirt.net/u/nrd.php?=
+p=3DWYWoo440FR_277040_3964577_3_3713&ems_l=3D4252804&_esuh=3D_11_c3589615e2=
+466acdeddede7eed50dc0a5983bec9f266d1fb522651d5a391d722" target=3D"_blank"><=
+img src=3D"https://newslink.spreadshirt.net/templates/spreadshirt5us/i/i3.p=
+ng" height=3D"25" border=3D"0" style=3D"display:block;"></a></td>
+</tr>
+<tr>
+<td height=3D"10"><img src=3D"https://newslink.spreadshirt.net/img/trans.gi=
+f" width=3D"1" height=3D"10" style=3D"display:block;"></td>
+</tr>
+<tr>
+<td align=3D"center"><a href=3D"https://newslink.spreadshirt.net/u/nrd.php?=
+p=3DWYWoo440FR_277040_3964577_3_3714&ems_l=3D4252804&_esuh=3D_11_e8cc914c55=
+5a81a77d25efef22efe88ab3630e347f305b370785bc1387b96dbb" target=3D"_blank"><=
+font face=3D"Roboto, sans-serif" style=3D"font-size:12px; color:#333333;">I=
+nstagram</font></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</th>
+<th width=3D"26" class=3D"fl rh20"><img src=3D"https://newslink.spreadshirt=
+.net/img/trans.gif" width=3D"26" height=3D"1" style=3D"display:block;"></th=
+>
+<th align=3D"left" valign=3D"top" class=3D"fl">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"comt">
+<tr>
+<td align=3D"center" valign=3D"top">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tr>
+<td align=3D"center"><a href=3D"https://newslink.spreadshirt.net/u/nrd.php?=
+p=3DWYWoo440FR_277040_3964577_3_3715&ems_l=3D4252804&_esuh=3D_11_d469add291=
+cad2846ea736677d65c3eb823abf545cda782ca17ccd946f3c9aa3" target=3D"_blank"><=
+img src=3D"https://newslink.spreadshirt.net/templates/spreadshirt5us/i/tikt=
+ok.png" height=3D"25" border=3D"0" style=3D"display:block;"></a></td>
+</tr>
+<tr>
+<td height=3D"10"><img src=3D"https://newslink.spreadshirt.net/img/trans.gi=
+f" width=3D"1" height=3D"10" style=3D"display:block;"></td>
+</tr>
+<tr>
+<td align=3D"center"><a href=3D"https://newslink.spreadshirt.net/u/nrd.php?=
+p=3DWYWoo440FR_277040_3964577_3_3716&ems_l=3D4252804&_esuh=3D_11_b5dea10d88=
+627cd0b09087dfa480adf0443f6872b9b5a153bc56c798c60c364e" target=3D"_blank"><=
+font face=3D"Roboto, sans-serif" style=3D"font-size:12px; color:#333333;">T=
+ikTok</font></a></td>
+</tr>
+</table>
+</td>
+<td width=3D"26"><br></td>
+<td align=3D"center" valign=3D"top">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tr>
+<td align=3D"center"><a href=3D"https://newslink.spreadshirt.net/u/nrd.php?=
+p=3DWYWoo440FR_277040_3964577_3_3717&ems_l=3D4252804&_esuh=3D_11_9e2f3ebd08=
+bb7de70bf6e80fad854890bf2734984b932df983b72e3d428f4e85" target=3D"_blank"><=
+img src=3D"https://newslink.spreadshirt.net/templates/spreadshirt5us/i/blog=
+3.png" height=3D"25" border=3D"0" style=3D"display:block;" class=3D"comt"><=
+/a></td>
+</tr>
+<tr>
+<td height=3D"10"><img src=3D"https://newslink.spreadshirt.net/img/trans.gi=
+f" width=3D"1" height=3D"10" style=3D"display:block;"></td>
+</tr>
+<tr>
+<td align=3D"center"><a href=3D"https://newslink.spreadshirt.net/u/nrd.php?=
+p=3DWYWoo440FR_277040_3964577_3_3718&ems_l=3D4252804&_esuh=3D_11_2095bffdc7=
+bbbf9000e3a22b2aa746b02e6bf0ef97c2e73977560629b3c23b61" target=3D"_blank"><=
+font face=3D"Roboto, sans-serif" style=3D"font-size:12px; color:#333333;">B=
+log</font></a></td>
+</tr>
+</table>
+</td>
+<td width=3D"26"><br></td>
+<td align=3D"center" valign=3D"top">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tr>
+<td align=3D"center" valign=3D"top"><a href=3D"https://newslink.spreadshirt=
+.net/u/nrd.php?p=3DWYWoo440FR_277040_3964577_3_3719&ems_l=3D4252804&_esuh=
+=3D_11_cb8a9b5e44baa76394fb646dddc016ece9b740bc185f8ec84ac7bf0a79ce5841" ta=
+rget=3D"_blank"><img src=3D"https://newslink.spreadshirt.net/templates/spre=
+adshirt5us/i/forum3.png" height=3D"25" border=3D"0" style=3D"display:block;=
+" class=3D"comt"></a></td>
+</tr>
+<tr>
+<td height=3D"10"><img src=3D"https://newslink.spreadshirt.net/img/trans.gi=
+f" width=3D"1" height=3D"10" style=3D"display:block;"></td>
+</tr>
+<tr>
+<td align=3D"center"><a href=3D"https://newslink.spreadshirt.net/u/nrd.php?=
+p=3DWYWoo440FR_277040_3964577_3_3720&ems_l=3D4252804&_esuh=3D_11_6ad1c44e41=
+841b6f26d6bd12616e4a2e3f179197d2fba700c20ec7ae1d0a0bb0" target=3D"_blank"><=
+font face=3D"Roboto, sans-serif" style=3D"font-size:12px; color:#333333;">F=
+orum</font></a></td>
+</tr>
+</table>
+</td>
+<td width=3D"26"><br></td>
+<td align=3D"center" valign=3D"top">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tr>
+<td align=3D"center" valign=3D"top"><a href=3D"https://newslink.spreadshirt=
+.net/u/nrd.php?p=3DWYWoo440FR_277040_3964577_3_3738&ems_l=3D4252804&_esuh=
+=3D_11_8d211fcdd6ca2d879b6af3df60327e615f76f984de9d6bfaab116ea27b788e8e" ta=
+rget=3D"_blank"><img src=3D"https://newslink.spreadshirt.net/templates/spre=
+adshirt5us/i/help3.png" height=3D"25" border=3D"0" style=3D"display:block;"=
+ class=3D"comt"></a></td>
+</tr>
+<tr>
+<td height=3D"10"><img src=3D"https://newslink.spreadshirt.net/img/trans.gi=
+f" width=3D"1" height=3D"10" style=3D"display:block;"></td>
+</tr>
+<tr>
+<td align=3D"center"><a href=3D"https://newslink.spreadshirt.net/u/nrd.php?=
+p=3DWYWoo440FR_277040_3964577_3_3739&ems_l=3D4252804&_esuh=3D_11_598b8c4500=
+f380b9adaa4f287808dfbfe476dfb64b1f07babf33ac5fc1f209ea" target=3D"_blank"><=
+font face=3D"Roboto, sans-serif" style=3D"font-size:12px; color:#333333;">H=
+elp</font></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</th>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td height=3D"20"><img src=3D"https://newslink.spreadshirt.net/img/trans.gi=
+f" width=3D"1" height=3D"20" style=3D"display:block;"></td>
+</tr>
+<tr>
+<td height=3D"1" bgcolor=3D"#e5e5e5"><img src=3D"https://newslink.spreadshi=
+rt.net/img/trans.gif" width=3D"1" height=3D"1" style=3D"display:block;"></t=
+d>
+</tr>
+<tr>
+<td height=3D"30"><br></td>
+</tr>
+</table></td>
+</tr><tr class=3D"sectiongroup_892971098 is_mobile_hideable">
+<td align=3D"center"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+" width=3D"100%">
+<tr>
+<td align=3D"center"><font face=3D"Roboto, sans-serif" style=3D"font-size:1=
+2px; color:#000000;">SpreadStats App</font></td>
+</tr>
+<tr>
+<td height=3D"22"><br></td>=09</tr>
+<tr>
+<td align=3D"center">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tr>
+<td align=3D"center"><a href=3D"https://newslink.spreadshirt.net/u/nrd.php?=
+p=3DWYWoo440FR_277040_3964577_30_3723&ems_l=3D4252804&_esuh=3D_11_872dac152=
+dd2f5bb02896aecf9d7094f7b4c27b1e7602ef8fe875212bfa6d46c" target=3D"_blank">=
+<img src=3D"https://newslink.spreadshirt.net/templates/spreadshirt5us/i/itu=
+nes1_en.png" width=3D"82" height=3D"30" border=3D"0" style=3D"display:block=
+;" class=3D"comt"></a></td>
+<td width=3D"17"><br></td>
+<td align=3D"center"><a href=3D"https://newslink.spreadshirt.net/u/nrd.php?=
+p=3DWYWoo440FR_277040_3964577_30_3724&ems_l=3D4252804&_esuh=3D_11_d1d0086a3=
+dda05a7be7ac32a9691f05ad4452d4d3ee559cf16cd1a4f8f2f8b7e" target=3D"_blank">=
+<img src=3D"https://newslink.spreadshirt.net/templates/spreadshirt5us/i/gpl=
+ay1.png" width=3D"101" height=3D"30" border=3D"0" style=3D"display:block;" =
+class=3D"comt"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td height=3D"30"><br></td>=09</tr>
+</table></td>
+</tr><tr class=3D"sectiongroup_892971100 is_mobile_hideable">
+<td align=3D"center"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+" width=3D"100%">=09<tr>=09<td align=3D"center" style=3D"padding:0 15px;"><=
+font face=3D"Roboto, sans-serif" style=3D"font-size:12px; color:#999999;">Y=
+ou receive this regular newsletter because you have registered with Spreads=
+hirt as a Partner. If you do not want to receive this newsletter in the fut=
+ure, you can <a href=3D"https://www.spreadshirt.com/partner-preference-cent=
+er?emailToken=3D1A346CE989FC2730A09096827D6E85E4D8C912A3BFBFE9BE46A9FED2894=
+51794" target=3D"_blank" style=3D"font-weight:normal; text-decoration:none;=
+ color:#ff7c37;"><font face=3D"Roboto, sans-serif" style=3D"font-size:12px;=
+ color:#ff7c37;">unsubscribe here</font></a>. You will continue to receive =
+important general and legal information. If you do not want to receive any =
+more notices, you will have to cancel your Spreadshirt shop. Your account c=
+an be <a href=3D"https://newslink.spreadshirt.net/u/nrd.php?p=3DWYWoo440FR_=
+277040_3964577_20_3740&ems_l=3D4252804&_esuh=3D_11_669b90a81ead05d709a9d354=
+b27205edbd7ee3ff2c1c5202295b5d2cb4c34d65" target=3D"_blank" style=3D"font-w=
+eight:normal; text-decoration:none; color:#ff7c37;"><font face=3D"Roboto, s=
+ans-serif" style=3D"font-size:12px; color:#ff7c37;">cancelled here</font></=
+a>.</font></td>=09</tr>=09<tr>=09<td height=3D"22"><br></td>=09</tr>=09<tr>=
+=09<td align=3D"center" style=3D"padding:0 15px;"><font face=3D"Roboto, san=
+s-serif" style=3D"font-size:12px; color:#999999;">To make sure that the new=
+sletter always reaches your inbox, please add <a href=3D"mailto:partner-new=
+s@reply.spreadshirt.net" style=3D"text-decoration:none; font-weight:normal;=
+ color:#ff7c37;"><font face=3D"Roboto, sans-serif" style=3D"font-size:12px;=
+ color:#ff7c37;">partner-news@reply.spreadshirt.net</font></a> to your cont=
+acts.</font></td>=09</tr>=09<tr>=09<td height=3D"22"><br></td>=09</tr>=09<t=
+r>=09<td align=3D"center" style=3D"padding:0 15px;"><font face=3D"Roboto, s=
+ans-serif" style=3D"font-size:12px; color:#999999;">Spreadshirt, Inc. | a D=
+elaware Corporation | 1572 Roseytown Road | Greensburg | PA 15601 | E-Mail =
+<a href=3D"mailto:verify@spreadshirt.com" style=3D"text-decoration:none; fo=
+nt-weight:normal; color:#ff7c37;"><font face=3D"Roboto, sans-serif" style=
+=3D"font-size:12px; color:#ff7c37;">verify@spreadshirt.com</font></a> | <a =
+href=3D"https://newslink.spreadshirt.net/u/nrd.php?p=3DWYWoo440FR_277040_39=
+64577_20_3741&ems_l=3D4252804&_esuh=3D_11_5eaa94f16d1f1a025dc34f5dfc6a7bec8=
+4204d6a1c0788a36890017b5cb7c0e2" target=3D"_blank" style=3D"text-decoration=
+:none; font-weight:normal; color:#ff7c37;"><font face=3D"Roboto, sans-serif=
+" style=3D"font-size:12px; color:#ff7c37;">DMCA Notice</font></a> | <a href=
+=3D"https://newslink.spreadshirt.net/u/nrd.php?p=3DWYWoo440FR_277040_396457=
+7_20_3742&ems_l=3D4252804&_esuh=3D_11_e56ecc7feae6f6afbec875b94a9a564cb68e5=
+0cb51b1eb8ce8f9da9427ea5522" target=3D"_blank" style=3D"text-decoration:non=
+e; font-weight:normal; color:#ff7c37;"><font face=3D"Roboto, sans-serif" st=
+yle=3D"font-size:12px; color:#ff7c37;">Privacy Policy</font></a></font></td=
+>=09</tr>=09<tr>=09<td height=3D"80"><br></td>=09</tr>
+</table></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+----=_---NextPart--=_-2tCRCdbeHZ--

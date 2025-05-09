@@ -1,0 +1,191 @@
+Return-Path: <zoch@iwt-bremen.de>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id JPMPGAxRZGOGehkA3R2AvA
+	(envelope-from <zoch@iwt-bremen.de>)
+	for <contact@fiidewgal.com>; Fri, 04 Nov 2022 00:38:52 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4N3Kvw00SZz1sRS
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=iwt-bremen.de header.i=@iwt-bremen.de header.b="R+Sp7xK+"
+X-N0C-MailScanner-eFa-Watermark: 1668123529.58107@OCy1EZ1DdaXZwzU8xBg0Vg
+X-N0C-MailScanner-eFa-From: zoch@iwt-bremen.de
+X-N0C-MailScanner-eFa-SpamScore: ssss
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 33355405445F.A6985
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from perikles.iwt.uni-bremen.de ([134.102.245.7] [134.102.245.7])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 33355405445F
+	for <contact@fiidewgal.com>; Fri,  4 Nov 2022 00:38:48 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 33355405445F
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=iwt-bremen.de
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=iwt-bremen.de
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 33355405445F
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; secure) header.d=iwt-bremen.de header.i=@iwt-bremen.de header.a=rsa-sha256 header.s=201911 header.b=R+Sp7xK+
+Received: from totally-spain.com (unknown [216.24.216.241])
+	by perikles.iwt.uni-bremen.de (Postfix) with ESMTPSA id 88C157EA41A
+	for <contact@fiidewgal.com>; Fri,  4 Nov 2022 00:38:47 +0100 (CET)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=iwt-bremen.de;
+	s=201911; t=1667518727;
+	bh=N+AW+tit3wbBS2qqadjwH/RyeSqwRa5XUyBu9/RsexQ=;
+	h=Reply-To:From:To:Subject:Date:From;
+	b=R+Sp7xK+VKFVsgfDjUBSXwp8D7aGDIB+sAm6OYthchFLa3TbUwdA31DFtbq5qN0xG
+	 dr+a3p9GLWxkVtrllpue8pSL2OvQzb4wtu4wIQmOcDhK+KZxLU33AL82wVk6lVOOth
+	 MxQkY68wE0CnkdP45BhG3b4ceWb5GOjuu+f0SG60YQUJebhndmJrBJuvKc2Uo3/z2l
+	 hahu5wp/Hr4Q17j4QjzsJRdX/9YIiDvhQykEQhoQ1+r5nk8yGh8z8eXNDXR4qOle/h
+	 vZtQXMRoJGyCcET/3qBANvSJlyIRkRV2w50Lu6IUleAYcSHWisfUtFZDsOMZk7cGVJ
+	 uxn9XauuQnQrA==
+Message-ID: <8d61a50efa3e141f38521bb044919b90b09ad368@iwt-bremen.de>
+Reply-To: "zoch@iwt-bremen.de" <zoch@iwt-bremen.de>
+From: "zoch@iwt-bremen.de" <zoch@iwt-bremen.de>
+To: contact@fiidewgal.com
+Subject: Website Has Been Hacked
+Date: Thu, 3 Nov 2022 16:38:47 -0700
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="812b62c93df9d71c3f95dc66b2765fab1b22"
+X-N0C-Node-IP: 185.221.182.45
+
+--812b62c93df9d71c3f95dc66b2765fab1b22
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Your Site Has Been CompromisedYour Site Has Been Hacked
+
+PLEASE F0RWARD THIS EMAIL T0 SoME0NE IN YoUR C0MPANY WH0 iS ALLoWED T0 MA=
+KE IMPORTANT DECISIoNS!
+
+We have hacked your website https://www.fiidewgal.com and extracted y0ur =
+databases.
+
+H0w did this happen?
+
+our team has found a vulnerability within your site that we were able t0 =
+expl0it. After finding the vulnerability we were able to get your databas=
+e credentials and extract y0ur entire database and move the information t=
+0 an offshore server.
+
+What d0es this mean?
+
+We will systematically go thr0ugh a series of steps 0f t0tally damaging y=
+0ur reputati0n. First your database will be leaked or s0ld t0 the highest=
+ bidder which they will use with whatever their intentions are. Next if t=
+here are e-mails f0und they will be e-mailed that their information has b=
+een s0ld 0r leaked and your site https://www.fiidewgal.com was at fault t=
+husly damaging y0ur reputati0n and having angry customers/ass0ciates with=
+ whatever angry customers/ass0ciates d0. Lastly any links that y0u have i=
+ndexed in the search engines will be de-indexed based 0ff of blackhat tec=
+hniques that we used in the past to de-index our targets.
+
+H0w d0 i stop this?
+
+We are willing t0 refrain fr0m destr0ying y0ur site=E2=80=99s reputati0n =
+for a small fee. The current fee is $3000 in bitcoins (0.15 BTC).
+
+Please send the bitcoin t0 the following Bitcoin address (Copy and paste =
+as it is case sensitive):
+
+38KePn84UwedupCWjVejiRHQ6Zjse9Mnys
+
+=C2=A00nce y0u have paid we will aut0matically get informed that it was y=
+our payment. Please note that y0u have to make payment within 3 days afte=
+r opening this e-mail or the database leak, e-mails dispatched, and de-in=
+dex 0f your site WiLL start!
+
+How do i get Bitcoins?
+
+Y0u can easily buy bitcoins via several websites 0r even 0ffline from a B=
+itcoin-ATM.
+
+What if i don=E2=80=99t pay?
+
+if y0u decide n0t to pay, we will start the attack at the indicated date =
+and uphold it until y0u do, there=E2=80=99s n0 c0unter measure to this, y=
+ou will 0nly end up wasting m0re m0ney trying to find a s0luti0n. We will=
+ c0mpletely destr0y y0ur reputation amongst g00gle and y0ur cust0mers.
+
+This is not a h0ax, d0 not reply t0 this email, d0n=E2=80=99t try to reas=
+on 0r neg0tiate, we will n0t read any replies. once you have paid we will=
+ stop what we were d0ing and you will never hear fr0m us again!
+
+Please note that Bitcoin is anonymous and no one will find 0ut that y0u h=
+ave c0mplied. Finally don't reply as this email is unmonit0red.
+
+--812b62c93df9d71c3f95dc66b2765fab1b22
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+</head>
+<body bgColor=3D"#ffffff">
+<div>Your Site Has Been CompromisedYour Site Has Been Hacked</div>
+<div>&nbsp;</div>
+<div>PLEASE F0RWARD THIS EMAIL T0 SoME0NE IN YoUR C0MPANY WH0 iS ALLoWED =
+T0 MAKE IMPORTANT DECISIoNS!</div>
+<div>&nbsp;</div>
+<div>We have hacked your website https://www.fiidewgal.com and extracted =
+y0ur databases.</div>
+<div>&nbsp;</div>
+<div>H0w did this happen?</div>
+<div>&nbsp;</div>
+<div>our team has found a vulnerability within your site that we were abl=
+e t0 expl0it. After finding the vulnerability we were able to get your da=
+tabase credentials and extract y0ur entire database and move the informat=
+ion t0 an offshore server.</div>
+<div>&nbsp;</div>
+<div>What d0es this mean?</div>
+<div>&nbsp;</div>
+<div>We will systematically go thr0ugh a series of steps 0f t0tally damag=
+ing y0ur reputati0n. First your database will be leaked or s0ld t0 the hi=
+ghest bidder which they will use with whatever their intentions are. Next=
+ if there are e-mails f0und they will be e-mailed that their information =
+has been s0ld 0r leaked and your site https://www.fiidewgal.com was at fa=
+ult thusly damaging y0ur reputati0n and having angry customers/ass0ciates=
+ with whatever angry customers/ass0ciates d0. Lastly any links that y0u h=
+ave indexed in the search engines will be de-indexed based 0ff of blackha=
+t techniques that we used in the past to de-index our targets.</div>
+<div>&nbsp;</div>
+<div>H0w d0 i stop this?</div>
+<div>&nbsp;</div>
+<div>We are willing t0 refrain fr0m destr0ying y0ur site=E2=80=99s reputa=
+ti0n for a small fee. The current fee is $3000 in bitcoins (0.15 BTC).</d=
+iv>
+<div>&nbsp;</div>
+<div>Please send the bitcoin t0 the following Bitcoin address (Copy and p=
+aste as it is case sensitive): </div>
+<div>&nbsp;</div>
+<div>38KePn84UwedupCWjVejiRHQ6Zjse9Mnys</div>
+<div>&nbsp;</div>
+<div>&nbsp;0nce y0u have paid we will aut0matically get informed that it =
+was your payment. Please note that y0u have to make payment within 3 days=
+ after opening this e-mail or the database leak, e-mails dispatched, and =
+de-index 0f your site WiLL start!</div>
+<div>&nbsp;</div>
+<div>How do i get Bitcoins?</div>
+<div>&nbsp;</div>
+<div>Y0u can easily buy bitcoins via several websites 0r even 0ffline fro=
+m a Bitcoin-ATM. </div>
+<div>&nbsp;</div>
+<div>What if i don=E2=80=99t pay?</div>
+<div>&nbsp;</div>
+<div>if y0u decide n0t to pay, we will start the attack at the indicated =
+date and uphold it until y0u do, there=E2=80=99s n0 c0unter measure to th=
+is, you will 0nly end up wasting m0re m0ney trying to find a s0luti0n. We=
+ will c0mpletely destr0y y0ur reputation amongst g00gle and y0ur cust0mer=
+s.</div>
+<div>&nbsp;</div>
+<div>This is not a h0ax, d0 not reply t0 this email, d0n=E2=80=99t try to=
+ reason 0r neg0tiate, we will n0t read any replies. once you have paid we=
+ will stop what we were d0ing and you will never hear fr0m us again!</div=
+>
+<div>&nbsp;</div>
+<div>Please note that Bitcoin is anonymous and no one will find 0ut that =
+y0u have c0mplied. Finally don't reply as this email is unmonit0red.</div=
+></body></html>
+
+--812b62c93df9d71c3f95dc66b2765fab1b22--

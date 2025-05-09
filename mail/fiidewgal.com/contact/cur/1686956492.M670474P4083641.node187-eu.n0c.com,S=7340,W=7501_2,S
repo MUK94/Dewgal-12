@@ -1,0 +1,161 @@
+Return-Path: <bounces+2350519-75fb-contact=fiidewgal.com@sendgrid.net>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id AOrjJ8zpjGS5Tz4A3R2AvA
+	(envelope-from <bounces+2350519-75fb-contact=fiidewgal.com@sendgrid.net>)
+	for <contact@fiidewgal.com>; Sat, 17 Jun 2023 01:01:32 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4QjZR03sxrz34SDmp
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=sendgrid.net header.i=@sendgrid.net header.b="JAhke3Qx"
+X-N0C-MailScanner-eFa-Watermark: 1687561288.60877@+wNCGQDmJMJZgsY86TmIGA
+X-N0C-MailScanner-eFa-From: bounces+2350519-75fb-contact=fiidewgal.com@sendgrid.net
+X-N0C-MailScanner-eFa-SpamScore: ss
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 33FA7401A32D.AFC0D
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from wrqvnzwt.outbound-mail.sendgrid.net ([149.72.46.151] [149.72.46.151])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 33FA7401A32D
+	for <contact@fiidewgal.com>; Sat, 17 Jun 2023 01:01:27 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 33FA7401A32D
+Authentication-Results: node187-eu.n0c.com; dmarc=fail (p=quarantine dis=none) header.from=ezoic.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=sendgrid.net
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 33FA7401A32D
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (1024-bit key; unprotected) header.d=sendgrid.net header.i=@sendgrid.net header.a=rsa-sha256 header.s=smtpapi header.b=JAhke3Qx
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.net;
+	h=subject:from:mime-version:to:content-type:content-transfer-encoding:
+	cc:content-type:from:subject:to;
+	s=smtpapi; bh=V6lfwyZd3bxmAkag/HxfZAovSvvwPrzGyuAsqdXnrJg=;
+	b=JAhke3QxwnYvx+FZQp+6uO2nW9KTpnB6oHdLAPt+bZRftOG07agq1CYB1WQtszlq9WLf
+	YU8fdnoYYF466VKhMq7oD8DgIRkUza9Qc5ZB0Ey+CRTxPTOh8B0HFaeV5ujyMImp3b3S9h
+	aya69XsZNXloFm+I/24cpTKIalo0OMR+Q=
+Received: by filterdrecv-canary-78ff49ff78-6jdhb with SMTP id filterdrecv-canary-78ff49ff78-6jdhb-1-648CE9C0-6B
+        2023-06-16 23:01:20.842617891 +0000 UTC m=+3194502.836552137
+Received: from [127.0.0.1] (unknown)
+	by geopod-ismtpd-3 (SG) with ESMTP
+	id MV9IC7wvToGnik5h86eA8A
+	for <contact@fiidewgal.com>;
+	Fri, 16 Jun 2023 23:01:20.557 +0000 (UTC)
+Subject: You are approved! Start earning today.
+From: Ezoic Affiliate Program <affiliates@ezoic.com>
+X-MC-Tags: Triggered mail
+Message-ID: <2e842aa2b03aec6a94ba3c34b5fb3f6a@ezoic.com>
+MIME-Version: 1.0
+Date: Fri, 16 Jun 2023 23:01:20 +0000 (UTC)
+X-SG-EID: 
+ =?us-ascii?Q?KCkJDt+t8LaAcrgsthh2CeOGqSeDVIy1F9+XsEg4roBNQL4PWSSpkT77mu6PD2?=
+ =?us-ascii?Q?dwh6wb8R68NnRhZ5nA8UvHIA8mkUnxiBq1wgZ67?=
+ =?us-ascii?Q?Jxa6EooVstlqsBDTxw3Ca6eNKt0OW=2FVdhGDUHtT?=
+ =?us-ascii?Q?=2FRrEraFTmpbdbB3+jCjfJV+B9Sz6cb9jm7TgbRv?=
+ =?us-ascii?Q?8sQnamrkRCElG5yEgbglveJneA1VdidUR8mYnpG?=
+ =?us-ascii?Q?0c10y4Z258ze35D5Bb6ojkXl5k9UJsJPH9KqrGt?=
+ =?us-ascii?Q?FSk6yMm=2F99lCKCFOY1mwg=3D=3D?=
+To: contact@fiidewgal.com
+X-Entity-ID: L5GykQzhRmS5d33UwdSVnw==
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html lang=3D"en">
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+">
+    <meta name=3D"viewport" content=3D"initial-scale=3D1.0">
+    <meta name=3D"format-detection" content=3D"telephone=3Dno">
+
+    <title></title>
+    <style type=3D"text/css">
+
+        /* Resets: see reset.css for details */
+        .ReadMsgBody { width: 100%; background-color: #ebebeb;}
+        .ExternalClass {width: 100%; background-color: #ebebeb;}
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalCla=
+ss font, .ExternalClass td, .ExternalClass div {line-height:100%;}
+        body {-webkit-text-size-adjust:none; -ms-text-size-adjust:none;}
+        body {margin:0; padding:0;}
+        table {border-spacing:0;}
+        table td {border-collapse:collapse;}
+        .yshortcuts a {border-bottom: none !important;}
+
+
+        /* Constrain email width for small screens */
+        @media screen and (max-width: 600px) {
+            table[class=3D"container"] {
+                width: 95% !important;
+            }
+        }
+
+        /* Give content more room on mobile */
+        @media screen and (max-width: 480px) {
+            td[class=3D"container-padding"] {
+                padding-left: 12px !important;
+                padding-right: 12px !important;
+            }
+         }
+
+    </style>
+</head>
+<body style=3D"margin:0; padding:10px 0; height: 100%;" bgcolor=3D"#ffffff"=
+ leftmargin=3D"0" topmargin=3D"0" marginwidth=3D"0" marginheight=3D"0">
+<table border=3D"0" width=3D"100%" height=3D"100%" cellpadding=3D"0" cellsp=
+acing=3D"0" bgcolor=3D"#ffffff" style=3D"height: 100%">
+  <tr>
+    <td align=3D"center" valign=3D"top" bgcolor=3D"#ffffff" style=3D"backgr=
+ound-color: #ffffff;">
+      <table border=3D"0" width=3D"600" cellpadding=3D"0" cellspacing=3D"0"=
+ class=3D"container" bgcolor=3D"#ffffff">
+        <tr>
+            <td align=3D"center" valign=3D"top" bgcolor=3D"#ffffff" style=
+=3D"background-color: #ffffff;">
+                <br><br>
+                <table border=3D"0" width=3D"100%" cellpadding=3D"0" cellsp=
+acing=3D"0" class=3D"container">
+                    <tr>
+                        <td style=3D"text-align:center">
+                                                        <img src=3D"https:/=
+/s3-eu-west-1.amazonaws.com/tap-user-uploads/5697f93c7ce39.png" style=3D"ma=
+x-width:450px; max-height: 100px;"/>
+                            <br><br>
+                                                    </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+          <td class=3D"container-padding" bgcolor=3D"#ffffff" style=3D"back=
+ground-color: #ffffff; padding-left: 30px; padding-right: 30px; font-size: =
+14px; line-height: 20px; font-family: Helvetica, sans-serif; color: #333; b=
+order: 2px solid #ebebeb;">
+            <br>
+            <p><span>Congrats! You were just approved for the Ezoic affilia=
+te program! Now you can earn 3% of the ad revenue for all the people you re=
+fer and use Ezoic products.</span></p><p><span>A quick guide email is on th=
+e way!</span></p><p><span>Your referral link: </span>https://ezoic.com/?tap=
+_a=3D6182-5778c2&tap_s=3D3923997-78f924<span></span></p><p><span>Note: You =
+cannot promote Ezoic through paid ads (PPC) like Google Adwords.</span></p>
+<br>
+          </td>
+        </tr>
+                <tr>
+          <td bgcolor=3D"#ffffff" style=3D"background-color: #ffffff; font-=
+size: 12px; text-align: right; line-height: 30px; vertical-align: middle; f=
+ont-family: Helvetica, sans-serif;">
+            <a href=3D"https://affiliates.ezoic.com/opt-out/?s=3DRTYrdFhIcm=
+5MY0hVRGpVM08xYVZuRXlGT1hVN0dtZlhkeCtuUFl4a0o5az0=3D" style=3D"color: #999;=
+">Unsubscribe</a>
+          </td>
+        </tr>
+              </table>
+      <br><br>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+

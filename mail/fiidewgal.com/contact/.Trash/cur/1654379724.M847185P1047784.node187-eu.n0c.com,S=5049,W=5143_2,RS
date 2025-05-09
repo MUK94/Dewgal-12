@@ -1,0 +1,94 @@
+Return-Path: <diamhawa11@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id oXNuMszUm2Lo/A8A3R2AvA
+	(envelope-from <diamhawa11@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 04 Jun 2022 23:55:24 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4LFtpg4gQ3z34SDmg
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="M+pGMSaz"
+X-N0C-MailScanner-eFa-Watermark: 1654984520.7578@YGAldJW79H7u/E8s8rYBWA
+X-N0C-MailScanner-eFa-From: diamhawa11@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 86974406297C.ACA82
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-qt1-f173.google.com ([209.85.160.173] [209.85.160.173])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 86974406297C
+	for <contact@fiidewgal.com>; Sat,  4 Jun 2022 23:54:48 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 86974406297C
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 86974406297C
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="M+pGMSaz"
+Received: by mail-qt1-f173.google.com with SMTP id p8so8081406qtx.9
+        for <contact@fiidewgal.com>; Sat, 04 Jun 2022 14:54:48 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=vQawH307wfgijM9ucm6IaQELgQgg958LVmVB8tmfLhw=;
+        b=M+pGMSazWz4Y7QfFjXkn/EMSIuIsfgV5dipHZg248WeALNjGe6kjAHpjJNO0a1ioI6
+         g3rvwdocIO64xlad+pOhsRPuhDdKJsmiMFVnz3GbrkdjPxB7dvUVgeO9sQ2RUZgYoSEV
+         tCDy0fBUbeNnGTyKH9I2xV+iX6QfKApjkNKDGUlac7uHm6ytu5IXb6wXByMElXv7EP1V
+         zNhqkkcOI+hMU2eVrJNqvMXfZ+ZBV/zGDQes/Hq+Pm6UvtwTybFEyAindUwf94f4Jy4u
+         caHO9WMICxb8ZsxVvcC+hHhLYsqoLn/TH29tOPpeDl2/6dKsoRxAyJ0cfO5OcJQ1Gir0
+         CGRg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=vQawH307wfgijM9ucm6IaQELgQgg958LVmVB8tmfLhw=;
+        b=k5ksklFpQkTZjaitX2K9799Y3+ka5atjb7QI/12lMRz4nPSzqrXchjP4xnJ0vNJUph
+         uTWZAU6xFUEjvUDmXLm1AA+5H5qyOMUGda2jiZ7KUEJZpXNb8cptg0NXfSefs+FzOoCb
+         nfhtqa8J82GECbRbLPaUYTnnWwTc1nRErMsLeYL16chLDg66eUOcF7EpaZcHwvibpK4e
+         XA/jAoGWa+F3A+xSHLIVwfKzjBD7IDgMGM4KHb7UL2fj1TbOfVDMIJVC6Px5l4NWAvwN
+         CV+mphV1V8a/J1zOIcar72DVxa0iWTBZ3k+UKcl0O/se0bRsBA9WqFNyI++uw8829xq0
+         NxmA==
+X-Gm-Message-State: AOAM532rZ821Tsul547eFXn0/r5tzIDawpbplMcCKzD2ZVmEgqwCudCB
+	6KXH2j43FeD+dTFQd2KABWjRsbZwe/scct1ipAgxoKv6
+X-Google-Smtp-Source: ABdhPJxRsKnfDR4vO/7RJWRAjavHsvkVXXxR52aH8QO9SbXgGRvuYhcvZaVaupBZjW3UpytlsLszanZSO5E1PKpLGMA=
+X-Received: by 2002:a05:622a:612:b0:2f3:d4af:c2fc with SMTP id
+ z18-20020a05622a061200b002f3d4afc2fcmr12733804qta.185.1654379687181; Sat, 04
+ Jun 2022 14:54:47 -0700 (PDT)
+MIME-Version: 1.0
+From: Dia M hawa <diamhawa11@gmail.com>
+Date: Sat, 4 Jun 2022 21:54:35 +0000
+Message-ID: <CAO4A=1NzXBN1duxdkvB-pB-6FqpcG8umvLApKjPTwunGf9JH4Q@mail.gmail.com>
+Subject: Mariage
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000009402ca05e0a64901"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000009402ca05e0a64901
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Salut
+C'est un plaisir pour moi de faire partie de cette association et avoir
+c'est dont je cherche tant si Dieu le veut biensur
+Mon nom: Mamadou Hawa Dia, jai 25ans, je suis =C3=89tudiante en comptabilit=
+=C3=A9 L2
+je r=C3=A9side =C3=A0 Conakry.
+Contact: 00224 627 134 329
+=C3=89mail: diamhawa11@gmail.com
+                                               Merci =F0=9F=99=8F
+
+--0000000000009402ca05e0a64901
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Salut=C2=A0<div dir=3D"auto">C&#39;est un plaisir pour mo=
+i de faire partie de cette association et avoir c&#39;est dont je cherche t=
+ant si Dieu le veut biensur=C2=A0</div><div dir=3D"auto">Mon nom: Mamadou H=
+awa Dia, jai 25ans, je suis =C3=89tudiante en comptabilit=C3=A9 L2 je r=C3=
+=A9side =C3=A0 Conakry.</div><div dir=3D"auto">Contact: 00224 627 134 329</=
+div><div dir=3D"auto">=C3=89mail: <a href=3D"mailto:diamhawa11@gmail.com">d=
+iamhawa11@gmail.com</a>=C2=A0</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0Me=
+rci =F0=9F=99=8F</div><div dir=3D"auto"><br></div></div>
+
+--0000000000009402ca05e0a64901--

@@ -1,0 +1,77 @@
+Return-Path: <bb7228770@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id tKGJIe9ltGOv3hEA3R2AvA
+	(envelope-from <bb7228770@gmail.com>)
+	for <contact@fiidewgal.com>; Tue, 03 Jan 2023 18:29:19 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NmfqL2vVrz3F9l
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="St2inok/"
+X-N0C-MailScanner-eFa-Watermark: 1673371752.91432@V3XJPyJgmJLmtJ74QoKu7g
+X-N0C-MailScanner-eFa-From: bb7228770@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 4D13840031E0.A3F39
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-wr1-f48.google.com ([209.85.221.48] [209.85.221.48])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 4D13840031E0
+	for <contact@fiidewgal.com>; Tue,  3 Jan 2023 18:28:41 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 4D13840031E0
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 4D13840031E0
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=St2inok/
+Received: by mail-wr1-f48.google.com with SMTP id d9so1719017wrp.10
+        for <contact@fiidewgal.com>; Tue, 03 Jan 2023 09:28:41 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=kezRBpW94MbRij0cV5eH5lLUjV1aMylG9+y+u20+sVA=;
+        b=St2inok/A4E4ayKle9px6kPns/TijWGGkUxH4PjnU/99GPt+035VnJPwKK1gLw1VVO
+         VH9jEqZT6QO3KLJ5tglOcueLcHToQAVbcPBlo4LlWWttGCWHMlt5snZVlYSFg7r8yxpB
+         D/9pE1OdIMAt4SHEHU/o2p6svyF8drokzMSSDXPfpAWYLF3rcighpHYzRsmf/zTmp70X
+         sznsLwrxQdv+M6/YQjkM+StHiLaxRmA1WQNEgui9l46VqeMZbiNRkXof9JDlJGs5xvBd
+         rBsh572z+uqjyiAnz+glsnprzrkGJ/r1UsP4QViEovcflGu9ONg7OCGXzJA2O7reAnpy
+         05iA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=kezRBpW94MbRij0cV5eH5lLUjV1aMylG9+y+u20+sVA=;
+        b=TtL17pTjJLKCQ+5Uy/9f40IUvQQryahZTWpdfGL5r6R4ub6+sS5UvBe0VTJfmYe22B
+         /pkDDlivnXnw4nHqd6iowe7GIdJF51R/9ym6rpEAgAnBVfFWdZB8eVP3elIOs2SVtZzV
+         1j+Gsr2RaMQKCHIM0e1JKTufwQvSCeBMyYokPqBCfgcYTHF9bQ4FLLQ9B/sFlB1dctNG
+         VfCDVgUe8KlfexVLlT4iLKkb1ZI9zzkMvpVUvPzBwz0x9q0w9Rf5xGFbndRO7/6PHvVK
+         cPDJMohqL80i2f5lXjGYBOYIKVJfeEI3UK4U3WQnky1bE+NrD+O1mZM2A2Zpe+DDakh7
+         kBZQ==
+X-Gm-Message-State: AFqh2krdpxEIRQl4BsXrL00ISIyfKKLsf/s2ZJKVcZyaUKXPFM4bLmHM
+	SrOc5tyL5O2jB42IvhxDJVaYsMnKiYO7g3WmFccMIerN
+X-Google-Smtp-Source: AMrXdXvDqZg31HzY27u7S2jlsK2uLYewv7Ae3Rvxv0K1GoP5IKesBGc57TlSbIjNvoTAh7ZMy6xsqsu3O7vP6k94mic=
+X-Received: by 2002:adf:e3ca:0:b0:242:9e3:87ba with SMTP id
+ k10-20020adfe3ca000000b0024209e387bamr858001wrm.580.1672766920552; Tue, 03
+ Jan 2023 09:28:40 -0800 (PST)
+MIME-Version: 1.0
+From: Binta b Barry <bb7228770@gmail.com>
+Date: Tue, 3 Jan 2023 17:28:32 +0000
+Message-ID: <CAJ+0Pjh9=XtUTcM+yPDu8jkY-S_nJ4ROmuw4xXBu4Riua+5GQA@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000017752e05f15f66b1"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000017752e05f15f66b1
+Content-Type: text/plain; charset="UTF-8"
+
+Bonsoir
+
+--00000000000017752e05f15f66b1
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto">Bonsoir</div>
+
+--00000000000017752e05f15f66b1--

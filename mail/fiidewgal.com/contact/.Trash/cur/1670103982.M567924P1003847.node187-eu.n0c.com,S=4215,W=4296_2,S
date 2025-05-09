@@ -1,0 +1,81 @@
+Return-Path: <a77213103@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id VEvIIa7Di2NHUQ8A3R2AvA
+	(envelope-from <a77213103@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 03 Dec 2022 22:46:22 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NPk0F2kVsz34nwbd
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="V/sWY8Ao"
+X-N0C-MailScanner-eFa-Watermark: 1670708775.7666@MUYkFQmUXhH+hxL6FIoXAg
+X-N0C-MailScanner-eFa-From: a77213103@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: BD9C6401AEF3.AFDA3
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-qv1-f51.google.com ([209.85.219.51] [209.85.219.51])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id BD9C6401AEF3
+	for <contact@fiidewgal.com>; Sat,  3 Dec 2022 22:45:41 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com BD9C6401AEF3
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com BD9C6401AEF3
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=V/sWY8Ao
+Received: by mail-qv1-f51.google.com with SMTP id c14so5796683qvq.0
+        for <contact@fiidewgal.com>; Sat, 03 Dec 2022 13:45:41 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=o/5WYCbUVO1Za/OAvfdQPGS3C0+WF5YDHLrzY8H4MN8=;
+        b=V/sWY8AozLOPqoWrf+TbXdTMFtSfMKBrF/eLNaR9SdWWeEPXCFq2tBbIGEGk7uBYkG
+         oB8r9XLnWtJYmLSnEm0Mxo8QLHMr32Xqblf3Dw9DK2rEvPuXjWh1gv47y4lftrJYXKm3
+         a7xH3nKe3ULxzaOoJx9wk7jWGNee6W21+E9qHRS4kLYbR3h5T4Pp5m4LDGtox9QlPrBx
+         gQaG7KTQY7ld49vCMKU+E/oRL3xw/XDcra29Z2vzPZFjBaYMon5tEr4X3zvW21odG5Aw
+         ELGMEaRzW1k61Jbpr9lvyAZO5EzcPhAtr7LkYbl3S2R15/a5L1S4x3ZmxLXOkPLJWAhR
+         sD0A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=o/5WYCbUVO1Za/OAvfdQPGS3C0+WF5YDHLrzY8H4MN8=;
+        b=Xiif81s03LKz2cUcEIBXa6wfwrzifBEecJVDh0793+TdvvPRyOHWZl4Nanv13JaSts
+         sSEF4inklegeT2C9269N2NgiTAvIL0CoXB6koCVD92L+iu5iTcSeCnwI4ADyONVXPEHP
+         6avQAvl606FguuBdFFKNJagakJ4vthb7Lkx4IyZrltz+Q58aioQnzDvwsO3lFfzBuht8
+         wSi9h067Y+65wV8gK+peMP0DkCxsDdNWkCciWPOxBAhyYwxY9n6E1PpzcMd7fXzilquA
+         HlO6DZlnMCf4XxqTJfVRqsbI9elUXz5xWoHkvsFsXiUZHpxtYfPiSBllw/7xfaY0Si+d
+         4pfA==
+X-Gm-Message-State: ANoB5pn0borgA5GndaLXaE87nOBb4QCt551giBdLpBLIv3zxHbdkZ0+O
+	S7zYjMny/BLdu87WXfnkT73iOVjHC0VihNKFb3qOWC6X
+X-Google-Smtp-Source: AA0mqf5w65IYaIyMWm7nOr3ZVskF0IiBw7vwTYaR1kBI2m2crsRQeUBCl3Ge62u6wosYiIWNHboB9U6v5ue1d4sUmbE=
+X-Received: by 2002:a0c:df92:0:b0:4c7:2595:81e4 with SMTP id
+ w18-20020a0cdf92000000b004c7259581e4mr14713090qvl.118.1670103940393; Sat, 03
+ Dec 2022 13:45:40 -0800 (PST)
+MIME-Version: 1.0
+From: Aissatou <a77213103@gmail.com>
+Date: Sat, 3 Dec 2022 21:45:26 +0000
+Message-ID: <CAJBhrcLzuS0cka7xQusyxouMSG1i4ojiq0qSiub_v259GU3-EA@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000001aef2905eef360ed"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000001aef2905eef360ed
+Content-Type: text/plain; charset="UTF-8"
+
+Aissatou
+Diallo
+
+
+762338755
+
+--0000000000001aef2905eef360ed
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto">Aissatou<div dir="auto">Diallo</div><div dir="auto"><br><br><div data-smartmail="gmail_signature" dir="auto">762338755</div><div data-smartmail="gmail_signature" dir="auto"><br></div></div></div>
+
+--0000000000001aef2905eef360ed--

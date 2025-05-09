@@ -1,0 +1,106 @@
+Return-Path: <jallow.abdourahman@student.oaklandcc.edu>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id c+kME4pfwGOsagkA3R2AvA
+	(envelope-from <jallow.abdourahman@student.oaklandcc.edu>)
+	for <contact@fiidewgal.com>; Thu, 12 Jan 2023 20:29:14 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NtF3Y5Mqlz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=student.oaklandcc.edu header.i=@student.oaklandcc.edu header.b="ZPV2Q72f"
+X-N0C-MailScanner-eFa-Watermark: 1674156550.43099@Fo72E8gY859CCPZIDmCWMA
+X-N0C-MailScanner-eFa-From: jallow.abdourahman@student.oaklandcc.edu
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: E2376400B476.A5CFB
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-pl1-f178.google.com ([209.85.214.178] [209.85.214.178])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id E2376400B476
+	for <contact@fiidewgal.com>; Thu, 12 Jan 2023 20:28:39 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com E2376400B476
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=reject dis=none) header.from=student.oaklandcc.edu
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=student.oaklandcc.edu
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com E2376400B476
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=student.oaklandcc.edu header.i=@student.oaklandcc.edu header.a=rsa-sha256 header.s=google header.b=ZPV2Q72f
+Received: by mail-pl1-f178.google.com with SMTP id d15so21219417pls.6
+        for <contact@fiidewgal.com>; Thu, 12 Jan 2023 11:28:37 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=student.oaklandcc.edu; s=google;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=sTELE+CcXyh9TiKcfZ0pn4i9g5Ip1AVyoAC+MoVts1A=;
+        b=ZPV2Q72fx5+oSeqe3Whm0PzGpuWK3t3E2RCMTDyvgxIbK4QO5qGTOchd8KZ7m+yp0V
+         a7vCX571/QRcCgFyATCy5D+g8f0dFRligWAxkQrAWYYx9hZQ+HC1w5N3vyDrN6yKq3Ia
+         A6OBfkSxdUbmXT8uAMCO++rtdKB6kpKFGTUGJlltwVA0rK8uiVb0K6BlTE0jR7ytjpyu
+         vXK9/r2Eo1YKqvcOJYaUSZW5DhG6EW2ENcmvZOGOdaTqoo13j73qRXZkk/sYFevk6RXX
+         +wNCJe/KFPk1tx0Jox/yPwidEeyLmaSsAnYmWInWPPBhEZQPGDzM1oD16Sux8ciHsT6y
+         gU2g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=sTELE+CcXyh9TiKcfZ0pn4i9g5Ip1AVyoAC+MoVts1A=;
+        b=Bt4OIDGTGpJ4Lx0YTO7oOxmjvsSrXM/QZMo4/2kQzOn+cdQOxAXxbhh6ICcdimGcvm
+         3EQNTN7bMfOg02dGTinUNUGOsvOXh0mP2hNn7T4fFP6iKA02z2SsXlJ0z7nkDy+re9gf
+         FIEdnUwtSuH2MnGcO9EG0BIJprvsbdjNhyav07TJi0SGpZu4PZhCqMO4JAAfX4fW5X//
+         uS4WDwHGEdMtaURiOpb9lu0LHuqpaE/XLOtU9FwF6TnN7/a4PXIzcGEBogFdKA6cKmXN
+         QRJHDXbwdT78e+iM1fwfxFiEoOBVNtkYjx2It4FQ/AOVAzODjC1zxcchZp5d/07/UjKP
+         YXog==
+X-Gm-Message-State: AFqh2kppSEmqQpJsEMVxEki7fkV7lc1YqwlwD+bPRaLh+I973L1+3FKD
+	skhQOU6zIVPjaV8DAkdpdVQ9R+PfCoURTYAG+84k2+PYBYsQlQ==
+X-Google-Smtp-Source: AMrXdXt1K3QHvj5LglR16Qo6oF2OqpsfaawtOmWbVygDJ6Uo7pStSzZQmzEf5bI4rCEfGylVC+VeXBAMtR+mx9v92DY=
+X-Received: by 2002:a17:90b:4a4c:b0:226:7e48:ba8e with SMTP id
+ lb12-20020a17090b4a4c00b002267e48ba8emr3984148pjb.245.1673551715799; Thu, 12
+ Jan 2023 11:28:35 -0800 (PST)
+MIME-Version: 1.0
+Received: by 2002:a17:902:f7d5:b0:192:f39a:ffff with HTTP; Thu, 12 Jan 2023
+ 11:28:35 -0800 (PST)
+In-Reply-To: <ec18d0c8a13267d677b11e443081d00c@fiidewgal.com>
+References: <ec18d0c8a13267d677b11e443081d00c@fiidewgal.com>
+From: "Jallow, Abdourahman" <jallow.abdourahman@student.oaklandcc.edu>
+Date: Thu, 12 Jan 2023 14:28:35 -0500
+Message-ID: <CAAB+HoOieBzWuZFvqB23Q=LsLNmUD7FWHSDNWqGxFOko3L5-sw@mail.gmail.com>
+Subject: =?UTF-8?Q?Re=3A_R=C3=A9initialisation_du_mot_de_passe?=
+To: =?UTF-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>
+Content-Type: multipart/alternative; boundary="00000000000088b07b05f2161f95"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000088b07b05f2161f95
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+I only speak English I don=E2=80=99t understand French
+
+On Thursday, January 12, 2023, Ne r=C3=A9pondez pas <contact@fiidewgal.com>
+wrote:
+
+> Bonjour Abdourahman Jallow,
+>
+> Votre code de v=C3=A9rification pour la r=C3=A9initialisation du mot de p=
+asse est :
+> [[code]]
+>
+>
+> Merci !
+>
+> Ne r=C3=A9pondez pas
+>
+
+--00000000000088b07b05f2161f95
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+I only speak English I don=E2=80=99t understand French=C2=A0<br><br>On Thur=
+sday, January 12, 2023, Ne r=C3=A9pondez pas &lt;<a href=3D"mailto:contact@=
+fiidewgal.com">contact@fiidewgal.com</a>&gt; wrote:<br><blockquote class=3D=
+"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding=
+-left:1ex"><p>Bonjour=C2=A0Abdourahman Jallow,</p><p>Votre code de v=C3=A9r=
+ification pour la r=C3=A9initialisation du mot de passe est : [[code]]<br><=
+/p><p><br></p><p>Merci !<br></p><p>Ne r=C3=A9pondez pas</p>
+
+</blockquote>
+
+--00000000000088b07b05f2161f95--

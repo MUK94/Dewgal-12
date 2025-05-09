@@ -1,0 +1,78 @@
+Return-Path: <bahbouliwel224@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 7iqGCefPpGOShDsA3R2AvA
+	(envelope-from <bahbouliwel224@gmail.com>)
+	for <contact@fiidewgal.com>; Thu, 22 Dec 2022 22:45:11 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NdP470FFjz34SDnG
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="n1hlkr9c"
+X-N0C-MailScanner-eFa-Watermark: 1672350308.33066@bqp4myrSLGdPyJ08rcVQjg
+X-N0C-MailScanner-eFa-From: bahbouliwel224@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: D5CAB401AEEF.A270F
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ej1-f43.google.com ([209.85.218.43] [209.85.218.43])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id D5CAB401AEEF
+	for <contact@fiidewgal.com>; Thu, 22 Dec 2022 22:44:35 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com D5CAB401AEEF
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com D5CAB401AEEF
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=n1hlkr9c
+Received: by mail-ej1-f43.google.com with SMTP id ud5so7918470ejc.4
+        for <contact@fiidewgal.com>; Thu, 22 Dec 2022 13:44:35 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=6OptikEh5O4pnXQeCKtTCPfSGx1FvFaaJbrPwtP+EjA=;
+        b=n1hlkr9cS1sMs+7ewxsa3iuhrH07qwyf/V3TRj08WApmjvtxOlgQX2fUV2+tncoB5C
+         kGoAAT8vtd7UyY3RQCU/0IFhCVj3qQf2Ipf0YsxXLQBSZqTHsBEtykiPZymuIwNakvYS
+         TqyM9s/UGOtlP3IQqQ9ewQ7yzIG0ks2lX4Sm1yjaMul7anTNaveiyrShVBXo+hDrZ3dH
+         JGDmto46oiv462t6/3Uei3y2L+FiGn5Vxz1SQFiQi5kbFQWVwH64jTM9FoXpzRTA54n2
+         O8mRUi9V5e/c1WcOvzL0MIUK8fnst3AKjKCeAihYGV8nFoiVjGn8utjlx5cE8jXekXRb
+         AHGA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=6OptikEh5O4pnXQeCKtTCPfSGx1FvFaaJbrPwtP+EjA=;
+        b=NUylzxl9vajhzPT9zS1Yj/fiLQqMlgi85TAa+shMUe9hZ9xrw5qTuVt1l9q0Qio5iL
+         SOtT2rNlazGfDgJtvyb0VvTW1etvDkJUjfC2EpagNCuOTMB9tj1mKYkh9qFtXy65Zytu
+         9r8UItI6/FknGx5IqWPNGTmPkJoput7DdSmLiE9Pn5YbChxE76pOGDDOog05qMDEQddT
+         Yfmd+1thFxdygiHaOAY25naMPStE/emLRudt7cL3LgeDy4NwA4lj16wVkPiBgZVxMYkU
+         ew8E5C5gS0/ASu69Fc6Hr99bOTFeRD6U9xs1+DBawPi0GkRPchT6wQNxXXPwF3VM796f
+         /CHg==
+X-Gm-Message-State: AFqh2koYrbDuFsCkccZLRQKTCjhmLSyeNJcA93WruxyBIgumowC/LFRg
+	JZNxbLSpMbqNK7LIB8Ta44tzUl+D3hKtqBbVtTeEknPD
+X-Google-Smtp-Source: AMrXdXuLY8f6wRva72aClr7urZNO08kdYT+SViWRlMXfsguXssxd5nPv6PfYAqGxTdfJdNoauszY7seQOEPW8f1wZec=
+X-Received: by 2002:a17:907:20d7:b0:7cd:5dd8:85c with SMTP id
+ qq23-20020a17090720d700b007cd5dd8085cmr456662ejb.716.1671745474825; Thu, 22
+ Dec 2022 13:44:34 -0800 (PST)
+MIME-Version: 1.0
+From: Amadou Bah <bahbouliwel224@gmail.com>
+Date: Thu, 22 Dec 2022 22:44:22 +0100
+Message-ID: <CAEm3VTD-=0qQaWTrgt==BbGWitzqqqpWzaERSmc6Doy-=A_03Q@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000002e935605f07193a6"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000002e935605f07193a6
+Content-Type: text/plain; charset="UTF-8"
+
+Hallo je suis Bah h Amadou
+
+--0000000000002e935605f07193a6
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Hallo je suis Bah h Amadou=C2=A0</div>
+
+--0000000000002e935605f07193a6--

@@ -1,0 +1,102 @@
+Return-Path: <>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id ODwHGzlpnWMXRjcA3R2AvA
+	(envelope-from <>)
+	for <contact@fiidewgal.com>; Sat, 17 Dec 2022 08:01:13 +0100
+Received: by node187-eu.n0c.com (Postfix)
+	id 6AC4A401AEEF; Sat, 17 Dec 2022 02:01:13 -0500 (EST)
+Date: Sat, 17 Dec 2022 02:01:13 -0500 (EST)
+From: MAILER-DAEMON@node187-eu.n0c.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: contact@fiidewgal.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="193C3401A42D.1671260473/node187-eu.n0c.com"
+Message-Id: <20221217070113.6AC4A401AEEF@node187-eu.n0c.com>
+
+This is a MIME-encapsulated message.
+
+--193C3401A42D.1671260473/node187-eu.n0c.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host node187-eu.n0c.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<dmbailo17@gmail.com.br>: connect to gmail.com.br[2a00:1450:400c:c1b::12]:25:
+    Network is unreachable
+
+--193C3401A42D.1671260473/node187-eu.n0c.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; node187-eu.n0c.com
+X-Postfix-Queue-ID: 193C3401A42D
+X-Postfix-Sender: rfc822; contact@fiidewgal.com
+Arrival-Date: Mon, 12 Dec 2022 01:10:14 -0500 (EST)
+
+Final-Recipient: rfc822; dmbailo17@gmail.com.br
+Original-Recipient: rfc822;dmbailo17@gmail.com.br
+Action: failed
+Status: 4.4.1
+Diagnostic-Code: X-Postfix; connect to gmail.com.br[2a00:1450:400c:c1b::12]:25:
+    Network is unreachable
+
+--193C3401A42D.1671260473/node187-eu.n0c.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <contact@fiidewgal.com>
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NVrnx72wQz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="CJsH2gt/"
+X-N0C-MailScanner-eFa-Watermark: 1671430211.76263@1TARn+1YxGVjbDPs7lGQ1w
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 9D297401A42D.AE7FD
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 9D297401A42D
+	for <dmbailo17@gmail.com.br>; Mon, 12 Dec 2022 07:10:10 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 9D297401A42D
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 9D297401A42D
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1670825410;
+	bh=gr8Ss2QXLff16hTiHk/j/C+g+dBS8U/0rpumJZ5Op14=;
+	h=Date:Subject:From:To:From;
+	b=CJsH2gt/mZoXqMx14o+2aLg9Y3Z8+0JQJjwoZjv5WO82Xv+jQ6oc8RZWUElA6E9Mu
+	 fP88PpxVO6qfLlPPv7b5dOzbnU+nf23YQUu6uUAfPVONa8vAtea73x2vQQO7uk7WEz
+	 EVOwzmrcSjoJrfyBADNn/CO7CwEVIihG/yhGBp5Y=
+Message-ID: <69005b61886309de53b54daeef382478@fiidewgal.com>
+Date: Mon, 12 Dec 2022 07:10:10 +0100
+Subject: =?utf-8?Q?R=C3=A9initialisation?= du mot de passe
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: dmbailo17@gmail.com.br
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<p>Bonjour&nbsp;Mamadou bailo Diallo,</p><p>Votre code de v=C3=A9rification=
+ pour la r=C3=A9initialisation du mot de passe est : [[code]]<br></p><p><br=
+></p><p>Merci !<br></p><p>Ne r=C3=A9pondez pas</p>
+
+
+--193C3401A42D.1671260473/node187-eu.n0c.com--

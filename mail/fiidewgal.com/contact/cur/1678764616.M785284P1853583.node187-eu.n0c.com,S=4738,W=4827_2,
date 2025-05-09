@@ -1,0 +1,89 @@
+Return-Path: <mamoudoualseny@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id Z2S8LkjqD2SPSBwA3R2AvA
+	(envelope-from <mamoudoualseny@gmail.com>)
+	for <contact@fiidewgal.com>; Tue, 14 Mar 2023 04:30:16 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4PbJtv52TZz34SDnC
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="OVYngQeh"
+X-N0C-MailScanner-eFa-Watermark: 1679369343.69701@5Tar6qixOZ+onYcUzvxUIQ
+X-N0C-MailScanner-eFa-From: mamoudoualseny@gmail.com
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 6F61D401AEF3.AF511
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-pf1-f174.google.com ([209.85.210.174] [209.85.210.174])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 6F61D401AEF3
+	for <contact@fiidewgal.com>; Tue, 14 Mar 2023 04:28:20 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 6F61D401AEF3
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 6F61D401AEF3
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=OVYngQeh
+Received: by mail-pf1-f174.google.com with SMTP id c10so8862328pfv.13
+        for <contact@fiidewgal.com>; Mon, 13 Mar 2023 20:28:19 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112; t=1678764497;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=UQslqoEfK1zKFHrYYcq45sa1WehDecEkGGMWZjDitq4=;
+        b=OVYngQeh0877qXPMAy9+P2wLcu0E939aW7Xh9Z9M2mwkhwKfuM/B1OBuxIDDpsF90s
+         xLU3IRCpu0o7Qccw+CDsWkCCG/EttTC08qQ4k2gRvvGTNk5KMK15W4CeQRHgaEfkFX85
+         box1q2FdJCCeXtcgYKDB1jkomjvth7EhD9Z+rbRuKT5m8UOoSkMBa17YkhPMMxL1wm1O
+         cd1IXXs/mwoYBtsioMCDptj83jqK0ixoKzykZ+5WyCK41uDh8yQX6MCA/TNpkvrQK8qB
+         mWfRk9ZbhDbfbMbftsNooG7P5wsNkKWcBkg8cVDVdceyeJ7lDsCYXFeqf3B8eeZOiAR5
+         eYow==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112; t=1678764497;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=UQslqoEfK1zKFHrYYcq45sa1WehDecEkGGMWZjDitq4=;
+        b=WCVvqir9hotF717S3MqncC6MxRNTa4W8cNqfqC8wbRibruFGWjV1l2JQXHYK9QoSzk
+         UZdU6dB8CZD3eoueF7DW88wEmZTa2HhDxzNMvONTjIaAhCo2UMI7WKexqq0TK2cWndTF
+         dnIhkXi/C83GgNfItZb9jLnRoZ/POweBBUe6qVwIkieGaBNcyjDR0YxHIFxhiyBhZAVi
+         NX21vYyvacdsrt5qsBVhfDiHYiF2uQZSK9TWaVmwj4Bb5dhZW126ZG/VP02Ykqm6JjIx
+         3SYgE4Qut8NkoxfMhouIJkubkTGwKPsHORKrZ4vZo2Xc/Vyby5vvQaT0MLF3nkZ9Kt4A
+         aPbw==
+X-Gm-Message-State: AO0yUKXp9LXle0oYx6jSUor1XdtYSxK1rZeMUJl0LYKKmwG74Oo9RrkC
+	+QwIeilrzezrRLXwVN+0m9kuXaYM/KNpWzIv93PC6r6c
+X-Google-Smtp-Source: AK7set+i0JIgcvHxXlruNA6LTkO3nXWXsCflDv0//eNfcftmqP+WrT4vhnNKLGgimqwCPjmN0j0foNAluQlg5oYHLR0=
+X-Received: by 2002:a63:b95b:0:b0:4fc:2058:fa29 with SMTP id
+ v27-20020a63b95b000000b004fc2058fa29mr12034105pgo.1.1678764497241; Mon, 13
+ Mar 2023 20:28:17 -0700 (PDT)
+MIME-Version: 1.0
+From: Diallo mamoudou alseny SATINA <mamoudoualseny@gmail.com>
+Date: Tue, 14 Mar 2023 03:28:05 +0000
+Message-ID: <CAEJ5FkC2m7PxxPZVH+3RWHCCb6_EAjKwEk5BrGbdbSZGrtGkdQ@mail.gmail.com>
+Subject: Demande de rejoindre votre groupe
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000850a5305f6d3d129"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000850a5305f6d3d129
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour Madame/Messieur .
+Je viens aupr=C3=A8s de vous pour sollicit=C3=A9 mon inscription dans votre=
+ groupe.
+
+Esp=C3=A9rant une suite favorable, veuillez accepter Madames/ Messieurs, me=
+s
+sinc=C3=A8res salutations
+
+--000000000000850a5305f6d3d129
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Bonjour Madame/Messieur .<div dir=3D"auto">Je viens aupr=
+=C3=A8s de vous pour sollicit=C3=A9 mon inscription dans votre groupe.</div=
+><div dir=3D"auto"><br></div><div dir=3D"auto">Esp=C3=A9rant une suite favo=
+rable, veuillez accepter Madames/ Messieurs, mes sinc=C3=A8res salutations=
+=C2=A0</div></div>
+
+--000000000000850a5305f6d3d129--

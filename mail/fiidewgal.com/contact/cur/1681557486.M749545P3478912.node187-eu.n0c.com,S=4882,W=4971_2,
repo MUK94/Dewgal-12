@@ -1,0 +1,89 @@
+Return-Path: <sdja8922@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id wMCdLO6HOmSAFTUA3R2AvA
+	(envelope-from <sdja8922@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 15 Apr 2023 13:18:06 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Pz9ly4FpJz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="jnIZgqVy"
+X-N0C-MailScanner-eFa-Watermark: 1682162285.2018@NqqY3AbXTLF4UfJokup97w
+X-N0C-MailScanner-eFa-From: sdja8922@gmail.com
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: C1809406355D.ACB01
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ej1-f45.google.com ([209.85.218.45] [209.85.218.45])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id C1809406355D
+	for <contact@fiidewgal.com>; Sat, 15 Apr 2023 13:17:31 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com C1809406355D
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com C1809406355D
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=jnIZgqVy
+Received: by mail-ej1-f45.google.com with SMTP id qb20so51581812ejc.6
+        for <contact@fiidewgal.com>; Sat, 15 Apr 2023 04:17:31 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1681557451; x=1684149451;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=QG8nOMXzOh9XlMXmOrNfWyiEL8g32J9vInv3aABUBVg=;
+        b=jnIZgqVyo36e8BLak4dMNE76Ln4CtbCy6vGLxYYkh9d4LAdA7bfF1AU4QKykhzb+UF
+         y0gntlqkvIlC1GNlLEwezgkNrM7MMAgvggDLLFJZMl3IhnZSGWpvXajIRIiMbbbrS1Gm
+         PSm7UrOxnJPVR6r2I+zOhwur1OVfv01CVBELuptbq4sc0gquk5kmF+l/ivIJ+Dg6+OY3
+         g3ZRXkPF9C+w5qxwMPAuiaVf7avOSi81+7q5HClm0p5r5cRiaw51X5r4li7UYw3ahj+T
+         eH0FiXaVQ7JXIPz4zZhiQN5HWwpd5JJmPJLYliPCIohJA+Tx3I2vQG0ckR3bPA2Lpey6
+         F5aQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1681557451; x=1684149451;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=QG8nOMXzOh9XlMXmOrNfWyiEL8g32J9vInv3aABUBVg=;
+        b=KceSz8CNt/msDIIs3TIpepIh8CeiIArCKn9GmD2kah09M/eP7EPtPQkMyFFCeKoAqL
+         zVrkfhdx0TE+efOSUQmDqT6nxRp33gUPQepvWAPvQdZejPt8muNEi1IlthEXGPsmgCeZ
+         pYO53Zns2w7nFiLDmKbJrSAffQR+7IA9RPohf9uv3PGPeqX3GWPFcEb4yJKetPssGqkF
+         T95At38YdRDYvs08q1RMuVeDxwmvOB1YPItP+AF+uhZ9d6ZMm6Q9MFGX5hlA2jsvNTxL
+         x+Xx9cF6JOTk8e3pJuhDdgAYkg44gGaEyjr2uoCeU2iZusd9agjRgjyUspcz0o/R7e2y
+         IeFA==
+X-Gm-Message-State: AAQBX9fRwg6aDvXoR0ACcsps8eSDCigSz0ucv26jAdtxbLWLFgQxLcJQ
+	0pRngS/tRp2YDkdcrSG2ft3h5D+Bk3h5Wa9wYVI5BZPM
+X-Google-Smtp-Source: AKy350aK8xhJMYBaLangjGQW6AsOT2ufBoWPi3yoC3imxW3HWaDslA8wIdIoBLvShTw7vITlqy6LDuus0eyPXKKK7b4=
+X-Received: by 2002:a17:906:3ce9:b0:947:c8d5:fb2a with SMTP id
+ d9-20020a1709063ce900b00947c8d5fb2amr2440448ejh.48.1681557450736; Sat, 15 Apr
+ 2023 04:17:30 -0700 (PDT)
+MIME-Version: 1.0
+From: Soule Dja <sdja8922@gmail.com>
+Date: Sat, 15 Apr 2023 13:17:20 +0200
+Message-ID: <CAD1y0rChuxN1EOJyQHKwPFZDLbFHfqvb6XX59Bcq6fmEdoa1-Q@mail.gmail.com>
+Subject: Inscription fiidewgal
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000085495d05f95e1adf"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000085495d05f95e1adf
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+ASalam Aleykoum Moi c=E2=80=99est Souleymane j=E2=80=99aimerais m=E2=80=99i=
+nscrire sur la
+plateforme diidewgal . Mais je ne sais pas comment sa fonctionne j=E2=80=99=
+habite
+en France merci ASalam Aleykoum.
+
+--00000000000085495d05f95e1adf
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<span style=3D"font-family:-apple-system,&quot;Helvetica Neue&quot;;word-sp=
+acing:1px;border-color:rgb(49,49,49);color:rgb(49,49,49)">ASalam Aleykoum M=
+oi c=E2=80=99est Souleymane j=E2=80=99aimerais m=E2=80=99inscrire sur la pl=
+ateforme diidewgal . Mais je ne sais pas comment sa fonctionne j=E2=80=99ha=
+bite en France merci=C2=A0</span><span style=3D"font-family:-apple-system,&=
+quot;Helvetica Neue&quot;;word-spacing:1px;border-color:rgb(49,49,49);color=
+:rgb(49,49,49)">ASalam Aleykoum.=C2=A0</span>
+
+--00000000000085495d05f95e1adf--

@@ -1,0 +1,178 @@
+Return-Path: <abdoulayediallo912@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id OF34Ju5KlGPm0SUA3R2AvA
+	(envelope-from <abdoulayediallo912@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 10 Dec 2022 10:01:34 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NThhZ3mxlz34SDn2
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="RyoBUtFZ"
+X-N0C-MailScanner-eFa-Watermark: 1671267691.47597@zMLY4Ce8mhZGhINYEK3aVg
+X-N0C-MailScanner-eFa-From: abdoulayediallo912@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 151EF401AEEF.A6A3B
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-lj1-f174.google.com ([209.85.208.174] [209.85.208.174])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 151EF401AEEF
+	for <contact@fiidewgal.com>; Sat, 10 Dec 2022 10:00:58 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 151EF401AEEF
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 151EF401AEEF
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=RyoBUtFZ
+Received: by mail-lj1-f174.google.com with SMTP id s25so46632lji.2
+        for <contact@fiidewgal.com>; Sat, 10 Dec 2022 01:00:58 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=XRg5MvhmJxmy69v9eAAaLGrXuspadrBwXbUGprruBbE=;
+        b=RyoBUtFZvMflg1UkvSYqK07/wNmMGEzHOCJkn7t7+Gf5FmVEQkc7mIDI9XSOQJ0SZX
+         ad4j/ggJ1ZXZx+5iKoxJUbF2e/wYlvRWxZK7imy6EYqvran+XVViSU93vcpvYfGmlND5
+         Ks0b6L28UkYlaULSva5PGV+/GgJztxpU4qefTXUbrgLQYBJ8LQyA1AuWotq5D+WX/m+9
+         QfKO+crS/9spX2ihuCPoQQXJ6fIb6nYo6Z0GrvHqZr5x82aKwRrne8vDdPdvHD3s4fAh
+         jk5zjgHDdFaW+75/eE7+x5x+svFayFixPscbXPOOoW6o1dxI2s2n7iMHIHbzp5fSS4T9
+         4dsQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=XRg5MvhmJxmy69v9eAAaLGrXuspadrBwXbUGprruBbE=;
+        b=DAxrudYTsnFJcjfHUpN9sgWjL2knXSjgeuTXTJscI279imqPN6wjMsrfditEmJ7LrN
+         3leNxzGA0P2o9tihQs3ZY8Up17bUcjqe/7+1hbPB+YJpJIti0ray5EWkJIlcPN3CJOAZ
+         c/jQir9WAcraCUiqpGkrr0A4mJ3ihNYx2Y6TC/GMmVltTlfr60Ml4GY+9FDdoNyKI3lp
+         wXqUB4t8ov7PwtQ2siNESUcoAKgcsdPeiUnEf4w03fdG/w20QkgpN51JHofL5GM0rfLX
+         gd7esNBoM1dhl5QghEzNH9izLALnIAarEH8h485Cu6jX2Rc/zrlNaclj7MURAbcflHvf
+         Zh7Q==
+X-Gm-Message-State: ANoB5pkim4hDyjKBtYNKk4UoSmDjn5tV/0MNn60LfNWYwwnmAaJz46qg
+	6MyC0svgRr9+NI72r+feaaSsp8rPw+YDTr89dfTaj69A
+X-Google-Smtp-Source: AA0mqf75iZaSSdkf+ly2BxckLBx8l/GQWOz1PvbKD9P6O0PC7g6Vu/+9lFmqTfkSpA8RjtVKLhlTwJozXrKyhIJ4B3I=
+X-Received: by 2002:a05:651c:2002:b0:27a:8ce:45be with SMTP id
+ s2-20020a05651c200200b0027a08ce45bemr4426168ljo.76.1670662856787; Sat, 10 Dec
+ 2022 01:00:56 -0800 (PST)
+MIME-Version: 1.0
+References: <a41edb82f22035ac27f481b5c98b7612@fiidewgal.com>
+In-Reply-To: <a41edb82f22035ac27f481b5c98b7612@fiidewgal.com>
+From: gimdhi poular fouta <abdoulayediallo912@gmail.com>
+Date: Sat, 10 Dec 2022 09:00:45 +0000
+Message-ID: <CAJRP5vEJGmQ1hf9WB1O9EALFPFc=wpdwt6gs7FxDd=xiOzWMbA@mail.gmail.com>
+Subject: Re: Rappel
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000001e4aa505ef758273"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000001e4aa505ef758273
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dakor et merci a vous
+
+Le dim. 27 nov. 2022, 04:16, <contact@fiidewgal.com> a =C3=A9crit :
+
+> Salam Aleykoum , bienvenue sur la plateforme Fii Dewgal , alors si vous
+> =C3=AAtes ici c=E2=80=99est pour une bonne raison , trouver votre
+>
+> futur =C3=A9poux ou =C3=A9pouse que Dieu vous en facilite.Il faut savoir =
+que Le
+> mariage est tr=C3=A8s important il compl=C3=A8te notre Din , la valeur
+>
+> d=E2=80=99un musulman c=E2=80=99est dans le mariage c=E2=80=99est un acte=
+ d=E2=80=99adoration et il faut
+> savoir qu=E2=80=99en islam on ne peut se conna=C3=AEtre r=C3=A9ellement
+>
+> qu=E2=80=99apr=C3=A8s et dans le mariage et si chacun connaissait les bie=
+nfaits de
+> rapprocher deux personnes qui souhaitent se marier dans
+>
+> le halal personne n'aimerait voir un c=C3=A9libataire. Donc nous vous inv=
+itons
+> de rester poli , courtois , respecter les conditions g=C3=A9n=C3=A9rales
+>
+> d=E2=80=99utilisation, pour vous en rappeler il est interdit d=E2=80=99=
+=C3=A9changer des mots
+> cru ,des injures, des moqueries, d=E2=80=99=C3=A9changer des num=C3=A9ros
+>
+> de t=C3=A9l=C3=A9phone , d=E2=80=99adresse e-email , de r=C3=A9seaux soci=
+aux comme(  Facebook,
+> Instagram, tik tok ,Twitter, Snapchat etc... ) dans
+>
+> l=E2=80=99objectif de discuter en dehors de la plateforme =C3=A0 d=C3=A9f=
+aut de cela si vous
+> ne respecter pas ces r=C3=A8gles, votre profil sera supprim=C3=A9
+>
+> sans avertissement. Nous vous souhaitons bonne chance dans votre recherch=
+e
+> et nous sommes l=C3=A0 pour vous accompagn=C3=A9.
+>
+> Je vous remercie pour votre compr=C3=A9hension.
+>
+> L'Equie Fii Dewgal.
+>
+
+--0000000000001e4aa505ef758273
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Dakor et merci a vous</div><br><div class=3D"gmail_quote"=
+><div dir=3D"ltr" class=3D"gmail_attr">Le dim. 27 nov. 2022, 04:16,  &lt;<a=
+ href=3D"mailto:contact@fiidewgal.com">contact@fiidewgal.com</a>&gt; a =C3=
+=A9crit=C2=A0:<br></div><blockquote class=3D"gmail_quote" style=3D"margin:0=
+ 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><p style=3D"margin-r=
+ight:0px;margin-bottom:0px;margin-left:0px;font-variant-numeric:normal;font=
+-variant-east-asian:normal;font-stretch:normal;line-height:normal;font-fami=
+ly:&quot;Helvetica Neue&quot;">Salam Aleykoum , bienvenue sur la plateforme=
+ Fii Dewgal , alors si vous =C3=AAtes ici c=E2=80=99est pour une bonne rais=
+on , trouver votre </p><p style=3D"margin-right:0px;margin-bottom:0px;margi=
+n-left:0px;font-variant-numeric:normal;font-variant-east-asian:normal;font-=
+stretch:normal;line-height:normal;font-family:&quot;Helvetica Neue&quot;">f=
+utur =C3=A9poux ou =C3=A9pouse que Dieu vous en facilite.Il faut savoir que=
+ Le mariage est tr=C3=A8s important il compl=C3=A8te notre Din , la valeur<=
+/p><p style=3D"margin-right:0px;margin-bottom:0px;margin-left:0px;font-vari=
+ant-numeric:normal;font-variant-east-asian:normal;font-stretch:normal;line-=
+height:normal;font-family:&quot;Helvetica Neue&quot;"> d=E2=80=99un musulma=
+n c=E2=80=99est dans le mariage c=E2=80=99est un acte d=E2=80=99adoration e=
+t il faut savoir qu=E2=80=99en islam on ne peut se conna=C3=AEtre r=C3=A9el=
+lement </p><p style=3D"margin-right:0px;margin-bottom:0px;margin-left:0px;f=
+ont-variant-numeric:normal;font-variant-east-asian:normal;font-stretch:norm=
+al;line-height:normal;font-family:&quot;Helvetica Neue&quot;">qu=E2=80=99ap=
+r=C3=A8s et dans le mariage et si chacun connaissait les bienfaits de rappr=
+ocher deux personnes qui souhaitent se marier dans </p><p style=3D"margin-r=
+ight:0px;margin-bottom:0px;margin-left:0px;font-variant-numeric:normal;font=
+-variant-east-asian:normal;font-stretch:normal;line-height:normal;font-fami=
+ly:&quot;Helvetica Neue&quot;">le halal personne n&#39;aimerait voir un c=
+=C3=A9libataire. Donc nous vous invitons de rester poli , courtois , respec=
+ter les conditions g=C3=A9n=C3=A9rales </p><p style=3D"margin-right:0px;mar=
+gin-bottom:0px;margin-left:0px;font-variant-numeric:normal;font-variant-eas=
+t-asian:normal;font-stretch:normal;line-height:normal;font-family:&quot;Hel=
+vetica Neue&quot;">d=E2=80=99utilisation, pour vous en rappeler il est inte=
+rdit<span>=C2=A0</span>d=E2=80=99=C3=A9changer des mots cru ,des injures, d=
+es moqueries, d=E2=80=99=C3=A9changer des num=C3=A9ros </p><p style=3D"marg=
+in-right:0px;margin-bottom:0px;margin-left:0px;font-variant-numeric:normal;=
+font-variant-east-asian:normal;font-stretch:normal;line-height:normal;font-=
+family:&quot;Helvetica Neue&quot;">de t=C3=A9l=C3=A9phone<span>=C2=A0</span=
+>, d=E2=80=99adresse e-email , de r=C3=A9seaux sociaux comme(=C2=A0 Faceboo=
+k, Instagram, tik tok ,Twitter, Snapchat etc... ) dans </p><p style=3D"marg=
+in-right:0px;margin-bottom:0px;margin-left:0px;font-variant-numeric:normal;=
+font-variant-east-asian:normal;font-stretch:normal;line-height:normal;font-=
+family:&quot;Helvetica Neue&quot;">l=E2=80=99objectif de discuter en dehors=
+ de la plateforme =C3=A0 d=C3=A9faut de cela si vous ne respecter pas ces r=
+=C3=A8gles, votre profil sera supprim=C3=A9</p><p style=3D"margin-right:0px=
+;margin-bottom:0px;margin-left:0px;font-variant-numeric:normal;font-variant=
+-east-asian:normal;font-stretch:normal;line-height:normal;font-family:&quot=
+;Helvetica Neue&quot;">sans avertissement. Nous vous souhaitons bonne chanc=
+e dans votre recherche et nous sommes l=C3=A0 pour vous accompagn=C3=A9.<sp=
+an>=C2=A0</span></p><p style=3D"margin-right:0px;margin-bottom:0px;margin-l=
+eft:0px;font-variant-numeric:normal;font-variant-east-asian:normal;font-str=
+etch:normal;line-height:normal;font-family:&quot;Helvetica Neue&quot;">Je v=
+ous remercie pour votre compr=C3=A9hension.</p><p style=3D"margin-right:0px=
+;margin-bottom:0px;margin-left:0px;font-variant-numeric:normal;font-variant=
+-east-asian:normal;font-stretch:normal;line-height:normal;font-family:&quot=
+;Helvetica Neue&quot;">L&#39;Equie Fii Dewgal.</p>
+</blockquote></div>
+
+--0000000000001e4aa505ef758273--

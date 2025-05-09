@@ -1,0 +1,79 @@
+Return-Path: <dioulake.dansokho1993@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id XNO7ISwzP2T1MS0A3R2AvA
+	(envelope-from <dioulake.dansokho1993@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 19 Apr 2023 02:17:48 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Q1LwB1FbBz34SDmh
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="GvTJpdGi"
+X-N0C-MailScanner-eFa-Watermark: 1682468264.45045@RP1QW8ZCLXlN6YDI7GPX6w
+X-N0C-MailScanner-eFa-From: dioulake.dansokho1993@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: s
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 769BA401B203.AAB28
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ej1-f53.google.com ([209.85.218.53] [209.85.218.53])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 769BA401B203
+	for <contact@fiidewgal.com>; Wed, 19 Apr 2023 02:17:10 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 769BA401B203
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 769BA401B203
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=GvTJpdGi
+Received: by mail-ej1-f53.google.com with SMTP id xi5so77449141ejb.13
+        for <contact@fiidewgal.com>; Tue, 18 Apr 2023 17:17:09 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1681863428; x=1684455428;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=q9fqIiwGq/UNnulE+Yu+1st7LxXf3nxy4YU5J+o1Z3k=;
+        b=GvTJpdGiiBXTyhN7aIaru9/8Z/LcRl4WPWccwUpG3CWKtTjjXS+16ZeXhZsGVUozDh
+         AEQ5ByMz7W2DSY2RQjTFQd8fvJuI17dJ/MXg4hlEvCXUWbJ9KGHLOMOF4TZQYUiD+vOx
+         HfI6YGDZMTjHh/W64dQ6AHkUOKhrZdoRyO3wiwQMuAfITc8I6YaKXJypWUF6ZqSNL1QE
+         wJdveU705vAmBIF4sR1uSZSLk0P8Bp4pwf9kA19Xazt0vfHZWSmsfGdnRn5hxp0kv0Cl
+         9Kd4z732Cn2fm31iBs06p2B8Bi2iqVgz0iUtMgJqPf81uVBvyyTT+IQj+17vHKXwGYMx
+         FrkQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1681863428; x=1684455428;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=q9fqIiwGq/UNnulE+Yu+1st7LxXf3nxy4YU5J+o1Z3k=;
+        b=RrOCDmmFFgxkIro5JE5sdwEwoX4y4VmoaDsjPqsFhemgr37Ff8WFir0tjZW8ZOCtWH
+         8dE44VuCknDikcgpHvfHh1LMCnMCw6QcyfUFIiAMpBUdIN+IO5XGDMG8dPkfndnbhkKz
+         gWK4SpUCW9sU8Y7sBs9cuB/vDwWgDziIs0ePbJR3OzGyFt9BNQ0Ynn+WYXaE62C8oGuC
+         IVAbpyrydVAFO3t34nCdflqe3Xk5Hwvr3Z8aagJdZRG7wyQQRk8Pm2NKam1bxanFaYOS
+         h4LPUE/6ZCQmgnWdI0NhSga8wE9u/y7f9Y5ep78VqdCvkk7zjkkQmmZe5GumF0TjnOy/
+         663Q==
+X-Gm-Message-State: AAQBX9dKKvpuziOznW+deHDmEG0NE9wOJqHZzCFhHZzt/RS5b0EKRejy
+	CNd/IpxuvXCv9wa+OeVI2AxaWI6aY79FHPSzDXB3XEsS
+X-Google-Smtp-Source: AKy350YrxR0rKlXx22BG1+RbN+5Wp0bQ+uaW/auTogb+bxl5oXXh11dfp1pqqoqitHujANDO/+VtEcehZ1pRmM7TBzI=
+X-Received: by 2002:a17:907:6d27:b0:94f:4102:25c8 with SMTP id
+ sa39-20020a1709076d2700b0094f410225c8mr11023636ejc.61.1681863428252; Tue, 18
+ Apr 2023 17:17:08 -0700 (PDT)
+MIME-Version: 1.0
+From: Dioulake Dansokho <dioulake.dansokho1993@gmail.com>
+Date: Wed, 19 Apr 2023 00:16:56 +0000
+Message-ID: <CAOTVVWSR65a49FE=OxZZu2pHRu6q8Lryur5Gojtn0rKcVZSeOA@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000033a6bc05f9a558d8"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000033a6bc05f9a558d8
+Content-Type: text/plain; charset="UTF-8"
+
+Je voudrais a ce magnifique groupe
+
+--00000000000033a6bc05f9a558d8
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Je voudrais a ce magnifique groupe=C2=A0</div>
+
+--00000000000033a6bc05f9a558d8--

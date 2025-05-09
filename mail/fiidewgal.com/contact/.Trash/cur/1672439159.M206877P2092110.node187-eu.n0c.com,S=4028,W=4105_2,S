@@ -1,0 +1,77 @@
+Return-Path: <mohamedbarry926@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id COxFDHdlr2NO7B8A3R2AvA
+	(envelope-from <mohamedbarry926@gmail.com>)
+	for <contact@fiidewgal.com>; Fri, 30 Dec 2022 23:25:59 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NkKbW0kJFznqZv
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="R4UtLb+f"
+X-N0C-MailScanner-eFa-Watermark: 1673043956.81229@zJ02FZqvuda548MtSV7/DQ
+X-N0C-MailScanner-eFa-From: mohamedbarry926@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 4E08240664F7.A4858
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ed1-f52.google.com ([209.85.208.52] [209.85.208.52])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 4E08240664F7
+	for <contact@fiidewgal.com>; Fri, 30 Dec 2022 23:25:25 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 4E08240664F7
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 4E08240664F7
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=R4UtLb+f
+Received: by mail-ed1-f52.google.com with SMTP id m21so31999244edc.3
+        for <contact@fiidewgal.com>; Fri, 30 Dec 2022 14:25:25 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=OTV7HStoXzaUDsExgZaYSpgYrzdobYQLE5WmqSXosMM=;
+        b=R4UtLb+ffq+4mTKJUkq2dyAHRcA83O4idwfgkbsWm2uoOcshnKEsKj0SmFC4YYUk1E
+         x0DI2X1sDX9JknnefHbMXstAYreUv1JaMwetrynuqzY05/uoqGkJpRsoHYdO98x++Enc
+         zodvlI/59HawZk+EIk92murvED7tG27n2UshiScRWfEWXlHUhOxACTZ0I5/SLoxEvZLW
+         pswxEjMzXfckVTSwZ6ywHxJJrMAw1NkHvSyUsAySYpEOQA2DhunHlFx2R02YhgSGZmmQ
+         5l2mxL+ZBFV/H/OvSaAdEOwJEZMT5liwh+YW+KsfB9W6Ls5rSUoDlXu1zvicmYWmLMp4
+         B4Mg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=OTV7HStoXzaUDsExgZaYSpgYrzdobYQLE5WmqSXosMM=;
+        b=68iiVMRDvhAA9GWCQYEX/PDj8MTCh78khuXZn41O8devhH2WtZuA1ijcaohxlforG9
+         Kuoc6HDsG9pFxIoMa6Y/7WGTMtQ/Yn1+saaxUTYCrmW41aUTAKT8wRxEr5hnk+XSwkiK
+         ua+KxVP8VmrHg9jGGges1guF+YTD0l0dHSbMURO04TuYpb87W8qYuPVMLZA9/0caEshp
+         ZWPXzx4rg8+HRGKro1jB0QJ8o3Qayeypb/qh13ha9JkNKi5kOnFMRgORqp/cWpT/mPg/
+         A20X8ktgQRpF8jO4EHvd1AA/hd8WBEr16sw8jFX/7jzZsle8DSoqpJu2lhshUL1jENRz
+         YO5g==
+X-Gm-Message-State: AFqh2krnSPNIDPuKRl+W0bPAXejLN8OGYR4Ei7CSehso6fICd1+4/C4g
+	w0/PtQF7eNC0y6ZHm4QQQfaOnt74JiWr+GhpI7xYAohB
+X-Google-Smtp-Source: AMrXdXtTBSmmpapRkasxn6pR5QkLcD63IBSBNWr/Gffccn/4Ee1t1t1XIml5jSTg7jTlSVY/d9Jvae3vPoGazbEbzhM=
+X-Received: by 2002:aa7:d6d2:0:b0:485:fc29:839f with SMTP id
+ x18-20020aa7d6d2000000b00485fc29839fmr1070810edr.399.1672439124519; Fri, 30
+ Dec 2022 14:25:24 -0800 (PST)
+MIME-Version: 1.0
+From: Mohamed Barry <mohamedbarry926@gmail.com>
+Date: Fri, 30 Dec 2022 23:25:11 +0100
+Message-ID: <CAFBsO7DeyzU5ce8SXbLdZZEA9gZpkysbNkmAGwEtvtipjJeZ7g@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000ecf11005f11313a1"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000ecf11005f11313a1
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+--000000000000ecf11005f11313a1
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"></div>
+
+--000000000000ecf11005f11313a1--

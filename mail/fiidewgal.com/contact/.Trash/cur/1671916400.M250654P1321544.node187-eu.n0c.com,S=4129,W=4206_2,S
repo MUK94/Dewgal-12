@@ -1,0 +1,77 @@
+Return-Path: <dialloabdoulayehorekoubi@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id QDrgDnBrp2NIKhQA3R2AvA
+	(envelope-from <dialloabdoulayehorekoubi@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 24 Dec 2022 22:13:20 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NfcGS0xz0z1wy1
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="TUjSiDJ6"
+X-N0C-MailScanner-eFa-Watermark: 1672521197.90175@36LvqAvXwlp3jXPDYf3xwg
+X-N0C-MailScanner-eFa-From: dialloabdoulayehorekoubi@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 24E4D401AEF6.A12F9
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-vs1-f46.google.com ([209.85.217.46] [209.85.217.46])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 24E4D401AEF6
+	for <contact@fiidewgal.com>; Sat, 24 Dec 2022 22:12:44 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 24E4D401AEF6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 24E4D401AEF6
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=TUjSiDJ6
+Received: by mail-vs1-f46.google.com with SMTP id k4so3311450vsc.4
+        for <contact@fiidewgal.com>; Sat, 24 Dec 2022 13:12:44 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=HRA3UHD8uN40EYGtKXvKwC7s16cXbjAiIg5a4IujOI4=;
+        b=TUjSiDJ6+BOxNHLaRyME6l4Lv8eYShSXLDV4FR+ym9hqqUF9VDGECvgbnEEdxySWqB
+         jTmfq7Bl/c70KIEkaRjBJ4Eib11GYzzKI9BNp+SJRt5QWq6WBJsY7zD+iUDcJePfPYaI
+         Q1Lb+z1F1lxSminaGLyBAuNBiVCVjY6Q/znVHPKlX2+GNf4i4vLnsEfHVuYuJ9JEIual
+         tVoXf5lHlBaoupSiwmViv5MNRPlO741Xcs2EQhdycBNttviOIc7+sUfuF+Uu2W5ssI3l
+         wFAFPfo/xM2pc7WzV/yOwUHKkuYz/FolRhM5dIksF+FqGgJHwOm0C8YvAjR0y/8P9zW5
+         Olww==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=HRA3UHD8uN40EYGtKXvKwC7s16cXbjAiIg5a4IujOI4=;
+        b=LkZeiv9zceyt8BVRZxn3xYrX8or2sSJpjf9winoDsGadzqRNwt5o5kJWf/+SjOGt3b
+         y/VR54lYNHJrJAJSlbnZFjyB8ZwJU8Z6Q3EVphkCcGZxhzC+v8qBqe9jTsm4jFiAtpY5
+         2gjG889We2nKe73PG/NWkKSHckXbZlfkFcGjP7i0pDc05cGPepb219XIAsNPkV17vT+a
+         A5nKuBIMsTB2F1Vl+IlNt8OS/2Q63u3bT7TgGarP/K/nL6WoS2T9k/ZPIO/O2jHs6WKA
+         TzVxTzOruAjyWm1WNVv9vNua+3vhvPLMyCQ2R3ynrzVQc/E75FnX/pNKPx2SetOMH0CA
+         sPBg==
+X-Gm-Message-State: AFqh2krrtoI8PUlbsYFyZpO/MGYY5NkgQ3EVw0QusvCfnw5f7/Dvioj8
+	hFlZcEAYpbsZafTOtknLhgrinsczJA5wuJM7KKL31JdCFAg=
+X-Google-Smtp-Source: AMrXdXsZCdo9O567K9khY+s2Rp2YgzEY/4sQOZj5V+WRXqNFPTT1RMgp4fgOwrBFbrtjira396J0Ypw7e4ujC+oH3SA=
+X-Received: by 2002:a05:6102:906:b0:3be:814f:b94f with SMTP id
+ x6-20020a056102090600b003be814fb94fmr1439286vsh.71.1671916361692; Sat, 24 Dec
+ 2022 13:12:41 -0800 (PST)
+MIME-Version: 1.0
+From: Abdoulaye Diallo <dialloabdoulayehorekoubi@gmail.com>
+Date: Sat, 24 Dec 2022 21:12:26 +0000
+Message-ID: <CACa5PV-43ZPQS3YU9x_GwVuRkt4J-gJ8FOLkaLNBCuq=3mZ2wQ@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000d53a0d05f0995ccc"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000d53a0d05f0995ccc
+Content-Type: text/plain; charset="UTF-8"
+
+Salut aider moi a m'inscrire
+
+--000000000000d53a0d05f0995ccc
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto">Salut aider moi a m&#39;inscrire</div>
+
+--000000000000d53a0d05f0995ccc--

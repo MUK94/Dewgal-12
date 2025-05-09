@@ -1,0 +1,79 @@
+Return-Path: <sallibrahimsall109@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 6e1UEiA1OmSQIDEA3R2AvA
+	(envelope-from <sallibrahimsall109@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 15 Apr 2023 07:24:48 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Pz1wJ1JsXz34SDmp
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="OEnMElW3"
+X-N0C-MailScanner-eFa-Watermark: 1682140863.34019@W/WU/2uSFpw3PIY7VwpIhA
+X-N0C-MailScanner-eFa-From: sallibrahimsall109@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: s
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 60D9D40664CA.A7D7E
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-pl1-f169.google.com ([209.85.214.169] [209.85.214.169])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 60D9D40664CA
+	for <contact@fiidewgal.com>; Sat, 15 Apr 2023 07:20:10 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 60D9D40664CA
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 60D9D40664CA
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=OEnMElW3
+Received: by mail-pl1-f169.google.com with SMTP id lh8so7466043plb.1
+        for <contact@fiidewgal.com>; Fri, 14 Apr 2023 22:20:10 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1681536008; x=1684128008;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=ppSDkpbtym2RmtjyjDz7j8A6E8nFbBA4F7uk1BMGuuk=;
+        b=OEnMElW3dSjIMp5K+kyBjtY7KousGE0z4UuyyC7tLpfpsC66bZbILBJyZW+6R7NtCJ
+         0fOfCi6H7sT4NnRWPhpuD7AoRVZdD5hgt6D0vQhTCrTUWlOtVYrhMn7Wji9RZl0pZVgf
+         MOstudjnw8P9XoIcnD4sDKZ1hABp+QyiA8Yvz5B+IWxloncBvOdJr0D40smCgY/RqUm7
+         xNN1XOmHbxGuT4b4Ha8psb9Ic3uHm1H15tZPEp7AKMIPAc6s9rh0JC0qZ3pxW3JaRiRl
+         FYVkRkQAKkBz2OeoSe3AW3m02nhSEUGt3ezQxyUhBsvmeOwLVqv0K8kNNuwVsXt6VtFI
+         zFKQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1681536008; x=1684128008;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=ppSDkpbtym2RmtjyjDz7j8A6E8nFbBA4F7uk1BMGuuk=;
+        b=DJ2xe+nvc7idzdI/+Un1kpbm591WWNlooZor2TZo+DCNe/pbDveZJtPyUIGMZfVzU6
+         oe7ZROMqIZoC4ajZR8Jq4NGUKkN9LPutuFlHRoByVlbQYj0IhJf6OwLGmLJ5ERL7NkMR
+         omy/5+MgctfkYv1MqOQ3RZVr/SvD3vN1cJbx6xfGJ38YN1mJHf3ynYTsKhrvUKuAP34i
+         YfzOpBahLjXrZrJyR7hsyvrR53C97CJIgUdc8Ep7jMoAMlyneOGfU+paHlFaZHoTwJys
+         +1+WfrFNX2bGCiUui5SdYnuGFRo0AJDvyW4KYGpL1olKjG2xa/ZjUeCbd2u6WFmpqoqC
+         TFyg==
+X-Gm-Message-State: AAQBX9cqNOLTnKwPxiS10gwzDxBaq752VeSUdlnD2GtrcJnPSkB87je3
+	ViC9cPha8fTlym4MhiOpGOyKcdoMph95R7B8+lbLL2bO
+X-Google-Smtp-Source: AKy350Zae7O44LKf6hd+wQnDwiUajwTt/pMnn0BMeMCbCUVJSWqRK0O+0mhNWoVge4iCll9UlkDHug8nnA4RbjyL3qc=
+X-Received: by 2002:a17:902:e748:b0:1a6:83d2:8a08 with SMTP id
+ p8-20020a170902e74800b001a683d28a08mr1624600plf.9.1681536008170; Fri, 14 Apr
+ 2023 22:20:08 -0700 (PDT)
+MIME-Version: 1.0
+From: Sall Ibrahima <sallibrahimsall109@gmail.com>
+Date: Sat, 15 Apr 2023 05:19:57 +0000
+Message-ID: <CAObAfNAnkEZWCpDjd6+y4+Pwh98BJANYdVaRPZUB7WPwYvKxtw@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000071b2c605f9591c02"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000071b2c605f9591c02
+Content-Type: text/plain; charset="UTF-8"
+
+Xlt
+
+--00000000000071b2c605f9591c02
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Xlt=C2=A0</div>
+
+--00000000000071b2c605f9591c02--

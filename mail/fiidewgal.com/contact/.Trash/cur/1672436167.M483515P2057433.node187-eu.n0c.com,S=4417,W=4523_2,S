@@ -1,0 +1,106 @@
+Return-Path: <>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id uHe9HMdZr2PZZB8A3R2AvA
+	(envelope-from <>)
+	for <contact@fiidewgal.com>; Fri, 30 Dec 2022 22:36:07 +0100
+Received: by node187-eu.n0c.com (Postfix)
+	id 715EE40664EB; Fri, 30 Dec 2022 16:36:07 -0500 (EST)
+Date: Fri, 30 Dec 2022 16:36:07 -0500 (EST)
+From: MAILER-DAEMON@node187-eu.n0c.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: contact@fiidewgal.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="8C39840664DE.1672436167/node187-eu.n0c.com"
+Message-Id: <20221230213607.715EE40664EB@node187-eu.n0c.com>
+
+This is a MIME-encapsulated message.
+
+--8C39840664DE.1672436167/node187-eu.n0c.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host node187-eu.n0c.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<ahmadshaw4@gma.com>: host us-smtp-inbound-1.mimecast.com[205.139.110.242]
+    said: 550 Invalid Recipient -
+    https://community.mimecast.com/docs/DOC-1369#550
+    [Pti2EUJ4P5WERgzhBP7QQw.us658] (in reply to RCPT TO command)
+
+--8C39840664DE.1672436167/node187-eu.n0c.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; node187-eu.n0c.com
+X-Postfix-Queue-ID: 8C39840664DE
+X-Postfix-Sender: rfc822; contact@fiidewgal.com
+Arrival-Date: Fri, 30 Dec 2022 16:30:46 -0500 (EST)
+
+Final-Recipient: rfc822; ahmadshaw4@gma.com
+Original-Recipient: rfc822;ahmadshaw4@gma.com
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; us-smtp-inbound-1.mimecast.com
+Diagnostic-Code: smtp; 550 Invalid Recipient -
+    https://community.mimecast.com/docs/DOC-1369#550
+    [Pti2EUJ4P5WERgzhBP7QQw.us658]
+
+--8C39840664DE.1672436167/node187-eu.n0c.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <contact@fiidewgal.com>
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NkJMp3LvsznqZg
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="EdbNMMEU"
+X-N0C-MailScanner-eFa-Watermark: 1673040644.38322@hn3e40PxwH3/QS7P0q8Udg
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 9D23140664D5.A1001
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 9D23140664D5
+	for <ahmadshaw4@gma.com>; Fri, 30 Dec 2022 22:30:43 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 9D23140664D5
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 9D23140664D5
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1672435843;
+	bh=yidDNXSIXcY1c2esSYwUtsSw5APDAlMQbrKlmVvX6dU=;
+	h=Date:Subject:From:To:From;
+	b=EdbNMMEUWkEC6zqm4olmIdRcjx75HqXbYqSfMI5gXnkGXDguptn7dveig5TCY9yis
+	 YVgAjb2FFc1/EfataS5aEXruwz3zrB8Rm50I0vGWpTkirIZxx7epJC46Ze8HMPQMjk
+	 WfGgbgP/AuoW0Q3p9vPziMnAFk0T9mpyAwRGBplc=
+Message-ID: <35b93e5b9d87d44b23050f11d6a46ed9@fiidewgal.com>
+Date: Fri, 30 Dec 2022 22:30:43 +0100
+Subject: =?utf-8?Q?R=C3=A9initialisation?= du mot de passe
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: ahmadshaw4@gma.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<p>Bonjour&nbsp;Ahmad Shaw,</p><p>Votre code de v=C3=A9rification pour la r=
+=C3=A9initialisation du mot de passe est : [[code]]<br></p><p><br></p><p>Me=
+rci !<br></p><p>Ne r=C3=A9pondez pas</p>
+
+
+--8C39840664DE.1672436167/node187-eu.n0c.com--

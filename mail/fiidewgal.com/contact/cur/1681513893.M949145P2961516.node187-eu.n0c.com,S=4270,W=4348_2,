@@ -1,0 +1,78 @@
+Return-Path: <26261752mamad@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 2Lp/OKXdOWRsMC0A3R2AvA
+	(envelope-from <26261752mamad@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 15 Apr 2023 01:11:33 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Pysdd5fhwz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="RDzsvoiy"
+X-N0C-MailScanner-eFa-Watermark: 1682118692.3428@vs2JfHkgyG8VLNAGpJR7bw
+X-N0C-MailScanner-eFa-From: 26261752mamad@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: sss
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 00A36406355D.A285F
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-vs1-f48.google.com ([209.85.217.48] [209.85.217.48])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 00A36406355D
+	for <contact@fiidewgal.com>; Sat, 15 Apr 2023 01:11:00 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 00A36406355D
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 00A36406355D
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=RDzsvoiy
+Received: by mail-vs1-f48.google.com with SMTP id i8so10688052vsv.4
+        for <contact@fiidewgal.com>; Fri, 14 Apr 2023 16:10:59 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1681513858; x=1684105858;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=hpwIw4QXnPnMtFBqYRK7brwY7fKZcqiuZwC2lQ3Gel0=;
+        b=RDzsvoiyiW9W7sIZFj/5K+TQm8yOtZ/xY/oDVhNoTSirpvsvFpTkoQeNHZPZ8ipyvV
+         DjAhMbvc4SaJhCHNGxsjFp5sMrPUdN+aEoSIM2EGXPxqFoVUUObsPCzB2YKVo6jfQHTb
+         2NjR226HzX2GWf5seMojcktb633AXN9MDfpU6rF8l79b5cIhQK4hmAqPKBpHtXCKk9lX
+         kfvKKUiZf3JDXpxFpAQqfjk0uEcg0sUdwKpBdILnHcxITNA4SACs0fFX2duYwslff+JB
+         VQVyL6yEvnhcMhCBqEx8LSObIQBTsG2khL0YpsNxt68775JlGdjq6Kx1cdB+aC934Zqv
+         5Yng==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1681513858; x=1684105858;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=hpwIw4QXnPnMtFBqYRK7brwY7fKZcqiuZwC2lQ3Gel0=;
+        b=SkA3CrYgJbWeYOW6suUXL0O//WHHdm+Mo0K3yjyE7vyl+KVYngKiL8DuAikgaQVaZ0
+         nspaiXD/VVdif2bawGOukwLsFJBDDWjgfaqzeVI98qOsykeS5lJrLukljV4E+O4aDgwk
+         c/53bNWLxTciwfFcWs3tX6GXdisLkM5MNIRD/N4w8aPBkw/LZ4+2fBH2b98g/aztXpf2
+         fzHSWMS8MtpcImN6HHvDQT4QkosDz5hWRaybC5WyDvzLI6sjaD6a636wQSB7032VtpZA
+         BxkBlGD07rIurOX2gdY5B3EwXPOSzZFC3Hf9DlHIHr7fkELEIvmvxm9zi/D22zBKnHB+
+         p+gg==
+X-Gm-Message-State: AAQBX9dGBL8ByR9+xgemB8plKBvA5PsfnDVUPwlflIBu9qg1ueOBoNEP
+	k8VLGLyVW6PL8foRhuXXV98thQstE93Zuvh2kDITzP2E
+X-Google-Smtp-Source: AKy350aeap3XvrHlz3H7CWb0M2Jxt58MaM+x14px/tBymbXlIKu+q9XwqnPcol0g+Zu1Bq4IC02HHyd+qp6A2e+THH8=
+X-Received: by 2002:a67:e04f:0:b0:42c:7ddf:3dd5 with SMTP id
+ n15-20020a67e04f000000b0042c7ddf3dd5mr4170568vsl.1.1681513858523; Fri, 14 Apr
+ 2023 16:10:58 -0700 (PDT)
+MIME-Version: 1.0
+From: mamadou diallo <26261752mamad@gmail.com>
+Date: Fri, 14 Apr 2023 19:40:22 +0000
+Message-ID: <CAGg7J-Gbv0GZzH3ZYqGY7BxvNdgw91hYaKmW0OB5nOUsZ+_OdA@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000038e66b05f953f4a0"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000038e66b05f953f4a0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+2LPZhNin2YUg2LnZhNmK2YPZhQ0K
+--00000000000038e66b05f953f4a0
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+PGRpdiBkaXI9ImF1dG8iPtiz2YTYp9mFINi52YTZitmD2YXCoDwvZGl2Pg0K
+--00000000000038e66b05f953f4a0--

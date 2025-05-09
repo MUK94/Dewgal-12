@@ -1,0 +1,88 @@
+Return-Path: <abdallahramadan881@yahoo.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id p89FIIa6OWQQnCsA3R2AvA
+	(envelope-from <abdallahramadan881@yahoo.com>)
+	for <contact@fiidewgal.com>; Fri, 14 Apr 2023 22:41:42 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4PypJj1L7Nz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=yahoo.com header.i=@yahoo.com header.b="MndPd7L1"
+X-N0C-MailScanner-eFa-Watermark: 1682109691.55483@hX7iYyggD9+sMcsLtLUvTQ
+X-N0C-MailScanner-eFa-From: abdallahramadan881@yahoo.com
+X-N0C-MailScanner-eFa-SpamScore: ss
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: E76D84063278.A1951
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from sonic314-20.consmr.mail.sg3.yahoo.com ([106.10.240.144] [106.10.240.144])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id E76D84063278
+	for <contact@fiidewgal.com>; Fri, 14 Apr 2023 22:41:29 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com E76D84063278
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=reject dis=none) header.from=yahoo.com
+Authentication-Results: node187-eu.n0c.com; spf=tempfail smtp.mailfrom=yahoo.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com E76D84063278
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=yahoo.com header.i=@yahoo.com header.a=rsa-sha256 header.s=s2048 header.b=MndPd7L1
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1681504839; bh=H4v/S+ZX0QOcodNImFsg91jkGzr2jNJcxy7gTr+FlxE=; h=Date:From:Reply-To:To:Subject:References:From:Subject:Reply-To; b=MndPd7L1pgab/3HlLYDfmOjnU8Cr5AcGpUPSBR76ZyT6adLaJi4Ds730+2/W0jo9DsNyb3LYjndvqMdyx0VrodIh/6Uwv2JYBU9Yov9mXtS1HohtU9gFsg6ItYA4CPxWP0erhYyFu5taUjW4/ZrKgQ5LjrdY4oW0+2Bo2funYxvoG4g4QP7h8XjNrFmjGyEx+sTXvouaMMz7KZ0qApM3schi7VLPuQj++fY1ZCJmFtSMuS47ZBuGf+/uEBs8Nmt/XC8xZyU+6baxql82xBut9ppErzfXMmsVm92uYv1AQIUQ7StrkBjPDoRz45qhuo411h7uwB3bfVYtAMOuntNaEg==
+X-SONIC-DKIM-SIGN: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1681504839; bh=BoLgBpO5sCSb1LqtMDTrOkDOzvk+29M2ZyuYauzCMRg=; h=X-Sonic-MF:Date:From:To:Subject:From:Subject; b=o50nHcsuYkmPTlKSUiV3W66ZbRU0N87he4SThzTASmMvbfsVS/Um2QhLPGJbBHgePcMdW20FaYvtEdahG4K8a1BmpQWezlvLJJJO4KUQyWxVSscylRT3f9Q0KFtxA4cRnMt+ydiBjYKhRCVLSc3ox6MKVzPZ7kLcySWpHasAUD2Wc4JszHhmjuXK6aXmBQMPF5DaIcA707Fo4PqbS1Y2tMWdCoZO6kHtE/TMPWW26YukMgFIA4/VrO8kdovsI5Q4v/sgFn3ZsKvYRLF/xiVmSlUDR6k3iKJOJCXCskkjo65sraVVWSIXDkD9WQIS/hEr3sPM36zhV1tceDfBEqvr1Q==
+X-YMail-OSG: NYPdsYUVM1kN3GagEbdh4XzhZruzwJWHapxV8VpuH0qGxTxHbWzesHMRzcKZIjc
+ TVFHGkjDJifLqmpNGOj2QVg7c.xkSPfyMZn8nDQ1cp1ROyu0LjkdqraJR5Do58INozQ9pbO.Jd8P
+ 39w6tdL_VroIfauEcxpvEbrmwWhrpYf9envZeiFxWIWzLfKXiTuSaXDNb24pAwlKAQBzMQTeqHtZ
+ AAJS9IWCUri83afDXqVyUHabT_4S5jkhB0SDoWLS9J2kFR3V5hSJUgqjuPsscvAqEdJy90CdYYVY
+ a3793MoWW6CtNE5qp6jsX56Exl0Ro4hQAJ_4s7gqfB9oIiYoahVvLvxaAzrz7dLpR5csWFUjdMRA
+ OH4iJ4C6QP96t._1.T4nc13txabfIPZCJXa84FAbEsOE4cX5Srsyp48h647S.4bnOv7uTYIxAYMj
+ XVsIxlMIyrZSZtcS6S1CDbP1VyonXFrDJ_LRcO9U35Vvv.4EItj8CKA0CP4m6otyvMrRYC79UfZg
+ iWQOoIRcF9uoP6kC0WZ5J3N114csuVicbHmDu_t_iVIeOPngFla2JJ2rdnqH2cenk1kYYmX5MHFq
+ wSKF2NHtfnsJy7aBW7OW1Uux5ahEYktXpF56EOhelJdoxYGQ08R7MsD1p7FKibuOEH1_GTNZEm6r
+ iXzO0nSaWBiotNA5x.qiOwzhfG8sdwlgI4eDcpjYdmMri5_DRmORPkuC_qU6Rhv_Pnqgzbfy1u1M
+ 0KvhqzGY4U9ea8f3UaYHfMGTdvPSeT5eRt9ZCOIYMkoGVfMWfI85mzPzShXLx9kjBm52v6xGkyqD
+ MbYQV.mz.zRfuezwi9fHXK6g7EV2SzETUXdnpjkWykiFuKtLx4q_t9zBNALpxsveOKozQBUpbYj6
+ X5JT3Nf0omb0mPXmfpeAdAQdFOs46V9Ez1moycY32vl6.ms9TygGyuBTuT.G819Q2Z9_kQ2Ooo_T
+ bPrD7zE7XcBhU._efa4kXuUEg6tS2XnHa4Y1CpqQYSX5twFv_qVyRGv6Q9Rwf8VEBpUVx28Vb25h
+ 80rYnZgJdjl3mn9XUX6rDIFMckB9rrY76XLFAlK_7kq5TDygf6ICngMrH6meqP4HYgC93L.IxtCO
+ 48ZkwD1I5s7xdZ_bUAeqZ3Sz2.k4oTSGacp_a._wFds8slsnIjtLQYbMLi9F1Dt38LRF6J0IB.Kv
+ 2TDNXBHZROKtx90rjUxEzms3UaajLXl8l.A3RYtXbBwJnsv25JdeePmAQxzJamotB.CbYLiHVJs0
+ jingyHOi1AUuVdhHpJLn4SUYVtvhOOl26D7T0w.bBFfvqIZ_l9vFdqRD85F826SW1dpajLyaLU5l
+ SjjwEpBoVo0TYkoAR8TiQn7m0ry9b2h1eNczngKjC18hUq7wwyt8VevUy_GUpM9veJ6zj2O.6xCk
+ i1LAvHmf15ApRFt7RgwKb04UqtGrFjAbInkQcV2SZuONDMDJenYo3.gra3nsZJa2C6YRAldQignC
+ ZjGIH4ch2_1lVLUBLvnDhL_egmUrPSga61PLg3KxaxNCSZ.L1iYgjyggK3Gvyc7yBMS1j_dqpHcT
+ wwKP1q.doV1FNziYnf.vClGyGiuV7on_xtAFd14coRe1XLa1GVDRKV3El_agtSjo.muX5kF_ru1N
+ apgpTFNoh46jPiu8WLtmqVFzA7lj8YNK930nYeDMVVC_Up0SSs09L3GjqQpPBaCX7oLaJMXEM.zO
+ dFU8zJMSe0I0qsJtvfeKYYyGnJVr5QGwzWXYHvYjklBCogkUJwRbWLYOEsoVi5t8kKPdCs023Ewa
+ qkJHqd5AJBl97z5DVXYdO3DTLFreq7oKmX6Gz18POU6a5ad.mAEVbsEuf6AQohDIcXZw82ZmuiQq
+ HpQKbGPSLbpTxUqtKZTN5gAJxXVAxfaAACfPQluw3nL2CSPzyIFEGH8CcGov_.2eJN35EVngkopT
+ Dcoow0SYwMI7X3F0Ckj9xTZ1a774jm_aq5TSicWjrZm3Y6zScugmPZ5BOZbZ4ZXQn89YzxQqwHPe
+ EUJOlJ_UW9Kz4uaYS9oe.d6tdnfQCwWAZAiPlL7Ya5ScxZuecIIraOjfGZ3OlGUwM9h0wNCV60Xj
+ MFAkgIsv3dLrf8AHcNDEXuncdKcRq_tzf61ntG_1acFX9dnI6cVACVh9bDzrm94_xpb_3bVmiP4A
+ hoKPKSG_LBlw_c.xNfuxYclMa_NjUua1.6XJX2.oKvHG2iqlEPQXGZ2ng5qu_.Wi8jzaFbLZobTS
+ EjAWuU_o8yQ--
+X-Sonic-MF: <abdallahramadan881@yahoo.com>
+X-Sonic-ID: d91690ae-0f0c-4939-9b72-296815fd326b
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic314.consmr.mail.sg3.yahoo.com with HTTP; Fri, 14 Apr 2023 20:40:39 +0000
+Date: Fri, 14 Apr 2023 20:30:15 +0000 (UTC)
+From: Mohamed Abdallah Diallo <abdallahramadan881@yahoo.com>
+Reply-To: Mohamed Abdallah Diallo <abdallahramadan881@yahoo.com>
+To: "contact@fiidewgal.com" <contact@fiidewgal.com>
+Message-ID: <752857336.2227538.1681504215868@mail.yahoo.com>
+Subject: Hello
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2227537_1927515936.1681504215867"
+References: <752857336.2227538.1681504215868.ref@mail.yahoo.com>
+X-Mailer: WebService/1.1.21365 YahooMailAndroidMobile
+X-N0C-Node-IP: 185.221.182.45
+
+------=_Part_2227537_1927515936.1681504215867
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello
+------=_Part_2227537_1927515936.1681504215867
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello
+------=_Part_2227537_1927515936.1681504215867--

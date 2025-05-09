@@ -1,0 +1,82 @@
+Return-Path: <asow00731@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id oNZ2DQ3SQGQIhAAA3R2AvA
+	(envelope-from <asow00731@gmail.com>)
+	for <contact@fiidewgal.com>; Thu, 20 Apr 2023 07:47:57 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Q26Bj0mxjz34SDmg
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="ppq7dTBa"
+X-N0C-MailScanner-eFa-Watermark: 1682574240.80037@2xKbYi59doaew5jZ0sbVIw
+X-N0C-MailScanner-eFa-From: asow00731@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: s
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 3C6F04020D4E.A9B75
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-oa1-f52.google.com ([209.85.160.52] [209.85.160.52])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 3C6F04020D4E
+	for <contact@fiidewgal.com>; Thu, 20 Apr 2023 04:59:34 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 3C6F04020D4E
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 3C6F04020D4E
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=ppq7dTBa
+Received: by mail-oa1-f52.google.com with SMTP id 586e51a60fabf-1879fc89e67so286532fac.0
+        for <contact@fiidewgal.com>; Wed, 19 Apr 2023 19:59:34 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1681959572; x=1684551572;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=JKhW8nZxsoJJx20veQY5djTayyEH0/B23gHr5mtfY7Y=;
+        b=ppq7dTBaeKpqGsoVE84TKEA2peFQfUCXnfpStMZdHiIvWU0psA6av3M3BL8J8da6in
+         eb3pkrCxBY8mxzeoLWhIb5EGWxef49AdAmUTVXDZL0mrquGwCT2eMzIGbakvf08rYlrv
+         ezQDi8ugUqoSRurrJL9u96b3G6a31VkoCzAJsLUaNg9uZZiH6JgSHGatuuGP8UQnMU22
+         lmfda7zlKZzN006s6630AH7zfrIFZQqbs0T2xqHguwZv8VABIshA6bthQ7XtHc9Ydorw
+         wtrX59W4pA4OxLCkvHpBVV9wF6CnZo5NZ4f0dQlweI3wE6g2Gm0BjkM2sYycHD7KsywR
+         SEpg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1681959572; x=1684551572;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=JKhW8nZxsoJJx20veQY5djTayyEH0/B23gHr5mtfY7Y=;
+        b=AAcgQWSsFfaztz7w/V9dDXyeOjML9/E078Z57cuG6J/guiY2GAARSK2Nk7wUpS+7tL
+         D7D59BmBbFjb7WXE/eTwTt+qs0FJuVb1t8/m36qyzoMXHYG9ai7P77KMcveZwWC4ysKs
+         tE6aJnfzGAUHtyNtopgwhnahCJw9RStueKVU6UVDIuhlOdWmDU8XaeB+OtKPcEfz0tWs
+         32C75L6ZBqEKtEAQMIxQjf0p8O00IlRyVEcSkxMW5AJC5eBZIfBM2QQ55jOJEmJU1ThY
+         dyeIF6c0pANdmSrOOd4fcD+llOu39YL/+K2LirA07X+zWfTuutIVEV5liznsFmXJl5HV
+         AENg==
+X-Gm-Message-State: AAQBX9dbt/Qou8lD25zf8X5gFjIaFXBez/IU6BFt09NkFtLB/Vwz3KWC
+	hIVK3tVhGvMpbhAWMW+coEVcLCfj6jXOuwkJZrb98Gv/
+X-Google-Smtp-Source: AKy350ZZPQNg9i7OqhgK4gJhAmtYxS4cJetvJQgUDC0pLS0OPmHGmQW3ed1+G/GT0WVYd0MV61fNbPLfEqNgT5x3z5E=
+X-Received: by 2002:a05:6870:d24c:b0:17a:cc85:5b1e with SMTP id
+ h12-20020a056870d24c00b0017acc855b1emr187466oac.3.1681959572497; Wed, 19 Apr
+ 2023 19:59:32 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 2002:a05:6358:342a:b0:115:8022:5f8a with HTTP; Wed, 19 Apr 2023
+ 19:59:32 -0700 (PDT)
+Received: by 2002:a05:6358:342a:b0:115:8022:5f8a with HTTP; Wed, 19 Apr 2023
+ 19:59:32 -0700 (PDT)
+From: Alpha Sow <asow00731@gmail.com>
+Date: Wed, 19 Apr 2023 19:59:32 -0700
+Message-ID: <CAOX761Fn2OaKnJ3LPUzpOO3AfUEquhoHswG89WtTHSb5Odgw9w@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000d8681b05f9bbba35"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000d8681b05f9bbba35
+Content-Type: text/plain; charset="UTF-8"
+
+Assalamu alayklim
+
+--000000000000d8681b05f9bbba35
+Content-Type: text/html; charset="UTF-8"
+
+<p dir="ltr">Assalamu alayklim </p>
+
+--000000000000d8681b05f9bbba35--

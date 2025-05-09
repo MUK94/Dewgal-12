@@ -1,0 +1,126 @@
+Return-Path: <mariame.d34@yahoo.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id c5t/ITyRtGM8lxMA3R2AvA
+	(envelope-from <mariame.d34@yahoo.com>)
+	for <contact@fiidewgal.com>; Tue, 03 Jan 2023 21:34:04 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NmkwX34kpz3F9b
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=yahoo.com header.i=@yahoo.com header.b="BhMvSLPY"
+X-N0C-MailScanner-eFa-Watermark: 1673382838.78677@xzcSAXMhnF5bDroRmou2zw
+X-N0C-MailScanner-eFa-From: mariame.d34@yahoo.com
+X-N0C-MailScanner-eFa-SpamScore: ss
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 33E6F40049EB.A3AA7
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from sonic311-31.consmr.mail.ir2.yahoo.com ([77.238.176.163] [77.238.176.163])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 33E6F40049EB
+	for <contact@fiidewgal.com>; Tue,  3 Jan 2023 21:33:57 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 33E6F40049EB
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=reject dis=none) header.from=yahoo.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=yahoo.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 33E6F40049EB
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=yahoo.com header.i=@yahoo.com header.a=rsa-sha256 header.s=s2048 header.b=BhMvSLPY
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1672778036; bh=9pYaTEGEEc7wQBI2SwryqERoQVEBH2RJSabpPSW+N+A=; h=Date:From:To:In-Reply-To:References:Subject:From:Subject:Reply-To; b=BhMvSLPYGx5VdOf00D2v1UqQsbcd+mpY4g+uOqY3/nhUxc1Dl88aJJ2e1b9/k3Eq1VasRl2+9wUwSK2jkYRPBVHW2tA57l8E9QDHa0gSFbbYcZqdi7uKc0N8QdHLP7M4DC/1gqdQeBNm7oqg3ucJkS29i9GrYrV0rVPSH6vxV8B99GEMANQBMTDCPkxRP6I/xZYg+64SkrLwyXd9N8PNyf8tJZ648zMPAqlvFOnqycwRHGJag+XNtOSed0guIUSzAwuUz1voR0HEM7oyApluKDbZZ4aSY6j9URP3k0YDdQa8LEIE4pZuTBzfKcAlXYFi29r8SXBdiG+QkD0Q7UzoyQ==
+X-SONIC-DKIM-SIGN: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1672778036; bh=1/58ELJrysejjI/EvIpnV6OYLsO+7RSByko7PSd71HO=; h=X-Sonic-MF:Date:From:To:Subject:From:Subject; b=GFcBB5JHLHlA5DZ8MthQTFaXnwW7gJkBQP+i1xGyyrLkPOKhQVgqo9Qp1prDOIHfKv2XdP2uJbPEVbeDux1KDaoQtYcNI0rqbF9M3x6Zqgf3MwMQOW71+C3KNbZAyihu1uVS/QInDtJV2up4GCIEQA/lkfVjHOebFzr6WwsX7qydljZ+RpC+3467A2WryxvQ81bYu/Fsu5owYhQYLO/U2o2YXZN8nKk6a0geT5QKFb+xj5YqCjLHVQMzOBtHQeWlvEbT3eSXK9kbBbcjNwF2EmYg+jk7dIihXltw4SdqR5vcpYsEqTBMA4STSz7p3rBcUrYeibLFEEVM1xIBvFDsgQ==
+X-YMail-OSG: _Qai6ZQVM1n0OigVqkYxe3FrM_OUKNuQpIFCmElhCbDlj_aapWP.ORDZKqEokfm
+ tFUdOPGobZVRJnRjlVPaSbtxcHsCw9L5crq.Oo3ERYSclO8efbG0qnstUYtFX1tnyyJcksjAEIok
+ nV4S3goFRssvEVMcC9Qw9GTIA8x28K13JPNPdl8lx6r6Gg9yUmMBOWDqYPjSF5G8ZhYJSe2NHahE
+ FNYmNaA6KzGKLJKKLk6250LtaUwidHHDX1stN7c9KM_EXtv15OEm0ssjHqzxUYKBO8Gq1jtzjFup
+ EgyY0akd6jC9tTHukVGfi5k5oBcLfd4TC1KitY17iKTCJNpQiILRKUuE3Jcojth4fYBvKfVrv3Fo
+ mnTwfJZHq5p1gK40Smdo_bi916px_s9t0fs38te0sOYQkU2JmB5svdKWAVeMU_DnLMr_JEd7sM29
+ 2O9gsUzLH7Z8Yd8Hrma5N8jh5735I4IxTAr714PGb_EQ60e922rhd5mT6Z0Z47Cy4kvqse8Y6uEH
+ WMrFHxsxJ9fOAR9CUzzTcQbO2GgaBopCpF51rYUyEe7KzMaMIKl5StvjUzmhV8TkGBioxvsmc7Ao
+ yTRvKQiOXKInGadQTwrrUaE98B6lSW61jj03N3dzGKrpEPb6GpRMmpmCBLFWj4SD8mZ5NjnuHS8d
+ SptZ6.L4YY.ek027KOa.rsuXOi5Ts8rF6ipN05LfZo8FTynCWlPGGekdKw8l6MdKoBCSgQMSKWC1
+ Kas5EnhFdhaWRYmx4TV1BPutpK1ut48PD.zR68PvCSOH3Z.uhXqdfwGYGqz0l.TbSdzi9sKwkluj
+ lQhzM7sAF3NUW8O7MilFaSW7KRNuIDLdvTjBHgM3q06MzFwsTXww_GWvqrg1jm06chRIuPT7BAFn
+ S29vGzX16VwaFx8f80ChfyuUtLMFtL_oSmsQbcQpOk4kwFmgp7XbjXVeNAizRwqn8_EkYgA.k_4Y
+ 3y0xIQZ9IzZFIdW1aIKxcD00i0mKkFkNceYrvA3qmrcUgHclPHtEW9SGl04ymMIZGqZsFVY4Hl3V
+ u8b0RIYzM9tWR1WqOWeGgcv8CCgtgu7wW3DMqQQMxrMH__MveHQewJHjZTsb23eUG9F1JYeLoXxe
+ RLLMLmYzj03MhjzgaIlfm1H4zwfAb3ffmkNvFpABYWe5ZQEfQhriQ5j.8xl.VxlQmMh1AyXpXdDn
+ zzP70RspcgPQGQ3recV4gr7_HWoSker5a_K.yU4pIUt7IGpUZzRj8ZUoeqJ0hWUprxyp2r.yxsVH
+ GEJeQGG_A6Dd9eURkTonloN4Ng0hvYsttkKV4tZ7IuuGmlyPXZqppaRlBvcSMr1PEi842UagMQWv
+ 8LIftEj0PuACdr6hJOBSJzoohm_DD.zxFdWBWbEDDndjV.fh45D27fKpDn0xKQhUybAflfRzRmAd
+ E5ZF0LJF9FjuxPqTYzxD7jRtyt_XyT0Oej1_OV8OgaQqWFJKgEnBFi2IpeN9cIDm0_FESdd76dLX
+ EPPd_BBS_CNf2Mv_0j9JHSkuLxIcDXAJXglqZlwOcaby8L2IWSID9vaXG0oaQz3JPv656Fx.oU4f
+ gRrfkotpg60vvPSNhJA7KReb2UYkbCs3W137emSpVL4Gf4kbkYTAEP.eUJSXmhb3nlExoJ1XxA0d
+ hG9eD_TAlNG6P4JlU07En.Xpn36oYKI3K3hw3LsPdJJYBrhLNc2hEHFJ.KX8_kqT0fDb5DVezYjC
+ zF8pBhLvupK7oOuS5UUdijhAp4IAA6AUmK912A3Vs1oEczOQJtRfDesBI0YUS85gzZOozLmk0Iaz
+ _EHFdwCA0tm9.oetTJ9SkxqSAVtUmxf0Be0alnpa5wlv9KXEc89nDqah5P_Cl28BqAqg29JCQUvf
+ S4XIlzZ6DqYhUFXDglDWush1HrgP7A6rZw5opDHmShPJKATlJ8WXfGOGQCw6A92XW8WvrNo2ZLs_
+ ZneiXgtGOPyIEntP8cCAUzbwRbw_Pex1WZpsyfJoS1V77shIj4mUrsPQDKg3NBPsz4PATclv2h_a
+ UWMB2bTl5Q_firbKwEh7SwX9SXqxnIu8ceEe7ObpwT4gH4chqa1IRcV9FIqRXCbQ60SMZh21hgGG
+ pdcQRt1VQoiBIeZSvbNOjv8u_
+X-Sonic-MF: <mariame.d34@yahoo.com>
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic311.consmr.mail.ir2.yahoo.com with HTTP; Tue, 3 Jan 2023 20:33:56 +0000
+Date: Tue, 3 Jan 2023 20:33:51 +0000 (UTC)
+From: mariame Diallo <mariame.d34@yahoo.com>
+To: =?UTF-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>
+Message-ID: <114990170.10539394.1672778031275@mail.yahoo.com>
+In-Reply-To: <3ac22d17ddc59b579d9c93a404ecde4c@fiidewgal.com>
+References: <3ac22d17ddc59b579d9c93a404ecde4c@fiidewgal.com>
+Subject: =?UTF-8?Q?Re:_R=C3=A9initialisation_du_mot_de_passe?=
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_10539393_1085566312.1672778031274"
+X-Mailer: WebService/1.1.20982 YMailNoble
+X-N0C-Node-IP: 185.221.182.45
+
+------=_Part_10539393_1085566312.1672778031274
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+ Ok
+    Le mardi 3 janvier 2023 =C3=A0 20:16:37 UTC, Ne r=C3=A9pondez pas <cont=
+act@fiidewgal.com> a =C3=A9crit : =20
+=20
+=20
+Bonjour=C2=A0Mairame Diallo,
+
+Votre code de v=C3=A9rification pour la r=C3=A9initialisation du mot de pas=
+se est : [[code]]
+
+
+
+
+
+Merci !
+
+
+Ne r=C3=A9pondez pas ok
+ =20
+------=_Part_10539393_1085566312.1672778031274
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head></head><body><div class=3D"ydpbfba89abyahoo-style-wrap" style=
+=3D"font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-size:16px=
+;"><div></div>
+        <div>Ok</div><div><br></div>
+       =20
+        <div id=3D"ydpbfba89abyahoo_quoted_3115726394" class=3D"ydpbfba89ab=
+yahoo_quoted">
+            <div style=3D"font-family:'Helvetica Neue', Helvetica, Arial, s=
+ans-serif;font-size:13px;color:#26282a;">
+               =20
+                <div>
+                    Le mardi 3 janvier 2023 =C3=A0 20:16:37 UTC, Ne r=C3=A9=
+pondez pas &lt;contact@fiidewgal.com&gt; a =C3=A9crit :
+                </div>
+                <div><br></div>
+                <div><br></div>
+                <div><div id=3D"ydpbfba89abyiv3675781930"><p>Bonjour&nbsp;M=
+airame Diallo,</p><p>Votre code de v=C3=A9rification pour la r=C3=A9initial=
+isation du mot de passe est : [[code]]<br></p><p><br></p><p>Merci !<br></p>=
+<p>Ne r=C3=A9pondez pas ok</p>
+
+</div></div>
+            </div>
+        </div></div></body></html>
+------=_Part_10539393_1085566312.1672778031274--

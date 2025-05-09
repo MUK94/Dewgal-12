@@ -1,0 +1,139 @@
+Return-Path: <barrymamoun3@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id bGIKL9Ld2mPa/RIA3R2AvA
+	(envelope-from <barrymamoun3@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 01 Feb 2023 22:46:58 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4P6b9F3Lh6z34SDmh
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="KJRnyUPp"
+X-N0C-MailScanner-eFa-Watermark: 1675892813.40268@fcmzQnrXm+jKlhD9XiFktQ
+X-N0C-MailScanner-eFa-From: barrymamoun3@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: A9153401AEF6.A360C
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-qk1-f174.google.com ([209.85.222.174] [209.85.222.174])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id A9153401AEF6
+	for <contact@fiidewgal.com>; Wed,  1 Feb 2023 22:46:19 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com A9153401AEF6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com A9153401AEF6
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=KJRnyUPp
+Received: by mail-qk1-f174.google.com with SMTP id x2so87401qkg.7
+        for <contact@fiidewgal.com>; Wed, 01 Feb 2023 13:46:19 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=Z5gNIHkpNiWp1uBkpMWMgB2a1RGt5yScc7QFkjtjSaU=;
+        b=KJRnyUPpnJ5APNbXlnYjbwwoUsjH/TlAxndSGhcu1uFVtyskA2wxw+2OcvezEAWFIc
+         1tywVtcoSJTU/C1XrC19XpNon67h7EZjLyAtNU4a7PVv5FbZsx7a2ocvN8dA19fhc8k4
+         byDv/BI8QdE+efAHTpM/GjKkoLZAQ01aEsgl5PT/L8coYpnbaUuR3TyRS45hk7bvhUbM
+         vammJSFkEAac3hqj3LTBff/hvsmOD2ZyAULegGDIkYMp1IaEKfH5IOoGs18mfsQnJkTs
+         3N1gB7o4y2xmVE2fZJnsQ7Zp1S9uRy1mD9sbYtiwskAh2MotBFOEORMjnT0Xf2n7q9J7
+         3Vow==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=Z5gNIHkpNiWp1uBkpMWMgB2a1RGt5yScc7QFkjtjSaU=;
+        b=iHLskDVh6dEr9pDSjYDh1up6uOzvbzn5gkR4U9H55Jgo4VWHY1PEauS7ikbuS1Jd9g
+         nJx/aOw5+JdIUZUPGqp5BSdzMMyEI/CXITdTWVcxoqd6ghwhMohe4bF3WGNBdqHnNRLO
+         zFyY+KO+MZwryi/LyMm4+1ctb4hblOURCxF5UpO5vUOqeG0um4PjdtJyzUus0n6ThcD0
+         LQpkiHHR1WylLFZ+owamwAE1Fycq3EJaLAUe3JqkiDMB09ayVts0hXuAPR4um/cYwgTe
+         i8Iss8wpo2NPsXJBfdzyRUcQcfcfnkIkbjsZ58uNoz5oPXZk2BXMEuMwqd/+dSR2tIVT
+         a5wA==
+X-Gm-Message-State: AO0yUKUOX/iyo1c2lOhy97Olgr1tYYfK7c9FpYCBNtXxgj2tGtgGMCq7
+	WVBFvgL7CU4fN0CxiFMFWsFTzoc4MdFcMPv3CbuLzXDo
+X-Google-Smtp-Source: AK7set/CNLuoPPgETivnbFiCKZ+Wn1NsPmQyDpbv/vRRckI5foAVYk3lAMc6HmaUOxMvebyx2qS7Qc3Yf3Hdo37tr28=
+X-Received: by 2002:a05:620a:10a5:b0:727:1bb8:1d40 with SMTP id
+ h5-20020a05620a10a500b007271bb81d40mr272693qkk.351.1675287978220; Wed, 01 Feb
+ 2023 13:46:18 -0800 (PST)
+MIME-Version: 1.0
+References: <52b2f289eee26ae0582a2447863ce7a8@fiidewgal.com>
+In-Reply-To: <52b2f289eee26ae0582a2447863ce7a8@fiidewgal.com>
+From: Alhassane Barry <barrymamoun3@gmail.com>
+Date: Wed, 1 Feb 2023 22:46:07 +0100
+Message-ID: <CAFbvPTkRvuUMiCHMe3taysHm+iq3GPMJjTt1VNpiJ9-px5HHoQ@mail.gmail.com>
+Subject: Re: Profil en attente de comfirmation ( absence de photo et
+ formulaire incomplet)
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000d6a2b405f3aa60b0"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000d6a2b405f3aa60b0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Salamou alaykoum
+Mais je ne peux pas mettre ma photo profil en un mot je ne peux pas mettre
+toutes les informations que vous m'avez demand=C3=A9s tant que je n'acc=C3=
+=A8de pas
+dans mon compte que j'ai cr=C3=A9=C3=A9 =C3=A0 chaque fois que j'essaie de =
+me connecter On
+me dit d'attendre l'approbation de l'administrateur
+
+Cordialement
+
+Le mer. 1 f=C3=A9vr. 2023 =C3=A0 21:19, <contact@fiidewgal.com> a =C3=A9cri=
+t :
+
+> Salam Aleykoum ,
+> Nous sommes heureux de vous accueillir sur la plateforme Fii Dewgal mais
+>   pour approuver  votre inscription nous vous demandons d=E2=80=99ajouter=
+ votre
+> photo
+> et de remplir votre formulaire correctement =C3=A0 commencer par
+> l=E2=80=99introduction.
+> Vous pouvez  nous faire parvenir votre numero de membre avec  votre
+> photo et
+> num=C3=A9ro de telephone sur notre WhatsApp 001 646 752 9115 ou juste sca=
+nner
+> le
+> QR Code ci) joint ci-dessous .Sans votre photo , le profil sera rejet=C3=
+=A9 .
+> Merci pour la compr=C3=A9hension !
+> L=E2=80=99=C3=A9quipe Fii Dewgal
+>
+
+--000000000000d6a2b405f3aa60b0
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Salamou alaykoum<div dir=3D"auto">Mais je ne peux pas met=
+tre ma photo profil en un mot je ne peux pas mettre toutes les informations=
+ que vous m&#39;avez demand=C3=A9s tant que je n&#39;acc=C3=A8de pas dans m=
+on compte que j&#39;ai cr=C3=A9=C3=A9 =C3=A0 chaque fois que j&#39;essaie d=
+e me connecter On me dit d&#39;attendre l&#39;approbation de l&#39;administ=
+rateur</div><div dir=3D"auto"><br></div><div dir=3D"auto">Cordialement=C2=
+=A0</div></div><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gma=
+il_attr">Le mer. 1 f=C3=A9vr. 2023 =C3=A0 21:19,  &lt;<a href=3D"mailto:con=
+tact@fiidewgal.com">contact@fiidewgal.com</a>&gt; a =C3=A9crit=C2=A0:<br></=
+div><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-lef=
+t:1px #ccc solid;padding-left:1ex">Salam Aleykoum ,<br>
+Nous sommes heureux de vous accueillir sur la plateforme Fii Dewgal mais<br=
+>
+=C2=A0 pour approuver=C2=A0 votre inscription nous vous demandons d=E2=80=
+=99ajouter votre <br>
+photo<br>
+et de remplir votre formulaire correctement =C3=A0 commencer par <br>
+l=E2=80=99introduction.<br>
+Vous pouvez=C2=A0 nous faire parvenir votre numero de membre avec=C2=A0 vot=
+re <br>
+photo et<br>
+num=C3=A9ro de telephone sur notre WhatsApp 001 646 752 9115 ou juste scann=
+er <br>
+le<br>
+QR Code ci) joint ci-dessous .Sans votre photo , le profil sera rejet=C3=A9=
+ .<br>
+Merci pour la compr=C3=A9hension !<br>
+L=E2=80=99=C3=A9quipe Fii Dewgal<br>
+</blockquote></div>
+
+--000000000000d6a2b405f3aa60b0--

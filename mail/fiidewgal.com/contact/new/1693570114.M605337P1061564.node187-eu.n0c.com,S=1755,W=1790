@@ -1,0 +1,35 @@
+Return-Path: <contact@fiidewgal.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id uFQBJELU8WS8MhAA3R2AvA
+	(envelope-from <contact@fiidewgal.com>)
+	for <contact@fiidewgal.com>; Fri, 01 Sep 2023 14:08:34 +0200
+Received: from [127.0.0.1] (unknown [86.38.202.206])
+	by node187-eu.n0c.com (Postfix) with ESMTPSA id CE6FA4048C09
+	for <contact@fiidewgal.com>; Fri,  1 Sep 2023 08:08:33 -0400 (EDT)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com CE6FA4048C09
+Authentication-Results: node187-eu.n0c.com; dmarc=fail (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=fail smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com CE6FA4048C09
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1693570114;
+	bh=JdL45ng2lcpArmcRBi7OE8hPoZY4yZ4ZO7NidUXkhlk=;
+	h=From:To:Subject:Date:From;
+	b=dYCy4GO5OpW8+84urxJY/xyvwl7GRp2IgLQ/y5LA8JuYP3e8hk/IjaER26kwtlPbj
+	 277ciqnP3sNmXvBj2zqkk2RUTjfFZT72uT1NjxnrY2tZ6J4h79dJWlyOcj/sVfLYmc
+	 5JV0DnRbxxOloMxRNAX46wlssfZU9YVygvN4sKiE=
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: contact@fiidewgal.com
+Subject: Inscription des membres
+Message-ID: <06e511190dc67516907f588d94a28c1a@fiidewgal.com>
+MIME-Version: 1.0
+Date: Fri, 01 Sep 2023 14:08:34 +0200
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<p>F=C3=A9licitations !<br></p><p>Vous avez un nouveau membre enregistr=
+=C3=A9 dans votre syst=C3=A8me.</p><p>Nom du membre : John Doe</p><p>L'e-ma=
+il est : mamadoualpha.bah@altgras.com</p><p>Profil de membre : https://fiid=
+ewgal.com/admin/members/3221</p><p>Merci,</p><p>Ne r=C3=A9pondez pas</p>
+

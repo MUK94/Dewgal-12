@@ -1,0 +1,77 @@
+Return-Path: <habibbarry74@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id uFoHDsYThmOc6R0A3R2AvA
+	(envelope-from <habibbarry74@gmail.com>)
+	for <contact@fiidewgal.com>; Tue, 29 Nov 2022 15:14:30 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NM48k0lrpz34SDxl
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="kSwphi1j"
+X-N0C-MailScanner-eFa-Watermark: 1670336063.379@7XlDGbxBdhiT+7OAQR9rsg
+X-N0C-MailScanner-eFa-From: habibbarry74@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 7AD09406286F.AE2BB
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-yb1-f174.google.com ([209.85.219.174] [209.85.219.174])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 7AD09406286F
+	for <contact@fiidewgal.com>; Tue, 29 Nov 2022 15:13:50 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 7AD09406286F
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 7AD09406286F
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=kSwphi1j
+Received: by mail-yb1-f174.google.com with SMTP id c140so17580497ybf.11
+        for <contact@fiidewgal.com>; Tue, 29 Nov 2022 06:13:50 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=N5pwRqMhDI3QKwhYUT/pHk1Tbd+748QTMlNBHuIbAFY=;
+        b=kSwphi1jkjdVCTqQjx+Cj+0G053TiwwvByuA01TvDNyeQdmKeurW2IZH0aJjSQrTPm
+         7gfNbx1CXysHUqDknvJXfw/Paex5ePaH6iq0ySQ4nH0Gh673F6gJWUw1thSsepeQHB+Y
+         HIeSM7p00P7PeUSqD0Lzm4qW5r8wpjz8d3zTDes6WMRi6rq8KojdVwINQexBZQ4m1wjg
+         cbAltm1s1P/hwEjIFDDbaZBx8UBZN6dDTFhDGQgaqKdiDmUXxV0o+2FA4omBnYDvAUpQ
+         naFuwMgaO0CW6nWFm6jHIXXTQSPOPtmSxRR/6/OYsVDPUkGwlQCjQEvJ0xvq5E6Ryj4a
+         DTdg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=N5pwRqMhDI3QKwhYUT/pHk1Tbd+748QTMlNBHuIbAFY=;
+        b=amKIdPMj4cDHwLnZwIPX4b5yRKjqbTfTh0LVstLOx3V6n8nJ9FwezLr6hGUZ6lqZTu
+         Mbq+jDcJneODhJ+NDQ3UQ7hw9f3gS/Jg1aWoGsXcWUQXRoKYnhKpIQDu1reiXXTahwUd
+         086KMoHWlthubuq3xn5RIQhNJIL+Gu7KxbFwsrogN2A1S9Lr0hSXrAnxEIX/YaM8k0nf
+         tU0SkTE5E3vgm09WWr+aty3ejzChobZ89pFqcnvrYyWwmYEq/1CLFfW0CaiqM+xS41pX
+         hikDcFYKjdqqayqBB0JMlpaR7fXfS6/kNQ9dvki8GLzktm/7GXqv5Y1hOEwE1wgco0ey
+         k86Q==
+X-Gm-Message-State: ANoB5pmoaxDeyLmzI3YxTD08mbM9Gtj5LvlPU7d7aAKOyxlU6K/z8S0E
+	PodOPUE+WhvqHHyfaxtnXNyV28ttav87XQVcHoJ9d4FZ
+X-Google-Smtp-Source: AA0mqf4B9hDvJtMAtfBC1KotcTXod3ONrbQIr2O+4WxT+9mUxksvyYPwPd7J4hkM6JhqcHkkW7ZeolcDbAupv+AMlU0=
+X-Received: by 2002:a25:3c82:0:b0:6e7:39db:aeb5 with SMTP id
+ j124-20020a253c82000000b006e739dbaeb5mr36523925yba.304.1669731229072; Tue, 29
+ Nov 2022 06:13:49 -0800 (PST)
+MIME-Version: 1.0
+From: Habib Barry <habibbarry74@gmail.com>
+Date: Tue, 29 Nov 2022 14:13:29 +0000
+Message-ID: <CA+zTTYeBdf=pU4sUDg-n6sXhLVSMC9w_nAMYg2=AdvDnOzqNCA@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000c7816605ee9c98fa"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000c7816605ee9c98fa
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+--000000000000c7816605ee9c98fa
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"></div>
+
+--000000000000c7816605ee9c98fa--

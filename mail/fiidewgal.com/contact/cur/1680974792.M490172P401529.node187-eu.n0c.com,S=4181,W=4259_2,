@@ -1,0 +1,78 @@
+Return-Path: <mamadoualphabah12128@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id s+MkHcijMWR5IAYA3R2AvA
+	(envelope-from <mamadoualphabah12128@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 08 Apr 2023 19:26:32 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Pv2GG0x5Pz34SDmg
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="X4rlIY/s"
+X-N0C-MailScanner-eFa-Watermark: 1681579588.54132@abQ0H2CMAMcmC2j6Ean7YA
+X-N0C-MailScanner-eFa-From: mamadoualphabah12128@gmail.com
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: ACAE0401AEEF.A2454
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-oi1-f171.google.com ([209.85.167.171] [209.85.167.171])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id ACAE0401AEEF
+	for <contact@fiidewgal.com>; Sat,  8 Apr 2023 19:25:56 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com ACAE0401AEEF
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com ACAE0401AEEF
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=X4rlIY/s
+Received: by mail-oi1-f171.google.com with SMTP id bl22so18904440oib.11
+        for <contact@fiidewgal.com>; Sat, 08 Apr 2023 10:25:55 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112; t=1680974754;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=VS1J9zHw/FhTc8l7389pYgZAQa0NU+IHw7CAcWdkhKs=;
+        b=X4rlIY/sdK4oj/wpgi0SmFgPAFYKZyP+hxBVTn6ZFWX/y6iuiQbGIJFqkeTtfV4+9q
+         /yxHYTiBOON7u1mhf01KK4oYuyDfmp/Q413hT/7TI522zDcMm53t05KOac2Xj6hbaK1z
+         yJ6qww5BZr3jKH0I9NfQqWNdBvB09Pf4xUNCgfOW687YOgi6c20oGVeYdlYfBy4Mt/Bq
+         03GB0IlDkSr6axWbzKlAyEBrVja0bH8JGxoRrIamuWw8wiplKXGmsR7l22uH2kf4Tf1q
+         GGHLjILCmkOV0T6ar0Ll4Ha6cT/W7kBTx/iZJQ7UAtrLnUkR2EAabjnkfTa7cn6zyi7u
+         db/Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112; t=1680974754;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=VS1J9zHw/FhTc8l7389pYgZAQa0NU+IHw7CAcWdkhKs=;
+        b=kHFp7o9+ZHHAAWiklYqdpnuHQLqIXQPCXFfX7qoGMC1OOR61tq6OBSKKAtuF+vT6/3
+         REdXvuHkaUV3hRLhl9hH9nyD6zw4SFPs38Xops5T2jTF6GUNUX3wEuEpljNRtvHR3JwS
+         qkJetjcfyN7vmeEX063jYHll1QEY9/ptAAmdqSy5FjMlcJvhibmtcIx35KytDLPqsPkP
+         C/nbfHtSeCcbEIxs5+9O1V/c5bgTuusKThUhVarjIeycre4Ldvt16b4tjPNvfxHv5L1a
+         RpuoGZZZCVkEZucb2kSzuYoyQeIPdmO0TaGI1Qz7Zu+4zzlx11I6ZsP+Snc1lzuSSvys
+         /2SA==
+X-Gm-Message-State: AAQBX9e2W0CMcSsQTs0kOkqd7JbEaMV2lu2LXdBYxYagQzPHJ0WJzJzB
+	t+3RqRmo6QLufvkCKe6i20IFWR9cvHwHe7juRS9uRE1J
+X-Google-Smtp-Source: AKy350Z1W98HLwV5oPfJi+IOItCnl62iXmMlz45DNKhlwzXqDNRVy8qTPl6qebDGL19DIPAWbKAVqukkmBfgIym3ASM=
+X-Received: by 2002:a05:6808:de0:b0:387:7ce3:bfd2 with SMTP id
+ g32-20020a0568080de000b003877ce3bfd2mr1536998oic.2.1680974754228; Sat, 08 Apr
+ 2023 10:25:54 -0700 (PDT)
+MIME-Version: 1.0
+From: Mamadou Alpha Bah <mamadoualphabah12128@gmail.com>
+Date: Sat, 8 Apr 2023 17:25:42 +0000
+Message-ID: <CAHsH6QLNzZBfM+BjmDW7FeSearte+Kt2gasoCzSFaC51a-6i7w@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000001a2ebe05f8d66fe6"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000001a2ebe05f8d66fe6
+Content-Type: text/plain; charset="UTF-8"
+
+Bonsoire
+
+--0000000000001a2ebe05f8d66fe6
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Bonsoire=C2=A0</div>
+
+--0000000000001a2ebe05f8d66fe6--

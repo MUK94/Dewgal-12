@@ -1,0 +1,93 @@
+Return-Path: <amadoudoigo2020@yahoo.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id mnFTF4xatGOEZhEA3R2AvA
+	(envelope-from <amadoudoigo2020@yahoo.com>)
+	for <contact@fiidewgal.com>; Tue, 03 Jan 2023 17:40:44 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NmdlG6q7tz3F9l
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=yahoo.com header.i=@yahoo.com header.b="PFRl+M1Z"
+X-N0C-MailScanner-eFa-Watermark: 1673368836.86962@8AvnAKlK6/50WQPHgXiKLQ
+X-N0C-MailScanner-eFa-From: amadoudoigo2020@yahoo.com
+X-N0C-MailScanner-eFa-SpamScore: sss
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 117484003237.AC838
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from sonic312-26.consmr.mail.ir2.yahoo.com ([77.238.178.97] [77.238.178.97])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 117484003237
+	for <contact@fiidewgal.com>; Tue,  3 Jan 2023 17:40:35 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 117484003237
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=reject dis=none) header.from=yahoo.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=yahoo.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 117484003237
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=yahoo.com header.i=@yahoo.com header.a=rsa-sha256 header.s=s2048 header.b=PFRl+M1Z
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1672764034; bh=oDRRuyQ9c53y0Z+pr4zEHpU4bZSqpBXcHhG+G75x+qM=; h=Date:From:Reply-To:To:Subject:References:From:Subject:Reply-To; b=PFRl+M1ZgBBtnsTNO3Hnsi0M/w18oq2qGJP3eFLaAM9kwcC09sTXCMdYDVRqU1xZJsANGn3xa2MmoApYcMRvHedSqyGAh3NDvryVHb4zgr4EmYIJB+CA/UzvRkvgBHg3SljquhyKbwaOTYKuWBZj+p615Qt0/DQX8hvq9YMUFrfNNoxPnvda9YyktYF0chHdPf+JxCmS7Fq/ieSVzO8zF4G8xXNxQLVm2LKnEGOzaR7L/puCXQ0GoTkQST1p2ohlAUmJZ8OKegOD/ASe+M5SEOaedzYMRthsqqpWZIAveyxpoD0dyPEITb1W4T8deug7yeKQskQyu7K1xVsi0XCSmQ==
+X-SONIC-DKIM-SIGN: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1672764034; bh=hdnop0LPTl/Wb3avoRbpznA/Yd9NznEzD6z6NpJP+Jy=; h=X-Sonic-MF:Date:From:To:Subject:From:Subject; b=hPw3Fyl5mVPIJ/ZsJOJ0RFNTB4r33QIdVj1x3i3fLPxWmEoC19s9zHEHv9+w2EikCxSscgWxpJnMmBgE8RpUv61rRwiOe/MZPRSe9O2YkoHdzolS7aZt1Y/oLJW63KrFUfREU9KPYMHSmzxCrRfBFSrunAaX+HbTDPpPF7p+h42uF/2ATkuCYDSgrjlpHfQATH70nlUaG9eE2DM/j+LMJmJ53i0jp8Ui6h7CNbB+I6R+bY1snVYPS3AfmeNGLtCZ3eaZoBCjvHFY5e74uAKctq18KgGsG8dPCkGjhjZnybYwq9cMDmjiU8b8gxijYV3RJbcWqiN7zzGTns9VkPTr2A==
+X-YMail-OSG: wPwPqicVM1nLTH0jk4htSSHbHVPAyPw9PS5pQnEmYce5aqWAZgavbGJxmNzWMdX
+ S4AJWXN5zdnLBNL_G6izcXp48LHMZyAmMCDiM5LUp3FxjfvgvJTJ2md4KoldNdOvNMp47inZztA2
+ TokJHnNJc2EI0NUZA9NjhgDcY_tTI5GuIlMInVPoPH90mykftL4z05coxL8ZCSZXV0pfa_pB5Mrc
+ 5ff5cpBj58rN7FB586F7_2dJ2Kwx2DD6Cdg6SCXHTPW9GeyeVLQhbP3q6L8Z8pPwDS9g9.ChfMSj
+ z.Bofda9vQuJIfgMWQvPboKn.OMbC_AqmoT9aqMXPQ5XSndRGNn7nVzVPtSv2flMDC8Ftl_M.veH
+ FLNNmp6Vnh4Pqtd6gLHxFKZTc8JjSi4OIRBpTZG7o8B9q_jeu0JPOAddgilurFEkUHeHxjf9oZPc
+ KyPvv1TPUGYDD6JGowhSHIULxrjkYgT2qyVsjgrxj5D.to6oL5q.g8sr1f0C50WMGDJXtbIGDRfM
+ y.lAyFrweQQWoAc8N.Kq6DTXMM2KPXVmUlZFBL3fdigWMVtynADOfMIdeFpT9NJ3NHyKkxUvpOYH
+ UdTysNV3JVntoRBppBOX4P8QBxiGdKPZgfwZV6H1W1FmUeVe.I2y8zecXXUj0X54flLq4ByV6Dan
+ qvwGqi6Cy2get4aGqDufSggqhtc0vfmuUQ1JYg9qPfe5T4cW8Mu58SnTX5gdidnUiRNnv4Ez3ewb
+ HRa_WE47QhIa.N.BDFy0CFC3jh2qBjjx0fm6gUmPuPshi__zOiEgVANWxmr_2KDp6_eH5mPxIXB1
+ kvO_jbkIc26kCTO78.9zQgv2Xmay9ALNLF91XkyRCwNItwoEObtLroKB1b4O1.LES2WiFh9iCsHL
+ .xWSEfSkrWkZjPx6ijlySvR.48U299h.HyzoTdpwwhwygl5z3cbUWvZECdan8J49NpKUuOsXVdG8
+ 202ppdz66QGOozmZYVW1XH3iyFg0hrLt3WtzdtTeEpSU9qEuFGRWdkgm_dLiaOS0dYosy0lbUh6Y
+ gcWFeAR_rftAyB6_Ji5iEMEl_TcYZe03JmREYm6rFm15oLMMocJ0VV0CB7cdvKomvuwngEBxtgRI
+ qZoxnztrtI9yzaEnVBh28OEg7m4EKWJ6wa9EFi2RczeN3T1uWh9db.qmgwbnXLyRv0wOUqjyaIFU
+ 803YvCnqMlEwI2.O.8ousLzswiWtj4Yv0qbINzjmADBulS43btzhLPzqxdHrJZYhGdYUxpOVPSNQ
+ vQXPHg66BrMKdUJWV_dNaj5zuYE6h3rc.vvPFIPdoUpr70dY5m9jIMgxFTEchEx7MGZ2ipcJkK8s
+ khY7A6uF.xEMonuK6FbD8F5AvKthG_9xQpFZN8jk9WuE9HIfUoMUhsLHt2FF9gdk4ZKRmekspzvp
+ vIXtaUfmgkMqNFPCHbIvRkr1xCGg8aa6Mi1jzsX3Ig3zIVnHGMaOJSB5htUycmTnu2eMee89Zoq5
+ 1e0A7Yev0G1Snn7R8IsRG_32AlCM5eWRyzNE7F0RsXoIDsra9o6hUabOHyyvel5NL7hbfFksT0Gp
+ uC.h4PXay657jLxC4LfcpLG8BeJbxA18wB_57p0v8uj3RPvIrMXBSlmQtga3yLa.at5lm3CxpIht
+ 71z2uY7giFQC2BPQGHQNyKMNhF4xJHmbXR7Kpy3rYUYZ2mb0Vx_WE4h7VuzXHlubHKO5wEcHyBbM
+ 3L1AZ4_0_6PVG8lkSPDI7F4QyqHk1J30hL.bANxT_ZyOMM0YbymmgA8NncwLKP743N2fqI9B_pbc
+ wbNtcdMLsbWOplR_b4fy8wIvd9HXtfZF7U4v_UX0mH61Cs.LC0MjlHrwYF_PjziqpTSYbnIlYeA4
+ UDN.FOe7gqJNE6TASmrkOAEg6k.4_xymjcGaJxzwUZcT3vnHPSP0FfEG5KgqjCDto0Hqff.b8HTA
+ UVrThmeswGHsjCahw51n78i1R4TkP9c7U4WZCmwHZ6KJl.noU0f4a3c6HpWgrHZ.EaYMKCF2SVvv
+ NUIpuNYs6xccI.hwhmwWZC_8RNTTp5C_l2qH9aOqsYYac5Qd9CZy6vnbrauxC_2ll.UCr3eM5UBU
+ H4AuuJuHnVYQviQMmSiIb0.Zm9aaJ.UeWxbeS.ckL9X8ppfqxzfUpBDk0jEekh_8QQQOOl5AY0g2
+ 3w_CkTX82KuVe3_G8rwbXBOamzczjULPYx1PmnKS0LYM4dHeuT6RQ8J7uaxxcUVRCRx93dG2PbCg
+ Xcu5CM8hdPxY8aDt9rbdnERFHkGLyHQ2TjAItqXDhblDsC_E-
+X-Sonic-MF: <amadoudoigo2020@yahoo.com>
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic312.consmr.mail.ir2.yahoo.com with HTTP; Tue, 3 Jan 2023 16:40:34 +0000
+Date: Tue, 3 Jan 2023 16:40:25 +0000 (UTC)
+From: Amadoudiogo Barry Amadoudiogo2020 <amadoudoigo2020@yahoo.com>
+Reply-To: Amadoudiogo Barry Amadoudiogo2020 <amadoudoigo2020@yahoo.com>
+To: "contact@fiidewgal.com" <contact@fiidewgal.com>
+Message-ID: <80211921.10357936.1672764025059@mail.yahoo.com>
+Subject: 
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_10357935_213109108.1672764025057"
+References: <80211921.10357936.1672764025059.ref@mail.yahoo.com>
+X-Mailer: WebService/1.1.20982 YahooMailAndroidMobile
+X-N0C-Node-IP: 185.221.182.45
+
+------=_Part_10357935_213109108.1672764025057
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+Envoy=C3=A9 depuis Yahoo=C2=A0Mail pour Android
+------=_Part_10357935_213109108.1672764025057
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<br><br><div id=3D"ymail_android_signature"><a id=3D"ymail_android_signatur=
+e_link" href=3D"https://go.onelink.me/107872968?pid=3DInProduct&amp;c=3DGlo=
+bal_Internal_YGrowth_AndroidEmailSig__AndroidUsers&amp;af_wl=3Dym&amp;af_su=
+b1=3DInternal&amp;af_sub2=3DGlobal_YGrowth&amp;af_sub3=3DEmailSignature">En=
+voy=C3=A9 depuis Yahoo&nbsp;Mail pour Android</a></div>
+------=_Part_10357935_213109108.1672764025057--

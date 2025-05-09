@@ -1,0 +1,82 @@
+Return-Path: <bah964933@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id qMQWBOY8sGN6kCgA3R2AvA
+	(envelope-from <bah964933@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 31 Dec 2022 14:45:10 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Nkk056m5Mz34nwbq
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="ZmMTpufM"
+X-N0C-MailScanner-eFa-Watermark: 1673099107.66289@rud9tLgyUKNLmyy0AhmCcw
+X-N0C-MailScanner-eFa-From: bah964933@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 444674002DD2.AE0E6
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-oi1-f172.google.com ([209.85.167.172] [209.85.167.172])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 444674002DD2
+	for <contact@fiidewgal.com>; Sat, 31 Dec 2022 14:44:35 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 444674002DD2
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 444674002DD2
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=ZmMTpufM
+Received: by mail-oi1-f172.google.com with SMTP id r11so21391803oie.13
+        for <contact@fiidewgal.com>; Sat, 31 Dec 2022 05:44:35 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=M65wGBmlmi+ynEK5TqahuT7ME8z3PEfYWJS5+8wvJ00=;
+        b=ZmMTpufMpHKbh6aqpX/w0QvghbaxNGoUWU20/bbL+AaWQvLzPdzHnIA9CDL7S/CDPa
+         FGoOSvSY0UWd2bk0YEQESh28nfzMvDaqySqf+Iu137PkE3AIFOMjrgXuOfrsHYirfnI3
+         iUzzy3YMMZN9BQGxz+s7GrDv5G0Eo7TTBPtEcd18L2sf4AzSFYeLd4Dg7znDEtp8dswR
+         oBbTfnYfqoLoNmUcWmuYux1rp4SSjrj37NNrjm3P0lzVfftSvp7XdexJSPz+hgbv594Y
+         jPoYfIoRvEl5APHfzwbPSU6roDi/mbe12lXUqqI967LLKINhquunGsuS7GHb4umhMvGE
+         82bA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=M65wGBmlmi+ynEK5TqahuT7ME8z3PEfYWJS5+8wvJ00=;
+        b=nduNeqyZsUNHMEciz56n5YfcINfrKIa5+xxTvlebbiG52qzXipHDIHcnfE7vgHGLwZ
+         DY1zTmvcrcWEJ/WhU8V6G0/fS8kdXpP8rYulGlo5mFAdLDXG1Yv457Y0GTF+duFA5bJB
+         eRVVA2agJhy/7KyqzFb4QWfDGctMZ9pBY3MM+u5UCZE6J8HYKIoDA8ltSWqgnUlt2+IG
+         1CfrErRkY/y7M1tryugmD5s/N6gvMt12tMRFRGD/UYx1TAoHrdq0s8lWy0E23yBEo6FC
+         xB+8pd68wKUGp37iOWD31LwajoCUVL2mBRIPzkiuQBwEZ5eqSNyqozwC5BkPT9XFFZbk
+         hcEw==
+X-Gm-Message-State: AFqh2krynbWBmLeUa+nWNsFd1PS2HW8xQOJBEGlOOD1IsYzpVLFqCkKG
+	SD7Abj2lHabfzk0w0Y5dYYFJRqqPk88kBYLim36k6iSp
+X-Google-Smtp-Source: AMrXdXsNSa7pb5Geyfm1Y5qy6NE//1po97AQRuYqlMoSF3NiqSz4DvHwAMkPrqWqV81FHg+l0GcfqL1Zsy8dHHd2CBY=
+X-Received: by 2002:a54:4712:0:b0:35e:2d5e:f627 with SMTP id
+ k18-20020a544712000000b0035e2d5ef627mr2216106oik.246.1672494273658; Sat, 31
+ Dec 2022 05:44:33 -0800 (PST)
+MIME-Version: 1.0
+From: Mamadou Bah <bah964933@gmail.com>
+Date: Sat, 31 Dec 2022 14:44:21 +0100
+Message-ID: <CA+Yk3hjn5nTHWnGz9JQgP30TD_8ynhMRit3R2zNuQZ9rwMMobg@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000012043c05f11febab"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000012043c05f11febab
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Salut je n'arrive pas =C3=A0 me connecter petetre mon adresse email je les =
+cr=C3=A9=C3=A9
+en Alg=C3=A9rie
+
+--00000000000012043c05f11febab
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Salut je n&#39;arrive pas =C3=A0 me connecter petetre mon=
+ adresse email je les cr=C3=A9=C3=A9 en Alg=C3=A9rie</div>
+
+--00000000000012043c05f11febab--

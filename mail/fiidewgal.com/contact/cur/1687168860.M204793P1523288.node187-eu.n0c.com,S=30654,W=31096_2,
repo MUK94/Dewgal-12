@@ -1,0 +1,442 @@
+Return-Path: <bounces-163096426-onboarding=ezoic.com@marketing.ezoic.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id uPoiDFwnkGRYPhcA3R2AvA
+	(envelope-from <bounces-163096426-onboarding=ezoic.com@marketing.ezoic.com>)
+	for <contact@fiidewgal.com>; Mon, 19 Jun 2023 12:01:00 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Ql4z00Mbkz34SDmj
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=ezoic.com header.i=@ezoic.com header.b="J1fpJ44X"
+X-N0C-MailScanner-eFa-Watermark: 1687773561.29338@OeVwHG4gIfjDdaIo573e9Q
+X-N0C-MailScanner-eFa-From: bounces-163096426-onboarding=ezoic.com@marketing.ezoic.com
+X-N0C-MailScanner-eFa-SpamScore: s
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: C107D4019761.AFD5D
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from marketing.ezoic.com ([94.143.23.234] [94.143.23.234])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id C107D4019761
+	for <contact@fiidewgal.com>; Mon, 19 Jun 2023 11:58:23 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com C107D4019761
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=quarantine dis=none) header.from=ezoic.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=marketing.ezoic.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com C107D4019761
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (1024-bit key; unprotected) header.d=ezoic.com header.i=@ezoic.com header.a=rsa-sha256 header.s=mail header.b=J1fpJ44X
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=ezoic.com;
+ q=dns/txt; s=mail; bh=3JoQUpygDP0ppd5g28zHMRk/+OoTGlni+OTFB35jT5w=;
+ h=from:reply-to:subject:date:to:mime-version:content-type:list-unsubscribe:x-csa-complaints:list-unsubscribe-post;
+        b=J1fpJ44XJv0dhy2ncfIwJZ58dsEaB6eUpmjYrPOOYqouzWrQyDI50tORLdoP20gbLzcnStVI38N1
+        9UjWjT6QPNY5+fAWUq3NEO2zTcB1yJJNlH1rO1W080naTxHsHLOn2VpvLEZGfX8f/xVBDX96Xgj6
+        ed/aEda9Dooct5eNBfM=
+Message-Id: <54a60f24-cbba-4eb5-886e-0fe1c070bcd7@smtp-relay.sendinblue.com>
+Origin-messageId: <202306190958.94607790893@smtp-relay.mailin.fr>
+X-sib-id: xyFtDP1f5okAzdwFp44Ytp3vbH928Vd7DEiR3i9KM8ppXUx4zmg22ECEZ58VOM6FS5ncGwTxKrBrqbeLkZVG7vltINq5cHbb4efMEfiZF2WOIWch93_tWv76RtYzAjCiVCx0yDBGyjwmPLgOvZyvRps8IKm1NDt6h0D2yLdImWvftDc
+To: <contact@fiidewgal.com>
+Date: Mon, 19 Jun 2023 09:58:21 +0000
+Subject: One step left to get started with Ezoic!
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Feedback-ID: 94.143.23.234:4675460_-1:4675460:Sendinblue
+From: "The Access Now Team" <onboarding@ezoic.com>
+List-Unsubscribe: <mailto:unsubscribe-t@marketing.ezoic.com?subject=unsub-MTYzMDk2NDI2fmNvbnRhY3RAZmlpZGV3Z2FsLmNvbX48MjAyMzA2MTkwOTU4Ljk0NjA3NzkwODkzQHNtdHAtcmVsYXkubWFpbGluLmZyPn5UaGUgQWNjZXNzIE5vdyBUZWFtIDxvbmJvYXJkaW5nQGV6b2ljLmNvbT5-NTRhNjBmMjQtY2JiYS00ZWI1LTg4NmUtMGZlMWMwNzBiY2Q3&body=MTYzMDk2NDI2fmNvbnRhY3RAZmlpZGV3Z2FsLmNvbX48MjAyMzA2MTkwOTU4Ljk0NjA3NzkwODkzQHNtdHAtcmVsYXkubWFpbGluLmZyPn5UaGUgQWNjZXNzIE5vdyBUZWFtIDxvbmJvYXJkaW5nQGV6b2ljLmNvbT5-NTRhNjBmMjQtY2JiYS00ZWI1LTg4NmUtMGZlMWMwNzBiY2Q3>, <https://r.marketing.ezoic.com/tr/un/li/pxiPL5rJBCPjBOg30w4r9ZE7pH_5aWK1D4H5xLL39cMTeEouFcMFGbNAenAaYtkznmuEc2uVz3VvXkA8Tppj8CcUdo6N4ckn7bEARf8kE2rFhTXpsHgUuDIKS0qFSylfVzYVXBT2v571OvtjEcaQU37ntne2xTSvkZXAcXgfe8DkFPE5bhBu_qWz1jcoI31xjn445cz9Et5Z6FP484Vzt79vv5FC6zCqkwfF3xtQ>
+X-CSA-Complaints: csa-complaints@eco.de
+X-Mailin-EID: MTYzMDk2NDI2fmNvbnRhY3RAZmlpZGV3Z2FsLmNvbX48MjAyMzA2MTkwOTU4Ljk0NjA3NzkwODkzQHNtdHAtcmVsYXkubWFpbGluLmZyPn5tYXJrZXRpbmcuZXpvaWMuY29t
+Reply-To: <onboarding@ezoic.com>
+Content-Type: multipart/alternative; boundary="--_SiB-ee6436b4f30229fa-Part_1"
+Mime-Version: 1.0
+X-N0C-Node-IP: 185.221.182.45
+
+----_SiB-ee6436b4f30229fa-Part_1
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+**The team are eagerly waiting to set your site up for you!=C2=A0**
+
+=C2=A0
+
+Once connected, our automated setup will ensure that your site can reach op=
+timal performance on the platform.=C2=A0
+
+=C2=A0
+
+Please proceed to Cloud integrate your site and apply to Google Ad Manager =
+so that the team can start the setup!
+
+[**Access Your Ezoic Dashboard**](https://pubdash.ezoic.com/dashboard)
+
+=C2=A0 =C2=A0
+
+On average**, publishers using Ezoic see a 50% increase in ad revenue!** Is=
+ that kind of revenue increase worth 5 minutes of your time?=C2=A0
+
+=C2=A0
+
+**Head to your dashboard ASAP to complete the below steps.=C2=A0**
+
+**Unsure about something?=C2=A0**
+
+=C2=A0
+
+Access the [Community](https://community.ezoic.com/t/access-now-onboarding-=
+assistance-and-troubleshooting) to speak with a member of the team [here.](=
+https://community.ezoic.com/t/access-now-onboarding-assistance-and-troubles=
+hooting)=C2=A0
+
+=C2=A0
+
+All the best,=C2=A0
+
+=C2=A0
+
+The Access Now Team=C2=A0
+
+**Ezoic**
+
+Innovation Way 6023, 92009, Carlsbad
+
+This email was sent to contact@fiidewgal.com
+
+You've received it because you've subscribed to our newsletter.
+
+[Unsubscribe](https://r.marketing.ezoic.com/tr/un/8QEwnf-qRD4pjR53F9PtfKLBP=
+DHG1Tmvsa6DjM2NnYKkCqfVyIoNt4tjYJI5e_6_Df2RxxiIjj1c7i766fJ7dBJvM-BIMtvV4gA4=
+Aab31Fe-8QXg-JYKzb8LIgEa6Od2bMpWcBc-yqnFA9_fdrT9HPiSETFwYBj24Rzfz0P4QdpACDX=
+UPKDyQHpmvfeDM3nh48t-8O_7KEzXPLY8rA8m2TJqFlpaPaTYI9P0qMCk6Cl8yQ8VQ6W_86yFkr=
+oIdov6T-SAVg_5f67QEjc6PZsixQjBEw)
+
+
+----_SiB-ee6436b4f30229fa-Part_1
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns=3D"http://www.w3.org/1999/xht=
+ml" xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micros=
+oft-com:office:office"><head><meta http-equiv=3D"Content-Type" content=3D"t=
+ext/html; charset=3Dutf-8"/><meta http-equiv=3D"X-UA-Compatible" content=3D=
+"IE=3Dedge"/><meta name=3D"format-detection" content=3D"telephone=3Dno"/><m=
+eta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.0"=
+/><title>One step left to get started with Ezoic!</title><style type=3D"tex=
+t/css" emogrify=3D"no">#outlook a { padding:0; } .ExternalClass { width:100=
+%; } .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass =
+font, .ExternalClass td, .ExternalClass div { line-height: 100%; } table td=
+ { border-collapse: collapse; mso-line-height-rule: exactly; } .editable.im=
+age { font-size: 0 !important; line-height: 0 !important; } .nl2go_preheade=
+r { display: none !important; mso-hide:all !important; mso-line-height-rule=
+: exactly; visibility: hidden !important; line-height: 0px !important; font=
+-size: 0px !important; } body { width:100% !important; -webkit-text-size-ad=
+just:100%; -ms-text-size-adjust:100%; margin:0; padding:0; } img { outline:=
+none; text-decoration:none; -ms-interpolation-mode: bicubic; } a img { bord=
+er:none; } table { border-collapse:collapse; mso-table-lspace:0pt; mso-tabl=
+e-rspace:0pt; } th { font-weight: normal; text-align: left; } *[class=3D"gm=
+ail-fix"] { display: none !important; } </style><style type=3D"text/css" em=
+ogrify=3D"no"> @media (max-width: 600px) { .gmx-killpill { content: ' \03D1=
+';} } </style><style type=3D"text/css" emogrify=3D"no">@media (max-width: 6=
+00px) { .gmx-killpill { content: ' \03D1';} .r0-c { box-sizing: border-box =
+!important; text-align: center !important; valign: top !important; width: 3=
+20px !important } .r1-o { border-style: solid !important; margin: 0 auto 0 =
+auto !important; width: 320px !important } .r2-c { box-sizing: border-box !=
+important; text-align: center !important; valign: top !important; width: 10=
+0% !important } .r3-o { border-style: solid !important; margin: 0 auto 0 au=
+to !important; width: 100% !important } .r4-i { background-color: #ffffff !=
+important } .r5-c { box-sizing: border-box !important; display: block !impo=
+rtant; valign: top !important; width: 100% !important } .r6-o { border-styl=
+e: solid !important; width: 100% !important } .r7-i { padding-left: 0px !im=
+portant; padding-right: 0px !important } .r8-o { background-size: auto !imp=
+ortant; border-style: solid !important; margin: 0 auto 0 auto !important; w=
+idth: 100% !important } .r9-i { color: #3b3f44 !important; padding-bottom: =
+15px !important; padding-top: 15px !important } .r10-c { box-sizing: border=
+-box !important; text-align: left !important; valign: top !important; width=
+: 100% !important } .r11-o { border-style: solid !important; margin: 0 auto=
+ 0 0 !important; width: 100% !important } .r12-i { padding-bottom: 15px !im=
+portant; padding-top: 15px !important; text-align: left !important } .r13-o=
+ { border-style: solid !important; margin: 0 auto 0 auto !important; margin=
+-bottom: 15px !important; margin-top: 15px !important; width: 100% !importa=
+nt } .r14-i { text-align: center !important } .r15-r { background-color: #5=
+fa624 !important; border-radius: 4px !important; border-width: 0px !importa=
+nt; box-sizing: border-box; height: initial !important; padding-bottom: 12p=
+x !important; padding-left: 5px !important; padding-right: 5px !important; =
+padding-top: 12px !important; text-align: center !important; width: 100% !i=
+mportant } .r16-i { padding-bottom: 0px !important; padding-left: 0px !impo=
+rtant; padding-right: 0px !important; padding-top: 0px !important; text-ali=
+gn: left !important } .r17-i { background-color: #ffffff !important; paddin=
+g-bottom: 0px !important; padding-left: 15px !important; padding-right: 15p=
+x !important; padding-top: 0px !important } .r18-c { display: none !importa=
+nt } .r19-i { color: #3b3f44 !important; padding-bottom: 15px !important; p=
+adding-top: 15px !important; text-align: left !important } .r20-c { box-siz=
+ing: border-box !important; width: 100% !important } .r21-i { background-co=
+lor: #eff2f7 !important } .r22-i { padding-bottom: 20px !important; padding=
+-left: 15px !important; padding-right: 15px !important; padding-top: 20px !=
+important } .r23-i { color: #3b3f44 !important; padding-bottom: 0px !import=
+ant; padding-top: 15px !important; text-align: center !important } .r24-i {=
+ color: #3b3f44 !important; padding-bottom: 0px !important; padding-top: 0p=
+x !important; text-align: center !important } .r25-i { color: #3b3f44 !impo=
+rtant; padding-bottom: 15px !important; padding-top: 15px !important; text-=
+align: center !important } .r26-c { box-sizing: border-box !important; text=
+-align: center !important; width: 100% !important } .r27-i { padding-bottom=
+: 15px !important; padding-left: 0px !important; padding-right: 0px !import=
+ant; padding-top: 0px !important } .r28-c { box-sizing: border-box !importa=
+nt; text-align: center !important; valign: top !important; width: 129px !im=
+portant } .r29-o { border-style: solid !important; margin: 0 auto 0 auto !i=
+mportant; width: 129px !important } body { -webkit-text-size-adjust: none }=
+ .nl2go-responsive-hide { display: none } .nl2go-body-table { min-width: un=
+set !important } .mobshow { height: auto !important; overflow: visible !imp=
+ortant; max-height: unset !important; visibility: visible !important; borde=
+r: none !important } .resp-table { display: inline-table !important } .magi=
+c-resp { display: table-cell !important } } </style><!--[if !mso]><!--><sty=
+le type=3D"text/css" emogrify=3D"no"> </style><!--<![endif]--><style type=
+=3D"text/css">p, h1, h2, h3, h4, ol, ul { margin: 0; } a, a:link { color: #=
+0092ff; text-decoration: underline } .nl2go-default-textstyle { color: #3b3=
+f44; font-family: arial,helvetica,sans-serif; font-size: 16px; line-height:=
+ 1.5; word-break: break-word } .default-button { color: #ffffff; font-famil=
+y: arial,helvetica,sans-serif; font-size: 16px; font-style: normal; font-we=
+ight: normal; line-height: 1.15; text-decoration: none; word-break: break-w=
+ord } .default-heading1 { color: #1F2D3D; font-family: arial,helvetica,sans=
+-serif; font-size: 36px; word-break: break-word } .default-heading2 { color=
+: #1F2D3D; font-family: arial,helvetica,sans-serif; font-size: 32px; word-b=
+reak: break-word } .default-heading3 { color: #1F2D3D; font-family: arial,h=
+elvetica,sans-serif; font-size: 24px; word-break: break-word } .default-hea=
+ding4 { color: #1F2D3D; font-family: arial,helvetica,sans-serif; font-size:=
+ 18px; word-break: break-word } a[x-apple-data-detectors] { color: inherit =
+!important; text-decoration: inherit !important; font-size: inherit !import=
+ant; font-family: inherit !important; font-weight: inherit !important; line=
+-height: inherit !important; } .no-show-for-you { border: none; display: no=
+ne; float: none; font-size: 0; height: 0; line-height: 0; max-height: 0; ms=
+o-hide: all; overflow: hidden; table-layout: fixed; visibility: hidden; wid=
+th: 0; } </style><!--[if mso]><xml> <o:OfficeDocumentSettings> <o:AllowPNG/=
+> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings> </xml><=
+![endif]--><style type=3D"text/css">a:link{color: #0092ff; text-decoration:=
+ underline;}</style></head><body text=3D"#3b3f44" link=3D"#0092ff" yahoo=3D=
+"fix" style=3D""> <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" r=
+ole=3D"presentation" class=3D"nl2go-body-table" width=3D"100%" style=3D"wid=
+th: 100%;"><tbody><tr><td align=3D"center" class=3D"r0-c"> <table cellspaci=
+ng=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" width=3D"600"=
+ class=3D"r1-o" style=3D"table-layout: fixed; width: 600px;"><tbody><tr><td=
+ valign=3D"top" class=3D""> <table width=3D"100%" cellspacing=3D"0" cellpad=
+ding=3D"0" border=3D"0" role=3D"presentation"><tbody><tr><td class=3D"r2-c"=
+ align=3D"center"> <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" =
+role=3D"presentation" width=3D"100%" class=3D"r3-o" style=3D"table-layout: =
+fixed; width: 100%;"><!-- --><tbody><tr><td class=3D"r4-i" style=3D"backgro=
+und-color: #ffffff;"> <table width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" role=3D"presentation"><tbody><tr><th width=3D"100%" val=
+ign=3D"top" class=3D"r5-c" style=3D"font-weight: normal;"> <table cellspaci=
+ng=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" width=3D"100%=
+" class=3D"r6-o" style=3D"table-layout: fixed; width: 100%;"><!-- --><tbody=
+><tr><td valign=3D"top" class=3D"r7-i"> <table width=3D"100%" cellspacing=
+=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation"><tbody><tr><td =
+class=3D"r2-c" align=3D"center"> <table cellspacing=3D"0" cellpadding=3D"0"=
+ border=3D"0" role=3D"presentation" width=3D"426" class=3D"r8-o" style=3D"t=
+able-layout: fixed; width: 426px;"><tbody><tr><td class=3D"r9-i" style=3D"c=
+olor: #3b3f44; font-family: arial,helvetica,sans-serif; font-size: 0px; lin=
+e-height: 0px; padding-bottom: 15px; padding-top: 15px;"> <img src=3D"https=
+://r.marketing.ezoic.com/im/4675460/83c9f39933e7949331da3262bd223290d2afd54=
+1eea644f7173e1e58e0ef9be8.png?e=3D6N_Uy-e5QVVWPQ_P44_7EbiYLv73Lm2vHeksZZSkq=
+ulsmdn86-jAtjJNHCNnykfuh6GnpD2nP7qur8-AUNGz6QcUKn31-aj3FUP5t0QrHmQfdYgSHtdH=
+AITl-yQZLExD4Txz4OYFjzi0MnLAkoQIV4BB-Et9QojB7WipFV0UapQL2u-3chS6I9SyHIgZCyg=
+KlVaqK3ustxhGZmEArH0-WykE3CfOhjulCr9JWGnJsAoGdJumKmDH6YgbXRBqrw06Zy7nDvSDMr=
+EwC2Q" width=3D"426" border=3D"0" class=3D"" style=3D"display: block; width=
+: 100%;"/></td> </tr></tbody></table></td> </tr><tr><td class=3D"r10-c" ali=
+gn=3D"left"> <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=
+=3D"presentation" width=3D"100%" class=3D"r11-o" style=3D"table-layout: fix=
+ed; width: 100%;"><tbody><tr><td align=3D"left" valign=3D"top" class=3D"r12=
+-i nl2go-default-textstyle" style=3D"color: #3b3f44; font-family: arial,hel=
+vetica,sans-serif; font-size: 16px; line-height: 1.5; word-break: break-wor=
+d; padding-bottom: 15px; padding-top: 15px; text-align: left;"> <div><p sty=
+le=3D"margin: 0;"><strong>The team are eagerly waiting to set your site up =
+for you!=C2=A0</strong></p><p style=3D"margin: 0;">=C2=A0</p><p style=3D"ma=
+rgin: 0;">Once connected, our automated setup will ensure that your site ca=
+n reach optimal performance on the platform.=C2=A0</p><p style=3D"margin: 0=
+;">=C2=A0</p><p style=3D"margin: 0;">Please proceed to Cloud integrate your=
+ site and apply to Google Ad Manager so that the team can start the setup!<=
+/p></div> </td> </tr></tbody></table></td> </tr><tr><td class=3D"r2-c" alig=
+n=3D"center"> <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=
+=3D"presentation" width=3D"300" class=3D"r13-o" style=3D"table-layout: fixe=
+d; width: 300px;"><tbody><tr class=3D"nl2go-responsive-hide"><td height=3D"=
+15" style=3D"font-size: 15px; line-height: 15px;">=C2=AD</td> </tr><tr><td =
+height=3D"18" align=3D"center" valign=3D"top" class=3D"r14-i nl2go-default-=
+textstyle" style=3D"color: #3b3f44; font-family: arial,helvetica,sans-serif=
+; font-size: 16px; line-height: 1.5; word-break: break-word;">  <!--[if mso=
+]> <v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:sc=
+hemas-microsoft-com:office:word" href=3D"https://r.marketing.ezoic.com/tr/c=
+l/2HGmj9fkBuF3dLSFmTteA9HqFlPS2kuNGL3MrT_PxdJIiWQwH0X-ijnfkEYHUgf2R-83pyOtr=
+GKpcgQVnOgBDiTZ0tHgsQaRhk_DeVwqqOlQWjkPUfFv1Fqko9vLpmtMebKjnRWLSF2-SoJutys3=
+eCS8XQLNfCToPf0iRGuyxm1qmDj1Cb5MA3vLnUS2c-SHbcJpxAPmApomnFI5NMqqmDBZsox0bin=
+GjI6x-tUaSsGXQeY" style=3D"v-text-anchor:middle; height: 41px; width: 299px=
+;" arcsize=3D"10%" fillcolor=3D"#5fa624" strokecolor=3D"#5fa624" strokeweig=
+ht=3D"1px" data-btn=3D"1"> <w:anchorlock> </w:anchorlock> <v:textbox inset=
+=3D"0,0,0,0"> <div style=3D"display:none;"> <center class=3D"default-button=
+"><p><strong>Access Your Ezoic Dashboard</strong></p></center> </div> </v:t=
+extbox> </v:roundrect> <![endif]-->  <!--[if !mso]><!-- --> <a href=3D"http=
+s://r.marketing.ezoic.com/tr/cl/-fe_eByNCX3g1x4yEJt6lD_DBFAIsUm2Rwf7UfMT5Pa=
+S6uGZJPERQA5KIG6uqvUS9Ewf32lDaAAGnomUVahfjIU5LCG7RTCbwHkNnUKssI_0TcOgnka0Ko=
+6l9JnpAlRNl0OTlk4klPq27mbCToWElfIFJX7Np8Y5-pBS-yQfM99kVS9y-lHTKWa5SPgO9yR63=
+0ZYZbqSRlGMxC6I1CXJeHesomZFn577ttv-I3Lbkv98dV0" class=3D"r15-r default-butt=
+on" target=3D"_blank" data-btn=3D"1" style=3D"font-style: normal; font-weig=
+ht: normal; line-height: 1.15; text-decoration: none; word-break: break-wor=
+d; border-style: solid; word-wrap: break-word; display: inline-block; -webk=
+it-text-size-adjust: none; mso-hide: all; background-color: #5fa624; border=
+-color: #5fa624; border-radius: 4px; border-width: 0px; color: #ffffff; fon=
+t-family: arial,helvetica,sans-serif; font-size: 16px; height: 18px; paddin=
+g-bottom: 12px; padding-left: 5px; padding-right: 5px; padding-top: 12px; w=
+idth: 290px;"><p style=3D"margin: 0;"><strong>Access Your Ezoic Dashboard</=
+strong></p></a> <!--<![endif]--> </td> </tr><tr class=3D"nl2go-responsive-h=
+ide"><td height=3D"15" style=3D"font-size: 15px; line-height: 15px;">=C2=AD=
+</td> </tr></tbody></table></td> </tr><tr><td class=3D"r10-c" align=3D"left=
+"> <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presenta=
+tion" width=3D"100%" class=3D"r11-o" style=3D"table-layout: fixed; width: 1=
+00%;"><tbody><tr><td align=3D"left" valign=3D"top" class=3D"r16-i nl2go-def=
+ault-textstyle" style=3D"color: #3b3f44; font-family: arial,helvetica,sans-=
+serif; font-size: 16px; line-height: 1.5; word-break: break-word; text-alig=
+n: left;"> <div><p style=3D"margin: 0;">=C2=A0 =C2=A0</p><p style=3D"margin=
+: 0;">On average<strong>, publishers using Ezoic see a 50% increase in ad r=
+evenue!</strong> Is that kind of revenue increase worth 5 minutes of your t=
+ime?=C2=A0</p><p style=3D"margin: 0;">=C2=A0</p></div> </td> </tr></tbody><=
+/table></td> </tr></tbody></table></td> </tr></tbody></table></th> </tr></t=
+body></table></td> </tr></tbody></table></td> </tr><tr><td class=3D"r2-c" a=
+lign=3D"center"> <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" ro=
+le=3D"presentation" width=3D"100%" class=3D"r3-o" style=3D"table-layout: fi=
+xed; width: 100%;"><!-- --><tbody><tr><td class=3D"r17-i" style=3D"backgrou=
+nd-color: #ffffff;"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D=
+"0" border=3D"0" role=3D"presentation"><tbody><tr><th width=3D"100%" valign=
+=3D"top" class=3D"r5-c" style=3D"font-weight: normal;"> <table cellspacing=
+=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" width=3D"100%" =
+class=3D"r6-o" style=3D"table-layout: fixed; width: 100%;"><!-- --><tbody><=
+tr><td valign=3D"top" class=3D"r7-i" style=3D"padding-left: 15px; padding-r=
+ight: 15px;"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" bor=
+der=3D"0" role=3D"presentation"><tbody><tr><td class=3D"r18-c" align=3D"lef=
+t"> <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"present=
+ation" width=3D"100%" class=3D"" style=3D"table-layout: fixed; width: 100%;=
+"><tbody><tr><td align=3D"left" valign=3D"top" class=3D" nl2go-default-text=
+style" style=3D"color: #3b3f44; font-family: arial,helvetica,sans-serif; fo=
+nt-size: 16px; line-height: 1.5; word-break: break-word; padding-bottom: 15=
+px; padding-top: 15px; text-align: left;"> <div><p style=3D"margin: 0;"><st=
+rong>Head to your dashboard ASAP to complete the below steps.=C2=A0</strong=
+></p></div> </td> </tr></tbody></table></td> </tr><tr><td class=3D"r18-c" a=
+lign=3D"center"> <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" ro=
+le=3D"presentation" width=3D"570" class=3D"" style=3D"table-layout: fixed; =
+width: 570px;"><tbody><tr><td class=3D"" style=3D"font-size: 0px; line-heig=
+ht: 0px;"> <a href=3D"https://r.marketing.ezoic.com/tr/cl/MB2OxQhTM3KDB-y2D=
+xZpIhdX9Mg-2xCJsCbs6SLl3a-KIg4oh3kbMVczwHX669bIS1CAh_KVKQQQzJyV9sD1ZxthfVN7=
+AMJ6oGMWZyfVX1BirKARlUNqxT93Am3vH1Mgg6X6-CDwdaH8bP_O5xn5Q7bU53SmgnYWL_UmOvC=
+0Xuu-wMSIiEYsCy_DgPcmPgP0Z-roHdRVa-1SEUc-VkehZ5XrbGYefNHaWVf8r_-cuoijmFE" t=
+arget=3D"_blank" style=3D"color: #0092ff; text-decoration: underline;"> <im=
+g src=3D"https://r.marketing.ezoic.com/im/4675460/e827bf8ae1679942c6a0e668a=
+d60b86064555c9e256d8faf5e0956b9d4131db5.jpeg?e=3DXNjFdqYiXe5mGwTaaHIoSuUSct=
+stJZDBcjP2l5z-HSpGNA4EWhmoXN-8VTWurCnURREQuQ7EIsDPr0Og-HS_4afkxa96yNYCl7Cli=
+KpF9OhfIa1NiEcuiJVDTbxLoNSScLD88R-7UexScXRru6FIRktRh_L9tFxNL1EIuHsyikI83MiD=
+Ia9vYCOORAoTsL6g1ZoDsPTqoLaudChG5YonduDy-bcyL0hBLX5v1sWHHMo5qBMolTwpg3RJp1T=
+dABxr2vk7qZpytXNdJQXk" width=3D"570" border=3D"0" class=3D"" style=3D"displ=
+ay: block; width: 100%;"/></a> </td> </tr></tbody></table></td> </tr><tr><t=
+d class=3D"r10-c" align=3D"left"> <table cellspacing=3D"0" cellpadding=3D"0=
+" border=3D"0" role=3D"presentation" width=3D"100%" class=3D"r11-o" style=
+=3D"table-layout: fixed; width: 100%;"><tbody><tr><td align=3D"left" valign=
+=3D"top" class=3D"r19-i nl2go-default-textstyle" style=3D"line-height: 1.5;=
+ word-break: break-word; color: #3b3f44; font-family: arial,helvetica,sans-=
+serif; font-size: 16px; padding-bottom: 15px; padding-top: 15px; text-align=
+: left;"> <div><p style=3D"margin: 0;"><strong>Unsure about something?=C2=
+=A0</strong></p><p style=3D"margin: 0;">=C2=A0</p><p style=3D"margin: 0;">A=
+ccess the <a href=3D"https://r.marketing.ezoic.com/tr/cl/WfTwahZWRnMJ5_g9RQ=
+YWQLPAcQ0cQe1DArkmClIw7BmrmdrVXpAjcaEg0JVDIYc8MpCy-xoerkd_QJEfWEkJ68YZY9Ms-=
+yA8ri1ulPKYVE3lYDctoaJs1gRWsE1QmI4XB2yzMTOzOXzn9AVEvPeE_OnOI4JyJs1tH8Ut6iMd=
+-9j80bsHcAh3SvSkoS5p_y8Fql-liDoxJGF6iq3TrxpDMGvJHiqQxrw45JSoxU6r8EpjQ8lXCd6=
+XLb01VIa1iOKiL5xHFvT53c4W0URXa7KFGVwkXJTTpzdyM6oxkuEwXoVmgCs9" target=3D"_b=
+lank" style=3D"color: #0092ff; text-decoration: underline;">Community</a> t=
+o speak with a member of the team <a href=3D"https://r.marketing.ezoic.com/=
+tr/cl/0yUPCzNqJkvSXarbvtvXcrsTk3CHLVXzOvbg-THPQ-MJS4imXRwTiwRrk8ZDXBRNHy18c=
+7CAoONPdD00ezsBAOWbkvaiA5lOeFj505ytKhpoXsOpp61kf2MvCNXsg0BzcH-yLEHj2JEV69l7=
+HjRene99Jsb5O3J4E4oqUksbNm8zvdhY8IFYmhqaSKq3uyfxdhtyghr99uMTFvz3zW1Xp2vvUFm=
+TZrgqG2HxqMnhzMyKTjqAmYS0-s_MDNb_XbXdb84xVLnHMSDoCYDmm8AqWK_gBRX5xrfZByIKQS=
+5jxO9HQM9v" target=3D"_blank" style=3D"color: #0092ff; text-decoration: und=
+erline;">here.</a>=C2=A0</p><p style=3D"margin: 0;">=C2=A0</p><p style=3D"m=
+argin: 0;">All the best,=C2=A0</p><p style=3D"margin: 0;">=C2=A0</p><p styl=
+e=3D"margin: 0;">The Access Now Team=C2=A0</p></div> </td> </tr></tbody></t=
+able></td> </tr></tbody></table></td> </tr></tbody></table></th> </tr></tbo=
+dy></table></td> </tr></tbody></table></td> </tr></tbody></table></td> </tr=
+></tbody></table></td> </tr><tr><td align=3D"" class=3D"r20-c"> <table cell=
+spacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" width=3D=
+"100%" class=3D"r6-o" style=3D"table-layout: fixed; width: 100%;"><!-- --><=
+tbody><tr><td valign=3D"top" class=3D"r21-i" style=3D"background-color: #ef=
+f2f7;"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D=
+"0" role=3D"presentation"><tbody><tr><td class=3D"r0-c" align=3D"center"> <=
+table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation=
+" width=3D"600" class=3D"r1-o" style=3D"table-layout: fixed; width: 600px;"=
+><!-- --><tbody><tr><td class=3D"r22-i" style=3D"padding-bottom: 20px; padd=
+ing-top: 20px;"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" =
+border=3D"0" role=3D"presentation"><tbody><tr><th width=3D"100%" valign=3D"=
+top" class=3D"r5-c" style=3D"font-weight: normal;"> <table cellspacing=3D"0=
+" cellpadding=3D"0" border=3D"0" role=3D"presentation" width=3D"100%" class=
+=3D"r6-o" style=3D"table-layout: fixed; width: 100%;"><!-- --><tbody><tr><t=
+d valign=3D"top" class=3D"r7-i" style=3D"padding-left: 15px; padding-right:=
+ 15px;"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" role=3D"presentation"><tbody><tr><td class=3D"r10-c" align=3D"left">=
+ <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentati=
+on" width=3D"100%" class=3D"r11-o" style=3D"table-layout: fixed; width: 100=
+%;"><tbody><tr><td align=3D"center" valign=3D"top" class=3D"r23-i nl2go-def=
+ault-textstyle" style=3D"font-family: arial,helvetica,sans-serif; word-brea=
+k: break-word; color: #3b3f44; font-size: 18px; line-height: 1.5; padding-t=
+op: 15px; text-align: center;"> <div><p style=3D"margin: 0;"><strong>Ezoic<=
+/strong></p></div> </td> </tr></tbody></table></td> </tr><tr><td class=3D"r=
+10-c" align=3D"left"> <table cellspacing=3D"0" cellpadding=3D"0" border=3D"=
+0" role=3D"presentation" width=3D"100%" class=3D"r11-o" style=3D"table-layo=
+ut: fixed; width: 100%;"><tbody><tr><td align=3D"center" valign=3D"top" cla=
+ss=3D"r24-i nl2go-default-textstyle" style=3D"font-family: arial,helvetica,=
+sans-serif; word-break: break-word; color: #3b3f44; font-size: 18px; line-h=
+eight: 1.5; text-align: center;"> <div><p style=3D"margin: 0; font-size: 14=
+px;">Innovation Way 6023, 92009, Carlsbad</p></div> </td> </tr></tbody></ta=
+ble></td> </tr><tr><td class=3D"r10-c" align=3D"left"> <table cellspacing=
+=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" width=3D"100%" =
+class=3D"r11-o" style=3D"table-layout: fixed; width: 100%;"><tbody><tr><td =
+align=3D"center" valign=3D"top" class=3D"r23-i nl2go-default-textstyle" sty=
+le=3D"font-family: arial,helvetica,sans-serif; word-break: break-word; colo=
+r: #3b3f44; font-size: 18px; line-height: 1.5; padding-top: 15px; text-alig=
+n: center;"> <div><p style=3D"margin: 0; font-size: 14px;">This email was s=
+ent to contact@fiidewgal.com</p></div> </td> </tr></tbody></table></td> </t=
+r><tr><td class=3D"r10-c" align=3D"left"> <table cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" role=3D"presentation" width=3D"100%" class=3D"r11-o"=
+ style=3D"table-layout: fixed; width: 100%;"><tbody><tr><td align=3D"center=
+" valign=3D"top" class=3D"r24-i nl2go-default-textstyle" style=3D"font-fami=
+ly: arial,helvetica,sans-serif; word-break: break-word; color: #3b3f44; fon=
+t-size: 18px; line-height: 1.5; text-align: center;"> <div><p style=3D"marg=
+in: 0; font-size: 14px;">You&#39;ve received it because you&#39;ve subscrib=
+ed to our newsletter.</p></div> </td> </tr></tbody></table></td> </tr><tr><=
+td class=3D"r10-c" align=3D"left"> <table cellspacing=3D"0" cellpadding=3D"=
+0" border=3D"0" role=3D"presentation" width=3D"100%" class=3D"r11-o" style=
+=3D"table-layout: fixed; width: 100%;"><tbody><tr><td align=3D"center" vali=
+gn=3D"top" class=3D"r25-i nl2go-default-textstyle" style=3D"font-family: ar=
+ial,helvetica,sans-serif; word-break: break-word; color: #3b3f44; font-size=
+: 18px; line-height: 1.5; padding-bottom: 15px; padding-top: 15px; text-ali=
+gn: center;"> <div><p style=3D"margin: 0; font-size: 14px;"> <a href=3D"htt=
+ps://r.marketing.ezoic.com/tr/un/KVRzuks5L4LxTvzIAODH_dZNKfFVQOeZKyy7lI0l3X=
+0ZxIPIp-0onMKIRhBveZK0VO4T2ZKeMesrQWTc1j1rKih5Dmn5gooWTQrKGE2i-RmwfJoH7P4Ke=
+vSkj6Q1iZqZj-__g3gngEGeQNeCd_WvaPOnciR8lGXMJX6Lye_mL4VMXHo5RNytK-LSPbO699Kh=
+44yfMF4RIbH7AdtU3JieLW6J-XwJoW6NUHIhLAUSjMhuvh-Ta_s4BxqhD9W9524l5PqfHEte3t1=
+usQYioNAPGyVQJA" target=3D"_blank" style=3D"color: #0092ff; text-decoration=
+: underline;">Unsubscribe</a></p></div> </td> </tr></tbody></table></td> </=
+tr><tr><td class=3D"r26-c" align=3D"center"> <table cellspacing=3D"0" cellp=
+adding=3D"0" border=3D"0" role=3D"presentation" width=3D"100%" class=3D"r3-=
+o" style=3D"table-layout: fixed; width: 100%;"><tbody><tr><td valign=3D"top=
+" class=3D"r27-i" style=3D"padding-bottom: 15px;"> <table width=3D"100%" ce=
+llspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation"><tbody=
+><tr><td class=3D"r28-c" align=3D"center"> <table cellspacing=3D"0" cellpad=
+ding=3D"0" border=3D"0" role=3D"presentation" width=3D"129" class=3D"r29-o"=
+ style=3D"table-layout: fixed;"><tbody><tr><td height=3D"48" class=3D"" sty=
+le=3D"font-size: 0px; line-height: 0px;"> <img src=3D"https://r.marketing.e=
+zoic.com/im/4675460/ba41f6ecf728749cf581fb1a0a7dba4b4dc0f6ce004cb7d70c00848=
+d85b24569.png?e=3DdKrpyrac4TBuZPqxB_j6hhoDx61jFFUfYZnzQKfdeYneS4-FfmItp0tty=
+Su9gf8368ryFuHk9YdReZYhryILpN17HWmM5lGXyj_oeD5EEo6naWMnEISXlvwFxs4Cz8bkbfV7=
+nedzj9gFJf23Dft1t75Rs3V7TqRM1Vh8cZZxIvCjCLrpLFBwZ_H-_H6wPirrTiZwLlImylM" wi=
+dth=3D"129" border=3D"0" class=3D"" style=3D"display: block; width: 100%;"/=
+></td> </tr></tbody></table></td> </tr></tbody></table></td> </tr></tbody><=
+/table></td> </tr></tbody></table></td> </tr></tbody></table></th> </tr></t=
+body></table></td> </tr></tbody></table></td> </tr></tbody></table></td> </=
+tr></tbody></table></td> </tr></tbody></table>
+<img width=3D"1" height=3D"1" src=3D"https://r.marketing.ezoic.com/tr/op/3p=
+Q8Ym7WVNjM5xukAEqwXxlCoG4-oerLofaBYaw3qL4CzVBzgJTuLBTXSCip_bawt9Z_Flpkbwm4Z=
+t_6KSu7-1nJKcp7WTp8MrfOPZFfut4wjkVW5otllWA5SEEy3ddVGpfsPzAOOQlUiCh8s3ijDKtw=
+QMsiZqJIRgtc3ZB-Bqs" alt=3D"" /></body></html>
+
+----_SiB-ee6436b4f30229fa-Part_1--
+

@@ -1,0 +1,112 @@
+Return-Path: <hadjabobodiallo45@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id YaowBnRPsWNF/DIA3R2AvA
+	(envelope-from <hadjabobodiallo45@gmail.com>)
+	for <contact@fiidewgal.com>; Sun, 01 Jan 2023 10:16:36 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NlCzl6w3nz5mF8q
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="nh4AjyjH"
+X-N0C-MailScanner-eFa-Watermark: 1673169393.78745@0jxqFBOkOpMcacQRx3/Dug
+X-N0C-MailScanner-eFa-From: hadjabobodiallo45@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 7E61E40044DD.AEBAB
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ed1-f48.google.com ([209.85.208.48] [209.85.208.48])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 7E61E40044DD
+	for <contact@fiidewgal.com>; Sun,  1 Jan 2023 10:15:58 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 7E61E40044DD
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 7E61E40044DD
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=nh4AjyjH
+Received: by mail-ed1-f48.google.com with SMTP id c17so36261110edj.13
+        for <contact@fiidewgal.com>; Sun, 01 Jan 2023 01:15:58 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=8QVBZTSbz5dw7RfW7Aod3tLCrwNyRLhNhP4cvFVVd2c=;
+        b=nh4AjyjHIgYPeGX+fsuKmOvpMsVWiyB2CcVBEy/nKXoJr/lNf+vZgkhVWTUaxHtStu
+         mWUjn0+GJxgVbw2XHnWSyAsCnCSVxSg0SsnLw9rRlRmrOzc9c0LTWH5FLtGL+Nyy3k7z
+         N7Ugh3Xto9bTJbvnx9kzLQv8PGFqLT6EL7/LFJE+y79GFbIzJYT5D5ENl8aD6crc6Cm6
+         QYkyPSM6bQ8foK/C6HcLL14WCsYtt3RnoV9NoNvWrnA5qOR88pbSMI5vchHSzG8WjZvB
+         6RQnNJEyG63ucvBW2IXrytV7QCxXChsREgvvu25aJQ8mYwLoFOySpryJkUUExQIRgQL5
+         ntYQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=8QVBZTSbz5dw7RfW7Aod3tLCrwNyRLhNhP4cvFVVd2c=;
+        b=arvC8kNm5995lNW8c2UPDZ6hr0FlVr6YgFp4DX6Jvh3NwFgxPD0vXlWxiEnssNwhGU
+         V5vNrGBgIjEA+osMXEq8+8ZeiLpQONJcreNrm3wzJ32j7KIgl4Z25zGLQh3bOyGurWkW
+         e3oJ/AjlZNYrplwAd/ze/mvcqNE/3nKRBKe8Lx9djm70kNsmo4pSZzM53jh0jZjNzGoR
+         y7whMwvwqfFTSu1rBzOsWBWuyoA3VuFtPy08sRa7KHybwnZigdkn61bkL+PDBgNy4kjX
+         RX8iK0rH4UJI3pFbxQKPiw76HpaaOFZCEpX3ANVaUq871mLhAdtlv7SytQuuXTBkW8vo
+         +ZAg==
+X-Gm-Message-State: AFqh2ko/k4aB8OE5AoVMaxoSDywTtFEMwFPHSLD18IheKhWmDcmHjpKK
+	CY8wyjufj6eME0+csrxF+0rTb0L3zgWhrjTtFbDz7zbD
+X-Google-Smtp-Source: AMrXdXt1zKDKp3w4gA6jwLpIDkCfmIcNUr3Y/sH9L+cRHI72kpQkTGfigW/bUES0g3N8b4DT1kXzlGXd1aqGd/6YrVs=
+X-Received: by 2002:a05:6402:a55:b0:46c:ab70:bffc with SMTP id
+ bt21-20020a0564020a5500b0046cab70bffcmr4122557edb.371.1672564557393; Sun, 01
+ Jan 2023 01:15:57 -0800 (PST)
+MIME-Version: 1.0
+References: <addb8d17733c4748d878b78c9892febc@fiidewgal.com>
+In-Reply-To: <addb8d17733c4748d878b78c9892febc@fiidewgal.com>
+From: Hadjabobo Diallo <hadjabobodiallo45@gmail.com>
+Date: Sun, 1 Jan 2023 09:15:44 +0000
+Message-ID: <CALQF6DB_NHJg79zxC3PLWnBZPR+648Y78NUN2SsZ6UJOjpCJ8g@mail.gmail.com>
+Subject: =?UTF-8?Q?Re=3A_Vous_avez_une_nouvelle_demande_d=27int=C3=A9r=C3=AAt?=
+To: =?UTF-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>
+Content-Type: multipart/alternative; boundary="0000000000004eb1eb05f130480d"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000004eb1eb05f130480d
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour je sais que je ne devrais pas r=C3=A9pondre =C3=A0 vos mails mais j=
+'ai des
+questions et je ne sais pas comment joindre un administrateur.... Merci de
+me repondre
+
+Le sam. 31 d=C3=A9c. 2022 =C3=A0 13:57, Ne r=C3=A9pondez pas <contact@fiide=
+wgal.com> a
+=C3=A9crit :
+
+> Bonjour Djenabou Diallo,
+>
+> Theyero Balde a manifest=C3=A9 son int=C3=A9r=C3=AAt pour vous.
+>
+> Veuillez contacter l'=C3=A9quipe administrative si vous avez d'autres que=
+stions.
+>
+> Merci,
+>
+> Ne r=C3=A9pondez pas
+>
+
+--0000000000004eb1eb05f130480d
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Bonjour je sais que je ne devrais pas r=C3=A9pondre =C3=
+=A0 vos mails mais j&#39;ai des questions et je ne sais pas comment joindre=
+ un administrateur.... Merci de me repondre</div><br><div class=3D"gmail_qu=
+ote"><div dir=3D"ltr" class=3D"gmail_attr">Le sam. 31 d=C3=A9c. 2022 =C3=A0=
+ 13:57, Ne r=C3=A9pondez pas &lt;<a href=3D"mailto:contact@fiidewgal.com">c=
+ontact@fiidewgal.com</a>&gt; a =C3=A9crit=C2=A0:<br></div><blockquote class=
+=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padd=
+ing-left:1ex"><p>Bonjour Djenabou Diallo,</p><p>Theyero Balde a manifest=C3=
+=A9 son int=C3=A9r=C3=AAt pour vous.</p><p>Veuillez contacter l&#39;=C3=A9q=
+uipe administrative si vous avez d&#39;autres questions.</p><p>Merci,</p><p=
+>Ne r=C3=A9pondez pas</p>
+
+</blockquote></div>
+
+--0000000000004eb1eb05f130480d--

@@ -1,0 +1,401 @@
+Return-Path: <service@paypal.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id SEL3FLDSPWQfiBwA3R2AvA
+	(envelope-from <service@paypal.com>)
+	for <contact@fiidewgal.com>; Tue, 18 Apr 2023 01:13:52 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Q0jXt35BZz34SFdJ
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=paypal.com header.i=@paypal.com header.b="LyasHuWi"
+X-N0C-MailScanner-eFa-Watermark: 1682378016.49775@1dZpT0Ml+kPmMHTORY400Q
+X-N0C-MailScanner-eFa-From: service@paypal.com
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 993F5401AEEF.A15A2
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mx1.slc.paypal.com ([173.0.84.226] [173.0.84.226])
+	(using TLSv1.2 with cipher ECDHE-ECDSA-AES256-GCM-SHA384 (256/256 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 993F5401AEEF
+	for <contact@fiidewgal.com>; Tue, 18 Apr 2023 01:13:30 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 993F5401AEEF
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=reject dis=none) header.from=paypal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=paypal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 993F5401AEEF
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; secure) header.d=paypal.com header.i=@paypal.com header.a=rsa-sha256 header.s=pp-dkim1 header.b=LyasHuWi
+DKIM-Signature: v=1; a=rsa-sha256; d=paypal.com; s=pp-dkim1; c=relaxed/relaxed;
+	q=dns/txt; i=@paypal.com; t=1681773207;
+	h=From:From:Subject:Date:To:MIME-Version:Content-Type;
+	bh=mM1lIk012QhrzJrLSPL4dYe62RwvL1ZRHbH9yA2Lhjc=;
+	b=LyasHuWiblAe3tjVNCg65gxrk9Ax39+etvjG/gG9ntacyrIwZdHSTepwhjHvoFL5
+	KOELZ9ejuVE36a0h00d+6tuhxEMzKc1MG/DcZsmNHYiDL7RidiGwDwAkSAWzDkCg
+	mxw4stjEr8fOl2dvJTB1s3sUlnYDNVs34GPKTh1NEKFjMcqnDfaIHXCQEWB4QuK7
+	3wBL5Ir0tvGz5LYYdXQ/z2181x/6zoM84PHBkjRjqxlMFXH9brqkc6gpsgPcFy/0
+	ad6mdsC9AfrAE3+jIM8anTOpZRzqSXlwZ87pbQbxbfDUW8Bk8qjCkzDwtvmqP1aU
+	HyIHS1sMDbkpdOttny3oZg==;
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="UTF-8"
+Date: Mon, 17 Apr 2023 16:13:27 -0700
+Message-ID: <32.B2.03572.792DD346@ccg13mail03>
+X-PP-REQUESTED-TIME: 1681773201448
+X-PP-Email-transmission-Id: 74a55b20-dd75-11ed-b507-3cecef47c11c
+PP-Correlation-Id: f9326292d0763
+Subject: =?UTF-8?Q?You=E2=80=99ve_added_a_card_to_your_PayPal_account?=
+X-MaxCode-Template: PPC000652
+To: Abdoul Gadiri Diallo <contact@fiidewgal.com>
+From: "service@paypal.com" <service@paypal.com>
+X-Email-Type-Id: PPC000652
+MIME-Version: 1.0
+X-PP-Priority: 0-none-false
+AMQ-Delivery-Message-Id: nullval
+X-XPT-XSL-Name: nullval
+X-N0C-Node-IP: 185.221.182.45
+
+<html dir=3D"ltr" lang=3D"en">=0A=0A  <head>=0A    <meta http-equiv=3D"Cont=
+ent-Type" content=3D"text/html; charset=3Dutf-8" />=0A    <meta name=3D"vie=
+wport" content=3D"initial-scale=3D1.0,minimum-scale=3D1.0,maximum-scale=3D1=
+.0,width=3Ddevice-width,height=3Ddevice-height,target-densitydpi=3Ddevice-=
+dpi,user-scalable=3Dno" />=0A    <title>You=E2=80=99ve added a card to your=
+ PayPal account</title>=0A    <style type=3D"text/css">=0A      /**=0A * Pa=
+yPal-Open Fonts=0A */=0A      /* Body text - font-weight:400 */=0A      @fo=
+nt-face {=0A        font-family: PayPal-Open;=0A        font-style: normal;=
+=0A        font-weight: 400;=0A        src: url('https://www.paypalobjects.=
+com/digitalassets/c/system-triggered-email/n/layout/fonts/PayPalOpen/PayPal=
+Open-Regular.otf') format("opentype");=0A        /* IE9 Compat Modes */=0A =
+       src: url('https://www.paypalobjects.com/digitalassets/c/system-trigg=
+ered-email/n/layout/fonts/PayPalOpen/PayPalOpen-Regular.woff2') format('wof=
+f2'),=0A          /*Moderner Browsers*/=0A          url('https://www.paypal=
+objects.com/digitalassets/c/system-triggered-email/n/layout/fonts/PayPalOpe=
+n/PayPalOpen-Regular.woff') format('woff');=0A        /* Modern Browsers */=
+=0A        /* Fallback font for - MS Outlook older versions (2007,13, 16)*/=
+=0A        mso-font-alt: 'Calibri';=0A      }=0A=0A      /* Headline/Subhea=
+dline/Button text font-weight:500 */=0A      @font-face {=0A        font-fa=
+mily: PayPal-Open;=0A        font-style: normal;=0A        font-weight: 500=
+;=0A        src: url('https://www.paypalobjects.com/digitalassets/c/system-=
+triggered-email/n/layout/fonts/PayPalOpen/PayPalOpen-Medium.otf') format("o=
+pentype");=0A        /* IE9 Compat Modes */=0A        src: url('https://www=
+.paypalobjects.com/digitalassets/c/system-triggered-email/n/layout/fonts/P=
+ayPalOpen/PayPalOpen-Medium.woff2') format('woff2'),=0A          /*Moderner=
+ Browsers*/=0A          url('https://www.paypalobjects.com/digitalassets/c/=
+system-triggered-email/n/layout/fonts/PayPalOpen/PayPalOpen-Medium.woff') f=
+ormat('woff');=0A        /* Modern Browsers */=0A        /* Fallback font f=
+or - MS Outlook older versions (2007,13, 16)*/=0A        mso-font-alt: 'Cal=
+ibri';=0A      }=0A=0A      /* Bold text - <b>, <strong> Bold equals to fon=
+t-weight:700 */=0A      @font-face {=0A        font-family: PayPal-Open;=0A=
+        font-style: normal;=0A        font-weight: 700;=0A        src: url(=
+'https://www.paypalobjects.com/digitalassets/c/system-triggered-email/n/lay=
+out/fonts/PayPalOpen/PayPalOpen-Bold.otf') format("opentype");=0A        /*=
+ IE9 Compat Modes */=0A        src: url('https://www.paypalobjects.com/digi=
+talassets/c/system-triggered-email/n/layout/fonts/PayPalOpen/PayPalOpen-Bol=
+d.woff2') format('woff2'),=0A          /*Moderner Browsers*/=0A          ur=
+l('https://www.paypalobjects.com/digitalassets/c/system-triggered-email/n/l=
+ayout/fonts/PayPalOpen/PayPalOpen-Bold.woff') format('woff');=0A        /* =
+Modern Browsers */=0A        /* Fallback font for - MS Outlook older versio=
+ns (2007,13, 16)*/=0A        mso-font-alt: 'Calibri';=0A      }=0A=0A      =
+/* End - PayPal-Open Fonts */=0A=0A      /**=0A * VX-LIB Styles =0A * Impor=
+t only the styles required for Email templates.=0A */=0A      @charset "UTF=
+-8";=0A=0A      html {=0A        box-sizing: border-box;=0A      }=0A=0A   =
+   *,=0A      *:before,=0A      *:after {=0A        box-sizing: inherit;=0A=
+      }=0A=0A      /* Setting these elements to height of 100% ensures that=
+=0A * .vx_foreground-container fully covers the whole viewport=0A */=0A    =
+  html,=0A      body {=0A        height: 100%;=0A      }=0A=0A      body {=
+=0A        font-size: 14px !important;=0A        font-family: PayPal-Open, =
+'Helvetica Neue', Helvetica, Arial, sans-serif;=0A        -webkit-font-smoo=
+thing: antialiased;=0A        -moz-osx-font-smoothing: grayscale;=0A       =
+ font-smoothing: antialiased;=0A      }=0A=0A      a,=0A      a:visited {=
+=0A        color: #0070E0;=0A        text-decoration: none;=0A        font-=
+weight: 500;=0A        font-family: PayPal-Open, 'Helvetica Neue', Helvetic=
+a, Arial, sans-serif;=0A      }=0A=0A      a:active,=0A      a:focus,=0A   =
+   a:hover {=0A        color: #003087;=0A        text-decoration: underline=
+;=0A      }=0A=0A      p,=0A      li,=0A      dd,=0A      dt,=0A      label=
+,=0A      input,=0A      textarea,=0A      pre,=0A      code,=0A      table=
+ {=0A        font-size: 14px;=0A        line-height: 1.6;=0A        font-we=
+ight: 400;=0A        text-transform: none;=0A        font-family: PayPal-Op=
+en, 'Helvetica Neue', Helvetica, Arial, sans-serif;=0A        color: #00143=
+5;=0A      }=0A=0A      .vx_legal-text {=0A        font-size: 0.8125rem;=0A=
+        line-height: 1.38461538;=0A        font-weight: 400;=0A        text=
+-transform: none;=0A        font-family: PayPal-Open, 'Helvetica Neue', Hel=
+vetica, Arial, sans-serif;=0A        color: #6c7378;=0A      }=0A=0A      /=
+* End - VX-LIB Styles */=0A=0A      /**=0A * Styles from Neptune=0A */=0A  =
+    /* prevent iOS font upsizing */=0A      * {=0A        -webkit-text-size=
+-adjust: none;=0A      }=0A=0A      /* force Outlook.com to honor line-heig=
+ht */=0A      .ExternalClass * {=0A        line-height: 100%;=0A      }=0A=
+=0A      td {=0A        mso-line-height-rule: exactly;=0A      }=0A=0A     =
+ /* prevent iOS auto-linking */=0A      /* Android margin fix */=0A      bo=
+dy {=0A        margin: 0;=0A        padding: 0;=0A      }=0A=0A      div[st=
+yle*=3D"margin: 16px 0"] {=0A        margin: 0 !important;=0A      }=0A=0A =
+     /** Prevent Outlook Purple Links **/=0A      .greyLink a:link {=0A    =
+    color: #949595;=0A      }=0A=0A      /* prevent iOS auto-linking */=0A =
+     .applefix a {=0A        /* use on a span around the text */=0A        =
+color: inherit;=0A        text-decoration: none;=0A      }=0A=0A      .ppsa=
+ns {=0A        font-family: PayPal-Open, 'Helvetica Neue', Helvetica, Arial=
+, sans-serif !important;=0A      }=0A=0A      /* use to make image scale to=
+ 100 percent */=0A      .mpidiv img {=0A        width: 100%;=0A        heig=
+ht: auto;=0A        min-width: 100%;=0A        max-width: 100%;=0A      }=
+=0A=0A      .stackTbl {=0A        width: 100%;=0A        display: table;=0A=
+      }=0A=0A      .offer-logo {=0A        border-radius: 25px;=0A      }=
+=0A=0A      .offer-subtitle {=0A        font-weight: 600 !important;=0A    =
+  }=0A=0A      /* Responsive CSS */=0A      @media screen and (max-width: 6=
+40px) {=0A=0A        /*** Image Width Styles ***/=0A        .imgWidth {=0A =
+         width: 20px !important;=0A        }=0A      }=0A=0A      @media sc=
+reen and (max-width: 480px) {=0A=0A        /*** Image Width Styles ***/=0A =
+       .imgWidth {=0A          width: 10px !important;=0A        }=0A      =
+}=0A=0A      /* End - Responsive CSS */=0A=0A      /* Fix for Neptune partn=
+er logo */=0A      .partner_image {=0A        max-width: 250px;=0A        m=
+ax-height: 90px;=0A        display: block;=0A      }=0A=0A      /* End - St=
+yles from Neptune */=0A=0A      /**=0A * Styles - overrides for PayPal rebr=
+anding=0A */=0A      html,=0A      body {=0A        background: #FAF8F5;=0A=
+        color: #001435;=0A        font-size: 14px;=0A        line-height: 1=
+.6;=0A      }=0A=0A      .footerDivider {=0A        margin: 0px 35px;=0A  =
+    }=0A=0A      /* Button  */=0A      td.paypal-button-primary:hover {=0A =
+       /*Setting border to td would increase the buttton size on hover */=
+=0A        background-color: #0070E0 !important;=0A      }=0A=0A      a.pay=
+pal-button-primary:hover {=0A        background-color: #0070E0 !important;=
+=0A        border: 2px solid #0070E0 !important;=0A      }=0A=0A      a.pay=
+pal-button-secondary:hover {=0A        border: 2px solid #0070E0 !important=
+;=0A        color: #0070E0 !important;=0A      }=0A=0A      /**=0A * Styles=
+ for Dark mode=0A */=0A      @media (prefers-color-scheme: dark) {=0A=0A   =
+     /* Wrap entire logo with border */=0A        .footerDivider {=0A      =
+    margin-left: 0px=0A        }=0A      }=0A    </style>=0A  </head>=0A=0A=
+  <body>=0A    <h4 id=3D"preHeader" style=3D"display:none;color:#FAF8F5;fon=
+t-size:0px;line-height:0px">Abdoul Gadiri Diallo, here are the details.</h4=
+>=0A    <table cellPadding=3D"0" cellSpacing=3D"0" border=3D"0" width=3D"10=
+0%">=0A      <tbody>=0A        <tr>=0A          <td bgcolor=3D"#FAF8F5" sty=
+le=3D"font-size:0px"></td>=0A          <td bgcolor=3D"#FAF8F5" width=3D"640=
+" align=3D"center" class=3D"mobContent">=0A            <table cellPadding=
+=3D"0" cellSpacing=3D"0" border=3D"0" width=3D"100%" dir=3D"ltr">=0A       =
+       <tbody>=0A                <tr>=0A                  <td>=0A          =
+          <table cellPadding=3D"0" cellSpacing=3D"0" border=3D"0" width=3D"=
+100%">=0A                      <tbody>=0A                        <tr>=0A   =
+                       <td>=0A                            <table width=3D"1=
+00%" cellPadding=3D"0" cellSpacing=3D"0" border=3D"0" style=3D"background:#=
+fff" dir=3D"ltr">=0A                              <tbody>=0A               =
+                 <tr>=0A                                  <td style=3D"colo=
+r:#687173;font-weight:500;font-size:14px;line-height:20px;padding:10px"><sp=
+an>Hello, Abdoul Gadiri Diallo</span></td>=0A                              =
+  </tr>=0A                              </tbody>=0A                        =
+    </table>=0A                          </td>=0A                        </=
+tr>=0A                        <tr>=0A                          <td>=0A     =
+                       <table width=3D"100%" cellPadding=3D"0" cellSpacing=
+=3D"0" border=3D"0" dir=3D"ltr">=0A                              <tbody>=0A=
+                                <tr>=0A                                  <t=
+d style=3D"padding:15px 20px 25px 20px"><img src=3D"https://www.paypalobjec=
+ts.com/digitalassets/c/system-triggered-email/n/layout/images/paypal-rebran=
+ding/pp-logo-in-circle-2x.png" style=3D"display:block" border=3D"0" width=
+=3D"63" height=3D"63" alt=3D"PayPal" title=3D"PayPal" /></td>=0A           =
+                     </tr>=0A                              </tbody>=0A     =
+                       </table>=0A                          </td>=0A       =
+                 </tr>=0A                      </tbody>=0A                 =
+   </table>=0A                  </td>=0A                </tr>=0A           =
+   </tbody>=0A            </table>=0A            <table cellPadding=3D"0" c=
+ellSpacing=3D"0" border=3D"0" width=3D"100%" class=3D"ppsans" dir=3D"ltr">=
+=0A              <tbody>=0A                <tr>=0A                  <td wid=
+th=3D"640" valign=3D"top">=0A                    <table width=3D"100%" cell=
+Spacing=3D"0" cellPadding=3D"0" border=3D"0" style=3D"padding:0px 35px 30px=
+ 35px;word-break:break-word">=0A                      <tbody>=0A           =
+             <tr>=0A                          <td>=0A                      =
+      <p class=3D"ppsans" style=3D"font-size:32px;font-weight:500;line-heig=
+ht:38px;color:#001C64;margin:0" dir=3D"ltr"><span>Abdoul Gadiri Diallo, her=
+e are the details</span></p>=0A                          </td>=0A          =
+              </tr>=0A                      </tbody>=0A                    =
+</table>=0A                    <table width=3D"100%" cellPadding=3D"0" cell=
+Spacing=3D"0" border=3D"0">=0A                      <tbody>=0A             =
+           <tr>=0A                          <td class=3D"ppsans" style=3D"p=
+adding:0px 35px 25px 35px">=0A                            <p class=3D"ppsan=
+s" style=3D"font-size:14px;line-height:20px;color:#001435;margin:0;word-bre=
+ak:break-word" dir=3D"ltr"><span>On April 17, 2023, you added a card ending=
+ in 7549.</span></p>=0A                          </td>=0A                  =
+      </tr>=0A                      </tbody>=0A                    </table>=
+=0A                    <table width=3D"100%" cellSpacing=3D"0" cellPadding=
+=3D"0" border=3D"0" style=3D"padding:0px 35px 25px 35px">=0A               =
+       <tbody>=0A                        <tr>=0A                          <=
+td valign=3D"top">=0A                            <p style=3D"font-size:20px=
+;line-height:28px;color:#001435;margin:0" dir=3D"ltr"><span>Didn't make thi=
+s update=3F</span></p>=0A                          </td>=0A                =
+        </tr>=0A                      </tbody>=0A                    </tabl=
+e>=0A                    <table width=3D"100%" cellPadding=3D"0" cellSpacin=
+g=3D"0" border=3D"0">=0A                      <tbody>=0A                   =
+     <tr>=0A                          <td class=3D"ppsans" style=3D"padding=
+:0px 35px 25px 35px">=0A                            <p class=3D"ppsans" sty=
+le=3D"font-size:14px;line-height:20px;color:#001435;margin:0;word-break:bre=
+ak-word" dir=3D"ltr"><span>If you didn't add or update this card, log into =
+your PayPal account and review your information as soon as possible. If you=
+ notice any unusual activity, please contact us immediately by clicking the=
+ Help Center link at the bottom of this email.</span></p>=0A               =
+           </td>=0A                        </tr>=0A                      </=
+tbody>=0A                    </table>=0A                  </td>=0A         =
+       </tr>=0A                <tr>=0A                  <td width=3D"640">=
+=0A                    <table width=3D"100%" cellPadding=3D"0" cellSpacing=
+=3D"0" border=3D"0" dir=3D"ltr">=0A                      <tbody>=0A        =
+                <tr>=0A                          <td>=0A                   =
+         <table width=3D"100%" cellPadding=3D"0" cellSpacing=3D"0" border=
+=3D"0">=0A                              <tbody>=0A                         =
+       <tr>=0A                                  <td width=3D"120" valign=3D=
+"top"><img src=3D"https://www.paypalobjects.com/digitalassets/c/system-trig=
+gered-email/n/layout/images/paypal-rebranding/footer-logo-with-crop-2x.png"=
+ width=3D"283" height=3D"100" style=3D"display:block" border=3D"0" alt=3D"P=
+ayPal" />=0A                                    <hr class=3D"footerDivider"=
+ style=3D"border-top:1px solid #C6C6C6;margin:0px 35px" />=0A              =
+                    </td>=0A                                </tr>=0A       =
+                       </tbody>=0A                            </table>=0A  =
+                        </td>=0A                        </tr>=0A           =
+           </tbody>=0A                    </table>=0A                    <t=
+able id=3D"body_footer_links" width=3D"100%" cellPadding=3D"0" cellSpacing=
+=3D"0" border=3D"0" style=3D"margin-bottom:0px" dir=3D"ltr">=0A            =
+          <tbody>=0A                        <tr>=0A                        =
+  <td style=3D"font-size:11px;line-height:31px;padding:10px 35px;color:#001=
+435;font-weight:500" class=3D"ppsans"><a href=3D"https://www.paypal.com/us/=
+smarthelp/home=3Fv=3D1&utm_source=3Dunp&utm_medium=3Demail&utm_campaign=3DR=
+T000250&utm_unptid=3D74a55b20-dd75-11ed-b507-3cecef47c11c&ppid=3DRT000250&c=
+nac=3DUS&rsta=3Den_US%28en-US%29&cust=3DMVWS7G8DUD6YU&unptid=3D74a55b20-dd7=
+5-11ed-b507-3cecef47c11c&calc=3Df9326292d0763&unp_tpcid=3Dadd-card-notifica=
+tion&page=3Dmain%3Aemail%3ART000250&pgrp=3Dmain%3Aemail&e=3Dcl&mchn=3Dem&s=
+=3Dci&mail=3Dsys&appVersion=3D1.161.0&xt=3D104038%2C124817" target=3D"_blan=
+k" class=3D"ppsans" style=3D"color:#0070E0;text-decoration:none" alt=3D"Hel=
+p &amp; Contact">Help &amp; Contact</a><span style=3D"padding:0px 5px"> | <=
+/span><a href=3D"https://www.paypal.com/us/webapps/mpp/paypal-safety-and-se=
+curity=3Fv=3D1&utm_source=3Dunp&utm_medium=3Demail&utm_campaign=3DRT000250&=
+utm_unptid=3D74a55b20-dd75-11ed-b507-3cecef47c11c&ppid=3DRT000250&cnac=3DUS=
+&rsta=3Den_US%28en-US%29&cust=3DMVWS7G8DUD6YU&unptid=3D74a55b20-dd75-11ed-b=
+507-3cecef47c11c&calc=3Df9326292d0763&unp_tpcid=3Dadd-card-notification&pag=
+e=3Dmain%3Aemail%3ART000250&pgrp=3Dmain%3Aemail&e=3Dcl&mchn=3Dem&s=3Dci&mai=
+l=3Dsys&appVersion=3D1.161.0&xt=3D104038%2C124817" target=3D"_blank" class=
+=3D"ppsans" style=3D"color:#0070E0;text-decoration:none" alt=3D"Security">S=
+ecurity</a><span style=3D"padding:0px 5px"> | </span><a href=3D"https://www=
+.paypal.com/us/webapps/mpp/mobile-apps=3Fv=3D1&utm_source=3Dunp&utm_medium=
+=3Demail&utm_campaign=3DRT000250&utm_unptid=3D74a55b20-dd75-11ed-b507-3cece=
+f47c11c&ppid=3DRT000250&cnac=3DUS&rsta=3Den_US%28en-US%29&cust=3DMVWS7G8DUD=
+6YU&unptid=3D74a55b20-dd75-11ed-b507-3cecef47c11c&calc=3Df9326292d0763&unp_=
+tpcid=3Dadd-card-notification&page=3Dmain%3Aemail%3ART000250&pgrp=3Dmain%3A=
+email&e=3Dcl&mchn=3Dem&s=3Dci&mail=3Dsys&appVersion=3D1.161.0&xt=3D104038%2=
+C124817" target=3D"_blank" class=3D"ppsans" style=3D"color:#0070E0;text-dec=
+oration:none" alt=3D"Apps">Apps</a></td>=0A                        </tr>=0A=
+                        <tr>=0A                          <td style=3D"paddi=
+ng-bottom:20px;padding-top:20px;padding-left:20px;padding-right:20px">=0A  =
+                          <table cellPadding=3D"0" cellSpacing=3D"0" border=
+=3D"0" dir=3D"ltr">=0A                              <tbody>=0A             =
+                   <tr>=0A                                  <td align=3D"ce=
+nter" valign=3D"middle" width=3D"60"><a id=3D"twitter" href=3D"https://twit=
+ter.com/PayPal=3Fv=3D1%2C0.1&utm_source=3Dunp&utm_medium=3Demail&utm_campai=
+gn=3DRT000250&utm_unptid=3D74a55b20-dd75-11ed-b507-3cecef47c11c&ppid=3DRT00=
+0250&cnac=3DUS&rsta=3Den_US%28en-US%29&cust=3DMVWS7G8DUD6YU&unptid=3D74a55b=
+20-dd75-11ed-b507-3cecef47c11c&calc=3Df9326292d0763&unp_tpcid=3Dadd-card-no=
+tification&page=3Dmain%3Aemail%3ART000250&pgrp=3Dmain%3Aemail&e=3Dcl&mchn=
+=3Dem&s=3Dci&mail=3Dsys&appVersion=3D1.161.0&xt=3D104038%2C124817" target=
+=3D"_blank"><img border=3D"0" src=3D"https://www.paypalobjects.com/digitala=
+ssets/c/system-triggered-email/n/layout/images/paypal-rebranding/footer-soc=
+ial-icons_twitter-2x.png" width=3D"28" height=3D"28" style=3D"display:block=
+" alt=3D"Twitter" /></a></td>=0A                                  <td align=
+=3D"center" valign=3D"middle" width=3D"60"><a id=3D"instagram" href=3D"http=
+s://www.instagram.com/paypal/=3Fv=3D1%2C0.1&utm_source=3Dunp&utm_medium=3De=
+mail&utm_campaign=3DRT000250&utm_unptid=3D74a55b20-dd75-11ed-b507-3cecef47c=
+11c&ppid=3DRT000250&cnac=3DUS&rsta=3Den_US%28en-US%29&cust=3DMVWS7G8DUD6YU&=
+unptid=3D74a55b20-dd75-11ed-b507-3cecef47c11c&calc=3Df9326292d0763&unp_tpci=
+d=3Dadd-card-notification&page=3Dmain%3Aemail%3ART000250&pgrp=3Dmain%3Aemai=
+l&e=3Dcl&mchn=3Dem&s=3Dci&mail=3Dsys&appVersion=3D1.161.0&xt=3D104038%2C124=
+817" target=3D"_blank"><img border=3D"0" src=3D"https://www.paypalobjects.c=
+om/digitalassets/c/system-triggered-email/n/layout/images/paypal-rebranding=
+/footer-social-icons_instagram-2x.png" width=3D"28" height=3D"28" style=3D"=
+display:block" alt=3D"Instagram" /></a></td>=0A                            =
+      <td align=3D"center" valign=3D"middle" width=3D"60"><a id=3D"facebook=
+" href=3D"https://www.facebook.com/PayPalUSA=3Fv=3D1%2C0.1&utm_source=3Dunp=
+&utm_medium=3Demail&utm_campaign=3DRT000250&utm_unptid=3D74a55b20-dd75-11ed=
+-b507-3cecef47c11c&ppid=3DRT000250&cnac=3DUS&rsta=3Den_US%28en-US%29&cust=
+=3DMVWS7G8DUD6YU&unptid=3D74a55b20-dd75-11ed-b507-3cecef47c11c&calc=3Df9326=
+292d0763&unp_tpcid=3Dadd-card-notification&page=3Dmain%3Aemail%3ART000250&p=
+grp=3Dmain%3Aemail&e=3Dcl&mchn=3Dem&s=3Dci&mail=3Dsys&appVersion=3D1.161.0&=
+xt=3D104038%2C124817" target=3D"_blank"><img border=3D"0" src=3D"https://ww=
+w.paypalobjects.com/digitalassets/c/system-triggered-email/n/layout/images/=
+paypal-rebranding/footer-social-icons_facebook-2x.png" width=3D"28" height=
+=3D"28" style=3D"display:block" alt=3D"Facebook" /></a></td>=0A            =
+                      <td align=3D"center" valign=3D"middle" width=3D"60"><=
+a id=3D"linkedin" href=3D"http://www.linkedin.com/company/1482=3Ftrk=3Dtyah=
+&v=3D1&utm_source=3Dunp&utm_medium=3Demail&utm_campaign=3DRT000250&utm_unpt=
+id=3D74a55b20-dd75-11ed-b507-3cecef47c11c&ppid=3DRT000250&cnac=3DUS&rsta=3D=
+en_US%28en-US%29&cust=3DMVWS7G8DUD6YU&unptid=3D74a55b20-dd75-11ed-b507-3cec=
+ef47c11c&calc=3Df9326292d0763&unp_tpcid=3Dadd-card-notification&page=3Dmain=
+%3Aemail%3ART000250&pgrp=3Dmain%3Aemail&e=3Dcl&mchn=3Dem&s=3Dci&mail=3Dsys&=
+appVersion=3D1.161.0&xt=3D104038%2C124817" target=3D"_blank"><img border=3D=
+"0" src=3D"https://www.paypalobjects.com/digitalassets/c/system-triggered-e=
+mail/n/layout/images/paypal-rebranding/footer-social-icons_linkedin-2x.png"=
+ width=3D"28" height=3D"28" style=3D"display:block" alt=3D"LinkedIn" /></a>=
+</td>=0A                                </tr>=0A                           =
+   </tbody>=0A                            </table>=0A                      =
+    </td>=0A                        </tr>=0A                      </tbody>=
+=0A                    </table>=0A                  </td>=0A               =
+ </tr>=0A              </tbody>=0A            </table>=0A            <table=
+ cellPadding=3D"0" cellSpacing=3D"0" border=3D"0" width=3D"100%" style=3D"p=
+adding:5px 35px 20px 35px">=0A              <tbody>=0A                <tr>=
+=0A                  <td class=3D"ppsans" width=3D"600">=0A                =
+    <table id=3D"hideForTextFooter" width=3D"100%" cellPadding=3D"0" cellSp=
+acing=3D"0" border=3D"0">=0A                      <tbody>=0A               =
+         <tr>=0A                          <td style=3D"font-size:11px;line-=
+height:13px;padding:5px 0px">=0A                            <p class=3D"pps=
+ans" style=3D"font-size:11px;margin:0" dir=3D"ltr"><span>PayPal is committe=
+d to preventing fraudulent emails. Emails from PayPal will always contain y=
+our full name. <a href=3D"https://www.paypal.com/us/webapps/mpp/security/su=
+spicious-activity=3Fv=3D1&utm_source=3Dunp&utm_medium=3Demail&utm_campaign=
+=3DRT000250&utm_unptid=3D74a55b20-dd75-11ed-b507-3cecef47c11c&ppid=3DRT0002=
+50&cnac=3DUS&rsta=3Den_US%28en-US%29&cust=3DMVWS7G8DUD6YU&unptid=3D74a55b20=
+-dd75-11ed-b507-3cecef47c11c&calc=3Df9326292d0763&unp_tpcid=3Dadd-card-noti=
+fication&page=3Dmain%3Aemail%3ART000250&pgrp=3Dmain%3Aemail&e=3Dcl&mchn=3De=
+m&s=3Dci&mail=3Dsys&appVersion=3D1.161.0&xt=3D104038%2C124817" target=3D"_b=
+lank" style=3D"text-decoration:none">Learn to identify phishing</a></span><=
+/p>=0A                          </td>=0A                        </tr>=0A   =
+                   </tbody>=0A                    </table>=0A              =
+      <table id=3D"hideForTextFooter" width=3D"100%" cellPadding=3D"0" cell=
+Spacing=3D"0" border=3D"0">=0A                      <tbody>=0A             =
+           <tr>=0A                          <td style=3D"font-size:11px;lin=
+e-height:13px;padding:5px 0px">=0A                            <p class=3D"p=
+psans" style=3D"font-size:11px;margin:0" dir=3D"ltr"><span>Please don't rep=
+ly to this email. To get in touch with us, click <a href=3D"https://www.pay=
+pal.com/selfhelp/home=3Fv=3D1&utm_source=3Dunp&utm_medium=3Demail&utm_campa=
+ign=3DRT000250&utm_unptid=3D74a55b20-dd75-11ed-b507-3cecef47c11c&ppid=3DRT0=
+00250&cnac=3DUS&rsta=3Den_US%28en-US%29&cust=3DMVWS7G8DUD6YU&unptid=3D74a55=
+b20-dd75-11ed-b507-3cecef47c11c&calc=3Df9326292d0763&unp_tpcid=3Dadd-card-n=
+otification&page=3Dmain%3Aemail%3ART000250&pgrp=3Dmain%3Aemail&e=3Dcl&mchn=
+=3Dem&s=3Dci&mail=3Dsys&appVersion=3D1.161.0&xt=3D104038%2C124817" target=
+=3D"_blank" style=3D"text-decoration:none">Help &amp; Contact</a>.</span></=
+p>=0A                          </td>=0A                        </tr>=0A    =
+                  </tbody>=0A                    </table>=0A               =
+     <table id=3D"" width=3D"100%" cellPadding=3D"0" cellSpacing=3D"0" bord=
+er=3D"0">=0A                      <tbody>=0A                        <tr>=0A=
+                          <td style=3D"font-size:11px;line-height:13px;padd=
+ing:5px 0px">=0A                            <p class=3D"ppsans" style=3D"fo=
+nt-size:11px;margin:0" dir=3D"ltr"><span>Not sure why you received this ema=
+il=3F <a href=3D"https://www.paypal.com/us/smarthelp/article/why-am-i-recei=
+ving-emails-from-paypal-when-i-dont-have-an-account-faq4172=3Fv=3D1&utm_sou=
+rce=3Dunp&utm_medium=3Demail&utm_campaign=3DRT000250&utm_unptid=3D74a55b20-=
+dd75-11ed-b507-3cecef47c11c&ppid=3DRT000250&cnac=3DUS&rsta=3Den_US%28en-US%=
+29&cust=3DMVWS7G8DUD6YU&unptid=3D74a55b20-dd75-11ed-b507-3cecef47c11c&calc=
+=3Df9326292d0763&unp_tpcid=3Dadd-card-notification&page=3Dmain%3Aemail%3ART=
+000250&pgrp=3Dmain%3Aemail&e=3Dcl&mchn=3Dem&s=3Dci&mail=3Dsys&appVersion=3D=
+1.161.0&xt=3D104038%2C124817" target=3D"_blank" style=3D"text-decoration:no=
+ne">Learn more</a></span></p>=0A                          </td>=0A         =
+               </tr>=0A                      </tbody>=0A                   =
+ </table>=0A                    <table width=3D"100%" cellPadding=3D"0" cel=
+lSpacing=3D"0" border=3D"0">=0A                      <tbody>=0A            =
+            <tr>=0A                          <td style=3D"font-size:11px;li=
+ne-height:13px;padding:5px 0px">=0A                            <p class=3D"=
+ppsans" style=3D"font-size:11px;margin:0" dir=3D"ltr">=0A                  =
+          <div style=3D"font-size:11px" dir=3D"ltr"><span>Copyright &copy; =
+1999-2023 PayPal, Inc. All rights reserved. PayPal is located at 2211 N. Fi=
+rst St., San Jose, CA 95131.</span></div>=0A                            <p =
+style=3D"font-size:11px" dir=3D"ltr">PayPal RT000250:en_US(en-US):1.1.0:f93=
+26292d0763</p><img alt=3D"" height=3D"1" width=3D"1" border=3D"0" src=3D"ht=
+tps://t.paypal.com/ts=3Fv=3D1&amp;utm_source=3Dunp&amp;utm_medium=3Demail&a=
+mp;utm_campaign=3DRT000250&amp;utm_unptid=3D74a55b20-dd75-11ed-b507-3cecef4=
+7c11c&amp;ppid=3DRT000250&amp;cnac=3DUS&amp;rsta=3Den_US%28en-US%29&amp;cus=
+t=3DMVWS7G8DUD6YU&amp;unptid=3D74a55b20-dd75-11ed-b507-3cecef47c11c&amp;cal=
+c=3Df9326292d0763&amp;unp_tpcid=3Dadd-card-notification&amp;page=3Dmain%3Ae=
+mail%3ART000250&amp;pgrp=3Dmain%3Aemail&amp;e=3Dop&amp;mchn=3Dem&amp;s=3Dci=
+&amp;mail=3Dsys&amp;appVersion=3D1.161.0&amp;xt=3D104038%2C124817" /></p>=
+=0A                          </td>=0A                        </tr>=0A      =
+                </tbody>=0A                    </table>=0A                 =
+ </td>=0A                </tr>=0A              </tbody>=0A            </tab=
+le>=0A          </td>=0A          <td bgcolor=3D"#FAF8F5" style=3D"font-siz=
+e:0px"></td>=0A        </tr>=0A      </tbody>=0A    </table>=0A  </body>=0A=
+=0A</html>
+

@@ -1,0 +1,126 @@
+Return-Path: <>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 0pQVJIV7xGM8VTEA3R2AvA
+	(envelope-from <>)
+	for <contact@fiidewgal.com>; Sun, 15 Jan 2023 23:17:41 +0100
+Received: by node187-eu.n0c.com (Postfix)
+	id 8D0C6401AEEF; Sun, 15 Jan 2023 17:17:41 -0500 (EST)
+Date: Sun, 15 Jan 2023 17:17:41 -0500 (EST)
+From: MAILER-DAEMON@node187-eu.n0c.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: contact@fiidewgal.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="DACC3400F120.1673821061/node187-eu.n0c.com"
+Content-Transfer-Encoding: 8bit
+Message-Id: <20230115221741.8D0C6401AEEF@node187-eu.n0c.com>
+
+This is a MIME-encapsulated message.
+
+--DACC3400F120.1673821061/node187-eu.n0c.com
+Content-Description: Notification
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+This is the mail system at host node187-eu.n0c.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<elagecisse790@gmail.com>: host gmail-smtp-in.l.google.com[74.125.206.26] said:
+    550-5.1.1 The email account that you tried to reach does not exist. Please
+    try 550-5.1.1 double-checking the recipient's email address for typos or
+    550-5.1.1 unnecessary spaces. Learn more at 550 5.1.1
+    https://support.google.com/mail/?p=NoSuchUser
+    q25-20020a056000137900b002bc214edbd6si17274916wrz.80 - gsmtp (in reply to
+    RCPT TO command)
+
+--DACC3400F120.1673821061/node187-eu.n0c.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; node187-eu.n0c.com
+X-Postfix-Queue-ID: DACC3400F120
+X-Postfix-Sender: rfc822; contact@fiidewgal.com
+Arrival-Date: Sun, 15 Jan 2023 17:17:40 -0500 (EST)
+
+Final-Recipient: rfc822; elagecisse790@gmail.com
+Original-Recipient: rfc822;elagecisse790@gmail.com
+Action: failed
+Status: 5.1.1
+Remote-MTA: dns; gmail-smtp-in.l.google.com
+Diagnostic-Code: smtp; 550-5.1.1 The email account that you tried to reach does
+    not exist. Please try 550-5.1.1 double-checking the recipient's email
+    address for typos or 550-5.1.1 unnecessary spaces. Learn more at 550 5.1.1
+    https://support.google.com/mail/?p=NoSuchUser
+    q25-20020a056000137900b002bc214edbd6si17274916wrz.80 - gsmtp
+
+--DACC3400F120.1673821061/node187-eu.n0c.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+Content-Transfer-Encoding: 8bit
+
+Return-Path: <contact@fiidewgal.com>
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Nw8fX0Vqvz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="XbgBpZnZ"
+X-N0C-MailScanner-eFa-Watermark: 1674425857.64135@j/A4V6DeDM+IfKfDPtDchw
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 56624401AEEF.A0DD5
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from 127.0.0.1 ([10.123.0.37] [10.123.0.37])
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 56624401AEEF;
+	Sun, 15 Jan 2023 23:17:36 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 56624401AEEF
+Authentication-Results: node187-eu.n0c.com; dmarc=fail (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=fail smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 56624401AEEF
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1673821056;
+	bh=9lt0gb2/GnJe1oG/kPJgJO0GfRTGNhw2BxIkSzrDlVM=;
+	h=Date:From:To:Subject:From;
+	b=XbgBpZnZGuSSS7TBt4bFe4d+79E2Ufhl8Ahw7wfeapqo2aVKn/FhQ8lCLMX05jIVL
+	 VnRDJGp71jT39hnV7UkOQjTQBea9kwrbFXOR2nARyCb48n36KaG0rLVJ1DvZQjKOF9
+	 ZWEZtOevuGSkHEp5q4MhL6agKyLdrMwwtFaT36WU=
+MIME-Version: 1.0
+Date: Sun, 15 Jan 2023 16:17:36 -0600
+From: contact@fiidewgal.com
+To: undisclosed-recipients:;
+Subject: Rappel
+Message-ID: <726a1955e68e96f062af9978fe4ea1c7@fiidewgal.com>
+X-Sender: contact@fiidewgal.com
+Content-Type: text/plain; charset=UTF-8;
+ format=flowed
+Content-Transfer-Encoding: 8bit
+X-N0C-Node-IP: 185.221.182.45
+
+Salam Aleykoum ,
+Nous sommes très heureux de vous avoir parmi nos
+membres dans la plateforme et nous souhaitons que
+Vous y rester.C’est pourquoi nous vous prions de
+mettre à jour votre profil en mettant correctement
+Votre date de naissance , votre état civil ;votre photo
+et votre numero de telephone avec l'indicatif
+Si cela est compliqué pour vous faites nous parvenir
+votre numéro de membre qui est sur votre profil public
+avec vos informations citées ci dessus .
+Vous pouvez également nous faire parvenir votre numero
+de membre avec  votre photo et numéro de telephone sur
+notre WhatsApp 001 646 752 9115 ou juste scanner le QR Code ci)
+joint ci-dessous .Sans votre photo , le profil sera désactivé.
+Merci pour votre comprehension!
+
+--DACC3400F120.1673821061/node187-eu.n0c.com--

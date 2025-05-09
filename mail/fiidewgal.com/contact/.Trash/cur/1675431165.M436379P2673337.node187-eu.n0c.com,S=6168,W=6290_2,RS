@@ -1,0 +1,122 @@
+Return-Path: <guinee2240@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id qU3wGf0M3WO5yigA3R2AvA
+	(envelope-from <guinee2240@gmail.com>)
+	for <contact@fiidewgal.com>; Fri, 03 Feb 2023 14:32:45 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4P7c652FFxz34nwbn
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="JM4FME96"
+X-N0C-MailScanner-eFa-Watermark: 1676035846.21852@XIFD8Uzio+RJyDRjACkLhg
+X-N0C-MailScanner-eFa-From: guinee2240@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 4EFF7401A44D.A5BBC
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-yw1-f170.google.com ([209.85.128.170] [209.85.128.170])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 4EFF7401A44D
+	for <contact@fiidewgal.com>; Fri,  3 Feb 2023 14:29:46 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 4EFF7401A44D
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 4EFF7401A44D
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=JM4FME96
+Received: by mail-yw1-f170.google.com with SMTP id 00721157ae682-501c3a414acso68161257b3.7
+        for <contact@fiidewgal.com>; Fri, 03 Feb 2023 05:29:46 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=VGRbapmSAxJc8JB3iq7WX9RIPfkLDxGf2gspwKH0aLA=;
+        b=JM4FME96xpyZ3Qu4Vild0847ufKckbEdeNvVYtdq3C+fmouxuNbyzputn2jIt8hu5M
+         P9BxHrYHtYWVzuS+w3SaYcFuMomu9v9+x7tY/X+skL3dg4J44sGDLjIQD4Honcj2LUvo
+         p3nVvkinyersZiEggenV08z0pd9v7sJ6gL7PAaBwTAic2hmHJrRmfKLadSqIGcd/3e79
+         iBzOK1fkeL1gPxFNKdzOjT4YBoS/ComCPELZy5qsvFR3nSvxkRFD2wF0FYL6Si4TgMXq
+         uVCRT1ZAGoni5cwHjnDy9BNuqFjWZQko1WOXcrYSl5JyE+l2nlIAkocWKKqQnO197oFD
+         SM1Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=VGRbapmSAxJc8JB3iq7WX9RIPfkLDxGf2gspwKH0aLA=;
+        b=QQnl1S1ZJ0TBLP1uvu7kq1b37Xzsj/ydqs4WrALXChsr38v8H7mHzR7EZLDY9yhRfB
+         0RoOczB/+A/RW0ZbCbvFMnKqIhX28949vHOnBFC8Ep0/alVjyGnHjQkDYpt7FBiEDR1p
+         M/oSpwu3cu8GPCYJIhvO5suYE/ejCR4EoBHRQ994ihwqu2rAiCaE1tfToAtwIZ1H0xgI
+         nB8xkuhKB4B5bDaPSdiWnAVpoA2Adfj+YfL7rtlCMGjNWga+TgXrceMOj9c1oZfwb3jc
+         brvlOMQHDtrilgcYPIkU53SdWHjQyBzM4uGUeVN/azPr64+wamLR5ynnIDS5KXzlRslB
+         88vA==
+X-Gm-Message-State: AO0yUKUnwiBJzVFOWd8RhjipF65odmZBQkrrTSg/ccb840MCGwhxT6a7
+	Io+l9F221wTuzdNgGjxhdFuDwLGj34ymjfBrXBRWnmWh
+X-Google-Smtp-Source: AK7set+LAvA5SCdMh2/NOCo8OkwwnWj+EHdLecmBb5ORM1y6OMQAoACrburU+wuKUUhkfQyOvoDUuV9G+sMGDd8OWKM=
+X-Received: by 2002:a0d:cad0:0:b0:527:3e8:5a94 with SMTP id
+ m199-20020a0dcad0000000b0052703e85a94mr6705ywd.68.1675430984792; Fri, 03 Feb
+ 2023 05:29:44 -0800 (PST)
+MIME-Version: 1.0
+References: <e9fd8c955c4b11a9dd2c5ec9209ec362@fiidewgal.com>
+ <CADjyDLpnpYL5tHhL5cWPBUzDY1tFq8P7H+FtEno_ws5f+qS7RA@mail.gmail.com> <8ef1177024ff1b7f43ea3e1052c71d86@fiidewgal.com>
+In-Reply-To: <8ef1177024ff1b7f43ea3e1052c71d86@fiidewgal.com>
+From: =?UTF-8?Q?Guin=C3=A9e_224?= <guinee2240@gmail.com>
+Date: Fri, 3 Feb 2023 14:29:33 +0100
+Message-ID: <CADjyDLrF2cWHBhoU1JvdhoVmwGSHG=QhHHsdRZgX-FfAduYJ3A@mail.gmail.com>
+Subject: Re: Rappel avant la suppression de votre compte.
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000b1be4d05f3cbac4c"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000b1be4d05f3cbac4c
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+=C3=80 partir du mail vous pouvez trouver.
+
+Le jeu. 2 f=C3=A9vr. 2023, 23:50, <contact@fiidewgal.com> a =C3=A9crit :
+
+> Le 2023-02-02 16:28, Guin=C3=A9e 224 a =C3=A9crit :
+> > J'ai pas besoin du coup supprime mon compte, j'ai essay=C3=A9 de le fai=
+re
+> > moi m=C3=AAme j'ai pas pu.
+> >
+> > Le mer. 1 f=C3=A9vr. 2023, 23:02, <contact@fiidewgal.com> a =C3=A9crit =
+:
+> >
+> >> Salam Aleykoum ,
+> >> Veillez ajouter votre photo ou m'envoyer votre photo sur whatsApp
+> >> au 001 646 752 91 15 .A defaut votre compte sera supprim=C3=A9.
+> >> Merci !
+> Veillez me rappeler votre email et votre nom et prenom .
+> Merci d'avance !
+>
+
+--000000000000b1be4d05f3cbac4c
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">=C3=80 partir du mail vous pouvez trouver.</div><br><div =
+class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr">Le jeu. 2 f=C3=
+=A9vr. 2023, 23:50,  &lt;<a href=3D"mailto:contact@fiidewgal.com">contact@f=
+iidewgal.com</a>&gt; a =C3=A9crit=C2=A0:<br></div><blockquote class=3D"gmai=
+l_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left=
+:1ex">Le 2023-02-02 16:28, Guin=C3=A9e 224 a =C3=A9crit=C2=A0:<br>
+&gt; J&#39;ai pas besoin du coup supprime mon compte, j&#39;ai essay=C3=A9 =
+de le faire<br>
+&gt; moi m=C3=AAme j&#39;ai pas pu.<br>
+&gt; <br>
+&gt; Le mer. 1 f=C3=A9vr. 2023, 23:02, &lt;<a href=3D"mailto:contact@fiidew=
+gal.com" target=3D"_blank" rel=3D"noreferrer">contact@fiidewgal.com</a>&gt;=
+ a =C3=A9crit :<br>
+&gt; <br>
+&gt;&gt; Salam Aleykoum ,<br>
+&gt;&gt; Veillez ajouter votre photo ou m&#39;envoyer votre photo sur whats=
+App<br>
+&gt;&gt; au 001 646 752 91 15 .A defaut votre compte sera supprim=C3=A9.<br=
+>
+&gt;&gt; Merci !<br>
+Veillez me rappeler votre email et votre nom et prenom .<br>
+Merci d&#39;avance !<br>
+</blockquote></div>
+
+--000000000000b1be4d05f3cbac4c--

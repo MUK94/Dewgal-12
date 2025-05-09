@@ -1,0 +1,262 @@
+Return-Path: <support=taboola.com__3g91ljbyettp103k.aowl4lmog9go5jo6@61mt6dhzu229zm0a.uaior.d-ehcxea2.usa226.bnc.salesforce.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id iMcbNRjOimQnfCwA3R2AvA
+	(envelope-from <support=taboola.com__3g91ljbyettp103k.aowl4lmog9go5jo6@61mt6dhzu229zm0a.uaior.d-ehcxea2.usa226.bnc.salesforce.com>)
+	for <contact@fiidewgal.com>; Thu, 15 Jun 2023 10:38:48 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4QhbL04j44z34SDmk
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=taboola.com header.i=@taboola.com header.b="MTChUS4V"
+X-N0C-MailScanner-eFa-Watermark: 1687423067.30571@KxGX8J0avXKIjVJELTdgug
+X-N0C-MailScanner-eFa-From: support=taboola.com__3g91ljbyettp103k.aowl4lmog9go5jo6@61mt6dhzu229zm0a.uaior.d-ehcxea2.usa226.bnc.salesforce.com
+X-N0C-MailScanner-eFa-SpamScore: s
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: BCD7E40198A0.A9F1E
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from smtp-0385a834262849c2b.core1.sfdc-lywfpd.mta.salesforce.com ([54.218.217.247] [54.218.217.247])
+	(using TLSv1.2 with cipher ECDHE-ECDSA-AES256-GCM-SHA384 (256/256 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id BCD7E40198A0
+	for <contact@fiidewgal.com>; Thu, 15 Jun 2023 08:00:08 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com BCD7E40198A0
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=reject dis=none) header.from=taboola.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=61mt6dhzu229zm0a.uaior.d-ehcxea2.usa226.bnc.salesforce.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com BCD7E40198A0
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (1024-bit key; secure) header.d=taboola.com header.i=@taboola.com header.a=rsa-sha256 header.s=sfdc header.b=MTChUS4V
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=taboola.com; s=sfdc;
+	t=1686808805; bh=8Rn+I6EmFCjYuk6HMQH+Wu+0zq1ebs59T/IoWiZrwE4=;
+	h=Date:From:To:Subject:MIME-Version:Content-Type;
+	b=MTChUS4VWXrTFxjR06gm8Xi9pfKUfBScyMED/j7HKo/WuMPKI1Zushvvs9RlGC/ec
+	 SGG2Drm+VF8AQsz+BT0y8d20SjHaHS9YNvoqmU/fqDq30Y5vQxAtZFg4TJE3A9ohgn
+	 Ee+Yjk/hLuP60g22e3sFUOI2MABhIl1OyWOd/Jg4=
+Received: from [127.0.0.1] ([127.0.0.1:44816] helo=eaas-4.eaas.emailinfra.svc.cluster.local)
+	by mx1.core1.sfdc-lywfpd.mta.salesforce.com (envelope-from <support=taboola.com__3g91ljbyettp103k.aowl4lmog9go5jo6@61mt6dhzu229zm0a.uaior.d-ehcxea2.usa226.bnc.salesforce.com>)
+	(ecelerity 4.4.0.19839 r(msys-ecelerity:tags/4.4.0.0^0)) with ESMTP
+	id DA/19-00456-5E8AA846; Thu, 15 Jun 2023 06:00:05 +0000
+Received: from 127.0.0.1 (localhost. [127.0.0.1]) by eaas-4 (EaaS) id
+  <LnOQv000000000000000000000000000000000000000000000RWA5ZZ00TCfNB_3BRF25sHyJZuly7g@sfdc.net>
+  for <"contact@fiidewgal.com" <contact@fiidewgal.com>> Thu, 15 Jun 2023
+  06:00:05 GMT (GMT)
+Date: Thu, 15 Jun 2023 06:00:05 +0000 (GMT)
+From: Taboola Support <support@taboola.com>
+To: "contact@fiidewgal.com" <contact@fiidewgal.com>
+Message-ID: <LnOQv000000000000000000000000000000000000000000000RWA5ZZ00TCfNB_3BRF25sHyJZuly7g@sfdc.net>
+References: <500Nr000000r9Wc.3vPvRE4yTvGT5PR3kvHglA.3o1wSLrKRd4Fl0nA1MajRh2PTI3fQdO6mKYwDaL56Kk=.3o000000HQ9o@sfdc.net>
+ <76740ce2fbcd7f4e4f0f2e4be8941773@fiidewgal.com>
+Subject: Monetize my dating website
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1862_865267397.1686808805606"
+X-Priority: 3
+X-SFDC-LK: 00Dd0000000eHCX
+X-SFDC-User: 005Nr0000001DZV
+X-Sender: postmaster@salesforce.com
+X-mail_abuse_inquiries: http://www.salesforce.com/company/abuse.jsp
+X-SFDC-TLS-NoRelay: 1
+X-SFDC-Binding: 1WrIRBV94myi25uB
+X-SFDC-App: coreapp
+X-SFDC-EmailCategory: apiSingleMailViaApex
+X-SFDC-EntityId: 500Nr000000r9Wc
+X-SFDC-Interface: internal
+X-N0C-Node-IP: 185.221.182.45
+
+------=_Part_1862_865267397.1686808805606
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1861_1222416650.1686808805606"
+
+------=_Part_1861_1222416650.1686808805606
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Hi there,
+
+I appreciate your enthusiasm in becoming a Taboola publisher. I'm Kei from the Customer Success Team.
+
+To ensure your request reaches the right team member, kindly respond to this message with the following details:
+
+Contact Email:
+Company Name:
+URL:
+Company Geo Location:
+Screenshot of 30-day Google Analytics data
+
+I eagerly await your response.
+
+Best regards,
+
+Christine Mae Joy Gauna
+
+
+--------------------------------------------------------------- 
+06/15/2023 01:59:56 AM EDT [Christine Mae Joy Gauna] 
+---------------------------------------------------------------
+
+To: Abdoul Gadiri <contact@fiidewgal.com>
+
+Hi there,
+
+I appreciate your enthusiasm in becoming a Taboola publisher. I'm Kei from the Customer Success Team.
+
+To ensure your request reaches the right team member, kindly respond to this message with the following details:
+
+Contact Email:
+Company Name:
+URL:
+Company Geo Location:
+Screenshot of 30-day Google Analytics data
+
+I eagerly await your response.
+
+Best regards,
+
+***************************
+Case: 00600697
+Status: Pending External Customer
+Priority Level: Medium
+
+
+[ ref:_00Dd0eHCX._500Nrr9Wc:ref ]
+------=_Part_1861_1222416650.1686808805606
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<html><script> if(!window.sfdcPage) { window.sfdcPage =3D new ApexDetailPag=
+e(); }UserContext.initialize({"ampm":["AM","PM"],"isAccessibleMode":false,"=
+salesforceURL":"https://taboola.my.salesforce.com","dateFormat":"M/d/yyyy",=
+"language":"en_US","locale":"en_US","dateTimeFormat":"M/d/yyyy h:mm a","lab=
+elLastModified":"1686714288000","today":"6/15/2023 1:59 PM","userPreference=
+s":[{"index":112,"name":"HideInlineEditSplash","value":false},{"index":114,=
+"name":"OverrideTaskSendNotification","value":false},{"index":115,"name":"D=
+efaultTaskSendNotification","value":false},{"index":119,"name":"HideUserLay=
+outStdFieldInfo","value":false},{"index":116,"name":"HideRPPWarning","value=
+":false},{"index":87,"name":"HideInlineSchedulingSplash","value":false},{"i=
+ndex":88,"name":"HideCRUCNotification","value":false},{"index":89,"name":"H=
+ideNewPLESplash","value":false},{"index":90,"name":"HideNewPLEWarnIE6","val=
+ue":false},{"index":122,"name":"HideOverrideSharingMessage","value":false},=
+{"index":91,"name":"HideProfileILEWarn","value":false},{"index":93,"name":"=
+HideProfileElvVideo","value":false},{"index":97,"name":"ShowPicklistEditSpl=
+ash","value":false},{"index":92,"name":"HideDataCategorySplash","value":fal=
+se},{"index":128,"name":"ShowDealView","value":false},{"index":129,"name":"=
+HideDealViewGuidedTour","value":false},{"index":132,"name":"HideKnowledgeFi=
+rstTimeSetupMsg","value":false},{"index":104,"name":"DefaultOffEntityPermsM=
+sg","value":false},{"index":135,"name":"HideNewCsnSplash","value":false},{"=
+index":101,"name":"HideBrowserWarning","value":false},{"index":139,"name":"=
+HideDashboardBuilderGuidedTour","value":false},{"index":140,"name":"HideSch=
+edulingGuidedTour","value":false},{"index":180,"name":"HideReportBuilderGui=
+dedTour","value":false},{"index":183,"name":"HideAssociationQueueCallout","=
+value":false},{"index":194,"name":"HideQTEBanner","value":false},{"index":2=
+70,"name":"HideIDEGuidedTour","value":false},{"index":282,"name":"HideQuery=
+ToolGuidedTour","value":false},{"index":196,"name":"HideCSIGuidedTour","val=
+ue":false},{"index":271,"name":"HideFewmetGuidedTour","value":false},{"inde=
+x":272,"name":"HideEditorGuidedTour","value":false},{"index":205,"name":"Hi=
+deApexTestGuidedTour","value":false},{"index":206,"name":"HideSetupProfileH=
+eaderTour","value":false},{"index":207,"name":"HideSetupProfileObjectsAndTa=
+bsTour","value":false},{"index":213,"name":"DefaultOffArticleTypeEntityPerm=
+Msg","value":false},{"index":214,"name":"HideSelfInfluenceGetStarted","valu=
+e":false},{"index":215,"name":"HideOtherInfluenceGetStarted","value":false}=
+,{"index":216,"name":"HideFeedToggleGuidedTour","value":false},{"index":268=
+,"name":"ShowChatterTab178GuidedTour","value":false},{"index":275,"name":"H=
+idePeopleTabDeprecationMsg","value":false},{"index":276,"name":"HideGroupTa=
+bDeprecationMsg","value":false},{"index":224,"name":"HideUnifiedSearchGuide=
+dTour","value":false},{"index":226,"name":"ShowDevContextMenu","value":fals=
+e},{"index":227,"name":"HideWhatRecommenderForActivityQueues","value":false=
+},{"index":228,"name":"HideLiveAgentFirstTimeSetupMsg","value":false},{"ind=
+ex":232,"name":"HideGroupAllowsGuestsMsgOnMemberWidget","value":false},{"in=
+dex":233,"name":"HideGroupAllowsGuestsMsg","value":false},{"index":234,"nam=
+e":"HideWhatAreGuestsMsg","value":false},{"index":235,"name":"HideNowAllowG=
+uestsMsg","value":false},{"index":236,"name":"HideSocialAccountsAndContacts=
+GuidedTour","value":false},{"index":237,"name":"HideAnalyticsHomeGuidedTour=
+","value":false},{"index":238,"name":"ShowQuickCreateGuidedTour","value":fa=
+lse},{"index":245,"name":"HideFilePageGuidedTour","value":false},{"index":2=
+50,"name":"HideForecastingGuidedTour","value":false},{"index":251,"name":"H=
+ideBucketFieldGuide","value":false},{"index":263,"name":"HideSmartSearchCal=
+lOut","value":false},{"index":273,"name":"ShowForecastingQuotaAttainment","=
+value":false},{"index":280,"name":"HideForecastingQuotaColumn","value":fals=
+e},{"index":301,"name":"HideManyWhoGuidedTour","value":false},{"index":298,=
+"name":"HideFileSyncBannerMsg","value":false},{"index":299,"name":"HideTest=
+ConsoleGuidedTour","value":false},{"index":302,"name":"HideManyWhoInlineEdi=
+tTip","value":false},{"index":303,"name":"HideSetupV2WelcomeMessage","value=
+":false},{"index":312,"name":"ForecastingShowQuantity","value":false},{"ind=
+ex":313,"name":"HideDataImporterIntroMsg","value":false},{"index":314,"name=
+":"HideEnvironmentHubLightbox","value":false},{"index":316,"name":"HideSetu=
+pV2GuidedTour","value":false},{"index":317,"name":"HideFileSyncMobileDownlo=
+adDialog","value":false},{"index":322,"name":"HideEnhancedProfileHelpBubble=
+","value":false},{"index":328,"name":"ForecastingHideZeroRows","value":fals=
+e},{"index":330,"name":"HideEmbeddedComponentsFeatureCallout","value":false=
+},{"index":341,"name":"HideDedupeMatchResultCallout","value":false},{"index=
+":340,"name":"HideS1BrowserUI","value":false},{"index":346,"name":"HideS1Ba=
+nner","value":false},{"index":358,"name":"HideEmailVerificationAlert","valu=
+e":false},{"index":354,"name":"HideLearningPathModal","value":false},{"inde=
+x":359,"name":"HideAtMentionsHelpBubble","value":false},{"index":368,"name"=
+:"LightningExperiencePreferred","value":false},{"index":373,"name":"Preview=
+Lightning","value":false}],"networkId":"","uiTheme":"Theme4d","uiSkin":"The=
+me3","userName":"christine-mae-joy.gauna@taboola.com","userId":"005Nr000000=
+1DZV","isCurrentlySysAdminSU":false,"renderMode":"RETRO","startOfWeek":"1",=
+"vfDomainPattern":"taboola--(?:[^.]+).vf.force.com","auraDomain":"taboola.l=
+ightning.force.com","useNativeAlertConfirmPrompt":false,"orgPreferences":[{=
+"index":257,"name":"TabOrganizer","value":true},{"index":113,"name":"GroupT=
+asks","value":true}],"siteUrlPrefix":"","isDefaultNetwork":true,"timeFormat=
+":"h:mm a"});
+</script><span id=3D"j_id0:emailTemplate:j_id7:j_id8:j_id10"><table  class=
+=3D"htmlDetailElementTable" border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+"><tr><td><div class=3D"sfdc_richtext" id=3D"j_id0:emailTemplate:j_id7:j_id=
+8:j_id10j_id0:emailTemplate:j_id7:j_id8:j_id10_00N0V000009Kijy_div"><div>
+<div>Hi there,</div>
+<div>=A0</div>
+<div>I appreciate your enthusiasm in becoming a Taboola publisher. I&#39;m =
+Kei from the Customer Success Team.</div>
+<div>=A0</div>
+<div>To ensure your request reaches the right team member, kindly respond t=
+o this message with the following details:</div>
+<div>=A0</div>
+<div>Contact Email:</div>
+<div>Company Name:</div>
+<div>URL:</div>
+<div>Company Geo Location:</div>
+<div>Screenshot of 30-day Google Analytics data</div>
+<div>=A0</div>
+<div>I eagerly await your response.</div>
+<div>=A0</div>
+<div>Best regards,</div>
+</div></div></td></tr>
+</table><script>j_id0__emailTemplate__j_id7__j_id8__j_id10 =3D window.onloa=
+d; window.onload=3Dfunction() { if (j_id0__emailTemplate__j_id7__j_id8__j_i=
+d10!=3D null) j_id0__emailTemplate__j_id7__j_id8__j_id10();};</script></spa=
+n>
+
+
+<br />Christine Mae Joy Gauna
+<br />PS Engineer - External
+<br />Taboola Professional Services
+<br />
+<br />This notification is related to Case #00600697
+<br />
+<br />Advertiser Help Center: https://help.taboola.com/hc/en-us
+<br />Publisher Help Center: https://pubhelp.taboola.com/hc/en-us
+<br />Find out what's new at Taboola: http://blog.taboola.com/
+<br />
+<br />[ ref:_00Dd0eHCX._500Nrr9Wc:ref ]
+<br />
+
+<br /><span id=3D"j_id0:emailTemplate:j_id7:j_id8:j_id12">-----------------=
+---------------------------------------------- <br>06/15/2023 01:59:56 AM E=
+DT [Christine Mae Joy Gauna] <br>------------------------------------------=
+---------------------<br><br>To: Abdoul Gadiri &lt;<A HREF=3D"mailto:contac=
+t@fiidewgal.com">contact@fiidewgal.com</A>&gt;<br><br>Hi there,<br><br>I ap=
+preciate your enthusiasm in becoming a Taboola publisher. I'm Kei from the =
+Customer Success Team.<br><br>To ensure your request reaches the right team=
+ member, kindly respond to this message with the following details:<br><br>=
+Contact Email:<br>Company Name:<br>URL:<br>Company Geo Location:<br>Screens=
+hot of 30-day Google Analytics data<br><br>I eagerly await your response.<b=
+r><br>Best regards,</span>
+
+<br />***************************
+<br />
+<br />
+<br />[ ref:_00Dd0eHCX._500Nrr9Wc:ref ]</html>
+------=_Part_1861_1222416650.1686808805606--
+
+------=_Part_1862_865267397.1686808805606--

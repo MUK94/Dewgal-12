@@ -1,0 +1,158 @@
+Return-Path: <mazorba592@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id IFQsEP5yt2NUqTAA3R2AvA
+	(envelope-from <mazorba592@gmail.com>)
+	for <contact@fiidewgal.com>; Fri, 06 Jan 2023 02:01:50 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Np4mY1mTzzNJkd
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="blHUm7eJ"
+X-N0C-MailScanner-eFa-Watermark: 1673571706.42089@K6cmnhDLxD97iIqq6agKcQ
+X-N0C-MailScanner-eFa-From: mazorba592@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 3EE5340049ED.A3AF9
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-wm1-f48.google.com ([209.85.128.48] [209.85.128.48])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 3EE5340049ED
+	for <contact@fiidewgal.com>; Fri,  6 Jan 2023 02:01:11 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 3EE5340049ED
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 3EE5340049ED
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=blHUm7eJ
+Received: by mail-wm1-f48.google.com with SMTP id k26-20020a05600c1c9a00b003d972646a7dso2584603wms.5
+        for <contact@fiidewgal.com>; Thu, 05 Jan 2023 17:01:11 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:content-language:accept-language:in-reply-to
+         :references:message-id:date:thread-index:thread-topic:subject:to
+         :from:from:to:cc:subject:date:message-id:reply-to;
+        bh=KMreihO3EAl6xZsuQKmH6YvpbEeTJfy1SLt8468Qcms=;
+        b=blHUm7eJRK4YJ5t0XIOdUl9NSPI7joeeTeKrDAw9ltJGKZSRppgulbKHcX5mAbjc9/
+         0IJXTFi/WTj+cRAf+M+nBIh/B/X5duAUlNJeMAFsvtYf2+ARbPel2Pd+clrNtX7n0giX
+         +6ddlynWG/OVS6lIukspfpRzi3ukbZWAqGce9F7VEZqC5pJIkLrE8+uQT3rigZ7y1pyU
+         HE9+FHfOD/S59FRhef4Z55v1CrvOeAxKnzb1aPnZwyyL52/1XlODtmOjZWodvZxfjvwP
+         phM/gz8WvunuGq9ndx9zXtjNbU4yPU2J0HolbI1nKWGgdftZlCaLDG91aBg6g/bT16g+
+         8kfQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=mime-version:content-language:accept-language:in-reply-to
+         :references:message-id:date:thread-index:thread-topic:subject:to
+         :from:x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=KMreihO3EAl6xZsuQKmH6YvpbEeTJfy1SLt8468Qcms=;
+        b=b1qgxoP1u/MmyetCpup7x5v8H/Y82H9ahQUUT9p2NV8rJyVSVXeizdLHHsyB2yAzTO
+         zAi5vndslbDZr2TRpVvAUzsO+9xvObrsvuhXNbk2ewk5R2tzsiSNlAYBVMJwX+mXKHYy
+         kCuFuVYhcD4OoOH27W831EQ/2+65E0eEkpH0U6QKKSskL7QGiwKO9hHmsXgbxkueoVsV
+         kiM9j6fmE7/2zWFwmW9Qzpu7Gl3y6El0PO9muxQmtil2ALgv6zyB3z/QsRW+e+e12mpd
+         pr1TYr9FT2lb9+swXeS3wR1hNk7JPcUlP4worta4dZ997be7ER2SqLlrEuoiTI1Vjy9i
+         b/Ng==
+X-Gm-Message-State: AFqh2kraYhKb50GxrFP98tKk/tGERo542zOI5nCl0qZOMjIY6UYdn3e+
+	xB3k2ZMPEq2BR1KSk0EEv1G5EdQ9qnI=
+X-Google-Smtp-Source: AMrXdXuL4IWDXbSZyYRsFHsDzFaN45pWNXQ7QUhEJveVXCQDPxMPUvc85/Q3T/o9nitcqcmFMOBUdA==
+X-Received: by 2002:a05:600c:ac8:b0:3d7:7cea:b410 with SMTP id c8-20020a05600c0ac800b003d77ceab410mr37535954wmr.33.1672966870492;
+        Thu, 05 Jan 2023 17:01:10 -0800 (PST)
+Received: from PAXP193MB1567.EURP193.PROD.OUTLOOK.COM ([2603:1026:c0a:5d::5])
+        by smtp.gmail.com with ESMTPSA id j25-20020a05600c1c1900b003cfa80443a0sm4909361wms.35.2023.01.05.17.01.10
+        for <contact@fiidewgal.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 05 Jan 2023 17:01:10 -0800 (PST)
+From: =?iso-8859-1?Q?M=E3z=F5r_Ba?= <mazorba592@gmail.com>
+To: =?iso-8859-1?Q?Ne_r=E9pondez_pas?= <contact@fiidewgal.com>
+Subject: =?iso-8859-1?Q?Re:_R=E9initialisation_du_mot_de_passe?=
+Thread-Topic: =?iso-8859-1?Q?R=E9initialisation_du_mot_de_passe?=
+Thread-Index: ATA2YzAz1SIEJhuKdz8FMjxDp60+etHWDkuP
+X-MS-Exchange-MessageSentRepresentingType: 1
+Date: Fri, 6 Jan 2023 01:01:09 +0000
+Message-ID: 
+	<PAXP193MB156715A007E1BB784560E842F7FB9@PAXP193MB1567.EURP193.PROD.OUTLOOK.COM>
+References: <05f75aa3693450cbd0dc708fb6bc7b70@fiidewgal.com>
+In-Reply-To: <05f75aa3693450cbd0dc708fb6bc7b70@fiidewgal.com>
+Accept-Language: fr-FR, en-US
+Content-Language: fr-FR
+X-MS-Has-Attach: 
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator: 
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+Content-Type: multipart/alternative;
+	boundary="_000_PAXP193MB156715A007E1BB784560E842F7FB9PAXP193MB1567EURP_"
+MIME-Version: 1.0
+X-N0C-Node-IP: 185.221.182.45
+
+--_000_PAXP193MB156715A007E1BB784560E842F7FB9PAXP193MB1567EURP_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Salut
+
+T=E9l=E9chargez Outlook pour Android<https://aka.ms/ghei36>
+
+________________________________
+From: Ne r=E9pondez pas <contact@fiidewgal.com>
+Sent: Friday, January 6, 2023 12:53:20 AM
+To: mazorba592@gmail.com <mazorba592@gmail.com>
+Subject: R=E9initialisation du mot de passe
+
+
+Bonjour Bouba Bah,
+
+Votre code de v=E9rification pour la r=E9initialisation du mot de passe est=
+ : [[code]]
+
+
+Merci !
+
+Ne r=E9pondez pas
+
+--_000_PAXP193MB156715A007E1BB784560E842F7FB9PAXP193MB1567EURP_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+</head>
+<body>
+<div dir=3D"auto" style=3D"direction: ltr; margin: 0; padding: 0; font-fami=
+ly: sans-serif; font-size: 11pt; color: black; ">
+Salut <span id=3D"ms-outlook-android-cursor"></span><br>
+<br>
+</div>
+<div dir=3D"auto" style=3D"direction: ltr; margin: 0; padding: 0; font-fami=
+ly: sans-serif; font-size: 11pt; color: black; ">
+<span id=3D"OutlookSignature">
+<div dir=3D"auto" style=3D"direction: ltr; margin: 0; padding: 0; font-fami=
+ly: sans-serif; font-size: 11pt; color: black; ">
+T=E9l=E9chargez <a href=3D"https://aka.ms/ghei36">Outlook pour Android</a><=
+/div>
+</span><br>
+</div>
+<hr style=3D"display:inline-block;width:98%" tabindex=3D"-1">
+<div id=3D"divRplyFwdMsg" dir=3D"ltr"><font face=3D"Calibri, sans-serif" st=
+yle=3D"font-size:11pt" color=3D"#000000"><b>From:</b> Ne r=E9pondez pas &lt=
+;contact@fiidewgal.com&gt;<br>
+<b>Sent:</b> Friday, January 6, 2023 12:53:20 AM<br>
+<b>To:</b> mazorba592@gmail.com &lt;mazorba592@gmail.com&gt;<br>
+<b>Subject:</b> R=E9initialisation du mot de passe</font>
+<div>&nbsp;</div>
+</div>
+<div>
+<p>Bonjour&nbsp;Bouba Bah,</p>
+<p>Votre code de v=E9rification pour la r=E9initialisation du mot de passe =
+est : [[code]]<br>
+</p>
+<p><br>
+</p>
+<p>Merci !<br>
+</p>
+<p>Ne r=E9pondez pas</p>
+</div>
+</body>
+</html>
+
+--_000_PAXP193MB156715A007E1BB784560E842F7FB9PAXP193MB1567EURP_--

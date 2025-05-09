@@ -1,0 +1,180 @@
+Return-Path: <hmdafro1@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id SyVTJEGji2MkEA4A3R2AvA
+	(envelope-from <hmdafro1@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 03 Dec 2022 20:28:01 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NPfwc4r5Fz34nwbc
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="YFEnE8gg"
+X-N0C-MailScanner-eFa-Watermark: 1670700477.55727@MiEQ7XPOrQSn3exnmOu4Ew
+X-N0C-MailScanner-eFa-From: hmdafro1@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 57BAB401AEF3.A06A1
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-yw1-f173.google.com ([209.85.128.173] [209.85.128.173])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 57BAB401AEF3
+	for <contact@fiidewgal.com>; Sat,  3 Dec 2022 20:27:24 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 57BAB401AEF3
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 57BAB401AEF3
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=YFEnE8gg
+Received: by mail-yw1-f173.google.com with SMTP id 00721157ae682-3704852322fso80532617b3.8
+        for <contact@fiidewgal.com>; Sat, 03 Dec 2022 11:27:24 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=f/bVrScdv0m0tiYXC/cEypc9/fkAPYUukk8Z8HpWUgY=;
+        b=YFEnE8ggbLHutQZtefzNP6D9ElWVPjdqEM0kVtm3oH91GyP2tYlG8FgpPm/lIkoTtH
+         /9wZuMUu06ZkYpz5lt63DxTDz90jcLvUHdbsgJFInYK9h3dlwQpN495yKwwMKF3XPj+t
+         xugPV5xanJ112u8VV5kz6Dt1F67DnUMI/LfGuzTAWXB+1RSDVzM/k2+6KgXVw5lZmvME
+         +0XoumADFrCFEXhvVTc/g9ve2/tQbbxoDrgd5mb3z9q98Ru9SqxA+kyKu957+Yr+X2X3
+         vC8GIffKa86yAjeR2Fj1qw38/+EmgBVqgH1UsbSGQlCUEOEv48O+I6ftBmWdu4fGxOuq
+         IQLg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=f/bVrScdv0m0tiYXC/cEypc9/fkAPYUukk8Z8HpWUgY=;
+        b=jf2Gii4bWNhh80aQvHBKmZfehLwtV0aCFD3x5AzCtn8cS9gFyVESzwtRPLpWgdE/iX
+         6mcDUQMDRKFr+KQTQeg8BFd+Wp6hfYQWcoAMiIeaKKDf+/cKv+Yj59tbs5XRwJPi6QWt
+         pdzFfK/h3XFL9YauHJXAhsHYswTn/gv793K7aMizBqIHbRu6qLV58fdDjLtLZJBHfUi/
+         e3T7BfV98ysssFbbHGZ7HSi+KsgXyvUwnvUEAH9P8wOVDK3OxNi6C2DdoyOMzDgQdJIB
+         rUF7RyvgrACsNl+8xxPQn+E+TF4jUadw58ksTMqVa09eHpgHEFHdh1nYEfHrjBMkKt9o
+         VBeA==
+X-Gm-Message-State: ANoB5pnnP7rqa1cYmR9lBKzP268eskuvb2q7YeyyMiHzGYGoMn28VWdH
+	6Pfa36jkktCxfoqDuXhg1v7Uk4SBupYQUappTxEuHU/z
+X-Google-Smtp-Source: AA0mqf4jALue1Cx7/cIf8xZs2kGOlTBaEDOuQXMoYPRlSxNv2lTQTgXZdijjDuPiO+GbSrV/l0h+kSWo4xyXJUiK0f4=
+X-Received: by 2002:a81:16d6:0:b0:378:f758:8a5c with SMTP id
+ 205-20020a8116d6000000b00378f7588a5cmr58143728yww.134.1670095642785; Sat, 03
+ Dec 2022 11:27:22 -0800 (PST)
+MIME-Version: 1.0
+References: <19e12495f6f608af7a3d676adf690cc5@fiidewgal.com>
+In-Reply-To: <19e12495f6f608af7a3d676adf690cc5@fiidewgal.com>
+From: HMD AFRO GUINNE <hmdafro1@gmail.com>
+Date: Sat, 3 Dec 2022 19:27:09 +0000
+Message-ID: <CAKHZPh0jgynORwq-4Xgxr_ztxkj4yLKoLAWA=0-DYj1pSLqucQ@mail.gmail.com>
+Subject: Re: Informations
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000877d1005eef171b7"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000877d1005eef171b7
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Aleykoum salam j'ai attendu votre question monsieur
+
+Le mar. 29 nov. 2022 =C3=A0 12:11, <contact@fiidewgal.com> a =C3=A9crit :
+
+> Salam Alaykoum , On djarama Fulbhe',
+>
+> Nous sommes tr=C3=A8s heureux de vous accueillir sur la plateforme Fii De=
+wgal .
+>
+> Nous vous informons qu'il est n=C3=A9cessaire de mettre un numero de tele=
+phone
+> pour vous
+>
+> informer si vous avez une demande d'inter=C3=AAt avec rendez-vous ; le nu=
+mero
+> de telephone
+>
+> et vos informations restent confidentiel.Pour assurer la bonne gestion de
+> la plateforme
+>
+> un rendez-vous chat est cr=C3=A9=C3=A9 pour savoir d'avantage , cliquez s=
+ur le lien
+> de la vid=C3=A9o
+>
+> https://www.youtube.com/watch?v=3D6ItD_Un8oV8&t=3D117s. Nous vous prions
+> =C3=A9galement
+>
+> de renseigner vos informations personnelles et sur galerie vous pouvez
+> ajouter une photo .
+>
+> Donc , nous  vous invitons de mettre =C3=A0 jour votre profil avec vos vr=
+ais
+> informations car
+>
+> la plateforme assure la discr=C3=A9tion et la vie priv=C3=A9e de tout un =
+chacun il
+> n'y a que les
+>
+> inscrits de la plateforme qui peuvent voir votre profil.
+>
+> Merci pour la compr=C3=A9hension !
+>
+> L=E2=80=99=C3=A9quipe Fii Dewgal .
+>
+
+--000000000000877d1005eef171b7
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Aleykoum salam j&#39;ai attendu votre question monsieur</=
+div><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr">Le=
+ mar. 29 nov. 2022 =C3=A0 12:11,  &lt;<a href=3D"mailto:contact@fiidewgal.c=
+om">contact@fiidewgal.com</a>&gt; a =C3=A9crit=C2=A0:<br></div><blockquote =
+class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid=
+;padding-left:1ex"><p style=3D"margin-right:0px;margin-bottom:0px;margin-le=
+ft:0px;font-variant-numeric:normal;font-variant-east-asian:normal;font-stre=
+tch:normal;line-height:normal;font-family:&quot;Helvetica Neue&quot;">Salam=
+ Alaykoum , On djarama Fulbhe&#39;,=C2=A0</p><p style=3D"margin-right:0px;m=
+argin-bottom:0px;margin-left:0px;font-variant-numeric:normal;font-variant-e=
+ast-asian:normal;font-stretch:normal;line-height:normal;font-family:&quot;H=
+elvetica Neue&quot;">Nous sommes tr=C3=A8s heureux de vous accueillir sur l=
+a plateforme Fii Dewgal .</p><p style=3D"margin-right:0px;margin-bottom:0px=
+;margin-left:0px;font-variant-numeric:normal;font-variant-east-asian:normal=
+;font-stretch:normal;line-height:normal;font-family:&quot;Helvetica Neue&qu=
+ot;">Nous vous informons qu&#39;il est n=C3=A9cessaire de mettre un numero =
+de telephone pour vous=C2=A0</p><p style=3D"margin-right:0px;margin-bottom:=
+0px;margin-left:0px;font-variant-numeric:normal;font-variant-east-asian:nor=
+mal;font-stretch:normal;line-height:normal;font-family:&quot;Helvetica Neue=
+&quot;">informer si vous avez une demande d&#39;inter=C3=AAt avec rendez-vo=
+us ; le numero de telephone</p><p style=3D"margin-right:0px;margin-bottom:0=
+px;margin-left:0px;font-variant-numeric:normal;font-variant-east-asian:norm=
+al;font-stretch:normal;line-height:normal;font-family:&quot;Helvetica Neue&=
+quot;">et vos informations restent confidentiel.Pour assurer la bonne gesti=
+on de la plateforme</p><p style=3D"margin-right:0px;margin-bottom:0px;margi=
+n-left:0px;font-variant-numeric:normal;font-variant-east-asian:normal;font-=
+stretch:normal;line-height:normal;font-family:&quot;Helvetica Neue&quot;">u=
+n rendez-vous chat est cr=C3=A9=C3=A9 pour savoir d&#39;avantage , cliquez =
+sur le lien de la vid=C3=A9o</p><p style=3D"margin-right:0px;margin-bottom:=
+0px;margin-left:0px;font-variant-numeric:normal;font-variant-east-asian:nor=
+mal;font-stretch:normal;line-height:normal;font-family:&quot;Helvetica Neue=
+&quot;"><a href=3D"https://www.youtube.com/watch?v=3D6ItD_Un8oV8&amp;t=3D11=
+7s" target=3D"_blank" rel=3D"noreferrer">https://www.youtube.com/watch?v=3D=
+6ItD_Un8oV8&amp;t=3D117s</a>. Nous vous prions =C3=A9galement</p><p style=
+=3D"margin-right:0px;margin-bottom:0px;margin-left:0px;font-variant-numeric=
+:normal;font-variant-east-asian:normal;font-stretch:normal;line-height:norm=
+al;font-family:&quot;Helvetica Neue&quot;">de renseigner vos informations p=
+ersonnelles et sur galerie vous pouvez ajouter une photo .</p><p style=3D"m=
+argin-right:0px;margin-bottom:0px;margin-left:0px;font-variant-numeric:norm=
+al;font-variant-east-asian:normal;font-stretch:normal;line-height:normal;fo=
+nt-family:&quot;Helvetica Neue&quot;">Donc , nous=C2=A0 vous invitons de me=
+ttre =C3=A0 jour votre profil avec vos vrais informations car</p><p style=
+=3D"margin-right:0px;margin-bottom:0px;margin-left:0px;font-variant-numeric=
+:normal;font-variant-east-asian:normal;font-stretch:normal;line-height:norm=
+al;font-family:&quot;Helvetica Neue&quot;">la plateforme assure la discr=C3=
+=A9tion et la vie priv=C3=A9e de tout un chacun il n&#39;y a que les=C2=A0<=
+/p><p style=3D"margin-right:0px;margin-bottom:0px;margin-left:0px;font-vari=
+ant-numeric:normal;font-variant-east-asian:normal;font-stretch:normal;line-=
+height:normal;font-family:&quot;Helvetica Neue&quot;">inscrits de la platef=
+orme qui peuvent voir votre profil.</p><p style=3D"margin-right:0px;margin-=
+bottom:0px;margin-left:0px;font-variant-numeric:normal;font-variant-east-as=
+ian:normal;font-stretch:normal;line-height:normal;font-family:&quot;Helveti=
+ca Neue&quot;">Merci pour la compr=C3=A9hension !</p><p style=3D"margin-rig=
+ht:0px;margin-bottom:0px;margin-left:0px;font-variant-numeric:normal;font-v=
+ariant-east-asian:normal;font-stretch:normal;line-height:normal;font-family=
+:&quot;Helvetica Neue&quot;">L=E2=80=99=C3=A9quipe Fii Dewgal .</p>
+</blockquote></div>
+
+--000000000000877d1005eef171b7--

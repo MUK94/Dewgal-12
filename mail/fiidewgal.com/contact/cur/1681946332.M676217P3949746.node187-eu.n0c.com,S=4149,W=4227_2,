@@ -1,0 +1,78 @@
+Return-Path: <ad7064189@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 8yc8KNx2QGSyRDwA3R2AvA
+	(envelope-from <ad7064189@gmail.com>)
+	for <contact@fiidewgal.com>; Thu, 20 Apr 2023 01:18:52 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Q1xYk5vNLz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="avswSMRR"
+X-N0C-MailScanner-eFa-Watermark: 1682551120.222@LwHSGgWLyurmYV8w+xvmsQ
+X-N0C-MailScanner-eFa-From: ad7064189@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: sss
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 9ABA94020D4E.A32E3
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-pj1-f45.google.com ([209.85.216.45] [209.85.216.45])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 9ABA94020D4E
+	for <contact@fiidewgal.com>; Thu, 20 Apr 2023 01:18:07 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 9ABA94020D4E
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 9ABA94020D4E
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=avswSMRR
+Received: by mail-pj1-f45.google.com with SMTP id 98e67ed59e1d1-24b29812c42so250982a91.0
+        for <contact@fiidewgal.com>; Wed, 19 Apr 2023 16:18:06 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1681946284; x=1684538284;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=JlU7+yu7wOOMMyymOtR17XpaHAHCRJ3sWWU9nSpLF/s=;
+        b=avswSMRRRGkCY69Sm9uQRMxAC+vAdYTMWgIPGs5ic4ujP3951Pti8RyPYYvdhix++2
+         EwMxwtva5czrPG8vGaA2gOeaedLJxD2YNuSzhfR6x47TJrv5lQTyYL309C6LcvQpHtWo
+         N9wlkLdNudLa1ob9iMnB+MMWovUODlxbcQhpfcbL5WdupIX1DhJ2c2V6ogLjr0PrFWUD
+         DAWJb2D2sdnXTRV292hob/Sv8PFMPHU62CIyuBJjE2IO07HGJwmHqB9QBTSsIsivvo2L
+         5JITfS+PuSHY7zLUEdjZlOfFNuzgfNrfV95kwzjNbk5z0+3a4eMw1/n0Brs+WmEJ5595
+         J50w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1681946284; x=1684538284;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=JlU7+yu7wOOMMyymOtR17XpaHAHCRJ3sWWU9nSpLF/s=;
+        b=K4v8V/+qZ6fNAiJ55tGU5TY0ElLvKpAx4yLaLTgh98UkfjVJhGj7QiSdxbKqZ3TDLY
+         kXE8qGPlvuNTOogoMTv9wWHDlnCq1w1ONJM0WBztH4O82u3/EhqYGZj5o1p9qvwLTpCh
+         eAw+DMU3Wc6/UtwuY8zp0hUlRmPqbxZDaLw8Qrdqm2/JQipGhd4LUtvPH0hAspvpYYGu
+         v8JOQ3G5QAnfZFOXF/XPUDoDkF6jIKUTELI7Yr9Mma9XhjKt6ChtcgzCUPP23cIw9S5I
+         GYTqun2S9YUNFaZB7c48LFlJnjNFHFixRFuy+tGZmlEp3A82OKZqusyy0oHENBqNw9Uf
+         Cd5A==
+X-Gm-Message-State: AAQBX9dygRvZPxJfrzk60QRvnY9BdjOwHN5wJv+aDjS3l/utcT8Gv0Ax
+	vBZvx0WA5ZNFikpTx5GPN0Jcv+wHbAlP1RSePG8LJ6EF
+X-Google-Smtp-Source: AKy350agO7Cs26iFS5vatSW5+9rmdn9aNZYLVEXipH+gZaoYj6mpxqsdq12WWJKkrWCMwJUXRYO4cqXhqU4ZNq3B/ks=
+X-Received: by 2002:a17:90b:38c6:b0:23c:fa83:2a7d with SMTP id
+ nn6-20020a17090b38c600b0023cfa832a7dmr4678272pjb.12.1681946284631; Wed, 19
+ Apr 2023 16:18:04 -0700 (PDT)
+MIME-Version: 1.0
+From: Alpha oumar Diallo <ad7064189@gmail.com>
+Date: Wed, 19 Apr 2023 23:17:52 +0000
+Message-ID: <CAK63vbOyCzp0497FFyqSySkHR33wnhQkD5Y90qSNDV-VTHQstA@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000d3aa0705f9b8a2c6"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000d3aa0705f9b8a2c6
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+--000000000000d3aa0705f9b8a2c6
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"></div>
+
+--000000000000d3aa0705f9b8a2c6--

@@ -1,0 +1,78 @@
+Return-Path: <mamadouhi2020diallo@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 8B+dEbl9OWQiUigA3R2AvA
+	(envelope-from <mamadouhi2020diallo@gmail.com>)
+	for <contact@fiidewgal.com>; Fri, 14 Apr 2023 18:22:17 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4PyhYP18xnz34SDmh
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="ZT/StADd"
+X-N0C-MailScanner-eFa-Watermark: 1682094125.62229@SAlZUKyvfnkKPkUIFBjJrw
+X-N0C-MailScanner-eFa-From: mamadouhi2020diallo@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: ss
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: DD972406327A.A902D
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-vs1-f41.google.com ([209.85.217.41] [209.85.217.41])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id DD972406327A
+	for <contact@fiidewgal.com>; Fri, 14 Apr 2023 18:21:32 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com DD972406327A
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com DD972406327A
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=ZT/StADd
+Received: by mail-vs1-f41.google.com with SMTP id i20so3050208vss.5
+        for <contact@fiidewgal.com>; Fri, 14 Apr 2023 09:21:32 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1681489291; x=1684081291;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=m6H9lMpXsFSeWadkJPjk/jnQCCtOqV7KK2T2sUopkec=;
+        b=ZT/StADdcHmgxAXxtdlBT51xkWvGJXSIU0ygeehcOsNssAQwE6xmXvZVyaRenM5TG1
+         //jRr2lu+gLHvr4LWMJb3gVKdTGUIUjHa1YyuaeL5XUymt7+1/bC0PXctaIDlsAHY8/1
+         GbwPZRDbsnVeTKsd7fXe5uHQ18juWiyVaGgx34I84ML4XtUovzIbpSpt6pvswKATiADQ
+         4Nn7/MKQh9F0Ng3ei5Xg72roLG7zhOZdgacQgnZSP7nPM/ripBT9hFCw3fXbDtUCboQq
+         OGENN8SrQ0okbIyHFAslJr2jAsUa+cd0xE7qMV8irsqUUo4JT81GfZ+7/9YlKBgZGM2Q
+         FmEw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1681489291; x=1684081291;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=m6H9lMpXsFSeWadkJPjk/jnQCCtOqV7KK2T2sUopkec=;
+        b=h+f8Q36vscTAs0vl1YABLS4D5jYJMuCo4cnuXHKYzKePZkvW2TunKEwtvU1TvHkj7f
+         PigEdWK5J97Gjnl8NVw1QMnbYz7P4KdcX85zYgdggNabT/QgY4baqvDfJ57Bj1OGO4kF
+         v9i5SW+la4pC9b1jEwnNztfRFTmIcXKqBhDNUKLiMEWi773pjEHrrLECzbmhtD8J3Q3c
+         wsQ54YK2LfWQ9B7hTs5z0ix5zg3PCRb0oq+JsLtiml0Zpezdg4W5H7L+Mwkj4L0voRSw
+         dLCVqD6maMUBJYhsY5g4H2vBUaCWA6bjVv1/NSX4laEO7Elfx1jMhAOfuiO7HSP7865h
+         BKBw==
+X-Gm-Message-State: AAQBX9ex/XOOIb1XVqXI2Ujv5MebsCTmUL42VM4dRLdybrLGbqz2W7oW
+	zr/5HYJWMDTaXC5ld9b7MkD/tSlDLCBgKetL/+DKsOUJ
+X-Google-Smtp-Source: AKy350bIJDJLWTT9wpsSMCPcW3TY10xjmJ4BozbhaQVaWCawT5N5vi+QDTU4Z6Uv2hsgFbJ934q0zymYyY4O+01AYb4=
+X-Received: by 2002:a67:d80d:0:b0:42e:35e4:3399 with SMTP id
+ e13-20020a67d80d000000b0042e35e43399mr3189665vsj.2.1681489291496; Fri, 14 Apr
+ 2023 09:21:31 -0700 (PDT)
+MIME-Version: 1.0
+From: mamadu djau <mamadouhi2020diallo@gmail.com>
+Date: Fri, 14 Apr 2023 16:21:20 +0000
+Message-ID: <CAFjrNuPws1TPomXbYFLExQ4od1=maLzBi-OV-i4+9mMmUN0q6Q@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000e9d22705f94e3be1"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000e9d22705f94e3be1
+Content-Type: text/plain; charset="UTF-8"
+
+Mamadouhi2020diallo@gmail.com
+
+--000000000000e9d22705f94e3be1
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"><a href="mailto:Mamadouhi2020diallo@gmail.com">Mamadouhi2020diallo@gmail.com</a></div>
+
+--000000000000e9d22705f94e3be1--

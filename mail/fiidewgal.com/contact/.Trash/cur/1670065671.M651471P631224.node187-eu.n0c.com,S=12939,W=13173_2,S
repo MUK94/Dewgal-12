@@ -1,0 +1,234 @@
+Return-Path: <security@facebookmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id G7u/Jgcui2O4oQkA3R2AvA
+	(envelope-from <security@facebookmail.com>)
+	for <contact@fiidewgal.com>; Sat, 03 Dec 2022 12:07:51 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NPRqW1jpSz34nwbc
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=facebookmail.com header.i=@facebookmail.com header.b="Av1/vz0E"
+X-N0C-MailScanner-eFa-Watermark: 1670670468.0633@ZsKxjW1QONJ6ymnmn9AEDQ
+X-N0C-MailScanner-eFa-From: security@facebookmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 4D50E401AEF3.A7A8A
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from 69-171-232-133.mail-mail.facebook.com ([69.171.232.133] [69.171.232.133])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 4D50E401AEF3
+	for <contact@fiidewgal.com>; Sat,  3 Dec 2022 12:07:41 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 4D50E401AEF3
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=reject dis=none) header.from=facebookmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=facebookmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 4D50E401AEF3
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (1024-bit key; unprotected) header.d=facebookmail.com header.i=@facebookmail.com header.a=rsa-sha256 header.s=s1024-2013-q3 header.b=Av1/vz0E
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=facebookmail.com;
+	s=s1024-2013-q3; t=1670065649;
+	bh=TqSOLrlEpgpUHFAHi0BeZnoGgQLrg8eYKAXyd8Ti8Ks=;
+	h=Date:To:Subject:From:MIME-Version:Content-Type;
+	b=Av1/vz0Evc/DTuMD4OnovgvQjHjWLJ5KtMf86ES+vlZNfQ1fWTFPxxG1D6TEXYHN5
+	 N6u0qc6xpgUA5bT04NIip2MMs8qFuDKqIr7+3N1P/DJg1CQHmfqZSZfBCZaCetGdVE
+	 aY2M62o8oggGB7C+3bwO3aq+gfZ8RRqGEqu3bHZA=
+X-Facebook: from 2401:db00:3120:2088:face:0:64:0 ([MTI3LjAuMC4x]) 
+	by www.facebook.com with HTTPS (ZuckMail);
+Date: Sat, 3 Dec 2022 03:07:29 -0800
+To: Fii Dewgal <contact@fiidewgal.com>
+Subject: =?UTF-8?B?RmlpLCBjb25uZWN0ZXot?=
+ =?UTF-8?B?dm91cyDDoCBGYWNlYm9vaw==?=
+ =?UTF-8?B?IGVuIHVuIGNsaWM=?=
+X-Priority: 3
+X-Mailer: ZuckMail [version 1.00]
+From: "Facebook" <security@facebookmail.com>
+Reply-to: noreply <noreply@facebookmail.com>
+Errors-To: security@facebookmail.com
+X-Facebook-Notify: password_reset:first_send; mailid=U1U5eeea2c2def8aG5b07a2a3ca95G5eeea75c3f25cG178
+Feedback-ID: 0:password_reset:Facebook
+X-FACEBOOK-PRIORITY: 1
+X-Auto-Response-Suppress: All
+Require-Recipient-Valid-Since: contact@fiidewgal.com; Friday,  2 Dec 2022 21:11:55 +0000
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_0035ae5a9f1dc94bd94d14ea59aa1be8"
+Message-ID: <ad85f700-72fa-11ed-b877-dbdbb9df85a1@facebookmail.com>
+X-N0C-Node-IP: 185.221.182.45
+
+
+--b1_0035ae5a9f1dc94bd94d14ea59aa1be8
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour Fii,
+
+Bonjour Fii,Nous avons constat=C3=A9 que vous avez des difficult=C3=A9s =
+pour vous connecter =C3=A0 votre compte. Si vous avez besoin =
+d=E2=80=99aide, cliquez sur le bouton ci-dessous et nous vous =
+connecterons.=C2=A0=C2=A0Connectez-vous=C2=A0en=C2=A0un=C2=A0seul=C2=A0cli=
+c=C2=A0=C2=A0
+
+Pourquoi avez-vous re=C3=A7u cet e-mail=C2=A0?
+Il y a eu des tentatives de connexion infructueuses =C3=A0 votre =
+compte.=C2=A0Si ce n=E2=80=99=C3=A9tait pas vous, dites-le nous
+
+Merci,
+L=E2=80=99=C3=A9quipe Facebook
+
+
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+Ce message a =C3=A9t=C3=A9 envoy=C3=A9 =C3=A0 contact@fiidewgal.com sur =
+votre demande.
+Meta Platforms, Inc., Attention: Community Support, 1 Facebook Way, Menlo =
+Park, CA 94025
+
+
+--b1_0035ae5a9f1dc94bd94d14ea59aa1be8
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional =
+//EN"><html><head><title>Facebook</title><meta http-equiv=3D"Content-Type" =
+content=3D"text/html; charset=3Dutf-8" /><style nonce=3D"1NSzPn3E">@media =
+all and (max-width: 480px){*[class].ib_t{min-width:100% =
+!important}*[class].ib_row{display:block =
+!important}*[class].ib_ext{display:block !important;padding:10px 0 5px =
+0;vertical-align:top !important;width:100% =
+!important}*[class].ib_img,*[class].ib_mid{vertical-align:top =
+!important}*[class].mb_blk{display:block =
+!important;padding-bottom:10px;width:100% =
+!important}*[class].mb_hide{display:none =
+!important}*[class].mb_inl{display:inline =
+!important}*[class].d_mb_flex{display:block =
+!important}}.d_mb_show{display:none}.d_mb_flex{display:flex}@media only =
+screen and (max-device-width: 480px){.d_mb_hide{display:none =
+!important}.d_mb_show{display:block !important}.d_mb_flex{display:block =
+!important}}.mb_text h1,.mb_text h2,.mb_text h3,.mb_text h4,.mb_text =
+h5,.mb_text h6{line-height:normal}.mb_work_text =
+h1{font-size:18px;line-height:normal;margin-top:4px}.mb_work_text =
+h2,.mb_work_text =
+h3{font-size:16px;line-height:normal;margin-top:4px}.mb_work_text =
+h4,.mb_work_text h5,.mb_work_text =
+h6{font-size:14px;line-height:normal}.mb_work_text =
+a{color:#1270e9}.mb_work_text p{margin-top:4px}</style></head><table =
+border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td width=3D"100%" =
+align=3D"center" style=3D""><table border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" align=3D"center" =
+style=3D"border-collapse:collapse;"><tr><td width=3D"1160" =
+align=3D"center" style=3D""><body style=3D"max-width:580px;margin:0 auto;" =
+dir=3D"ltr" bgcolor=3D"#ffffff"><table border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" align=3D"center" id=3D"email_table" =
+style=3D"border-collapse:collapse;max-width:580px;margin:0 auto;"><tr><td =
+id=3D"email_content" style=3D"font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;background:#ffffff;"><table =
+border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr style=3D""><td height=3D"20" =
+style=3D"line-height:20px;" colspan=3D"3">&nbsp;</td></tr><tr><td =
+height=3D"1" colspan=3D"3" style=3D"line-height:1px;"><span =
+style=3D"color:#FFFFFF;font-size:1px;opacity:0;">=C2=A0 Bonjour Fii, Nous =
+avons constat=C3=A9 que vous avez des difficult=C3=A9s pour vous connecter =
+=C3=A0 votre compte. Si vous avez besoin d=E2=80=99aide, cliquez sur le =
+bouton ci-dessous et nous vous connecterons. =C2=A0 =C2=A0 =
+Connectez-vous=C2=A0en=C2=A0un=C2=A0seul=C2=A0clic =C2=A0 =C2=A0 =C2=A0 =
+Pourquoi avez-vous re=C3=A7u cet e-mail=C2=A0? Il y a eu des tentatives de =
+connexion infructueuses =C3=A0 votre compte.=C2=A0Si ce =
+n=E2=80=99=C3=A9tait pas vous, dites-le nous =
+=C2=A0</span></td></tr><tr><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr style=3D""><td =
+height=3D"15" style=3D"line-height:15px;" =
+colspan=3D"3">&nbsp;</td></tr><tr><td width=3D"32" align=3D"left" =
+valign=3D"middle" style=3D"height:32;line-height:0px;"><img width=3D"32" =
+src=3D"https://static.xx.fbcdn.net/rsrc.php/v3/yc/r/I92GqZOkKcu.png" =
+height=3D"32" style=3D"border:0;" /></td><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+width=3D"100%" style=3D""><span style=3D"font-family:Helvetica =
+Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:19p=
+x;line-height:32px;color:#1877f2;">Facebook</span></td></tr><tr =
+style=3D"border-bottom:solid 1px #e5e5e5;"><td height=3D"15" =
+style=3D"line-height:15px;" colspan=3D"3">&nbsp;</td></tr></table></td><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr style=3D""><td =
+height=3D"28" style=3D"line-height:28px;">&nbsp;</td></tr><tr><td =
+style=3D""><span class=3D"mb_text" style=3D"font-family:Helvetica =
+Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:16p=
+x;line-height:21px;color:#141823;"><p>Bonjour Fii,</p><p>Nous avons =
+constat=C3=A9 que vous avez des difficult=C3=A9s pour vous connecter =
+=C3=A0 votre compte. Si vous avez besoin d=E2=80=99aide, cliquez sur le =
+bouton ci-dessous et nous vous connecterons.</p><table border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><td style=3D""><a =
+href=3D"https://www.facebook.com/recover/code/?n=3D349709&amp;s=3D24&amp;l=
+ri=3D6be98cab-5ce9-4871-888a-77c52a276fdd&amp;exp_locale=3Dfr_FR&amp;cuid=
+=3DAYgu7XR4sjBU4e4IqUbqcnEh_OhzL9tqE5x7tqOSWIZJSy7zEUBs3TxwlhkPGIyd4YR7Q3G=
+TGIu5WgtyYSKb6mQEW0qOR9M1-fBQVX1ExpUkmQ&amp;ocl=3D1" =
+style=3D"color:#3578E5;text-decoration:none;vertical-align:left;"><table =
+border=3D"0" width=3D"auto" cellspacing=3D"0" cellpadding=3D"0" =
+bgcolor=3D"#3578E5" style=3D"border-collapse:collapse;height:36;vertical-a=
+lign:middle;border-width:1px;border-style:solid;display:block;border-radiu=
+s:4px;-webkit-border-radius:4px;-moz-border-radius:4px;font-size:14px;bord=
+er-color:#f6f7f9;" class=3D"btn_default"><tr><td height=3D"7" =
+colspan=3D"3" style=3D"line-height:7px;">&nbsp;</td></tr><tr><td =
+width=3D"16" style=3D"display:block;width:16px;">&nbsp;</td><td =
+width=3D"100%" style=3D"text-align:center;"><a href=3D"https://www.faceboo=
+k.com/recover/code/?n=3D349709&amp;s=3D24&amp;lri=3D6be98cab-5ce9-4871-888=
+a-77c52a276fdd&amp;exp_locale=3Dfr_FR&amp;cuid=3DAYgu7XR4sjBU4e4IqUbqcnEh_=
+OhzL9tqE5x7tqOSWIZJSy7zEUBs3TxwlhkPGIyd4YR7Q3GTGIu5WgtyYSKb6mQEW0qOR9M1-fB=
+QVX1ExpUkmQ&amp;ocl=3D1" =
+style=3D"color:#1b74e4;text-decoration:none;display:block;"><center><font =
+size=3D"3"><span style=3D"font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;font-weight:bold;font-size:14px;fon=
+t-size:14px;color:#ffffff;">Connectez-vous&nbsp;en&nbsp;un&nbsp;seul&nbsp;=
+clic</span></font></center></a></td><td width=3D"16" =
+style=3D"display:block;width:16px;">&nbsp;</td></tr><tr><td height=3D"7" =
+colspan=3D"3" style=3D"line-height:7px;">&nbsp;</td></tr></table></a></td>=
+</table></span></td></tr><tr style=3D""><td height=3D"28" =
+style=3D"line-height:28px;">&nbsp;</td></tr><tr><td style=3D""><table =
+border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td =
+style=3D"font-size:16px;font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;padding:16px 16px 16px =
+16px;background-color:#f2f2f2;border-left:none;border-right:none;border-to=
+p:none;border-bottom:none;"><p><strong>Pourquoi avez-vous re=C3=A7u cet =
+e-mail=C2=A0?</strong></p><p>Il y a eu des tentatives de connexion =
+infructueuses =C3=A0 votre compte.=C2=A0Si ce n=E2=80=99=C3=A9tait pas =
+vous, <a href=3D"https://www.facebook.com/login/recover/cancel/?n=3D349709=
+&amp;id=3D100088351541909&amp;i=3Dother&amp;lri=3D6be98cab-5ce9-4871-888a-=
+77c52a276fdd&amp;ocl=3D1" =
+style=3D"color:#1b74e4;text-decoration:none;">dites-le =
+nous</a></p></td></tr></table></td></tr><tr style=3D""><td height=3D"28" =
+style=3D"line-height:28px;">&nbsp;</td></tr></table></td><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" align=3D"left" style=3D"border-collapse:collapse;"><tr =
+style=3D"border-top:solid 1px #e5e5e5;"><td height=3D"19" =
+style=3D"line-height:19px;">&nbsp;</td></tr><tr><td =
+style=3D"font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana=
+,arial,sans-serif;font-size:11px;color:#aaaaaa;line-height:16px;">Ce =
+message a =C3=A9t=C3=A9 envoy=C3=A9 =C3=A0 <a =
+href=3D"mailto:contact&#064;fiidewgal.com" style=3D"color:#1b74e4;text-dec=
+oration:none;">contact&#064;fiidewgal.com</a>.<br />Meta Platforms, Inc., =
+Attention: Community Support, 1 Facebook Way, Menlo Park, CA =
+94025</td></tr></table></td><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr =
+style=3D""><td height=3D"20" style=3D"line-height:20px;" =
+colspan=3D"3">&nbsp;</td></tr></table><span style=3D""><img =
+src=3D"https://www.facebook.com/email_open_log_pic.php?mid=3D5eeea2c2def8a=
+G5b07a2a3ca95G5eeea75c3f25cG178" style=3D"border:0;width:1px;height:1px;" =
+/></span></td></tr></table></body></td></tr></table></td></tr></table></ht=
+ml>
+
+
+
+--b1_0035ae5a9f1dc94bd94d14ea59aa1be8--
+

@@ -1,0 +1,118 @@
+Return-Path: <abdulb781983@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id VpbBCXF7xWOHEzsA3R2AvA
+	(envelope-from <abdulb781983@gmail.com>)
+	for <contact@fiidewgal.com>; Mon, 16 Jan 2023 17:29:37 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NwctT0Ddlz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="GYfF0YJb"
+X-N0C-MailScanner-eFa-Watermark: 1674491374.58493@x04bcKmh2y59FRyZKsIXBw
+X-N0C-MailScanner-eFa-From: abdulb781983@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 7FD0D40049E0.A12CA
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-lj1-f169.google.com ([209.85.208.169] [209.85.208.169])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 7FD0D40049E0
+	for <contact@fiidewgal.com>; Mon, 16 Jan 2023 17:29:01 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 7FD0D40049E0
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 7FD0D40049E0
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=GYfF0YJb
+Received: by mail-lj1-f169.google.com with SMTP id f20so30501139lja.4
+        for <contact@fiidewgal.com>; Mon, 16 Jan 2023 08:29:01 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=9YNc9WHTzIhMpkxuOa2SeejMHKqYbc8s0W15otJGqCE=;
+        b=GYfF0YJbpmTrZ4amg5KHU/Hb7llgLcmp/oSUI/d8YlYenGDqzw6z/YaqXDF9CcsfC6
+         WZqQDBe4hcWIGCppR6iytt7TZjRkeQJfZjRHCqtsZyro/amFOHKPhzY3srIqJv8e1VU1
+         +M12sGXye0NL39h80YROmrZpcX4q4OfyW8W1zmUpw0UALt/6Xje4I0kCtIznDNwDSCGj
+         fq3yi9dzlkpmtp0fHuTDLy0rjRMIyLDbSKJ897hEQF3QR7dndW0qwVI6E0YvIRKorB5w
+         i3R48UD9AHyuTScJzSBc+6JLLq7z9WVI+Uk1NyZ+2MECaHCCMFuMwWOPn/TlgUtmQQSn
+         wBNA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=9YNc9WHTzIhMpkxuOa2SeejMHKqYbc8s0W15otJGqCE=;
+        b=LI1hOBk9dRsXSAOTRKBLnZO5gGlg1fHFXtgE2rLIbK+cd7kbGp+rKQU0pwEWgTfgg9
+         E6T1OwT4gzMSuDQGjB4nR7FsP2uLMeJK3XBwAmHjv6DcFKB6NpWllfa9YEAqHCbI8vo9
+         BFVxitT3+k2yH6m02Sq3jp1e3MpiXiQVfDG963RxnOk5QvB0V6U7TbgCAO99PPdbtfD5
+         6ukyfXF0hf1aDU8sWGmp1lHaV5GanQK3VcLcn7foRbRyMw02CjA5cqF1EgfMm6T0U/Cr
+         rmm60s7//CUjqtwtWti1nrPpf57sUNEOMJzq/Oylcc1ZOaTdSRm+pmiXQ3eX9BWxlVOl
+         j0xg==
+X-Gm-Message-State: AFqh2kq+xbWPHaR4RZo3rSrsIX65n9naL2wZdYKdCUiF+rFDjQ81FCh4
+	U2jLcKDheTpIdP5g/ugZMWBBfJQfEAAj6xJR9YFp+0+t
+X-Google-Smtp-Source: AMrXdXslSz0fnI4k/dsKJ0H6avtEU4+9gz/gErrKMfqaDUkITlLX7ON230Q2cAI5VaSucmzTT1wTZeAzD0O4Eq7ngZM=
+X-Received: by 2002:a2e:8715:0:b0:28b:84e7:3b92 with SMTP id
+ m21-20020a2e8715000000b0028b84e73b92mr25568lji.153.1673886540591; Mon, 16 Jan
+ 2023 08:29:00 -0800 (PST)
+MIME-Version: 1.0
+References: <0f7adbe9a003a54233e41d0659dc2293@fiidewgal.com> <CAM5F6D-0eKZC3p2Besz-sT7=hU0hWmeu=U-2RQcC6-cFB1QsPw@mail.gmail.com>
+In-Reply-To: <CAM5F6D-0eKZC3p2Besz-sT7=hU0hWmeu=U-2RQcC6-cFB1QsPw@mail.gmail.com>
+From: ABDUL BARRIE <abdulb781983@gmail.com>
+Date: Mon, 16 Jan 2023 16:28:48 +0000
+Message-ID: <CAM5F6D8-Rr0f3HT=+iYCNKXR_3CpezW6shsna3WvOpjOe=ECwQ@mail.gmail.com>
+Subject: =?UTF-8?Q?Re=3A_Vous_avez_une_nouvelle_demande_d=27int=C3=A9r=C3=AAt?=
+To: =?UTF-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>
+Content-Type: multipart/alternative; boundary="000000000000a5755605f264140b"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000a5755605f264140b
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+My WhatsApp number +23277955046
+
+On Mon, Jan 16, 2023, 16:25 ABDUL BARRIE <abdulb781983@gmail.com> wrote:
+
+> Hello I received your message let exchange numbers so that we can talk
+>
+> On Mon, Jan 16, 2023, 16:18 Ne r=C3=A9pondez pas <contact@fiidewgal.com> =
+wrote:
+>
+>> Bonjour Abdul Barrie,
+>>
+>> Salimatou Barry a manifest=C3=A9 son int=C3=A9r=C3=AAt pour vous.
+>>
+>> Veuillez contacter l'=C3=A9quipe administrative si vous avez d'autres
+>> questions.
+>>
+>> Merci,
+>>
+>> Ne r=C3=A9pondez pas
+>>
+>
+
+--000000000000a5755605f264140b
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">My WhatsApp number +23277955046</div><br><div class=3D"gm=
+ail_quote"><div dir=3D"ltr" class=3D"gmail_attr">On Mon, Jan 16, 2023, 16:2=
+5 ABDUL BARRIE &lt;<a href=3D"mailto:abdulb781983@gmail.com">abdulb781983@g=
+mail.com</a>&gt; wrote:<br></div><blockquote class=3D"gmail_quote" style=3D=
+"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><div dir=3D=
+"auto">Hello I received your message let exchange numbers so that we can ta=
+lk=C2=A0</div><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmai=
+l_attr">On Mon, Jan 16, 2023, 16:18 Ne r=C3=A9pondez pas &lt;<a href=3D"mai=
+lto:contact@fiidewgal.com" target=3D"_blank" rel=3D"noreferrer">contact@fii=
+dewgal.com</a>&gt; wrote:<br></div><blockquote class=3D"gmail_quote" style=
+=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><p>Bonjo=
+ur Abdul Barrie,</p><p>Salimatou Barry a manifest=C3=A9 son int=C3=A9r=C3=
+=AAt pour vous.</p><p>Veuillez contacter l&#39;=C3=A9quipe administrative s=
+i vous avez d&#39;autres questions.</p><p>Merci,</p><p>Ne r=C3=A9pondez pas=
+</p>
+
+</blockquote></div>
+</blockquote></div>
+
+--000000000000a5755605f264140b--

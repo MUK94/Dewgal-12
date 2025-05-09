@@ -1,0 +1,100 @@
+Return-Path: <>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id YL+MFxLO4GPtTQ0A3R2AvA
+	(envelope-from <>)
+	for <contact@fiidewgal.com>; Mon, 06 Feb 2023 10:53:22 +0100
+Received: by node187-eu.n0c.com (Postfix)
+	id 58F9D401AEEF; Mon,  6 Feb 2023 04:53:22 -0500 (EST)
+Date: Mon,  6 Feb 2023 04:53:22 -0500 (EST)
+From: MAILER-DAEMON@node187-eu.n0c.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: contact@fiidewgal.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="2D91C4004A1D.1675677202/node187-eu.n0c.com"
+Content-Transfer-Encoding: 8bit
+Message-Id: <20230206095322.58F9D401AEEF@node187-eu.n0c.com>
+
+This is a MIME-encapsulated message.
+
+--2D91C4004A1D.1675677202/node187-eu.n0c.com
+Content-Description: Notification
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+This is the mail system at host node187-eu.n0c.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<6souleymanediallo@gimai.com>: connect to gimai.com[3.64.163.50]:25: Connection
+    timed out
+
+--2D91C4004A1D.1675677202/node187-eu.n0c.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; node187-eu.n0c.com
+X-Postfix-Queue-ID: 2D91C4004A1D
+X-Postfix-Sender: rfc822; contact@fiidewgal.com
+Arrival-Date: Wed,  1 Feb 2023 04:39:51 -0500 (EST)
+
+Final-Recipient: rfc822; 6souleymanediallo@gimai.com
+Original-Recipient: rfc822;6souleymanediallo@gimai.com
+Action: failed
+Status: 4.4.1
+Diagnostic-Code: X-Postfix; connect to gimai.com[3.64.163.50]:25: Connection
+    timed out
+
+--2D91C4004A1D.1675677202/node187-eu.n0c.com
+Content-Description: Undelivered Message Headers
+Content-Type: text/rfc822-headers
+Content-Transfer-Encoding: 8bit
+
+Return-Path: <contact@fiidewgal.com>
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4P6H2G1Lf5z34SDnH
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="BHiPsLdw"
+X-N0C-MailScanner-eFa-Watermark: 1675849183.23116@jtXTTZlJijKKAFbLSGLtmQ
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 8212A401AEF6.A88B2
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from 127.0.0.1 ([10.123.0.37] [10.123.0.37])
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 8212A401AEF6;
+	Wed,  1 Feb 2023 10:39:42 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 8212A401AEF6
+Authentication-Results: node187-eu.n0c.com; dmarc=fail (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=fail smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 8212A401AEF6
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1675244382;
+	bh=7peUTkIcAPFNp4BshIQFCvhLjuN+wvSonb5GdcazclQ=;
+	h=Date:From:To:Subject:From;
+	b=BHiPsLdwLgO+ukOlyDhdFPAGYRWzsC6DmjFFWf6yuGImOtcBrGd/3DA4q9U+ksen2
+	 lu1Xn4EEnYXFM5IZrTeGvH3fnrOGeLeWMdJt+3TtYc9Y3LXKRJDUUuXZmJyhet5OFx
+	 vl7ND5Gyxi+SIjvqRSjjVQv22b5tVPuSpR3JB8xs=
+MIME-Version: 1.0
+Date: Wed, 01 Feb 2023 03:39:35 -0600
+From: contact@fiidewgal.com
+To: undisclosed-recipients:;
+Subject: Rappel avant la suppression de votre compte.
+Message-ID: <f73fe6707752e4184e9a7013a931115b@fiidewgal.com>
+X-Sender: contact@fiidewgal.com
+Content-Type: multipart/mixed;
+ boundary="=_730279f988d284487394357b957728c0"
+X-N0C-Node-IP: 185.221.182.45
+
+--2D91C4004A1D.1675677202/node187-eu.n0c.com--

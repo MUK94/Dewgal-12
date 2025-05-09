@@ -1,0 +1,77 @@
+Return-Path: <id3050856@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id UEGAEQxvo2M/xi4A3R2AvA
+	(envelope-from <id3050856@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 21 Dec 2022 21:39:40 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Nclg01LBDz34SDnJ
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="gtlt5qHN"
+X-N0C-MailScanner-eFa-Watermark: 1672259974.95447@tbEs41Bi3pfQPSg1JyBEWQ
+X-N0C-MailScanner-eFa-From: id3050856@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: EC625401AEF7.AABFA
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-oi1-f181.google.com ([209.85.167.181] [209.85.167.181])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id EC625401AEF7
+	for <contact@fiidewgal.com>; Wed, 21 Dec 2022 21:39:02 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com EC625401AEF7
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com EC625401AEF7
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=gtlt5qHN
+Received: by mail-oi1-f181.google.com with SMTP id i127so115148oif.8
+        for <contact@fiidewgal.com>; Wed, 21 Dec 2022 12:39:01 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=HrTL6K3bHkB9ySYfttkdADnIEmZ0VxG7Xb5wIvAkgu0=;
+        b=gtlt5qHNdVKZWn84exoGF9nKNZTY7iNzau9I2Dlr6Ij+P5yKyK5an+J85jrgx8aNL5
+         DytQQqbNAGWp8JNocdMRBG5Bcli6yRkNoPggHfGtD0/sk1LqvX4xrynbgnldHYf4WQ0W
+         E9UHVIKFITPUl59pVknSG2jr1d2jv98Foy547brw4/hVmOTtsknLRubuHpH5qZJ/Imzn
+         VWtmdCTHi8p3bvWUn3qX6+CPFZVEuGgL2hu5gdIo8ieISgotPgWAc5kDE8AvM1PwY2Cr
+         UwFSIsnuMW0ztl9NGs5gycOIYlXZKYEC8+VvgQwbzHykdfl7lSGfSjmPk78XZUuPRIDq
+         PsDg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=HrTL6K3bHkB9ySYfttkdADnIEmZ0VxG7Xb5wIvAkgu0=;
+        b=AiuY+IuYHcJQR5TjvnJj3XHrZVMHRXKwaURupXrTh1oofY32SE0vyzzf/+VFGD53Up
+         Ck9edm8t7J+LnzmwlD+U55Uqnz0HB0VrgIEmtf1y9j0RaMizCF56y44hUrDMlKvgqubM
+         3FPUEJoGyJbFaAWCAmA0aE+gWQqGQwGfSt6G4BfR5sJaiard5MGfpKxAjpgvZMbGUHGj
+         U1YqiDjxdbztTfb3LU7RN+673pjfXxLBWsvjqF6CoamWwyDsXO79G6kgcXfNbRfWwDCH
+         yJtM5LW4ECbl+jl0t/h9HfkU3o7XulVLkuB+U/BL465QzQLNalTYZJe2JMxh4eKVilgI
+         CVgw==
+X-Gm-Message-State: AFqh2kp66tyY2kZkjjK1a3Z9VQf5YhkOxxalDKzSm/5EZKN0fC25RzOK
+	xvhqAAZy2cI0jZhv1xPaLqvkjw+o4xvxoVhyS+VZ3opm
+X-Google-Smtp-Source: AMrXdXts721eJ4EAwN9K33QarKbz17KoS/AGgE5VXwoNVXXNjtc0FeAoX4/Qm/KxgWYfGEQTkKfsEAZL3Ub5q1tn7X4=
+X-Received: by 2002:aca:c184:0:b0:35a:b46:c108 with SMTP id
+ r126-20020acac184000000b0035a0b46c108mr131486oif.184.1671655140473; Wed, 21
+ Dec 2022 12:39:00 -0800 (PST)
+MIME-Version: 1.0
+From: Ibrahima Diallo <id3050856@gmail.com>
+Date: Wed, 21 Dec 2022 20:38:46 +0000
+Message-ID: <CAEU221isvogp-u=fTaG=w4EvZrSdL_E0nNZe0ao==Fex+2pnng@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000d5beef05f05c8a29"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000d5beef05f05c8a29
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+--000000000000d5beef05f05c8a29
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"></div>
+
+--000000000000d5beef05f05c8a29--

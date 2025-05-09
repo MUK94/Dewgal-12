@@ -1,0 +1,44 @@
+Return-Path: <contact@fiidewgal.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id E6xWKA7c+WMJaxUA3R2AvA
+	(envelope-from <contact@fiidewgal.com>)
+	for <contact@fiidewgal.com>; Sat, 25 Feb 2023 10:59:42 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4PP2L56DpTz34SDnJ
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="qDnzP1EL"
+X-N0C-MailScanner-eFa-Watermark: 1677923979.24715@2Ic+gExSIuDbD475c9l1Pw
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 11F83401AEF6.A9485
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 11F83401AEF6
+	for <contact@fiidewgal.com>; Sat, 25 Feb 2023 10:59:38 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 11F83401AEF6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 11F83401AEF6
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1677319178;
+	bh=mBqrYElGmt6OVgwznetaomk+NS0VioD4mV6GmmwgnuM=;
+	h=Date:Subject:From:To:From;
+	b=qDnzP1ELHEJyIZy2EaI5KAyS1MQoqJputg/DWS8LWPeVdOz4AShoddshkz7zRppD1
+	 02qdFSlU4oaDUS/jd8ssra6tOBE4h5Ze3RLB2cxB1X5Plz/ImeK2iOTRvTA8O5inE9
+	 uuZJ3ZMSNXfCDwrKzjG8J5kUIURU6NhVzfBtN6Cs=
+Message-ID: <668143463610d82b7a0f9ff89e986f69@fiidewgal.com>
+Date: Sat, 25 Feb 2023 10:59:37 +0100
+Subject: thank you very much
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: contact@fiidewgal.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+very interesting, but nothing sensible
+

@@ -1,0 +1,77 @@
+Return-Path: <souaremamoudou2015@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 4HASELVdo2PtKC4A3R2AvA
+	(envelope-from <souaremamoudou2015@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 21 Dec 2022 20:25:41 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Nck1c43Zdz34SDnJ
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="W+kkfVq9"
+X-N0C-MailScanner-eFa-Watermark: 1672255536.07097@Oy5QGtu6Vit9ltCOsYkRAg
+X-N0C-MailScanner-eFa-From: souaremamoudou2015@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: B1A12401AEF7.ADB60
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-wm1-f46.google.com ([209.85.128.46] [209.85.128.46])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id B1A12401AEF7
+	for <contact@fiidewgal.com>; Wed, 21 Dec 2022 20:25:02 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com B1A12401AEF7
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com B1A12401AEF7
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=W+kkfVq9
+Received: by mail-wm1-f46.google.com with SMTP id ja17so11861748wmb.3
+        for <contact@fiidewgal.com>; Wed, 21 Dec 2022 11:25:02 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:message-id:subject:date:mime-version:from
+         :content-transfer-encoding:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=gClo6vlDdYQ1sN0E2KGu+GSZmBYGO44MwDTsjWG+eoQ=;
+        b=W+kkfVq95vO/9hdsDSGATXTmoGyeo8qq29QIv8sfysq3T4Wev3Rv03u2W2I3E2oy+s
+         KpHHoT5+kcDL+bUZtnlYZQLpghpTocHU2EalGW7zOfEd9PVEIwQ0BAZDYFaCHCKG2Y6R
+         ylCuHgLXlY6hbHZANw2jugTdymLFkcQvn5hGAX4ErrmUdYLS3gWYymrJonVxFK7AL/bY
+         P2Uf3DmKEQAP1l3/Oa5UrSuSvqUS6X0ig2teBc+aA/0oEhsXjRn6ujVrWjMgttYnmjxy
+         7pewUAC6DE8UEANZI5wlb+jawUvLbTT6dJCCm/oVdqrpAkRPkqfDjPXW8gCxLgUsPs2L
+         bnxg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:message-id:subject:date:mime-version:from
+         :content-transfer-encoding:x-gm-message-state:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=gClo6vlDdYQ1sN0E2KGu+GSZmBYGO44MwDTsjWG+eoQ=;
+        b=kjapdpFKVc5V4oR/sRjhmRdI7+8ZqynNYXZYaK74z9LUcnlAZC2A8h1qvrEJV6OHZJ
+         pU72q7fcHRwICYACiYgl5hDfCpUsuWBBeK+w6CdnWQ9W7Z1CLcW2nWFh22DNUW8nwcM0
+         JbhQFqidNZTA57fQgtorHVtlxyR3UMKF/twQgkWu3ICdyyOXOvy6YCo59Esba9UyUkcQ
+         bjcexRSrw6vazqJKxyXS3AtdpzC7m/AyVyVHW5QNeaac8wIxDPiRuvsjGnv6u7E5Fy1g
+         H+RYkGKzK5jKJrOAzXYqNGRObuORMvi0L8wmU1PQ5IK+uqud9Ej5E90agoUXjVUanHyM
+         7TfA==
+X-Gm-Message-State: AFqh2kqrGK8QwsQEyewiISaU4NF0oxcwtWQgDO71o2Tpjs7+bv8p/g4Y
+	+3zdvkYDm3GumuyzAMovWeNdOKyVdhxBHw==
+X-Google-Smtp-Source: AMrXdXs08Ar38BiTZWLEHJCW9oj8i/3WWokR0X3WM6ZdozKdRjVa+iPWn2B45oJecMQ/v430TTSeeA==
+X-Received: by 2002:a05:600c:15c2:b0:3d3:5132:a637 with SMTP id v2-20020a05600c15c200b003d35132a637mr2590307wmf.18.1671650702127;
+        Wed, 21 Dec 2022 11:25:02 -0800 (PST)
+Received: from smtpclient.apple ([2a02:3035:803:fe26:f423:4377:bc0f:f979])
+        by smtp.gmail.com with ESMTPSA id j3-20020a05600c1c0300b003cf5ec79bf9sm3793626wms.40.2022.12.21.11.25.01
+        for <contact@fiidewgal.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Wed, 21 Dec 2022 11:25:01 -0800 (PST)
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+From: Maz SOUARE <souaremamoudou2015@gmail.com>
+Mime-Version: 1.0 (1.0)
+Date: Wed, 21 Dec 2022 20:24:50 +0100
+Subject: =?utf-8?Q?Je_suis_int=C3=A9ress=C3=A9_fii_dewgal?=
+Message-Id: <AB74B68D-CACC-4CD7-BA8A-588D725FCFEA@gmail.com>
+To: contact@fiidewgal.com
+X-Mailer: iPhone Mail (20B101)
+X-N0C-Node-IP: 185.221.182.45
+
+
+
+Envoy=C3=A9 de mon iPhone=

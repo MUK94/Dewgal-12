@@ -1,0 +1,79 @@
+Return-Path: <diarrysow868@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id SIe6EfhclmMFrjoA3R2AvA
+	(envelope-from <diarrysow868@gmail.com>)
+	for <contact@fiidewgal.com>; Sun, 11 Dec 2022 23:43:04 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NVft01DRpz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="Rx4ugekW"
+X-N0C-MailScanner-eFa-Watermark: 1671403378.71347@byX2VXjM1+RWwnSVR8hliA
+X-N0C-MailScanner-eFa-From: diarrysow868@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 31775401AEEF.A4711
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ed1-f41.google.com ([209.85.208.41] [209.85.208.41])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 31775401AEEF
+	for <contact@fiidewgal.com>; Sun, 11 Dec 2022 23:42:25 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 31775401AEEF
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 31775401AEEF
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=Rx4ugekW
+Received: by mail-ed1-f41.google.com with SMTP id l11so10564577edb.4
+        for <contact@fiidewgal.com>; Sun, 11 Dec 2022 14:42:25 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=D4SutylvPsQvlF1fk9scWIRfUJIDgVhbDclzUDUKNYE=;
+        b=Rx4ugekWqhq0h2VgraLSUlfthq/kWEDJeWCsrmk88WS2j6RQ1PxEALJuu0ozje7I8y
+         hG89AKZlkcJeh9Q9tS/7cikQV1qTuUnc8SM9Ndx5zZ25OalUvYfJKiEXFNVHXWFarGGh
+         4M/FcTe87BbZNUsbTLKXLNSjpA9HgHy2KWNrUh/bOdC/y4YiSCc4HYEBmc9/72d3dS77
+         V1Z7hlYXSmkOr4w5Tzfwcq+Buts7Xa9IyNXVK7c28uNMtnifzW4g0X2whasY6uKKBFZP
+         H0tmqkZUkLE/QTqjXo5vaFCOIMZGNSW75GKXgFH7Xq6/Gwwuvqvd3uLecPQNZSiyihOr
+         wkBA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=D4SutylvPsQvlF1fk9scWIRfUJIDgVhbDclzUDUKNYE=;
+        b=0oq1zo+LsBTq4ghH1bft5NKFwwhE119FraAjXnHx/JNZp9BefA8SCvIezU82xQjazv
+         dLxlw0+pLusQ8JDYEBn2QB7DRCSc7qpRV0hxz9gvayFKI+W3SS9cOjEehpwHaBjxTWaL
+         wxMCJa6nB8JhXSuAVCU7GY04Jw8GlISHWTwkNBpLnewZKrX0erZW5qUUFrhIEo2oV6oh
+         oM/0WqgupgQXIfvEe/xclKvWY8YXrbzkq1joxHp8osgVx3KHgihdErD7dYkS0hRITAha
+         yPs12PAjCgM5tkUPEqCndrY8oP9UaR/OI4ABwJ0Ms+DDWPRJiLtTANve4eHoDo1x9n+n
+         pPjw==
+X-Gm-Message-State: ANoB5pn6ZvWL9NlQIjlZNra4o08MDS7G+oPQjVIlWaamuwOyldKyi9yD
+	vgjKDU7FAsdGx4FOzuuP5tJZlVqyTVEiIvRWKgO4jSM=
+X-Google-Smtp-Source: AA0mqf6cKfcIlXl4Eb4nFDHNi5xohazzwDKk43YaS6P/vcK+Wc3WyThTQ22TY+aI6ZdEo56HfnZl/zdShiXeQN9uJ7c=
+X-Received: by 2002:a05:6402:146:b0:46a:c132:3e23 with SMTP id
+ s6-20020a056402014600b0046ac1323e23mr31709126edu.133.1670798544021; Sun, 11
+ Dec 2022 14:42:24 -0800 (PST)
+MIME-Version: 1.0
+From: Diarry Sow <diarrysow868@gmail.com>
+Date: Sun, 11 Dec 2022 23:42:12 +0100
+Message-ID: <CAJNZCtB+8ARvMTQ+Hnemi--WWfya3tv60_1UHuLep3wh9FC9-w@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000b52aec05ef9519fd"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000b52aec05ef9519fd
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bonsoir =C3=A7a va comment vas-tu vous allez bien
+
+--000000000000b52aec05ef9519fd
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Bonsoir =C3=A7a va comment vas-tu vous allez bien</div>
+
+--000000000000b52aec05ef9519fd--

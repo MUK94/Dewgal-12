@@ -1,0 +1,77 @@
+Return-Path: <aladjicisse1983@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 8+hyKrymp2PyTRYA3R2AvA
+	(envelope-from <aladjicisse1983@gmail.com>)
+	for <contact@fiidewgal.com>; Sun, 25 Dec 2022 02:26:20 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NfjtN4Dlsz34nwbq
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="ktEgiTdO"
+X-N0C-MailScanner-eFa-Watermark: 1672536378.03648@87CBIVP1HSCEyLJ4ceOCsA
+X-N0C-MailScanner-eFa-From: aladjicisse1983@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: D63A3401AEF6.A0EDC
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-lf1-f43.google.com ([209.85.167.43] [209.85.167.43])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id D63A3401AEF6
+	for <contact@fiidewgal.com>; Sun, 25 Dec 2022 02:25:45 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com D63A3401AEF6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com D63A3401AEF6
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=ktEgiTdO
+Received: by mail-lf1-f43.google.com with SMTP id b3so11886599lfv.2
+        for <contact@fiidewgal.com>; Sat, 24 Dec 2022 17:25:45 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=HlccwIMZ0ZomJHvRutIJdxT7S0LLwV3ddqTD+ae8L10=;
+        b=ktEgiTdOIR+O4s+JoteDkcMqQJcb7YbeiVTjgPelEaEi0peTWIQ83dYtqLamzUip+h
+         qBHiTqcNiNc7lqktbL+0JAvJ8ED3C5BbAK5GY6kPqA4nK2XsLl8QBFQEO3wpzgS7Z8/z
+         E6Dl2kkuFo+mqyXOzSSFyrcaRtV5sgSVHeamry8Afy+cd9EpT0akoAxMlL0R+X+9DcI7
+         ZvdbQ903s1vAWR8bFlEJWU5IqJCtV7u9HuzPOY4GGCweYoWiWdFwwyN7E1v/0BlMNO2j
+         qigu8te9E4vbdDRAKGZANxgiLA6U823HBq+VzqpzRMyyClTb2FfMuodWhebbna80Q/xu
+         Q2kg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=HlccwIMZ0ZomJHvRutIJdxT7S0LLwV3ddqTD+ae8L10=;
+        b=iYuYCHVPfoAWkzf6T6lU3vc0yVLkJwhAMhapj3dSs5bTi0bQR8bEAVa3uDTAd3zlN4
+         IgmW8ImkDpmrxoFxE5yxHgMDo66g0d6wbCokrQrXDBSH2dPVpeXdFhiU+0TQdVdgiZ3i
+         34ZCoN8RWhEbjsn0TRY3VEM8u1XKPVsawvJmkAq/3+Yx03KV91WG0XtptIbibWOs761Z
+         iXJKCzWuNCcyf7ztiT5QIKg9UwhgrhZGB45awTyrWGEpRiLDiIO1TDa9+J/2//YTOP5W
+         q7fZmQz7OBng5QLPQQeRFSsHagnwecgVEyRw2iK9I3fkkuG2xvNMcHMRaipb7iTiuY7H
+         jhoA==
+X-Gm-Message-State: AFqh2ko9rCqtdodR6HaSi76BP7wsoG6fUrWQWnbJvrwnIBDv+4Fp8aM1
+	Yb6UJLIfJtwHevVe1FpBrPiUAjijaZfqCcZQwPeKcQZ9
+X-Google-Smtp-Source: AMrXdXurIMnxoBxuxjxPqRuJ1QHi3Lvr9F7+3VGSUSPE3N6T2byrRHebCWKHADEY5wySaaru8La2Fr5ekb0gbDEywho=
+X-Received: by 2002:a05:6512:2202:b0:4c6:5879:2eb1 with SMTP id
+ h2-20020a056512220200b004c658792eb1mr699233lfu.362.1671931544911; Sat, 24 Dec
+ 2022 17:25:44 -0800 (PST)
+MIME-Version: 1.0
+From: aladji cisse <aladjicisse1983@gmail.com>
+Date: Sun, 25 Dec 2022 01:25:32 +0000
+Message-ID: <CAEzzc8jCOEibVxz3o5ZynzpWAPTqRAH6j=n0dmUJ0e7NOaqbUg@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000d2c1ab05f09ce5d0"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000d2c1ab05f09ce5d0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+U8OpbsOpZ2FsDQo=
+--000000000000d2c1ab05f09ce5d0
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+PGRpdiBkaXI9ImF1dG8iPlPDqW7DqWdhbMKgPC9kaXY+DQo=
+--000000000000d2c1ab05f09ce5d0--

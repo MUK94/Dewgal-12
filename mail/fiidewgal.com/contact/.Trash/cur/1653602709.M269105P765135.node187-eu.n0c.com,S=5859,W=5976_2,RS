@@ -1,0 +1,117 @@
+Return-Path: <thierno.samba.alemand@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id Orb7D5X5j2LPrAsA3R2AvA
+	(envelope-from <thierno.samba.alemand@gmail.com>)
+	for <contact@fiidewgal.com>; Fri, 27 May 2022 00:05:09 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4L8MS432KKz34SDjJ
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="CO0BTS1c"
+X-N0C-MailScanner-eFa-Watermark: 1654207506.01494@+/Z/mAMG/xdyTSeimGdziw
+X-N0C-MailScanner-eFa-From: thierno.samba.alemand@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 07AE8403F6F5.A0F16
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ej1-f45.google.com ([209.85.218.45] [209.85.218.45])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 07AE8403F6F5
+	for <contact@fiidewgal.com>; Fri, 27 May 2022 00:04:30 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 07AE8403F6F5
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 07AE8403F6F5
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="CO0BTS1c"
+Received: by mail-ej1-f45.google.com with SMTP id m20so5368190ejj.10
+        for <contact@fiidewgal.com>; Thu, 26 May 2022 15:04:29 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=content-transfer-encoding:from:mime-version:subject:date:message-id
+         :references:in-reply-to:to;
+        bh=OwkfYcxQShtZz2gaKs26Ei8s/dZFDRnFG8wzGv1qkkg=;
+        b=CO0BTS1cSicciY9xoqzRv5xrLdl+xu+N7qMC2/8T0e4N4nhOOn736gd0JEUacYU46f
+         PwnBbdmVo7omdzgob2loOqIjWpux2bny7bDebo2kKUdlN8P66wiwJT1QPn4aw8Jdp++E
+         +Y9zGPpAWGhmExr38T9B4qNq7smU49uwZ6/Mvt5Dyckwsb+LALdsEkf84noNSP/k0j18
+         DNeHFmW9MPpBLhvR6q4xaH1RywPx5YBS1Rqiiys8Kbm49GKLA49Wsf2KEAg0jkdU5kak
+         3nNVdVwOKKLtsi6LvFNgDvQ2XTDhztkcasz8I0hyw8y22UZSefdHTUax4rMo+b1UMk1u
+         FNLw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:content-transfer-encoding:from:mime-version
+         :subject:date:message-id:references:in-reply-to:to;
+        bh=OwkfYcxQShtZz2gaKs26Ei8s/dZFDRnFG8wzGv1qkkg=;
+        b=JAPpTppiEgccMCry4NKH1qKIBH88lB8+6ushCzgHtqrmdf2XdP+xREuZDU7m94Ag6Q
+         UecUKVceynoFbLwsgXvL79Gk8EAolVY0snL8P28Ae9I6yYAK9RTMMdlTShJpaCF7ZIVV
+         88WCFd4D4aStXw/14l4mBj3xnsVQdwuKX/LY4AJ1uAm0lP1XMvszCgjfvxmcNLgpCpow
+         ovjRAAkS4DJXqyCaUr6oPY1GIM2vsq2Ovu0sdVMlffV/QFCSPVLeofJy02J0VQEqMnY3
+         CqxVEcPmawKF8qSaojsyVzsDX7U7lCFk9BbAWHKkohG8elbOb2amyYuqhw2P8NsZHMhc
+         8t0Q==
+X-Gm-Message-State: AOAM532uxTVoW+qlctyYoh9uKsh7UuneRAvq9n05URG7aIYAPbEUlzCl
+	e1K/717riI5Lk1nQVcSAYTFcqEWHZeI=
+X-Google-Smtp-Source: ABdhPJwDkBQT6givgvM3ABLWuCGukzOsJVHrsMsDx+Zfi5Gc1Q3Log+fCkXEQlbkreAhuD74TRQl/A==
+X-Received: by 2002:a17:907:9688:b0:6fe:a0e9:ca6f with SMTP id hd8-20020a170907968800b006fea0e9ca6fmr33753411ejc.553.1653602669248;
+        Thu, 26 May 2022 15:04:29 -0700 (PDT)
+Received: from [10.161.250.11] (dynamic-089-204-154-011.89.204.154.pool.telefonica.de. [89.204.154.11])
+        by smtp.gmail.com with ESMTPSA id g19-20020a50d0d3000000b0042c8f2ab9aesm33634edf.70.2022.05.26.15.04.28
+        for <contact@fiidewgal.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Thu, 26 May 2022 15:04:28 -0700 (PDT)
+Content-Type: multipart/alternative; boundary=Apple-Mail-F9D3A240-0F39-4C2F-A295-2FAC0AE5F789
+Content-Transfer-Encoding: 7bit
+From: Thierno Barry <thierno.samba.alemand@gmail.com>
+Mime-Version: 1.0 (1.0)
+Subject: =?utf-8?Q?Re:_Vous_avez_une_nouvelle_demande_d'int=C3=A9r=C3=AAt?=
+Date: Fri, 27 May 2022 00:04:27 +0200
+Message-Id: <B0823829-560A-47D6-914E-FD360F9FCF8D@gmail.com>
+References: <c5e3c92abdd82e32800d4a6c296e19bc@fiidewgal.com>
+In-Reply-To: <c5e3c92abdd82e32800d4a6c296e19bc@fiidewgal.com>
+To: =?utf-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>
+X-Mailer: iPhone Mail (18D70)
+X-N0C-Node-IP: 185.221.182.45
+
+
+--Apple-Mail-F9D3A240-0F39-4C2F-A295-2FAC0AE5F789
+Content-Type: text/plain;
+	charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Salut=20
+
+Envoy=C3=A9 de mon iPhone
+
+> Le 25 mai 2022 =C3=A0 21:23, Ne r=C3=A9pondez pas <contact@fiidewgal.com> a=
+ =C3=A9crit :
+>=20
+> =EF=BB=BF
+> Bonjour Thierno Mamadou Barry,
+>=20
+> Aissatou Diallo a manifest=C3=A9 son int=C3=A9r=C3=AAt pour vous.
+>=20
+> Veuillez contacter l'=C3=A9quipe administrative si vous avez d'autres ques=
+tions.
+>=20
+> Merci,
+>=20
+> Ne r=C3=A9pondez pas
+
+--Apple-Mail-F9D3A240-0F39-4C2F-A295-2FAC0AE5F789
+Content-Type: text/html;
+	charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta http-equiv=3D"content-type" content=3D"text/html; charset=3D=
+utf-8"></head><body dir=3D"auto">Salut&nbsp;<br><br><div dir=3D"ltr">Envoy=C3=
+=A9 de mon iPhone</div><div dir=3D"ltr"><br><blockquote type=3D"cite">Le 25 m=
+ai 2022 =C3=A0 21:23, Ne r=C3=A9pondez pas &lt;contact@fiidewgal.com&gt; a =C3=
+=A9crit&nbsp;:<br><br></blockquote></div><blockquote type=3D"cite"><div dir=3D=
+"ltr">=EF=BB=BF<p>Bonjour Thierno Mamadou Barry,</p><p>Aissatou Diallo a man=
+ifest=C3=A9 son int=C3=A9r=C3=AAt pour vous.</p><p>Veuillez contacter l'=C3=A9=
+quipe administrative si vous avez d'autres questions.</p><p>Merci,</p><p>Ne r=
+=C3=A9pondez pas</p>
+
+</div></blockquote></body></html>=
+
+--Apple-Mail-F9D3A240-0F39-4C2F-A295-2FAC0AE5F789--

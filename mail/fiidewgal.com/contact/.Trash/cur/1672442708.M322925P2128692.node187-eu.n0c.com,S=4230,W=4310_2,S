@@ -1,0 +1,80 @@
+Return-Path: <pathebarre@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id QIMkE1Rzr2M0eyAA3R2AvA
+	(envelope-from <pathebarre@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 31 Dec 2022 00:25:08 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NkLvm1VbgznqZr
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="lBPuUyE9"
+X-N0C-MailScanner-eFa-Watermark: 1673047505.83759@DSIF3jxPNVKqksB5RqGHcQ
+X-N0C-MailScanner-eFa-From: pathebarre@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 2ADF640664F7.ABA94
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-wm1-f42.google.com ([209.85.128.42] [209.85.128.42])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 2ADF640664F7
+	for <contact@fiidewgal.com>; Sat, 31 Dec 2022 00:24:33 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 2ADF640664F7
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 2ADF640664F7
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=lBPuUyE9
+Received: by mail-wm1-f42.google.com with SMTP id m26-20020a05600c3b1a00b003d9811fcaafso9578435wms.5
+        for <contact@fiidewgal.com>; Fri, 30 Dec 2022 15:24:33 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=ceLNVajPAwWBj4ZoycYv9aHB/rLze+VjKZf/fZDDhD4=;
+        b=lBPuUyE9UZZTQcUehGomjg/xzc/t6r3DTUjJRwelIBMfjIzX8YpmHMzbK1dSDEjTgh
+         mNlFttwui/484wfxYCMDOsWyjJOlg/k/xthMS5oiWVOhVXTlV7a/mUMsPFgPJPtQlfBo
+         K1ra7PAPvVMDsqKbKbwJD4Iw0fpkN/LHQLStVTtKhbsl3iRAMXQ14tsHCd0ii5RwWey2
+         NKRb+mJLjMGR7Wo18n8icRY3U2+jvJo6mjK/PBTyUQWb7KdIl9QJb1LBDuubXJeDd+Vv
+         rno+tsC9OKKTM+zT8RzcwAl7ZPTsSd2xsXfZlqbY1s0ejvh+PrNBORusRCCX+UQwQkDv
+         i9Lg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=ceLNVajPAwWBj4ZoycYv9aHB/rLze+VjKZf/fZDDhD4=;
+        b=4x3D4gIMmIjwkfiSnxgX9ciwyuZSe/7rNNC2mjcntG+oavOEIKM602KJ/8EjRd3xlE
+         0PKeAADgnN3DKNbQmk8xoSYBHKWs8CpFgbhOFBxd+GxgqLWMAMBlXhslZMG0ujkLDkAf
+         tyVzCvUQ/zw2cl9ZoxpbxCL99MgGOmHV8Hhzd8y0ub/LHdGqeOhfLWCIDSXJ0XBh/uaz
+         gq+gOLAdhWxPU7ez71bjmNeLUDNRlXCb0d5pvwz13vhq+RtRC2BpaYBre8BPg/1h4qdV
+         kzls+dbi7hFLo2ksz3Z2yqnuDHpsakk0+CCcsyV61XMI5O0fL+qLjafyGMQZGb9/B8yq
+         tZPA==
+X-Gm-Message-State: AFqh2kpg/EDChKGxEdsn+ZHOT1N/8apB0KdwLOTOPzGH+2mtDgKCN/Dq
+	8s3vQ94Ec6jW+stdNqrHJTbtO081ex5UVu11T4YpdYSn
+X-Google-Smtp-Source: AMrXdXv2ornLJcqCpLRqZaWMyHVC0nFJRFeO2aV/nMnO/cytPCLGMlovj237y8ZzLn4PlcpXDG5S8Q7x88LycRzF74A=
+X-Received: by 2002:a05:600c:1c21:b0:3cf:a616:ccc0 with SMTP id
+ j33-20020a05600c1c2100b003cfa616ccc0mr1714183wms.73.1672442672228; Fri, 30
+ Dec 2022 15:24:32 -0800 (PST)
+MIME-Version: 1.0
+From: Barre Pathe <pathebarre@gmail.com>
+Date: Sat, 31 Dec 2022 00:24:19 +0100
+Message-ID: <CACbAhOKW_QT-b3iTtP=Gno4dykFM9SFsHi9kKL3Vof-EXUSkXg@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000062aeb705f113e725"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000062aeb705f113e725
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Je suis int=C3=A9ress=C3=A9 par cet initiative
+
+--00000000000062aeb705f113e725
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Je suis int=C3=A9ress=C3=A9 par cet initiative=C2=A0</div=
+>
+
+--00000000000062aeb705f113e725--

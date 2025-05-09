@@ -1,0 +1,120 @@
+Return-Path: <dialloalphaomar936@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id qZBzOgG/tGOYiBUA3R2AvA
+	(envelope-from <dialloalphaomar936@gmail.com>)
+	for <contact@fiidewgal.com>; Wed, 04 Jan 2023 00:49:21 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NmqFs5ZSFz3F9l
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="Coid7zGU"
+X-N0C-MailScanner-eFa-Watermark: 1673394559.31569@Hce7uMmZOwwJGdtt8cw4mA
+X-N0C-MailScanner-eFa-From: dialloalphaomar936@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: E6974401AEF6.AC9E1
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ot1-f41.google.com ([209.85.210.41] [209.85.210.41])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id E6974401AEF6
+	for <contact@fiidewgal.com>; Wed,  4 Jan 2023 00:48:46 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com E6974401AEF6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com E6974401AEF6
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=Coid7zGU
+Received: by mail-ot1-f41.google.com with SMTP id j16-20020a056830271000b0067202045ee9so19980702otu.7
+        for <contact@fiidewgal.com>; Tue, 03 Jan 2023 15:48:45 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=2CYMhYCSvFIaZZLIDC9WQg3jMGNqrrun0aBe4wPvLSE=;
+        b=Coid7zGUzsN3Ec/9QiHZbogMdC7Jzer64cSlajm+Oh9DSInckjrBKZHYR36hmTB6u2
+         K+jyzybO2lcFF/UPPQSKaWynBaR7rGiLZ85kgswxWErEbWtFAT+sRgf3mBhnBSCGkQtr
+         61RUZPlvkaV5h9sI/9dqaKTLgpvf80JUZo+zW+J1ezSYoPBuXIDWmwxtXRg4cse85nVf
+         gDOOfCcqG2g8FIiUJ0JOkHBnOeAzQFca/kx1SWWbdLDuLT76YhRoFgsuL0KFwtf2wdmk
+         Qc29IiMhqjZ9jKGL+a+bkd85xnUp8Vanw0T2mgP4Rzn/iCLK+k9CTKMn/h7ZQg27B958
+         QNrg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=2CYMhYCSvFIaZZLIDC9WQg3jMGNqrrun0aBe4wPvLSE=;
+        b=PojvBajs7SqW7PNiQhv/aIsmdmhHJ0PoyaFarVZ62HBsSnstwR9JbKDLHCSK3TlYD4
+         pa09RH7OPW9ShDV6f5jMLjleJ/8hOPcZVSVaqfyWkxHtEljzoDd1fTbxlZ05s5/+dRpg
+         fRJ8K3sD3ksY6jO/LQLWWq+hWddFzDwPyaWOD+aL7o8FUnbzB1S8V09fBrgXVaw2xFBX
+         NHBoNzRlfaRuZDnD5SPwKrqsxv/cNrF4FvODyneanG0PMNicRo42FIL6Hz4AIRlo8H/E
+         cT6OLZ9IK9kASQ6LDkAQ/iQUfq7T/fcaWYP/QjqnTAswUX804LD7iuvMT031tPYV6Ic4
+         EH4A==
+X-Gm-Message-State: AFqh2koNQvsnf6uFz6EtJZlfiu24Xb0onFBoK+axkXHRbY+xJ4GtC2Sz
+	8zgUeTSDPuKlC9IjiPsZJfvuEVM6JX1CRivu4Mo4Rxo8
+X-Google-Smtp-Source: AMrXdXsWu+fBTG5C/xOhWeex6aXIPBM+WKje8dxb66UqP8AmXkkxmMoOxEnc7bJEwZFWRMvtAVPZgtHGELvUQ0ArTD4=
+X-Received: by 2002:a05:6830:4128:b0:670:88af:2a01 with SMTP id
+ w40-20020a056830412800b0067088af2a01mr3029266ott.116.1672789724200; Tue, 03
+ Jan 2023 15:48:44 -0800 (PST)
+MIME-Version: 1.0
+References: <606c5bf018bf8a1a878ceb7341a2648d@fiidewgal.com> <CAM6e7GBMPJpJkQwEfrMNaUVnSaa6w_Bf7EjEtK3Aqf5RUGutOw@mail.gmail.com>
+In-Reply-To: <CAM6e7GBMPJpJkQwEfrMNaUVnSaa6w_Bf7EjEtK3Aqf5RUGutOw@mail.gmail.com>
+From: Alpha omar Diallo <dialloalphaomar936@gmail.com>
+Date: Tue, 3 Jan 2023 23:48:32 +0000
+Message-ID: <CAM6e7GAfu9azU4_VvD51u+4upgL+H4D7N0087gE5n_2+mmHOQg@mail.gmail.com>
+Subject: =?UTF-8?B?UmU6IEludMOpcsOqdCBhY2NlcHTDqQ==?=
+To: =?UTF-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>
+Content-Type: multipart/alternative; boundary="0000000000004b834705f164b5a8"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000004b834705f164b5a8
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Cv
+
+On Tue, Jan 3, 2023, 23:46 Alpha omar Diallo <dialloalphaomar936@gmail.com>
+wrote:
+
+> D'accord.
+>
+> On Tue, Jan 3, 2023, 23:30 Ne r=C3=A9pondez pas <contact@fiidewgal.com> w=
+rote:
+>
+>> Bonjour Alpha oumar Diallo,
+>>
+>> Ramatoulaye Balde a accept=C3=A9 votre int=C3=A9r=C3=AAt. Vous pouvez ma=
+intenant vous
+>> envoyer des messages.
+>>
+>> Veuillez contacter l'=C3=A9quipe administrative si vous avez d'autres
+>> questions.
+>>
+>> Merci,
+>>
+>> Ne r=C3=A9pondez pas
+>>
+>
+
+--0000000000004b834705f164b5a8
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Cv</div><br><div class=3D"gmail_quote"><div dir=3D"ltr" c=
+lass=3D"gmail_attr">On Tue, Jan 3, 2023, 23:46 Alpha omar Diallo &lt;<a hre=
+f=3D"mailto:dialloalphaomar936@gmail.com">dialloalphaomar936@gmail.com</a>&=
+gt; wrote:<br></div><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0=
+ .8ex;border-left:1px #ccc solid;padding-left:1ex"><div dir=3D"auto">D&#39;=
+accord.=C2=A0</div><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D=
+"gmail_attr">On Tue, Jan 3, 2023, 23:30 Ne r=C3=A9pondez pas &lt;<a href=3D=
+"mailto:contact@fiidewgal.com" target=3D"_blank" rel=3D"noreferrer">contact=
+@fiidewgal.com</a>&gt; wrote:<br></div><blockquote class=3D"gmail_quote" st=
+yle=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><p>Bo=
+njour Alpha oumar Diallo,</p><p>Ramatoulaye Balde a accept=C3=A9 votre int=
+=C3=A9r=C3=AAt. Vous pouvez maintenant vous envoyer des messages.</p><p>Veu=
+illez contacter l&#39;=C3=A9quipe administrative si vous avez d&#39;autres =
+questions.</p><p>Merci,<br></p><p>Ne r=C3=A9pondez pas</p>
+
+</blockquote></div>
+</blockquote></div>
+
+--0000000000004b834705f164b5a8--

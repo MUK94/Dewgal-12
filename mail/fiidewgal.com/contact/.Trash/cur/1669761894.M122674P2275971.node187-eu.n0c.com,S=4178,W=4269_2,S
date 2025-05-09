@@ -1,0 +1,91 @@
+Return-Path: <>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id QBo/B2aLhmODuiIA3R2AvA
+	(envelope-from <>)
+	for <contact@fiidewgal.com>; Tue, 29 Nov 2022 23:44:54 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NMHTd6Vtrz34SDxn
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=fail reason="key not found in DNS" (0-bit key) header.d=eigbox.net header.i=@eigbox.net header.b="ZHtYy2Jg"
+X-N0C-MailScanner-eFa-Watermark: 1670366680.68628@CBRtZsKTpI/J0dll3SBjZQ
+X-N0C-MailScanner-eFa-From: 
+X-N0C-MailScanner-eFa-SpamScore: sss
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 5CCE24002B86.A3464
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from bosmailout09.eigbox.net ([66.96.190.9] [66.96.190.9])
+	(using TLSv1.2 with cipher ECDHE-ECDSA-AES256-GCM-SHA384 (256/256 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 5CCE24002B86
+	for <contact@fiidewgal.com>; Tue, 29 Nov 2022 23:44:36 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 5CCE24002B86
+Authentication-Results: node187-eu.n0c.com; dmarc=none (p=none dis=none) header.from=eigbox.net
+Authentication-Results: node187-eu.n0c.com; spf=none smtp.helo=bosmailout09.eigbox.net
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 5CCE24002B86
+Received: from bosmailscan08.eigbox.net ([10.20.15.8])
+	by bosmailout09.eigbox.net with esmtp (Exim)
+	id 1p09L9-0000i2-9z
+	for contact@fiidewgal.com; Tue, 29 Nov 2022 17:44:35 -0500
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=eigbox.net;
+	 s=dkim; h=Date:Message-Id:Subject:MIME-Version:Content-Type:References:To:
+	From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=ITVkCv7+I0DZKlYt/QqTTO5KdScPBppJs41XSkjdP2g=; b=ZHtYy2JgSMKJycXab7+SmczNBe
+	LlHMqHQDY5IUgUUhtiX54Vj/FT0u7DsyOkB6ukvl8m5nKbc81ssx23CKoAcBI6H9wdzeg9q9wmfEd
+	BpKVmEPb/3Jayj59VFeqf6mUXKSgG+VtfBr2Tvsx9ANsQJpzc6/y8K6jX2xUGka7k9fjqmexe7cPK
+	cWcmQl53Gx6b1tx1O0kaHp3u3PKPwgs1R9q/n4UiS1en8KRFIJRUYMec9B6g7SXXlk2+A/KhwpMTR
+	TED8Nl9sjDjevMdJ+Twiy5lOws2YD5Hv7txMG8PDErezmvj3F6hXJ6e/pM01D0+7KLg1fKVLSXwBM
+	KMSOS2AQ==;
+Received: from Debian-exim by bosmailscan08.eigbox.net with local (Exim)
+	id 1p09L9-0006cI-0Z
+	for contact@fiidewgal.com; Tue, 29 Nov 2022 17:44:35 -0500
+X-Failed-Recipients: bounce@netfirms.com
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@eigbox.net>
+To: contact@fiidewgal.com
+References: <4c8c724d318611fb72a54e13ac90be36@fiidewgal.com>
+Content-Type: multipart/report; report-type=delivery-status; boundary=1669761874-eximdsn-1511594781
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1p09L9-0006cI-0Z@bosmailscan08.eigbox.net>
+Date: Tue, 29 Nov 2022 17:44:35 -0500
+X-N0C-Node-IP: 185.221.182.45
+
+--1669761874-eximdsn-1511594781
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  bounce@netfirms.com
+    (generated from malalfoulabalde@10gmail.com)
+    There is no one at this address
+
+--1669761874-eximdsn-1511594781
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; bosmailscan08.eigbox.net
+
+Action: failed
+Final-Recipient: rfc822;malalfoulabalde@10gmail.com
+Status: 5.0.0
+
+--1669761874-eximdsn-1511594781
+Content-type: text/rfc822-headers
+
+Return-path: <contact@fiidewgal.com>
+Received: from [10.115.3.6] (helo=bosimpinc06)
+	by bosmailscan08.eigbox.net with esmtp (Exim)
+	id 1p09L8-00016s-Ub
+	for malalfoulabalde@10gmail.com; Tue, 29 Nov 2022 17:44:34 -0500
+Received: from node187-eu.n0c.com ([185.221.182.45])
+	by bizsmtp with ESMTP
+	id 09L7pTbpCuCE309L8p7NFI; Tue, 29 Nov 2022 17:44:34 -0500
+X-EN-OrigIP: 185.221.182.45
+X-EN-IMPSID: 09L7pTbpCuCE309L8p7NFI

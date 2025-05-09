@@ -1,0 +1,78 @@
+Return-Path: <billogarayadjolo@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 3BAiKqZITWTsphIA3R2AvA
+	(envelope-from <billogarayadjolo@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 29 Apr 2023 18:41:10 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Q7wGF5Wp5z34SJY9
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="Jdp7EMjq"
+X-N0C-MailScanner-eFa-Watermark: 1683391259.25848@B1tc18kVLIfNJf7cYYQbvQ
+X-N0C-MailScanner-eFa-From: billogarayadjolo@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: ssss
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: DE60D401B203.A3A1F
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ej1-f48.google.com ([209.85.218.48] [209.85.218.48])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id DE60D401B203
+	for <contact@fiidewgal.com>; Sat, 29 Apr 2023 18:40:25 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com DE60D401B203
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com DE60D401B203
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=Jdp7EMjq
+Received: by mail-ej1-f48.google.com with SMTP id a640c23a62f3a-94a34a0b9e2so152651466b.1
+        for <contact@fiidewgal.com>; Sat, 29 Apr 2023 09:40:25 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1682786425; x=1685378425;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=m00nDajTR5ZTkbFBJWGTubbn7K1u+s5TEGz8yuDoAHc=;
+        b=Jdp7EMjq44E9vbt7cFJoO7qYHaAq0w6/zduRYQP9GgrLIEkORwh+P1e1uJlmxE/jty
+         FfhK7wBvJpr+3mSXM6UD1qj7T1nX92A1plnWe6h3yBKk72lb8OtGtQyPbt4HhLABBGrp
+         8sHpfCCcp6XZyM/9hTGO+q5klXJCI419tQ7wGQLFpu0WJuSiqVeBszGGldbVuvvs1mCW
+         ItAo+k4ydiMjobWcbrK2LyDJsdu46pM8xZMAYRXsK75pvuhdaR5Xp/gG1wtZDxCqwwTH
+         rgLAECeyRTlhOCDehWjD2Mh0y8qzIoX3nhRhWQm4C4gh/TOgwyTb5z5fYuTqlMW+axI4
+         O10A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1682786425; x=1685378425;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=m00nDajTR5ZTkbFBJWGTubbn7K1u+s5TEGz8yuDoAHc=;
+        b=jKC+OhhgM1aW2fqYySAQgeHpfrH+cZp/mcP5rKP7eAzoWk0hInRgT/PRznyorJ1I6a
+         t8SGwkGpzWYrd02/8HZbK4X0xlKVwkVjE8T86yrhkjfYkHxzmPpD7wZzrMHR/I2elZg7
+         QfjGRtPElgbUxABRNpd4JOdiPpdzAnH0M8s494O3NLwnjbFsJTcMlCpyhpjyr91jwE31
+         dNW6Y9UjBkfaHsPWzqQBHdLrrkR3OBHLw/lIKpozPuSOgdn6rvU/BQNYNMOEiDh2Qi8F
+         BrKXaFWxISGA8YEn7BS/jv0WCFs8u0aveESUy6YuEr2WZXRw8obBjZhTAslC2FCz0I5d
+         r31A==
+X-Gm-Message-State: AC+VfDw/cEWjoduTNosGwocpIR0jF2UJh9zFv+BcsDh2xFjk8K5jjuaQ
+	0FHBenEVL3hCctZvBBMbSntqSOO4/mqVDs9aEsJmmbJJ
+X-Google-Smtp-Source: ACHHUZ57m3JmwoNuCXWrmnLYusyYtTP7HeQwwdvsX6vWJ14Diek4FCj0osAfxT6krfjGVzXHNWmzXUs6pX2wife8hBg=
+X-Received: by 2002:a17:907:60cb:b0:953:4db7:c30e with SMTP id
+ hv11-20020a17090760cb00b009534db7c30emr8480535ejc.76.1682786424871; Sat, 29
+ Apr 2023 09:40:24 -0700 (PDT)
+MIME-Version: 1.0
+From: Billo Garaya Djolo <billogarayadjolo@gmail.com>
+Date: Sat, 29 Apr 2023 16:40:14 +0000
+Message-ID: <CADp4XP9b+d56h6kXmp=V8kgv-qJg3xoke7QnzszHUoed=JvNzg@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000016603e05fa7c3f6b"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000016603e05fa7c3f6b
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+--00000000000016603e05fa7c3f6b
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"></div>
+
+--00000000000016603e05fa7c3f6b--

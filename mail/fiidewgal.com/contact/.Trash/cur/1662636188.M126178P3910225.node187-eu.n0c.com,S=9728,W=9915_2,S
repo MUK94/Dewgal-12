@@ -1,0 +1,187 @@
+Return-Path: <bruceherman742@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id UG52B5zQGWNRqjsA3R2AvA
+	(envelope-from <bruceherman742@gmail.com>)
+	for <contact@fiidewgal.com>; Thu, 08 Sep 2022 13:23:08 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4MNcDr01knz9HB0Z
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=fail reason="signature verification failed" (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="fdVtIdhg"
+X-N0C-MailScanner-eFa-Watermark: 1663240980.35853@A9mWnc9cBKYMZSW68XvE2w
+X-N0C-MailScanner-eFa-From: bruceherman742@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 4918D403F533.A377A
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-pf1-f169.google.com ([209.85.210.169] [209.85.210.169])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 4918D403F533
+	for <contact@fiidewgal.com>; Thu,  8 Sep 2022 13:22:26 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 4918D403F533
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 4918D403F533
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=fdVtIdhg
+Received: by mail-pf1-f169.google.com with SMTP id b23so1021513pfp.9
+        for <contact@fiidewgal.com>; Thu, 08 Sep 2022 04:22:26 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:sender:mime-version:from:to:cc
+         :subject:date;
+        bh=ifBC2kyYflowL1oE+Shm8bwxsoYpbfNpUORCUerYlgA=;
+        b=fdVtIdhgHmbmg0sNV1eJbD+2fIQC8/FU70uJ10EdET5Y4LEhmqsv44SkiXRho3DJy9
+         yPt+YzRoDfeGhU/Zos6p8uL1D/W78ejmiGswMyJQPYDNyZ+co7CuLNS1fRoyZzrIRdbx
+         4dGYTQh25h15iz84kUFtej53j+Ksu5P9YrIlH8dpzwQFeKkxl34K1xc8dQn5PwYZmWki
+         nRvbJSqqn9aT0mzLOjhSUFXcIm93Lz1PklNDH6q4ZaGn8jZZMdBRJmuD7NsPFH9AR+SR
+         8eZivCSBKEAg7AJmjh8DR18ENUU9ZORi6v22Z09hPOvZ3HyVZqhMxtyRCKplcujsvo1T
+         BIgA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:sender:mime-version
+         :x-gm-message-state:from:to:cc:subject:date;
+        bh=ifBC2kyYflowL1oE+Shm8bwxsoYpbfNpUORCUerYlgA=;
+        b=ahtCzWD7DEP9RWkcdvTp9ztTS+0Tm0myBBpSX7oeBLUn4Yr5T09wJeDw/hRx3ZqmGM
+         AS4Ndb0Rcy1HXwpXCfslglJeMKv9iP4PnqjJytUjAr8Yu/mnrPCB6s73pH4PK0MECDTh
+         7c5yAvaq6MH52wGlDyPuVIqUo9+fGIj7gDLcssvgTg8Gxl07UYInPVELbMXoT5LKV7sC
+         z0gzcfXmzT9FVfV1vSLEd1hwR5U3YHDbEGx+vIslXRza6Wy1ovffpYd26TtLSB0+wrWR
+         XHjOWchy7crphX3mGRkGhhyvj7txbyKuM/jmB1kWpJYR5TnMhvuGA7rsqADN1qeRQM+U
+         7PXQ==
+X-Gm-Message-State: ACgBeo3v98+KJ7r2NKyNxAe8c3FaEBxg78+K/C9LQaPmUt6yKEQk+bqx
+	JBrkzBeJ1x3TbTKTBQJOvysPW6ukPE43sRrctyaPNeHi
+X-Google-Smtp-Source: AA6agR5hvzWkJhSxn8rJH11F5R9z6pDexj7oH8v0ieGAzYLaQrhvSC+PL2YKoSQK5x2uY1pUQhHvCbv7RkMZEd0zabw=
+X-Received: by 2002:a62:82c9:0:b0:53e:92e7:74a4 with SMTP id
+ w192-20020a6282c9000000b0053e92e774a4mr5977129pfd.55.1662636144009; Thu, 08
+ Sep 2022 04:22:24 -0700 (PDT)
+Received: from 52669349336 named unknown by gmailapi.google.com with HTTPREST;
+ Thu, 8 Sep 2022 04:22:23 -0700
+Received: from 52669349336 named unknown by gmailapi.google.com with HTTPREST;
+ Thu, 8 Sep 2022 04:22:23 -0700
+MIME-Version: 1.0
+Sender: bruceherman742@gmail.com
+From: bruceherman742@gmail.com
+Date: Thu, 8 Sep 2022 04:22:23 -0700
+X-Google-Sender-Auth: C_hMohwMhtEOsIYYWNb6DA5tf4g
+Message-ID: <CAPaeSNMJzwUTGs4Rp=so1VP7CbL5GGnOf6qFq_vtbXCR1xCVmg@mail.gmail.com>
+Subject: Boost your website's Traffic & Ranking in an affordable price.
+To: Contact <contact@fiidewgal.com>
+Content-Type: multipart/alternative; boundary="000000000000c1262005e828a475"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000c1262005e828a475
+Content-Type: text/plain; charset="UTF-8"
+
+Hi,
+
+ I am Bruce
+
+
+
+ I went to your website www.fiidewgal.com and wanted to shoot you a quick
+note.
+
+
+
+If you want, I can help you get more targeted traffic to your website and
+make your site convert more visitors into guidance via Digital sale.
+
+
+
+Would you be open to seeing more brief info / quote for what I would like
+to accomplish?
+
+
+
+We look forward to hearing from you.
+[image: beacon]
+
+--000000000000c1262005e828a475
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;li=
+ne-height:normal;background-image:initial;background-position:initial;backg=
+round-size:initial;background-repeat:initial;background-origin:initial;back=
+ground-clip:initial;font-size:11pt;font-family:Calibri,sans-serif"><span la=
+ng=3D"EN-US" style=3D"font-size:12pt;font-family:&quot;Arial Narrow&quot;,s=
+ans-serif">Hi,=C2=A0 =C2=A0 =C2=A0 =C2=A0</span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;line-height:normal;=
+background-image:initial;background-position:initial;background-size:initia=
+l;background-repeat:initial;background-origin:initial;background-clip:initi=
+al;font-size:11pt;font-family:Calibri,sans-serif"><span lang=3D"EN-US" styl=
+e=3D"font-size:12pt;font-family:&quot;Arial Narrow&quot;,sans-serif">=C2=A0=
+I am Bruce</span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;line-height:normal;=
+background-image:initial;background-position:initial;background-size:initia=
+l;background-repeat:initial;background-origin:initial;background-clip:initi=
+al;font-size:11pt;font-family:Calibri,sans-serif"><span lang=3D"EN-US" styl=
+e=3D"font-size:12pt;font-family:&quot;Arial Narrow&quot;,sans-serif">=C2=A0=
+</span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;line-height:normal;=
+background-image:initial;background-position:initial;background-size:initia=
+l;background-repeat:initial;background-origin:initial;background-clip:initi=
+al;font-size:11pt;font-family:Calibri,sans-serif"><span lang=3D"EN-US" styl=
+e=3D"font-size:12pt;font-family:&quot;Arial Narrow&quot;,sans-serif">=C2=A0=
+I went to your website </span><span lang=3D"EN-US"><span style=3D"font-size=
+:12pt;font-family:&quot;Arial Narrow&quot;,sans-serif"><a href=3D"http://ww=
+w.fiidewgal.com">www.fiidewgal.com</a>
+and wanted to shoot you a quick note.</span></span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;line-height:normal;=
+background-image:initial;background-position:initial;background-size:initia=
+l;background-repeat:initial;background-origin:initial;background-clip:initi=
+al;font-size:11pt;font-family:Calibri,sans-serif"><span lang=3D"EN-US" styl=
+e=3D"font-size:12pt;font-family:&quot;Arial Narrow&quot;,sans-serif">=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 </span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;line-height:normal;=
+background-image:initial;background-position:initial;background-size:initia=
+l;background-repeat:initial;background-origin:initial;background-clip:initi=
+al;font-size:11pt;font-family:Calibri,sans-serif"><span lang=3D"EN-US" styl=
+e=3D"font-size:12pt;font-family:&quot;Arial Narrow&quot;,sans-serif">If you=
+ want, I can help you get
+more targeted traffic to your website and make your site convert more visit=
+ors
+into guidance via Digital sale.</span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;line-height:normal;=
+background-image:initial;background-position:initial;background-size:initia=
+l;background-repeat:initial;background-origin:initial;background-clip:initi=
+al;font-size:11pt;font-family:Calibri,sans-serif"><span lang=3D"EN-US" styl=
+e=3D"font-size:12pt;font-family:&quot;Arial Narrow&quot;,sans-serif">=C2=A0=
+</span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;line-height:normal;=
+background-image:initial;background-position:initial;background-size:initia=
+l;background-repeat:initial;background-origin:initial;background-clip:initi=
+al;font-size:11pt;font-family:Calibri,sans-serif"><span lang=3D"EN-US" styl=
+e=3D"font-size:12pt;font-family:&quot;Arial Narrow&quot;,sans-serif">Would =
+you be open to seeing
+more brief info / quote for what I would like to accomplish?</span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;line-height:normal;=
+background-image:initial;background-position:initial;background-size:initia=
+l;background-repeat:initial;background-origin:initial;background-clip:initi=
+al;font-size:11pt;font-family:Calibri,sans-serif"><span lang=3D"EN-US" styl=
+e=3D"font-size:12pt;font-family:&quot;Arial Narrow&quot;,sans-serif">=C2=A0=
+</span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;line-height:normal;=
+background-image:initial;background-position:initial;background-size:initia=
+l;background-repeat:initial;background-origin:initial;background-clip:initi=
+al;font-size:11pt;font-family:Calibri,sans-serif"><span lang=3D"EN-US" styl=
+e=3D"font-size:12pt;font-family:&quot;Arial Narrow&quot;,sans-serif">We loo=
+k forward to hearing from
+you.</span></p></div>
+<img src=3D"https://dl.efa-project.org/static/1x1spacer.gif" width=3D"1" he=
+ight=3D"1" alt=3D"Web Bug from https://bruceherman742-dot-yamm-track.appspo=
+t.com/2Muy3Wl7UZYyIo6Yoh-qNbwDwMxL-FkPaTC8kZs20oFaLMdYcgwEb9rWbCwFmJ-WNX362=
+I9yTloQIv74P0PeKX9WcmXQbP6TdbtTnq0mas3akQK7RTkjF_PJmL49-TeTyV06uy9VOQzRuWQ-=
+zuBYIN2TltYUlTg" />
+
+--000000000000c1262005e828a475--

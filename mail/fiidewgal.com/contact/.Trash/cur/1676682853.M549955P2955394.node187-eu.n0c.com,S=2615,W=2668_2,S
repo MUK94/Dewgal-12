@@ -1,0 +1,53 @@
+Return-Path: <contact@fiidewgal.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id ImezIGUm8GOCGC0A3R2AvA
+	(envelope-from <contact@fiidewgal.com>)
+	for <contact@fiidewgal.com>; Sat, 18 Feb 2023 02:14:13 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4PJW1075m3z34SDmk
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="DVSAMTkC"
+X-N0C-MailScanner-eFa-Watermark: 1677287648.63659@+d1+Br/LdN7RyrmAAYG5rw
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: AB4AF401AEF6.A9485
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id AB4AF401AEF6
+	for <contact@fiidewgal.com>; Sat, 18 Feb 2023 02:14:07 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com AB4AF401AEF6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com AB4AF401AEF6
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1676682847;
+	bh=1B3VgQ2VoW0nrC3e3P3Vnm9Q96L6zy3pQvwooL+jZbg=;
+	h=Date:Subject:From:To:From;
+	b=DVSAMTkCTA6q1BUEUsE4KRmILNbZ8gwdN8efgl7SFygjxx0bK/7KcZ6Y2JlVwyhk8
+	 GztX1kCyE3PmEFQxzEcBGPHAS0CiluKGZ5M5Coi+p3f1tpE6/icHOlfwcwYGnDJIgz
+	 5/qsKHEitao+pNM+Ch1LrKEs0QPDjQYXL5OrBRNM=
+Message-ID: <d6110b50fb26cc20549b87d0bce6811f@fiidewgal.com>
+Date: Sat, 18 Feb 2023 02:14:07 +0100
+Subject: Professional developers for business
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: contact@fiidewgal.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+Tired hiring and training developers?=20
+Try https://iconicompany.com=20
+=20
+Professioal developers for your Business.=20
+Stop hiring full-time developers! Hire independent contractors instead!=20
+=20
+For businesses, the availability of especially skilled=20
+developers helps a company to respond to economic instability,=20
+boosting their workforce when they need it most and making=20
+it easier to access hard-to-find skills
+

@@ -1,0 +1,77 @@
+Return-Path: <bahsantou224@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id IOInJowAoGP3Ew8A3R2AvA
+	(envelope-from <bahsantou224@gmail.com>)
+	for <contact@fiidewgal.com>; Mon, 19 Dec 2022 07:11:24 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Nb8V43grbz34nwbq
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="iDWUdCO3"
+X-N0C-MailScanner-eFa-Watermark: 1672035082.22224@s3Ckp/L7ezMN62RCnxkPKA
+X-N0C-MailScanner-eFa-From: bahsantou224@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: CEE96400B479.A2EC8
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-lf1-f42.google.com ([209.85.167.42] [209.85.167.42])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id CEE96400B479
+	for <contact@fiidewgal.com>; Mon, 19 Dec 2022 07:10:49 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com CEE96400B479
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com CEE96400B479
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=iDWUdCO3
+Received: by mail-lf1-f42.google.com with SMTP id b3so12193755lfv.2
+        for <contact@fiidewgal.com>; Sun, 18 Dec 2022 22:10:49 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=V6pkgSQicLlqy1bbIQ9jMz9zRrpuOvqleYaPqSwfj78=;
+        b=iDWUdCO3n954nLbqrxsZysMI2Q02qTzjzfMVgXU8ad2moT7f6awrfuJ/GBfZrfYPAN
+         uOZ0ko4xlRMdgac9GwEGxVdukB12+n3nhaZueCColEWwY8slfFKPLLrKAcif/3BT1gBW
+         UoZayUmLM/aGR9mLjEr+EuoJMhkkpKrRmxFXlr681UAXCDa1ic4/6QkR3mtTdZjhzqas
+         HJSZlZ3nzVCsNhf9/SmIWSzK/UpI3HCPEQrS53MeWPAX/ssk2dmbqzcQRjhWjNa0cQOK
+         OaKbajAnXb/IvbVUb7F5IbGHwzGfiF5V5+j1QFq1Gi8foTkrtFf/ooMRMr4JQLToeGx1
+         h04Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=V6pkgSQicLlqy1bbIQ9jMz9zRrpuOvqleYaPqSwfj78=;
+        b=UeDpNd8za/r/8n70qZ5h+VyV1gTzykNuj7ptoTXm18AVqGsR+d+9VtC4iVT2HzTeXr
+         aHInmJLvRIQ+Qk2I0vmcE9JNTy0fOHt4rnxred4Q7DKrjEkfPjlvk7XvetVj6k5NeT2F
+         XCJ63xBpw7yUFDTZqfD79odwkbUPoJUPqIwiaUxaxhC1hJeak8btN47fAZRV2fKQD7UW
+         kyL1rmcV6wZsfZ4jxaAnlfSG1Z4oxlNaOaPRJ5UQGKLll3jephuJNQH9h1szVxhP0S6E
+         I9F5kFJg9qu5gkJPmnpO84JPXipP2pUwVmqxc1Ozaxna0CEWrWx0uteJhdn35SwzksX1
+         7WXw==
+X-Gm-Message-State: ANoB5plJ1MeM448DztLfxHt19RBJcWj5CfopW/pK1tnYQjvIgAHLxQTP
+	y8sLp0cfz4mcNob+hL/+aEMWKhI62L8W9Iwz1g6XsUur
+X-Google-Smtp-Source: AA0mqf5ke41QHCP/dmkt3fB2RjzQGfxTPcBeFdLXUv0tzA82uQ5/HM4scqulhcPaokn6bTbUwzALNJXjm8/aWMww2P4=
+X-Received: by 2002:a05:6512:13a5:b0:4ad:70f0:c7c with SMTP id
+ p37-20020a05651213a500b004ad70f00c7cmr34259897lfa.190.1671430246542; Sun, 18
+ Dec 2022 22:10:46 -0800 (PST)
+MIME-Version: 1.0
+From: Mouctar Bah <bahsantou224@gmail.com>
+Date: Mon, 19 Dec 2022 06:10:29 +0000
+Message-ID: <CAC9gxBnK4qmP_Uc_h9a3EzA+R4h_BSUv-_OqQExUAozQaQeUZw@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000001cb20d05f0282e26"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000001cb20d05f0282e26
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+--0000000000001cb20d05f0282e26
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"></div>
+
+--0000000000001cb20d05f0282e26--

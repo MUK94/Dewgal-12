@@ -1,0 +1,80 @@
+Return-Path: <boubacarsiddysow93@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id sQWjMH4+tGMYRxAA3R2AvA
+	(envelope-from <boubacarsiddysow93@gmail.com>)
+	for <contact@fiidewgal.com>; Tue, 03 Jan 2023 15:41:02 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Nmb5B0D8Zz3F9k
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="cOMRsC/1"
+X-N0C-MailScanner-eFa-Watermark: 1673361659.5974@2KpVYEo8ZNhA9HHZLkjGkQ
+X-N0C-MailScanner-eFa-From: boubacarsiddysow93@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 1983C40049ED.A218E
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ed1-f46.google.com ([209.85.208.46] [209.85.208.46])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 1983C40049ED
+	for <contact@fiidewgal.com>; Tue,  3 Jan 2023 15:40:27 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 1983C40049ED
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 1983C40049ED
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=cOMRsC/1
+Received: by mail-ed1-f46.google.com with SMTP id c17so43998024edj.13
+        for <contact@fiidewgal.com>; Tue, 03 Jan 2023 06:40:27 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=G5fHWKkeOKp6eGwN81biH4D65FOPSPFLzIcVMAJ9NB4=;
+        b=cOMRsC/1g49n9i/W8UobRe3zb+siUNrsBddMnmbvX5CVDzzNzJJDn3SnH4e1X13j++
+         QmP3fjfZGmf+U7tVuZ0NZ7kFkzkG+671Ee+MznHqu7c9X8HByhLG1UnA1moPt3Mtgvxu
+         FtHCqrHzK5E5aQt5dLIbNVsw70wuv13ykKyU7XMkL11jxa1QAfo5Y++HATKzsB/yCNkg
+         qVE0mTEsko6xvYG7/caxLw4ePlVknb2dTQ/xG3risNZsH+AbWhtt4FltDXNZC2TQKrfx
+         NRaA4aRiev8TjqKyiVDuK801DeHIEyEMcjAyTBkLSJZ6xHlfhbMkhZ6ugCSrM8AdIMPe
+         boBg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=G5fHWKkeOKp6eGwN81biH4D65FOPSPFLzIcVMAJ9NB4=;
+        b=rMftDgTJYrB5L5+Z3VYVJYsCWnCJTDTpAoKHJ27ujMMfTAhZGGoaXL8YEQAfvhzgMq
+         NYnE9EtwQcrjpTS6cJJediLUGQq/rHHiSU31QxsNyl6IVnmqliIoyBWGEjuNzhd+frjg
+         77q64Nqix3Gqv7SVrZKAdGXByUILl8E6DvU3MabOxK/xpr+dR0k858PC0rMEteDjnqoI
+         2ZXgl8tzRvTdNXVwgMS2LCir3vf1ShtybAQeCqsoDlG6JoE2m4JSnoRgZPFtSjm2ezED
+         ATSKbCti+7bvp98+IOAA8SDFOZ8gmb07IhCmmaa39rXrWXWpEojMyHTqcJ0mDXCd7/Z1
+         hvYA==
+X-Gm-Message-State: AFqh2ko/nssoBDCgaX3EOdghsrq17evEoYN9EghF6dlx51rQJSVHSoV3
+	X5w5OEfWpcE05N24ZdOZKQ0Lw810kiayBxGItHH8QZt9
+X-Google-Smtp-Source: AMrXdXuXfXgfHtW1CWLyWrJejolZ6dMCCBmLBbA7pw1dVPBB9lDZDUGq93d1GY8Kyz9hNAsuHJXg1smis179iaVVr+Q=
+X-Received: by 2002:aa7:cb90:0:b0:48e:d168:8e21 with SMTP id
+ r16-20020aa7cb90000000b0048ed1688e21mr155464edt.317.1672756826315; Tue, 03
+ Jan 2023 06:40:26 -0800 (PST)
+MIME-Version: 1.0
+From: Boubacar Siddy Sow <boubacarsiddysow93@gmail.com>
+Date: Tue, 3 Jan 2023 14:40:14 +0000
+Message-ID: <CAMcX2y+d5COB6c1tgxiomfcZheB0pSBjB4xcwxKVXXTipa8sfw@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000006da1c505f15d0c5b"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000006da1c505f15d0c5b
+Content-Type: text/plain; charset="UTF-8"
+
+Bonjour ce comment sava ok je voudrais savoir comment contacter le q,pe
+administratifs
+
+--0000000000006da1c505f15d0c5b
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Bonjour ce comment sava ok je voudrais savoir comment con=
+tacter le q,pe administratifs=C2=A0</div>
+
+--0000000000006da1c505f15d0c5b--

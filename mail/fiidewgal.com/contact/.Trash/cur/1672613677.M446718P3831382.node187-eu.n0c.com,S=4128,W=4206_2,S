@@ -1,0 +1,78 @@
+Return-Path: <bailothiathiasow@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id kHSHGi0PsmNWdjoA3R2AvA
+	(envelope-from <bailothiathiasow@gmail.com>)
+	for <contact@fiidewgal.com>; Sun, 01 Jan 2023 23:54:37 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NlZ7d2Cj9zQSV3s
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="peWDR3pp"
+X-N0C-MailScanner-eFa-Watermark: 1673218475.05418@9yM2IndqWOVxCUa6eeS1ww
+X-N0C-MailScanner-eFa-From: bailothiathiasow@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: F30D64008347.A05DF
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-yw1-f177.google.com ([209.85.128.177] [209.85.128.177])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id F30D64008347
+	for <contact@fiidewgal.com>; Sun,  1 Jan 2023 23:54:03 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com F30D64008347
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com F30D64008347
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=peWDR3pp
+Received: by mail-yw1-f177.google.com with SMTP id 00721157ae682-45ef306bd74so376030737b3.2
+        for <contact@fiidewgal.com>; Sun, 01 Jan 2023 14:54:02 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=Edp6GS/qPxgfhZg8BSNbz1+ydlZUBjG2NBAjUL9BlCM=;
+        b=peWDR3ppDSz65/upM2NjvEKD+M6K3dYO0CJeiA61ee9gqd8VqPP6UnZ2eq9d9YOcFi
+         7ERLkWX3O4pL8kdVmBlyIebw6uOojADRVFbr/lx4MBBDcxdilVETWTld9RWE0NPSu9/f
+         veTzsmpp1xgcDJSF72dzEFZDl5LN8px2cbsBCrDUkZ+PP493Hp82SMKIqGgLhMRWvWj3
+         Xb6VYpcJnU4YwW2fvkG/1YZ5ngu2jL7y0o185pDYFlwDfSvm5NI1P3V7r8lsfzWQcPXE
+         ckb8WWytVi/9UVgEsxsUZcojv8W22ErfzRag6Qa5rN6VQpKsowi7Pgu54LHINSIjBVJy
+         6vng==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=Edp6GS/qPxgfhZg8BSNbz1+ydlZUBjG2NBAjUL9BlCM=;
+        b=hp5ID6MmGInT/qtgToVbUO559pLo1GAnGOgJoDhg5rYMOjRxtviyJH97C2KA1n+pPO
+         CLYY2EdlQZBnrRcfzLb3Q6of4I9r6750o9EVosgBk2igEEz2F00mUzhDnSPyseZ+aRYA
+         GBxq63AyiiAXBDjL9vhofMs/viNFGUfDT8PugY89EVKnx7ZaywkPGzLN3hlqKECNMR2O
+         zYQInTMh2uUfmYlUY5nhICoRfYyfTWfROTeFIer0xxx6kWhyTlw/3GXwdvtUwvHLeHYU
+         GpVR7YM2CsRsV2zoXqp8TclZrJT5jCWyQ4TKOtnI7LqFElTLMhQDwLMuAt6mKECtr5k8
+         JpvA==
+X-Gm-Message-State: AFqh2kpCWfiyA99hCQ2CPTxfQp+QVgHvJByUWcq+nroJZntlIA7Jjx58
+	8wMEDxFr3xtEEFJYrJ4jqT6UdwM9JSB9UsNPMGdaOKcv
+X-Google-Smtp-Source: AMrXdXsT/SvSKLENkWpoRb7+7YmYaCH1C40gzuQswkEWNEnpvjUfWJ8zfkG+ZIV/1dFHhVhQJbOn+PBlbg1795OA35Q=
+X-Received: by 2002:a0d:dbcd:0:b0:471:d029:3b0 with SMTP id
+ d196-20020a0ddbcd000000b00471d02903b0mr3990818ywe.443.1672613641415; Sun, 01
+ Jan 2023 14:54:01 -0800 (PST)
+MIME-Version: 1.0
+From: Bailothiathia Sow <bailothiathiasow@gmail.com>
+Date: Sun, 1 Jan 2023 22:53:48 +0000
+Message-ID: <CAL=mVp4UfJyZtWux5JaS3qipmTxBt7bRhdGZccouaLcG_PDBvg@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000f16e1405f13bb57e"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000f16e1405f13bb57e
+Content-Type: text/plain; charset="UTF-8"
+
+Bonjour
+
+--000000000000f16e1405f13bb57e
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Bonjour=C2=A0</div>
+
+--000000000000f16e1405f13bb57e--

@@ -1,0 +1,80 @@
+Return-Path: <sorylyibrahima@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id k1Q7EFq2VWSD8igA3R2AvA
+	(envelope-from <sorylyibrahima@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 06 May 2023 04:07:22 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4QCrXn05HBz34SDmq
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="bxEpdZJC"
+X-N0C-MailScanner-eFa-Watermark: 1683943627.37267@ZGbfUx4qh+oFYn+ADMmgnA
+X-N0C-MailScanner-eFa-From: sorylyibrahima@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: s
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: D5E7D400B338.A0575
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-qt1-f182.google.com ([209.85.160.182] [209.85.160.182])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id D5E7D400B338
+	for <contact@fiidewgal.com>; Sat,  6 May 2023 04:06:33 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com D5E7D400B338
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com D5E7D400B338
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=bxEpdZJC
+Received: by mail-qt1-f182.google.com with SMTP id d75a77b69052e-3ef31206cbdso13140251cf.0
+        for <contact@fiidewgal.com>; Fri, 05 May 2023 19:06:33 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1683338792; x=1685930792;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=IsOWXI5+Y0XNUxsNvgEe3hYvC4DTbSnAh9Z1CQdFlWI=;
+        b=bxEpdZJCvUkaV3AzkYruhMtdjTjRXwc1+2pr07R2qgx3du1+43x+Tw2iDx7G+/CnlZ
+         jpDxJvjJUEaR6er+T0pQdze/tNqBcIGIWiXnJVhVL8u2Yno7sX8p/8jZT5E5lm9d8JPq
+         /Hq5iUx+MMFRAlUp6/BIJBdDfLuOYR2qzeCBZ+3OuDX3brf7834YGKHibbiz3GWVwUc2
+         3Du5jLPhn7XF2pOU3p4F0qAqPHjsY+5t+2IRbDHMCpkEUhoZTZczkvj8tNmx3Nv+TXJr
+         PXQMYfYW1ruBBa3L8Z1ELbCNQQtC4rvAp51wSLEcd8V2uGJ7oWZRBw3qmjGY1sWhmNZz
+         g61Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1683338792; x=1685930792;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=IsOWXI5+Y0XNUxsNvgEe3hYvC4DTbSnAh9Z1CQdFlWI=;
+        b=kLKm3kREnhMpRiqp8dGnwKxef3tjwoosOzXtjyiwt6mHtC8D3YijS/Iib8XIGH1yTq
+         5qsltO6qkJTA/5+8K7oSMSZeRHPdUurrcs/S/YHDnY9CKRap1W2JLJczifABxwVV25kx
+         0SlkhTtylgYbYt2+6h214lWntW7xzdaNhJcaEV/Yx/rZvSh/g1Lh5ZioJ14PSlmCJePD
+         bFEwVcJEqTV5CDl4zRcswx464Ler2KYCB/XMcfUq/8Uk1DdifIdWSVZW4wWVC2XIlbJg
+         uE3AiAqndg5++fb9FyLvM5D4ki+53Xxu5eCJJ3NIQChv7B9SNI3464QFdpfMBMZq2gcb
+         9crQ==
+X-Gm-Message-State: AC+VfDweEn7PCdXfPI/GSb8v5cUG3N5BcRn98dGnEBYh7iDKsq7PsE0d
+	rIGFcnOR9RghPBWPOq2GI36yLgCVf0WKDXhM4lEBxfxEZTA=
+X-Google-Smtp-Source: ACHHUZ6mAp746Z8kG5qw0yqLwD9gDidqwK1tHi/d1mPeGzbtcPBvyffDLC2hx3SW9YDXvVCJZTy/xS8AWcX33OjR+us=
+X-Received: by 2002:ac8:570a:0:b0:3e1:7bb5:f0c5 with SMTP id
+ 10-20020ac8570a000000b003e17bb5f0c5mr5220344qtw.58.1683338792352; Fri, 05 May
+ 2023 19:06:32 -0700 (PDT)
+MIME-Version: 1.0
+From: Ibrahima Sory ly <sorylyibrahima@gmail.com>
+Date: Sat, 6 May 2023 04:06:20 +0200
+Message-ID: <CADfRB9txUyH5arq6rknqBaT2gX3PUSDFwQ9TTSPvAdt_n1vemw@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000c13eee05fafcda83"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000c13eee05fafcda83
+Content-Type: text/plain; charset="UTF-8"
+
+Salut free moi Jesus interese votre programme la
+
+--000000000000c13eee05fafcda83
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Salut free moi Jesus interese votre programme la=C2=A0</d=
+iv>
+
+--000000000000c13eee05fafcda83--

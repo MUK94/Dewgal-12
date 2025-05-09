@@ -1,0 +1,105 @@
+Return-Path: <diallohadiatou107@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id MlxIL+/M6mPDejIA3R2AvA
+	(envelope-from <diallohadiatou107@gmail.com>)
+	for <contact@fiidewgal.com>; Tue, 14 Feb 2023 00:51:11 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4PG1M24mspz34SDmg
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="COgfxpp/"
+X-N0C-MailScanner-eFa-Watermark: 1676937066.8333@hhAu7OmpqcUvSCt3z0iyfg
+X-N0C-MailScanner-eFa-From: diallohadiatou107@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 55D36401AEF6.A2134
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-pg1-f171.google.com ([209.85.215.171] [209.85.215.171])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 55D36401AEF6
+	for <contact@fiidewgal.com>; Tue, 14 Feb 2023 00:50:33 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 55D36401AEF6
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 55D36401AEF6
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=COgfxpp/
+Received: by mail-pg1-f171.google.com with SMTP id u75so9168483pgc.10
+        for <contact@fiidewgal.com>; Mon, 13 Feb 2023 15:50:33 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=TiTYcBUnm/0m+DbvXiv2DNNO6vlAmMqYgeSwaYcI1es=;
+        b=COgfxpp/gXnqcKKgRMndEZpVD6u4tXAikfL7UinZOFltRd2FlBl8USZZuKVm5/RtxE
+         7NxTq3Mldv6xz0EwAHXhJJHCuLRhlWVgHzp5hspi+6aLfUM6ifqYJoEZ2jUJsFAy03Zt
+         z2rkNaA2oRACLClNC0oKEF6+NcH9p+ch8tqAL2VP2iG60S2amyF+2vtVgACi5OEOhAZw
+         gJZdLDHnwHcdaR2XZLOw8zeoE6gBWnShkp0PmOBNRxpnkbcDkV5OlTz48+8gf12OrN5Y
+         T/mvS3sWL9FVl2Yb9EBYrCdYKsveNs+l0nR77lnpBZqQC6pDhtt7ld+TuoMQvP5Ungql
+         fnJQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=TiTYcBUnm/0m+DbvXiv2DNNO6vlAmMqYgeSwaYcI1es=;
+        b=QevflPoU3okJqisVfG0kk8OLXF1daXB+cKZzcTGauqsVUVlaBJGsxeoMJBtn/GjxcS
+         3X/gVyUKwgjCeeOD75qAEwyZX3+Rjj9jpqlIdpkGm0FSyy5g9aQeIdAMYbKNM+H2B51q
+         NCm0z6lJux2WA4Visad5RqqiMT2t48Q5/oEXbqLjhiMmPv7GTlNS3dGzPuLIEXO0+1po
+         SZ2Dx1o3HZ1W4xLXnQi0Rp6Az2rj/TnmS6nR0R0p9VB3t3XUQAGL5mH/tKQo7QRUKsxV
+         Kub5TfiWbrDya6srEJgD9BD5mjFwwpLhbZwKYfynZQCvO9+9ST+SPep9BxKop6zgH46C
+         96tg==
+X-Gm-Message-State: AO0yUKXyEKyHbniwNSzH6Nz46uQR8m0AIpjUz7bprRxAlzsrV1VfVHOy
+	Jb/JtjkqstrOiPji6m7m7k1hp4zPCM9jibdJxf3hzO0W
+X-Google-Smtp-Source: AK7set+vSBh1ElxzXi2IhKwnZ8YXZ/H6N/90XtSnOUJ6Zl/9ybxNqg91dqHaSxp+DW+N1ukqoZbe6Cz9ocgLgsOXz58=
+X-Received: by 2002:a63:be48:0:b0:4fb:2c72:9168 with SMTP id
+ g8-20020a63be48000000b004fb2c729168mr4056398pgo.85.1676332231476; Mon, 13 Feb
+ 2023 15:50:31 -0800 (PST)
+MIME-Version: 1.0
+References: <a7170c8dd450e88de831ec3843989920@fiidewgal.com>
+In-Reply-To: <a7170c8dd450e88de831ec3843989920@fiidewgal.com>
+From: Hadiatou Diallo <diallohadiatou107@gmail.com>
+Date: Mon, 13 Feb 2023 23:50:19 +0000
+Message-ID: <CAFUugfc0E4==3SX6LnTLGia8YBipO_jn8a=RsRO6bbMZEJA8mA@mail.gmail.com>
+Subject: =?UTF-8?Q?Re=3A_Vous_avez_une_nouvelle_demande_d=27int=C3=A9r=C3=AAt?=
+To: =?UTF-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>
+Content-Type: multipart/alternative; boundary="0000000000002ecaa305f49d83af"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000002ecaa305f49d83af
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Vous =C3=AAtes bienvenus
+
+On Mon, 13 Feb 2023, 17:56 Ne r=C3=A9pondez pas, <contact@fiidewgal.com> wr=
+ote:
+
+> Bonjour Hadiatou Bah,
+>
+> Oumar Barry a manifest=C3=A9 son int=C3=A9r=C3=AAt pour vous.
+>
+> Veuillez contacter l'=C3=A9quipe administrative si vous avez d'autres que=
+stions.
+>
+> Merci,
+>
+> Ne r=C3=A9pondez pas
+>
+
+--0000000000002ecaa305f49d83af
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Vous =C3=AAtes bienvenus</div><br><div class=3D"gmail_quo=
+te"><div dir=3D"ltr" class=3D"gmail_attr">On Mon, 13 Feb 2023, 17:56 Ne r=
+=C3=A9pondez pas, &lt;<a href=3D"mailto:contact@fiidewgal.com">contact@fiid=
+ewgal.com</a>&gt; wrote:<br></div><blockquote class=3D"gmail_quote" style=
+=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><p>Bonjo=
+ur Hadiatou Bah,</p><p>Oumar Barry a manifest=C3=A9 son int=C3=A9r=C3=AAt p=
+our vous.</p><p>Veuillez contacter l&#39;=C3=A9quipe administrative si vous=
+ avez d&#39;autres questions.</p><p>Merci,</p><p>Ne r=C3=A9pondez pas</p>
+
+</blockquote></div>
+
+--0000000000002ecaa305f49d83af--

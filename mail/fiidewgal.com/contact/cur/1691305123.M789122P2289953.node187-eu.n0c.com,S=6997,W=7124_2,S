@@ -1,0 +1,127 @@
+Return-Path: <iboubarry01@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id KBz2LqNEz2Qh8SIA3R2AvA
+	(envelope-from <iboubarry01@gmail.com>)
+	for <contact@fiidewgal.com>; Sun, 06 Aug 2023 08:58:43 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4RJVfW4Hjkz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="scB5q2jP"
+X-N0C-MailScanner-eFa-Watermark: 1691909801.04792@DEbPziXhJMdopG9BPF2Tkg
+X-N0C-MailScanner-eFa-From: iboubarry01@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: s
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 0CDB94004A16.A74F7
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-pj1-f54.google.com ([209.85.216.54] [209.85.216.54])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 0CDB94004A16
+	for <contact@fiidewgal.com>; Sun,  6 Aug 2023 08:55:10 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 0CDB94004A16
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 0CDB94004A16
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=scB5q2jP
+Received: by mail-pj1-f54.google.com with SMTP id 98e67ed59e1d1-268128a0105so2311051a91.3
+        for <contact@fiidewgal.com>; Sat, 05 Aug 2023 23:55:09 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1691304908; x=1691909708;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=mWTSZlhfOi9xJJAOowcEYk6O4BpY84rbhQ1texUbiIw=;
+        b=scB5q2jPy1rTL5HzaQtR/sMTBegHYDDkzWpj+j51BrKEUzBJ5lR6I+aD4KQx39e51k
+         i6fePt0DXT24+fus1+VGeo8GJI0Qg6XQLdBBklFJSgnX+tZ+Y3IRrGY9XMvXolk2hdQb
+         k3W7qfQCMqlhFN48lxADYK9vCEQC45rcOyMbTfZYI2KrxBlFZB/9zIbJzrnvjuR2ODQ3
+         dLsVwlSoD3GDTiWLqEPT1J9Mx7WR/2Mzo+M4YKNQlUfr03sm4Tl8QDx5eCc0DEET2ofQ
+         PINXDR7W6T8h36Z2XgRMIwYAf93lmR58iKk9bYO1vxTKqHE/kChTk0eQzJX50iEK1/X9
+         Z49A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1691304908; x=1691909708;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=mWTSZlhfOi9xJJAOowcEYk6O4BpY84rbhQ1texUbiIw=;
+        b=HkEYQ15eJrsGbLUJtvXjajDJkgQsbQ3R1NXJFQJ/2RKQFFDPYXai1p7zJVrXZAwpzq
+         7HgXqfKe2OCHijjyTpX9sVXComsPPHfFM6LN+gQo/Vy8sk9dD7J3S8lFvRVY8pklWPXe
+         2fXO8I2bRywwmdfQxh5HDrD0+R+VfFfJxrPBBmTieHuR8f8Fwy6MdRXWcmchLHiH1Td2
+         9KXBF9lI0btEROOM3Bmm8l79VIt+9ewlWOSX9ABuvEJPFzCqTOlTECIy5ASb1sMdiORw
+         z7QpzndiMYpaUx2tzMiBw6fPyYr2+G/qvN8jTdahWG/9abI6slXK+Sqq/extsCVQ0DdA
+         kh0w==
+X-Gm-Message-State: AOJu0YwDU8yCTdVJA4nTBhI7OmzX2K22aKynJvekizDtEafg2IBj2Iaa
+	LICumCnWCZXCCx/m5J77ZKVLJirsjr3kWolmf1y3QvKk
+X-Google-Smtp-Source: AGHT+IH7ArfQtMIIBhkQs+XL56F+c9qgU1iCI1X7fzHtgJHjaBhoJtYp3fPjW6EWN0OE29AN3KvrFoPBwYdLPYb+LiM=
+X-Received: by 2002:a17:90a:eac1:b0:263:9816:fe0f with SMTP id
+ ev1-20020a17090aeac100b002639816fe0fmr6215277pjb.15.1691304908000; Sat, 05
+ Aug 2023 23:55:08 -0700 (PDT)
+MIME-Version: 1.0
+References: <0020e3694422b87fa6500625e0c475ad@fiidewgal.com>
+In-Reply-To: <0020e3694422b87fa6500625e0c475ad@fiidewgal.com>
+From: Ibrahima Sory Barry <iboubarry01@gmail.com>
+Date: Sun, 6 Aug 2023 06:54:56 +0000
+Message-ID: <CAPCeBed6h+G-CgQWU1NX+cKDM1e8YSqpAJ_LBk3SON7yABkj4w@mail.gmail.com>
+Subject: Re: Rappel avant la suppression de votre compte sans photo .
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000003fa39a06023b9ce6"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000003fa39a06023b9ce6
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour je veux cr=C3=A9er mon compte mais je ne vois pas la grille =C3=A0 =
+remplir
+
+Le mer. 1 f=C3=A9vr. 2023 =C3=A0 09:48, <contact@fiidewgal.com> a =C3=A9cri=
+t :
+
+> Salam Aleykoum ,
+> Nous sommes tr=C3=A8s heureux de vous avoir parmi nos
+> membres dans la plateforme et nous souhaitons que
+> Vous y rester.C=E2=80=99est pourquoi nous vous prions de
+> mettre =C3=A0 jour votre profil en mettant correctement
+> Votre date de naissance , votre =C3=A9tat civil ;votre photo
+> et votre numero de telephone avec l'indicatif
+> Si cela est compliqu=C3=A9 pour vous faites nous parvenir
+> votre num=C3=A9ro de membre qui est sur votre profil public
+> avec vos informations cit=C3=A9es ci dessus .
+> Vous pouvez =C3=A9galement nous faire parvenir votre numero
+> de membre avec  votre photo et num=C3=A9ro de telephone sur
+> notre WhatsApp 001 646 752 9115 ou juste scanner le QR Code ci)
+> joint ci-dessous .Sans votre photo , le profil sera d=C3=A9sactiv=C3=A9.
+> Si votre compte n'est pas confirmer faites nous parvenir vos
+> informations sur whatsApp pour vous inscrire.
+> Merci pour votre comprehension!
+
+--0000000000003fa39a06023b9ce6
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Bonjour je veux cr=C3=A9er mon compte mais je ne vois pas=
+ la grille =C3=A0 remplir=C2=A0</div><br><div class=3D"gmail_quote"><div di=
+r=3D"ltr" class=3D"gmail_attr">Le mer. 1 f=C3=A9vr. 2023 =C3=A0 09:48,  &lt=
+;<a href=3D"mailto:contact@fiidewgal.com">contact@fiidewgal.com</a>&gt; a =
+=C3=A9crit=C2=A0:<br></div><blockquote class=3D"gmail_quote" style=3D"margi=
+n:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">Salam Aleykoum ,<=
+br>
+Nous sommes tr=C3=A8s heureux de vous avoir parmi nos<br>
+membres dans la plateforme et nous souhaitons que<br>
+Vous y rester.C=E2=80=99est pourquoi nous vous prions de<br>
+mettre =C3=A0 jour votre profil en mettant correctement<br>
+Votre date de naissance , votre =C3=A9tat civil ;votre photo<br>
+et votre numero de telephone avec l&#39;indicatif<br>
+Si cela est compliqu=C3=A9 pour vous faites nous parvenir<br>
+votre num=C3=A9ro de membre qui est sur votre profil public<br>
+avec vos informations cit=C3=A9es ci dessus .<br>
+Vous pouvez =C3=A9galement nous faire parvenir votre numero<br>
+de membre avec=C2=A0 votre photo et num=C3=A9ro de telephone sur<br>
+notre WhatsApp 001 646 752 9115 ou juste scanner le QR Code ci)<br>
+joint ci-dessous .Sans votre photo , le profil sera d=C3=A9sactiv=C3=A9.<br=
+>
+Si votre compte n&#39;est pas confirmer faites nous parvenir vos<br>
+informations sur whatsApp pour vous inscrire.<br>
+Merci pour votre comprehension!</blockquote></div>
+
+--0000000000003fa39a06023b9ce6--

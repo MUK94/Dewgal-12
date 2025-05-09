@@ -1,0 +1,85 @@
+Return-Path: <abdiale@yahoo.fr>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id N/3ZFfvkgmOLUj4A3R2AvA
+	(envelope-from <abdiale@yahoo.fr>)
+	for <contact@fiidewgal.com>; Sun, 27 Nov 2022 05:18:03 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NKb1Q2Vjbz34SDmf
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=yahoo.fr header.i=@yahoo.fr header.b="HxPpQCrH"
+X-N0C-MailScanner-eFa-Watermark: 1670127476.34041@glwvMdUL28wg+/mEh6sBzw
+X-N0C-MailScanner-eFa-From: abdiale@yahoo.fr
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 1EC564048EC8.A6966
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from sonic311-32.consmr.mail.ir2.yahoo.com ([77.238.176.164] [77.238.176.164])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 1EC564048EC8
+	for <contact@fiidewgal.com>; Sun, 27 Nov 2022 05:17:55 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 1EC564048EC8
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=reject dis=none) header.from=yahoo.fr
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=yahoo.fr
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 1EC564048EC8
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=yahoo.fr header.i=@yahoo.fr header.a=rsa-sha256 header.s=s2048 header.b=HxPpQCrH
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.fr; s=s2048; t=1669522673; bh=Uh7efh5jkNcCOyO2rPxRz8mDWNQJI4Y5E7mbNjFQrsk=; h=Date:From:To:Subject:References:From:Subject:Reply-To; b=HxPpQCrHt0Y/1vgROudbkAt8a2fUrWF2D1jOn4nyZWFAsWlWdpo1gwglCOq1ZhgVsKeXdchPH6sCticWA6WBvNBfA5dkERp4PkJXV2805QnsDjZY+Jh0zqb81lmhvjfU5P9hRgRdzGX1PggAqjTyW+4YttR4r+lcXWvpgxc23r937PEIIf/+DdaEs1KgXk6fkz8QBCIcFqWLmTd3W4GCMOXqXK3pndPDfiX8a0y5hB9gsWy5nHIpsKGtxE5/q9S6rbpngWoIoCL6rmEWguJyKalLmshDS6NFqdFC5R1FYEYvbvsEQNLyoCVb5dTbv5U2QgfSDlBI9SI9SlZ0g2CpgQ==
+X-SONIC-DKIM-SIGN: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1669522673; bh=gZ2hvnN5YfxZbuT3rZfiTbwTTNsdAoh12tp83+aWt8s=; h=X-Sonic-MF:Date:From:To:Subject:From:Subject; b=F/CaXM4CZtkG5pgvGq9jiuiN9oVjANKGNsi711zCKBi52p7ZJRBvQ39SKlo20X+IjijiXCPWbmuKBlXP1wN4wX9bHwUK7jJlAjQEUmtHpWCbMkI96zZTcp5+hs0uqzvebqgxD1DL+ZKzMuqDUabgvyOuwH4oT9piNhThJDSW20muahYEBOd+4AWmeUcAdGT+57dTWki41A6NlnQSxOr8ysGAmv/u6sEV747GWihoRTnh/Lm6IrxpOfB+tgQGfTzWtovSNR58Lm/sMLgcLha4e+ag64X4nRDWms/LCvJPmmFiZwcOq4++QygBQwkKyexin/eDJCI45rQAmRaMnzj4Vw==
+X-YMail-OSG: w9STXFoVM1lHcLJf.nMxUWW_QZecAmW8bos2Z9o6yWMzev9WDByJ1QjxTZU6BJQ
+ KiGds8w5zRj7tA9Q_he7y8AUtaPuKw1obDLEUZNqiWxk.R2xACAAdWOjH9RdmTLtOZ5MQwO9bPDG
+ Xd5nWSGZr2yTiFS0EW_8j6ZMRnSOMrQDoMzRmp2MSo4.FvdSOQ7IbMbqeKW03qjub4E9UwDoz3hm
+ .Of68ZQakH8FIP4IXCQr0XQGh__vsjEwZESDHPHP4WyuKam.AW3ZU58WpNvsdr1shVBatdfxz0EU
+ Ncyxw6DhvAR3ttl1hams4EGIuYJtczm54cDhelB9UD4UYW2SBEbpLxN7xGxMV8fZdlouL9iXAMDJ
+ OPS4k7M8.19XqI5eSWsK9526uEUrdDo8XX6WK5QdFg8Fkctjf0hrLGeqs4SRnaIhPi4AOxyfVBwg
+ M8fU2boADzsZSB14HPC4mV.BeG0.v8gP93ABugzEY2aCRMABpKJyFfXvBuVbXEZNM27qt8wZ1_tl
+ e8T8A3xM3.Xol7Azq1HeqLdIpmKJ6bChZkLoJ.5qar2yO4I0rFDTAzG5J68Cvs3wdqcfXg0187Lp
+ ahbLsEw4CPx9OvDKGLHCXSM22zBonauU.9AyE5nllmp5XzfRYCj.QvZyhed4G4SySodKXi.ysNKm
+ OoepcBn2ZOXKJFdKA1cV3R_l4kmu0KosMqIT5EPE9AK.FeMK4rImTCchVtOvqXxcFT_oIP8Kegpp
+ pENfphlCkon8NyCqI3bJ.MAbqU2U55S7ctdyqBvDUBQVZZk2.cSUqu0qPJXta8jWcY2nSj_oOdBo
+ 40kmYAjjeRXdTDTw92SeiIKSqZZReofk.79YZI4KvppuzRIeiaplGJpcvdUq1aKnbmjR5fe6GV1f
+ 5OhroHM_A.dQNZd9IsD6_q2eca6syJeHTDcPPj57mD91lqni3CP4Y7DOWhnHaaWXshF4_eNQrq_E
+ EPSimitHcHOz6fdrIACsFSe.WfJiGSY0tD6FRl0n4JRY228lLW7uucTPHfg4LbMTHXksWImlhwd.
+ J5KTrvc4JTY0qNkDf0lYfqLiUhzUI04PeKi3dUF4PiV_yNwhj2TpHliDNifk0bKWIOyhsnRnWl6E
+ grLt02PlFkl0FbiMDN.f8R4pN67vz2fonDQIplnkarbiZ8CQstXRwETmLPtxi6K3fnJeeG6xu1EZ
+ iHvqxbaJlG7gOxAHR1XQiCxi9bLw8FJuoWRCqA0IoIQ2uLSHSz3brakxlR1ji7TBi5vqzqmPqsCM
+ yup5bT7.X20rJDgxdlo8AG34EKp8yPgIcVH0SVEGcwyBDyUc.5j5aBDClAbMgY6wwCv.ifY1Coz3
+ SE9R0zZbiTcV4aW.cSMLXuHPU1VELM0DCBPSx8d9d4taN9FBiofkScOX71ULt08OYV6pyngN5ClN
+ jXdIoALhzdj4IDON00WN7iTLVzpSWxGXE5N5mWyqzerWBOrqidI.RPjFi9g49T6N0Gn2ch6lm1O_
+ _GwCef5bR9H9Mk.11ys_.bqmQN7Hur5qypS7S6XIbLHjISgQlEIpLROsfUvzW99MOeIxpIoQ4ch1
+ H48ljx_PJbFVl.Ef5Do2IcXkeXVK1BFjkoHu_O29PdKOQH1i36Qv3M_Yu11NtGppfIHg14son49K
+ 2V_VsdGk9tyK9Xnacyqd71gi72rNjCoKwfcgtfQThoCp5lkQPJP.dZAPQtlIyqxbUdoYCRWYhqaI
+ wY0eM3vCa3KRhwhGMs_qH0IzWZ_G.QEaFsnnlhxZ2gUMdAFZai_Fbkmz2hd8x3DufRYdaBC22hjN
+ nYcJC3LlXX9rPFj593jV2o6iwbVCTCNRYpqJvQhtKxePxGwYifWOLH3Pmq8B3KZJY9AsMJkvWZGy
+ WJtoGIt9nzosrLLwqYUcmAPTdYdblSyTgeBROxVrURWTwHeytuZX_PT1YUMr6d0.uUdSeOtb_T_S
+ SO6y5DZ2ljY75UBUEgJG0_AzXUzXp6pshI8KIQTd25yr.PVutYYoa9WQKHrz8zJImRABQCTVwku7
+ kaQjqiZLW8z7nbG3vcPbs_kh23dF..abb4QUXu9FwFULa.83vob9_AbnFVIaU9GIuRjC3dfrWsMA
+ sf6acwyuW4yshj1i5QqQOKLM0oLNLSEREjw2uyE2m6RBn984bcR..I9VVAllu7N47iAybAPwGYUi
+ sw.kAtG3AP1.mroEMKk.SdlKe5WY.SJWuCchg1hy98Pnl_D_w84JKk7LnHsFiFm84cycy_g0wmIk
+ z0i0O_7ctyG2W3AeGd6jVH7kb
+X-Sonic-MF: <abdiale@yahoo.fr>
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic311.consmr.mail.ir2.yahoo.com with HTTP; Sun, 27 Nov 2022 04:17:53 +0000
+Date: Sun, 27 Nov 2022 04:17:48 +0000 (UTC)
+From: abdoul gadir diallo <abdiale@yahoo.fr>
+To: "contact@fiidewgal.com" <contact@fiidewgal.com>
+Message-ID: <227242718.5982268.1669522668962@mail.yahoo.com>
+Subject: demande
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_5982267_1859547015.1669522668961"
+References: <227242718.5982268.1669522668962.ref@mail.yahoo.com>
+X-Mailer: WebService/1.1.20863 YMailNorrin
+X-N0C-Node-IP: 185.221.182.45
+
+------=_Part_5982267_1859547015.1669522668961
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+bonjour ,=C2=A0pourquoi recoit on un message automatique k)loumo?
+------=_Part_5982267_1859547015.1669522668961
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html><head></head><body><div class="yahoo-style-wrap" style="font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-size:10px;"><div dir="ltr" data-setdir="false">bonjour ,&nbsp;</div><div dir="ltr" data-setdir="false">pourquoi recoit on un message automatique k)loumo?</div></div></body></html>
+------=_Part_5982267_1859547015.1669522668961--

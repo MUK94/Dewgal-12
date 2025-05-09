@@ -1,0 +1,79 @@
+Return-Path: <ad3218901@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id Jvk4GJznXmRDgAcA3R2AvA
+	(envelope-from <ad3218901@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 13 May 2023 03:27:56 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4QJ7L41tNgz34SDmh
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="R5u5zp+t"
+X-N0C-MailScanner-eFa-Watermark: 1684546074.4749@KAYwcMJSakU4ZWWn//bTMg
+X-N0C-MailScanner-eFa-From: ad3218901@gmail.com
+X-N0C-MailScanner-eFa-SpamScore: ssss
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 23A154062961.A2EEA
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-qv1-f41.google.com ([209.85.219.41] [209.85.219.41])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 23A154062961
+	for <contact@fiidewgal.com>; Sat, 13 May 2023 03:27:21 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 23A154062961
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 23A154062961
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=R5u5zp+t
+Received: by mail-qv1-f41.google.com with SMTP id 6a1803df08f44-61b5b4df8baso83590226d6.1
+        for <contact@fiidewgal.com>; Fri, 12 May 2023 18:27:21 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1683941239; x=1686533239;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=6W4pNI53qUzV15TURq6TsvhlDI+xic0jeY7S04zai84=;
+        b=R5u5zp+tm73U9GFvu9KTbdRwUUXMY8HfWjnr3mB27IQHX6l4ybQKJHcVyy7JX2TeCb
+         WmNjah8l8b24iE7DczBwsd22qN6lIgu76rBWSKdSQdUbCbwDdK66gLDUPeBlLHwCCPzL
+         PwN+KhHwHbbtjhQcvd5haPwR+nTd73kovN7B2PFuXOVuY6Yt0WoPg+ZRw938TlHSyMuh
+         QNMKnMbei71hdo3NDDuFrR+M/ssGjaeDEZm5VWpN6+nN19gsvxyuYj/Wh7DinfdgmyxE
+         Th/cjt+4UCgZ5MwXQgnJU+IcbTFUXaQ9qCBU886iiY1rTwiQf7YKv1DWCIghZGDzj6ct
+         OxvA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1683941239; x=1686533239;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=6W4pNI53qUzV15TURq6TsvhlDI+xic0jeY7S04zai84=;
+        b=j2MZIuMNgPquVgTBZ3NxbIpQRgypi2UyWyE0zGjr4/L53HYvEEAYkkCOF5jnaSVmuX
+         GLDa44vnDK4Anpj2lHokD/rA4ZEWcpO4B38T+5XDFjNZgm/IxwfPZKX+3ab8zd6S8acG
+         OPBdbVqzPv8j0wNoftQMtFitntbBN6hYM99IK+EsdYkGCZiBPAyhgmgg3Cpq4wo07jDi
+         0yUPyVmdvxaoOHTjfMEUVfG5ubSuiSZfKSLN9Nt74YzgcbHgxiO7H5NV6rASD1Rn8z+h
+         ZE25S3k2B7spIm4LIkiDc9w4UKtCfw0SK/wq/kk2ImJhBisvSGm/imc78AFwREiauKUp
+         R0PA==
+X-Gm-Message-State: AC+VfDybSHXnVvJWJhRu1FIoAua3e5Vc710RJ8zrrYyhByFEUGVPn6N3
+	kHqvORodfSpWzdRxFHboONSpDGJvLVmnfRAcQdZ0uM8+
+X-Google-Smtp-Source: ACHHUZ7RtztvdhP1wjEfvRzFGozING4xjaXpdfs48cO5IUuBP9CPD2i3h6Ss/bAX0ZrXtYrMVHRtUJg2uk8J6uUUmpE=
+X-Received: by 2002:a05:6214:d04:b0:61b:5816:a265 with SMTP id
+ 4-20020a0562140d0400b0061b5816a265mr42963585qvh.16.1683941239703; Fri, 12 May
+ 2023 18:27:19 -0700 (PDT)
+MIME-Version: 1.0
+From: Abdoul karim Diallo <ad3218901@gmail.com>
+Date: Sat, 13 May 2023 01:27:05 +0000
+Message-ID: <CAAWgU8xhBq5jcNKS6csAtZ9B45qN53q+DdfMOOKC=C32R6Pmyw@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000006a4ae805fb891f6e"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000006a4ae805fb891f6e
+Content-Type: text/plain; charset="UTF-8"
+
+GE veux
+
+--0000000000006a4ae805fb891f6e
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">GE veux=C2=A0</div>
+
+--0000000000006a4ae805fb891f6e--

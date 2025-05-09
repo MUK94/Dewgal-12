@@ -1,0 +1,78 @@
+Return-Path: <a.diallo.valmante@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id PqdJH6g0yWPbcyAA3R2AvA
+	(envelope-from <a.diallo.valmante@gmail.com>)
+	for <contact@fiidewgal.com>; Thu, 19 Jan 2023 13:16:40 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NyM7C0CD7z34SDxJ
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="hvELx5Jj"
+X-N0C-MailScanner-eFa-Watermark: 1674735391.33174@70Zan3CZvTlzsY7d/NgMgQ
+X-N0C-MailScanner-eFa-From: a.diallo.valmante@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: B6006401A42D.A681C
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-oi1-f175.google.com ([209.85.167.175] [209.85.167.175])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id B6006401A42D
+	for <contact@fiidewgal.com>; Thu, 19 Jan 2023 13:15:59 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com B6006401A42D
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com B6006401A42D
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=hvELx5Jj
+Received: by mail-oi1-f175.google.com with SMTP id p133so1497981oig.8
+        for <contact@fiidewgal.com>; Thu, 19 Jan 2023 04:15:59 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=30TqG0RvnDZVQYDYG2qgrIQiej+BdC/p3dBfwklB+aA=;
+        b=hvELx5Jji+qr9u1gSm2YMXwkPlcunKZDir/mlTaW0FF6mIXYOh+qzg+huA0GyzrNhx
+         lFABfmn8kh/xCJfjBwUmlRGAiasjSGBd8XB9y4YXciz5/t4Cf58BIK7sItu0KW7zkPrd
+         3DYfMNjDyCaQC2O/Z/1Q0Di2h8h6sDvqbv1RiLDpHhM0XXW3Pd3VCy/Q1SQ4wxhYghp8
+         FzGWtHTyhwFTTGFI0CQwyrWPcBEwxbP7LKId4vmC6JFDQVr4xJLMtHdZ0gJWXvxwB2vJ
+         JK+RAwZq8qTN3RI1c8sQrQov63twFdOdSMiQQXpVN30hstKL8BbchSU4MNa3BlQlWgd0
+         UuBg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=30TqG0RvnDZVQYDYG2qgrIQiej+BdC/p3dBfwklB+aA=;
+        b=A/bdgCXA0OR1vO3dXcLMYKleKeIcECPdQ10qm69NyXFTczK1h5rGiP6+Z4kXkWcBGK
+         yUw8AvvizR4Q/QgB60lZ+/WptmMaYT4S5JwNxjJmly+l5+694pBHjF0URD8IwJTUk9lo
+         DHW2dUgBITg748CaKWxZmAdDSBVH8AEV5GHR1VS6rkBvgkU7weADwfu9FhBxDjvCeXJA
+         5Og1bKBcXwvxf4nrAMcts0j20TrwvsWQVqLU/F0NaaJplkwS74NbSc50Y11+tdJMPbDX
+         lICrSUZSdpEuzJGjh1i2euHZueDHxf8TGkc/SvQsBZqa659ViIB6EKn6E/9DllyJTIzX
+         /bGQ==
+X-Gm-Message-State: AFqh2kocToiG5allb/rNnqJbBUBPRXQTjmDHw6q35eHm2fiNL37WnRPP
+	IIWmrkATpuRQmNDOU9m2IY8eUQZ5Q227i+tcJz1V1iBx
+X-Google-Smtp-Source: AMrXdXsRTquNeufG51ocYEgMBtpkjWWoA+ETrT+7sOK4GiptCmt17SxV9BE/2ehLhOB8zblZ86lLq9xkLoD6uGCYdwU=
+X-Received: by 2002:a05:6808:4083:b0:367:75f:f178 with SMTP id
+ db3-20020a056808408300b00367075ff178mr589809oib.139.1674130558178; Thu, 19
+ Jan 2023 04:15:58 -0800 (PST)
+MIME-Version: 1.0
+From: Alpha Diallo <a.diallo.valmante@gmail.com>
+Date: Thu, 19 Jan 2023 13:15:45 +0100
+Message-ID: <CAMkVcCgF6jTA9hK7nwt3Y71C5-78fjv3Bv9rn3si9SceZE00Lg@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000003a5a5905f29ce566"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000003a5a5905f29ce566
+Content-Type: text/plain; charset="UTF-8"
+
+Salut
+
+--0000000000003a5a5905f29ce566
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Salut=C2=A0</div>
+
+--0000000000003a5a5905f29ce566--

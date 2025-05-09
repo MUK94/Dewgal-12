@@ -1,0 +1,79 @@
+Return-Path: <bubacarrj535@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id r1LwK1jCsGNBly0A3R2AvA
+	(envelope-from <bubacarrj535@gmail.com>)
+	for <contact@fiidewgal.com>; Sun, 01 Jan 2023 00:14:32 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Nkyd44K9MznWdx
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="paLvO9Q9"
+X-N0C-MailScanner-eFa-Watermark: 1673133270.2276@9l7JP6wAuqXj9SgDKN4+Ew
+X-N0C-MailScanner-eFa-From: bubacarrj535@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 2967C40044A7.A9629
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-vk1-f170.google.com ([209.85.221.170] [209.85.221.170])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 2967C40044A7
+	for <contact@fiidewgal.com>; Sun,  1 Jan 2023 00:13:55 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 2967C40044A7
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 2967C40044A7
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=paLvO9Q9
+Received: by mail-vk1-f170.google.com with SMTP id bk19so863833vkb.11
+        for <contact@fiidewgal.com>; Sat, 31 Dec 2022 15:13:55 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=HvnuwfBca7pFzPJrVJeNMbznuNZTYIOddacl5RT6rIA=;
+        b=paLvO9Q9zTvLcj6XGjlr1sqfe3qA0bYYj7GYi8uR0kzLhAjbk2L5RtcayMh0/jD48b
+         EPPiiXZ+S2hXyZTcCAfmJLMuWlUWC2vjJTxrZriPWDwaTXaY71DEc14w5gORwO0f2lTR
+         8Icy55pnmgdXi7D7kCCQ7F13IpCepRDD1bGk+katWNlP9rd1mpxVSxzbLKG2QDTbO1rL
+         n4hk2omlYYRxgiMv16Cy5xQGpiV9V+aPIGxs+5CrLqtb0E7+4R7aBNSR/K3iSDTeAlsG
+         tg8sk+T9gTjY4MsnjH13SyPpD/nn00JcMonJ8fT1+LJAtHxsJemOly2+XLwDELCxTpl1
+         215w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=HvnuwfBca7pFzPJrVJeNMbznuNZTYIOddacl5RT6rIA=;
+        b=amEJjEIHYrTIyXAB+Za0+VNaDQHq1J2uGkIldKIfW2EudKNndsmmr2de8/5h4EFIek
+         0T4UoiZJPg1vkXprkXZnbtorZ8e2XSAvaCutFo9FbjcLUGswtbkruTF3gMRR+zG5Pi9z
+         KMRvbq3dSKBdKFoe2pQhbgDXXtyIGUdXup/TuvE5FrRnIj+SNFSNeM7wTGqbawozpkOG
+         qKsiIjUqyEIZ4KgJLq3AbMz+aIaomCaLeRjpBUQM6mxaIS+TPODFJYY6S1XzY76S8YFb
+         FwpyYjVFHIntpKKo9Zxkif/r/+iwY50QqTfdi6+10e5eWeKPT1a8HO7KDrUZ/GDYP4Ib
+         fsfg==
+X-Gm-Message-State: AFqh2kptFMRDLh2jZqqYt5nTLqKOYnCylQQCbjFf5BrHV19YleK/JxMF
+	4dXWrKB0FQxtzQ+lmG/4a/bVKouYiim9ZwVVPZYNdcY=
+X-Google-Smtp-Source: AMrXdXu2VRwrwVstORk7LiDZpSRHD+xSBk8Y8hgV66HoJCqYzl3FlQhnfFJ+USEsjSpsvVE7Fzkwngs36PB71Hezmvw=
+X-Received: by 2002:a1f:6606:0:b0:3b7:5ff7:cfb8 with SMTP id
+ a6-20020a1f6606000000b003b75ff7cfb8mr3503650vkc.11.1672528433832; Sat, 31 Dec
+ 2022 15:13:53 -0800 (PST)
+MIME-Version: 1.0
+From: Bubacarr Jallow <bubacarrj535@gmail.com>
+Date: Sat, 31 Dec 2022 23:09:53 +0000
+Message-ID: <CA+4LYJ1PvoZ3UfAWOOkJqHwi4Ongm_yiDK2zGU_9vccnbtLnJQ@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000002ce82605f127df4b"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000002ce82605f127df4b
+Content-Type: text/plain; charset="UTF-8"
+
+hello I'm Bubacarr jallow living in Gambia, I'm really interesting with
+your that group, and am looking for some one just to married am need your
+help for it this are my contact number 00227381936and 00227099333
+
+--0000000000002ce82605f127df4b
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto">hello I&#39;m Bubacarr jallow living in Gambia, I&#39;m really interesting with your that group, and am looking for some one just to married am need your help for it this are my contact number 00227381936and 00227099333</div>
+
+--0000000000002ce82605f127df4b--

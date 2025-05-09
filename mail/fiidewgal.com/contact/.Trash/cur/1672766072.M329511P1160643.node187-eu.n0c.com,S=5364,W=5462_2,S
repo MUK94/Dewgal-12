@@ -1,0 +1,98 @@
+Return-Path: <mamadymaladho@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id iMuTE3hitGPDtREA3R2AvA
+	(envelope-from <mamadymaladho@gmail.com>)
+	for <contact@fiidewgal.com>; Tue, 03 Jan 2023 18:14:32 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NmfVJ1Wtbz3F9m
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="oiWFivA3"
+X-N0C-MailScanner-eFa-Watermark: 1673370862.31825@mRzXgXDrHnhUiorFBtlFOQ
+X-N0C-MailScanner-eFa-From: mamadymaladho@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 4DFDF40049EB.AC30A
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-lf1-f46.google.com ([209.85.167.46] [209.85.167.46])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 4DFDF40049EB
+	for <contact@fiidewgal.com>; Tue,  3 Jan 2023 18:13:48 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 4DFDF40049EB
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 4DFDF40049EB
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=oiWFivA3
+Received: by mail-lf1-f46.google.com with SMTP id bp15so46513612lfb.13
+        for <contact@fiidewgal.com>; Tue, 03 Jan 2023 09:13:48 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=JwMqbnyD4e9UvKx47bFEX2MU7jUusrcd5hR0+J2YVh4=;
+        b=oiWFivA35CbcYq0SfPMYDiGoYnnlSXv1MDrGA/SzecaWvdG5cftuhvX4bq6t+R5qrc
+         oWwBKwJvkkl6V297ckpSnv3NPHuYvPT4UoJUSg3Rg4M6BW+agC1NSnNDC3XQmDSipW1H
+         UnQrb2gqzhvLeUrJKgTVyYP/GgpVtDhAoDvvHyEqi3qbmjKVxxQ7v/ja8epDycmSTr9u
+         FWVeys3rhnwKY5QHSgzbsgm+Exe4FrcN+CAMyUYYvTNmeHIlu4VHkkDwGr1gYJXlkFk2
+         s42yVH1hh7cUcqyTUQeTQlUB1lH0nLf6exdMp3VfUgQXCbgzH1oBjtB+9mUn4CAyZ8FW
+         WT1w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=JwMqbnyD4e9UvKx47bFEX2MU7jUusrcd5hR0+J2YVh4=;
+        b=Yusr73TBBJG9MRYh7hPqZ+DkbOLeRg8B6FTNR+zzToCrZlpRO9bf9lnHJSbW0XCHOM
+         Z1NbroP1A+ZYi/7q7syOE3h0SRLwKvaa6BbU5vHzxmBoklONFWhm8A2ZgmHy0iViEHXU
+         F1N9OO7/t6kIX4fSTSENFzh++lN50dkjsOeneORQyvTkJtIWBVjdWanfyi/TOI9JGXv2
+         r7neV2eCZjd5A+cYVJteriK0W/wLlEQPRuEn+Ef4FdsN+gXD0tZvvkBPQmbYgEodtLnr
+         gOTDNXtl6UmxwkrI4SJlMO4qfBXjBNP8oBXXxCY6tjAp1FuPpCEV7OrfYw5UavF2CP4X
+         4lzA==
+X-Gm-Message-State: AFqh2kp2biry1a0dKalOGBJzPfMSC0vJXzfXd6ls8bhbr0PM8zUPIxIn
+	cziynwRnPdkw1ZqW43py945jkt6sMUP0xnRs+M495j2F
+X-Google-Smtp-Source: AMrXdXvrBT4WaycxSSZFkooosGPEgDsiYM0rQ0FgKW8XZ6PPIGIxKZ+eDfE3in64Bj5kC6okhaeQbGpDUpf/VUqI3Rw=
+X-Received: by 2002:ac2:5966:0:b0:498:f195:5113 with SMTP id
+ h6-20020ac25966000000b00498f1955113mr4584316lfp.159.1672766025909; Tue, 03
+ Jan 2023 09:13:45 -0800 (PST)
+MIME-Version: 1.0
+From: Mamady Camara <mamadymaladho@gmail.com>
+Date: Tue, 3 Jan 2023 18:13:35 +0100
+Message-ID: <CAK135t6hbV4t_=xdxBqYDNB+6eYYvdsWGuMWoK1vb_UNmE8LxQ@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000c4490905f15f3051"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000c4490905f15f3051
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Bonsoir mesdames et messieurs,
+Je vous envoi ce mail pour plus de renseignements =C3=A0 propos du site de
+rencontre que vous venez de lancer. C'est pour vous dire que suis
+actuellement en France pr=C3=A9cis=C3=A9ment =C3=A0 Nantes et que je suis s=
+=C3=A9rieusement
+int=C3=A9ress=C3=A9 du coup, j'ai fait mon inscription et mon compte est vi=
+siblement
+installer mais je n'arrive pas =C3=A0 acc=C3=A9der au forfait pour la conne=
+xion.
+Comment puisiez vous me guider car, j'essaie sur achat via orange money ou
+carte bancaire mais rien n'est possible =C3=A0 mon niveau.
+Cordialement merci.
+
+--000000000000c4490905f15f3051
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Bonsoir mesdames et messieurs,<div dir=3D"auto">Je vous e=
+nvoi ce mail pour plus de renseignements =C3=A0 propos du site de rencontre=
+ que vous venez de lancer. C&#39;est pour vous dire que suis actuellement e=
+n France pr=C3=A9cis=C3=A9ment =C3=A0 Nantes et que je suis s=C3=A9rieuseme=
+nt int=C3=A9ress=C3=A9 du coup, j&#39;ai fait mon inscription et mon compte=
+ est visiblement installer mais je n&#39;arrive pas =C3=A0 acc=C3=A9der au =
+forfait pour la connexion. Comment puisiez vous me guider car, j&#39;essaie=
+ sur achat via orange money ou carte bancaire mais rien n&#39;est possible =
+=C3=A0 mon niveau.</div><div dir=3D"auto">Cordialement merci.</div></div>
+
+--000000000000c4490905f15f3051--

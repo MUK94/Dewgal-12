@@ -1,0 +1,77 @@
+Return-Path: <mohamediallo1980@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id VRtPEE8jzmOzXxEA3R2AvA
+	(envelope-from <mohamediallo1980@gmail.com>)
+	for <contact@fiidewgal.com>; Mon, 23 Jan 2023 07:03:59 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4P0fgL39v8z34nwbc
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="a4qNC0nz"
+X-N0C-MailScanner-eFa-Watermark: 1675058634.82101@RbQl5KJQjI59yNxRhOth9g
+X-N0C-MailScanner-eFa-From: mohamediallo1980@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 21603401AEF7.A01C6
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-lj1-f179.google.com ([209.85.208.179] [209.85.208.179])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 21603401AEF7
+	for <contact@fiidewgal.com>; Mon, 23 Jan 2023 07:03:22 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 21603401AEF7
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 21603401AEF7
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=a4qNC0nz
+Received: by mail-lj1-f179.google.com with SMTP id n5so12050758ljc.9
+        for <contact@fiidewgal.com>; Sun, 22 Jan 2023 22:03:22 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=AGjO8l7XlLXPyia4fEGvo9M3uOmROL9n+kR449FXO/U=;
+        b=a4qNC0nzbewg6B+Dlz8/qMwGB1P1YTuPyUO6H0y0rYhe30tky+l/o43oT/vgQbTw1Z
+         ca4n7YxWT7W0R8YeNS72MuArYDIctYxr7wp3+k6E+5JlszktVENd33WSecUn+v3g0Qg/
+         1Ut8uSKNhnEz1o0RwjXs+MO8Gv1wbNmYmsHOIGsOozWxFqAGHl6u+yx6w/vTRr9fZKIh
+         +U7EN2LnbCTqPomYzvIdCHkhiqmUXkIfw18fIjrW6AG2XvuU6GdeHhvchIaH3bhZj9a4
+         vxszyZ3acgqtlurU884U8WRowqCpu1GsM7rvfp96FsiaRpqm/xVAI8LeGmTLsukhMxg1
+         +FBw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=AGjO8l7XlLXPyia4fEGvo9M3uOmROL9n+kR449FXO/U=;
+        b=uG6ejBp9B7kbQbZ8vceD/gmyOmmSkjSeVOR5tyCrAH+B4A2kjQyWLY8JVLRlllpJm9
+         JAzRDFZRdgjPmuiudPdYYSNBvphj/eywGXUHUS3nvs/CQ6hPJaBMYPrUliToX6vzvqWG
+         yTzb1lkOBfWPFGO8wvX/VcG3VXMNLE1En/c5HA9rru5AZwVpOq8xBBclF2yoOYk1W+fH
+         jqyI+CtLUvO5gGoud/ly3ohluKjHIMti2lWlpX77eyg0KDk0tcrK2BXaZTqk+q3ZyPih
+         9gkSIxQOvxg7yGGHTkYZjydtSVz0EdFwT7R9A8E7glY/KYYgqgdhWRlQkNfXfJYbo3uj
+         ++hA==
+X-Gm-Message-State: AFqh2kp4iFIauLwp5NVc54B1F10NmUGjUdDP2i08V5zQJSPgMTSqimIg
+	pi0KnaCsI+9AE7yUlrhr33ZXX3kRq6WqNE9+3eYOIAfF
+X-Google-Smtp-Source: AMrXdXuzXN+uOiwjIal+yp8jbeID9ThSx0XrIWpPXJ+JrHN3R/jcaJDeWcyyf7c+cBDaWWNyxHcUytk2DO3o/0q5/t8=
+X-Received: by 2002:a2e:9242:0:b0:28b:6a74:2a9d with SMTP id
+ v2-20020a2e9242000000b0028b6a742a9dmr1045093ljg.64.1674453801197; Sun, 22 Jan
+ 2023 22:03:21 -0800 (PST)
+MIME-Version: 1.0
+From: Diallo Mohamedkokolou <mohamediallo1980@gmail.com>
+Date: Mon, 23 Jan 2023 07:03:09 +0100
+Message-ID: <CAGLdBPmYOaKKC-yABaJ1TPKaYmpw0-6i2u9dLz+FLvEtrL=6iQ@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000003673505f2e8280e"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000003673505f2e8280e
+Content-Type: text/plain; charset="UTF-8"
+
+Salut a vous,je voudrais savoir comment s'inscrire ?
+
+--00000000000003673505f2e8280e
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto">Salut a vous,je voudrais savoir comment s&#39;inscrire ?</div>
+
+--00000000000003673505f2e8280e--

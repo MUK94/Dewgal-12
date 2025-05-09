@@ -1,0 +1,189 @@
+Return-Path: <bounces+2350519-75fb-contact=fiidewgal.com@sendgrid.net>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id MTFXAMvpjGS5Tz4A3R2AvA
+	(envelope-from <bounces+2350519-75fb-contact=fiidewgal.com@sendgrid.net>)
+	for <contact@fiidewgal.com>; Sat, 17 Jun 2023 01:01:31 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4QjZQy4zzvz34SDml
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=sendgrid.net header.i=@sendgrid.net header.b="iHfMoK8N"
+X-N0C-MailScanner-eFa-Watermark: 1687561289.06404@MBLZ3GZNLuiWxyV4/NHAGA
+X-N0C-MailScanner-eFa-From: bounces+2350519-75fb-contact=fiidewgal.com@sendgrid.net
+X-N0C-MailScanner-eFa-SpamScore: s
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 9324F4019B0A.AFC0D
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from wrqvnzwt.outbound-mail.sendgrid.net ([149.72.46.151] [149.72.46.151])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 9324F4019B0A
+	for <contact@fiidewgal.com>; Sat, 17 Jun 2023 01:01:27 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 9324F4019B0A
+Authentication-Results: node187-eu.n0c.com; dmarc=fail (p=quarantine dis=none) header.from=ezoic.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=sendgrid.net
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 9324F4019B0A
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (1024-bit key; unprotected) header.d=sendgrid.net header.i=@sendgrid.net header.a=rsa-sha256 header.s=smtpapi header.b=iHfMoK8N
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.net;
+	h=subject:from:mime-version:to:content-type:content-transfer-encoding:
+	cc:content-type:from:subject:to;
+	s=smtpapi; bh=ZTqhJc6vyqwIfxwJWKwsHqw3CnfWYCNHi5lRvOVQQGg=;
+	b=iHfMoK8NHJZDyGFcuBaHwQbo9/98QvDQIImiJgFHoxcYlCIRbgbZWxlNQ1NTMSZSUWCZ
+	UO+vCzCoyQM33n9OvQ0VejF9IMQDB9TBwhmhO8Ft3/ujv2shavb+Y87406zuScl7lLwY9X
+	ABtMPt8uD2/tzMVeMuFFGv9IbWTQE3jzE=
+Received: by filterdrecv-8684c58db7-nd6mk with SMTP id filterdrecv-8684c58db7-nd6mk-1-648CE9C0-6E
+        2023-06-16 23:01:21.091008353 +0000 UTC m=+3194570.353223801
+Received: from [127.0.0.1] (unknown)
+	by geopod-ismtpd-3 (SG) with ESMTP
+	id FKNIKz51TMqBph_yYfPsuw
+	for <contact@fiidewgal.com>;
+	Fri, 16 Jun 2023 23:01:20.791 +0000 (UTC)
+Subject: Welcome to the Ezoic Affiliate Program! A Quick Guide.
+From: Ezoic Affiliate Program <affiliates@ezoic.com>
+X-MC-Tags: Triggered mail
+Message-ID: <dc2a2277e5850f86dfa911488fb17d8a@ezoic.com>
+MIME-Version: 1.0
+Date: Fri, 16 Jun 2023 23:01:21 +0000 (UTC)
+X-SG-EID: 
+ =?us-ascii?Q?KCkJDt+t8LaAcrgsthh2CeOGqSeDVIy1F9+XsEg4roBNQL4PWSSpkT77mu6PD2?=
+ =?us-ascii?Q?dwh6wb8R68NnRhZ5nA8UvHIA8mkUnxiBq1wgZ67?=
+ =?us-ascii?Q?Jxa6EqfeavLXEdChuO=2FNSamVDEWQfX=2F1rlu5y6l?=
+ =?us-ascii?Q?vlRCvE45mt=2F+=2FhHGO6l6LVORL5NAN7tFBEtYI6R?=
+ =?us-ascii?Q?hrkk6BUyLTTDB1cksmXFqIB1J0AtD7KFOMRzFh7?=
+ =?us-ascii?Q?zWuqkFQReJ8Zw=2FKAhZkFZhk1=2FCe4GMIarRSHALc?=
+ =?us-ascii?Q?Xtf32bob79yqYCGRBgQyw=3D=3D?=
+To: contact@fiidewgal.com
+X-Entity-ID: L5GykQzhRmS5d33UwdSVnw==
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html lang=3D"en">
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+">
+    <meta name=3D"viewport" content=3D"initial-scale=3D1.0">
+    <meta name=3D"format-detection" content=3D"telephone=3Dno">
+
+    <title></title>
+    <style type=3D"text/css">
+
+        /* Resets: see reset.css for details */
+        .ReadMsgBody { width: 100%; background-color: #ebebeb;}
+        .ExternalClass {width: 100%; background-color: #ebebeb;}
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalCla=
+ss font, .ExternalClass td, .ExternalClass div {line-height:100%;}
+        body {-webkit-text-size-adjust:none; -ms-text-size-adjust:none;}
+        body {margin:0; padding:0;}
+        table {border-spacing:0;}
+        table td {border-collapse:collapse;}
+        .yshortcuts a {border-bottom: none !important;}
+
+
+        /* Constrain email width for small screens */
+        @media screen and (max-width: 600px) {
+            table[class=3D"container"] {
+                width: 95% !important;
+            }
+        }
+
+        /* Give content more room on mobile */
+        @media screen and (max-width: 480px) {
+            td[class=3D"container-padding"] {
+                padding-left: 12px !important;
+                padding-right: 12px !important;
+            }
+         }
+
+    </style>
+</head>
+<body style=3D"margin:0; padding:10px 0; height: 100%;" bgcolor=3D"#ffffff"=
+ leftmargin=3D"0" topmargin=3D"0" marginwidth=3D"0" marginheight=3D"0">
+<table border=3D"0" width=3D"100%" height=3D"100%" cellpadding=3D"0" cellsp=
+acing=3D"0" bgcolor=3D"#ffffff" style=3D"height: 100%">
+  <tr>
+    <td align=3D"center" valign=3D"top" bgcolor=3D"#ffffff" style=3D"backgr=
+ound-color: #ffffff;">
+      <table border=3D"0" width=3D"600" cellpadding=3D"0" cellspacing=3D"0"=
+ class=3D"container" bgcolor=3D"#ffffff">
+        <tr>
+            <td align=3D"center" valign=3D"top" bgcolor=3D"#ffffff" style=
+=3D"background-color: #ffffff;">
+                <br><br>
+                <table border=3D"0" width=3D"100%" cellpadding=3D"0" cellsp=
+acing=3D"0" class=3D"container">
+                    <tr>
+                        <td style=3D"text-align:center">
+                                                        <img src=3D"https:/=
+/s3-eu-west-1.amazonaws.com/tap-user-uploads/5697f93c7ce39.png" style=3D"ma=
+x-width:450px; max-height: 100px;"/>
+                            <br><br>
+                                                    </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+          <td class=3D"container-padding" bgcolor=3D"#ffffff" style=3D"back=
+ground-color: #ffffff; padding-left: 30px; padding-right: 30px; font-size: =
+14px; line-height: 20px; font-family: Helvetica, sans-serif; color: #333; b=
+order: 2px solid #ebebeb;">
+            <br>
+            <p><span></span>Abdoul Gadiri<span>,</span></p><p><span>Welcome=
+ and congratulations on your approval into the Ezoic affiliate program. </s=
+pan></p><p><span>Here is your unique referral link to share with your audie=
+nce. </span><span style=3D"font-weight: bold;">I encourage you to learn abo=
+ut deep-linking to our other blog posts using Tapfiliate</span><span>, so y=
+ou can link to any page on ezoic.com and receive credit.</span></p><p><span=
+></span>https://ezoic.com/?tap_a=3D6182-5778c2&tap_s=3D3923997-78f924<span>=
+</span></p><p><span>The best way to promote Ezoic is through writing Ezoic =
+reviews and talking about our various products, which you can learn all abo=
+ut on our website (www.ezoic.com). </span></p><p><span>If you're already an=
+ Ezoic customer/publisher, you already know about all the great features we=
+ offer and how they can help publishers build an awesome income stream on a=
+uto-pilot.</span></p><h2><span style=3D"font-weight: bold;">How do I promot=
+e Ezoic? </span></h2><p><span style=3D"font-weight: bold;">#1 Write reviews=
+! </span></p><p><span style=3D"font-weight: bold;">#2 Share on social media=
+. </span></p><p><span style=3D"font-weight: bold;">#3 Create videos.</span>=
+<span> Like this one (https://www.youtube.com/watch?v=3DHA7A521KJyY). You c=
+an also share this video in social & reviews.</span></p><p><span style=3D"f=
+ont-weight: bold;">#4 Place Ezoic banners on your website linking to your a=
+ffiliate link. </span><span>You can find banners under assets.</span></p><p=
+><span>High-quality content converts WAY better. Use in-text links and grea=
+t CTAs (call to actions)</span></p><h2><span style=3D"font-weight: bold;">W=
+hat can I NOT do?</span></h2><p><span>You cannot promote Ezoic through Paid=
+ Ads (like Google Adwords), these are against our terms of service.</span><=
+/p><p><span>You cannot refer your OWN website, we will be able to see this =
+through Tapfiliate's fraud detection.</span></p><p><span>You cannot spam em=
+ail lists or impersonate Ezoic in any way, such as creating lookalike Ezoic=
+ email addresses or posing to be an employee of Ezoic.</span></p><p><span s=
+tyle=3D"font-weight: bold;">Violating any of the above rules will result in=
+ immediate removal from the program and revocation of any pending earnings.=
+</span></p><p><span>Lastly, you can contact affiliates@ezoic.com with any q=
+uestions, and we'll get back to you within 3-5 business days. </span></p><p=
+><span>Good luck and thank you for promoting Ezoic!</span></p><p><span></sp=
+an></p>
+<br>
+          </td>
+        </tr>
+                <tr>
+          <td bgcolor=3D"#ffffff" style=3D"background-color: #ffffff; font-=
+size: 12px; text-align: right; line-height: 30px; vertical-align: middle; f=
+ont-family: Helvetica, sans-serif;">
+            <a href=3D"https://affiliates.ezoic.com/opt-out/?s=3DRTYrdFhIcm=
+5MY0hVRGpVM08xYVZuRXlGT1hVN0dtZlhkeCtuUFl4a0o5az0=3D" style=3D"color: #999;=
+">Unsubscribe</a>
+          </td>
+        </tr>
+              </table>
+      <br><br>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+

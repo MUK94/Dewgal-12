@@ -1,0 +1,78 @@
+Return-Path: <barrybintaousmane@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id dzmQIOoYO2TT/DsA3R2AvA
+	(envelope-from <barrybintaousmane@gmail.com>)
+	for <contact@fiidewgal.com>; Sat, 15 Apr 2023 23:36:42 +0200
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4PzRTh3DK6z34SDmn
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="QqPUyJ2e"
+X-N0C-MailScanner-eFa-Watermark: 1682199386.51453@e45vlQmxwvSHiJjXKtXzNw
+X-N0C-MailScanner-eFa-From: barrybintaousmane@gmail.com
+X-N0C-MailScanner-eFa: Please contact report@N0C.info for details
+X-N0C-MailScanner-eFa-ID: 26A02406355D.A1FAC
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-yw1-f178.google.com ([209.85.128.178] [209.85.128.178])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 26A02406355D
+	for <contact@fiidewgal.com>; Sat, 15 Apr 2023 23:35:54 +0200 (CEST)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 26A02406355D
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 26A02406355D
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20221208 header.b=QqPUyJ2e
+Received: by mail-yw1-f178.google.com with SMTP id 00721157ae682-54fe3cd445aso80401767b3.5
+        for <contact@fiidewgal.com>; Sat, 15 Apr 2023 14:35:53 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1681594552; x=1684186552;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=zLtGstWaQ97sGiC0jsJTqkDACU2F0Y5hdQ2lAUOTico=;
+        b=QqPUyJ2ex505IC6dwAG0LcN9Mb47W7Cbv2tZVDv5CEdq+QzSt/Z7e5zpKpNXlh/wPN
+         vFSGROsHhtMyisruKRMFJloQod/igKIC16fDG2xW3yeeVJFhIBSBad1/ygWIIk2tJFXN
+         HCdTJ19mftez2lKGmTpkT30woDOAOHVqVXxxQhNypx/M+Ij7qL9ObtHpX5IyIf4OU7un
+         cT2q4r74VhIqWR4A2RMCnKIBUFA5aGWVnad2/kpHteNINP+qg+mxFbBWxAS49MmIwnU5
+         co8iOwxZ8yK/MVdMaVEuNr3qipC6Rq46GsH9aDNE0NVLeuE4nDWG2BwFOlc6gFniSzTW
+         mB7A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1681594552; x=1684186552;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=zLtGstWaQ97sGiC0jsJTqkDACU2F0Y5hdQ2lAUOTico=;
+        b=CwxEIcEi0WWftPDBc2rd9dlFvaGpf3rrSiOlm2UQEqnDBxWGgTwg3g5FW66f9whKQJ
+         pyrH9VpWXil1aaa1d3tWCrewfk7XYhtPAm32w/fOwE4IRFkm0VMZZIMJCTHGKwVrW9Mh
+         uQE9oNP8rhTLzRNtMn98BAF0pAtLoDSmXr0sAZ3yudi1MqsLqp6TYt39yavTAO8h5DLn
+         RT/TFvfSL2gIJDk0O+nJqI6j+dP3jCJYY8EMGR3iTe9tHR+i+tg8UyDtzD6pa1Zk8Zwl
+         +XM/YHw0TvB6uVglWD0SfZtB+aQSUEP1LcS16CSPnVUfvPljK+M9P8XGAS5FRPJIZbq5
+         3l0A==
+X-Gm-Message-State: AAQBX9fXLYWW8SIHYyxpk63ZHYs60cCHRfS7LE114fHwNMAnNMC2aD8S
+	RzmICML2lhivMPpseP26MmEm7+EBqI6UlcTN9X2Ts0P5
+X-Google-Smtp-Source: AKy350bUHIl2aKen6uJTIz8zdJgmNCza5FUJDIqa5Skaonrb6RMJfqEghKrHS1PgN5I9EVmc29LsteiZplvDDluLR2o=
+X-Received: by 2002:a81:a8c5:0:b0:54f:2ad:91c5 with SMTP id
+ f188-20020a81a8c5000000b0054f02ad91c5mr6095887ywh.3.1681594551831; Sat, 15
+ Apr 2023 14:35:51 -0700 (PDT)
+MIME-Version: 1.0
+From: Barry Binta Ousmane <barrybintaousmane@gmail.com>
+Date: Sat, 15 Apr 2023 21:35:38 +0000
+Message-ID: <CANCge4wmK6MEUSuHef56rQ2oDB1zXP94QpvB7iibBecRnq_i7Q@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000eb105505f966bd85"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000eb105505f966bd85
+Content-Type: text/plain; charset="UTF-8"
+
+Comment je peux m'inscrire
+
+--000000000000eb105505f966bd85
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Comment je peux m&#39;inscrire=C2=A0</div>
+
+--000000000000eb105505f966bd85--

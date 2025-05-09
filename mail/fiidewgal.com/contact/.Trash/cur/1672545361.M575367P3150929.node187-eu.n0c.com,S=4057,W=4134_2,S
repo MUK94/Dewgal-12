@@ -1,0 +1,77 @@
+Return-Path: <thiernohadybarry7@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id vXQ3IlEEsWNRFDAA3R2AvA
+	(envelope-from <thiernohadybarry7@gmail.com>)
+	for <contact@fiidewgal.com>; Sun, 01 Jan 2023 04:56:01 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Nl4ss358Tz5T5Rm
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="GHAf0RDO"
+X-N0C-MailScanner-eFa-Watermark: 1673150158.64681@CsV5PI7Vhqen58y0zHzMcg
+X-N0C-MailScanner-eFa-From: thiernohadybarry7@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: E2F4E4010E09.A7AFD
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-vs1-f52.google.com ([209.85.217.52] [209.85.217.52])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id E2F4E4010E09
+	for <contact@fiidewgal.com>; Sun,  1 Jan 2023 04:55:26 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com E2F4E4010E09
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com E2F4E4010E09
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=GHAf0RDO
+Received: by mail-vs1-f52.google.com with SMTP id a66so25343843vsa.6
+        for <contact@fiidewgal.com>; Sat, 31 Dec 2022 19:55:25 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=RKvjOUyDcCD2h5hEgxWSoTFncSg276SR3kurFF8gsh4=;
+        b=GHAf0RDOGN+L+9Gk5MvLG20qaKnJhpXKTqd6Qgxb+9/hkNIr0QfVFR/g+9qetxnz/g
+         A5Uq/P6pi5+bwzsx42CoK3wJUaxlFz7Mu3dLlaLMwn7N+K6GEgpJ/XJjaW/4aatyCi3p
+         fM8rT+/+DtlHpwNyeyQcBLby6f3l0n7p3vlrbmttzhP3dgY/xNfJOXzUPbiLEoXLf1hM
+         B7x7Q7sAc2o0cylNCMueD7CFggjL2wu/CwvXvx5U1vtH6GcqhVZjPA7bdzArcI0vLxpF
+         d8kRp8F0W1NmA/yTDGflhQVvZ+qz8Tv/pIHPPG/jEJiM59AAtFVnVFiCgNF803kJevBq
+         DvAg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=RKvjOUyDcCD2h5hEgxWSoTFncSg276SR3kurFF8gsh4=;
+        b=0f+Bn1YCZQNWw/VtOhK/1dNv5Vcpqi0/TNurh6O8Sbv2e5OPFmgCqBFF9RbXBAKjRT
+         ycfvXO12ZygY0+hAUdQHU8N1BROpdbio+1rrzXWp9ob1hMpVq6GWtuXXUCY9/NmSSaRn
+         QihczkjcdTIYgooO4XtooBLVXcaci+0iTjrPruSSNQlHr1EGqJ7MN+VZ49zo3ugCTRmY
+         +l3N30bfayxm9kinWpji/bIedV2NYT2odB9zTNygfCXiDVivxy94RrNjI0L9H0G5+7S9
+         2dD+KIwaH3movsqNxjDBkEF0Nn+LAPbw1E4dLJrr7c3aW9ZNa0n3TJzhsmI74+S2yEWj
+         cyfw==
+X-Gm-Message-State: AFqh2kpg0MK7DF2FpmZpHeDj4C3XPtC6CmYwwJ2LUaSP6pbsEv9dhD48
+	yL6ydFtakUVnL93ZUXdxXRMrVw3gy7TGmtDjtbqzTuU5
+X-Google-Smtp-Source: AMrXdXttlpl2iQJpCo5nD8G9yIG17obe3Vl3AmvKz6vyPE6wlBc8TpoY7OnJTYpO3/Ws9VGQcv4oAGF8AAYiKTHQy/g=
+X-Received: by 2002:a05:6102:3666:b0:3c8:6eed:b9d7 with SMTP id
+ bg6-20020a056102366600b003c86eedb9d7mr2214001vsb.30.1672545324418; Sat, 31
+ Dec 2022 19:55:24 -0800 (PST)
+MIME-Version: 1.0
+From: Thierno hady barry <thiernohadybarry7@gmail.com>
+Date: Sun, 1 Jan 2023 03:55:12 +0000
+Message-ID: <CAMzZ6vcyiJtm004WGU8uPe9b-07v5gazsZCrcMhrBPiFk_12OA@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="000000000000eec99f05f12bcd0d"
+X-N0C-Node-IP: 185.221.182.45
+
+--000000000000eec99f05f12bcd0d
+Content-Type: text/plain; charset="UTF-8"
+
+Bonjour
+
+--000000000000eec99f05f12bcd0d
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto">Bonjour</div>
+
+--000000000000eec99f05f12bcd0d--

@@ -1,0 +1,78 @@
+Return-Path: <ssow07591@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id 0E2lKBdps2OmDwgA3R2AvA
+	(envelope-from <ssow07591@gmail.com>)
+	for <contact@fiidewgal.com>; Tue, 03 Jan 2023 00:30:31 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NmBtb44vCz1wJP
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="Gk945KwB"
+X-N0C-MailScanner-eFa-Watermark: 1673307029.36725@lg/1mffHstfunY5mm+cndg
+X-N0C-MailScanner-eFa-From: ssow07591@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: EC794400834A.A5929
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-yb1-f179.google.com ([209.85.219.179] [209.85.219.179])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id EC794400834A
+	for <contact@fiidewgal.com>; Tue,  3 Jan 2023 00:29:57 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com EC794400834A
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com EC794400834A
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=Gk945KwB
+Received: by mail-yb1-f179.google.com with SMTP id o127so31471766yba.5
+        for <contact@fiidewgal.com>; Mon, 02 Jan 2023 15:29:56 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=4sg/O4FAeBcyj9H0MybPWZY1zoa6lc/+Y8DUsMhPvgo=;
+        b=Gk945KwBR4buyxC/zT8NjgzHfgd8Suq1ASmd9CNT156FbPxFt3LtuGJ5duaPJUCA0v
+         dXYmJvdXvEY8klbj+B2ST/GD3NrQCgJwxtuMBeNIg0ZJ6Nm7gUy/UOla29UZds7nVV/N
+         0YEkcaQUZi0Bb4RrL29aopTvuP0rxpy6N/utJAtGKxkF/MTybRmxtmWWIOZbwA9mK4Og
+         +8ZEN8E7B2jyNEjiBySSWv9aRlCgeHbIxvfCzU09aom6J/Y9tMDH6BEQvdVQXs0YWThG
+         aPAL1w2kcFjGhS1xADlfz6yCGmPWuOr8oa3mAIL+Z/piaLPnDl6cWAK2s4XyAijrsDJ5
+         l1dA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=4sg/O4FAeBcyj9H0MybPWZY1zoa6lc/+Y8DUsMhPvgo=;
+        b=zL5JYYWpBYRiXfA1Uu9X0tXowLa3ShrFBbfz4HbEdIpU0RQRB7mT5Yr9J38mENBNmY
+         tHXIwvFJQItupt39EqawxZDah97Z3U1EM04Pg5t3MFZJ6nlgItwYnhqVMlXvq1fPKPad
+         pqVH6O1V2CklQ60toCM9b/D4emsl3mfqGtEbbH64flCiVoY2/xCrRZTc6lZcFXYdvbpT
+         X7WS9lJerre4wNwSyy3FPIwGygIJNdzOuXZNz6mTr86xRfPBYpeKNLkRpMKdmgUIkoSA
+         5leU6RAY4Xken5uap0TQeJNxLR6s/TqdPXh6BcaHuLi1TataYx5PXPja5JKLRZvzwPon
+         KlbQ==
+X-Gm-Message-State: AFqh2kr6N06c/jZSCXLcy7Z87p6/c0C7in+HkEeCfbqTrzVvvxHLoV9M
+	6A99OtFoPdc8jd43irtN4ST2Qf+sb2l6/5pyuQc8iCrS
+X-Google-Smtp-Source: AMrXdXsX1zMvIIESqdTisjM/WxNQYy4eY1k3CgHlr+yFRZhZijYXearLGMn46jAtqWdIKwaDIrcZTz6ajIoj4qmyVi4=
+X-Received: by 2002:a25:ba45:0:b0:6f7:c865:7c1 with SMTP id
+ z5-20020a25ba45000000b006f7c86507c1mr3492628ybj.588.1672702195326; Mon, 02
+ Jan 2023 15:29:55 -0800 (PST)
+MIME-Version: 1.0
+From: Sow Saliou <ssow07591@gmail.com>
+Date: Tue, 3 Jan 2023 00:29:42 +0100
+Message-ID: <CADfs2_EzD0a9uOZ8wCVS8nonxZgsy+-z-sFNcbp4MP_E_maaNw@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="0000000000002ae4ba05f1505465"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000002ae4ba05f1505465
+Content-Type: text/plain; charset="UTF-8"
+
+Salut
+
+--0000000000002ae4ba05f1505465
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Salut=C2=A0</div>
+
+--0000000000002ae4ba05f1505465--

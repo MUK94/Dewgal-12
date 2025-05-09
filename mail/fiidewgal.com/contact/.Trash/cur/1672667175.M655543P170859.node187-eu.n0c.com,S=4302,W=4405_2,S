@@ -1,0 +1,103 @@
+Return-Path: <>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id Mxv1JifgsmNrmwIA3R2AvA
+	(envelope-from <>)
+	for <contact@fiidewgal.com>; Mon, 02 Jan 2023 14:46:15 +0100
+Received: by node187-eu.n0c.com (Postfix)
+	id 9909F4008372; Mon,  2 Jan 2023 08:46:15 -0500 (EST)
+Date: Mon,  2 Jan 2023 08:46:15 -0500 (EST)
+From: MAILER-DAEMON@node187-eu.n0c.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: contact@fiidewgal.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="283134020D56.1672667175/node187-eu.n0c.com"
+Message-Id: <20230102134615.9909F4008372@node187-eu.n0c.com>
+
+This is a MIME-encapsulated message.
+
+--283134020D56.1672667175/node187-eu.n0c.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host node187-eu.n0c.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<diallo.akrawiwa10@web.de>: host mx-ha03.web.de[212.227.15.17] said: 550
+    Requested action not taken: mailbox unavailable (in reply to RCPT TO
+    command)
+
+--283134020D56.1672667175/node187-eu.n0c.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; node187-eu.n0c.com
+X-Postfix-Queue-ID: 283134020D56
+X-Postfix-Sender: rfc822; contact@fiidewgal.com
+Arrival-Date: Mon,  2 Jan 2023 08:46:15 -0500 (EST)
+
+Final-Recipient: rfc822; diallo.akrawiwa10@web.de
+Original-Recipient: rfc822;diallo.akrawiwa10@web.de
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; mx-ha03.web.de
+Diagnostic-Code: smtp; 550 Requested action not taken: mailbox unavailable
+
+--283134020D56.1672667175/node187-eu.n0c.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <contact@fiidewgal.com>
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NlxwP6mVkz5PNYx
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (1024-bit key) header.d=fiidewgal.com header.i=@fiidewgal.com header.b="2455KJgd"
+X-N0C-MailScanner-eFa-Watermark: 1673271971.90018@6u82R52Tyrx1OjhHsQbctg
+X-N0C-MailScanner-eFa-From: contact@fiidewgal.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 660624020D56.AE022
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from fiidewgal.com ([185.221.182.45] [185.221.182.45])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+	(no client certificate requested)	(Authenticated sender: contact@fiidewgal.com)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 660624020D56
+	for <diallo.akrawiwa10@web.de>; Mon,  2 Jan 2023 14:46:10 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 660624020D56
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=fiidewgal.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=fiidewgal.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 660624020D56
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fiidewgal.com;
+	s=default; t=1672667170;
+	bh=eg2e6KHgF6Ody9laNCsgxQYH6BZybzRQTu/eOzS9cNw=;
+	h=Date:Subject:From:To:From;
+	b=2455KJgd14s7bBC1+Kx3EE0zxSC0Hwgny1zD0Ae/0iFQSoVAoeA78DFoRTH5A5GK2
+	 QSsqMkV0VMIseWDHCg2Y7Tpd0+zsW4kKg0EaBfX+byubdwuJ+HvwGWTP5T/1JS82Bv
+	 XQqUiNCYTdwqYV2QMWxwmkvk1bEbFTSRWQG8Xmq8=
+Message-ID: <51d59515195e3d2d2c45e430ff3d96b6@fiidewgal.com>
+Date: Mon, 02 Jan 2023 14:46:10 +0100
+Subject: =?utf-8?Q?R=C3=A9initialisation?= du mot de passe
+From: Ne =?utf-8?Q?r=C3=A9pondez?= pas <contact@fiidewgal.com>
+To: diallo.akrawiwa10@web.de
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-N0C-Node-IP: 185.221.182.45
+
+<p>Bonjour&nbsp;Thierno Diallo,</p><p>Votre code de v=C3=A9rification pour =
+la r=C3=A9initialisation du mot de passe est : [[code]]<br></p><p><br></p><=
+p>Merci !<br></p><p>Ne r=C3=A9pondez pas</p>
+
+
+--283134020D56.1672667175/node187-eu.n0c.com--

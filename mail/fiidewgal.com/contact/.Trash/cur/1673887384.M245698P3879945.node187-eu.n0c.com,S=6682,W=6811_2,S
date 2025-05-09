@@ -1,0 +1,129 @@
+Return-Path: <abdulb781983@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id +o6LDph+xWMJNDsA3R2AvA
+	(envelope-from <abdulb781983@gmail.com>)
+	for <contact@fiidewgal.com>; Mon, 16 Jan 2023 17:43:04 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4NwdB00Lysz34SDn1
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="QnwyhqcN"
+X-N0C-MailScanner-eFa-Watermark: 1674492176.34967@QAnlkaUdh6I9xV3WF4R1GA
+X-N0C-MailScanner-eFa-From: abdulb781983@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: 4511540049E0.A94B2
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-lf1-f49.google.com ([209.85.167.49] [209.85.167.49])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id 4511540049E0
+	for <contact@fiidewgal.com>; Mon, 16 Jan 2023 17:42:24 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com 4511540049E0
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com 4511540049E0
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=QnwyhqcN
+Received: by mail-lf1-f49.google.com with SMTP id bp15so43469089lfb.13
+        for <contact@fiidewgal.com>; Mon, 16 Jan 2023 08:42:24 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=IgvNyYOHb2VCZStewFBLBPKnqw6o3/yJQsCDuORaYJo=;
+        b=QnwyhqcNMYpsMaE9a20s0XyWq+/OzzQlejdpfylG25yed43bq3spTDEmuiIoG8zM66
+         +wQAanOm0bda1RNA305RuuiBVKa/aaEXORQDhNeJyN2ynG6lVOriahNDFzpgU1tT2GP6
+         FQ4KR9+zLuAvwoeiZUELwebToXhUS0gg4c/TvMWYmTdCsUdsx3uO5ITBy3dSj/5GZnjj
+         kjnUFgesYqYbDmD3tDnHZ313Hijt8d4Rbn1FBGBwXs2yrNsxQueQCgJXAtrby/7KWlSN
+         I8Hri1jawPx+SspQs29sWP2sDhXVH0zs1B03DGct61n6adKRJJtewRshV5Ko7ldAp8Js
+         fW3Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=IgvNyYOHb2VCZStewFBLBPKnqw6o3/yJQsCDuORaYJo=;
+        b=GWWgqbkNHy/H5z0MMIP76dACzvmSbcxnGwmUgGDL4YVgzbxeHVAHuDEB0bfUFuLpX5
+         LyhjuMHIc4Hj0GmMvXre0jUVh+l7vfOVw/MSv9VJLM1eSPdF4RXFqWz1bN/2+VDDHbWo
+         jG88tXLiL6k7XEAlCS3zm2drtR3dVpui3XInfi+Kc/zXD7pYGG2pFDisTMlgnVZwwolp
+         m3RhNH+aqmSaqJtOE0bRJ8v9T2fi11WdRPPTwZYQDV/fLdKddh/DycZ2GTB3oqplH7VW
+         Rpsa9hDSU+kEflxPKi6WKZRtjVz/RlNX28alUCWNjIBpiuEKTKs1pdb1hcSeAyplH2bn
+         LVRg==
+X-Gm-Message-State: AFqh2kpUjgW8liWcfKUvUuzZN1Q+ycWZg1tW+J1D3oYn6ZvijsAvksUF
+	YCKgwQgU9QKYOwHUP7qcxpCFAHK0OJ4rmxH1sTFmSOIZ
+X-Google-Smtp-Source: AMrXdXs1OLxM0oLmyHyYa3G29lLVQc10unplUvseM/paqpgYvK39i3IRZISI6owPUCxLR/olIrGjQ9ia/IhRMOPqEpc=
+X-Received: by 2002:a19:ca42:0:b0:4b6:e4a4:648c with SMTP id
+ h2-20020a19ca42000000b004b6e4a4648cmr3959189lfj.414.1673887343390; Mon, 16
+ Jan 2023 08:42:23 -0800 (PST)
+MIME-Version: 1.0
+References: <0f7adbe9a003a54233e41d0659dc2293@fiidewgal.com>
+ <CAM5F6D-0eKZC3p2Besz-sT7=hU0hWmeu=U-2RQcC6-cFB1QsPw@mail.gmail.com> <CAM5F6D8-Rr0f3HT=+iYCNKXR_3CpezW6shsna3WvOpjOe=ECwQ@mail.gmail.com>
+In-Reply-To: <CAM5F6D8-Rr0f3HT=+iYCNKXR_3CpezW6shsna3WvOpjOe=ECwQ@mail.gmail.com>
+From: ABDUL BARRIE <abdulb781983@gmail.com>
+Date: Mon, 16 Jan 2023 16:42:11 +0000
+Message-ID: <CAM5F6D8uTjDAPDPEg60TcyANTbTmBOYxgmc-mOY=tog-MZcd=A@mail.gmail.com>
+Subject: =?UTF-8?Q?Re=3A_Vous_avez_une_nouvelle_demande_d=27int=C3=A9r=C3=AAt?=
+To: =?UTF-8?Q?Ne_r=C3=A9pondez_pas?= <contact@fiidewgal.com>
+Content-Type: multipart/alternative; boundary="0000000000007f328305f2644484"
+X-N0C-Node-IP: 185.221.182.45
+
+--0000000000007f328305f2644484
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Let me see them
+
+On Mon, Jan 16, 2023, 16:28 ABDUL BARRIE <abdulb781983@gmail.com> wrote:
+
+> My WhatsApp number +23277955046
+>
+> On Mon, Jan 16, 2023, 16:25 ABDUL BARRIE <abdulb781983@gmail.com> wrote:
+>
+>> Hello I received your message let exchange numbers so that we can talk
+>>
+>> On Mon, Jan 16, 2023, 16:18 Ne r=C3=A9pondez pas <contact@fiidewgal.com>
+>> wrote:
+>>
+>>> Bonjour Abdul Barrie,
+>>>
+>>> Salimatou Barry a manifest=C3=A9 son int=C3=A9r=C3=AAt pour vous.
+>>>
+>>> Veuillez contacter l'=C3=A9quipe administrative si vous avez d'autres
+>>> questions.
+>>>
+>>> Merci,
+>>>
+>>> Ne r=C3=A9pondez pas
+>>>
+>>
+
+--0000000000007f328305f2644484
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Let me see them=C2=A0</div><br><div class=3D"gmail_quote"=
+><div dir=3D"ltr" class=3D"gmail_attr">On Mon, Jan 16, 2023, 16:28 ABDUL BA=
+RRIE &lt;<a href=3D"mailto:abdulb781983@gmail.com">abdulb781983@gmail.com</=
+a>&gt; wrote:<br></div><blockquote class=3D"gmail_quote" style=3D"margin:0 =
+0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><div dir=3D"auto">My =
+WhatsApp number +23277955046</div><br><div class=3D"gmail_quote"><div dir=
+=3D"ltr" class=3D"gmail_attr">On Mon, Jan 16, 2023, 16:25 ABDUL BARRIE &lt;=
+<a href=3D"mailto:abdulb781983@gmail.com" target=3D"_blank" rel=3D"noreferr=
+er">abdulb781983@gmail.com</a>&gt; wrote:<br></div><blockquote class=3D"gma=
+il_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-lef=
+t:1ex"><div dir=3D"auto">Hello I received your message let exchange numbers=
+ so that we can talk=C2=A0</div><br><div class=3D"gmail_quote"><div dir=3D"=
+ltr" class=3D"gmail_attr">On Mon, Jan 16, 2023, 16:18 Ne r=C3=A9pondez pas =
+&lt;<a href=3D"mailto:contact@fiidewgal.com" rel=3D"noreferrer noreferrer" =
+target=3D"_blank">contact@fiidewgal.com</a>&gt; wrote:<br></div><blockquote=
+ class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc soli=
+d;padding-left:1ex"><p>Bonjour Abdul Barrie,</p><p>Salimatou Barry a manife=
+st=C3=A9 son int=C3=A9r=C3=AAt pour vous.</p><p>Veuillez contacter l&#39;=
+=C3=A9quipe administrative si vous avez d&#39;autres questions.</p><p>Merci=
+,</p><p>Ne r=C3=A9pondez pas</p>
+
+</blockquote></div>
+</blockquote></div>
+</blockquote></div>
+
+--0000000000007f328305f2644484--

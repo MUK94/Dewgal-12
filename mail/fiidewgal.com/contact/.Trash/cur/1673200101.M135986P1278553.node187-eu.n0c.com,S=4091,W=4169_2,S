@@ -1,0 +1,78 @@
+Return-Path: <amadoudiogo2412@gmail.com>
+Delivered-To: contact@fiidewgal.com
+Received: from node187-eu.n0c.com
+	by node187-eu.n0c.com with LMTP
+	id p5/+B+UBu2NZghMA3R2AvA
+	(envelope-from <amadoudiogo2412@gmail.com>)
+	for <contact@fiidewgal.com>; Sun, 08 Jan 2023 18:48:21 +0100
+X-Spam-Status: No
+DKIM-Filter: OpenDKIM Filter v2.11.0 mailfilter-eu.n0c.com 4Nql106zXYz34SDmk
+Authentication-Results: mailfilter-eu.n0c.com;
+	dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="WORNka9I"
+X-N0C-MailScanner-eFa-Watermark: 1673804893.84457@WPnKVy/fIBMsr01C4TPIPw
+X-N0C-MailScanner-eFa-From: amadoudiogo2412@gmail.com
+X-N0C-MailScanner-eFa: Found to be clean
+X-N0C-MailScanner-eFa-ID: CBF0F4010E09.A04D7
+X-N0C-MailScanner-eFa-Information: Please contact N0C for more information
+Received: from mail-ed1-f54.google.com ([209.85.208.54] [209.85.208.54])
+	(using TLSv1.3 with cipher TLS_AES_128_GCM_SHA256 (128/128 bits))
+	(no client certificate requested)
+	by mailfilter-eu.n0c.com (MailScanner Milter) with SMTP id CBF0F4010E09
+	for <contact@fiidewgal.com>; Sun,  8 Jan 2023 18:47:40 +0100 (CET)
+DMARC-Filter: OpenDMARC Filter v1.4.1 node187-eu.n0c.com CBF0F4010E09
+Authentication-Results: node187-eu.n0c.com; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: node187-eu.n0c.com; spf=pass smtp.mailfrom=gmail.com
+DKIM-Filter: OpenDKIM Filter v2.11.0 node187-eu.n0c.com CBF0F4010E09
+Authentication-Results: node187-eu.n0c.com;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20210112 header.b=WORNka9I
+Received: by mail-ed1-f54.google.com with SMTP id 18so9390796edw.7
+        for <contact@fiidewgal.com>; Sun, 08 Jan 2023 09:47:40 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=ZY+qx7pdDdzbuF5QItb8lVOx6APlU4YIxTdSViYKH/Y=;
+        b=WORNka9IHbIzzWIt0swZ4S3DQVFCx1atqwAO2JxsgM4y4V/PWlWsDIHQNby0iDGB73
+         QVD6ZFq96q2v/9E4o9bGCGkbMXsmxvLAkcaTEYMJsTIdrX3jad3ChS7nm0jWn55H9gsF
+         QDtrc/sFajKK5IfDy6fl5zQjaWfzxSTX8QZ4OaDD2DJSe/86L6YDYrzMA2lF/BsDoaOw
+         FvZd+N/fc7qlZ4fzdM230noamH+hVfAZddwudOKxFvipI8XIju8JpmPa3xwZqmUzql/S
+         OoiJAlSMwlyisuHis69EnNa5FlUP5nw7x4gkVjxhkwL9xR/ySiaLqm12EJWIBmghC+w9
+         TWXg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=ZY+qx7pdDdzbuF5QItb8lVOx6APlU4YIxTdSViYKH/Y=;
+        b=YkyLZk2F/hIp8mbhJa6UyfOXlsMe8kGjWrJgl8oIT/jmDFHMOGJo7gO53uKeFKGKhC
+         EAWPV4lYYXa1flwbmizL8k7xTHNp4zgnwAt/Az9hz23EVDZVOAjYMldKpX1jeu7Nz9cG
+         +AQw1DHyfuKSYn7hq1hG9d43fTD3+TkE2idloRzafY3VLyizJ5WlEG0XaCWFbYLWbffv
+         nM+sb9LSWa8Hc4aV7eeIItPkiPhsuOH0sUVb4Wkmh+p2+1ROzhzGEF34HPlBChM2ohVZ
+         if9nMKGkzkomg1zfppNOSS/zLU2fgy8Rumq5iieVmWXN8Z0oEOQv/N56w3B3SaTqXLtD
+         ALZA==
+X-Gm-Message-State: AFqh2kpTzrgZh6BhEfk4F+ArKCaCS3KqjPNUI5MOciGlleaS7ZXjQwHO
+	ORKES17+o9XtY0F/cQjjS3C+IfDj30v5URYyvepwtTld
+X-Google-Smtp-Source: AMrXdXveIM+yQ8mdSfP7ISubsTCapAdn2EymNLSCJc5odwZxfLCiD64P4PwupVot0+B/dLE8X843dcSwbjpGFLBhNjg=
+X-Received: by 2002:a05:6402:249f:b0:46c:e010:acb2 with SMTP id
+ q31-20020a056402249f00b0046ce010acb2mr6756973eda.415.1673200059966; Sun, 08
+ Jan 2023 09:47:39 -0800 (PST)
+MIME-Version: 1.0
+From: Amadou Diogo <amadoudiogo2412@gmail.com>
+Date: Sun, 8 Jan 2023 18:47:28 +0100
+Message-ID: <CAPT5Gh3072obHzsTmxv92J=GqvBNcceTnXgMN1oSXqQM2g3-eg@mail.gmail.com>
+Subject: 
+To: contact@fiidewgal.com
+Content-Type: multipart/alternative; boundary="00000000000036699c05f1c43f36"
+X-N0C-Node-IP: 185.221.182.45
+
+--00000000000036699c05f1c43f36
+Content-Type: text/plain; charset="UTF-8"
+
+Merci
+
+--00000000000036699c05f1c43f36
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Merci=C2=A0</div>
+
+--00000000000036699c05f1c43f36--
