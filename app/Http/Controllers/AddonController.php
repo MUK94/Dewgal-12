@@ -4,11 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Addon;
-use Cache;
 use ZipArchive;
-use DB;
 use Illuminate\Support\Str;
-use Storage;
+use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\DB;
 
 class AddonController extends Controller
 {

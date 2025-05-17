@@ -69,11 +69,14 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use PhpOffice\PhpSpreadsheet\Cell\DataType;
 
+use Illuminate\Support\Facades\Auth;
+
+
 class ProfileController extends Controller
 {
     public function profile_settings()
     {
-        $member             = User::findOrFail(auth()->user()->id);
+        $member             = User::findOrFail(Auth::user()->id);
         $countries          = Country::where('status', 1)->get();
         $states             = State::all();
         $cities             = City::all();
@@ -87,27 +90,36 @@ class ProfileController extends Controller
 
         return response()->json([
             'result' => true,
-            'member' => $member, 'countries' => $countries, 'states' => $states, 'cities' => $cities,
-            'religions' => $religions, 'castes' => $castes, 'sub_castes' => $sub_castes, 'family_values' => $family_values, 'marital_statuses' => $marital_statuses, 'on_behalves' => $on_behalves, 'languages' => $languages,
+            'member' => $member,
+            'countries' => $countries,
+            'states' => $states,
+            'cities' => $cities,
+            'religions' => $religions,
+            'castes' => $castes,
+            'sub_castes' => $sub_castes,
+            'family_values' => $family_values,
+            'marital_statuses' => $marital_statuses,
+            'on_behalves' => $on_behalves,
+            'languages' => $languages,
         ]);
     }
 
     public function get_introduction()
     {
-        return (new AboutUser(auth()->user()))->additional([
+        return (new AboutUser(Auth::user()))->additional([
             'result' => true
         ]);
     }
 
     public function get_email()
     {
-        $data['email'] = auth()->user()->email;
+        $data['email'] = Auth::user()->email;
         return $this->response_data($data);
     }
 
     public function introduction_update(Request $request)
     {
-        $member = Member::where('user_id', auth()->id())->first();
+        $member = Member::where('user_id', Auth::id())->first();
         $member->introduction = $request->introduction;
         $member->save();
         return $this->success_message('Introduction updated successfully!');
@@ -115,7 +127,7 @@ class ProfileController extends Controller
 
     public function get_basic_info()
     {
-        return (new BasicInformation(auth()->user()))->additional([
+        return (new BasicInformation(Auth::user()))->additional([
             'result' => true
         ]);;
     }
@@ -126,20 +138,20 @@ class ProfileController extends Controller
             return response()->json('Email and Phone number both can not be null. ');
         }
 
-        $user               = User::findOrFail(auth()->id());
-         // image upload
-         $photo = null;
-         if ($request->hasFile('photo')) {
-             $photo = upload_api_file($request->file('photo'));
-             $user->photo        = $photo;
-         }
+        $user               = User::findOrFail(Auth::id());
+        // image upload
+        $photo = null;
+        if ($request->hasFile('photo')) {
+            $photo = upload_api_file($request->file('photo'));
+            $user->photo        = $photo;
+        }
 
         $user->first_name   = $request->first_name;
         $user->last_name    = $request->last_name;
-        if (Setting::where('type', 'profile_picture_approval_by_admin')->first()->value && $request->photo != $user->photo && auth()->user()->user_type == 'member') {
+        if (Setting::where('type', 'profile_picture_approval_by_admin')->first()->value && $request->photo != $user->photo && Auth::user()->user_type == 'member') {
             $user->photo_approved = 0;
         }
-        
+
         $user->phone        = $request->phone;
         $user->save();
         $member                     = Member::where('user_id', $user->id)->first();
@@ -154,7 +166,7 @@ class ProfileController extends Controller
 
     public function present_address()
     {
-        $present_address = Address::where('user_id', auth()->id())->where('type', 'present')->first();
+        $present_address = Address::where('user_id', Auth::id())->where('type', 'present')->first();
         if ($present_address) {
             return (new AddressResource($present_address))->additional([
                 'result' => true
@@ -167,7 +179,7 @@ class ProfileController extends Controller
     }
     public function permanent_address()
     {
-        $permanent_address = Address::where('user_id', auth()->id())->where('type', 'permanent')->first();
+        $permanent_address = Address::where('user_id', Auth::id())->where('type', 'permanent')->first();
         if ($permanent_address) {
             return (new AddressResource($permanent_address))->additional([
                 'result' => true
@@ -186,10 +198,10 @@ class ProfileController extends Controller
             'city_id'      => ['required'],
             'postal_code'  => ['required', 'numeric'],
         ]);
-        $address = Address::where('user_id', auth()->id())->where('type', $request->address_type)->first();
+        $address = Address::where('user_id', Auth::id())->where('type', $request->address_type)->first();
         if (empty($address)) {
             $address = new Address();
-            $address->user_id = auth()->id();
+            $address->user_id = Auth::id();
         }
         $address->country_id   = $request->country_id;
         $address->state_id     = $request->state_id;
@@ -202,8 +214,8 @@ class ProfileController extends Controller
 
     public function physical_attributes()
     {
-        if (auth()->user()->physical_attributes) {
-            return (new PhysicalAttributes(auth()->user()->physical_attributes))->additional([
+        if (Auth::user()->physical_attributes) {
+            return (new PhysicalAttributes(Auth::user()->physical_attributes))->additional([
                 'result' => true
             ]);
         } else {
@@ -224,10 +236,10 @@ class ProfileController extends Controller
             'disability'   => ['max:255'],
         ]);
 
-        $physical_attribute = PhysicalAttribute::where('user_id', auth()->id())->first();
+        $physical_attribute = PhysicalAttribute::where('user_id', Auth::id())->first();
         if (empty($physical_attribute)) {
             $physical_attribute = new PhysicalAttribute;
-            $physical_attribute->user_id = auth()->id();
+            $physical_attribute->user_id = Auth::id();
         }
         $physical_attribute->height        = $request->height;
         $physical_attribute->weight        = $request->weight;
@@ -245,8 +257,8 @@ class ProfileController extends Controller
     {
         $member_known_languages = null;
         $member_mother_tongue = null;
-        $known_languages = json_decode(auth()->user()->member->known_languages);
-        $mother_tongue = auth()->user()->member->mothere_tongue;
+        $known_languages = json_decode(Auth::user()->member->known_languages);
+        $mother_tongue = Auth::user()->member->mothere_tongue;
         if ($known_languages != null) {
             $member_known_languages = LanguageResource::collection(MemberLanguage::whereIn('id', $known_languages)->get());
         }
@@ -260,7 +272,7 @@ class ProfileController extends Controller
 
     public function member_language_update(Request $request)
     {
-        $member  = Member::where('user_id', auth()->id())->first();
+        $member  = Member::where('user_id', Auth::id())->first();
         if ($member) {
             $member->mothere_tongue     = $request->mothere_tongue;
             $member->known_languages    = $request->known_languages;
@@ -272,8 +284,8 @@ class ProfileController extends Controller
     }
     public function hobbies_interest()
     {
-        if (auth()->user()->hobbies) {
-            return (new HobbiesInterests(auth()->user()->hobbies))->additional([
+        if (Auth::user()->hobbies) {
+            return (new HobbiesInterests(Auth::user()->hobbies))->additional([
                 'result' => true
             ]);
         } else {
@@ -282,10 +294,10 @@ class ProfileController extends Controller
     }
     public function hobbies_interest_update(Request $request)
     {
-        $hobbies = Hobby::where('user_id', auth()->id())->first();
+        $hobbies = Hobby::where('user_id', Auth::id())->first();
         if (empty($hobbies)) {
             $hobbies = new Hobby;
-            $hobbies->user_id = auth()->id();
+            $hobbies->user_id = Auth::id();
         }
         $hobbies->hobbies              = $request->hobbies;
         $hobbies->interests            = $request->interests;
@@ -302,8 +314,8 @@ class ProfileController extends Controller
     }
     public function attitude_behavior()
     {
-        if (auth()->user()->attitude) {
-            return (new AttitudesBehaviors(auth()->user()->attitude))->additional([
+        if (Auth::user()->attitude) {
+            return (new AttitudesBehaviors(Auth::user()->attitude))->additional([
                 'result' => true
             ]);
         } else {
@@ -312,10 +324,10 @@ class ProfileController extends Controller
     }
     public function attitude_behavior_update(Request $request)
     {
-        $attitude = Attitude::where('user_id', auth()->id())->first();
+        $attitude = Attitude::where('user_id', Auth::id())->first();
         if (empty($attitude)) {
             $attitude = new Attitude;
-            $attitude->user_id = auth()->id();
+            $attitude->user_id = Auth::id();
         }
         $attitude->affection           = $request->affection;
         $attitude->humor               = $request->humor;
@@ -326,8 +338,8 @@ class ProfileController extends Controller
     }
     public function residency_info()
     {
-        if (auth()->user()->recidency) {
-            return (new ResidenceInformation(auth()->user()->recidency))->additional([
+        if (Auth::user()->recidency) {
+            return (new ResidenceInformation(Auth::user()->recidency))->additional([
                 'result' => true
             ]);
         } else {
@@ -336,10 +348,10 @@ class ProfileController extends Controller
     }
     public function residency_info_update(Request $request)
     {
-        $recidencies = Recidency::where('user_id', auth()->id())->first();
+        $recidencies = Recidency::where('user_id', Auth::id())->first();
         if (empty($recidencies)) {
             $recidencies = new Recidency;
-            $recidencies->user_id = auth()->id();
+            $recidencies->user_id = Auth::id();
         }
         $recidencies->birth_country_id         = $request->birth_country_id;
         $recidencies->recidency_country_id     = $request->recidency_country_id;
@@ -350,8 +362,8 @@ class ProfileController extends Controller
     }
     public function spiritual_background()
     {
-        if (auth()->user()->spiritual_backgrounds) {
-            return (new SpiritualSocialBackground(auth()->user()->spiritual_backgrounds))->additional([
+        if (Auth::user()->spiritual_backgrounds) {
+            return (new SpiritualSocialBackground(Auth::user()->spiritual_backgrounds))->additional([
                 'result' => true
             ]);
         } else {
@@ -361,10 +373,10 @@ class ProfileController extends Controller
 
     public function spiritual_background_update(Request $request)
     {
-        $spiritual_backgrounds = SpiritualBackground::where('user_id', auth()->id())->first();
+        $spiritual_backgrounds = SpiritualBackground::where('user_id', Auth::id())->first();
         if (empty($spiritual_backgrounds)) {
             $spiritual_backgrounds          = new SpiritualBackground;
-            $spiritual_backgrounds->user_id = auth()->id();
+            $spiritual_backgrounds->user_id = Auth::id();
         }
         $spiritual_backgrounds->religion_id        = $request->member_religion_id;
         $spiritual_backgrounds->caste_id           = $request->member_caste_id;
@@ -378,8 +390,8 @@ class ProfileController extends Controller
     }
     public function life_style()
     {
-        if (auth()->user()->lifestyles) {
-            return (new LifeStyleResource(auth()->user()->lifestyles))->additional([
+        if (Auth::user()->lifestyles) {
+            return (new LifeStyleResource(Auth::user()->lifestyles))->additional([
                 'result' => true
             ]);
         } else {
@@ -388,10 +400,10 @@ class ProfileController extends Controller
     }
     public function life_style_update(Request $request)
     {
-        $lifestyle = Lifestyle::where('user_id', auth()->id())->first();
+        $lifestyle = Lifestyle::where('user_id', Auth::id())->first();
         if (empty($lifestyle)) {
             $lifestyle             = new Lifestyle;
-            $lifestyle->user_id    = auth()->id();
+            $lifestyle->user_id    = Auth::id();
         }
         $lifestyle->diet          = $request->diet;
         $lifestyle->drink         = $request->drink;
@@ -405,21 +417,21 @@ class ProfileController extends Controller
 
 
 
-        if (auth()->user()->astrologies) {
-            return (new AstronomicInformation(auth()->user()->astrologies))->additional([
+        if (Auth::user()->astrologies) {
+            return (new AstronomicInformation(Auth::user()->astrologies))->additional([
                 'result' => true
             ]);
         } else {
             // return $this->failure_message('No Data Found!!');
-            return $this->failure_data(auth()->user()->astrologies);
+            return $this->failure_data(Auth::user()->astrologies);
         }
     }
     public function astronomic_info_update(Request $request)
     {
-        $astrologies = Astrology::where('user_id', auth()->id())->first();
+        $astrologies = Astrology::where('user_id', Auth::id())->first();
         if (empty($astrologies)) {
             $astrologies           = new Astrology;
-            $astrologies->user_id  = auth()->id();
+            $astrologies->user_id  = Auth::id();
         }
         $astrologies->sun_sign         = $request->sun_sign;
         $astrologies->moon_sign        = $request->moon_sign;
@@ -431,8 +443,8 @@ class ProfileController extends Controller
     }
     public function family_info()
     {
-        if (auth()->user()->families) {
-            return (new FamilyInformation(auth()->user()->families))->additional([
+        if (Auth::user()->families) {
+            return (new FamilyInformation(Auth::user()->families))->additional([
                 'result' => true
             ]);
         } else {
@@ -441,10 +453,10 @@ class ProfileController extends Controller
     }
     public function family_info_update(Request $request)
     {
-        $family = Family::where('user_id', auth()->id())->first();
+        $family = Family::where('user_id', Auth::id())->first();
         if (empty($family)) {
             $family           = new Family;
-            $family->user_id  = auth()->id();
+            $family->user_id  = Auth::id();
         }
         $family->father    = $request->father;
         $family->mother    = $request->mother;
@@ -454,8 +466,8 @@ class ProfileController extends Controller
     }
     public function partner_expectation()
     {
-        if (auth()->user()->partner_expectations) {
-            return (new PartnerExpectationResource(auth()->user()->partner_expectations))->additional([
+        if (Auth::user()->partner_expectations) {
+            return (new PartnerExpectationResource(Auth::user()->partner_expectations))->additional([
                 'result' => true
             ]);
         } else {
@@ -464,11 +476,11 @@ class ProfileController extends Controller
     }
     public function partner_expectation_update(Request $request)
     {
-        $user  = User::where('id', auth()->id())->first();
-        $partner_expectations = PartnerExpectation::where('user_id', auth()->id())->first();
+        $user  = User::where('id', Auth::id())->first();
+        $partner_expectations = PartnerExpectation::where('user_id', Auth::id())->first();
         if (empty($partner_expectations)) {
             $partner_expectations           = new PartnerExpectation;
-            $partner_expectations->user_id  = auth()->id();
+            $partner_expectations->user_id  = Auth::id();
         }
         $partner_expectations->general                   = $request->general;
         $partner_expectations->height                    = $request->partner_height;
@@ -513,7 +525,7 @@ class ProfileController extends Controller
             'password'      => ['required', 'string', 'min:8', 'confirmed']
         ]);
 
-        $user = User::findOrFail(auth()->id());
+        $user = User::findOrFail(Auth::id());
 
         if (Hash::check($request->old_password, $user->password)) {
             $user->password = Hash::make($request->password);
@@ -526,7 +538,7 @@ class ProfileController extends Controller
 
     public function account_deactivation(Request $request)
     {
-        $user = auth()->user();
+        $user = Auth::user();
         $user->deactivated = $request->deacticvation_status;
         $user->save();
         $msg = $request->deacticvation_status == 1 ? 'deactivated' : 'reactivated';
@@ -535,7 +547,7 @@ class ProfileController extends Controller
     public function public_profile($id)
     {
         $user = User::where('id', $id)->first();
-        $auth_user = auth()->user();
+        $auth_user = Auth::user();
         if ($user) {
             $member_known_languages = null;
             $member_mother_tongue = null;
@@ -587,13 +599,13 @@ class ProfileController extends Controller
             }
 
             $data['profile_match'] = null;
-            $profile_match = ProfileMatch::where('user_id', auth()->user()->id)
+            $profile_match = ProfileMatch::where('user_id', Auth::user()->id)
                 ->where('match_id', $user->id)
                 ->first();
-            if (!empty($profile_match) && auth()->user()->member->auto_profile_match == 1) {
+            if (!empty($profile_match) && Auth::user()->member->auto_profile_match == 1) {
                 $data['profile_match'] = $profile_match->match_percentage;
             }
-            $data['view_contact_check'] = ViewContact::where('user_id', $user->id)->where('viewed_by', auth()->id())->first() ? true : false;
+            $data['view_contact_check'] = ViewContact::where('user_id', $user->id)->where('viewed_by', Auth::id())->first() ? true : false;
 
             return $this->response_data($data);
         } else {
@@ -602,7 +614,7 @@ class ProfileController extends Controller
     }
     public function contact_info_update(Request $request)
     {
-        $user = User::where('id', auth()->id())->first();
+        $user = User::where('id', Auth::id())->first();
         $user->email = $request->email;
         $user->phone = $request->phone;
         if ($user->save()) {
@@ -614,9 +626,9 @@ class ProfileController extends Controller
 
     public function store_view_contact(Request $request)
     {
-        $contact_view_check = ViewContact::where('user_id', $request->id)->where('viewed_by', auth()->id())->first();
+        $contact_view_check = ViewContact::where('user_id', $request->id)->where('viewed_by', Auth::id())->first();
         if (!$contact_view_check) {
-            $view_contact_by_user = auth()->user();
+            $view_contact_by_user = Auth::user();
             $view_contact_by_member = $view_contact_by_user->member;
 
             if ($view_contact_by_member->remaining_contact_view > 0) {
@@ -645,7 +657,7 @@ class ProfileController extends Controller
     public function matched_profile()
     {
         $matched_profiles = [];
-        $user = auth()->user();
+        $user = Auth::user();
         if ($user->member->auto_profile_match == 1) {
             $matched_profiles = ProfileMatch::orderBy('match_percentage', 'desc')
                 ->where('user_id', $user->id)
@@ -665,7 +677,7 @@ class ProfileController extends Controller
 
     public function account_delete(Request $request)
     {
-        $user = auth()->user();
+        $user = Auth::user();
         if ($user) {
             $user->member ?  $user->member->delete() : '';
             Address::where('user_id', $user->id)->delete();
@@ -689,8 +701,8 @@ class ProfileController extends Controller
             GalleryImage::where('user_id', $user->id)->delete();
             ExpressInterest::where('user_id', $user->id)->delete();
             ProfileMatch::where('user_id', $user->id)->delete();
-            ChatThread::where('sender_user_id', auth()->user()->id)->orWhere('receiver_user_id', auth()->user()->id)->delete();
-            User::destroy(auth()->user()->id);
+            ChatThread::where('sender_user_id', Auth::user()->id)->orWhere('receiver_user_id', Auth::user()->id)->delete();
+            User::destroy(Auth::user()->id);
             $user->tokens()
                 ->where('id', $user->currentAccessToken()->id)
                 ->delete();

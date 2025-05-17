@@ -8,8 +8,8 @@ use App\Http\Controllers\InstamojoController;
 use App\Http\Controllers\PaystackController;
 use App\Models\Wallet;
 use App\Models\User;
-use Auth;
-use Session;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 
 class WalletController extends Controller
 {
@@ -24,7 +24,7 @@ class WalletController extends Controller
         if(!get_setting('wallet_system')){
             return back();
         }
-        
+
         $wallets = Wallet::where('user_id', Auth::user()->id)->latest()->paginate(9);
         return view('frontend.member.wallet.index', compact('wallets'));
     }
@@ -105,7 +105,7 @@ class WalletController extends Controller
 
     public function wallet_payment_done($payment_data, $payment_details)
     {
-        $user = auth()->user();
+        $user = Auth::user();
         $user->balance = $user->balance + $payment_data['amount'];
         $user->save();
 

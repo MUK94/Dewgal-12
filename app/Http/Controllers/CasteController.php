@@ -5,11 +5,14 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Religion;
 use App\Models\Caste;
-use Redirect;
-use Validator;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Redirect;
 
 class CasteController extends Controller
 {
+    public $rules;
+    public $messages;
+
     public function __construct()
     {
         $this->middleware(['permission:show_castes'])->only('index');
@@ -17,7 +20,7 @@ class CasteController extends Controller
         $this->middleware(['permission:delete_caste'])->only('destroy');
 
         $this->rules = [
-            'name'      => ['required','max:255'],
+            'name'      => ['required', 'max:255'],
             'religion'  => ['required'],
         ];
 
@@ -39,12 +42,12 @@ class CasteController extends Controller
         $castes       = Caste::latest();
         $religions    = Religion::all();
 
-        if ($request->has('search')){
+        if ($request->has('search')) {
             $sort_search  = $request->search;
-            $castes       = $castes->where('name', 'like', '%'.$sort_search.'%');
+            $castes       = $castes->where('name', 'like', '%' . $sort_search . '%');
         }
         $castes = $castes->paginate(10);
-        return view('admin.member_profile_attributes.castes.index', compact('castes','religions','sort_search'));
+        return view('admin.member_profile_attributes.castes.index', compact('castes', 'religions', 'sort_search'));
     }
 
     /**
@@ -77,16 +80,13 @@ class CasteController extends Controller
         $caste              = new Caste;
         $caste->name        = $request->name;
         $caste->religion_id = $request->religion;
-        if($caste->save())
-        {
+        if ($caste->save()) {
             flash('New caste has been added successfully')->success();
             return redirect()->route('castes.index');
-        }
-        else {
+        } else {
             flash('Sorry! Something went wrong.')->error();
             return back();
         }
-
     }
 
     /**
@@ -110,7 +110,7 @@ class CasteController extends Controller
     {
         $caste          = Caste::findOrFail(decrypt($id));
         $religions      = Religion::all();
-        return view('admin.member_profile_attributes.castes.edit', compact('caste','religions'));
+        return view('admin.member_profile_attributes.castes.edit', compact('caste', 'religions'));
     }
 
     /**
@@ -134,16 +134,13 @@ class CasteController extends Controller
         $caste              = Caste::findOrFail($id);
         $caste->name        = $request->name;
         $caste->religion_id = $request->religion;
-        if($caste->save())
-        {
+        if ($caste->save()) {
             flash('Caste info has been updated successfully')->success();
             return redirect()->route('castes.index');
-        }
-        else {
+        } else {
             flash('Sorry! Something went wrong.')->error();
             return back();
         }
-
     }
 
     /**

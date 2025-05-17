@@ -5,11 +5,16 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Package;
 use App\Models\Member;
-use Redirect;
-use Validator;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Redirect;
+
 
 class PackageController extends Controller
 {
+
+    public $package_rules;
+    public $package_messages;
+
     public function __construct()
     {
         $this->middleware(['permission:show_packages'])->only('index');

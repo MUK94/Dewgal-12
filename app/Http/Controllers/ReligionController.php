@@ -1,13 +1,17 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Http\Request;
 use App\Models\Religion;
-use Redirect;
-use Validator;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Redirect;
 
 class ReligionController extends Controller
 {
+    public $rules;
+    public $messages;
+
     public function __construct()
     {
         $this->middleware(['permission:show_religions'])->only('index');
@@ -15,7 +19,7 @@ class ReligionController extends Controller
         $this->middleware(['permission:delete_religion'])->only('destroy');
 
         $this->rules = [
-            'name' => ['required','max:255'],
+            'name' => ['required', 'max:255'],
         ];
 
         $this->messages = [
@@ -32,12 +36,12 @@ class ReligionController extends Controller
     {
         $sort_search  = null;
         $religions    = Religion::latest();
-        if ($request->has('search')){
+        if ($request->has('search')) {
             $sort_search  = $request->search;
-            $religions    = $religions->where('name', 'like', '%'.$sort_search.'%');
+            $religions    = $religions->where('name', 'like', '%' . $sort_search . '%');
         }
         $religions = $religions->paginate(10);
-        return view('admin.member_profile_attributes.religions.index', compact('religions','sort_search'));
+        return view('admin.member_profile_attributes.religions.index', compact('religions', 'sort_search'));
     }
 
     /**
@@ -69,14 +73,13 @@ class ReligionController extends Controller
 
         $religion       = new Religion;
         $religion->name = $request->name;
-        if($religion->save()){
+        if ($religion->save()) {
             flash(translate('New religion has been added successfully'))->success();
             return redirect()->route('religions.index');
         } else {
             flash(translate('Sorry! Something went wrong.'))->error();
             return back();
         }
-
     }
 
     /**
@@ -99,7 +102,7 @@ class ReligionController extends Controller
     public function edit($id)
     {
         $religion = Religion::findOrFail(decrypt($id));
-        return view('admin.member_profile_attributes.religions.edit',compact('religion'));
+        return view('admin.member_profile_attributes.religions.edit', compact('religion'));
     }
 
     /**
@@ -122,7 +125,7 @@ class ReligionController extends Controller
 
         $religion       = Religion::findOrFail($id);
         $religion->name = $request->name;
-        if($religion->save()){
+        if ($religion->save()) {
             flash(translate('Religion info has been updated successfully'))->success();
             return redirect()->route('religions.index');
         } else {

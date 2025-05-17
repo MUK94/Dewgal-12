@@ -8,20 +8,24 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Api\Controller;
 use App\Http\Resources\ShortlistResource;
 
+use Illuminate\Support\Facades\Auth;
+
 class ShortlistController extends Controller
 {
     public function index()
     {
-        $shortlists = Shortlist::where('shortlisted_by', auth()->user()->id)
-                              ->WhereNotIn("user_id", function ($query){
-                                    $query->select('user_id')
-                                        ->from('ignored_users')
-                                        ->where('ignored_by', auth()->user()->id)->orWhere('user_id', auth()->user()->id);})
-                              ->WhereNotIn("user_id", function ($query){
-                                    $query->select('ignored_by')
-                                        ->from('ignored_users')
-                                        ->where('ignored_by', auth()->user()->id)->orWhere('user_id', auth()->user()->id);})
-                              ->latest()->paginate(10);
+        $shortlists = Shortlist::where('shortlisted_by', Auth::user()->id)
+            ->WhereNotIn("user_id", function ($query) {
+                $query->select('user_id')
+                    ->from('ignored_users')
+                    ->where('ignored_by', Auth::user()->id)->orWhere('user_id', Auth::user()->id);
+            })
+            ->WhereNotIn("user_id", function ($query) {
+                $query->select('ignored_by')
+                    ->from('ignored_users')
+                    ->where('ignored_by', Auth::user()->id)->orWhere('user_id', Auth::user()->id);
+            })
+            ->latest()->paginate(10);
 
         return ShortlistResource::collection($shortlists)->additional([
             'result' => true
@@ -30,26 +34,25 @@ class ShortlistController extends Controller
 
     public function store(Request $request)
     {
-        if(User::find($request->user_id)){
-            if (!Shortlist::where('user_id',$request->user_id)->where('shortlisted_by',auth()->id())->first()) {
+        if (User::find($request->user_id)) {
+            if (!Shortlist::where('user_id', $request->user_id)->where('shortlisted_by', Auth::id())->first()) {
                 Shortlist::create($request->only('user_id') + [
-                    'shortlisted_by' => auth()->user()->id
+                    'shortlisted_by' => Auth::user()->id
                 ]);
                 return $this->success_message('You Have Shortlisted This Member');
             }
             return $this->failure_message('You Have already added This Member');
         }
         return $this->failure_message('Invalid Member to Shortlist.');
-        
     }
-    
+
     public function remove(Request $request)
     {
-        $shortlist = Shortlist::where('user_id', $request->user_id)->where('shortlisted_by', auth()->user()->id)->first();
-        if($shortlist){
+        $shortlist = Shortlist::where('user_id', $request->user_id)->where('shortlisted_by', Auth::user()->id)->first();
+        if ($shortlist) {
             Shortlist::destroy($shortlist->id);
             return $this->success_message('You Have Removed This Member From Your Shortlist.');
-        }        
+        }
         return $this->success_message('Invalid Information');
     }
 }

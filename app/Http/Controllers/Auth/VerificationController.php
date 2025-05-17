@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Auth;
+
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
@@ -8,6 +9,8 @@ use Illuminate\Foundation\Auth\VerifiesEmails;
 use App\Http\Controllers\OTPVerificationController;
 use Carbon\Carbon;
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
+
 
 class VerificationController extends Controller
 {
@@ -47,10 +50,9 @@ class VerificationController extends Controller
     {
         if ($request->user()->email != null) {
             return $request->user()->hasVerifiedEmail()
-                            ? redirect($this->redirectPath())
-                            : view('auth.verify');
-        }
-        else {
+                ? redirect($this->redirectPath())
+                : view('auth.verify');
+        } else {
             $otpController = new OTPVerificationController;
             $otpController->send_code($request->user());
             return redirect()->route('verification');
@@ -68,15 +70,15 @@ class VerificationController extends Controller
         return back()->with('resent', true);
     }
 
-    public function verification_confirmation($code){
+    public function verification_confirmation($code)
+    {
         $user = User::where('verification_code', $code)->first();
-        if($user != null){
+        if ($user != null) {
             $user->email_verified_at = Carbon::now();
             $user->save();
-            auth()->login($user, true);
+            Auth::login($user, true);
             flash(translate('Your email has been verified successfully'))->success();
-        }
-        else {
+        } else {
             flash(translate('Sorry, we could not verifiy you. Please try again'))->error();
         }
 

@@ -4,11 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Astrology;
-use Validator;
-Use Redirect;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Redirect;
+
 
 class AstrologyController extends Controller
 {
+    public $rules;
+    public $messages;
+
     /**
      * Display a listing of the resource.
      *
@@ -18,6 +22,7 @@ class AstrologyController extends Controller
     {
         //
     }
+
 
     /**
      * Show the form for creating a new resource.

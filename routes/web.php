@@ -121,12 +121,12 @@ Route::middleware(['member', 'verified'])->group(function () {
     Route::post('/new-user-verification', [HomeController::class, 'new_verify'])->name('user.new.verify');
 
     Route::get('/profile-settings', [MemberController::class, 'profile_settings'])->name('profile_settings');
+    Route::get('/member-profile/{id}', [HomeController::class, 'view_member_profile'])->name('member_profile');
 
     Route::get('/package-payment-methods/{id}', [PackageController::class, 'package_payemnt_methods'])->name('package_payment_methods');
     Route::post('/package-payment', [PackagePaymentController::class, 'store'])->name('package.payment');
     Route::get('/package-purchase-history', [PackagePaymentController::class, 'package_purchase_history'])->name('package_purchase_history');
 
-    Route::get('/member-profile/{id}', [HomeController::class, 'view_member_profile'])->name('member_profile');
 
     // Password Change
     Route::get('/members/change-password', [MemberController::class, 'change_password'])->name('member.change_password');
@@ -195,7 +195,14 @@ Route::middleware('auth')->group(function () {
 
     Route::resource('/address', AddressController::class);
     Route::resource('/education', EducationController::class);
+    Route::post('/education/update-present-status', [EducationController::class, 'update_education_present_status'])
+        ->name('education.update_education_present_status');
+
     Route::resource('/career', CareerController::class);
+    Route::post('/career/update-career-present-status', [CareerController::class, 'update_career_present_status'])
+    ->name('career.update_career_present_status');
+
+
     Route::resource('/physical-attribute', PhysicalAttributeController::class);
     Route::resource('/hobbies', HobbyController::class);
     Route::resource('/attitudes', AttitudeController::class);

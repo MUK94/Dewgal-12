@@ -8,6 +8,9 @@ use Validator;
 
 class CountryController extends Controller
 {
+    public $country_rules;
+    public $country_messages;
+
     public function __construct()
     {
         $this->middleware(['permission:show_countries'])->only('index');

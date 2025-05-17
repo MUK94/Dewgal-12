@@ -384,35 +384,41 @@ class HomeController extends Controller
         return back()->with('warning', translate('Email already exists!'));
     }
 
-    public function send_email_change_verification_mail($request, $email)
+    public function send_email_change_verification_mail(Request $request, $email)
     {
-        $response['status'] = 0;
-        $response['message'] = 'Unknown';
+        $response = ['status' => 0, 'message' => 'Unknown error'];
 
         $verification_code = Str::random(32);
 
-        $array['subject'] = 'Email Verification';
-        $array['from'] = env('MAIL_USERNAME');
-        $array['content'] = 'Verify your account';
-        $array['link'] = route('email_change.callback') . '?new_email_verificiation_code=' . $verification_code . '&email=' . $email;
-        $array['sender'] = Auth::user()->name;
-        $array['details'] = "Email Second";
+        $query = http_build_query([
+            'new_email_verification_code' => $verification_code,
+            'email' => $email
+        ]);
+
+        $array = [
+            'subject' => translate('Email Verification'),
+            'from' => env('MAIL_USERNAME'),
+            'content' => translate('Verify your account'),
+            'link' => route('email_change.callback') . '?' . $query,
+            'sender' => Auth::user()->name,
+            'details' => "Email Second"
+        ];
 
         $user = Auth::user();
-        $user->new_email_verificiation_code = $verification_code;
+        $user->new_email_verification_code = $verification_code;
         $user->save();
 
         try {
             Mail::to($email)->queue(new SecondEmailVerifyMailManager($array));
-
             $response['status'] = 1;
-            $response['message'] = translate("Your verification mail has been Sent to your email.");
+            $response['message'] = translate("Your verification mail has been sent.");
         } catch (\Exception $e) {
-            return $e->getMessage();
+            $response['message'] = 'Mail sending failed. Error: ' . $e->getMessage();
         }
 
         return $response;
     }
+
 
     public function email_change_callback(Request $request)
     {

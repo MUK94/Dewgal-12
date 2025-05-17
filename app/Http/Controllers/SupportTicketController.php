@@ -9,7 +9,7 @@ use App\Models\SupportTicketReply;
 use App\Models\SystemConfiguration;
 use App\Models\Staff;
 use App\User;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 use Gate;
 
 class SupportTicketController extends Controller

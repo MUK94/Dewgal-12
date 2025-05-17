@@ -5,11 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\PartnerExpectation;
 use App\Models\User;
-use Validator;
-use Redirect;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Redirect;
 
 class PartnerExpectationController extends Controller
 {
+    public $rules;
+    public $messages;
     /**
      * Display a listing of the resource.
      *

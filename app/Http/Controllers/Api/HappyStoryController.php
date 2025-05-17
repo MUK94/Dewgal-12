@@ -10,6 +10,8 @@ use App\Http\Controllers\Api\Controller;
 use App\Http\Requests\HappyStoryRequest;
 use App\Http\Resources\HappyStoryResource;
 
+use Illuminate\Support\Facades\Auth;
+
 class HappyStoryController extends Controller
 {
     /**
@@ -74,7 +76,7 @@ class HappyStoryController extends Controller
 
     public function happy_story()
     {
-        $happy_story = HappyStory::where('user_id', auth()->user()->id)->first();
+        $happy_story = HappyStory::where('user_id', Auth::user()->id)->first();
         if ($happy_story) {
             return (new HappyStoryResource($happy_story))->additional([
                 'result' => true

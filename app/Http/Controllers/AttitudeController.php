@@ -1,10 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Http\Request;
 use App\Models\Attitude;
-use Validator;
-use Redirect;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Redirect;
+
 
 class AttitudeController extends Controller
 {
@@ -18,6 +20,8 @@ class AttitudeController extends Controller
         //
     }
 
+    public $rules;
+    public $messages;
     /**
      * Show the form for creating a new resource.
      *
@@ -68,47 +72,45 @@ class AttitudeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-     public function update(Request $request, $id)
-     {
-         $this->rules = [
-             'affection' => [ 'max:255'],
-             'humor'     => [ 'max:255'],
-         ];
-         $this->messages = [
-             'affection.max'      => translate('Max 255 characters'),
-             'humor.max'          => translate('Max 255 characters'),
-         ];
+    public function update(Request $request, $id)
+    {
+        $this->rules = [
+            'affection' => ['max:255'],
+            'humor'     => ['max:255'],
+        ];
+        $this->messages = [
+            'affection.max'      => translate('Max 255 characters'),
+            'humor.max'          => translate('Max 255 characters'),
+        ];
 
-         $rules = $this->rules;
-         $messages = $this->messages;
-         $validator = Validator::make($request->all(), $rules, $messages);
+        $rules = $this->rules;
+        $messages = $this->messages;
+        $validator = Validator::make($request->all(), $rules, $messages);
 
-         if ($validator->fails()) {
-             flash(translate('Something went wrong'))->error();
-             return Redirect::back()->withErrors($validator);
-         }
+        if ($validator->fails()) {
+            flash(translate('Something went wrong'))->error();
+            return Redirect::back()->withErrors($validator);
+        }
 
-         $attitude = Attitude::where('user_id', $id)->first();
-         if(empty($attitude)){
-             $attitude = new Attitude;
-             $attitude->user_id = $id;
-         }
+        $attitude = Attitude::where('user_id', $id)->first();
+        if (empty($attitude)) {
+            $attitude = new Attitude;
+            $attitude->user_id = $id;
+        }
 
-         $attitude->affection           = $request->affection;
-         $attitude->humor               = $request->humor;
-         $attitude->political_views     = $request->political_views;
-         $attitude->religious_service   = $request->religious_service;
+        $attitude->affection           = $request->affection;
+        $attitude->humor               = $request->humor;
+        $attitude->political_views     = $request->political_views;
+        $attitude->religious_service   = $request->religious_service;
 
-         if($attitude->save()){
-             flash(translate('Personal Attitude and Behavior Info has been updated successfully'))->success();
-             return back();
-         }
-         else {
-             flash(translate('Sorry! Something went wrong.'))->error();
-             return back();
-         }
-
-     }
+        if ($attitude->save()) {
+            flash(translate('Personal Attitude and Behavior Info has been updated successfully'))->success();
+            return back();
+        } else {
+            flash(translate('Sorry! Something went wrong.'))->error();
+            return back();
+        }
+    }
 
     /**
      * Remove the specified resource from storage.

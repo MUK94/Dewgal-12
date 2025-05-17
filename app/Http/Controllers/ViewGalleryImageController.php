@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Notifications\DbStoreNotification;
-use Notification;
+use Illuminate\Support\Facades\Notification;
 use App\Utility\EmailUtility;
 use App\Models\ViewGalleryImage;
 use App\Utility\SmsUtility;
 use App\Models\Member;
 use App\Models\User;
-use Auth;
-use DB;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Kutia\Larafirebase\Facades\Larafirebase;
 
 class ViewGalleryImageController extends Controller
@@ -62,12 +62,12 @@ class ViewGalleryImageController extends Controller
                 $message       = $auth_user->first_name . ' ' . $auth_user->last_name . ' ' . translate(' wants to see your gallery images.');
                 $route         = 'gallery-image-view-request.index';
 
-                // fcm 
+                // fcm
                 if (get_setting('firebase_push_notification') == 1) {
-                $fcmTokens = User::where('id', $request->id)->whereNotNull('fcm_token')->pluck('fcm_token')->toArray();
-                Larafirebase::withTitle($notify_type)
-                    ->withBody($message)
-                    ->sendMessage($fcmTokens);
+                    $fcmTokens = User::where('id', $request->id)->whereNotNull('fcm_token')->pluck('fcm_token')->toArray();
+                    Larafirebase::withTitle($notify_type)
+                        ->withBody($message)
+                        ->sendMessage($fcmTokens);
                 }
                 // end of fcm
 
@@ -111,12 +111,12 @@ class ViewGalleryImageController extends Controller
                 $message = $auth_user->first_name . ' ' . $auth_user->last_name . ' ' . translate(' has accepted your gallery image view request.');
                 $route = route("member_profile", $auth_user->id);
 
-                // fcm 
+                // fcm
                 if (get_setting('firebase_push_notification') == 1) {
-                $fcmTokens = User::where('id', $view_gallery_image->requested_by)->whereNotNull('fcm_token')->pluck('fcm_token')->toArray();
-                Larafirebase::withTitle($notify_type)
-                    ->withBody($message)
-                    ->sendMessage($fcmTokens);
+                    $fcmTokens = User::where('id', $view_gallery_image->requested_by)->whereNotNull('fcm_token')->pluck('fcm_token')->toArray();
+                    Larafirebase::withTitle($notify_type)
+                        ->withBody($message)
+                        ->sendMessage($fcmTokens);
                 }
                 // end of fcm
 
@@ -159,12 +159,12 @@ class ViewGalleryImageController extends Controller
                 $message = $auth_user->first_name . ' ' . $auth_user->last_name . ' ' . translate(' has rejected your gallery image view request.');
                 $route = route("member_profile", $auth_user->id);
 
-                // fcm 
+                // fcm
                 if (get_setting('firebase_push_notification') == 1) {
-                $fcmTokens = User::where('id', $gallery_view_request->requested_by)->whereNotNull('fcm_token')->pluck('fcm_token')->toArray();
-                Larafirebase::withTitle($notify_type)
-                    ->withBody($message)
-                    ->sendMessage($fcmTokens);
+                    $fcmTokens = User::where('id', $gallery_view_request->requested_by)->whereNotNull('fcm_token')->pluck('fcm_token')->toArray();
+                    Larafirebase::withTitle($notify_type)
+                        ->withBody($message)
+                        ->sendMessage($fcmTokens);
                 }
                 // end of fcm
 

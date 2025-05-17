@@ -6,8 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Notification;
 use App\Models\User;
-use Auth;
-use Str;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Str;
 
 class NotificationController extends Controller
 {
@@ -18,13 +18,13 @@ class NotificationController extends Controller
      */
     public function index()
     {
-        $notifications = Notification::latest()->where('notifiable_id',Auth()->user()->id)->paginate(10);
+        $notifications = Notification::latest()->where('notifiable_id',Auth::user()->id)->paginate(10);
         return view('admin.notifications',compact('notifications'));
     }
 
     public function frontend_notify_listing()
     {
-        $notifications = Notification::latest()->where('notifiable_id',Auth()->user()->id)->paginate(10);
+        $notifications = Notification::latest()->where('notifiable_id',Auth::user()->id)->paginate(10);
         return view('frontend.member.notifications',compact('notifications'));
     }
 

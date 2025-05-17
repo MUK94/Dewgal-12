@@ -3,12 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use URL;
-use DB;
-use Hash;
+use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 use App\Models\User;
 use App\Models\Setting;
-use CoreComponentRepository;
+use MehediIitdu\CoreComponentRepository\CoreComponentRepository;
 
 class InstallController extends Controller
 {

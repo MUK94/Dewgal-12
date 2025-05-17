@@ -4,11 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Lifestyle;
-use Validator;
-use Redirect;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Redirect;
 
 class LifestyleController extends Controller
 {
+    public $rules;
+    public $messages;
     /**
      * Display a listing of the resource.
      *
@@ -69,51 +71,49 @@ class LifestyleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-     public function update(Request $request, $id)
-     {
-         $this->rules = [
-             'diet'         => [ 'max:255'],
-             'drink'        => [ 'max:255'],
-             'smoke'        => [ 'max:255'],
-             'living_with'  => [ 'max:255'],
-         ];
-         $this->messages = [
-             'diet.max'             => translate('Max 255 characters'),
-             'drink.max'            => translate('Max 255 characters'),
-             'smoke.max'            => translate('Max 255 characters'),
-             'living_with.max'      => translate('Max 255 characters'),
-         ];
+    public function update(Request $request, $id)
+    {
+        $this->rules = [
+            'diet'         => ['max:255'],
+            'drink'        => ['max:255'],
+            'smoke'        => ['max:255'],
+            'living_with'  => ['max:255'],
+        ];
+        $this->messages = [
+            'diet.max'             => translate('Max 255 characters'),
+            'drink.max'            => translate('Max 255 characters'),
+            'smoke.max'            => translate('Max 255 characters'),
+            'living_with.max'      => translate('Max 255 characters'),
+        ];
 
-         $rules = $this->rules;
-         $messages = $this->messages;
-         $validator = Validator::make($request->all(), $rules, $messages);
+        $rules = $this->rules;
+        $messages = $this->messages;
+        $validator = Validator::make($request->all(), $rules, $messages);
 
-         if ($validator->fails()) {
-             flash(translate('Something went wrong'))->error();
-             return Redirect::back()->withErrors($validator);
-         }
+        if ($validator->fails()) {
+            flash(translate('Something went wrong'))->error();
+            return Redirect::back()->withErrors($validator);
+        }
 
-         $lifestyle = Lifestyle::where('user_id', $id)->first();
-         if(empty($lifestyle)){
-             $lifestyle             = new Lifestyle;
-             $lifestyle->user_id    = $id;
-         }
+        $lifestyle = Lifestyle::where('user_id', $id)->first();
+        if (empty($lifestyle)) {
+            $lifestyle             = new Lifestyle;
+            $lifestyle->user_id    = $id;
+        }
 
-         $lifestyle->diet          = $request->diet;
-         $lifestyle->drink         = $request->drink;
-         $lifestyle->smoke         = $request->smoke;
-         $lifestyle->living_with   = $request->living_with;
+        $lifestyle->diet          = $request->diet;
+        $lifestyle->drink         = $request->drink;
+        $lifestyle->smoke         = $request->smoke;
+        $lifestyle->living_with   = $request->living_with;
 
-         if($lifestyle->save()){
-             flash(translate('Lifestyle info has been updated successfully'))->success();
-             return back();
-         }
-         else {
-             flash(translate('Sorry! Something went wrong.'))->error();
-             return back();
-         }
-
-     }
+        if ($lifestyle->save()) {
+            flash(translate('Lifestyle info has been updated successfully'))->success();
+            return back();
+        } else {
+            flash(translate('Sorry! Something went wrong.'))->error();
+            return back();
+        }
+    }
 
     /**
      * Remove the specified resource from storage.

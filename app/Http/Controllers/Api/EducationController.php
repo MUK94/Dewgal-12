@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Api\Controller;
 use App\Http\Resources\EducationResource;
 use App\Models\Education;
+use Illuminate\Support\Facades\Auth;
 use Exception;
 use Illuminate\Http\Request;
 
@@ -17,7 +18,7 @@ class EducationController extends Controller
      */
     public function index()
     {
-        $education = Education::where('user_id',auth()->id())->get();
+        $education = Education::where('user_id',Auth::id())->get();
         return EducationResource::collection($education)->additional([
             'result' => true
         ]);
@@ -38,7 +39,7 @@ class EducationController extends Controller
             'education_end'   => ['numeric', 'nullable'],
         ]);
         $education              = new Education();
-        $education->user_id     = auth()->id();
+        $education->user_id     = Auth::id();
         $education->degree      = $request->degree;
         $education->institution = $request->institution;
         $education->start       = $request->education_start;
@@ -74,7 +75,7 @@ class EducationController extends Controller
             'education_end'   => ['numeric', 'nullable'],
         ]);
 
-        $education = Education::where('id', $id)->where('user_id', auth()->id())->first();
+        $education = Education::where('id', $id)->where('user_id', Auth::id())->first();
         if ($education) {
             $education->degree      = $request->degree;
             $education->institution = $request->institution;
@@ -95,7 +96,7 @@ class EducationController extends Controller
      */
     public function destroy(Request $request, $id)
     {
-        $education = Education::where('id', $id)->where('user_id', auth()->id())->first();
+        $education = Education::where('id', $id)->where('user_id', Auth::id())->first();
         if ($education) {
             $education->delete();
             return $this->success_message('Education info has been deleted successfully');
@@ -106,7 +107,7 @@ class EducationController extends Controller
 
     public function education_status_update(Request $request)
     {
-        $education = Education::where('id', $request->id)->where('user_id', auth()->id())->first();
+        $education = Education::where('id', $request->id)->where('user_id', Auth::id())->first();
         if ($education) {
             $education->present = $request->status;
             $education->save();

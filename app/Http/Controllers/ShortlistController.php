@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Shortlist;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 
 class ShortlistController extends Controller
 {

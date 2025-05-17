@@ -7,11 +7,14 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Api\Controller;
 use App\Http\Resources\NotificationResource;
 
+use Illuminate\Support\Facades\Auth;
+
+
 class NotificationController extends Controller
 {
     public function notifications()
     {
-        $notifications = Notification::latest()->where('notifiable_id', Auth()->user()->id)->paginate(10);
+        $notifications = Notification::latest()->where('notifiable_id', Auth::user()->id)->paginate(10);
         return NotificationResource::collection($notifications)->additional([
             'result' => true
         ]);
@@ -19,7 +22,7 @@ class NotificationController extends Controller
 
     public function mark_all_as_read()
     {
-        $notifications = Notification::where('notifiable_id', Auth()->user()->id)->where('read_at', null)->get();
+        $notifications = Notification::where('notifiable_id', Auth::user()->id)->where('read_at', null)->get();
         foreach ($notifications as $notification) {
             $notification->read_at = date('Y-m-d');
             $notification->save();

@@ -9,6 +9,7 @@ use App\Models\SupportTicket;
 use App\Models\SupportTicketReply;
 use App\Models\SupportCategory;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class SupportTicketController extends Controller
 {
@@ -23,12 +24,12 @@ class SupportTicketController extends Controller
     }
     /**
      *
-     * Active tickets 
+     * Active tickets
      */
     public function my_ticket()
     {
         if (addon_activation('support_tickets')) {
-            $my_tickets = SupportTicket::where('sender_user_id', auth()->id())->where('status', '0')->orderBy('created_at', 'desc')->paginate(10);
+            $my_tickets = SupportTicket::where('sender_user_id', Auth::id())->where('status', '0')->orderBy('created_at', 'desc')->paginate(10);
             if (count($my_tickets) == 0) {
                 return $this->failure_message('No support ticket found!');
             } else {
@@ -64,7 +65,7 @@ class SupportTicketController extends Controller
             $support_ticket = new SupportTicket;
             $support_ticket->subject = $request->subject;
             $support_ticket->support_category_id = $request->support_category_id;
-            $support_ticket->sender_user_id = auth()->id();
+            $support_ticket->sender_user_id = Auth::id();
             if ($default_agent != null) {
                 $support_ticket->assigned_user_id = $default_agent;
             }
@@ -92,7 +93,7 @@ class SupportTicketController extends Controller
             $support_ticket->save();
             $support_replies    = SupportTicketReply::where('support_ticket_id', $support_ticket->id)->get();
             foreach ($support_replies as $support_replie) {
-                if ($support_replie->replied_user_id != auth()->user()->id) {
+                if ($support_replie->replied_user_id != Auth::user()->id) {
                     $support_replie->seen = 1;
                     $support_replie->save();
                 }
@@ -131,11 +132,11 @@ class SupportTicketController extends Controller
 
             $ticket_reply                     = new SupportTicketReply;
             $ticket_reply->support_ticket_id  = $request->support_ticket_id;
-            $ticket_reply->replied_user_id    = auth()->user()->id;
+            $ticket_reply->replied_user_id    = Auth::user()->id;
             $ticket_reply->reply              = $request->reply;
             $ticket_reply->attachments        = $attachments;
             if ($ticket_reply->save()) {
-                if (auth()->user()->user_type == 'admin' || auth()->user()->user_type == 'staff') {
+                if (Auth::user()->user_type == 'admin' || Auth::user()->user_type == 'staff') {
                     $support_ticket->status   = $request->status;
                     $support_ticket->save();
                     return $this->success_message('Reply has been sent successfully');
@@ -162,8 +163,9 @@ class SupportTicketController extends Controller
         //
     }
 
-    public function support_ticket_categories(){
-        $support_categories = SupportCategory::orderBy('created_at','desc')->paginate(10);
+    public function support_ticket_categories()
+    {
+        $support_categories = SupportCategory::orderBy('created_at', 'desc')->paginate(10);
         return SupportTicketCategoryResource::collection($support_categories);
     }
 }

@@ -4,11 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\FamilyValue;
-use Redirect;
-use Validator;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Redirect;
 
 class FamilyValueController extends Controller
 {
+    public $family_value_rules;
+    public $family_value_messages;
+
+    
     public function __construct()
     {
         $this->middleware(['permission:show_family_values'])->only('index');

@@ -14,11 +14,14 @@ use PayPalCheckoutSdk\Core\ProductionEnvironment;
 use PayPalCheckoutSdk\Orders\OrdersCreateRequest;
 use PayPalCheckoutSdk\Orders\OrdersCaptureRequest;
 
+use Illuminate\Support\Facades\Auth;
+
+
 class PaypalController extends Controller
 {
     public function pay(Request $request)
     {
-        $auth_user = auth()->user();
+        $auth_user = Auth::user();
         $clientId     = env('PAYPAL_CLIENT_ID');
         $clientSecret = env('PAYPAL_CLIENT_SECRET');
 
@@ -50,7 +53,7 @@ class PaypalController extends Controller
                 } else {
                     $amount = $request->amount - $referral_discount_amount;
                 }
-                
+
             }
         }
 

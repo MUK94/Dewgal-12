@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Notifications\DbStoreNotification;
-use Notification;
+use Illuminate\Support\Facades\Notification;
 use App\Utility\EmailUtility;
 use App\Utility\SmsUtility;
 use App\Http\Controllers\Controller;
@@ -12,8 +12,8 @@ use App\Models\ExpressInterest;
 use App\Models\Member;
 use App\Models\ChatThread;
 use App\Models\User;
-use Auth;
-use DB;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Kutia\Larafirebase\Facades\Larafirebase;
 
 class ExpressInterestController extends Controller
@@ -85,7 +85,7 @@ class ExpressInterestController extends Controller
                         $message = $interested_by_user->first_name . ' ' . $interested_by_user->last_name . ' ' . translate(' has Expressed Interest On You.');
                         $route = route('interest_requests');
 
-                        // fcm 
+                        // fcm
                         if (get_setting('firebase_push_notification') == 1) {
                             $fcmTokens = User::where('id', $request->id)->whereNotNull('fcm_token')->pluck('fcm_token')->toArray();
                             Larafirebase::withTitle($notify_type)
@@ -153,7 +153,7 @@ class ExpressInterestController extends Controller
                 $message = Auth::user()->first_name . ' ' . Auth::user()->last_name . ' ' . translate(' has accepted your interest.');
                 $route = route('my_interests.index');
 
-                // fcm 
+                // fcm
                 if (get_setting('firebase_push_notification') == 1) {
                     $fcmTokens = User::where('id', $interest->interested_by)->whereNotNull('fcm_token')->pluck('fcm_token')->toArray();
                     Larafirebase::withTitle($notify_type)
@@ -199,7 +199,7 @@ class ExpressInterestController extends Controller
                 $message = Auth::user()->first_name . ' ' . Auth::user()->last_name . ' ' . translate(' has rejected your interest.');
                 $route = route('my_interests.index');
 
-                // fcm 
+                // fcm
                 if (get_setting('firebase_push_notification') == 1) {
                     $fcmTokens = User::where('id', $interest->interested_by)->whereNotNull('fcm_token')->pluck('fcm_token')->toArray();
                     Larafirebase::withTitle($notify_type)

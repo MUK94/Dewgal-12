@@ -622,7 +622,7 @@ class MemberController extends Controller
         $user = Auth::user();
         $user->deactivated = $request->deacticvation_status;
         $deactivation_msg = $request->deacticvation_status == 1 ? translate('deactivated') : translate('reactivated');
-        if ($user->save()) {
+        if ($user) {
             return redirect()->route('dashboard')
                 ->with('success', translate('Your account ') . $deactivation_msg . translate(' successfully!'));
         }

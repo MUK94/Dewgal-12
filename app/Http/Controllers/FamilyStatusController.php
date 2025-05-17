@@ -4,11 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\FamilyStatus;
-use Redirect;
-use Validator;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Redirect;
 
 class FamilyStatusController extends Controller
 {
+    public $family_status_rules;
+    public $family_status_messages;
+
     public function __construct()
     {
         $this->middleware(['permission:show_family_values'])->only('index');

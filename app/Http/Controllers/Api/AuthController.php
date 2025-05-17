@@ -21,9 +21,10 @@ use Illuminate\Support\Facades\Hash;
 use App\Services\UserService;
 use App\Utility\EmailUtility;
 use Carbon\Carbon;
-use Socialite;
+use Laravel\Socialite\Facades\Socialite;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Exceptions\HttpResponseException;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
@@ -137,96 +138,103 @@ class AuthController extends Controller
     /**
      * Social Login
      */
-    public function socialLogin(Request $request)
-    {
-        if (!$request->provider) {
-            return response()->json([
-                'result' => false,
-                'message' => translate('User not found'),
-                'user' => null,
-            ]);
-        }
+    // public function socialLogin(Request $request)
+    // {
+    //     if (!$request->provider) {
+    //         return response()->json([
+    //             'result' => false,
+    //             'message' => translate('User not found'),
+    //             'user' => null,
+    //         ]);
+    //     }
 
-        switch ($request->social_provider) {
-            case 'facebook':
-                $social_user = Socialite::driver('facebook')->fields(['name', 'first_name', 'last_name', 'email']);
-                break;
-            case 'google':
-                $social_user = Socialite::driver('google')->scopes(['profile', 'email']);
-                break;
-            case 'twitter':
-                $social_user = Socialite::driver('twitter');
-                break;
-            case 'apple':
-                $social_user = Socialite::driver('sign-in-with-apple')->scopes(['name', 'email']);
-                break;
-            default:
-                $social_user = null;
-        }
-        if ($social_user == null) {
-            return response()->json(['result' => false, 'message' => translate('No social provider matches'), 'user' => null]);
-        }
+    //     switch ($request->social_provider) {
+    //         case 'facebook':
+    //             $social_user = Socialite::driver('facebook')->fields(['name', 'first_name', 'last_name', 'email']);
+    //             break;
+    //         case 'google':
+    //             $social_user = Socialite::driver('google')->scopes(['profile', 'email']);
+    //             break;
+    //         case 'twitter':
+    //             $social_user = Socialite::driver('twitter');
+    //             break;
+    //         case 'apple':
+    //             $social_user = Socialite::driver('sign-in-with-apple')->scopes(['name', 'email']);
+    //             break;
+    //         default:
+    //             $social_user = null;
+    //     }
+    //     if ($social_user == null) {
+    //         return response()->json(['result' => false, 'message' => translate('No social provider matches'), 'user' => null]);
+    //     }
 
-        $existingUserByProviderId = User::where('provider_id', $request->provider)->first();
+    //     $existingUserByProviderId = User::where('provider_id', $request->provider)->first();
 
-        if ($existingUserByProviderId) {
-            if ($existingUserByProviderId->approved == 0) {
-                return response()->json(['result' => false, 'message' => translate('Please wait for admin approval'), 'user' => null], 401);
-            } else {
-                return $this->loginSuccess($existingUserByProviderId);
-            }
+    //     if ($existingUserByProviderId) {
+    //         if ($existingUserByProviderId->approved == 0) {
+    //             return response()->json(['result' => false, 'message' => translate('Please wait for admin approval'), 'user' => null], 401);
+    //         } else {
+    //             return $this->loginSuccess($existingUserByProviderId);
+    //         }
 
-        } else {
-            // create a new user
-            $newUser                     = new User;
-            $newUser->first_name         = $request->name;
-            $newUser->email              = $request->email;
-            $newUser->email_verified_at  = date('Y-m-d H:m:s');
-            $newUser->provider_id        = $request->provider;
-            $newUser->code               = unique_code();
-            $newUser->membership         = 1;
-            $newUser->approved           = get_setting('member_approval_by_admin') == 1 ? 0 : 1;
-            $newUser->save();
+    //     } else {
+    //         // create a new user
+    //         $newUser                     = new User;
+    //         $newUser->first_name         = $request->name;
+    //         $newUser->email              = $request->email;
+    //         $newUser->email_verified_at  = date('Y-m-d H:m:s');
+    //         $newUser->provider_id        = $request->provider;
+    //         $newUser->code               = unique_code();
+    //         $newUser->membership         = 1;
+    //         $newUser->approved           = get_setting('member_approval_by_admin') == 1 ? 0 : 1;
+    //         $newUser->save();
 
-            $member                             = new Member;
-            $member->user_id                    = $newUser->id;
-            $member->gender                     = null;
-            $member->on_behalves_id             = null;
-            $member->birthday                   = null;
+    //         $member                             = new Member;
+    //         $member->user_id                    = $newUser->id;
+    //         $member->gender                     = null;
+    //         $member->on_behalves_id             = null;
+    //         $member->birthday                   = null;
 
-            $package                                = Package::where('id', 1)->first();
-            $member->current_package_id             = $package->id;
-            $member->remaining_interest             = $package->express_interest;
-            $member->remaining_photo_gallery        = $package->photo_gallery;
+    //         $package                                = Package::where('id', 1)->first();
+    //         $member->current_package_id             = $package->id;
+    //         $member->remaining_interest             = $package->express_interest;
+    //         $member->remaining_photo_gallery        = $package->photo_gallery;
 
-            $member->remaining_contact_view         = $package->contact;
-            $member->remaining_profile_image_view    = $package->profile_image_view;
-            $member->remaining_gallery_image_view   = $package->gallery_image_view;
-            $member->auto_profile_match             = $package->auto_profile_match;
-            $member->package_validity               = Date('Y-m-d', strtotime($package->validity . " days"));
-            $member->save();
+    //         $member->remaining_contact_view         = $package->contact;
+    //         $member->remaining_profile_image_view    = $package->profile_image_view;
+    //         $member->remaining_gallery_image_view   = $package->gallery_image_view;
+    //         $member->auto_profile_match             = $package->auto_profile_match;
+    //         $member->package_validity               = Date('Y-m-d', strtotime($package->validity . " days"));
+    //         $member->save();
 
-            if ($newUser->approved == 0) {
-                return response()->json(['result' => false, 'message' => translate('Please wait for admin approval'), 'user' => null], 401);
-            } else {
-                return $this->loginSuccess($newUser);
-            }
-        }
-    }
+    //         if ($newUser->approved == 0) {
+    //             return response()->json(['result' => false, 'message' => translate('Please wait for admin approval'), 'user' => null], 401);
+    //         } else {
+    //             return $this->loginSuccess($newUser);
+    //         }
+    //     }
+    // }
 
     /**
      * Log Out using api
      */
 
-    public function logout(Request $request)
-    {
-        $user = auth()->user();
-        $user
-            ->tokens()
-            ->where('id', $user->currentAccessToken()->id)
-            ->delete();
-        return $this->success_message('Successfully logged out');
-    }
+     public function logout(Request $request)
+     {
+         $user = Auth::user();
+
+         // Ensure that the user is authenticated before attempting to log out
+         if ($user) {
+             // Revoke all of the user's tokens or only the current token
+             $user->tokens->each(function ($token) {
+                 $token->delete();
+             });
+
+             return $this->success_message('Successfully logged out');
+         }
+
+         return $this->error_message('User not authenticated', 401);
+     }
 
     /**
      * Log in success
@@ -238,7 +246,8 @@ class AuthController extends Controller
         if (get_setting('email_verification') == 1) {
             if ($user->email_verified_at == null) {
                 return response()->json([
-                    'result' => false, 'message' => translate('Please verify your account'),
+                    'result' => false,
+                    'message' => translate('Please verify your account'),
                     'user' => null
                 ], 401);
             }
@@ -246,7 +255,7 @@ class AuthController extends Controller
         // check admin approval
         if (get_setting('member_approval_by_admin') == 1) {
             if ($user->approved == 0) {
-                auth()->logout();
+                Auth::logout();
                 return response()->json(['result' => false, 'message' => translate('Please wait for admin approval'), 'user' => null], 401);
             }
         }

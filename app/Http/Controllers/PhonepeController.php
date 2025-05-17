@@ -7,26 +7,25 @@ use App\Http\Controllers\WalletController;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
-use Session;
-
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Auth;
 
 class PhonepeController extends Controller
 {
 
     public function pay()
     {
-        $user_id = auth()->user()->id;
+        $user_id = Auth::user()->id;
         $amount = Session::get('payment_data')['amount'];
         $merchantUserId = $user_id;
 
         if (Session::has('payment_type')) {
             $payment_type = Session::get('payment_type');
             if (Session::get('payment_type') == 'package_payment') {
-                $merchantTransactionId = $payment_type. '-' . Session::get('payment_data')['package_id'] . '-' . $user_id . '-' . rand(0, 100000);
-            }
-            elseif (Session::get('payment_type') == 'wallet_payment') {
+                $merchantTransactionId = $payment_type . '-' . Session::get('payment_data')['package_id'] . '-' . $user_id . '-' . rand(0, 100000);
+            } elseif (Session::get('payment_type') == 'wallet_payment') {
                 $merchantTransactionId = $payment_type . '-' . $user_id . '-' . $user_id . '-' . rand(0, 100000);
-            } 
+            }
         }
 
         $merchantId = env('PHONEPE_MERCHANT_ID');
@@ -49,7 +48,7 @@ class PhonepeController extends Controller
                 "type" => "PAY_PAGE"
             ],
         ];
-        
+
         $payload = base64_encode(json_encode($post_field));
 
         $hashedkey =  hash('sha256', $payload . "/pg/v1/pay" . $salt_key) . '###' . $salt_index;
@@ -66,15 +65,15 @@ class PhonepeController extends Controller
 
         $response = curl_exec($ch);
         $res = (json_decode($response));
-    
+
         return Redirect::to($res->data->instrumentResponse->redirectInfo->url);
     }
 
-   
+
     public function phonepe_redirecturl(Request $request)
     {
         $payment_type = explode("-", $request['transactionId']);
-        auth()->login(User::findOrFail($payment_type[2]));
+        Auth::login(User::findOrFail($payment_type[2]));
         // dd($payment_type[0], $payment_type[1], $request['merchantId'], $request['transactionId'], $request->all());
 
         if ($request['code'] == 'PAYMENT_SUCCESS') {
@@ -82,11 +81,10 @@ class PhonepeController extends Controller
             if ($payment_type[0] == 'package_payment') {
                 flash(translate('Payment process completed'))->success();
                 return redirect()->route('package_purchase_history');
-            }
-            elseif ($payment_type[0] == 'wallet_payment') {
+            } elseif ($payment_type[0] == 'wallet_payment') {
                 flash(translate('Payment process completed'))->success();
                 return redirect()->route('wallet.index');
-            } 
+            }
         }
         flash(translate('Payment failed'))->success();
         return redirect()->back();
@@ -94,24 +92,23 @@ class PhonepeController extends Controller
 
     public function phonepe_callbackUrl(Request $request)
     {
-        
+
         $res = $request->all();
         $response = $res['response'];
         $decodded_response = json_decode(base64_decode($response));
         $payment_type = explode("-", $decodded_response->data->merchantTransactionId);
-        auth()->login(User::findOrFail($payment_type[2]));
+        Auth::login(User::findOrFail($payment_type[2]));
         // dd($payment_type[0], $payment_type[1], $request['merchantId'], $request['transactionId'], $request->all());
 
         if ($decodded_response->code  == 'PAYMENT_SUCCESS') {
-		
+
             if ($payment_type[0] == 'package_payment') {
                 $payment_data = array();
                 $payment_data['package_id'] = $payment_type[1];
                 $payment_data['amount'] = $decodded_response->data->amount / 100;
                 $payment_data['payment_method'] = 'phonepe';
                 return (new PackagePaymentController)->package_payment_done($payment_data, json_encode($decodded_response->data));
-            }
-            elseif ($payment_type[0] == 'wallet_payment') {
+            } elseif ($payment_type[0] == 'wallet_payment') {
                 $payment_data = array();
                 $payment_data['amount'] = $decodded_response->data->amount / 100;
                 $payment_data['payment_method'] = 'phonepe';

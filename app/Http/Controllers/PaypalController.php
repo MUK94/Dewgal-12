@@ -3,14 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Redirect;
-use Session;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Redirect;
 use PayPalCheckoutSdk\Core\PayPalHttpClient;
 use PayPalCheckoutSdk\Core\SandboxEnvironment;
 use PayPalCheckoutSdk\Core\ProductionEnvironment;
 use PayPalCheckoutSdk\Orders\OrdersCreateRequest;
 use PayPalCheckoutSdk\Orders\OrdersCaptureRequest;
 use App\Http\Controllers\PackagePaymentController;
+
+use PayPalHttp\HttpException;
 
 class PaypalController extends Controller
 {

@@ -8,7 +8,7 @@ use App\Http\Controllers\WalletController;
 use App\Http\Controllers\PackagePaymentController;
 use App\Models\User;
 use App\Utility\SSLCommerz;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 
 session_start();
@@ -29,10 +29,10 @@ class SslcommerzController extends Controller
                 $post_data = array();
                 $post_data['total_amount'] = $amount; # You cant not pay less than 10
                 $post_data['currency'] = "BDT";
-                $post_data['tran_id'] = substr(md5(auth()->id()), 0, 10); // tran_id must be unique
+                $post_data['tran_id'] = substr(md5(Auth::id()), 0, 10); // tran_id must be unique
 
                 $post_data['value_a'] = $post_data['tran_id'];
-                $post_data['value_b'] = auth()->id();
+                $post_data['value_b'] = Auth::id();
                 $post_data['value_c'] = $request->session()->get('payment_type');
                 if($request->session()->get('payment_type')== 'package_payment'){
                     $post_data['value_d'] = $request->package_id;
@@ -40,7 +40,7 @@ class SslcommerzController extends Controller
             // }
 
             # CUSTOMER INFORMATION
-            $user = auth()->user();
+            $user = Auth::user();
             $post_data['cus_name'] = $user->first_name.' '.$user->last_name;
             $post_data['cus_add1'] = $user->address;
             $post_data['cus_city'] = $user->city;
@@ -76,7 +76,7 @@ class SslcommerzController extends Controller
         $payment['payment_method']= $payment['value_c'];
         $payment['package_id']= $payment['value_d'];
         $payment_response = json_encode($payment);
-        auth()->login(User::find($payment['value_b']));
+        Auth::login(User::find($payment['value_b']));
         // dd($payment);
         // dd($payment['value_c']);
         // dd($payment['value_d']);

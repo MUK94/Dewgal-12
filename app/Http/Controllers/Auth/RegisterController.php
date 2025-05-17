@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
-use Notification;
+use Illuminate\Support\Facades\Notification;
 use App\Models\User;
 use App\Models\Member;
 use App\Models\Package;

@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Address;
-use Validator;
-use Redirect;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Redirect;
 class AddressController extends Controller
 {
     /**
@@ -15,9 +15,12 @@ class AddressController extends Controller
      */
     public function index()
     {
-        
-       
+
+
     }
+
+    public $rules;
+    public $messages;
 
     /**
      * Show the form for creating a new resource.

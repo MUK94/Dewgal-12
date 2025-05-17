@@ -4,11 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Education;
-use Validator;
-use Redirect;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Redirect;
 
 class EducationController extends Controller
 {
+    public $rules;
+    public $messages;
+
     public function __construct()
     {
         $this->rules = [

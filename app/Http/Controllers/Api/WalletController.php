@@ -16,33 +16,36 @@ use App\Http\Controllers\Api\Payment\RazorpayController;
 use App\Http\Controllers\Api\Payment\InstamojoController;
 use App\Models\User;
 
+use Illuminate\Support\Facades\Auth;
+
+
 class WalletController extends Controller
 {
     public function wallet_balance()
     {
-        $data['wallet_balance'] = single_price(auth()->user()->balance);
+        $data['wallet_balance'] = single_price(Auth::user()->balance);
         return $this->response_data($data);
-       
+
     }
     public function index()
     {
-        $wallets = Wallet::where('user_id', auth()->user()->id)->latest()->paginate(10); 
+        $wallets = Wallet::where('user_id', Auth::user()->id)->latest()->paginate(10);
         return WalletResource::collection($wallets)->additional([
                 'result' => true
             ]);
     }
-    
+
     public function recharge(Request $request)
     {
         $this->validate($request,[
             'amount'=>'required',
             'payment_method'=>'required'
         ]);
-        
+
         $request->payment_type =  'wallet_payment';
         $request->amount =  $request->amount;
         $request->payment_method =  $request->payment_method;
-            
+
         if ($request->payment_method == 'paypal') {
             $paypal = new PaypalController;
             return $paypal->pay($request);
@@ -73,14 +76,14 @@ class WalletController extends Controller
                 $reciept = upload_api_file($request->file('reciept'));
             }
             Wallet::create($request->only('amount', 'payment_details', 'transaction_id', 'payment_method') + [
-                'user_id'         => auth()->user()->id,
+                'user_id'         => Auth::user()->id,
                 'offline_payment' => 1,
                 'reciept'         => $reciept,
             ]);
             return $this->success_message('Payment completed');
         }
     }
-    
+
     public function wallet_payment_done($user_id,$payment_data, $payment_details)
     {
         $user = User::find($user_id);
@@ -100,7 +103,7 @@ class WalletController extends Controller
     public function wallet_withdraw_request_history()
     {
         if (addon_activation('referral_system')) {
-            $wallet_withdraw_requests = WalletWithdrawRequest::latest()->where('user_id', auth()->user()->id)->paginate(10);
+            $wallet_withdraw_requests = WalletWithdrawRequest::latest()->where('user_id', Auth::user()->id)->paginate(10);
             return WalletWithdrawRequestResource::collection($wallet_withdraw_requests)->additional([
                     'result' => true
                 ]);
@@ -111,15 +114,15 @@ class WalletController extends Controller
     public function wallet_withdraw_request_store(Request $request)
     {
         if (addon_activation('referral_system')) {
-            if (auth()->user()->balance >= $request->amount) {
+            if (Auth::user()->balance >= $request->amount) {
                 WalletWithdrawRequest::create($request->only('amount', 'details') + [
-                    'user_id' => auth()->user()->id
+                    'user_id' => Auth::user()->id
                 ]);
-    
-                $user = auth()->user();
+
+                $user = Auth::user();
                 $user->balance = $user->balance - $request->amount;
                 $user->save();
-    
+
                 return $this->success_message('Wallet Withdraw Request Sent Successfully');
             }
             return $this->failure_message('Insufficient Balance!!');

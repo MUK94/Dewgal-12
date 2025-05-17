@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Staff;
 use App\Models\Role;
 use App\Models\User;
-use Hash;
+use Illuminate\Support\Facades\Hash;
 use App\Utility\EmailUtility;
 use App\Utility\SmsUtility;
 

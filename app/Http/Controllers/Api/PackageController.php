@@ -23,6 +23,10 @@ use App\Http\Controllers\Api\Payment\PaystackController;
 use App\Http\Controllers\Api\Payment\RazorpayController;
 use App\Http\Controllers\Api\payment\InstamojoController;
 
+use Illuminate\Support\Facades\Auth;
+
+
+
 class PackageController extends Controller
 {
     public function active_packages()
@@ -47,7 +51,7 @@ class PackageController extends Controller
     public function package_purchase_history()
     {
         $package_payments = PackagePayment::latest()
-            ->where('user_id', auth()->user()->id)
+            ->where('user_id', Auth::user()->id)
             ->paginate(10);
         return PackagePaymentResource::collection($package_payments)->additional([
             'result' => true
@@ -67,7 +71,7 @@ class PackageController extends Controller
 
     public function package_purchase(Request $request)
     {
-        $user = auth()->user();
+        $user = Auth::user();
 
         $payment_type   = 'package_payment';
         $payment_data = array();

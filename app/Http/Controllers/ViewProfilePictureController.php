@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Notifications\DbStoreNotification;
-use Notification;
+use Illuminate\Support\Facades\Notification;
 use App\Utility\EmailUtility;
 use App\Models\ViewProfilePicture;
 use App\Utility\SmsUtility;
 use App\Models\Member;
 use App\Models\User;
-use Auth;
-use DB;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Kutia\Larafirebase\Facades\Larafirebase;
 
 class ViewProfilePictureController extends Controller
@@ -62,7 +62,7 @@ class ViewProfilePictureController extends Controller
                 $message       = $auth_user->first_name . ' ' . $auth_user->last_name . ' ' . translate(' wants to see your profile picture.');
                 $route         = 'profile-picture-view-request.index';
 
-                // fcm 
+                // fcm
                 if (get_setting('firebase_push_notification') == 1) {
                 $fcmTokens = User::where('id', $request->id)->whereNotNull('fcm_token')->pluck('fcm_token')->toArray();
                 Larafirebase::withTitle($notify_type)
@@ -110,7 +110,7 @@ class ViewProfilePictureController extends Controller
                 $message = $auth_user->first_name . ' ' . $auth_user->last_name . ' ' . translate(' has accepted your profile picture view request.');
                 $route = route("member_profile", $auth_user->id);
 
-                // fcm 
+                // fcm
                 if (get_setting('firebase_push_notification') == 1) {
                 $fcmTokens = User::where('id', $view_profile_picture->requested_by)->whereNotNull('fcm_token')->pluck('fcm_token')->toArray();
                 Larafirebase::withTitle($notify_type)
@@ -158,7 +158,7 @@ class ViewProfilePictureController extends Controller
                 $message = $auth_user->first_name . ' ' . $auth_user->last_name . ' ' . translate(' has rejected your profile picture view request.');
                 $route = route('member.listing');
 
-                // fcm 
+                // fcm
                 if (get_setting('firebase_push_notification') == 1) {
                 $fcmTokens = User::where('id', $profile_pic_view_request->requested_by)->whereNotNull('fcm_token')->pluck('fcm_token')->toArray();
                 Larafirebase::withTitle($notify_type)

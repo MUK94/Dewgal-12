@@ -14,11 +14,13 @@ use App\Models\ProfileMatch;
 use App\Services\ChatService;
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\Auth;
+
 class ChatController extends Controller
 {
     public function chat_list()
     {
-        $chat_threads = ChatThread::where('sender_user_id', auth()->user()->id)->orWhere('receiver_user_id', auth()->user()->id)->get();
+        $chat_threads = ChatThread::where('sender_user_id', Auth::user()->id)->orWhere('receiver_user_id', Auth::user()->id)->get();
         return  ChatThreadResource::collection($chat_threads)->additional([
             'result' => true,
         ]);
@@ -28,7 +30,7 @@ class ChatController extends Controller
     {
         $chat_thread = ChatThread::findOrFail($id);
         foreach ($chat_thread->chats as $key => $chat) {
-            if ($chat->sender_user_id != auth()->user()->id) {
+            if ($chat->sender_user_id != Auth::user()->id) {
                 $chat->seen = 1;
                 $chat->save();
             }
@@ -47,14 +49,14 @@ class ChatController extends Controller
                 'result' => true,
                 'messages' => $chats,
                 'first_message_id' => $chats->last()->id
-            ]);            
+            ]);
         }
         else {
             return response()->json([
                 'result' => false,
                 'messages' => "",
                 'first_message_id' => 0
-            ]);            
+            ]);
         }
     }
 
@@ -67,7 +69,7 @@ class ChatController extends Controller
                 $attachment = upload_api_file($file);
                 $attachments[] = $attachment;
             }
-        }      
+        }
 
         $chat = new ChatService();
         $new_chat = $chat->store($request->except(['_token']), $attachments);

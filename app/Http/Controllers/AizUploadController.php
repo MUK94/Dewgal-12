@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Models\Upload;
-use Response;
-use Auth;
-use Storage;
-use Image;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Response;
+use Illuminate\Support\Facades\Schema;
+use Intervention\Image\Laravel\Facades\Image;
 
 class AizUploadController extends Controller
 {

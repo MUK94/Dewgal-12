@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use Session;
-use Redirect;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Session;
 use Razorpay\Api\Api;
 use Illuminate\Support\Facades\Input;
 
@@ -35,7 +35,7 @@ class RazorpayController extends Controller
                 $payment_detalis = json_encode(array('id' => $response['id'],'method' => $response['method'],'amount' => $response['amount'],'currency' => $response['currency']));
             } catch (\Exception $e) {
                 return  $e->getMessage();
-                \Session::put('error',$e->getMessage());
+                Session::put('error',$e->getMessage());
                 return redirect()->back();
             }
 

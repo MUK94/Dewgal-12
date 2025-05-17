@@ -5,9 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Transaction;
-use Session;
-use PaytmWallet;
-use Auth;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Auth;
+use Anand\LaravelPaytmWallet\Facades\PaytmWallet;
+
 
 class PaytmController extends Controller
 {
@@ -19,7 +20,7 @@ class PaytmController extends Controller
             $transaction->payment_type = Session::get('payment_type');
             $transaction->additional_content = json_encode(Session::get('payment_data'));
             $transaction->save();
-            
+
             $amount = Session::get('payment_data')['amount'];
             if(Auth::user()->phone != null){
                 $amount= Session::get('payment_data')['amount'];

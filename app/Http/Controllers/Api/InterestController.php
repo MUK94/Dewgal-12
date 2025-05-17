@@ -17,12 +17,14 @@ use Illuminate\Support\Facades\Notification;
 use Kutia\Larafirebase\Facades\Larafirebase;
 use App\Http\Resources\ExpressInterestResource;
 
+use Illuminate\Support\Facades\Auth;
+
 class InterestController extends Controller
 {
     public function my_interests()
     {
         $interests = ExpressInterest::orderBy('id', 'desc')
-            ->where('interested_by', auth()->user()->id)
+            ->where('interested_by', Auth::user()->id)
             ->join('users', 'express_interests.user_id', '=', 'users.id')
             ->select('express_interests.id')
             ->distinct()
@@ -36,7 +38,7 @@ class InterestController extends Controller
     public function express_interest(Request $request)
     {
         if (User::find($request->user_id)) {
-            if (!ExpressInterest::where(['user_id' => $request->user_id, 'interested_by' => auth()->user()->id])->first() || ExpressInterest::where(['user_id' => auth()->user()->id, 'interested_by' => $request->user_id])->first()) {
+            if (!ExpressInterest::where(['user_id' => $request->user_id, 'interested_by' => Auth::user()->id])->first() || ExpressInterest::where(['user_id' => Auth::user()->id, 'interested_by' => $request->user_id])->first()) {
                 $interest = new InterestService();
                 $new_interest = $interest->store($request->user_id);
 
@@ -51,7 +53,7 @@ class InterestController extends Controller
 
     public function interest_requests()
     {
-        $interests = ExpressInterest::where('user_id', auth()->user()->id)->latest()->paginate(10);
+        $interests = ExpressInterest::where('user_id', Auth::user()->id)->latest()->paginate(10);
         return ExpressInterestResource::collection($interests)->additional([
             'result' => true
         ]);

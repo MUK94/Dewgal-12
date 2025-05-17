@@ -6,9 +6,9 @@ use App\Http\Controllers\Controller;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 use App\Http\Requests;
-use Auth;
-use Session;
-use Redirect;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Auth;
 use Paystack;
 
 class PaystackController extends Controller

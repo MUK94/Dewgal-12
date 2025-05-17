@@ -4,12 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\HappyStory;
-use Redirect;
-use Validator;
-use Auth;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Auth;
 
 class HappyStoryController extends Controller
 {
+    public $rules;
+    public $messages;
 
       public function __construct()
       {

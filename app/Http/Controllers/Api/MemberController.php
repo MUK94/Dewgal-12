@@ -21,6 +21,7 @@ use App\Models\Shortlist;
 use App\Models\ViewGalleryImage;
 use App\Models\ViewProfilePicture;
 use Laravel\Sanctum\PersonalAccessToken;
+use Illuminate\Support\Facades\Auth;
 
 class MemberController extends Controller
 {
@@ -45,24 +46,24 @@ class MemberController extends Controller
         $users_query = User::query();
         $users_query->orderBy('created_at', 'desc')
             ->where('user_type', 'member')
-            ->where('id', '!=', auth()->user()->id)
+            ->where('id', '!=', Auth::user()->id)
             ->where('blocked', 0)
             ->where('deactivated', 0);
 
         // Gender Check
-        $user_ids = Member::where('gender', '!=', auth()->user()->member->gender)->pluck('user_id')->toArray();
+        $user_ids = Member::where('gender', '!=', Auth::user()->member->gender)->pluck('user_id')->toArray();
         $users_query->whereIn('id', $user_ids);
 
         // Ignored member and ignored by member check
         $users_query->whereNotIn("id", function ($query) {
             $query->select('user_id')
                 ->from('ignored_users')
-                ->where('ignored_by', auth()->user()->id)->orWhere('user_id', auth()->user()->id);
+                ->where('ignored_by', Auth::user()->id)->orWhere('user_id', Auth::user()->id);
         })
             ->whereNotIn("id", function ($query) {
                 $query->select('ignored_by')
                     ->from('ignored_users')
-                    ->where('ignored_by', auth()->user()->id)->orWhere('user_id', auth()->user()->id);
+                    ->where('ignored_by', Auth::user()->id)->orWhere('user_id', Auth::user()->id);
             });
 
         // Membership Check
@@ -181,14 +182,14 @@ class MemberController extends Controller
 
     public function package_details()
     {
-        $package_id = auth()->user()->member->current_package_id;
+        $package_id = Auth::user()->member->current_package_id;
         $package = Package::where('id', $package_id)->first();
         return new PackageResource($package);
     }
 
     public function ignored_user_list()
     {
-        return IgnoredUserResource::collection(IgnoredUser::where('ignored_by', auth()->user()->id)->latest()->paginate(10))->additional([
+        return IgnoredUserResource::collection(IgnoredUser::where('ignored_by', Auth::user()->id)->latest()->paginate(10))->additional([
             'result' => true
         ]);
     }
@@ -198,7 +199,7 @@ class MemberController extends Controller
         if (User::find($request->user_id)) {
             try {
                 IgnoredUser::create($request->only('user_id') + [
-                    'ignored_by' => auth()->user()->id
+                    'ignored_by' => Auth::user()->id
                 ]);
 
                 return $this->success_message('You have ignored this member');
@@ -211,7 +212,7 @@ class MemberController extends Controller
 
     public function remove_from_ignored_list(Request $request)
     {
-        $ignored_user = IgnoredUser::where('user_id', $request->user_id)->where('ignored_by', auth()->user()->id)->first();
+        $ignored_user = IgnoredUser::where('user_id', $request->user_id)->where('ignored_by', Auth::user()->id)->first();
         if ($ignored_user) {
             IgnoredUser::destroy($ignored_user->id);
             return $this->success_message('You have removed this member from your ignored list');
@@ -224,7 +225,7 @@ class MemberController extends Controller
         if (User::find($request->user_id)) {
             ReportedUser::create($request->only('reason') + [
                 'user_id' => $request->user_id,
-                'reported_by' => auth()->user()->id
+                'reported_by' => Auth::user()->id
             ]);
             return $this->success_message('Reported to this member successfully.');
         }
@@ -233,7 +234,7 @@ class MemberController extends Controller
 
     public function update_account_deactivation_status(Request $request)
     {
-        $user = User::findOrFail(auth()->user()->id);
+        $user = User::findOrFail(Auth::user()->id);
         $user->deactivated = $request->deacticvation;
         $user->save();
 
@@ -246,12 +247,12 @@ class MemberController extends Controller
         $user = User::findOrFail($id);
         $data = array();
 
-        $shortlist = Shortlist::where('user_id', $user->id)->where('shortlisted_by', auth()->id())->first();
-        $profile_reported = ReportedUser::where('user_id', $user->id)->where('reported_by', auth()->id())->first();
-        $profile_view_resquest_status = ViewProfilePicture::where('user_id', $user->id)->where('requested_by', auth()->id())->where('status', 1)->first();
-        $gallery_view_resquest_status = ViewGalleryImage::where('user_id', $user->id)->where('requested_by', auth()->id())->where('status', 1)->first();
-        $do_interest = ExpressInterest::where('user_id', $user->id)->where('interested_by', auth()->id())->first();
-        $received_interest = ExpressInterest::where('user_id', auth()->id())->where('interested_by', $user->id)->first();
+        $shortlist = Shortlist::where('user_id', $user->id)->where('shortlisted_by', Auth::id())->first();
+        $profile_reported = ReportedUser::where('user_id', $user->id)->where('reported_by', Auth::id())->first();
+        $profile_view_resquest_status = ViewProfilePicture::where('user_id', $user->id)->where('requested_by', Auth::id())->where('status', 1)->first();
+        $gallery_view_resquest_status = ViewGalleryImage::where('user_id', $user->id)->where('requested_by', Auth::id())->where('status', 1)->first();
+        $do_interest = ExpressInterest::where('user_id', $user->id)->where('interested_by', Auth::id())->first();
+        $received_interest = ExpressInterest::where('user_id', Auth::id())->where('interested_by', $user->id)->first();
 
 
         $data['interest_status']      = ($do_interest ? 'sent interest' : $received_interest) ? 'received interest' : 'no interest';

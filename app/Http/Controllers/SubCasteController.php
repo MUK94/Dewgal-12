@@ -6,11 +6,15 @@ use Illuminate\Http\Request;
 use App\Models\Religion;
 use App\Models\Caste;
 use App\Models\SubCaste;
-use Redirect;
-use Validator;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Redirect;
 
 class SubCasteController extends Controller
 {
+
+    public $subcaste_rules;
+    public $subcaste_messages;
+
     public function __construct()
     {
         $this->middleware(['permission:show_sub_castes'])->only('index');

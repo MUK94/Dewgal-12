@@ -4,18 +4,21 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\OnBehalf;
-use Redirect;
-use Validator;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Redirect;
+
 
 class OnBehalfController extends Controller
 {
+    public $on_behalf_rules;
+    public $on_behalf_messages;
 
     public function __construct()
     {
         $this->middleware(['permission:show_on_behalves'])->only('index');
         $this->middleware(['permission:edit_on_behalf'])->only('edit');
         $this->middleware(['permission:delete_on_behalf'])->only('destroy');
-        
+
         $this->on_behalf_rules = [
             'name' => ['required','max:255'],
         ];

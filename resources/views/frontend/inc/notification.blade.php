@@ -16,7 +16,7 @@
         @if ($check == 'done' && !empty($user_data))
             <li class="list-group-item d-flex justify-content-between align-items-start hov-bg-soft-primary">
                 <a href="{{ route('notification_view', $notification->id) }}" class="media text-inherit">
-                    <span class="avatar avatar-sm mr-3">
+                    {{-- <span class="avatar avatar-sm mr-3">
                         @php
                             $avatar_image =
                                 $user_data->member->gender == 1
@@ -28,7 +28,7 @@
                             @else
                             src="{{ static_asset($avatar_image) }}" @endif
                             onerror="this.onerror=null;this.src='{{ static_asset($avatar_image) }}';">
-                    </span>
+                    </span> --}}
                     <div class="media-body">
                         <p class="mb-1">{{ $user_data->first_name . ' ' . $user_data->last_name }}</p>
                         <small class="text-muted">

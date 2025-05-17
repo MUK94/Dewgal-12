@@ -6,8 +6,9 @@ use Illuminate\Http\Request;
 use App\Models\MembersImport;
 use App\Models\OnBehalf;
 use App\Models\Package;
-use PDF;
-use Excel;
+use Barryvdh\DomPDF\Facade\Pdf;
+use Maatwebsite\Excel\Facades\Excel;
+
 
 class MemberBulkAddController extends Controller
 {

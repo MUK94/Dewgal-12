@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
-use Mail;
+use Illuminate\Support\Facades\Mail;
 use App\Mail\EmailManager;
 
 class NewsletterController extends Controller

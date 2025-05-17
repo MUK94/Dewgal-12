@@ -8,6 +8,8 @@ use App\Http\Controllers\Api\Controller;
 use App\Http\Controllers\APi\WalletController;
 use App\Http\Controllers\Api\PackageController;
 
+use Illuminate\Support\Facades\Auth;
+
 class InstamojoController extends Controller
 {
     public function pay(Request $request)
@@ -43,8 +45,8 @@ class InstamojoController extends Controller
                     "purpose"      => ucfirst(str_replace('_', ' ', $request->payment_type)),
                     "amount"       => round($request->amount),
                     "send_email"   => true,
-                    "email"        => auth()->user()->email,
-                    "phone"        => auth()->user()->phone,
+                    "email"        => Auth::user()->email,
+                    "phone"        => Auth::user()->phone,
                     "redirect_url" => url('instamojo/payment/pay-success')
                 ));
 

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use Illuminate\Support\Facades\Auth;
-use Socialite;
+use Laravel\Socialite\Facades\Socialite;
 use App\Models\User;
 use App\Models\Hobby;
 use App\Models\Staff;
@@ -35,6 +35,7 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use GeneaLabs\LaravelSocialiter\Facades\Socialiter;
+
 
 class LoginController extends Controller
 {

@@ -5,8 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Translation;
 use App\Models\Upload;
 use Illuminate\Http\Request;
-use DB;
-use Artisan;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Artisan;
 use ZipArchive;
 
 class UpdateController extends Controller
@@ -105,7 +105,7 @@ class UpdateController extends Controller
 
             $sql_path = base_path('sqlupdates/v37.sql');
             DB::unprepared(file_get_contents($sql_path));
-            
+
             $sql_path = base_path('sqlupdates/v40.sql');
             DB::unprepared(file_get_contents($sql_path));
 
@@ -127,7 +127,7 @@ class UpdateController extends Controller
 
             $sql_path = base_path('sqlupdates/v37.sql');
             DB::unprepared(file_get_contents($sql_path));
-            
+
             $sql_path = base_path('sqlupdates/v40.sql');
             DB::unprepared(file_get_contents($sql_path));
 
@@ -152,7 +152,7 @@ class UpdateController extends Controller
 
             $sql_path = base_path('sqlupdates/v37.sql');
             DB::unprepared(file_get_contents($sql_path));
-            
+
             $sql_path = base_path('sqlupdates/v40.sql');
             DB::unprepared(file_get_contents($sql_path));
 
@@ -180,7 +180,7 @@ class UpdateController extends Controller
 
             $sql_path = base_path('sqlupdates/v37.sql');
             DB::unprepared(file_get_contents($sql_path));
-            
+
             $sql_path = base_path('sqlupdates/v40.sql');
             DB::unprepared(file_get_contents($sql_path));
 
@@ -211,7 +211,7 @@ class UpdateController extends Controller
 
             $sql_path = base_path('sqlupdates/v37.sql');
             DB::unprepared(file_get_contents($sql_path));
-            
+
             $sql_path = base_path('sqlupdates/v40.sql');
             DB::unprepared(file_get_contents($sql_path));
 
@@ -245,7 +245,7 @@ class UpdateController extends Controller
 
             $sql_path = base_path('sqlupdates/v37.sql');
             DB::unprepared(file_get_contents($sql_path));
-            
+
             $sql_path = base_path('sqlupdates/v40.sql');
             DB::unprepared(file_get_contents($sql_path));
 

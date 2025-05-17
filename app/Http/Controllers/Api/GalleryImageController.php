@@ -11,9 +11,10 @@ use App\Models\ViewGalleryImage;
 use App\Models\Upload;
 use App\Models\User;
 use Illuminate\Http\Request;
-use DB;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 use Kutia\Larafirebase\Facades\Larafirebase;
-use Notification;
+use Illuminate\Support\Facades\Notification;
 use App\Notifications\DbStoreNotification;
 use App\Utility\EmailUtility;
 use App\Utility\SmsUtility;
@@ -42,28 +43,28 @@ class GalleryImageController extends Controller
      */
     public function store(Request $request)
     {
-        if (package_validity(auth()->user()->id)) {
-            if (get_remaining_package_value(auth()->user()->id, 'remaining_photo_gallery') > 0) {
+        if (package_validity(Auth::user()->id)) {
+            if (get_remaining_package_value(Auth::user()->id, 'remaining_photo_gallery') > 0) {
                 // image upload
                 $photo = null;
                 if ($request->hasFile('gallery_image')) {
                     $photo = upload_api_file($request->file('gallery_image'));
                 }
                 // $gallery_images = [];
-                // if ($request->hasFile('gallery_images')) {             
+                // if ($request->hasFile('gallery_images')) {
                 //     foreach ($request->file('gallery_images') as $key => $gallery_image) {
                 //         $photo = upload_api_file($gallery_image);
                 //         $gallery_images[] = $photo;
-                //     }                  
+                //     }
                 // }
                 // $gallery_images = implode(',', $gallery_images);
 
                 GalleryImage::create([
-                    'user_id' => auth()->user()->id,
+                    'user_id' => Auth::user()->id,
                     'image'   => $photo
                 ]);
 
-                $member = Member::where('user_id', auth()->user()->id)->first();
+                $member = Member::where('user_id', Auth::user()->id)->first();
                 $member->remaining_photo_gallery = $member->remaining_photo_gallery - 1;
                 $member->save();
                 return $this->success_message('Gallery image uploaded successfully.');
@@ -114,7 +115,7 @@ class GalleryImageController extends Controller
     {
         $my_gallery_image_view_requests = DB::table('view_gallery_images')
             ->orderBy('id', 'desc')
-            ->where('user_id', auth()->id())
+            ->where('user_id', Auth::id())
             ->join('users', 'view_gallery_images.user_id', '=', 'users.id')
             ->select('view_gallery_images.id')
             ->distinct()
@@ -124,7 +125,7 @@ class GalleryImageController extends Controller
     }
     public function store_image_view_request(Request $request)
     {
-        $auth_user = auth()->user();
+        $auth_user = Auth::user();
         $exist_check = ViewGalleryImage::where('user_id', $request->id)->where('requested_by', $auth_user->id)->first();
         if (!$exist_check) {
             $view_gallert_image                = new ViewGalleryImage();
@@ -146,7 +147,7 @@ class GalleryImageController extends Controller
                     $message       = $auth_user->first_name . ' ' . $auth_user->last_name . ' ' . translate(' wants to see your gallery images.');
                     $route         = 'gallery-image-view-request.index';
 
-                    // fcm 
+                    // fcm
                     if (get_setting('firebase_push_notification') == 1) {
                         $fcmTokens = User::where('id', $request->id)->whereNotNull('fcm_token')->pluck('fcm_token')->toArray();
                         Larafirebase::withTitle($notify_type)
@@ -180,7 +181,7 @@ class GalleryImageController extends Controller
     }
     public function accept_image_view_request(Request $request)
     {
-        $auth_user = auth()->user();
+        $auth_user = Auth::user();
         $view_gallery_image = ViewGalleryImage::findOrFail($request->gallery_image_view_request_id);
         //   dd($view_gallery_image);
         $view_gallery_image->status = 1;
@@ -198,7 +199,7 @@ class GalleryImageController extends Controller
                 $message = $auth_user->first_name . ' ' . $auth_user->last_name . ' ' . translate(' has accepted your gallery image view request.');
                 $route = route("member_profile", $auth_user->id);
 
-                // fcm 
+                // fcm
                 if (get_setting('firebase_push_notification') == 1) {
                     $fcmTokens = User::where('id', $view_gallery_image->requested_by)->whereNotNull('fcm_token')->pluck('fcm_token')->toArray();
                     Larafirebase::withTitle($notify_type)
@@ -229,7 +230,7 @@ class GalleryImageController extends Controller
     }
     public function reject_image_view_request(Request $request)
     {
-        $auth_user = auth()->user();
+        $auth_user = Auth::user();
         $gallery_view_request = ViewGalleryImage::findOrFail($request->gallery_image_view_request_id);
 
         if (ViewGalleryImage::destroy($request->gallery_image_view_request_id)) {
@@ -243,7 +244,7 @@ class GalleryImageController extends Controller
                 $message = $auth_user->first_name . ' ' . $auth_user->last_name . ' ' . translate(' has rejected your gallery image view request.');
                 $route = route("member_profile", $auth_user->id);
 
-                // fcm 
+                // fcm
                 if (get_setting('firebase_push_notification') == 1) {
                     $fcmTokens = User::where('id', $gallery_view_request->requested_by)->whereNotNull('fcm_token')->pluck('fcm_token')->toArray();
                     Larafirebase::withTitle($notify_type)

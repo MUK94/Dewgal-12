@@ -4,11 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\MemberLanguage;
-use Redirect;
-use Validator;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Redirect;
 
 class MemberLanguageController extends Controller
 {
+    public $language_rules;
+    public $language_messages;
+
     public function __construct()
     {
         $this->middleware(['permission:show_member_languages'])->only('index');

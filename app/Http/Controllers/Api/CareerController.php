@@ -10,6 +10,8 @@ use App\Http\Requests\CareerRequest;
 use App\Http\Controllers\Api\Controller;
 use App\Http\Resources\CareerResource;
 
+use Illuminate\Support\Facades\Auth;
+
 class CareerController extends Controller
 {
     /**
@@ -19,7 +21,7 @@ class CareerController extends Controller
      */
     public function index()
     {
-        $career = Career::where('user_id',auth()->id())->get();
+        $career = Career::where('user_id', Auth::id())->get();
         return  CareerResource::collection($career)->additional([
             'result' => true
         ]);
@@ -34,7 +36,7 @@ class CareerController extends Controller
     public function store(CareerRequest $request)
     {
         Career::create($request->validated() + [
-            'user_id' => auth()->id()
+            'user_id' => Auth::id()
         ]);
         return $this->success_message('Career Info has been added successfully');
     }
@@ -59,7 +61,7 @@ class CareerController extends Controller
      */
     public function update(CareerRequest $request, $id)
     {
-        $career = Career::where('id', $id)->where('user_id', auth()->id())->first();
+        $career = Career::where('id', $id)->where('user_id', Auth::id())->first();
         if ($career) {
             $career->update($request->validated());
             return $this->success_message('Career Info has been updated successfully');
@@ -74,7 +76,7 @@ class CareerController extends Controller
      */
     public function destroy($id)
     {
-        $career = Career::where('id', $id)->where('user_id', auth()->id())->first();
+        $career = Career::where('id', $id)->where('user_id', Auth::id())->first();
         if ($career) {
             $career->delete();
             return $this->success_message('Education info has been deleted successfully');
@@ -85,7 +87,7 @@ class CareerController extends Controller
 
     public function career_status_update(Request $request)
     {
-        $career = Career::where('id', $request->id)->where('user_id', auth()->id())->first();
+        $career = Career::where('id', $request->id)->where('user_id', Auth::id())->first();
         if ($career) {
             $career->present = $request->status;
             $career->save();

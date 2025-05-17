@@ -7,23 +7,23 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\WalletController;
 use App\Http\Controllers\PackagePaymentController;
 
-use Session;
-use Auth;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Auth;
 
 class AamarpayController extends Controller
 {
     public function pay(){
         // dd('ok');
-        if (auth()->user()->phone == null) {
+        if (Auth::user()->phone == null) {
             flash(translate('Please add phone number to your profile'))->warning();
             return redirect()->route('profile');
         }
-        
-        if (auth()->user()->email == null) {
+
+        if (Auth::user()->email == null) {
             $email = 'customer@exmaple.com';
         }
         else{
-            $email = auth()->user()->email;
+            $email = Auth::user()->email;
         }
 
         if (get_setting('aamarpay_sandbox') == 1) {
@@ -44,7 +44,7 @@ class AamarpayController extends Controller
             'payment_type' => 'VISA', //no need to change
             'currency' => 'BDT',  //currenct will be USD/BDT
             'tran_id' => rand(1111111,9999999), //transaction id must be unique from your end
-            'cus_name' => auth()->user()->name,  //customer name
+            'cus_name' => Auth::user()->name,  //customer name
             'cus_email' => $email, //customer email address
             'cus_add1' => '',  //customer address
             'cus_add2' => '', //customer address
@@ -52,7 +52,7 @@ class AamarpayController extends Controller
             'cus_state' => '',  //state
             'cus_postcode' => '', //postcode or zipcode
             'cus_country' => 'Bangladesh',  //country
-            'cus_phone' => auth()->user()->phone, //customer phone number
+            'cus_phone' => Auth::user()->phone, //customer phone number
             'cus_fax' => 'Not¬Applicable',  //fax
             'ship_name' => '', //ship name
             'ship_add1' => '',  //ship address

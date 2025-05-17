@@ -3,12 +3,14 @@
 namespace App\Http\Controllers\Api\Payment;
 
 use App\Models\User;
-use PaytmWallet;
+use Anand\LaravelPaytmWallet\Facades\PaytmWallet;
 use App\Models\Transaction;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Api\Controller;
 use App\Http\Controllers\Api\WalletController;
 use App\Http\Controllers\Api\PackageController;
+
+use Illuminate\Support\Facades\Auth;
 
 class PaytmController extends Controller
 {
@@ -23,19 +25,19 @@ class PaytmController extends Controller
             $payment_data = ["package_id" => $package_id, "payment_method" => $request->payment_method, "amount" => $request->amount];
 
             $transaction = new Transaction();
-            $transaction->user_id = auth()->user()->id;
+            $transaction->user_id = Auth::user()->id;
             $transaction->gateway = 'paytm';
             $transaction->payment_type = $request->payment_type;
             $transaction->additional_content = json_encode($payment_data);
             $transaction->save();
 
-            if (auth()->user()->phone != null) {
+            if (Auth::user()->phone != null) {
                 $payment = PaytmWallet::with('receive');
                 $payment->prepare([
                     'order' => $transaction->id,
-                    'user' => auth()->user()->id,
-                    'mobile_number' => auth()->user()->phone,
-                    'email' => auth()->user()->email,
+                    'user' => Auth::user()->id,
+                    'mobile_number' => Auth::user()->phone,
+                    'email' => Auth::user()->email,
                     'amount' => $request->amount,
                     'callback_url' => route('api.paytm.callback')
                 ]);
@@ -55,12 +57,12 @@ class PaytmController extends Controller
 
         if ($transaction->isSuccessful()) {
             $transaction = Transaction::findOrFail($response['ORDERID']);
-            auth()->login(User::findOrFail($transaction->user_id));
+            Auth::login(User::findOrFail($transaction->user_id));
             if ($transaction->payment_type == 'package_payment') {
-                return (new PackageController)->package_payment_done($transaction->user_id,json_decode($transaction->additional_content, true), json_encode($response));
+                return (new PackageController)->package_payment_done($transaction->user_id, json_decode($transaction->additional_content, true), json_encode($response));
             } elseif ($transaction->payment_type == 'wallet_payment') {
-                auth()->login(User::findOrFail($transaction->user_id));
-                return (new WalletController)->wallet_payment_done($transaction->user_id,json_decode($transaction->additional_content, true), json_encode($response));
+                Auth::login(User::findOrFail($transaction->user_id));
+                return (new WalletController)->wallet_payment_done($transaction->user_id, json_decode($transaction->additional_content, true), json_encode($response));
             }
             return response()->json(['result' => false, 'message' => translate("Payment failed")]);
         }

@@ -5,12 +5,15 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Country;
 use App\Models\State;
-use Redirect;
-use Validator;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Redirect;
 
 
 class StateController extends Controller
 {
+    public $state_rules;
+    public $state_messages;
+
     public function __construct()
     {
         $this->middleware(['permission:show_states'])->only('index');
