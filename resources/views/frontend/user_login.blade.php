@@ -82,7 +82,7 @@
                                 </div>
                             @endif
 
-                            @if (get_setting('google_login_activation') == 1 ||
+                            {{-- @if (get_setting('google_login_activation') == 1 ||
                                     get_setting('facebook_login_activation') == 1 ||
                                     get_setting('twitter_login_activation') == 1 ||
                                     get_setting('apple_login_activation') == 1)
@@ -121,7 +121,7 @@
                                         </li>
                                     @endif
                                 </ul>
-                            @endif
+                            @endif --}}
                             <div class="text-center">
                                 <p class="text-muted mb-0">{{ translate("Don't have an account?") }}</p>
                                 <a href="{{ route('register') }}">{{ translate('Create an account') }}</a>

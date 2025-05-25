@@ -205,10 +205,7 @@
                                     <button type="submit"
                                         class="btn btn-block btn-primary">{{ translate('Create Account') }}</button>
                                 </div>
-                                @if (get_setting('google_login_activation') == 1 ||
-                                        get_setting('facebook_login_activation') == 1 ||
-                                        get_setting('twitter_login_activation') == 1 ||
-                                        get_setting('apple_login_activation') == 1)
+                                {{-- @if (get_setting('google_login_activation') == 1 || get_setting('facebook_login_activation') == 1 || get_setting('twitter_login_activation') == 1 || get_setting('apple_login_activation') == 1)
                                     <div class="mb-5">
                                         <div class="separator mb-3">
                                             <span class="bg-white px-3">{{ translate('Or Join With') }}</span>
@@ -244,7 +241,7 @@
                                             @endif
                                         </ul>
                                     </div>
-                                @endif
+                                @endif --}}
 
                                 <div class="text-center">
                                     <p class="text-muted mb-0">{{ translate('Already have an account?') }}</p>

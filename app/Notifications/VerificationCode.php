@@ -10,48 +10,45 @@ use Illuminate\Notifications\Notification;
 class VerificationCode extends Notification
 {
     use Queueable;
-    private $user;
 
     /**
      * Create a new notification instance.
-     *
-     * @return void
      */
-    public function __construct($user)
+    protected $code;
+
+    public function __construct($code)
     {
-        $this->user = $user;
+        $this->code = $code;
     }
 
     /**
      * Get the notification's delivery channels.
      *
-     * @param  mixed  $notifiable
-     * @return array
+     * @return array<int, string>
      */
-    public function via($notifiable)
+    public function via(object $notifiable): array
     {
         return ['mail'];
     }
+
     /**
      * Get the mail representation of the notification.
-     *
-     * @param  mixed  $notifiable
-     * @return \Illuminate\Notifications\Messages\MailMessage
      */
-    public function toMail($notifiable)
+    public function toMail(object $notifiable): MailMessage
     {
         return (new MailMessage)
-                    ->greeting('Hello '.$this->user->first_name.' '.$this->user->last_name .'!')
-                    ->line('Your Verification Code is: '.$this->user->verification_code);
+            ->subject('Your Email Verification Code')
+            ->line('Your verification code is: ' . $this->code)
+            ->line('This code will expire in 20 minutes.')
+            ->line('If you did not register, no action is required.');
     }
 
     /**
      * Get the array representation of the notification.
      *
-     * @param  mixed  $notifiable
-     * @return array
+     * @return array<string, mixed>
      */
-    public function toArray($notifiable)
+    public function toArray(object $notifiable): array
     {
         return [
             //

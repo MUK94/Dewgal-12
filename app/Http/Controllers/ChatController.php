@@ -34,8 +34,7 @@ class ChatController extends Controller
         $chat = Chat::findOrFail($request->first_message_id);
         $chats = Chat::where('id', '<', $chat->id)->where('chat_thread_id', $chat->chat_thread_id)->latest()->limit(20)->get();
         if(count($chats) > 0){
-            return array('messages' => view('frontend.member.messages.messages_part', compact('chats'))->render(),
-                         'first_message_id' => $chats->last()->id);
+            return array('messages' => view('frontend.member.messages.messages_part', compact('chats'))->render(),'first_message_id' => $chats->last()->id);
         }
         else {
             return array('messages' => "", 'first_message_id' => 0);

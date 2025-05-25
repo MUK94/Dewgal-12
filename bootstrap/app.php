@@ -37,6 +37,7 @@ return Application::configure(basePath: dirname(__DIR__))
         ]);
 
         $middleware->alias([
+            'isAccountVerified' => \App\Http\Middleware\EnsureUserIsVerified::class,
             'admin' => \App\Http\Middleware\IsAdmin::class,
             'member' => \App\Http\Middleware\IsMember::class,
             'auth' => \App\Http\Middleware\Authenticate::class,

@@ -6,7 +6,7 @@
                     @if ($chat->sender->photo != null)
                         <img src="{{ uploaded_asset($chat->sender->photo) }}">
                     @else
-                        <img src="{{ static_asset('assets/frontend/default/img/avatar-place.png') }}">
+                        <img src="{{ asset('assets/img/avatar-place.png') }}">
                     @endif
                 </span>
                 <div class="media-body">

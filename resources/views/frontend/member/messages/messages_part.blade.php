@@ -8,7 +8,9 @@
                         <span class="time">{{ Carbon\Carbon::parse($chat->created_at)->diffForHumans() }}</span>
                     </div>
                     <span class="avatar avatar-xs flex-shrink-0">
-                        <img @if ($chat->sender->photo != null) src="{{ uploaded_asset(($chat->sender->photo))}}" @endif>
+                        <img
+                            src="{{ $chat->sender->photo ? uploaded_asset($chat->sender->photo) : asset('assets/img/avatar-place.png') }}">
+
                     </span>
                 </div>
             </div>
@@ -25,31 +27,36 @@
                                 @if ($attachment != null)
                                     @if ($attachment->type == 'image')
                                         <div class="mb-2 file-preview-item" title="{{ $attachment->file_name }}">
-                                            <a href="{{ route('download_attachment', $attachment->id) }}" target="_blank" class="d-block">
+                                            <a href="{{ route('download_attachment', $attachment->id) }}"
+                                                target="_blank" class="d-block">
                                                 <div class="thumb">
-                                                    <img src="{{ static_asset($attachment->file_name) }}" class="img-fit">
+                                                    <img src="{{ static_asset($attachment->file_name) }}"
+                                                        class="img-fit">
                                                 </div>
                                                 <div class="body">
                                                     <h6 class="d-flex">
-                                                        <span class="text-truncate title">{{ $attachment->file_original_name }}</span>
+                                                        <span
+                                                            class="text-truncate title">{{ $attachment->file_original_name }}</span>
                                                         <span class="ext">.{{ $attachment->extension }}</span>
                                                     </h6>
-                                                    <p>{{formatBytes($attachment->file_size)}}</p>
+                                                    <p>{{ formatBytes($attachment->file_size) }}</p>
                                                 </div>
                                             </a>
                                         </div>
                                     @else
                                         <div class="mb-2 file-preview-item" title="{{ $attachment->file_name }}">
-                                            <a href="{{ route('download_attachment', $attachment->id) }}" target="_blank" class="d-block">
+                                            <a href="{{ route('download_attachment', $attachment->id) }}"
+                                                target="_blank" class="d-block">
                                                 <div class="thumb">
                                                     <i class="la la-file-text"></i>
                                                 </div>
                                                 <div class="body">
                                                     <h6 class="d-flex">
-                                                        <span class="text-truncate title">{{ $attachment->file_original_name }}</span>
+                                                        <span
+                                                            class="text-truncate title">{{ $attachment->file_original_name }}</span>
                                                         <span class="ext">.{{ $attachment->extension }}</span>
                                                     </h6>
-                                                    <p>{{formatBytes($attachment->file_size)}}</p>
+                                                    <p>{{ formatBytes($attachment->file_size) }}</p>
                                                 </div>
                                             </a>
                                         </div>
@@ -64,7 +71,9 @@
                         <span class="time">{{ Carbon\Carbon::parse($chat->created_at)->diffForHumans() }}</span>
                     </div>
                     <span class="avatar avatar-xs flex-shrink-0">
-                        <img @if ($chat->sender->photo != null) src="{{ uploaded_asset(($chat->sender->photo))}}" @endif>
+                        <img
+                            src="{{ $chat->sender->photo ? uploaded_asset($chat->sender->photo) : asset('assets/img/avatar-place.png') }}">
+
                     </span>
                 </div>
             </div>
@@ -74,7 +83,9 @@
             <div class="chat-coversation">
                 <div class="media">
                     <span class="avatar avatar-xs flex-shrink-0">
-                        <img @if ($chat->sender->photo != null) src="{{ uploaded_asset(($chat->sender->photo))}}" @endif>
+                        <img
+                            src="{{ $chat->sender->photo ? uploaded_asset($chat->sender->photo) : asset('assets/img/avatar-place.png') }}">
+
                     </span>
                     <div class="media-body">
                         <div class="text">{{ $chat->message }}</div>
@@ -87,7 +98,9 @@
             <div class="chat-coversation">
                 <div class="media">
                     <span class="avatar avatar-xs flex-shrink-0">
-                        <img @if ($chat->sender->photo != null) src="{{ uploaded_asset(($chat->sender->photo))}}" @endif>
+                        <img
+                            src="{{ $chat->sender->photo ? uploaded_asset($chat->sender->photo) : asset('assets/img/avatar-place.png') }}">
+
                     </span>
                     <div class="media-body">
                         <div class="file-preview box sm">
@@ -98,31 +111,36 @@
                                 @if ($attachment != null)
                                     @if ($attachment->type == 'image')
                                         <div class="mb-2 file-preview-item" title="{{ $attachment->file_name }}">
-                                            <a href="{{ route('download_attachment', $attachment->id) }}" target="_blank" class="d-block">
+                                            <a href="{{ route('download_attachment', $attachment->id) }}"
+                                                target="_blank" class="d-block">
                                                 <div class="thumb">
-                                                    <img src="{{ static_asset($attachment->file_name) }}" class="img-fit">
+                                                    <img src="{{ static_asset($attachment->file_name) }}"
+                                                        class="img-fit">
                                                 </div>
                                                 <div class="body">
                                                     <h6 class="d-flex">
-                                                        <span class="text-truncate title">{{ $attachment->file_original_name }}</span>
+                                                        <span
+                                                            class="text-truncate title">{{ $attachment->file_original_name }}</span>
                                                         <span class="ext">.{{ $attachment->extension }}</span>
                                                     </h6>
-                                                    <p>{{formatBytes($attachment->file_size)}}</p>
+                                                    <p>{{ formatBytes($attachment->file_size) }}</p>
                                                 </div>
                                             </a>
                                         </div>
                                     @else
                                         <div class="mb-2 file-preview-item" title="{{ $attachment->file_name }}">
-                                            <a href="{{ route('download_attachment', $attachment->id) }}" target="_blank" class="d-block">
+                                            <a href="{{ route('download_attachment', $attachment->id) }}"
+                                                target="_blank" class="d-block">
                                                 <div class="thumb">
                                                     <i class="la la-file-text"></i>
                                                 </div>
                                                 <div class="body">
                                                     <h6 class="d-flex">
-                                                        <span class="text-truncate title">{{ $attachment->file_original_name }}</span>
+                                                        <span
+                                                            class="text-truncate title">{{ $attachment->file_original_name }}</span>
                                                         <span class="ext">.{{ $attachment->extension }}</span>
                                                     </h6>
-                                                    <p>{{formatBytes($attachment->file_size)}}</p>
+                                                    <p>{{ formatBytes($attachment->file_size) }}</p>
                                                 </div>
                                             </a>
                                         </div>

@@ -40,10 +40,10 @@ class User extends Authenticatable implements MustVerifyEmail
     use Notifiable;
     use HasRoles;
 
-    public function sendEmailVerificationNotification()
-    {
-        $this->notify(new EmailVerificationNotification());
-    }
+    // public function sendEmailVerificationNotification()
+    // {
+    //     $this->notify(new EmailVerificationNotification());
+    // }
 
     /**
      * The attributes that are mass assignable.

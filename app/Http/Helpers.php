@@ -175,13 +175,13 @@ if (!function_exists('get_email_template')) {
 }
 
 // SMS template data
-if (!function_exists('get_sms_template')) {
-    function get_sms_template($identifier, $colmn_name = null)
-    {
-        $value = SmsTemplate::where('identifier', $identifier)->first()->$colmn_name;
-        return $value;
-    }
-}
+// if (!function_exists('get_sms_template')) {
+//     function get_sms_template($identifier, $colmn_name = null)
+//     {
+//         $value = SmsTemplate::where('identifier', $identifier)->first()->$colmn_name;
+//         return $value;
+//     }
+// }
 
 
 // Addon Activation Check

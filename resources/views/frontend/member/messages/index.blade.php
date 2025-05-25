@@ -34,7 +34,7 @@
                                                 <img src="{{ uploaded_asset($single_chat_thread->$user_to_show->photo) }}">
                                             @else
                                                 <img
-                                                    src="{{ static_asset('assets/frontend/default/img/avatar-place.png') }}">
+                                                    src="{{ asset('assets/img/avatar-place.png') }}">
                                             @endif
 
                                             @if (Cache::has('user-is-online-' . $single_chat_thread->$user_to_show->id))
@@ -130,6 +130,28 @@
             var chat_thread_id = $('#chat_thread_id').val();
             var message = $('#message').val();
             var attachment = $('#attachment').val();
+
+            // Check if message contains any digits
+            var containsDigits = /\d/.test(message);
+
+            if (containsDigits) {
+                console.log("Message contains numbers, blocking it.");
+
+                $('#chat-messages').append(`
+                    <div class="text-center text-danger my-2">
+                        Le partage de numéros de téléphone, adresse ou autre valeur numérique n'est pas autorisé dans ce chat.
+                        Si vous souhaitez vous rencontrer, veuillez demander un rendez-vous en cliquant
+                        <a href="/appointment" class="text-danger font-weight-bold" style="text-decoration: underline;">
+                            "Demander un rendez-vous"
+                        </a>.
+                    </div>
+                `);
+
+
+                $('#message').val('');
+                return;
+            }
+
             if (message.length > 0 || attachment.length > 0) {
                 $.post('{{ route('chat.reply') }}', {
                     _token: '{{ csrf_token() }}',

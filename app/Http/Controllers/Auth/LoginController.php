@@ -35,147 +35,81 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use GeneaLabs\LaravelSocialiter\Facades\Socialiter;
-
+use App\Notifications\VerificationCode;
 
 class LoginController extends Controller
 {
     use AuthenticatesUsers;
 
-    public function redirectToProvider($provider)
+    /**
+     * Where to redirect users after login.
+     *
+     * @var string
+     */
+    protected $redirectTo = RouteServiceProvider::HOME;
+
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
     {
-        if (request()->get('query') == 'mobile_app') {
-            request()->session()->put('login_from', 'mobile_app');
-        }
-        if ($provider == 'apple') {
-            return Socialite::driver("sign-in-with-apple")
-                ->scopes(["name", "email"])
-                ->redirect();
-        }
-        return Socialite::driver($provider)->redirect();
+        $this->middleware('guest')->except(['logout', 'account_deletion']);
     }
 
-    public function handleProviderCallback(Request $request, $provider)
+    /**
+     * Handle a login request to the application.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Http\JsonResponse
+     *
+     * Overriding the default login method from AuthenticatesUsers trait
+     */
+    public function login(Request $request)
     {
-        if (session('login_from') == 'mobile_app') {
-            return $this->mobileHandleProviderCallback($request, $provider);
-        }
-        try {
-            if ($provider == 'twitter') {
-                $user = Socialite::driver('twitter')->user();
-            } else {
-                $user = Socialite::driver($provider)->stateless()->user();
-            }
-        } catch (\Exception $e) {
-            return redirect()->route('user.login')->with('error', "Something Went wrong. Please try again.");
-        }
-        $existingUser = User::where('provider_id', $user->id)->orWhere('email', $user->email)->first();
+        $this->validateLogin($request);
 
-        if ($existingUser) {
-            if($existingUser->approved == 0){
+        if (
+            method_exists($this, 'hasTooManyLoginAttempts') &&
+            $this->hasTooManyLoginAttempts($request)
+        ) {
+            $this->fireLockoutEvent($request);
+            return $this->sendLockoutResponse($request);
+        }
+
+        $credentials = $this->credentials($request);
+
+        if ($this->guard()->validate($credentials)) {
+            $loginField = filter_var($credentials[$this->username()], FILTER_VALIDATE_EMAIL) ? 'email' : 'phone';
+            $user = User::where($loginField, $credentials[$loginField])->first();
+
+            if (!$user) {
+                $this->incrementLoginAttempts($request);
+                return $this->sendFailedLoginResponse($request);
+            }
+
+            if (function_exists('get_setting') && get_setting('member_approval_by_admin') == 1 && $user->approved == 0) {
+                $this->incrementLoginAttempts($request);
                 return redirect()->route('user.login')->with('error', "Please wait for the admin approval.");
-            } else {
-                Auth::login($existingUser, true);
             }
 
-        } else {
-            $newUser = new User;
-            $newUser->first_name = $user->name;
-            $newUser->email = $user->email;
-            $newUser->email_verified_at = date('Y-m-d H:m:s');
-            $newUser->provider_id = $user->id;
-            $newUser->code = unique_code();
-            $newUser->membership = 1;
-            $newUser->approved = get_setting('member_approval_by_admin') == 1 ? 0 : 1;
-            $newUser->save();
-
-            $member = new Member;
-            $member->user_id = $newUser->id;
-            $member->gender = null;
-            $member->on_behalves_id = null;
-            $member->birthday = null;
-
-            $package = Package::where('id', 1)->first();
-            $member->current_package_id = $package->id;
-            $member->remaining_interest = $package->express_interest;
-            $member->remaining_photo_gallery = $package->photo_gallery;
-            $member->remaining_contact_view = $package->contact;
-            $member->remaining_profile_image_view = $package->profile_image_view;
-            $member->remaining_gallery_image_view = $package->gallery_image_view;
-            $member->auto_profile_match = $package->auto_profile_match;
-            $member->package_validity = Date('Y-m-d', strtotime($package->validity . " days"));
-            $member->save();
-
-            if($newUser->approved == 0){
-                return redirect()->route('user.login')->with('error', "Please wait for the admin approval.");
-            } else {
-                Auth::login($newUser, true);
+            // MODIFIED: Only redirect, no code generation/sending here
+            if (!$user->email_verified_at) {
+                $this->incrementLoginAttempts($request);
+                // The message implies the user should go to the form to handle verification/resend
+                flash(translate('Please verify your account to continue.'))->success();
+                return redirect('/verify-form?email=' . urlencode($user->email));
             }
+
+            $this->guard()->login($user, $request->filled('remember'));
+            return $this->sendLoginResponse($request);
         }
-        if (session('link') != null) {
-            return redirect(session('link'));
-        } else {
-            return redirect()->route('dashboard');
-        }
+
+        $this->incrementLoginAttempts($request);
+        return $this->sendFailedLoginResponse($request);
     }
 
-    public function handleAppleCallback(Request $request)
-    {
-        try {
-            $user = Socialite::driver("sign-in-with-apple")->user();
-        } catch (\Exception $e) {
-            return redirect()->route('user.login')->with('error', translate("Something Went wrong. Please try again."));
-        }
-        $existingUserByProviderId = User::where('provider_id', $user->id)->first();
-
-        if ($existingUserByProviderId) {
-            $existingUserByProviderId->access_token = $user->token;
-            $existingUserByProviderId->refresh_token = $user->refreshToken;
-            if (!isset($user->user['is_private_email'])) {
-                $existingUserByProviderId->email = $user->email;
-            }
-            $existingUserByProviderId->save();
-            Auth::login($existingUserByProviderId, true);
-        } else {
-            $existing_or_new_user = User::firstOrNew([
-                'email' => $user->email
-            ]);
-            $existing_or_new_user->provider_id = $user->id;
-            $existing_or_new_user->access_token = $user->token;
-            $existing_or_new_user->refresh_token = $user->refreshToken;
-            $existing_or_new_user->provider = 'apple';
-            if (!$existing_or_new_user->exists) {
-                $existing_or_new_user->name = 'Apple User';
-                if ($user->name) {
-                    $existing_or_new_user->name = $user->name;
-                }
-                $existing_or_new_user->email = $user->email;
-                $existing_or_new_user->email_verified_at = date('Y-m-d H:m:s');
-            }
-            $existing_or_new_user->save();
-
-            Auth::login($existing_or_new_user, true);
-        }
-
-        if (session('link') != null) {
-            return redirect(session('link'));
-        } else {
-            return redirect()->route('dashboard');
-        }
-    }
-
-    public function mobileHandleProviderCallback($request, $provider)
-    {
-        $return_provider = '';
-        $result = false;
-        if ($provider) {
-            $return_provider = $provider;
-            $result = true;
-        }
-        return response()->json([
-            'result' => $result,
-            'provider' => $return_provider
-        ]);
-    }
 
     protected function credentials(Request $request)
     {
@@ -197,11 +131,6 @@ class LoginController extends Controller
                 return redirect()->route('dashboard');
             }
         }
-    }
-
-    public function __construct()
-    {
-        $this->middleware('guest')->except(['logout', 'account_deletion']);
     }
 
     public function showLoginForm()
@@ -273,3 +202,140 @@ class LoginController extends Controller
         return redirect()->route($redirect_route)->with('error', translate("Something Went Wrong"));
     }
 }
+
+
+    // public function redirectToProvider($provider)
+    // {
+    //     if (request()->get('query') == 'mobile_app') {
+    //         request()->session()->put('login_from', 'mobile_app');
+    //     }
+    //     if ($provider == 'apple') {
+    //         return Socialite::driver("sign-in-with-apple")
+    //             ->scopes(["name", "email"])
+    //             ->redirect();
+    //     }
+    //     return Socialite::driver($provider)->redirect();
+    // }
+
+    // public function handleProviderCallback(Request $request, $provider)
+    // {
+    //     if (session('login_from') == 'mobile_app') {
+    //         return $this->mobileHandleProviderCallback($request, $provider);
+    //     }
+    //     try {
+    //         if ($provider == 'twitter') {
+    //             $user = Socialite::driver('twitter')->user();
+    //         } else {
+    //             $user = Socialite::driver($provider)->stateless()->user();
+    //         }
+    //     } catch (\Exception $e) {
+    //         return redirect()->route('user.login')->with('error', "Something Went wrong. Please try again.");
+    //     }
+    //     $existingUser = User::where('provider_id', $user->id)->orWhere('email', $user->email)->first();
+
+    //     if ($existingUser) {
+    //         if($existingUser->approved == 0){
+    //             return redirect()->route('user.login')->with('error', "Please wait for the admin approval.");
+    //         } else {
+    //             Auth::login($existingUser, true);
+    //         }
+
+    //     } else {
+    //         $newUser = new User;
+    //         $newUser->first_name = $user->name;
+    //         $newUser->email = $user->email;
+    //         $newUser->email_verified_at = date('Y-m-d H:m:s');
+    //         $newUser->provider_id = $user->id;
+    //         $newUser->code = unique_code();
+    //         $newUser->membership = 1;
+    //         $newUser->approved = get_setting('member_approval_by_admin') == 1 ? 0 : 1;
+    //         $newUser->save();
+
+    //         $member = new Member;
+    //         $member->user_id = $newUser->id;
+    //         $member->gender = null;
+    //         $member->on_behalves_id = null;
+    //         $member->birthday = null;
+
+    //         $package = Package::where('id', 1)->first();
+    //         $member->current_package_id = $package->id;
+    //         $member->remaining_interest = $package->express_interest;
+    //         $member->remaining_photo_gallery = $package->photo_gallery;
+    //         $member->remaining_contact_view = $package->contact;
+    //         $member->remaining_profile_image_view = $package->profile_image_view;
+    //         $member->remaining_gallery_image_view = $package->gallery_image_view;
+    //         $member->auto_profile_match = $package->auto_profile_match;
+    //         $member->package_validity = Date('Y-m-d', strtotime($package->validity . " days"));
+    //         $member->save();
+
+    //         if($newUser->approved == 0){
+    //             return redirect()->route('user.login')->with('error', "Please wait for the admin approval.");
+    //         } else {
+    //             Auth::login($newUser, true);
+    //         }
+    //     }
+    //     if (session('link') != null) {
+    //         return redirect(session('link'));
+    //     } else {
+    //         return redirect()->route('dashboard');
+    //     }
+    // }
+
+    // public function handleAppleCallback(Request $request)
+    // {
+    //     try {
+    //         $user = Socialite::driver("sign-in-with-apple")->user();
+    //     } catch (\Exception $e) {
+    //         return redirect()->route('user.login')->with('error', translate("Something Went wrong. Please try again."));
+    //     }
+    //     $existingUserByProviderId = User::where('provider_id', $user->id)->first();
+
+    //     if ($existingUserByProviderId) {
+    //         $existingUserByProviderId->access_token = $user->token;
+    //         $existingUserByProviderId->refresh_token = $user->refreshToken;
+    //         if (!isset($user->user['is_private_email'])) {
+    //             $existingUserByProviderId->email = $user->email;
+    //         }
+    //         $existingUserByProviderId->save();
+    //         Auth::login($existingUserByProviderId, true);
+    //     } else {
+    //         $existing_or_new_user = User::firstOrNew([
+    //             'email' => $user->email
+    //         ]);
+    //         $existing_or_new_user->provider_id = $user->id;
+    //         $existing_or_new_user->access_token = $user->token;
+    //         $existing_or_new_user->refresh_token = $user->refreshToken;
+    //         $existing_or_new_user->provider = 'apple';
+    //         if (!$existing_or_new_user->exists) {
+    //             $existing_or_new_user->name = 'Apple User';
+    //             if ($user->name) {
+    //                 $existing_or_new_user->name = $user->name;
+    //             }
+    //             $existing_or_new_user->email = $user->email;
+    //             $existing_or_new_user->email_verified_at = date('Y-m-d H:m:s');
+    //         }
+    //         $existing_or_new_user->save();
+
+    //         Auth::login($existing_or_new_user, true);
+    //     }
+
+    //     if (session('link') != null) {
+    //         return redirect(session('link'));
+    //     } else {
+    //         return redirect()->route('dashboard');
+    //     }
+    // }
+
+    // public function mobileHandleProviderCallback($request, $provider)
+    // {
+    //     $return_provider = '';
+    //     $result = false;
+    //     if ($provider) {
+    //         $return_provider = $provider;
+    //         $result = true;
+    //     }
+    //     return response()->json([
+    //         'result' => $result,
+    //         'provider' => $return_provider
+    //     ]);
+    // }
