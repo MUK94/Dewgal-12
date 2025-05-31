@@ -8,11 +8,11 @@
                     <div class="bg-white rounded shadow-sm p-4 text-left">
                         <h1 class="h3 fw-600 mb-3">{{ translate('Please Verify Your Account') }}</h1>
 
-                        @if (session('resent'))
+                        {{-- @if (session('resent'))
                             <div class="alert alert-success mt-2 mb-0" role="alert">
                                 {{ translate('A fresh verification link has been sent to your email address.') }}
                             </div>
-                        @endif
+                        @endif --}}
 
                         {{-- Displaying flash messages --}}
                         @if (session('success'))
@@ -20,25 +20,17 @@
                                 {{ session('success') }}
                             </div>
                         @endif
-
-                        @if (session('info'))
-                            <div class="alert alert-info mt-2">
-                                {{ session('info') }}
-                            </div>
-                        @endif
-
-
                         @if (session('error'))
                             <div class="alert alert-danger mt-2">
                                 {{ session('error') }}
                             </div>
                         @endif
 
-                        @if (session('message'))
+                        {{-- @if (session('message'))
                             <div class="alert alert-info mt-2 mb-0" role="alert">
                                 {{ session('message') }}
                             </div>
-                        @endif
+                        @endif --}}
 
                         @if ($errors->any())
                             <div class="alert alert-danger">

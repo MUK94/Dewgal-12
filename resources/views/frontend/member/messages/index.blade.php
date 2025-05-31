@@ -33,8 +33,7 @@
                                             @if ($single_chat_thread->$user_to_show->photo != null)
                                                 <img src="{{ uploaded_asset($single_chat_thread->$user_to_show->photo) }}">
                                             @else
-                                                <img
-                                                    src="{{ asset('assets/img/avatar-place.png') }}">
+                                                <img src="{{ asset('assets/img/avatar-place.png') }}">
                                             @endif
 
                                             @if (Cache::has('user-is-online-' . $single_chat_thread->$user_to_show->id))
@@ -141,7 +140,7 @@
                     <div class="text-center text-danger my-2">
                         Le partage de numéros de téléphone, adresse ou autre valeur numérique n'est pas autorisé dans ce chat.
                         Si vous souhaitez vous rencontrer, veuillez demander un rendez-vous en cliquant
-                        <a href="/appointment" class="text-danger font-weight-bold" style="text-decoration: underline;">
+                        <a href="/appointments" class="text-danger font-weight-bold" style="text-decoration: underline;">
                             "Demander un rendez-vous"
                         </a>.
                     </div>

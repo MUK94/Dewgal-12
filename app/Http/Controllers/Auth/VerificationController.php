@@ -8,6 +8,7 @@ use App\Notifications\VerificationCode;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 
 class VerificationController extends Controller
 {
@@ -25,33 +26,32 @@ class VerificationController extends Controller
     public function resend(Request $request)
     {
         $request->validate([
-            'email' => 'required|email', // Ensure email is always provided for resend
+            'email' => 'required|email',
         ]);
 
         $email = $request->get('email');
         $user = User::where('email', $email)->first();
 
         if (!$user) {
-            session()->flash(translate('error', 'The provided email address is not registered.'))->error();
-            return redirect('/register'); // Redirect to login if email not found
+            // Use 'error' as the key, and the translated message as the value
+            Session::flash('error', translate('The provided email address is not registered.'));
+            return redirect('/register');
         }
 
         if ($user->email_verified_at !== null) {
-            session()->flash(translate('success', 'Your email is already verified. Please try logging in.'))->info();
+            Session::flash('success', translate('Your email is already verified. Please try logging in.'));
             return redirect('/login');
         }
 
-        // --- ADDED: Implement Rate Limiting for Resend ---
         if ($user->verification_code_sent_at) {
             $lastSent = Carbon::parse($user->verification_code_sent_at);
             if ($lastSent->addMinutes($this->resendCooldown)->isFuture()) {
                 $timeRemaining = $lastSent->diffInSeconds(Carbon::now());
                 $minutesRemaining = ceil($timeRemaining / 60);
-                session()->flash(translate('error', "Please wait {$minutesRemaining} more minutes before requesting a new code."))->info();
+                Session::flash('error', translate("Please wait {$minutesRemaining} more minutes before requesting a new code."));
                 return back();
             }
         }
-        // --- END Rate Limiting ---
 
         $user->verification_code = $this->generateVerificationCode();
         $user->verification_code_sent_at = now();
@@ -59,7 +59,7 @@ class VerificationController extends Controller
 
         $user->notify(new VerificationCode($user->verification_code));
 
-        session()->flash(translate('success', 'A new verification code has been sent to your email.'))->info();
+        Session::flash('success', translate('A new verification code has been sent to your email.'));
         return back();
     }
 
@@ -67,26 +67,23 @@ class VerificationController extends Controller
     {
         $request->validate([
             'code' => 'required|string',
-            'email' => 'required|email', // Require email to prevent guessing codes for other users
+            'email' => 'required|email',
         ]);
 
         $code = $request->input('code');
         $email = $request->input('email');
 
-        // Find user by both email and code for security
         $user = User::where('email', $email)
             ->where('verification_code', $code)
             ->first();
 
         if (!$user) {
-            session()->flash(translate('error', 'Invalid verification code or email.'))->error();
-            // Pass email back so the form can be pre-filled again
+            Session::flash('error', translate('Invalid verification code or email.'));
             return redirect('/verify-form?email=' . urlencode($email));
         }
 
         if ($this->isCodeExpired($user)) {
-            session()->flash(translate('error', 'Verification code expired. Please request a new one.'))->error();
-            // Pass email back
+            Session::flash('error', translate('Verification code expired. Please request a new one.'));
             return redirect('/verify-form?email=' . urlencode($email));
         }
 
@@ -95,12 +92,10 @@ class VerificationController extends Controller
         $user->verification_code_sent_at = null;
         $user->save();
 
-        session()->flash(translate('success', 'Email verified successfully! You are now logged in.'))->success();
+        Session::flash('success', translate('Email verified successfully! You are now logged in.'));
 
-        // ADDED: Log the user in after successful verification
         Auth::login($user);
 
-        // Redirect to their intended destination (e.g., dashboard)
         return redirect('/');
     }
 

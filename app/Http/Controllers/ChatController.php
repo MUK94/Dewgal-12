@@ -68,22 +68,22 @@ class ChatController extends Controller
         return view('frontend.member.messages.messages_right_single', compact('chat'));
     }
 
-    public function interview_status(Request $request)
-    {
-        $chat_thread = ChatThread::findOrFail($request->chat_thread_id);
-        if ($chat_thread->interview == 1) {
-            $chat_thread->interview = 0;
-        }
-        else {
-            $chat_thread->interview = 1;
-        }
-        if ($chat_thread->save()) {
-            return 1;
-        }
-        else {
-            return 0;
-        }
-    }
+    // public function interview_status(Request $request)
+    // {
+    //     $chat_thread = ChatThread::findOrFail($request->chat_thread_id);
+    //     if ($chat_thread->interview == 1) {
+    //         $chat_thread->interview = 0;
+    //     }
+    //     else {
+    //         $chat_thread->interview = 1;
+    //     }
+    //     if ($chat_thread->save()) {
+    //         return 1;
+    //     }
+    //     else {
+    //         return 0;
+    //     }
+    // }
 
     public function block_status(Request $request)
     {

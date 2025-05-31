@@ -167,8 +167,9 @@ class RegisterController extends Controller
 
         // Send the initial verification code notification
         // This is the *only* place the initial code is sent for new registrations.
+        $user->verification_code_sent_at = now();
+        $user->save();
         $user->notify(new VerificationCode($user->verification_code));
-
         return $user;
     }
 
@@ -208,7 +209,7 @@ class RegisterController extends Controller
         // event(new Registered($user)); // Uncomment if you have listeners for this event
 
         // 5. Redirect to the verification form.
-        flash(translate('Registration successful! Please verify your account to continue.') )->success();
+        flash(translate('Registration successful! Please verify your account to continue.'));
         return redirect('/verify-form?email=' . urlencode($user->email));
 
         // The default `RegistersUsers` trait's `registered` method is usually called after this,

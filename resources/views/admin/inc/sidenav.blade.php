@@ -1,3 +1,7 @@
+@php
+    use App\Models\Appointment;
+    $incompleteAppointmentsCount = Appointment::whereNot('status', 'completed')->count();
+@endphp
 <div class="aiz-sidebar-wrap">
     <div class="aiz-sidebar left c-scrollbar">
         <div class="aiz-side-nav-logo-wrap">
@@ -24,6 +28,13 @@
                     </a>
                     <ul class="aiz-side-nav-list level-2">
                         @can('show_members')
+                            <li class="aiz-side-nav-item">
+                                <a href="{{ route('appointments.admin.index') }}" class="aiz-side-nav-link  ">
+                                    <span class="aiz-side-nav-text">{{ translate('Appointments') }}</span>
+                                    <span
+                                        class="badge badge-primary">{{ $incompleteAppointmentsCount > 0 ? $incompleteAppointmentsCount : '' }}</span>
+                                </a>
+                            </li>
                             <li class="aiz-side-nav-item">
                                 <a href="{{ route('members.index', 1) }}"
                                     class="aiz-side-nav-link  {{ areActiveRoutes(['members.edit', 'members.show']) }}">
@@ -393,7 +404,8 @@
                                                 <li class="aiz-side-nav-item">
                                                     <a href="{{ route('support-categories.index') }}"
                                                         class="aiz-side-nav-link {{ areActiveRoutes(['support-categories.index', 'support-categories.edit']) }}">
-                                                        <span class="aiz-side-nav-text">{{ translate('Category') }}</span>
+                                                        <span
+                                                            class="aiz-side-nav-text">{{ translate('Category') }}</span>
                                                     </a>
                                                 </li>
                                             @endcan

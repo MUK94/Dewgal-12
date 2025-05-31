@@ -37,6 +37,7 @@ use App\Http\Controllers\RoleController;
 use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\AddonController;
 use App\Http\Controllers\AizUploadController;
+use App\Http\Controllers\Admin\AppointmentAdminController;
 
 
 /*
@@ -66,6 +67,17 @@ Route::prefix('admin')->middleware(['auth', 'admin'])->group(function () {
     Route::get('dashboard', [HomeController::class, 'admin_dashboard'])->name('admin.dashboard');
 
     // Route::get('dashboard', [HomeController::class, 'dashboard'])->name('dashboard');
+
+    // Appointments
+    Route::get('/appointments', [AppointmentAdminController::class, 'index'])->name('appointments.admin.index');
+    Route::patch('/appointments/{appointment}/cancel', [AppointmentAdminController::class, 'cancel'])->name('appointments.admin.cancel');
+    Route::patch('/appointments/{appointment}/accept', [AppointmentAdminController::class, 'accept'])->name('appointments.admin.accept');
+    Route::patch('/appointments/{appointment}/reject', [AppointmentAdminController::class, 'reject'])->name('appointments.admin.reject');
+    Route::patch('/appointments/{appointment}/complete', [AppointmentAdminController::class, 'complete'])->name('appointments.admin.complete');
+    Route::patch('/appointments/{appointment}', [AppointmentAdminController::class, 'update'])->name('appointments.admin.update');
+    Route::delete('/appointments/{appointment}', [AppointmentAdminController::class, 'destroy'])->name('appointments.admin.destroy');
+
+
 
     Route::resource('profile', ProfileController::class);
 

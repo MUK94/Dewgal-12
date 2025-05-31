@@ -29,10 +29,10 @@ class ChatThread extends Model
         return $this->belongsTo(User::class, 'blocked_by_user');
     }
 
-    public function project()
-    {
-        return $this->belongsTo(Project::class);
-    }
+    // public function project()
+    // {
+    //     return $this->belongsTo(Project::class);
+    // }
 
     public function scopeActive($query)
     {

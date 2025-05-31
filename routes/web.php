@@ -27,6 +27,7 @@ use App\Http\Controllers\ReportedUserController;
 use App\Http\Controllers\ViewContactController;
 use App\Http\Controllers\WalletController;
 use App\Http\Controllers\NotificationController;
+use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\AddressController;
 use App\Http\Controllers\EducationController;
 use App\Http\Controllers\CareerController;
@@ -130,9 +131,6 @@ Route::middleware('isAccountVerified')->group(function () {
         Route::post('/package-payment', [PackagePaymentController::class, 'store'])->name('package.payment');
         Route::get('/package-purchase-history', [PackagePaymentController::class, 'package_purchase_history'])->name('package_purchase_history');
 
-        // Appointment Request
-        
-
         // Password Change
         Route::get('/members/change-password', [MemberController::class, 'change_password'])->name('member.change_password');
         Route::post('/member/password-update/{id}', [MemberController::class, 'password_update'])->name('member.password_update');
@@ -158,6 +156,18 @@ Route::middleware('isAccountVerified')->group(function () {
         Route::post('/chat-reply', [ChatController::class, 'chat_reply'])->name('chat.reply');
         Route::get('/chat/refresh/{id}', [ChatController::class, 'chat_refresh'])->name('chat_refresh');
         Route::post('/chat/old-messages', [ChatController::class, 'get_old_messages'])->name('get-old-message');
+
+        // Appointment Request
+        Route::get('/appointments', [AppointmentController::class, 'index'])->name('appointments.index');
+        Route::post('/appointments', [AppointmentController::class, 'store'])->name('appointments.store');
+        Route::patch('/appointments/{appointment}/cancel', [AppointmentController::class, 'cancel'])->name('appointments.cancel');
+        Route::patch('/appointments/{appointment}/accept', [AppointmentController::class, 'accept'])->name('appointments.accept');
+        Route::patch('/appointments/{appointment}/reject', [AppointmentController::class, 'reject'])->name('appointments.reject');
+        Route::patch('/appointments/{appointment}/complete', [AppointmentController::class, 'complete'])->name('appointments.complete'); // Added complete route
+        Route::get('/appointments/{appointment}/edit', [AppointmentController::class, 'edit'])->name('appointments.edit');
+        Route::patch('/appointments/{appointment}', [AppointmentController::class, 'update'])->name('appointments.update'); // Added update route
+        Route::delete('/appointments/{appointment}', [AppointmentController::class, 'destroy'])->name('appointments.destroy'); // Changed destroy to DELETE method
+
 
         // Shortlist
         Route::get('/my-shortlists', [ShortlistController::class, 'index'])->name('my_shortlists');

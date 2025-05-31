@@ -1,3 +1,8 @@
+@php
+    use App\Models\Appointment;
+    $pendingAppointmentsCount = Appointment::where('status', 'pending')->count();
+@endphp
+
 <div class="aiz-user-sidenav-wrap pt-4 sticky-top c-scrollbar-light position-relative z-1 shadow-none">
     <div class="absolute-top-left d-xl-none">
         <button class="btn btn-sm p-2" data-toggle="class-toggle" data-target=".aiz-mobile-side-nav"
@@ -30,10 +35,19 @@
                         <span class="aiz-side-nav-text">{{ translate('Dashboard') }}</span>
                     </a>
                 </li>
+
                 <li class="aiz-side-nav-item">
                     <a href="{{ route('gallery-image.index') }}" class="aiz-side-nav-link">
                         <i class="fa-solid fa-image aiz-side-nav-icon"></i>
                         <span class="aiz-side-nav-text">{{ translate('Gallery') }}</span>
+                    </a>
+                </li>
+                <li class="aiz-side-nav-item">
+                    <a href="{{ route('appointments.index') }}" class="aiz-side-nav-link">
+                        <i class="fa-solid fa-calendar-check aiz-side-nav-icon"></i>
+                        <span class="aiz-side-nav-text">{{ translate('Appointment') }}</span>
+                        <span
+                            class="badge badge-primary">{{ $pendingAppointmentsCount > 0 ? $pendingAppointmentsCount : '' }}</span>
                     </a>
                 </li>
                 <li class="aiz-side-nav-item">
